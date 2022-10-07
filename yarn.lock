@@ -419,9 +419,9 @@
     form-data "^3.0.0"
 
 "@types/node@*":
-  version "18.8.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.8.2.tgz#17d42c6322d917764dd3d2d3a10d7884925de067"
-  integrity sha512-cRMwIgdDN43GO4xMWAfJAecYn8wV4JbsOGHNfNUIDiuYkUYAR5ec4Rj7IO2SAhFPEfpPtLtUTbbny/TCT7aDwA==
+  version "18.8.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.8.3.tgz#ce750ab4017effa51aed6a7230651778d54e327c"
+  integrity sha512-0os9vz6BpGwxGe9LOhgP/ncvYN5Tx1fNcd2TM3rD/aCGBkysb+ZWpXEocG24h6ZzOi13+VB8HndAQFezsSOw1w==
 
 "@types/node@^14":
   version "14.18.31"
@@ -3165,10 +3165,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.63.7:
-  version "0.63.7"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.63.7.tgz#625a0ae0e4590cecdaafb496ee37431844607fbb"
-  integrity sha512-AM/tRHVmQeEvfE7c3+s02LGJtdyiv2Xby4mtcc2iV2odHRjKrazJRlLbaZouB30vMpDWo1FthvHMvVpgAVzQwg==
+projen@^0.63.8:
+  version "0.63.8"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.63.8.tgz#1135fb5032b41cf9dc745608faa3dccf78f00d21"
+  integrity sha512-iftpM4bTU7BHktDozxoq0gIJ6hBxi/niOJCFmHHnQveq8GWmuMEuZ1e3F9F5SoKpxRmjM+jsgGJZ6smMWtSrcA==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
