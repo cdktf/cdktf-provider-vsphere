@@ -11,7 +11,7 @@ const actions = require("@actions/core");
 
 // set by the projen file that generates this script
 const CONSTRAINT = "~> 2.2";
-const FQ_PROVIDER_NAME = "vsphere";
+const FQ_PROVIDER_NAME = "hashicorp/vsphere";
 
 (async function main() {
   if (await newerMatchingProviderVersionExists()) {
