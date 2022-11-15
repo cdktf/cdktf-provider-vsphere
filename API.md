@@ -656,6 +656,8 @@ public resetVsanEnabled(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -688,6 +690,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.isTerraformElement"></a>
+
+```typescript
+import { computeCluster } from '@cdktf/provider-vsphere'
+
+computeCluster.ComputeCluster.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.isTerraformResource"></a>
+
+```typescript
+import { computeCluster } from '@cdktf/provider-vsphere'
+
+computeCluster.ComputeCluster.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -2407,6 +2437,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.computeClusterHostGroup.ComputeClusterHostGroup.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.computeClusterHostGroup.ComputeClusterHostGroup.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeClusterHostGroup.ComputeClusterHostGroup.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -2439,6 +2471,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.computeClusterHostGroup.ComputeClusterHostGroup.isTerraformElement"></a>
+
+```typescript
+import { computeClusterHostGroup } from '@cdktf/provider-vsphere'
+
+computeClusterHostGroup.ComputeClusterHostGroup.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.computeClusterHostGroup.ComputeClusterHostGroup.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.computeClusterHostGroup.ComputeClusterHostGroup.isTerraformResource"></a>
+
+```typescript
+import { computeClusterHostGroup } from '@cdktf/provider-vsphere'
+
+computeClusterHostGroup.ComputeClusterHostGroup.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.computeClusterHostGroup.ComputeClusterHostGroup.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -2988,6 +3048,8 @@ public resetMandatory(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.computeClusterVmAffinityRule.ComputeClusterVmAffinityRule.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.computeClusterVmAffinityRule.ComputeClusterVmAffinityRule.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeClusterVmAffinityRule.ComputeClusterVmAffinityRule.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -3020,6 +3082,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.computeClusterVmAffinityRule.ComputeClusterVmAffinityRule.isTerraformElement"></a>
+
+```typescript
+import { computeClusterVmAffinityRule } from '@cdktf/provider-vsphere'
+
+computeClusterVmAffinityRule.ComputeClusterVmAffinityRule.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.computeClusterVmAffinityRule.ComputeClusterVmAffinityRule.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.computeClusterVmAffinityRule.ComputeClusterVmAffinityRule.isTerraformResource"></a>
+
+```typescript
+import { computeClusterVmAffinityRule } from '@cdktf/provider-vsphere'
+
+computeClusterVmAffinityRule.ComputeClusterVmAffinityRule.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.computeClusterVmAffinityRule.ComputeClusterVmAffinityRule.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -3613,6 +3703,8 @@ public resetMandatory(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -3645,6 +3737,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule.isTerraformElement"></a>
+
+```typescript
+import { computeClusterVmAntiAffinityRule } from '@cdktf/provider-vsphere'
+
+computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule.isTerraformResource"></a>
+
+```typescript
+import { computeClusterVmAntiAffinityRule } from '@cdktf/provider-vsphere'
+
+computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -4238,6 +4358,8 @@ public resetMandatory(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.computeClusterVmDependencyRule.ComputeClusterVmDependencyRule.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.computeClusterVmDependencyRule.ComputeClusterVmDependencyRule.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeClusterVmDependencyRule.ComputeClusterVmDependencyRule.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -4270,6 +4392,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.computeClusterVmDependencyRule.ComputeClusterVmDependencyRule.isTerraformElement"></a>
+
+```typescript
+import { computeClusterVmDependencyRule } from '@cdktf/provider-vsphere'
+
+computeClusterVmDependencyRule.ComputeClusterVmDependencyRule.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.computeClusterVmDependencyRule.ComputeClusterVmDependencyRule.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.computeClusterVmDependencyRule.ComputeClusterVmDependencyRule.isTerraformResource"></a>
+
+```typescript
+import { computeClusterVmDependencyRule } from '@cdktf/provider-vsphere'
+
+computeClusterVmDependencyRule.ComputeClusterVmDependencyRule.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.computeClusterVmDependencyRule.ComputeClusterVmDependencyRule.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -4878,6 +5028,8 @@ public resetVirtualMachineIds(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.computeClusterVmGroup.ComputeClusterVmGroup.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.computeClusterVmGroup.ComputeClusterVmGroup.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeClusterVmGroup.ComputeClusterVmGroup.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -4910,6 +5062,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.computeClusterVmGroup.ComputeClusterVmGroup.isTerraformElement"></a>
+
+```typescript
+import { computeClusterVmGroup } from '@cdktf/provider-vsphere'
+
+computeClusterVmGroup.ComputeClusterVmGroup.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.computeClusterVmGroup.ComputeClusterVmGroup.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.computeClusterVmGroup.ComputeClusterVmGroup.isTerraformResource"></a>
+
+```typescript
+import { computeClusterVmGroup } from '@cdktf/provider-vsphere'
+
+computeClusterVmGroup.ComputeClusterVmGroup.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.computeClusterVmGroup.ComputeClusterVmGroup.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -5473,6 +5653,8 @@ public resetMandatory(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.computeClusterVmHostRule.ComputeClusterVmHostRule.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.computeClusterVmHostRule.ComputeClusterVmHostRule.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeClusterVmHostRule.ComputeClusterVmHostRule.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -5505,6 +5687,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.computeClusterVmHostRule.ComputeClusterVmHostRule.isTerraformElement"></a>
+
+```typescript
+import { computeClusterVmHostRule } from '@cdktf/provider-vsphere'
+
+computeClusterVmHostRule.ComputeClusterVmHostRule.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.computeClusterVmHostRule.ComputeClusterVmHostRule.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.computeClusterVmHostRule.ComputeClusterVmHostRule.isTerraformResource"></a>
+
+```typescript
+import { computeClusterVmHostRule } from '@cdktf/provider-vsphere'
+
+computeClusterVmHostRule.ComputeClusterVmHostRule.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.computeClusterVmHostRule.ComputeClusterVmHostRule.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -6175,6 +6385,8 @@ public resetSubscription(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.contentLibrary.ContentLibrary.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.contentLibrary.ContentLibrary.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.contentLibrary.ContentLibrary.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -6207,6 +6419,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.contentLibrary.ContentLibrary.isTerraformElement"></a>
+
+```typescript
+import { contentLibrary } from '@cdktf/provider-vsphere'
+
+contentLibrary.ContentLibrary.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.contentLibrary.ContentLibrary.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.contentLibrary.ContentLibrary.isTerraformResource"></a>
+
+```typescript
+import { contentLibrary } from '@cdktf/provider-vsphere'
+
+contentLibrary.ContentLibrary.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.contentLibrary.ContentLibrary.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -6814,6 +7054,8 @@ public resetType(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItem.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItem.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItem.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -6846,6 +7088,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItem.isTerraformElement"></a>
+
+```typescript
+import { contentLibraryItem } from '@cdktf/provider-vsphere'
+
+contentLibraryItem.ContentLibraryItem.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItem.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItem.isTerraformResource"></a>
+
+```typescript
+import { contentLibraryItem } from '@cdktf/provider-vsphere'
+
+contentLibraryItem.ContentLibraryItem.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItem.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -7454,6 +7724,8 @@ public resetManagedObjectType(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.customAttribute.CustomAttribute.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.customAttribute.CustomAttribute.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.customAttribute.CustomAttribute.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -7486,6 +7758,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.customAttribute.CustomAttribute.isTerraformElement"></a>
+
+```typescript
+import { customAttribute } from '@cdktf/provider-vsphere'
+
+customAttribute.CustomAttribute.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.customAttribute.CustomAttribute.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.customAttribute.CustomAttribute.isTerraformResource"></a>
+
+```typescript
+import { customAttribute } from '@cdktf/provider-vsphere'
+
+customAttribute.CustomAttribute.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.customAttribute.CustomAttribute.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -8020,6 +8320,8 @@ public resetTags(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.datacenter.Datacenter.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.datacenter.Datacenter.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.datacenter.Datacenter.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -8052,6 +8354,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.datacenter.Datacenter.isTerraformElement"></a>
+
+```typescript
+import { datacenter } from '@cdktf/provider-vsphere'
+
+datacenter.Datacenter.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.datacenter.Datacenter.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.datacenter.Datacenter.isTerraformResource"></a>
+
+```typescript
+import { datacenter } from '@cdktf/provider-vsphere'
+
+datacenter.Datacenter.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.datacenter.Datacenter.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -8781,6 +9111,8 @@ public resetTags(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.datastoreCluster.DatastoreCluster.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.datastoreCluster.DatastoreCluster.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.datastoreCluster.DatastoreCluster.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -8813,6 +9145,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.datastoreCluster.DatastoreCluster.isTerraformElement"></a>
+
+```typescript
+import { datastoreCluster } from '@cdktf/provider-vsphere'
+
+datastoreCluster.DatastoreCluster.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.datastoreCluster.DatastoreCluster.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.datastoreCluster.DatastoreCluster.isTerraformResource"></a>
+
+```typescript
+import { datastoreCluster } from '@cdktf/provider-vsphere'
+
+datastoreCluster.DatastoreCluster.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.datastoreCluster.DatastoreCluster.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -9846,6 +10206,8 @@ public resetMandatory(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.datastoreClusterVmAntiAffinityRule.DatastoreClusterVmAntiAffinityRule.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.datastoreClusterVmAntiAffinityRule.DatastoreClusterVmAntiAffinityRule.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.datastoreClusterVmAntiAffinityRule.DatastoreClusterVmAntiAffinityRule.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -9878,6 +10240,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.datastoreClusterVmAntiAffinityRule.DatastoreClusterVmAntiAffinityRule.isTerraformElement"></a>
+
+```typescript
+import { datastoreClusterVmAntiAffinityRule } from '@cdktf/provider-vsphere'
+
+datastoreClusterVmAntiAffinityRule.DatastoreClusterVmAntiAffinityRule.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.datastoreClusterVmAntiAffinityRule.DatastoreClusterVmAntiAffinityRule.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.datastoreClusterVmAntiAffinityRule.DatastoreClusterVmAntiAffinityRule.isTerraformResource"></a>
+
+```typescript
+import { datastoreClusterVmAntiAffinityRule } from '@cdktf/provider-vsphere'
+
+datastoreClusterVmAntiAffinityRule.DatastoreClusterVmAntiAffinityRule.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.datastoreClusterVmAntiAffinityRule.DatastoreClusterVmAntiAffinityRule.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -10464,6 +10854,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereComputeCluster.DataVsphereComputeCluster.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereComputeCluster.DataVsphereComputeCluster.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereComputeCluster.DataVsphereComputeCluster.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -10496,6 +10888,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.dataVsphereComputeCluster.DataVsphereComputeCluster.isTerraformElement"></a>
+
+```typescript
+import { dataVsphereComputeCluster } from '@cdktf/provider-vsphere'
+
+dataVsphereComputeCluster.DataVsphereComputeCluster.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereComputeCluster.DataVsphereComputeCluster.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereComputeCluster.DataVsphereComputeCluster.isTerraformDataSource"></a>
+
+```typescript
+import { dataVsphereComputeCluster } from '@cdktf/provider-vsphere'
+
+dataVsphereComputeCluster.DataVsphereComputeCluster.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereComputeCluster.DataVsphereComputeCluster.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -10998,6 +11418,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereComputeClusterHostGroup.DataVsphereComputeClusterHostGroup.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereComputeClusterHostGroup.DataVsphereComputeClusterHostGroup.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereComputeClusterHostGroup.DataVsphereComputeClusterHostGroup.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -11030,6 +11452,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.dataVsphereComputeClusterHostGroup.DataVsphereComputeClusterHostGroup.isTerraformElement"></a>
+
+```typescript
+import { dataVsphereComputeClusterHostGroup } from '@cdktf/provider-vsphere'
+
+dataVsphereComputeClusterHostGroup.DataVsphereComputeClusterHostGroup.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereComputeClusterHostGroup.DataVsphereComputeClusterHostGroup.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereComputeClusterHostGroup.DataVsphereComputeClusterHostGroup.isTerraformDataSource"></a>
+
+```typescript
+import { dataVsphereComputeClusterHostGroup } from '@cdktf/provider-vsphere'
+
+dataVsphereComputeClusterHostGroup.DataVsphereComputeClusterHostGroup.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereComputeClusterHostGroup.DataVsphereComputeClusterHostGroup.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -11532,6 +11982,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibrary.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibrary.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibrary.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -11564,6 +12016,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibrary.isTerraformElement"></a>
+
+```typescript
+import { dataVsphereContentLibrary } from '@cdktf/provider-vsphere'
+
+dataVsphereContentLibrary.DataVsphereContentLibrary.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibrary.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibrary.isTerraformDataSource"></a>
+
+```typescript
+import { dataVsphereContentLibrary } from '@cdktf/provider-vsphere'
+
+dataVsphereContentLibrary.DataVsphereContentLibrary.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibrary.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -12033,6 +12513,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItem.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItem.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItem.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -12065,6 +12547,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItem.isTerraformElement"></a>
+
+```typescript
+import { dataVsphereContentLibraryItem } from '@cdktf/provider-vsphere'
+
+dataVsphereContentLibraryItem.DataVsphereContentLibraryItem.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItem.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItem.isTerraformDataSource"></a>
+
+```typescript
+import { dataVsphereContentLibraryItem } from '@cdktf/provider-vsphere'
+
+dataVsphereContentLibraryItem.DataVsphereContentLibraryItem.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItem.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -12578,6 +13088,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttribute.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttribute.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttribute.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -12610,6 +13122,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttribute.isTerraformElement"></a>
+
+```typescript
+import { dataVsphereCustomAttribute } from '@cdktf/provider-vsphere'
+
+dataVsphereCustomAttribute.DataVsphereCustomAttribute.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttribute.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttribute.isTerraformDataSource"></a>
+
+```typescript
+import { dataVsphereCustomAttribute } from '@cdktf/provider-vsphere'
+
+dataVsphereCustomAttribute.DataVsphereCustomAttribute.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttribute.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -13097,6 +13637,8 @@ public resetName(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatacenter.DataVsphereDatacenter.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereDatacenter.DataVsphereDatacenter.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereDatacenter.DataVsphereDatacenter.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -13129,6 +13671,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.dataVsphereDatacenter.DataVsphereDatacenter.isTerraformElement"></a>
+
+```typescript
+import { dataVsphereDatacenter } from '@cdktf/provider-vsphere'
+
+dataVsphereDatacenter.DataVsphereDatacenter.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereDatacenter.DataVsphereDatacenter.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereDatacenter.DataVsphereDatacenter.isTerraformDataSource"></a>
+
+```typescript
+import { dataVsphereDatacenter } from '@cdktf/provider-vsphere'
+
+dataVsphereDatacenter.DataVsphereDatacenter.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereDatacenter.DataVsphereDatacenter.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -13605,6 +14175,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -13637,6 +14209,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.isTerraformElement"></a>
+
+```typescript
+import { dataVsphereDatastore } from '@cdktf/provider-vsphere'
+
+dataVsphereDatastore.DataVsphereDatastore.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.isTerraformDataSource"></a>
+
+```typescript
+import { dataVsphereDatastore } from '@cdktf/provider-vsphere'
+
+dataVsphereDatastore.DataVsphereDatastore.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -14135,6 +14735,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastoreCluster.DataVsphereDatastoreCluster.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastoreCluster.DataVsphereDatastoreCluster.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastoreCluster.DataVsphereDatastoreCluster.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -14167,6 +14769,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.dataVsphereDatastoreCluster.DataVsphereDatastoreCluster.isTerraformElement"></a>
+
+```typescript
+import { dataVsphereDatastoreCluster } from '@cdktf/provider-vsphere'
+
+dataVsphereDatastoreCluster.DataVsphereDatastoreCluster.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereDatastoreCluster.DataVsphereDatastoreCluster.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereDatastoreCluster.DataVsphereDatastoreCluster.isTerraformDataSource"></a>
+
+```typescript
+import { dataVsphereDatastoreCluster } from '@cdktf/provider-vsphere'
+
+dataVsphereDatastoreCluster.DataVsphereDatastoreCluster.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereDatastoreCluster.DataVsphereDatastoreCluster.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -14665,6 +15295,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDistributedVirtualSwitch.DataVsphereDistributedVirtualSwitch.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereDistributedVirtualSwitch.DataVsphereDistributedVirtualSwitch.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereDistributedVirtualSwitch.DataVsphereDistributedVirtualSwitch.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -14697,6 +15329,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.dataVsphereDistributedVirtualSwitch.DataVsphereDistributedVirtualSwitch.isTerraformElement"></a>
+
+```typescript
+import { dataVsphereDistributedVirtualSwitch } from '@cdktf/provider-vsphere'
+
+dataVsphereDistributedVirtualSwitch.DataVsphereDistributedVirtualSwitch.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereDistributedVirtualSwitch.DataVsphereDistributedVirtualSwitch.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereDistributedVirtualSwitch.DataVsphereDistributedVirtualSwitch.isTerraformDataSource"></a>
+
+```typescript
+import { dataVsphereDistributedVirtualSwitch } from '@cdktf/provider-vsphere'
+
+dataVsphereDistributedVirtualSwitch.DataVsphereDistributedVirtualSwitch.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereDistributedVirtualSwitch.DataVsphereDistributedVirtualSwitch.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -15213,6 +15873,8 @@ public resetType(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDynamic.DataVsphereDynamic.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereDynamic.DataVsphereDynamic.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereDynamic.DataVsphereDynamic.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -15245,6 +15907,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.dataVsphereDynamic.DataVsphereDynamic.isTerraformElement"></a>
+
+```typescript
+import { dataVsphereDynamic } from '@cdktf/provider-vsphere'
+
+dataVsphereDynamic.DataVsphereDynamic.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereDynamic.DataVsphereDynamic.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereDynamic.DataVsphereDynamic.isTerraformDataSource"></a>
+
+```typescript
+import { dataVsphereDynamic } from '@cdktf/provider-vsphere'
+
+dataVsphereDynamic.DataVsphereDynamic.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereDynamic.DataVsphereDynamic.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -15758,6 +16448,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -15790,6 +16482,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder.isTerraformElement"></a>
+
+```typescript
+import { dataVsphereFolder } from '@cdktf/provider-vsphere'
+
+dataVsphereFolder.DataVsphereFolder.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder.isTerraformDataSource"></a>
+
+```typescript
+import { dataVsphereFolder } from '@cdktf/provider-vsphere'
+
+dataVsphereFolder.DataVsphereFolder.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -16266,6 +16986,8 @@ public resetName(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHost.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHost.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHost.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -16298,6 +17020,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHost.isTerraformElement"></a>
+
+```typescript
+import { dataVsphereHost } from '@cdktf/provider-vsphere'
+
+dataVsphereHost.DataVsphereHost.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHost.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHost.isTerraformDataSource"></a>
+
+```typescript
+import { dataVsphereHost } from '@cdktf/provider-vsphere'
+
+dataVsphereHost.DataVsphereHost.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHost.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -16821,6 +17571,8 @@ public resetVendorId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHostPciDevice.DataVsphereHostPciDevice.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereHostPciDevice.DataVsphereHostPciDevice.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereHostPciDevice.DataVsphereHostPciDevice.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -16853,6 +17605,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.dataVsphereHostPciDevice.DataVsphereHostPciDevice.isTerraformElement"></a>
+
+```typescript
+import { dataVsphereHostPciDevice } from '@cdktf/provider-vsphere'
+
+dataVsphereHostPciDevice.DataVsphereHostPciDevice.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereHostPciDevice.DataVsphereHostPciDevice.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereHostPciDevice.DataVsphereHostPciDevice.isTerraformDataSource"></a>
+
+```typescript
+import { dataVsphereHostPciDevice } from '@cdktf/provider-vsphere'
+
+dataVsphereHostPciDevice.DataVsphereHostPciDevice.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereHostPciDevice.DataVsphereHostPciDevice.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -17413,6 +18193,8 @@ public resetPort(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprint.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprint.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprint.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -17445,6 +18227,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprint.isTerraformElement"></a>
+
+```typescript
+import { dataVsphereHostThumbprint } from '@cdktf/provider-vsphere'
+
+dataVsphereHostThumbprint.DataVsphereHostThumbprint.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprint.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprint.isTerraformDataSource"></a>
+
+```typescript
+import { dataVsphereHostThumbprint } from '@cdktf/provider-vsphere'
+
+dataVsphereHostThumbprint.DataVsphereHostThumbprint.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprint.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -17951,6 +18761,8 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicense.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicense.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicense.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -17983,6 +18795,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicense.isTerraformElement"></a>
+
+```typescript
+import { dataVsphereLicense } from '@cdktf/provider-vsphere'
+
+dataVsphereLicense.DataVsphereLicense.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicense.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicense.isTerraformDataSource"></a>
+
+```typescript
+import { dataVsphereLicense } from '@cdktf/provider-vsphere'
+
+dataVsphereLicense.DataVsphereLicense.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicense.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -18510,6 +19350,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -18542,6 +19384,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.isTerraformElement"></a>
+
+```typescript
+import { dataVsphereNetwork } from '@cdktf/provider-vsphere'
+
+dataVsphereNetwork.DataVsphereNetwork.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.isTerraformDataSource"></a>
+
+```typescript
+import { dataVsphereNetwork } from '@cdktf/provider-vsphere'
+
+dataVsphereNetwork.DataVsphereNetwork.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -19143,6 +20013,8 @@ public resetRemoteOvfUrl(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -19175,6 +20047,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.isTerraformElement"></a>
+
+```typescript
+import { dataVsphereOvfVmTemplate } from '@cdktf/provider-vsphere'
+
+dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.isTerraformDataSource"></a>
+
+```typescript
+import { dataVsphereOvfVmTemplate } from '@cdktf/provider-vsphere'
+
+dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -20131,6 +21031,8 @@ public resetName(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -20163,6 +21065,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.isTerraformElement"></a>
+
+```typescript
+import { dataVsphereResourcePool } from '@cdktf/provider-vsphere'
+
+dataVsphereResourcePool.DataVsphereResourcePool.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.isTerraformDataSource"></a>
+
+```typescript
+import { dataVsphereResourcePool } from '@cdktf/provider-vsphere'
+
+dataVsphereResourcePool.DataVsphereResourcePool.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -20675,6 +21605,8 @@ public resetRolePrivileges(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereRole.DataVsphereRole.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereRole.DataVsphereRole.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereRole.DataVsphereRole.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -20707,6 +21639,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.dataVsphereRole.DataVsphereRole.isTerraformElement"></a>
+
+```typescript
+import { dataVsphereRole } from '@cdktf/provider-vsphere'
+
+dataVsphereRole.DataVsphereRole.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereRole.DataVsphereRole.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereRole.DataVsphereRole.isTerraformDataSource"></a>
+
+```typescript
+import { dataVsphereRole } from '@cdktf/provider-vsphere'
+
+dataVsphereRole.DataVsphereRole.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereRole.DataVsphereRole.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -21242,6 +22202,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereStoragePolicy.DataVsphereStoragePolicy.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereStoragePolicy.DataVsphereStoragePolicy.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereStoragePolicy.DataVsphereStoragePolicy.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -21274,6 +22236,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.dataVsphereStoragePolicy.DataVsphereStoragePolicy.isTerraformElement"></a>
+
+```typescript
+import { dataVsphereStoragePolicy } from '@cdktf/provider-vsphere'
+
+dataVsphereStoragePolicy.DataVsphereStoragePolicy.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereStoragePolicy.DataVsphereStoragePolicy.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereStoragePolicy.DataVsphereStoragePolicy.isTerraformDataSource"></a>
+
+```typescript
+import { dataVsphereStoragePolicy } from '@cdktf/provider-vsphere'
+
+dataVsphereStoragePolicy.DataVsphereStoragePolicy.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereStoragePolicy.DataVsphereStoragePolicy.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -21743,6 +22733,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereTag.DataVsphereTag.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereTag.DataVsphereTag.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereTag.DataVsphereTag.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -21775,6 +22767,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.dataVsphereTag.DataVsphereTag.isTerraformElement"></a>
+
+```typescript
+import { dataVsphereTag } from '@cdktf/provider-vsphere'
+
+dataVsphereTag.DataVsphereTag.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereTag.DataVsphereTag.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereTag.DataVsphereTag.isTerraformDataSource"></a>
+
+```typescript
+import { dataVsphereTag } from '@cdktf/provider-vsphere'
+
+dataVsphereTag.DataVsphereTag.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereTag.DataVsphereTag.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -22277,6 +23297,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereTagCategory.DataVsphereTagCategory.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereTagCategory.DataVsphereTagCategory.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereTagCategory.DataVsphereTagCategory.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -22309,6 +23331,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.dataVsphereTagCategory.DataVsphereTagCategory.isTerraformElement"></a>
+
+```typescript
+import { dataVsphereTagCategory } from '@cdktf/provider-vsphere'
+
+dataVsphereTagCategory.DataVsphereTagCategory.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereTagCategory.DataVsphereTagCategory.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereTagCategory.DataVsphereTagCategory.isTerraformDataSource"></a>
+
+```typescript
+import { dataVsphereTagCategory } from '@cdktf/provider-vsphere'
+
+dataVsphereTagCategory.DataVsphereTagCategory.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereTagCategory.DataVsphereTagCategory.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -22811,6 +23861,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainer.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainer.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainer.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -22843,6 +23895,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainer.isTerraformElement"></a>
+
+```typescript
+import { dataVsphereVappContainer } from '@cdktf/provider-vsphere'
+
+dataVsphereVappContainer.DataVsphereVappContainer.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainer.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainer.isTerraformDataSource"></a>
+
+```typescript
+import { dataVsphereVappContainer } from '@cdktf/provider-vsphere'
+
+dataVsphereVappContainer.DataVsphereVappContainer.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainer.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -23704,6 +24784,8 @@ public resetVvtdEnabled(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -23736,6 +24818,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.isTerraformElement"></a>
+
+```typescript
+import { dataVsphereVirtualMachine } from '@cdktf/provider-vsphere'
+
+dataVsphereVirtualMachine.DataVsphereVirtualMachine.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.isTerraformDataSource"></a>
+
+```typescript
+import { dataVsphereVirtualMachine } from '@cdktf/provider-vsphere'
+
+dataVsphereVirtualMachine.DataVsphereVirtualMachine.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -25418,6 +26528,8 @@ public resetRescan(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisks.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisks.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisks.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -25450,6 +26562,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisks.isTerraformElement"></a>
+
+```typescript
+import { dataVsphereVmfsDisks } from '@cdktf/provider-vsphere'
+
+dataVsphereVmfsDisks.DataVsphereVmfsDisks.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisks.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisks.isTerraformDataSource"></a>
+
+```typescript
+import { dataVsphereVmfsDisks } from '@cdktf/provider-vsphere'
+
+dataVsphereVmfsDisks.DataVsphereVmfsDisks.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisks.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -26295,6 +27435,8 @@ public resetVlanRange(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -26327,6 +27469,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.isTerraformElement"></a>
+
+```typescript
+import { distributedPortGroup } from '@cdktf/provider-vsphere'
+
+distributedPortGroup.DistributedPortGroup.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.isTerraformResource"></a>
+
+```typescript
+import { distributedPortGroup } from '@cdktf/provider-vsphere'
+
+distributedPortGroup.DistributedPortGroup.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -28513,6 +29683,8 @@ public resetVsanShareLevel(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -28545,6 +29717,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.isTerraformElement"></a>
+
+```typescript
+import { distributedVirtualSwitch } from '@cdktf/provider-vsphere'
+
+distributedVirtualSwitch.DistributedVirtualSwitch.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.isTerraformResource"></a>
+
+```typescript
+import { distributedVirtualSwitch } from '@cdktf/provider-vsphere'
+
+distributedVirtualSwitch.DistributedVirtualSwitch.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -31107,6 +32307,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dpmHostOverride.DpmHostOverride.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.dpmHostOverride.DpmHostOverride.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dpmHostOverride.DpmHostOverride.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -31139,6 +32341,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.dpmHostOverride.DpmHostOverride.isTerraformElement"></a>
+
+```typescript
+import { dpmHostOverride } from '@cdktf/provider-vsphere'
+
+dpmHostOverride.DpmHostOverride.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dpmHostOverride.DpmHostOverride.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.dpmHostOverride.DpmHostOverride.isTerraformResource"></a>
+
+```typescript
+import { dpmHostOverride } from '@cdktf/provider-vsphere'
+
+dpmHostOverride.DpmHostOverride.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dpmHostOverride.DpmHostOverride.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -31710,6 +32940,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.drsVmOverride.DrsVmOverride.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.drsVmOverride.DrsVmOverride.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.drsVmOverride.DrsVmOverride.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -31742,6 +32974,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.drsVmOverride.DrsVmOverride.isTerraformElement"></a>
+
+```typescript
+import { drsVmOverride } from '@cdktf/provider-vsphere'
+
+drsVmOverride.DrsVmOverride.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.drsVmOverride.DrsVmOverride.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.drsVmOverride.DrsVmOverride.isTerraformResource"></a>
+
+```typescript
+import { drsVmOverride } from '@cdktf/provider-vsphere'
+
+drsVmOverride.DrsVmOverride.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.drsVmOverride.DrsVmOverride.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -32312,6 +33572,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.entityPermissions.EntityPermissions.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.entityPermissions.EntityPermissions.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.entityPermissions.EntityPermissions.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -32344,6 +33606,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.entityPermissions.EntityPermissions.isTerraformElement"></a>
+
+```typescript
+import { entityPermissions } from '@cdktf/provider-vsphere'
+
+entityPermissions.EntityPermissions.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.entityPermissions.EntityPermissions.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.entityPermissions.EntityPermissions.isTerraformResource"></a>
+
+```typescript
+import { entityPermissions } from '@cdktf/provider-vsphere'
+
+entityPermissions.EntityPermissions.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.entityPermissions.EntityPermissions.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -32907,6 +34197,8 @@ public resetSourceDatastore(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.file.File.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.file.File.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.file.File.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -32939,6 +34231,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.file.File.isTerraformElement"></a>
+
+```typescript
+import { file } from '@cdktf/provider-vsphere'
+
+file.File.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.file.File.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.file.File.isTerraformResource"></a>
+
+```typescript
+import { file } from '@cdktf/provider-vsphere'
+
+file.File.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.file.File.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -33583,6 +34903,8 @@ public resetTags(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.folder.Folder.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.folder.Folder.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.folder.Folder.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -33615,6 +34937,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.folder.Folder.isTerraformElement"></a>
+
+```typescript
+import { folder } from '@cdktf/provider-vsphere'
+
+folder.Folder.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.folder.Folder.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.folder.Folder.isTerraformResource"></a>
+
+```typescript
+import { folder } from '@cdktf/provider-vsphere'
+
+folder.Folder.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.folder.Folder.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -34285,6 +35635,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.haVmOverride.HaVmOverride.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.haVmOverride.HaVmOverride.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.haVmOverride.HaVmOverride.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -34317,6 +35669,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.haVmOverride.HaVmOverride.isTerraformElement"></a>
+
+```typescript
+import { haVmOverride } from '@cdktf/provider-vsphere'
+
+haVmOverride.HaVmOverride.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.haVmOverride.HaVmOverride.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.haVmOverride.HaVmOverride.isTerraformResource"></a>
+
+```typescript
+import { haVmOverride } from '@cdktf/provider-vsphere'
+
+haVmOverride.HaVmOverride.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.haVmOverride.HaVmOverride.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -35193,6 +36573,8 @@ public resetThumbprint(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -35225,6 +36607,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.host.Host.isTerraformElement"></a>
+
+```typescript
+import { host } from '@cdktf/provider-vsphere'
+
+host.Host.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.host.Host.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.host.Host.isTerraformResource"></a>
+
+```typescript
+import { host } from '@cdktf/provider-vsphere'
+
+host.Host.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.host.Host.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -36100,6 +37510,8 @@ public resetVlanId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.hostPortGroup.HostPortGroup.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.hostPortGroup.HostPortGroup.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.hostPortGroup.HostPortGroup.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -36132,6 +37544,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.hostPortGroup.HostPortGroup.isTerraformElement"></a>
+
+```typescript
+import { hostPortGroup } from '@cdktf/provider-vsphere'
+
+hostPortGroup.HostPortGroup.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.hostPortGroup.HostPortGroup.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.hostPortGroup.HostPortGroup.isTerraformResource"></a>
+
+```typescript
+import { hostPortGroup } from '@cdktf/provider-vsphere'
+
+hostPortGroup.HostPortGroup.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.hostPortGroup.HostPortGroup.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -37120,6 +38560,8 @@ public resetTeamingPolicy(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitch.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitch.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitch.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -37152,6 +38594,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitch.isTerraformElement"></a>
+
+```typescript
+import { hostVirtualSwitch } from '@cdktf/provider-vsphere'
+
+hostVirtualSwitch.HostVirtualSwitch.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitch.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitch.isTerraformResource"></a>
+
+```typescript
+import { hostVirtualSwitch } from '@cdktf/provider-vsphere'
+
+hostVirtualSwitch.HostVirtualSwitch.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitch.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -38090,6 +39560,8 @@ public resetLabels(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.license.License.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.license.License.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.license.License.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -38122,6 +39594,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.license.License.isTerraformElement"></a>
+
+```typescript
+import { license } from '@cdktf/provider-vsphere'
+
+license.License.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.license.License.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.license.License.isTerraformResource"></a>
+
+```typescript
+import { license } from '@cdktf/provider-vsphere'
+
+license.License.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.license.License.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -38728,6 +40228,8 @@ public resetType(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.nasDatastore.NasDatastore.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.nasDatastore.NasDatastore.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.nasDatastore.NasDatastore.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -38760,6 +40262,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.nasDatastore.NasDatastore.isTerraformElement"></a>
+
+```typescript
+import { nasDatastore } from '@cdktf/provider-vsphere'
+
+nasDatastore.NasDatastore.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.nasDatastore.NasDatastore.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.nasDatastore.NasDatastore.isTerraformResource"></a>
+
+```typescript
+import { nasDatastore } from '@cdktf/provider-vsphere'
+
+nasDatastore.NasDatastore.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.nasDatastore.NasDatastore.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -39650,6 +41180,8 @@ public resetTags(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -39682,6 +41214,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.resourcePool.ResourcePool.isTerraformElement"></a>
+
+```typescript
+import { resourcePool } from '@cdktf/provider-vsphere'
+
+resourcePool.ResourcePool.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.resourcePool.ResourcePool.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.resourcePool.ResourcePool.isTerraformResource"></a>
+
+```typescript
+import { resourcePool } from '@cdktf/provider-vsphere'
+
+resourcePool.ResourcePool.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.resourcePool.ResourcePool.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -40488,6 +42048,8 @@ public resetRolePrivileges(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.role.Role.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.role.Role.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.role.Role.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -40520,6 +42082,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.role.Role.isTerraformElement"></a>
+
+```typescript
+import { role } from '@cdktf/provider-vsphere'
+
+role.Role.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.role.Role.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.role.Role.isTerraformResource"></a>
+
+```typescript
+import { role } from '@cdktf/provider-vsphere'
+
+role.Role.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.role.Role.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -41065,6 +42655,8 @@ public resetSdrsIntraVmAffinity(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverride.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverride.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverride.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -41097,6 +42689,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverride.isTerraformElement"></a>
+
+```typescript
+import { storageDrsVmOverride } from '@cdktf/provider-vsphere'
+
+storageDrsVmOverride.StorageDrsVmOverride.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverride.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverride.isTerraformResource"></a>
+
+```typescript
+import { storageDrsVmOverride } from '@cdktf/provider-vsphere'
+
+storageDrsVmOverride.StorageDrsVmOverride.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverride.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -41683,6 +43303,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.tag.Tag.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.tag.Tag.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.tag.Tag.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -41715,6 +43337,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.tag.Tag.isTerraformElement"></a>
+
+```typescript
+import { tag } from '@cdktf/provider-vsphere'
+
+tag.Tag.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.tag.Tag.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.tag.Tag.isTerraformResource"></a>
+
+```typescript
+import { tag } from '@cdktf/provider-vsphere'
+
+tag.Tag.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.tag.Tag.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -42257,6 +43907,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.tagCategory.TagCategory.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.tagCategory.TagCategory.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.tagCategory.TagCategory.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -42289,6 +43941,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.tagCategory.TagCategory.isTerraformElement"></a>
+
+```typescript
+import { tagCategory } from '@cdktf/provider-vsphere'
+
+tagCategory.TagCategory.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.tagCategory.TagCategory.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.tagCategory.TagCategory.isTerraformResource"></a>
+
+```typescript
+import { tagCategory } from '@cdktf/provider-vsphere'
+
+tagCategory.TagCategory.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.tagCategory.TagCategory.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -42937,6 +44617,8 @@ public resetTags(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainer.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainer.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainer.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -42969,6 +44651,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.vappContainer.VappContainer.isTerraformElement"></a>
+
+```typescript
+import { vappContainer } from '@cdktf/provider-vsphere'
+
+vappContainer.VappContainer.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.vappContainer.VappContainer.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.vappContainer.VappContainer.isTerraformResource"></a>
+
+```typescript
+import { vappContainer } from '@cdktf/provider-vsphere'
+
+vappContainer.VappContainer.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.vappContainer.VappContainer.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -43824,6 +45534,8 @@ public resetWaitForGuest(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntity.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntity.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntity.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -43856,6 +45568,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.vappEntity.VappEntity.isTerraformElement"></a>
+
+```typescript
+import { vappEntity } from '@cdktf/provider-vsphere'
+
+vappEntity.VappEntity.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.vappEntity.VappEntity.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.vappEntity.VappEntity.isTerraformResource"></a>
+
+```typescript
+import { vappEntity } from '@cdktf/provider-vsphere'
+
+vappEntity.VappEntity.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.vappEntity.VappEntity.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -44573,6 +46313,8 @@ public resetType(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.virtualDisk.VirtualDisk.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.virtualDisk.VirtualDisk.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualDisk.VirtualDisk.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -44605,6 +46347,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.virtualDisk.VirtualDisk.isTerraformElement"></a>
+
+```typescript
+import { virtualDisk } from '@cdktf/provider-vsphere'
+
+virtualDisk.VirtualDisk.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.virtualDisk.VirtualDisk.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.virtualDisk.VirtualDisk.isTerraformResource"></a>
+
+```typescript
+import { virtualDisk } from '@cdktf/provider-vsphere'
+
+virtualDisk.VirtualDisk.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.virtualDisk.VirtualDisk.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -45803,6 +47573,8 @@ public resetWaitForGuestNetTimeout(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -45835,6 +47607,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.isTerraformElement"></a>
+
+```typescript
+import { virtualMachine } from '@cdktf/provider-vsphere'
+
+virtualMachine.VirtualMachine.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.isTerraformResource"></a>
+
+```typescript
+import { virtualMachine } from '@cdktf/provider-vsphere'
+
+virtualMachine.VirtualMachine.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -48045,6 +49845,8 @@ public resetRemoveChildren(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachineSnapshot.VirtualMachineSnapshot.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachineSnapshot.VirtualMachineSnapshot.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachineSnapshot.VirtualMachineSnapshot.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -48077,6 +49879,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.virtualMachineSnapshot.VirtualMachineSnapshot.isTerraformElement"></a>
+
+```typescript
+import { virtualMachineSnapshot } from '@cdktf/provider-vsphere'
+
+virtualMachineSnapshot.VirtualMachineSnapshot.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.virtualMachineSnapshot.VirtualMachineSnapshot.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.virtualMachineSnapshot.VirtualMachineSnapshot.isTerraformResource"></a>
+
+```typescript
+import { virtualMachineSnapshot } from '@cdktf/provider-vsphere'
+
+virtualMachineSnapshot.VirtualMachineSnapshot.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.virtualMachineSnapshot.VirtualMachineSnapshot.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -48728,6 +50558,8 @@ public resetTags(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -48760,6 +50592,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.isTerraformElement"></a>
+
+```typescript
+import { vmfsDatastore } from '@cdktf/provider-vsphere'
+
+vmfsDatastore.VmfsDatastore.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.isTerraformResource"></a>
+
+```typescript
+import { vmfsDatastore } from '@cdktf/provider-vsphere'
+
+vmfsDatastore.VmfsDatastore.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -49480,6 +51340,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicy.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicy.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicy.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -49512,6 +51374,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicy.isTerraformElement"></a>
+
+```typescript
+import { vmStoragePolicy } from '@cdktf/provider-vsphere'
+
+vmStoragePolicy.VmStoragePolicy.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicy.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicy.isTerraformResource"></a>
+
+```typescript
+import { vmStoragePolicy } from '@cdktf/provider-vsphere'
+
+vmStoragePolicy.VmStoragePolicy.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicy.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -50129,6 +52019,8 @@ public resetPortgroup(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.vnic.Vnic.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.vnic.Vnic.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vnic.Vnic.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -50161,6 +52053,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.vnic.Vnic.isTerraformElement"></a>
+
+```typescript
+import { vnic } from '@cdktf/provider-vsphere'
+
+vnic.Vnic.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.vnic.Vnic.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vsphere.vnic.Vnic.isTerraformResource"></a>
+
+```typescript
+import { vnic } from '@cdktf/provider-vsphere'
+
+vnic.Vnic.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.vnic.Vnic.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -50775,6 +52695,8 @@ public resetVsphereServer(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.isTerraformProvider">isTerraformProvider</a></code> | *No description.* |
 
 ---
 
@@ -50807,6 +52729,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vsphere.provider.VsphereProvider.isTerraformElement"></a>
+
+```typescript
+import { provider } from '@cdktf/provider-vsphere'
+
+provider.VsphereProvider.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.provider.VsphereProvider.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformProvider` <a name="isTerraformProvider" id="@cdktf/provider-vsphere.provider.VsphereProvider.isTerraformProvider"></a>
+
+```typescript
+import { provider } from '@cdktf/provider-vsphere'
+
+provider.VsphereProvider.isTerraformProvider(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.provider.VsphereProvider.isTerraformProvider.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
