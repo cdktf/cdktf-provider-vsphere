@@ -132,7 +132,7 @@ export class VappContainer extends cdktf.TerraformResource {
       terraformResourceType: 'vsphere_vapp_container',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.2.0',
+        providerVersion: '2.3.1',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,

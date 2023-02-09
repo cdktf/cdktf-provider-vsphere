@@ -126,7 +126,7 @@ export class Host extends cdktf.TerraformResource {
       terraformResourceType: 'vsphere_host',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.2.0',
+        providerVersion: '2.3.1',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,

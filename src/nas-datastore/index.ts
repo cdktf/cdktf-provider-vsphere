@@ -108,7 +108,7 @@ export class NasDatastore extends cdktf.TerraformResource {
       terraformResourceType: 'vsphere_nas_datastore',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.2.0',
+        providerVersion: '2.3.1',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,
