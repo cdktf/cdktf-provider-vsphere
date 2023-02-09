@@ -66,7 +66,7 @@ export class DrsVmOverride extends cdktf.TerraformResource {
       terraformResourceType: 'vsphere_drs_vm_override',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.2.0',
+        providerVersion: '2.3.1',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,

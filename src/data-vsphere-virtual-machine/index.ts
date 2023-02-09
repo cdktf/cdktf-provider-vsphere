@@ -116,6 +116,12 @@ export interface DataVsphereVirtualMachineConfig extends cdktf.TerraformMetaArgu
   */
   readonly extraConfig?: { [key: string]: string };
   /**
+  * Allow the virtual machine to be rebooted when a change to `extra_config` occurs.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/virtual_machine#extra_config_reboot_required DataVsphereVirtualMachine#extra_config_reboot_required}
+  */
+  readonly extraConfigRebootRequired?: boolean | cdktf.IResolvable;
+  /**
   * The firmware interface to use on the virtual machine. Can be one of bios or efi.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/virtual_machine#firmware DataVsphereVirtualMachine#firmware}
@@ -593,7 +599,7 @@ export class DataVsphereVirtualMachine extends cdktf.TerraformDataSource {
       terraformResourceType: 'vsphere_virtual_machine',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.2.0',
+        providerVersion: '2.3.1',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,
@@ -622,6 +628,7 @@ export class DataVsphereVirtualMachine extends cdktf.TerraformDataSource {
     this._enableLogging = config.enableLogging;
     this._eptRviMode = config.eptRviMode;
     this._extraConfig = config.extraConfig;
+    this._extraConfigRebootRequired = config.extraConfigRebootRequired;
     this._firmware = config.firmware;
     this._guestId = config.guestId;
     this._hardwareVersion = config.hardwareVersion;
@@ -964,6 +971,22 @@ export class DataVsphereVirtualMachine extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get extraConfigInput() {
     return this._extraConfig;
+  }
+
+  // extra_config_reboot_required - computed: false, optional: true, required: false
+  private _extraConfigRebootRequired?: boolean | cdktf.IResolvable; 
+  public get extraConfigRebootRequired() {
+    return this.getBooleanAttribute('extra_config_reboot_required');
+  }
+  public set extraConfigRebootRequired(value: boolean | cdktf.IResolvable) {
+    this._extraConfigRebootRequired = value;
+  }
+  public resetExtraConfigRebootRequired() {
+    this._extraConfigRebootRequired = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get extraConfigRebootRequiredInput() {
+    return this._extraConfigRebootRequired;
   }
 
   // firmware - computed: false, optional: true, required: false
@@ -1565,6 +1588,7 @@ export class DataVsphereVirtualMachine extends cdktf.TerraformDataSource {
       enable_logging: cdktf.booleanToTerraform(this._enableLogging),
       ept_rvi_mode: cdktf.stringToTerraform(this._eptRviMode),
       extra_config: cdktf.hashMapper(cdktf.stringToTerraform)(this._extraConfig),
+      extra_config_reboot_required: cdktf.booleanToTerraform(this._extraConfigRebootRequired),
       firmware: cdktf.stringToTerraform(this._firmware),
       guest_id: cdktf.stringToTerraform(this._guestId),
       hardware_version: cdktf.numberToTerraform(this._hardwareVersion),

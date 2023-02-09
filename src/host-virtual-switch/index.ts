@@ -133,7 +133,7 @@ export interface HostVirtualSwitchConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/host_virtual_switch#standby_nics HostVirtualSwitch#standby_nics}
   */
-  readonly standbyNics: string[];
+  readonly standbyNics?: string[];
   /**
   * The network adapter teaming policy. Can be one of loadbalance_ip, loadbalance_srcmac, loadbalance_srcid, or failover_explicit.
   * 
@@ -168,7 +168,7 @@ export class HostVirtualSwitch extends cdktf.TerraformResource {
       terraformResourceType: 'vsphere_host_virtual_switch',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.2.0',
+        providerVersion: '2.3.1',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,
@@ -515,13 +515,16 @@ export class HostVirtualSwitch extends cdktf.TerraformResource {
     return this._shapingPeakBandwidth;
   }
 
-  // standby_nics - computed: false, optional: false, required: true
+  // standby_nics - computed: false, optional: true, required: false
   private _standbyNics?: string[]; 
   public get standbyNics() {
     return this.getListAttribute('standby_nics');
   }
   public set standbyNics(value: string[]) {
     this._standbyNics = value;
+  }
+  public resetStandbyNics() {
+    this._standbyNics = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get standbyNicsInput() {

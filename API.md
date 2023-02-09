@@ -120,8 +120,17 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetProactiveHaProviderIds">resetProactiveHaProviderIds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetProactiveHaSevereRemediation">resetProactiveHaSevereRemediation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetTags">resetTags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetVsanCompressionEnabled">resetVsanCompressionEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetVsanDedupEnabled">resetVsanDedupEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetVsanDiskGroup">resetVsanDiskGroup</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetVsanDitEncryptionEnabled">resetVsanDitEncryptionEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetVsanDitRekeyInterval">resetVsanDitRekeyInterval</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetVsanEnabled">resetVsanEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetVsanNetworkDiagnosticModeEnabled">resetVsanNetworkDiagnosticModeEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetVsanPerformanceEnabled">resetVsanPerformanceEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetVsanRemoteDatastoreIds">resetVsanRemoteDatastoreIds</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetVsanUnmapEnabled">resetVsanUnmapEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetVsanVerboseModeEnabled">resetVsanVerboseModeEnabled</a></code> | *No description.* |
 
 ---
 
@@ -639,16 +648,70 @@ public resetProactiveHaSevereRemediation(): void
 public resetTags(): void
 ```
 
+##### `resetVsanCompressionEnabled` <a name="resetVsanCompressionEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetVsanCompressionEnabled"></a>
+
+```typescript
+public resetVsanCompressionEnabled(): void
+```
+
+##### `resetVsanDedupEnabled` <a name="resetVsanDedupEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetVsanDedupEnabled"></a>
+
+```typescript
+public resetVsanDedupEnabled(): void
+```
+
 ##### `resetVsanDiskGroup` <a name="resetVsanDiskGroup" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetVsanDiskGroup"></a>
 
 ```typescript
 public resetVsanDiskGroup(): void
 ```
 
+##### `resetVsanDitEncryptionEnabled` <a name="resetVsanDitEncryptionEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetVsanDitEncryptionEnabled"></a>
+
+```typescript
+public resetVsanDitEncryptionEnabled(): void
+```
+
+##### `resetVsanDitRekeyInterval` <a name="resetVsanDitRekeyInterval" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetVsanDitRekeyInterval"></a>
+
+```typescript
+public resetVsanDitRekeyInterval(): void
+```
+
 ##### `resetVsanEnabled` <a name="resetVsanEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetVsanEnabled"></a>
 
 ```typescript
 public resetVsanEnabled(): void
+```
+
+##### `resetVsanNetworkDiagnosticModeEnabled` <a name="resetVsanNetworkDiagnosticModeEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetVsanNetworkDiagnosticModeEnabled"></a>
+
+```typescript
+public resetVsanNetworkDiagnosticModeEnabled(): void
+```
+
+##### `resetVsanPerformanceEnabled` <a name="resetVsanPerformanceEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetVsanPerformanceEnabled"></a>
+
+```typescript
+public resetVsanPerformanceEnabled(): void
+```
+
+##### `resetVsanRemoteDatastoreIds` <a name="resetVsanRemoteDatastoreIds" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetVsanRemoteDatastoreIds"></a>
+
+```typescript
+public resetVsanRemoteDatastoreIds(): void
+```
+
+##### `resetVsanUnmapEnabled` <a name="resetVsanUnmapEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetVsanUnmapEnabled"></a>
+
+```typescript
+public resetVsanUnmapEnabled(): void
+```
+
+##### `resetVsanVerboseModeEnabled` <a name="resetVsanVerboseModeEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetVsanVerboseModeEnabled"></a>
+
+```typescript
+public resetVsanVerboseModeEnabled(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -796,8 +859,17 @@ computeCluster.ComputeCluster.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaProviderIdsInput">proactiveHaProviderIdsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaSevereRemediationInput">proactiveHaSevereRemediationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.tagsInput">tagsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanCompressionEnabledInput">vsanCompressionEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDedupEnabledInput">vsanDedupEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDiskGroupInput">vsanDiskGroupInput</a></code> | <code>cdktf.IResolvable \| @cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDitEncryptionEnabledInput">vsanDitEncryptionEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDitRekeyIntervalInput">vsanDitRekeyIntervalInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanEnabledInput">vsanEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanNetworkDiagnosticModeEnabledInput">vsanNetworkDiagnosticModeEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanPerformanceEnabledInput">vsanPerformanceEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanRemoteDatastoreIdsInput">vsanRemoteDatastoreIdsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanUnmapEnabledInput">vsanUnmapEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanVerboseModeEnabledInput">vsanVerboseModeEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.customAttributes">customAttributes</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.datacenterId">datacenterId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.dpmAutomationLevel">dpmAutomationLevel</a></code> | <code>string</code> | *No description.* |
@@ -853,7 +925,16 @@ computeCluster.ComputeCluster.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaProviderIds">proactiveHaProviderIds</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaSevereRemediation">proactiveHaSevereRemediation</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.tags">tags</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanCompressionEnabled">vsanCompressionEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDedupEnabled">vsanDedupEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDitEncryptionEnabled">vsanDitEncryptionEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDitRekeyInterval">vsanDitRekeyInterval</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanEnabled">vsanEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanNetworkDiagnosticModeEnabled">vsanNetworkDiagnosticModeEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanPerformanceEnabled">vsanPerformanceEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanRemoteDatastoreIds">vsanRemoteDatastoreIds</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanUnmapEnabled">vsanUnmapEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanVerboseModeEnabled">vsanVerboseModeEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1569,6 +1650,26 @@ public readonly tagsInput: string[];
 
 ---
 
+##### `vsanCompressionEnabledInput`<sup>Optional</sup> <a name="vsanCompressionEnabledInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanCompressionEnabledInput"></a>
+
+```typescript
+public readonly vsanCompressionEnabledInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `vsanDedupEnabledInput`<sup>Optional</sup> <a name="vsanDedupEnabledInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDedupEnabledInput"></a>
+
+```typescript
+public readonly vsanDedupEnabledInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `vsanDiskGroupInput`<sup>Optional</sup> <a name="vsanDiskGroupInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDiskGroupInput"></a>
 
 ```typescript
@@ -1579,10 +1680,80 @@ public readonly vsanDiskGroupInput: IResolvable | ComputeClusterVsanDiskGroup[];
 
 ---
 
+##### `vsanDitEncryptionEnabledInput`<sup>Optional</sup> <a name="vsanDitEncryptionEnabledInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDitEncryptionEnabledInput"></a>
+
+```typescript
+public readonly vsanDitEncryptionEnabledInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `vsanDitRekeyIntervalInput`<sup>Optional</sup> <a name="vsanDitRekeyIntervalInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDitRekeyIntervalInput"></a>
+
+```typescript
+public readonly vsanDitRekeyIntervalInput: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `vsanEnabledInput`<sup>Optional</sup> <a name="vsanEnabledInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanEnabledInput"></a>
 
 ```typescript
 public readonly vsanEnabledInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `vsanNetworkDiagnosticModeEnabledInput`<sup>Optional</sup> <a name="vsanNetworkDiagnosticModeEnabledInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanNetworkDiagnosticModeEnabledInput"></a>
+
+```typescript
+public readonly vsanNetworkDiagnosticModeEnabledInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `vsanPerformanceEnabledInput`<sup>Optional</sup> <a name="vsanPerformanceEnabledInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanPerformanceEnabledInput"></a>
+
+```typescript
+public readonly vsanPerformanceEnabledInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `vsanRemoteDatastoreIdsInput`<sup>Optional</sup> <a name="vsanRemoteDatastoreIdsInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanRemoteDatastoreIdsInput"></a>
+
+```typescript
+public readonly vsanRemoteDatastoreIdsInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `vsanUnmapEnabledInput`<sup>Optional</sup> <a name="vsanUnmapEnabledInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanUnmapEnabledInput"></a>
+
+```typescript
+public readonly vsanUnmapEnabledInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `vsanVerboseModeEnabledInput`<sup>Optional</sup> <a name="vsanVerboseModeEnabledInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanVerboseModeEnabledInput"></a>
+
+```typescript
+public readonly vsanVerboseModeEnabledInput: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
@@ -2139,10 +2310,100 @@ public readonly tags: string[];
 
 ---
 
+##### `vsanCompressionEnabled`<sup>Required</sup> <a name="vsanCompressionEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanCompressionEnabled"></a>
+
+```typescript
+public readonly vsanCompressionEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `vsanDedupEnabled`<sup>Required</sup> <a name="vsanDedupEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDedupEnabled"></a>
+
+```typescript
+public readonly vsanDedupEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `vsanDitEncryptionEnabled`<sup>Required</sup> <a name="vsanDitEncryptionEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDitEncryptionEnabled"></a>
+
+```typescript
+public readonly vsanDitEncryptionEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `vsanDitRekeyInterval`<sup>Required</sup> <a name="vsanDitRekeyInterval" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDitRekeyInterval"></a>
+
+```typescript
+public readonly vsanDitRekeyInterval: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `vsanEnabled`<sup>Required</sup> <a name="vsanEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanEnabled"></a>
 
 ```typescript
 public readonly vsanEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `vsanNetworkDiagnosticModeEnabled`<sup>Required</sup> <a name="vsanNetworkDiagnosticModeEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanNetworkDiagnosticModeEnabled"></a>
+
+```typescript
+public readonly vsanNetworkDiagnosticModeEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `vsanPerformanceEnabled`<sup>Required</sup> <a name="vsanPerformanceEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanPerformanceEnabled"></a>
+
+```typescript
+public readonly vsanPerformanceEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `vsanRemoteDatastoreIds`<sup>Required</sup> <a name="vsanRemoteDatastoreIds" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanRemoteDatastoreIds"></a>
+
+```typescript
+public readonly vsanRemoteDatastoreIds: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `vsanUnmapEnabled`<sup>Required</sup> <a name="vsanUnmapEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanUnmapEnabled"></a>
+
+```typescript
+public readonly vsanUnmapEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `vsanVerboseModeEnabled`<sup>Required</sup> <a name="vsanVerboseModeEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanVerboseModeEnabled"></a>
+
+```typescript
+public readonly vsanVerboseModeEnabled: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
@@ -24234,6 +24495,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.resetEnableLogging">resetEnableLogging</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.resetEptRviMode">resetEptRviMode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.resetExtraConfig">resetExtraConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.resetExtraConfigRebootRequired">resetExtraConfigRebootRequired</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.resetFirmware">resetFirmware</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.resetGuestId">resetGuestId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.resetHardwareVersion">resetHardwareVersion</a></code> | *No description.* |
@@ -24575,6 +24837,12 @@ public resetEptRviMode(): void
 public resetExtraConfig(): void
 ```
 
+##### `resetExtraConfigRebootRequired` <a name="resetExtraConfigRebootRequired" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.resetExtraConfigRebootRequired"></a>
+
+```typescript
+public resetExtraConfigRebootRequired(): void
+```
+
 ##### `resetFirmware` <a name="resetFirmware" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.resetFirmware"></a>
 
 ```typescript
@@ -24893,6 +25161,7 @@ dataVsphereVirtualMachine.DataVsphereVirtualMachine.isTerraformDataSource(x: any
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.enableLoggingInput">enableLoggingInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.eptRviModeInput">eptRviModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.extraConfigInput">extraConfigInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.extraConfigRebootRequiredInput">extraConfigRebootRequiredInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.firmwareInput">firmwareInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.guestIdInput">guestIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.hardwareVersionInput">hardwareVersionInput</a></code> | <code>number</code> | *No description.* |
@@ -24945,6 +25214,7 @@ dataVsphereVirtualMachine.DataVsphereVirtualMachine.isTerraformDataSource(x: any
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.enableLogging">enableLogging</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.eptRviMode">eptRviMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.extraConfig">extraConfig</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.extraConfigRebootRequired">extraConfigRebootRequired</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.firmware">firmware</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.guestId">guestId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.hardwareVersion">hardwareVersion</a></code> | <code>number</code> | *No description.* |
@@ -25380,6 +25650,16 @@ public readonly extraConfigInput: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: string}
+
+---
+
+##### `extraConfigRebootRequiredInput`<sup>Optional</sup> <a name="extraConfigRebootRequiredInput" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.extraConfigRebootRequiredInput"></a>
+
+```typescript
+public readonly extraConfigRebootRequiredInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -25900,6 +26180,16 @@ public readonly extraConfig: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: string}
+
+---
+
+##### `extraConfigRebootRequired`<sup>Required</sup> <a name="extraConfigRebootRequired" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.extraConfigRebootRequired"></a>
+
+```typescript
+public readonly extraConfigRebootRequired: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -38265,6 +38555,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitch.resetShapingBurstSize">resetShapingBurstSize</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitch.resetShapingEnabled">resetShapingEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitch.resetShapingPeakBandwidth">resetShapingPeakBandwidth</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitch.resetStandbyNics">resetStandbyNics</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitch.resetTeamingPolicy">resetTeamingPolicy</a></code> | *No description.* |
 
 ---
@@ -38547,6 +38838,12 @@ public resetShapingEnabled(): void
 
 ```typescript
 public resetShapingPeakBandwidth(): void
+```
+
+##### `resetStandbyNics` <a name="resetStandbyNics" id="@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitch.resetStandbyNics"></a>
+
+```typescript
+public resetStandbyNics(): void
 ```
 
 ##### `resetTeamingPolicy` <a name="resetTeamingPolicy" id="@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitch.resetTeamingPolicy"></a>
@@ -46829,6 +47126,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.resetEnableLogging">resetEnableLogging</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.resetEptRviMode">resetEptRviMode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.resetExtraConfig">resetExtraConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.resetExtraConfigRebootRequired">resetExtraConfigRebootRequired</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.resetFirmware">resetFirmware</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.resetFolder">resetFolder</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.resetForcePowerOff">resetForcePowerOff</a></code> | *No description.* |
@@ -47067,12 +47365,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 ##### `putCdrom` <a name="putCdrom" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.putCdrom"></a>
 
 ```typescript
-public putCdrom(value: VirtualMachineCdrom): void
+public putCdrom(value: IResolvable | VirtualMachineCdrom[]): void
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.putCdrom.parameter.value"></a>
 
-- *Type:* @cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom
+- *Type:* cdktf.IResolvable | @cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom[]
 
 ---
 
@@ -47278,6 +47576,12 @@ public resetEptRviMode(): void
 
 ```typescript
 public resetExtraConfig(): void
+```
+
+##### `resetExtraConfigRebootRequired` <a name="resetExtraConfigRebootRequired" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.resetExtraConfigRebootRequired"></a>
+
+```typescript
+public resetExtraConfigRebootRequired(): void
 ```
 
 ##### `resetFirmware` <a name="resetFirmware" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.resetFirmware"></a>
@@ -47656,7 +47960,7 @@ virtualMachine.VirtualMachine.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cdrom">cdrom</a></code> | <code>@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cdrom">cdrom</a></code> | <code>@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.changeVersion">changeVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.clone">clone</a></code> | <code>@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.defaultIpAddress">defaultIpAddress</a></code> | <code>string</code> | *No description.* |
@@ -47678,7 +47982,7 @@ virtualMachine.VirtualMachine.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.bootDelayInput">bootDelayInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.bootRetryDelayInput">bootRetryDelayInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.bootRetryEnabledInput">bootRetryEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cdromInput">cdromInput</a></code> | <code>@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cdromInput">cdromInput</a></code> | <code>cdktf.IResolvable \| @cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cloneInput">cloneInput</a></code> | <code>@cdktf/provider-vsphere.virtualMachine.VirtualMachineClone</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cpuHotAddEnabledInput">cpuHotAddEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cpuHotRemoveEnabledInput">cpuHotRemoveEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -47697,6 +48001,7 @@ virtualMachine.VirtualMachine.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.enableLoggingInput">enableLoggingInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.eptRviModeInput">eptRviModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.extraConfigInput">extraConfigInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.extraConfigRebootRequiredInput">extraConfigRebootRequiredInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.firmwareInput">firmwareInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.folderInput">folderInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.forcePowerOffInput">forcePowerOffInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -47768,6 +48073,7 @@ virtualMachine.VirtualMachine.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.enableLogging">enableLogging</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.eptRviMode">eptRviMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.extraConfig">extraConfig</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.extraConfigRebootRequired">extraConfigRebootRequired</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.firmware">firmware</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.folder">folder</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.forcePowerOff">forcePowerOff</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -47963,10 +48269,10 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 ##### `cdrom`<sup>Required</sup> <a name="cdrom" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cdrom"></a>
 
 ```typescript
-public readonly cdrom: VirtualMachineCdromOutputReference;
+public readonly cdrom: VirtualMachineCdromList;
 ```
 
-- *Type:* @cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference
+- *Type:* @cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList
 
 ---
 
@@ -48183,10 +48489,10 @@ public readonly bootRetryEnabledInput: boolean | IResolvable;
 ##### `cdromInput`<sup>Optional</sup> <a name="cdromInput" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cdromInput"></a>
 
 ```typescript
-public readonly cdromInput: VirtualMachineCdrom;
+public readonly cdromInput: IResolvable | VirtualMachineCdrom[];
 ```
 
-- *Type:* @cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom
+- *Type:* cdktf.IResolvable | @cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom[]
 
 ---
 
@@ -48367,6 +48673,16 @@ public readonly extraConfigInput: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: string}
+
+---
+
+##### `extraConfigRebootRequiredInput`<sup>Optional</sup> <a name="extraConfigRebootRequiredInput" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.extraConfigRebootRequiredInput"></a>
+
+```typescript
+public readonly extraConfigRebootRequiredInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -49077,6 +49393,16 @@ public readonly extraConfig: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: string}
+
+---
+
+##### `extraConfigRebootRequired`<sup>Required</sup> <a name="extraConfigRebootRequired" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.extraConfigRebootRequired"></a>
+
+```typescript
+public readonly extraConfigRebootRequired: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -53261,8 +53587,17 @@ const computeClusterConfig: computeCluster.ComputeClusterConfig = { ... }
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.proactiveHaProviderIds">proactiveHaProviderIds</a></code> | <code>string[]</code> | The list of IDs for health update providers configured for this cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.proactiveHaSevereRemediation">proactiveHaSevereRemediation</a></code> | <code>string</code> | The configured remediation for severely degraded hosts. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.tags">tags</a></code> | <code>string[]</code> | A list of tag IDs to apply to this object. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanCompressionEnabled">vsanCompressionEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the vSAN compression service is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanDedupEnabled">vsanDedupEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the vSAN deduplication service is enabled for the cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanDiskGroup">vsanDiskGroup</a></code> | <code>cdktf.IResolvable \| @cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup[]</code> | vsan_disk_group block. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanEnabled">vsanEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the VSAN service is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanDitEncryptionEnabled">vsanDitEncryptionEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the vSAN data-in-transit encryption is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanDitRekeyInterval">vsanDitRekeyInterval</a></code> | <code>number</code> | When vsan_dit_encryption_enabled is enabled, sets the rekey interval of data-in-transit encryption (in minutes). |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanEnabled">vsanEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the vSAN service is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanNetworkDiagnosticModeEnabled">vsanNetworkDiagnosticModeEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the vSAN network diagnostic mode is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanPerformanceEnabled">vsanPerformanceEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the vSAN performance service is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanRemoteDatastoreIds">vsanRemoteDatastoreIds</a></code> | <code>string[]</code> | The managed object IDs of the vSAN datastore to be mounted on the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanUnmapEnabled">vsanUnmapEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the vSAN unmap service is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanVerboseModeEnabled">vsanVerboseModeEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the vSAN verbose mode is enabled for the cluster. |
 
 ---
 
@@ -54153,6 +54488,34 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphe
 
 ---
 
+##### `vsanCompressionEnabled`<sup>Optional</sup> <a name="vsanCompressionEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanCompressionEnabled"></a>
+
+```typescript
+public readonly vsanCompressionEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Whether the vSAN compression service is enabled for the cluster.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_compression_enabled ComputeCluster#vsan_compression_enabled}
+
+---
+
+##### `vsanDedupEnabled`<sup>Optional</sup> <a name="vsanDedupEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanDedupEnabled"></a>
+
+```typescript
+public readonly vsanDedupEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Whether the vSAN deduplication service is enabled for the cluster.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_dedup_enabled ComputeCluster#vsan_dedup_enabled}
+
+---
+
 ##### `vsanDiskGroup`<sup>Optional</sup> <a name="vsanDiskGroup" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanDiskGroup"></a>
 
 ```typescript
@@ -54167,6 +54530,34 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphe
 
 ---
 
+##### `vsanDitEncryptionEnabled`<sup>Optional</sup> <a name="vsanDitEncryptionEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanDitEncryptionEnabled"></a>
+
+```typescript
+public readonly vsanDitEncryptionEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Whether the vSAN data-in-transit encryption is enabled for the cluster.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_dit_encryption_enabled ComputeCluster#vsan_dit_encryption_enabled}
+
+---
+
+##### `vsanDitRekeyInterval`<sup>Optional</sup> <a name="vsanDitRekeyInterval" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanDitRekeyInterval"></a>
+
+```typescript
+public readonly vsanDitRekeyInterval: number;
+```
+
+- *Type:* number
+
+When vsan_dit_encryption_enabled is enabled, sets the rekey interval of data-in-transit encryption (in minutes).
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_dit_rekey_interval ComputeCluster#vsan_dit_rekey_interval}
+
+---
+
 ##### `vsanEnabled`<sup>Optional</sup> <a name="vsanEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanEnabled"></a>
 
 ```typescript
@@ -54175,9 +54566,79 @@ public readonly vsanEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Whether the VSAN service is enabled for the cluster.
+Whether the vSAN service is enabled for the cluster.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_enabled ComputeCluster#vsan_enabled}
+
+---
+
+##### `vsanNetworkDiagnosticModeEnabled`<sup>Optional</sup> <a name="vsanNetworkDiagnosticModeEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanNetworkDiagnosticModeEnabled"></a>
+
+```typescript
+public readonly vsanNetworkDiagnosticModeEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Whether the vSAN network diagnostic mode is enabled for the cluster.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_network_diagnostic_mode_enabled ComputeCluster#vsan_network_diagnostic_mode_enabled}
+
+---
+
+##### `vsanPerformanceEnabled`<sup>Optional</sup> <a name="vsanPerformanceEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanPerformanceEnabled"></a>
+
+```typescript
+public readonly vsanPerformanceEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Whether the vSAN performance service is enabled for the cluster.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_performance_enabled ComputeCluster#vsan_performance_enabled}
+
+---
+
+##### `vsanRemoteDatastoreIds`<sup>Optional</sup> <a name="vsanRemoteDatastoreIds" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanRemoteDatastoreIds"></a>
+
+```typescript
+public readonly vsanRemoteDatastoreIds: string[];
+```
+
+- *Type:* string[]
+
+The managed object IDs of the vSAN datastore to be mounted on the cluster.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_remote_datastore_ids ComputeCluster#vsan_remote_datastore_ids}
+
+---
+
+##### `vsanUnmapEnabled`<sup>Optional</sup> <a name="vsanUnmapEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanUnmapEnabled"></a>
+
+```typescript
+public readonly vsanUnmapEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Whether the vSAN unmap service is enabled for the cluster.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_unmap_enabled ComputeCluster#vsan_unmap_enabled}
+
+---
+
+##### `vsanVerboseModeEnabled`<sup>Optional</sup> <a name="vsanVerboseModeEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanVerboseModeEnabled"></a>
+
+```typescript
+public readonly vsanVerboseModeEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Whether the vSAN verbose mode is enabled for the cluster.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_verbose_mode_enabled ComputeCluster#vsan_verbose_mode_enabled}
 
 ---
 
@@ -57662,7 +58123,7 @@ public readonly name: string;
 
 The name of the datacenter.
 
-This can be a name or path.	Can be omitted if there is only one datacenter in your inventory.
+This can be a name or path. Can be omitted if there is only one datacenter in your inventory.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/datacenter#name DataVsphereDatacenter#name}
 
@@ -60306,6 +60767,7 @@ const dataVsphereVirtualMachineConfig: dataVsphereVirtualMachine.DataVsphereVirt
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.enableLogging">enableLogging</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable logging on this virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.eptRviMode">eptRviMode</a></code> | <code>string</code> | The EPT/RVI (hardware memory virtualization) setting for this virtual machine. Can be one of automatic, on, or off. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.extraConfig">extraConfig</a></code> | <code>{[ key: string ]: string}</code> | Extra configuration data for this virtual machine. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.extraConfigRebootRequired">extraConfigRebootRequired</a></code> | <code>boolean \| cdktf.IResolvable</code> | Allow the virtual machine to be rebooted when a change to `extra_config` occurs. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.firmware">firmware</a></code> | <code>string</code> | The firmware interface to use on the virtual machine. Can be one of bios or efi. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.guestId">guestId</a></code> | <code>string</code> | The guest ID for the operating system. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.hardwareVersion">hardwareVersion</a></code> | <code>number</code> | The hardware version for the virtual machine. |
@@ -60666,6 +61128,20 @@ Extra configuration data for this virtual machine.
 Can be used to supply advanced parameters not normally in configuration, such as instance metadata, or configuration data for OVF images.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/virtual_machine#extra_config DataVsphereVirtualMachine#extra_config}
+
+---
+
+##### `extraConfigRebootRequired`<sup>Optional</sup> <a name="extraConfigRebootRequired" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.extraConfigRebootRequired"></a>
+
+```typescript
+public readonly extraConfigRebootRequired: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Allow the virtual machine to be rebooted when a change to `extra_config` occurs.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/virtual_machine#extra_config_reboot_required DataVsphereVirtualMachine#extra_config_reboot_required}
 
 ---
 
@@ -62315,7 +62791,7 @@ const distributedVirtualSwitchConfig: distributedVirtualSwitch.DistributedVirtua
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.vdpReservationMbit">vdpReservationMbit</a></code> | <code>number</code> | The amount of guaranteed bandwidth for the vdp traffic class, in Mbits/sec. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.vdpShareCount">vdpShareCount</a></code> | <code>number</code> | The amount of shares to allocate to the vdp traffic class for a custom share level. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.vdpShareLevel">vdpShareLevel</a></code> | <code>string</code> | The allocation level for the vdp traffic class. Can be one of high, low, normal, or custom. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.version">version</a></code> | <code>string</code> | The version of this virtual switch. Allowed versions are 7.0.3, 7.0.0, 6.6.0, 6.5.0, 6.0.0, 5.5.0, 5.1.0, and 5.0.0. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.version">version</a></code> | <code>string</code> | The version of this virtual switch. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.virtualmachineMaximumMbit">virtualmachineMaximumMbit</a></code> | <code>number</code> | The maximum allowed usage for the virtualMachine traffic class, in Mbits/sec. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.virtualmachineReservationMbit">virtualmachineReservationMbit</a></code> | <code>number</code> | The amount of guaranteed bandwidth for the virtualMachine traffic class, in Mbits/sec. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.virtualmachineShareCount">virtualmachineShareCount</a></code> | <code>number</code> | The amount of shares to allocate to the virtualMachine traffic class for a custom share level. |
@@ -63542,7 +64018,9 @@ public readonly version: string;
 
 - *Type:* string
 
-The version of this virtual switch. Allowed versions are 7.0.3, 7.0.0, 6.6.0, 6.5.0, 6.0.0, 5.5.0, 5.1.0, and 5.0.0.
+The version of this virtual switch.
+
+Allowed versions are 8.0.0, 7.0.3, 7.0.2, 7.0.0, 6.6.0, 6.5.0, 6.0.0, 5.5.0, 5.1.0, and 5.0.0.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/distributed_virtual_switch#version DistributedVirtualSwitch#version}
 
@@ -65946,7 +66424,6 @@ const hostVirtualSwitchConfig: hostVirtualSwitch.HostVirtualSwitchConfig = { ...
 | <code><a href="#@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitchConfig.property.hostSystemId">hostSystemId</a></code> | <code>string</code> | The managed object ID of the host to set the virtual switch up on. |
 | <code><a href="#@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitchConfig.property.name">name</a></code> | <code>string</code> | The name of the virtual switch. |
 | <code><a href="#@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitchConfig.property.networkAdapters">networkAdapters</a></code> | <code>string[]</code> | The list of network adapters to bind to this virtual switch. |
-| <code><a href="#@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitchConfig.property.standbyNics">standbyNics</a></code> | <code>string[]</code> | List of standby network adapters used for failover. |
 | <code><a href="#@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitchConfig.property.allowForgedTransmits">allowForgedTransmits</a></code> | <code>boolean \| cdktf.IResolvable</code> | Controls whether or not the virtual network adapter is allowed to send network traffic with a different MAC address than that of its own. |
 | <code><a href="#@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitchConfig.property.allowMacChanges">allowMacChanges</a></code> | <code>boolean \| cdktf.IResolvable</code> | Controls whether or not the Media Access Control (MAC) address can be changed. |
 | <code><a href="#@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitchConfig.property.allowPromiscuous">allowPromiscuous</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable promiscuous mode on the network. |
@@ -65963,6 +66440,7 @@ const hostVirtualSwitchConfig: hostVirtualSwitch.HostVirtualSwitchConfig = { ...
 | <code><a href="#@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitchConfig.property.shapingBurstSize">shapingBurstSize</a></code> | <code>number</code> | The maximum burst size allowed in bytes if traffic shaping is enabled. |
 | <code><a href="#@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitchConfig.property.shapingEnabled">shapingEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable traffic shaping on this virtual switch or port group. |
 | <code><a href="#@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitchConfig.property.shapingPeakBandwidth">shapingPeakBandwidth</a></code> | <code>number</code> | The peak bandwidth during bursts in bits per second if traffic shaping is enabled. |
+| <code><a href="#@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitchConfig.property.standbyNics">standbyNics</a></code> | <code>string[]</code> | List of standby network adapters used for failover. |
 | <code><a href="#@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitchConfig.property.teamingPolicy">teamingPolicy</a></code> | <code>string</code> | The network adapter teaming policy. Can be one of loadbalance_ip, loadbalance_srcmac, loadbalance_srcid, or failover_explicit. |
 
 ---
@@ -66090,20 +66568,6 @@ public readonly networkAdapters: string[];
 The list of network adapters to bind to this virtual switch.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/host_virtual_switch#network_adapters HostVirtualSwitch#network_adapters}
-
----
-
-##### `standbyNics`<sup>Required</sup> <a name="standbyNics" id="@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitchConfig.property.standbyNics"></a>
-
-```typescript
-public readonly standbyNics: string[];
-```
-
-- *Type:* string[]
-
-List of standby network adapters used for failover.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/host_virtual_switch#standby_nics HostVirtualSwitch#standby_nics}
 
 ---
 
@@ -66333,6 +66797,20 @@ public readonly shapingPeakBandwidth: number;
 The peak bandwidth during bursts in bits per second if traffic shaping is enabled.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/host_virtual_switch#shaping_peak_bandwidth HostVirtualSwitch#shaping_peak_bandwidth}
+
+---
+
+##### `standbyNics`<sup>Optional</sup> <a name="standbyNics" id="@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitchConfig.property.standbyNics"></a>
+
+```typescript
+public readonly standbyNics: string[];
+```
+
+- *Type:* string[]
+
+List of standby network adapters used for failover.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/host_virtual_switch#standby_nics HostVirtualSwitch#standby_nics}
 
 ---
 
@@ -69348,7 +69826,7 @@ const virtualMachineConfig: virtualMachine.VirtualMachineConfig = { ... }
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.bootDelay">bootDelay</a></code> | <code>number</code> | The number of milliseconds to wait before starting the boot sequence. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.bootRetryDelay">bootRetryDelay</a></code> | <code>number</code> | The number of milliseconds to wait before retrying the boot sequence. This only valid if boot_retry_enabled is true. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.bootRetryEnabled">bootRetryEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, a virtual machine that fails to boot will try again after the delay defined in boot_retry_delay. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.cdrom">cdrom</a></code> | <code>@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom</code> | cdrom block. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.cdrom">cdrom</a></code> | <code>cdktf.IResolvable \| @cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom[]</code> | cdrom block. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.clone">clone</a></code> | <code>@cdktf/provider-vsphere.virtualMachine.VirtualMachineClone</code> | clone block. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.cpuHotAddEnabled">cpuHotAddEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Allow CPUs to be added to this virtual machine while it is running. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.cpuHotRemoveEnabled">cpuHotRemoveEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Allow CPUs to be added to this virtual machine while it is running. |
@@ -69367,6 +69845,7 @@ const virtualMachineConfig: virtualMachine.VirtualMachineConfig = { ... }
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.enableLogging">enableLogging</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable logging on this virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.eptRviMode">eptRviMode</a></code> | <code>string</code> | The EPT/RVI (hardware memory virtualization) setting for this virtual machine. Can be one of automatic, on, or off. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.extraConfig">extraConfig</a></code> | <code>{[ key: string ]: string}</code> | Extra configuration data for this virtual machine. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.extraConfigRebootRequired">extraConfigRebootRequired</a></code> | <code>boolean \| cdktf.IResolvable</code> | Allow the virtual machine to be rebooted when a change to `extra_config` occurs. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.firmware">firmware</a></code> | <code>string</code> | The firmware interface to use on the virtual machine. Can be one of bios or efi. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.folder">folder</a></code> | <code>string</code> | The name of the folder to locate the virtual machine in. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.forcePowerOff">forcePowerOff</a></code> | <code>boolean \| cdktf.IResolvable</code> | Set to true to force power-off a virtual machine if a graceful guest shutdown failed for a necessary operation. |
@@ -69589,10 +70068,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphe
 ##### `cdrom`<sup>Optional</sup> <a name="cdrom" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.cdrom"></a>
 
 ```typescript
-public readonly cdrom: VirtualMachineCdrom;
+public readonly cdrom: IResolvable | VirtualMachineCdrom[];
 ```
 
-- *Type:* @cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom
+- *Type:* cdktf.IResolvable | @cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom[]
 
 cdrom block.
 
@@ -69853,6 +70332,20 @@ Extra configuration data for this virtual machine.
 Can be used to supply advanced parameters not normally in configuration, such as instance metadata, or configuration data for OVF images.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/virtual_machine#extra_config VirtualMachine#extra_config}
+
+---
+
+##### `extraConfigRebootRequired`<sup>Optional</sup> <a name="extraConfigRebootRequired" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.extraConfigRebootRequired"></a>
+
+```typescript
+public readonly extraConfigRebootRequired: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Allow the virtual machine to be rebooted when a change to `extra_config` occurs.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/virtual_machine#extra_config_reboot_required VirtualMachine#extra_config_reboot_required}
 
 ---
 
@@ -70859,7 +71352,7 @@ const virtualMachineNetworkInterface: virtualMachine.VirtualMachineNetworkInterf
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface.property.networkId">networkId</a></code> | <code>string</code> | The ID of the network to connect this network interface to. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface.property.adapterType">adapterType</a></code> | <code>string</code> | The controller type. Can be one of e1000, e1000e, or vmxnet3. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface.property.adapterType">adapterType</a></code> | <code>string</code> | The controller type. Can be one of e1000, e1000e, vmxnet3, or vrdma. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface.property.bandwidthLimit">bandwidthLimit</a></code> | <code>number</code> | The upper bandwidth limit of this network interface, in Mbits/sec. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface.property.bandwidthReservation">bandwidthReservation</a></code> | <code>number</code> | The bandwidth reservation of this network interface, in Mbits/sec. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface.property.bandwidthShareCount">bandwidthShareCount</a></code> | <code>number</code> | The share count for this network interface when the share level is custom. |
@@ -70892,7 +71385,7 @@ public readonly adapterType: string;
 
 - *Type:* string
 
-The controller type. Can be one of e1000, e1000e, or vmxnet3.
+The controller type. Can be one of e1000, e1000e, vmxnet3, or vrdma.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/virtual_machine#adapter_type VirtualMachine#adapter_type}
 
@@ -77693,6 +78186,149 @@ public readonly internalValue: HostPortGroupPorts;
 ---
 
 
+### VirtualMachineCdromList <a name="VirtualMachineCdromList" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList.Initializer"></a>
+
+```typescript
+import { virtualMachine } from '@cdktf/provider-vsphere'
+
+new virtualMachine.VirtualMachineCdromList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList.get">get</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList.get"></a>
+
+```typescript
+public get(index: number): VirtualMachineCdromOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| @cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | VirtualMachineCdrom[];
+```
+
+- *Type:* cdktf.IResolvable | @cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom[]
+
+---
+
+
 ### VirtualMachineCdromOutputReference <a name="VirtualMachineCdromOutputReference" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.Initializer"></a>
@@ -77700,13 +78336,15 @@ public readonly internalValue: HostPortGroupPorts;
 ```typescript
 import { virtualMachine } from '@cdktf/provider-vsphere'
 
-new virtualMachine.VirtualMachineCdromOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+new virtualMachine.VirtualMachineCdromOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -77723,6 +78361,22 @@ The parent resource.
 - *Type:* string
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -77932,7 +78586,7 @@ public resetPath(): void
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.property.clientDevice">clientDevice</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.property.datastoreId">datastoreId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.property.path">path</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.property.internalValue">internalValue</a></code> | <code>@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.property.internalValue">internalValue</a></code> | <code>@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -78043,10 +78697,10 @@ public readonly path: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: VirtualMachineCdrom;
+public readonly internalValue: VirtualMachineCdrom | IResolvable;
 ```
 
-- *Type:* @cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom
+- *Type:* @cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom | cdktf.IResolvable
 
 ---
 

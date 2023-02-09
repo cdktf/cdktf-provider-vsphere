@@ -15,7 +15,7 @@ export interface DataVsphereDatacenterConfig extends cdktf.TerraformMetaArgument
   */
   readonly id?: string;
   /**
-  * The name of the datacenter. This can be a name or path.	Can be omitted if there is only one datacenter in your inventory.
+  * The name of the datacenter. This can be a name or path. Can be omitted if there is only one datacenter in your inventory.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/datacenter#name DataVsphereDatacenter#name}
   */
@@ -48,7 +48,7 @@ export class DataVsphereDatacenter extends cdktf.TerraformDataSource {
       terraformResourceType: 'vsphere_datacenter',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.2.0',
+        providerVersion: '2.3.1',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,

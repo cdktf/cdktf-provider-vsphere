@@ -60,7 +60,7 @@ export class DataVsphereVmfsDisks extends cdktf.TerraformDataSource {
       terraformResourceType: 'vsphere_vmfs_disks',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.2.0',
+        providerVersion: '2.3.1',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,

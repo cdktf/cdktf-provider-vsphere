@@ -134,6 +134,12 @@ export interface VirtualMachineConfig extends cdktf.TerraformMetaArguments {
   */
   readonly extraConfig?: { [key: string]: string };
   /**
+  * Allow the virtual machine to be rebooted when a change to `extra_config` occurs.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/virtual_machine#extra_config_reboot_required VirtualMachine#extra_config_reboot_required}
+  */
+  readonly extraConfigRebootRequired?: boolean | cdktf.IResolvable;
+  /**
   * The firmware interface to use on the virtual machine. Can be one of bios or efi.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/virtual_machine#firmware VirtualMachine#firmware}
@@ -421,7 +427,7 @@ export interface VirtualMachineConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/virtual_machine#cdrom VirtualMachine#cdrom}
   */
-  readonly cdrom?: VirtualMachineCdrom;
+  readonly cdrom?: VirtualMachineCdrom[] | cdktf.IResolvable;
   /**
   * clone block
   * 
@@ -474,7 +480,7 @@ export interface VirtualMachineCdrom {
   readonly path?: string;
 }
 
-export function virtualMachineCdromToTerraform(struct?: VirtualMachineCdromOutputReference | VirtualMachineCdrom): any {
+export function virtualMachineCdromToTerraform(struct?: VirtualMachineCdrom | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -488,16 +494,22 @@ export function virtualMachineCdromToTerraform(struct?: VirtualMachineCdromOutpu
 
 export class VirtualMachineCdromOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VirtualMachineCdrom | undefined {
+  public get internalValue(): VirtualMachineCdrom | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._clientDevice !== undefined) {
@@ -515,15 +527,21 @@ export class VirtualMachineCdromOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VirtualMachineCdrom | undefined) {
+  public set internalValue(value: VirtualMachineCdrom | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._clientDevice = undefined;
       this._datastoreId = undefined;
       this._path = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._clientDevice = value.clientDevice;
       this._datastoreId = value.datastoreId;
       this._path = value.path;
@@ -586,6 +604,26 @@ export class VirtualMachineCdromOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get pathInput() {
     return this._path;
+  }
+}
+
+export class VirtualMachineCdromList extends cdktf.ComplexList {
+  public internalValue? : VirtualMachineCdrom[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): VirtualMachineCdromOutputReference {
+    return new VirtualMachineCdromOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface VirtualMachineCloneCustomizeLinuxOptions {
@@ -2535,7 +2573,7 @@ export class VirtualMachineDiskList extends cdktf.ComplexList {
 }
 export interface VirtualMachineNetworkInterface {
   /**
-  * The controller type. Can be one of e1000, e1000e, or vmxnet3.
+  * The controller type. Can be one of e1000, e1000e, vmxnet3, or vrdma.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/virtual_machine#adapter_type VirtualMachine#adapter_type}
   */
@@ -3264,7 +3302,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
       terraformResourceType: 'vsphere_virtual_machine',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.2.0',
+        providerVersion: '2.3.1',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,
@@ -3296,6 +3334,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
     this._enableLogging = config.enableLogging;
     this._eptRviMode = config.eptRviMode;
     this._extraConfig = config.extraConfig;
+    this._extraConfigRebootRequired = config.extraConfigRebootRequired;
     this._firmware = config.firmware;
     this._folder = config.folder;
     this._forcePowerOff = config.forcePowerOff;
@@ -3699,6 +3738,22 @@ export class VirtualMachine extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get extraConfigInput() {
     return this._extraConfig;
+  }
+
+  // extra_config_reboot_required - computed: false, optional: true, required: false
+  private _extraConfigRebootRequired?: boolean | cdktf.IResolvable; 
+  public get extraConfigRebootRequired() {
+    return this.getBooleanAttribute('extra_config_reboot_required');
+  }
+  public set extraConfigRebootRequired(value: boolean | cdktf.IResolvable) {
+    this._extraConfigRebootRequired = value;
+  }
+  public resetExtraConfigRebootRequired() {
+    this._extraConfigRebootRequired = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get extraConfigRebootRequiredInput() {
+    return this._extraConfigRebootRequired;
   }
 
   // firmware - computed: false, optional: true, required: false
@@ -4493,11 +4548,11 @@ export class VirtualMachine extends cdktf.TerraformResource {
   }
 
   // cdrom - computed: false, optional: true, required: false
-  private _cdrom = new VirtualMachineCdromOutputReference(this, "cdrom");
+  private _cdrom = new VirtualMachineCdromList(this, "cdrom", false);
   public get cdrom() {
     return this._cdrom;
   }
-  public putCdrom(value: VirtualMachineCdrom) {
+  public putCdrom(value: VirtualMachineCdrom[] | cdktf.IResolvable) {
     this._cdrom.internalValue = value;
   }
   public resetCdrom() {
@@ -4615,6 +4670,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
       enable_logging: cdktf.booleanToTerraform(this._enableLogging),
       ept_rvi_mode: cdktf.stringToTerraform(this._eptRviMode),
       extra_config: cdktf.hashMapper(cdktf.stringToTerraform)(this._extraConfig),
+      extra_config_reboot_required: cdktf.booleanToTerraform(this._extraConfigRebootRequired),
       firmware: cdktf.stringToTerraform(this._firmware),
       folder: cdktf.stringToTerraform(this._folder),
       force_power_off: cdktf.booleanToTerraform(this._forcePowerOff),
@@ -4662,7 +4718,7 @@ export class VirtualMachine extends cdktf.TerraformResource {
       wait_for_guest_ip_timeout: cdktf.numberToTerraform(this._waitForGuestIpTimeout),
       wait_for_guest_net_routable: cdktf.booleanToTerraform(this._waitForGuestNetRoutable),
       wait_for_guest_net_timeout: cdktf.numberToTerraform(this._waitForGuestNetTimeout),
-      cdrom: virtualMachineCdromToTerraform(this._cdrom.internalValue),
+      cdrom: cdktf.listMapper(virtualMachineCdromToTerraform, true)(this._cdrom.internalValue),
       clone: virtualMachineCloneToTerraform(this._clone.internalValue),
       disk: cdktf.listMapper(virtualMachineDiskToTerraform, true)(this._disk.internalValue),
       network_interface: cdktf.listMapper(virtualMachineNetworkInterfaceToTerraform, true)(this._networkInterface.internalValue),

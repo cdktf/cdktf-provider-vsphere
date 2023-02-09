@@ -339,11 +339,65 @@ export interface ComputeClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly tags?: string[];
   /**
-  * Whether the VSAN service is enabled for the cluster.
+  * Whether the vSAN compression service is enabled for the cluster.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_compression_enabled ComputeCluster#vsan_compression_enabled}
+  */
+  readonly vsanCompressionEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Whether the vSAN deduplication service is enabled for the cluster.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_dedup_enabled ComputeCluster#vsan_dedup_enabled}
+  */
+  readonly vsanDedupEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Whether the vSAN data-in-transit encryption is enabled for the cluster.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_dit_encryption_enabled ComputeCluster#vsan_dit_encryption_enabled}
+  */
+  readonly vsanDitEncryptionEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * When vsan_dit_encryption_enabled is enabled, sets the rekey interval of data-in-transit encryption (in minutes).
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_dit_rekey_interval ComputeCluster#vsan_dit_rekey_interval}
+  */
+  readonly vsanDitRekeyInterval?: number;
+  /**
+  * Whether the vSAN service is enabled for the cluster.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_enabled ComputeCluster#vsan_enabled}
   */
   readonly vsanEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Whether the vSAN network diagnostic mode is enabled for the cluster.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_network_diagnostic_mode_enabled ComputeCluster#vsan_network_diagnostic_mode_enabled}
+  */
+  readonly vsanNetworkDiagnosticModeEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Whether the vSAN performance service is enabled for the cluster.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_performance_enabled ComputeCluster#vsan_performance_enabled}
+  */
+  readonly vsanPerformanceEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * The managed object IDs of the vSAN datastore to be mounted on the cluster.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_remote_datastore_ids ComputeCluster#vsan_remote_datastore_ids}
+  */
+  readonly vsanRemoteDatastoreIds?: string[];
+  /**
+  * Whether the vSAN unmap service is enabled for the cluster.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_unmap_enabled ComputeCluster#vsan_unmap_enabled}
+  */
+  readonly vsanUnmapEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Whether the vSAN verbose mode is enabled for the cluster.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster#vsan_verbose_mode_enabled ComputeCluster#vsan_verbose_mode_enabled}
+  */
+  readonly vsanVerboseModeEnabled?: boolean | cdktf.IResolvable;
   /**
   * vsan_disk_group block
   * 
@@ -506,7 +560,7 @@ export class ComputeCluster extends cdktf.TerraformResource {
       terraformResourceType: 'vsphere_compute_cluster',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.2.0',
+        providerVersion: '2.3.1',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,
@@ -572,7 +626,16 @@ export class ComputeCluster extends cdktf.TerraformResource {
     this._proactiveHaProviderIds = config.proactiveHaProviderIds;
     this._proactiveHaSevereRemediation = config.proactiveHaSevereRemediation;
     this._tags = config.tags;
+    this._vsanCompressionEnabled = config.vsanCompressionEnabled;
+    this._vsanDedupEnabled = config.vsanDedupEnabled;
+    this._vsanDitEncryptionEnabled = config.vsanDitEncryptionEnabled;
+    this._vsanDitRekeyInterval = config.vsanDitRekeyInterval;
     this._vsanEnabled = config.vsanEnabled;
+    this._vsanNetworkDiagnosticModeEnabled = config.vsanNetworkDiagnosticModeEnabled;
+    this._vsanPerformanceEnabled = config.vsanPerformanceEnabled;
+    this._vsanRemoteDatastoreIds = config.vsanRemoteDatastoreIds;
+    this._vsanUnmapEnabled = config.vsanUnmapEnabled;
+    this._vsanVerboseModeEnabled = config.vsanVerboseModeEnabled;
     this._vsanDiskGroup.internalValue = config.vsanDiskGroup;
   }
 
@@ -1459,7 +1522,71 @@ export class ComputeCluster extends cdktf.TerraformResource {
     return this._tags;
   }
 
-  // vsan_enabled - computed: true, optional: true, required: false
+  // vsan_compression_enabled - computed: false, optional: true, required: false
+  private _vsanCompressionEnabled?: boolean | cdktf.IResolvable; 
+  public get vsanCompressionEnabled() {
+    return this.getBooleanAttribute('vsan_compression_enabled');
+  }
+  public set vsanCompressionEnabled(value: boolean | cdktf.IResolvable) {
+    this._vsanCompressionEnabled = value;
+  }
+  public resetVsanCompressionEnabled() {
+    this._vsanCompressionEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vsanCompressionEnabledInput() {
+    return this._vsanCompressionEnabled;
+  }
+
+  // vsan_dedup_enabled - computed: false, optional: true, required: false
+  private _vsanDedupEnabled?: boolean | cdktf.IResolvable; 
+  public get vsanDedupEnabled() {
+    return this.getBooleanAttribute('vsan_dedup_enabled');
+  }
+  public set vsanDedupEnabled(value: boolean | cdktf.IResolvable) {
+    this._vsanDedupEnabled = value;
+  }
+  public resetVsanDedupEnabled() {
+    this._vsanDedupEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vsanDedupEnabledInput() {
+    return this._vsanDedupEnabled;
+  }
+
+  // vsan_dit_encryption_enabled - computed: false, optional: true, required: false
+  private _vsanDitEncryptionEnabled?: boolean | cdktf.IResolvable; 
+  public get vsanDitEncryptionEnabled() {
+    return this.getBooleanAttribute('vsan_dit_encryption_enabled');
+  }
+  public set vsanDitEncryptionEnabled(value: boolean | cdktf.IResolvable) {
+    this._vsanDitEncryptionEnabled = value;
+  }
+  public resetVsanDitEncryptionEnabled() {
+    this._vsanDitEncryptionEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vsanDitEncryptionEnabledInput() {
+    return this._vsanDitEncryptionEnabled;
+  }
+
+  // vsan_dit_rekey_interval - computed: true, optional: true, required: false
+  private _vsanDitRekeyInterval?: number; 
+  public get vsanDitRekeyInterval() {
+    return this.getNumberAttribute('vsan_dit_rekey_interval');
+  }
+  public set vsanDitRekeyInterval(value: number) {
+    this._vsanDitRekeyInterval = value;
+  }
+  public resetVsanDitRekeyInterval() {
+    this._vsanDitRekeyInterval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vsanDitRekeyIntervalInput() {
+    return this._vsanDitRekeyInterval;
+  }
+
+  // vsan_enabled - computed: false, optional: true, required: false
   private _vsanEnabled?: boolean | cdktf.IResolvable; 
   public get vsanEnabled() {
     return this.getBooleanAttribute('vsan_enabled');
@@ -1473,6 +1600,86 @@ export class ComputeCluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get vsanEnabledInput() {
     return this._vsanEnabled;
+  }
+
+  // vsan_network_diagnostic_mode_enabled - computed: false, optional: true, required: false
+  private _vsanNetworkDiagnosticModeEnabled?: boolean | cdktf.IResolvable; 
+  public get vsanNetworkDiagnosticModeEnabled() {
+    return this.getBooleanAttribute('vsan_network_diagnostic_mode_enabled');
+  }
+  public set vsanNetworkDiagnosticModeEnabled(value: boolean | cdktf.IResolvable) {
+    this._vsanNetworkDiagnosticModeEnabled = value;
+  }
+  public resetVsanNetworkDiagnosticModeEnabled() {
+    this._vsanNetworkDiagnosticModeEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vsanNetworkDiagnosticModeEnabledInput() {
+    return this._vsanNetworkDiagnosticModeEnabled;
+  }
+
+  // vsan_performance_enabled - computed: false, optional: true, required: false
+  private _vsanPerformanceEnabled?: boolean | cdktf.IResolvable; 
+  public get vsanPerformanceEnabled() {
+    return this.getBooleanAttribute('vsan_performance_enabled');
+  }
+  public set vsanPerformanceEnabled(value: boolean | cdktf.IResolvable) {
+    this._vsanPerformanceEnabled = value;
+  }
+  public resetVsanPerformanceEnabled() {
+    this._vsanPerformanceEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vsanPerformanceEnabledInput() {
+    return this._vsanPerformanceEnabled;
+  }
+
+  // vsan_remote_datastore_ids - computed: false, optional: true, required: false
+  private _vsanRemoteDatastoreIds?: string[]; 
+  public get vsanRemoteDatastoreIds() {
+    return cdktf.Fn.tolist(this.getListAttribute('vsan_remote_datastore_ids'));
+  }
+  public set vsanRemoteDatastoreIds(value: string[]) {
+    this._vsanRemoteDatastoreIds = value;
+  }
+  public resetVsanRemoteDatastoreIds() {
+    this._vsanRemoteDatastoreIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vsanRemoteDatastoreIdsInput() {
+    return this._vsanRemoteDatastoreIds;
+  }
+
+  // vsan_unmap_enabled - computed: false, optional: true, required: false
+  private _vsanUnmapEnabled?: boolean | cdktf.IResolvable; 
+  public get vsanUnmapEnabled() {
+    return this.getBooleanAttribute('vsan_unmap_enabled');
+  }
+  public set vsanUnmapEnabled(value: boolean | cdktf.IResolvable) {
+    this._vsanUnmapEnabled = value;
+  }
+  public resetVsanUnmapEnabled() {
+    this._vsanUnmapEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vsanUnmapEnabledInput() {
+    return this._vsanUnmapEnabled;
+  }
+
+  // vsan_verbose_mode_enabled - computed: false, optional: true, required: false
+  private _vsanVerboseModeEnabled?: boolean | cdktf.IResolvable; 
+  public get vsanVerboseModeEnabled() {
+    return this.getBooleanAttribute('vsan_verbose_mode_enabled');
+  }
+  public set vsanVerboseModeEnabled(value: boolean | cdktf.IResolvable) {
+    this._vsanVerboseModeEnabled = value;
+  }
+  public resetVsanVerboseModeEnabled() {
+    this._vsanVerboseModeEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vsanVerboseModeEnabledInput() {
+    return this._vsanVerboseModeEnabled;
   }
 
   // vsan_disk_group - computed: false, optional: true, required: false
@@ -1552,7 +1759,16 @@ export class ComputeCluster extends cdktf.TerraformResource {
       proactive_ha_provider_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._proactiveHaProviderIds),
       proactive_ha_severe_remediation: cdktf.stringToTerraform(this._proactiveHaSevereRemediation),
       tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
+      vsan_compression_enabled: cdktf.booleanToTerraform(this._vsanCompressionEnabled),
+      vsan_dedup_enabled: cdktf.booleanToTerraform(this._vsanDedupEnabled),
+      vsan_dit_encryption_enabled: cdktf.booleanToTerraform(this._vsanDitEncryptionEnabled),
+      vsan_dit_rekey_interval: cdktf.numberToTerraform(this._vsanDitRekeyInterval),
       vsan_enabled: cdktf.booleanToTerraform(this._vsanEnabled),
+      vsan_network_diagnostic_mode_enabled: cdktf.booleanToTerraform(this._vsanNetworkDiagnosticModeEnabled),
+      vsan_performance_enabled: cdktf.booleanToTerraform(this._vsanPerformanceEnabled),
+      vsan_remote_datastore_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._vsanRemoteDatastoreIds),
+      vsan_unmap_enabled: cdktf.booleanToTerraform(this._vsanUnmapEnabled),
+      vsan_verbose_mode_enabled: cdktf.booleanToTerraform(this._vsanVerboseModeEnabled),
       vsan_disk_group: cdktf.listMapper(computeClusterVsanDiskGroupToTerraform, true)(this._vsanDiskGroup.internalValue),
     };
   }
