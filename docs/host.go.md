@@ -1,0 +1,1267 @@
+# `host` Submodule <a name="`host` Submodule" id="@cdktf/provider-vsphere.host"></a>
+
+## Constructs <a name="Constructs" id="Constructs"></a>
+
+### Host <a name="Host" id="@cdktf/provider-vsphere.host.Host"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/vsphere/r/host vsphere_host}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.host.Host.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/host"
+
+host.NewHost(scope Construct, id *string, config HostConfig) Host
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-vsphere.host.HostConfig">HostConfig</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-vsphere.host.Host.Initializer.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vsphere.host.Host.Initializer.parameter.id"></a>
+
+- *Type:* *string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-vsphere.host.Host.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktf/provider-vsphere.host.HostConfig">HostConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.resetCluster">ResetCluster</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.resetClusterManaged">ResetClusterManaged</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.resetConnected">ResetConnected</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.resetCustomAttributes">ResetCustomAttributes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.resetDatacenter">ResetDatacenter</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.resetForce">ResetForce</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.resetLicense">ResetLicense</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.resetLockdown">ResetLockdown</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.resetMaintenance">ResetMaintenance</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.resetTags">ResetTags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.resetThumbprint">ResetThumbprint</a></code> | *No description.* |
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-vsphere.host.Host.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Returns a string representation of this construct.
+
+##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-vsphere.host.Host.addOverride"></a>
+
+```go
+func AddOverride(path *string, value interface{})
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-vsphere.host.Host.addOverride.parameter.path"></a>
+
+- *Type:* *string
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vsphere.host.Host.addOverride.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-vsphere.host.Host.overrideLogicalId"></a>
+
+```go
+func OverrideLogicalId(newLogicalId *string)
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-vsphere.host.Host.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* *string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-vsphere.host.Host.resetOverrideLogicalId"></a>
+
+```go
+func ResetOverrideLogicalId()
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-vsphere.host.Host.toMetadata"></a>
+
+```go
+func ToMetadata() interface{}
+```
+
+##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-vsphere.host.Host.toTerraform"></a>
+
+```go
+func ToTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-vsphere.host.Host.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vsphere.host.Host.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-vsphere.host.Host.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vsphere.host.Host.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-vsphere.host.Host.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vsphere.host.Host.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-vsphere.host.Host.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vsphere.host.Host.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-vsphere.host.Host.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vsphere.host.Host.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-vsphere.host.Host.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vsphere.host.Host.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-vsphere.host.Host.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vsphere.host.Host.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-vsphere.host.Host.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vsphere.host.Host.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-vsphere.host.Host.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vsphere.host.Host.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-vsphere.host.Host.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vsphere.host.Host.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `ResetCluster` <a name="ResetCluster" id="@cdktf/provider-vsphere.host.Host.resetCluster"></a>
+
+```go
+func ResetCluster()
+```
+
+##### `ResetClusterManaged` <a name="ResetClusterManaged" id="@cdktf/provider-vsphere.host.Host.resetClusterManaged"></a>
+
+```go
+func ResetClusterManaged()
+```
+
+##### `ResetConnected` <a name="ResetConnected" id="@cdktf/provider-vsphere.host.Host.resetConnected"></a>
+
+```go
+func ResetConnected()
+```
+
+##### `ResetCustomAttributes` <a name="ResetCustomAttributes" id="@cdktf/provider-vsphere.host.Host.resetCustomAttributes"></a>
+
+```go
+func ResetCustomAttributes()
+```
+
+##### `ResetDatacenter` <a name="ResetDatacenter" id="@cdktf/provider-vsphere.host.Host.resetDatacenter"></a>
+
+```go
+func ResetDatacenter()
+```
+
+##### `ResetForce` <a name="ResetForce" id="@cdktf/provider-vsphere.host.Host.resetForce"></a>
+
+```go
+func ResetForce()
+```
+
+##### `ResetId` <a name="ResetId" id="@cdktf/provider-vsphere.host.Host.resetId"></a>
+
+```go
+func ResetId()
+```
+
+##### `ResetLicense` <a name="ResetLicense" id="@cdktf/provider-vsphere.host.Host.resetLicense"></a>
+
+```go
+func ResetLicense()
+```
+
+##### `ResetLockdown` <a name="ResetLockdown" id="@cdktf/provider-vsphere.host.Host.resetLockdown"></a>
+
+```go
+func ResetLockdown()
+```
+
+##### `ResetMaintenance` <a name="ResetMaintenance" id="@cdktf/provider-vsphere.host.Host.resetMaintenance"></a>
+
+```go
+func ResetMaintenance()
+```
+
+##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-vsphere.host.Host.resetTags"></a>
+
+```go
+func ResetTags()
+```
+
+##### `ResetThumbprint` <a name="ResetThumbprint" id="@cdktf/provider-vsphere.host.Host.resetThumbprint"></a>
+
+```go
+func ResetThumbprint()
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+
+---
+
+##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.host.Host.isConstruct"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/host"
+
+host.Host_IsConstruct(x interface{}) *bool
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.host.Host.isConstruct.parameter.x"></a>
+
+- *Type:* interface{}
+
+Any object.
+
+---
+
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.host.Host.isTerraformElement"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/host"
+
+host.Host_IsTerraformElement(x interface{}) *bool
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.host.Host.isTerraformElement.parameter.x"></a>
+
+- *Type:* interface{}
+
+---
+
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.host.Host.isTerraformResource"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/host"
+
+host.Host_IsTerraformResource(x interface{}) *bool
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.host.Host.isTerraformResource.parameter.x"></a>
+
+- *Type:* interface{}
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.clusterInput">ClusterInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.clusterManagedInput">ClusterManagedInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.connectedInput">ConnectedInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.customAttributesInput">CustomAttributesInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.datacenterInput">DatacenterInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.forceInput">ForceInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.hostnameInput">HostnameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.licenseInput">LicenseInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.lockdownInput">LockdownInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.maintenanceInput">MaintenanceInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.passwordInput">PasswordInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.tagsInput">TagsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.thumbprintInput">ThumbprintInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.usernameInput">UsernameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.cluster">Cluster</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.clusterManaged">ClusterManaged</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.connected">Connected</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.customAttributes">CustomAttributes</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.datacenter">Datacenter</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.force">Force</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.hostname">Hostname</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.license">License</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.lockdown">Lockdown</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.maintenance">Maintenance</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.password">Password</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.tags">Tags</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.thumbprint">Thumbprint</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.username">Username</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-vsphere.host.Host.property.node"></a>
+
+```go
+func Node() Node
+```
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
+
+The tree node.
+
+---
+
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-vsphere.host.Host.property.cdktfStack"></a>
+
+```go
+func CdktfStack() TerraformStack
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-vsphere.host.Host.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-vsphere.host.Host.property.friendlyUniqueId"></a>
+
+```go
+func FriendlyUniqueId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-vsphere.host.Host.property.terraformMetaArguments"></a>
+
+```go
+func TerraformMetaArguments() *map[string]interface{}
+```
+
+- *Type:* *map[string]interface{}
+
+---
+
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-vsphere.host.Host.property.terraformResourceType"></a>
+
+```go
+func TerraformResourceType() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-vsphere.host.Host.property.terraformGeneratorMetadata"></a>
+
+```go
+func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vsphere.host.Host.property.connection"></a>
+
+```go
+func Connection() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.host.Host.property.count"></a>
+
+```go
+func Count() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-vsphere.host.Host.property.dependsOn"></a>
+
+```go
+func DependsOn() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-vsphere.host.Host.property.forEach"></a>
+
+```go
+func ForEach() ITerraformIterator
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+
+---
+
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-vsphere.host.Host.property.lifecycle"></a>
+
+```go
+func Lifecycle() TerraformResourceLifecycle
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+
+---
+
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-vsphere.host.Host.property.provider"></a>
+
+```go
+func Provider() TerraformProvider
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vsphere.host.Host.property.provisioners"></a>
+
+```go
+func Provisioners() *[]interface{}
+```
+
+- *Type:* *[]interface{}
+
+---
+
+##### `ClusterInput`<sup>Optional</sup> <a name="ClusterInput" id="@cdktf/provider-vsphere.host.Host.property.clusterInput"></a>
+
+```go
+func ClusterInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ClusterManagedInput`<sup>Optional</sup> <a name="ClusterManagedInput" id="@cdktf/provider-vsphere.host.Host.property.clusterManagedInput"></a>
+
+```go
+func ClusterManagedInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `ConnectedInput`<sup>Optional</sup> <a name="ConnectedInput" id="@cdktf/provider-vsphere.host.Host.property.connectedInput"></a>
+
+```go
+func ConnectedInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `CustomAttributesInput`<sup>Optional</sup> <a name="CustomAttributesInput" id="@cdktf/provider-vsphere.host.Host.property.customAttributesInput"></a>
+
+```go
+func CustomAttributesInput() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
+##### `DatacenterInput`<sup>Optional</sup> <a name="DatacenterInput" id="@cdktf/provider-vsphere.host.Host.property.datacenterInput"></a>
+
+```go
+func DatacenterInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ForceInput`<sup>Optional</sup> <a name="ForceInput" id="@cdktf/provider-vsphere.host.Host.property.forceInput"></a>
+
+```go
+func ForceInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `HostnameInput`<sup>Optional</sup> <a name="HostnameInput" id="@cdktf/provider-vsphere.host.Host.property.hostnameInput"></a>
+
+```go
+func HostnameInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-vsphere.host.Host.property.idInput"></a>
+
+```go
+func IdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `LicenseInput`<sup>Optional</sup> <a name="LicenseInput" id="@cdktf/provider-vsphere.host.Host.property.licenseInput"></a>
+
+```go
+func LicenseInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `LockdownInput`<sup>Optional</sup> <a name="LockdownInput" id="@cdktf/provider-vsphere.host.Host.property.lockdownInput"></a>
+
+```go
+func LockdownInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `MaintenanceInput`<sup>Optional</sup> <a name="MaintenanceInput" id="@cdktf/provider-vsphere.host.Host.property.maintenanceInput"></a>
+
+```go
+func MaintenanceInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `PasswordInput`<sup>Optional</sup> <a name="PasswordInput" id="@cdktf/provider-vsphere.host.Host.property.passwordInput"></a>
+
+```go
+func PasswordInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-vsphere.host.Host.property.tagsInput"></a>
+
+```go
+func TagsInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `ThumbprintInput`<sup>Optional</sup> <a name="ThumbprintInput" id="@cdktf/provider-vsphere.host.Host.property.thumbprintInput"></a>
+
+```go
+func ThumbprintInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `UsernameInput`<sup>Optional</sup> <a name="UsernameInput" id="@cdktf/provider-vsphere.host.Host.property.usernameInput"></a>
+
+```go
+func UsernameInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Cluster`<sup>Required</sup> <a name="Cluster" id="@cdktf/provider-vsphere.host.Host.property.cluster"></a>
+
+```go
+func Cluster() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ClusterManaged`<sup>Required</sup> <a name="ClusterManaged" id="@cdktf/provider-vsphere.host.Host.property.clusterManaged"></a>
+
+```go
+func ClusterManaged() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `Connected`<sup>Required</sup> <a name="Connected" id="@cdktf/provider-vsphere.host.Host.property.connected"></a>
+
+```go
+func Connected() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `CustomAttributes`<sup>Required</sup> <a name="CustomAttributes" id="@cdktf/provider-vsphere.host.Host.property.customAttributes"></a>
+
+```go
+func CustomAttributes() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
+##### `Datacenter`<sup>Required</sup> <a name="Datacenter" id="@cdktf/provider-vsphere.host.Host.property.datacenter"></a>
+
+```go
+func Datacenter() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Force`<sup>Required</sup> <a name="Force" id="@cdktf/provider-vsphere.host.Host.property.force"></a>
+
+```go
+func Force() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `Hostname`<sup>Required</sup> <a name="Hostname" id="@cdktf/provider-vsphere.host.Host.property.hostname"></a>
+
+```go
+func Hostname() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-vsphere.host.Host.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `License`<sup>Required</sup> <a name="License" id="@cdktf/provider-vsphere.host.Host.property.license"></a>
+
+```go
+func License() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Lockdown`<sup>Required</sup> <a name="Lockdown" id="@cdktf/provider-vsphere.host.Host.property.lockdown"></a>
+
+```go
+func Lockdown() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Maintenance`<sup>Required</sup> <a name="Maintenance" id="@cdktf/provider-vsphere.host.Host.property.maintenance"></a>
+
+```go
+func Maintenance() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `Password`<sup>Required</sup> <a name="Password" id="@cdktf/provider-vsphere.host.Host.property.password"></a>
+
+```go
+func Password() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-vsphere.host.Host.property.tags"></a>
+
+```go
+func Tags() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Thumbprint`<sup>Required</sup> <a name="Thumbprint" id="@cdktf/provider-vsphere.host.Host.property.thumbprint"></a>
+
+```go
+func Thumbprint() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Username`<sup>Required</sup> <a name="Username" id="@cdktf/provider-vsphere.host.Host.property.username"></a>
+
+```go
+func Username() *string
+```
+
+- *Type:* *string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-vsphere.host.Host.property.tfResourceType"></a>
+
+```go
+func TfResourceType() *string
+```
+
+- *Type:* *string
+
+---
+
+## Structs <a name="Structs" id="Structs"></a>
+
+### HostConfig <a name="HostConfig" id="@cdktf/provider-vsphere.host.HostConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.host.HostConfig.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/host"
+
+&host.HostConfig {
+	Connection: interface{},
+	Count: *f64,
+	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
+	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
+	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
+	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
+	Provisioners: *[]interface{},
+	Hostname: *string,
+	Password: *string,
+	Username: *string,
+	Cluster: *string,
+	ClusterManaged: interface{},
+	Connected: interface{},
+	CustomAttributes: *map[string]*string,
+	Datacenter: *string,
+	Force: interface{},
+	Id: *string,
+	License: *string,
+	Lockdown: *string,
+	Maintenance: interface{},
+	Tags: *[]*string,
+	Thumbprint: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.hostname">Hostname</a></code> | <code>*string</code> | FQDN or IP address of the host. |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.password">Password</a></code> | <code>*string</code> | Password of the administration account of the host. |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.username">Username</a></code> | <code>*string</code> | Username of the administration account of the host. |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.cluster">Cluster</a></code> | <code>*string</code> | ID of the vSphere cluster the host will belong to. |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.clusterManaged">ClusterManaged</a></code> | <code>interface{}</code> | Must be set if host is a member of a managed compute_cluster resource. |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.connected">Connected</a></code> | <code>interface{}</code> | Set the state of the host. If set to false then the host will be asked to disconnect. |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.customAttributes">CustomAttributes</a></code> | <code>*map[string]*string</code> | A list of custom attributes to set on this resource. |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.datacenter">Datacenter</a></code> | <code>*string</code> | ID of the vSphere datacenter the host will belong to. |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.force">Force</a></code> | <code>interface{}</code> | Force add the host to the vSphere inventory even if it's already managed by a different vCenter Server instance. |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/host#id Host#id}. |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.license">License</a></code> | <code>*string</code> | License key that will be applied to this host. |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.lockdown">Lockdown</a></code> | <code>*string</code> | Set the host's lockdown status. Default is disabled. Valid options are 'disabled', 'normal', 'strict'. |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.maintenance">Maintenance</a></code> | <code>interface{}</code> | Set the host's maintenance mode. Default is false. |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.tags">Tags</a></code> | <code>*[]*string</code> | A list of tag IDs to apply to this object. |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.thumbprint">Thumbprint</a></code> | <code>*string</code> | Host's certificate SHA-1 thumbprint. If not set then the CA that signed the host's certificate must be trusted. |
+
+---
+
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vsphere.host.HostConfig.property.connection"></a>
+
+```go
+Connection interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.host.HostConfig.property.count"></a>
+
+```go
+Count *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-vsphere.host.HostConfig.property.dependsOn"></a>
+
+```go
+DependsOn *[]ITerraformDependable
+```
+
+- *Type:* *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable
+
+---
+
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-vsphere.host.HostConfig.property.forEach"></a>
+
+```go
+ForEach ITerraformIterator
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+
+---
+
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-vsphere.host.HostConfig.property.lifecycle"></a>
+
+```go
+Lifecycle TerraformResourceLifecycle
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+
+---
+
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-vsphere.host.HostConfig.property.provider"></a>
+
+```go
+Provider TerraformProvider
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vsphere.host.HostConfig.property.provisioners"></a>
+
+```go
+Provisioners *[]interface{}
+```
+
+- *Type:* *[]interface{}
+
+---
+
+##### `Hostname`<sup>Required</sup> <a name="Hostname" id="@cdktf/provider-vsphere.host.HostConfig.property.hostname"></a>
+
+```go
+Hostname *string
+```
+
+- *Type:* *string
+
+FQDN or IP address of the host.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/host#hostname Host#hostname}
+
+---
+
+##### `Password`<sup>Required</sup> <a name="Password" id="@cdktf/provider-vsphere.host.HostConfig.property.password"></a>
+
+```go
+Password *string
+```
+
+- *Type:* *string
+
+Password of the administration account of the host.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/host#password Host#password}
+
+---
+
+##### `Username`<sup>Required</sup> <a name="Username" id="@cdktf/provider-vsphere.host.HostConfig.property.username"></a>
+
+```go
+Username *string
+```
+
+- *Type:* *string
+
+Username of the administration account of the host.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/host#username Host#username}
+
+---
+
+##### `Cluster`<sup>Optional</sup> <a name="Cluster" id="@cdktf/provider-vsphere.host.HostConfig.property.cluster"></a>
+
+```go
+Cluster *string
+```
+
+- *Type:* *string
+
+ID of the vSphere cluster the host will belong to.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/host#cluster Host#cluster}
+
+---
+
+##### `ClusterManaged`<sup>Optional</sup> <a name="ClusterManaged" id="@cdktf/provider-vsphere.host.HostConfig.property.clusterManaged"></a>
+
+```go
+ClusterManaged interface{}
+```
+
+- *Type:* interface{}
+
+Must be set if host is a member of a managed compute_cluster resource.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/host#cluster_managed Host#cluster_managed}
+
+---
+
+##### `Connected`<sup>Optional</sup> <a name="Connected" id="@cdktf/provider-vsphere.host.HostConfig.property.connected"></a>
+
+```go
+Connected interface{}
+```
+
+- *Type:* interface{}
+
+Set the state of the host. If set to false then the host will be asked to disconnect.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/host#connected Host#connected}
+
+---
+
+##### `CustomAttributes`<sup>Optional</sup> <a name="CustomAttributes" id="@cdktf/provider-vsphere.host.HostConfig.property.customAttributes"></a>
+
+```go
+CustomAttributes *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+A list of custom attributes to set on this resource.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/host#custom_attributes Host#custom_attributes}
+
+---
+
+##### `Datacenter`<sup>Optional</sup> <a name="Datacenter" id="@cdktf/provider-vsphere.host.HostConfig.property.datacenter"></a>
+
+```go
+Datacenter *string
+```
+
+- *Type:* *string
+
+ID of the vSphere datacenter the host will belong to.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/host#datacenter Host#datacenter}
+
+---
+
+##### `Force`<sup>Optional</sup> <a name="Force" id="@cdktf/provider-vsphere.host.HostConfig.property.force"></a>
+
+```go
+Force interface{}
+```
+
+- *Type:* interface{}
+
+Force add the host to the vSphere inventory even if it's already managed by a different vCenter Server instance.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/host#force Host#force}
+
+---
+
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-vsphere.host.HostConfig.property.id"></a>
+
+```go
+Id *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/host#id Host#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `License`<sup>Optional</sup> <a name="License" id="@cdktf/provider-vsphere.host.HostConfig.property.license"></a>
+
+```go
+License *string
+```
+
+- *Type:* *string
+
+License key that will be applied to this host.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/host#license Host#license}
+
+---
+
+##### `Lockdown`<sup>Optional</sup> <a name="Lockdown" id="@cdktf/provider-vsphere.host.HostConfig.property.lockdown"></a>
+
+```go
+Lockdown *string
+```
+
+- *Type:* *string
+
+Set the host's lockdown status. Default is disabled. Valid options are 'disabled', 'normal', 'strict'.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/host#lockdown Host#lockdown}
+
+---
+
+##### `Maintenance`<sup>Optional</sup> <a name="Maintenance" id="@cdktf/provider-vsphere.host.HostConfig.property.maintenance"></a>
+
+```go
+Maintenance interface{}
+```
+
+- *Type:* interface{}
+
+Set the host's maintenance mode. Default is false.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/host#maintenance Host#maintenance}
+
+---
+
+##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktf/provider-vsphere.host.HostConfig.property.tags"></a>
+
+```go
+Tags *[]*string
+```
+
+- *Type:* *[]*string
+
+A list of tag IDs to apply to this object.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/host#tags Host#tags}
+
+---
+
+##### `Thumbprint`<sup>Optional</sup> <a name="Thumbprint" id="@cdktf/provider-vsphere.host.HostConfig.property.thumbprint"></a>
+
+```go
+Thumbprint *string
+```
+
+- *Type:* *string
+
+Host's certificate SHA-1 thumbprint. If not set then the CA that signed the host's certificate must be trusted.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/host#thumbprint Host#thumbprint}
+
+---
+
+
+
