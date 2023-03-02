@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vsphere/r/role vsphe
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.role.Role.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/role"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/role"
 
 role.NewRole(scope Construct, id *string, config RoleConfig) Role
 ```
@@ -280,7 +280,7 @@ func ResetRolePrivileges()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.role.Role.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/role"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/role"
 
 role.Role_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.role.Role.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/role"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/role"
 
 role.Role_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ role.Role_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.role.Role.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/role"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/role"
 
 role.Role_IsTerraformResource(x interface{}) *bool
 ```
@@ -602,7 +602,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.role.RoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/role"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/role"
 
 &role.RoleConfig {
 	Connection: interface{},
