@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vsphere/d/vmfs_disks
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevmfsdisks"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/datavspherevmfsdisks"
 
 datavspherevmfsdisks.NewDataVsphereVmfsDisks(scope Construct, id *string, config DataVsphereVmfsDisksConfig) DataVsphereVmfsDisks
 ```
@@ -287,7 +287,7 @@ func ResetRescan()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisks.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevmfsdisks"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/datavspherevmfsdisks"
 
 datavspherevmfsdisks.DataVsphereVmfsDisks_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevmfsdisks"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/datavspherevmfsdisks"
 
 datavspherevmfsdisks.DataVsphereVmfsDisks_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ datavspherevmfsdisks.DataVsphereVmfsDisks_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisks.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevmfsdisks"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/datavspherevmfsdisks"
 
 datavspherevmfsdisks.DataVsphereVmfsDisks_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -609,7 +609,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevmfsdisks"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/datavspherevmfsdisks"
 
 &datavspherevmfsdisks.DataVsphereVmfsDisksConfig {
 	Connection: interface{},
