@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cl
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeClusterVmDependencyRule.ComputeClusterVmDependencyRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmdependencyrule"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/computeclustervmdependencyrule"
 
 computeclustervmdependencyrule.NewComputeClusterVmDependencyRule(scope Construct, id *string, config ComputeClusterVmDependencyRuleConfig) ComputeClusterVmDependencyRule
 ```
@@ -287,7 +287,7 @@ func ResetMandatory()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.computeClusterVmDependencyRule.ComputeClusterVmDependencyRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmdependencyrule"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/computeclustervmdependencyrule"
 
 computeclustervmdependencyrule.ComputeClusterVmDependencyRule_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.computeClusterVmDependencyRule.ComputeClusterVmDependencyRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmdependencyrule"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/computeclustervmdependencyrule"
 
 computeclustervmdependencyrule.ComputeClusterVmDependencyRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ computeclustervmdependencyrule.ComputeClusterVmDependencyRule_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.computeClusterVmDependencyRule.ComputeClusterVmDependencyRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmdependencyrule"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/computeclustervmdependencyrule"
 
 computeclustervmdependencyrule.ComputeClusterVmDependencyRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -686,7 +686,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.computeClusterVmDependencyRule.ComputeClusterVmDependencyRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmdependencyrule"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/computeclustervmdependencyrule"
 
 &computeclustervmdependencyrule.ComputeClusterVmDependencyRuleConfig {
 	Connection: interface{},
