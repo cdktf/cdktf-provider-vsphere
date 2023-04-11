@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vsphere/r/nas_datast
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.nasDatastore.NasDatastore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/nasdatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/nasdatastore"
 
 nasdatastore.NewNasDatastore(scope Construct, id *string, config NasDatastoreConfig) NasDatastore
 ```
@@ -322,7 +322,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.nasDatastore.NasDatastore.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/nasdatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/nasdatastore"
 
 nasdatastore.NasDatastore_IsConstruct(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.nasDatastore.NasDatastore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/nasdatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/nasdatastore"
 
 nasdatastore.NasDatastore_IsTerraformElement(x interface{}) *bool
 ```
@@ -368,7 +368,7 @@ nasdatastore.NasDatastore_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.nasDatastore.NasDatastore.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/nasdatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/nasdatastore"
 
 nasdatastore.NasDatastore_IsTerraformResource(x interface{}) *bool
 ```
@@ -919,7 +919,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.nasDatastore.NasDatastoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/nasdatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/nasdatastore"
 
 &nasdatastore.NasDatastoreConfig {
 	Connection: interface{},

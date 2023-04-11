@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vsphere/r/storage_dr
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/storagedrsvmoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/storagedrsvmoverride"
 
 storagedrsvmoverride.NewStorageDrsVmOverride(scope Construct, id *string, config StorageDrsVmOverrideConfig) StorageDrsVmOverride
 ```
@@ -294,7 +294,7 @@ func ResetSdrsIntraVmAffinity()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverride.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/storagedrsvmoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/storagedrsvmoverride"
 
 storagedrsvmoverride.StorageDrsVmOverride_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverride.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/storagedrsvmoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/storagedrsvmoverride"
 
 storagedrsvmoverride.StorageDrsVmOverride_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ storagedrsvmoverride.StorageDrsVmOverride_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverride.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/storagedrsvmoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/storagedrsvmoverride"
 
 storagedrsvmoverride.StorageDrsVmOverride_IsTerraformResource(x interface{}) *bool
 ```
@@ -671,7 +671,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverrideConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/storagedrsvmoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/storagedrsvmoverride"
 
 &storagedrsvmoverride.StorageDrsVmOverrideConfig {
 	Connection: interface{},
