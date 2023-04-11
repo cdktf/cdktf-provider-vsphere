@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vsphere/d/distribute
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereDistributedVirtualSwitch.DataVsphereDistributedVirtualSwitch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/datavspheredistributedvirtualswitch"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredistributedvirtualswitch"
 
 datavspheredistributedvirtualswitch.NewDataVsphereDistributedVirtualSwitch(scope Construct, id *string, config DataVsphereDistributedVirtualSwitchConfig) DataVsphereDistributedVirtualSwitch
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereDistributedVirtualSwitch.DataVsphereDistributedVirtualSwitch.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/datavspheredistributedvirtualswitch"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredistributedvirtualswitch"
 
 datavspheredistributedvirtualswitch.DataVsphereDistributedVirtualSwitch_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereDistributedVirtualSwitch.DataVsphereDistributedVirtualSwitch.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/datavspheredistributedvirtualswitch"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredistributedvirtualswitch"
 
 datavspheredistributedvirtualswitch.DataVsphereDistributedVirtualSwitch_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ datavspheredistributedvirtualswitch.DataVsphereDistributedVirtualSwitch_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereDistributedVirtualSwitch.DataVsphereDistributedVirtualSwitch.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/datavspheredistributedvirtualswitch"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredistributedvirtualswitch"
 
 datavspheredistributedvirtualswitch.DataVsphereDistributedVirtualSwitch_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -580,7 +580,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereDistributedVirtualSwitch.DataVsphereDistributedVirtualSwitchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/datavspheredistributedvirtualswitch"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredistributedvirtualswitch"
 
 &datavspheredistributedvirtualswitch.DataVsphereDistributedVirtualSwitchConfig {
 	Connection: interface{},
