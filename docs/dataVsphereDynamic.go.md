@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vsphere/d/dynamic vs
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereDynamic.DataVsphereDynamic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredynamic"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/datavspheredynamic"
 
 datavspheredynamic.NewDataVsphereDynamic(scope Construct, id *string, config DataVsphereDynamicConfig) DataVsphereDynamic
 ```
@@ -287,7 +287,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereDynamic.DataVsphereDynamic.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredynamic"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/datavspheredynamic"
 
 datavspheredynamic.DataVsphereDynamic_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereDynamic.DataVsphereDynamic.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredynamic"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/datavspheredynamic"
 
 datavspheredynamic.DataVsphereDynamic_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ datavspheredynamic.DataVsphereDynamic_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereDynamic.DataVsphereDynamic.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredynamic"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/datavspheredynamic"
 
 datavspheredynamic.DataVsphereDynamic_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereDynamic.DataVsphereDynamicConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredynamic"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/datavspheredynamic"
 
 &datavspheredynamic.DataVsphereDynamicConfig {
 	Connection: interface{},

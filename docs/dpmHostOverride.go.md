@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vsphere/r/dpm_host_o
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dpmHostOverride.DpmHostOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/dpmhostoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/dpmhostoverride"
 
 dpmhostoverride.NewDpmHostOverride(scope Construct, id *string, config DpmHostOverrideConfig) DpmHostOverride
 ```
@@ -287,7 +287,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dpmHostOverride.DpmHostOverride.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/dpmhostoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/dpmhostoverride"
 
 dpmhostoverride.DpmHostOverride_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dpmHostOverride.DpmHostOverride.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/dpmhostoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/dpmhostoverride"
 
 dpmhostoverride.DpmHostOverride_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ dpmhostoverride.DpmHostOverride_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.dpmHostOverride.DpmHostOverride.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/dpmhostoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/dpmhostoverride"
 
 dpmhostoverride.DpmHostOverride_IsTerraformResource(x interface{}) *bool
 ```
@@ -642,7 +642,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dpmHostOverride.DpmHostOverrideConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/dpmhostoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/dpmhostoverride"
 
 &dpmhostoverride.DpmHostOverrideConfig {
 	Connection: interface{},

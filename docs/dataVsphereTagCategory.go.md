@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vsphere/d/tag_catego
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereTagCategory.DataVsphereTagCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheretagcategory"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/datavspheretagcategory"
 
 datavspheretagcategory.NewDataVsphereTagCategory(scope Construct, id *string, config DataVsphereTagCategoryConfig) DataVsphereTagCategory
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereTagCategory.DataVsphereTagCategory.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheretagcategory"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/datavspheretagcategory"
 
 datavspheretagcategory.DataVsphereTagCategory_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereTagCategory.DataVsphereTagCategory.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheretagcategory"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/datavspheretagcategory"
 
 datavspheretagcategory.DataVsphereTagCategory_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datavspheretagcategory.DataVsphereTagCategory_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereTagCategory.DataVsphereTagCategory.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheretagcategory"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/datavspheretagcategory"
 
 datavspheretagcategory.DataVsphereTagCategory_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereTagCategory.DataVsphereTagCategoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheretagcategory"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/datavspheretagcategory"
 
 &datavspheretagcategory.DataVsphereTagCategoryConfig {
 	Connection: interface{},

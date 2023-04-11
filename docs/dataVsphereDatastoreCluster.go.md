@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vsphere/d/datastore_
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereDatastoreCluster.DataVsphereDatastoreCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredatastorecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/datavspheredatastorecluster"
 
 datavspheredatastorecluster.NewDataVsphereDatastoreCluster(scope Construct, id *string, config DataVsphereDatastoreClusterConfig) DataVsphereDatastoreCluster
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereDatastoreCluster.DataVsphereDatastoreCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredatastorecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/datavspheredatastorecluster"
 
 datavspheredatastorecluster.DataVsphereDatastoreCluster_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereDatastoreCluster.DataVsphereDatastoreCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredatastorecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/datavspheredatastorecluster"
 
 datavspheredatastorecluster.DataVsphereDatastoreCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ datavspheredatastorecluster.DataVsphereDatastoreCluster_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereDatastoreCluster.DataVsphereDatastoreCluster.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredatastorecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/datavspheredatastorecluster"
 
 datavspheredatastorecluster.DataVsphereDatastoreCluster_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -569,7 +569,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereDatastoreCluster.DataVsphereDatastoreClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredatastorecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/datavspheredatastorecluster"
 
 &datavspheredatastorecluster.DataVsphereDatastoreClusterConfig {
 	Connection: interface{},
