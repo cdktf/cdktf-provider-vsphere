@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vsphere/d/resource_p
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/datavsphereresourcepool"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereresourcepool"
 
 datavsphereresourcepool.NewDataVsphereResourcePool(scope Construct, id *string, config DataVsphereResourcePoolConfig) DataVsphereResourcePool
 ```
@@ -287,7 +287,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/datavsphereresourcepool"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereresourcepool"
 
 datavsphereresourcepool.DataVsphereResourcePool_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/datavsphereresourcepool"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereresourcepool"
 
 datavsphereresourcepool.DataVsphereResourcePool_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ datavsphereresourcepool.DataVsphereResourcePool_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/datavsphereresourcepool"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereresourcepool"
 
 datavsphereresourcepool.DataVsphereResourcePool_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -576,7 +576,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v3/datavsphereresourcepool"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereresourcepool"
 
 &datavsphereresourcepool.DataVsphereResourcePoolConfig {
 	Connection: interface{},
