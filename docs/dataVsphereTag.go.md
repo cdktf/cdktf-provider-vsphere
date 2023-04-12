@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vsphere/d/tag vspher
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereTag.DataVsphereTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheretag"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/datavspheretag"
 
 datavspheretag.NewDataVsphereTag(scope Construct, id *string, config DataVsphereTagConfig) DataVsphereTag
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereTag.DataVsphereTag.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheretag"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/datavspheretag"
 
 datavspheretag.DataVsphereTag_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereTag.DataVsphereTag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheretag"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/datavspheretag"
 
 datavspheretag.DataVsphereTag_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datavspheretag.DataVsphereTag_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereTag.DataVsphereTag.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheretag"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/datavspheretag"
 
 datavspheretag.DataVsphereTag_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereTag.DataVsphereTagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheretag"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/datavspheretag"
 
 &datavspheretag.DataVsphereTagConfig {
 	Connection: interface{},
