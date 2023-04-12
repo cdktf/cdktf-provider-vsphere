@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/vsphere/r/drs_vm_ove
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.drsVmOverride.DrsVmOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/drsvmoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/drsvmoverride"
 
 drsvmoverride.NewDrsVmOverride(scope Construct, id *string, config DrsVmOverrideConfig) DrsVmOverride
 ```
@@ -287,7 +287,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.drsVmOverride.DrsVmOverride.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/drsvmoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/drsvmoverride"
 
 drsvmoverride.DrsVmOverride_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.drsVmOverride.DrsVmOverride.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/drsvmoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/drsvmoverride"
 
 drsvmoverride.DrsVmOverride_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ drsvmoverride.DrsVmOverride_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.drsVmOverride.DrsVmOverride.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/drsvmoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/drsvmoverride"
 
 drsvmoverride.DrsVmOverride_IsTerraformResource(x interface{}) *bool
 ```
@@ -642,7 +642,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.drsVmOverride.DrsVmOverrideConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/drsvmoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/drsvmoverride"
 
 &drsvmoverride.DrsVmOverrideConfig {
 	Connection: interface{},
