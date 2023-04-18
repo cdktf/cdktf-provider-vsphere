@@ -1,3 +1,7 @@
+# `vsphere_tag`
+
+Refer to the Terraform Registory for docs: [`vsphere_tag`](https://www.terraform.io/docs/providers/vsphere/r/tag).
+
 # `tag` Submodule <a name="`tag` Submodule" id="@cdktf/provider-vsphere.tag"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

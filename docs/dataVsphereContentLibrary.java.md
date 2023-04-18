@@ -1,3 +1,7 @@
+# `data_vsphere_content_library`
+
+Refer to the Terraform Registory for docs: [`data_vsphere_content_library`](https://www.terraform.io/docs/providers/vsphere/d/content_library).
+
 # `dataVsphereContentLibrary` Submodule <a name="`dataVsphereContentLibrary` Submodule" id="@cdktf/provider-vsphere.dataVsphereContentLibrary"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

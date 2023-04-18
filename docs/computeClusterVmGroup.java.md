@@ -1,3 +1,7 @@
+# `vsphere_compute_cluster_vm_group`
+
+Refer to the Terraform Registory for docs: [`vsphere_compute_cluster_vm_group`](https://www.terraform.io/docs/providers/vsphere/r/compute_cluster_vm_group).
+
 # `computeClusterVmGroup` Submodule <a name="`computeClusterVmGroup` Submodule" id="@cdktf/provider-vsphere.computeClusterVmGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

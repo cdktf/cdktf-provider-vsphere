@@ -1,3 +1,7 @@
+# `vsphere_vmfs_datastore`
+
+Refer to the Terraform Registory for docs: [`vsphere_vmfs_datastore`](https://www.terraform.io/docs/providers/vsphere/r/vmfs_datastore).
+
 # `vmfsDatastore` Submodule <a name="`vmfsDatastore` Submodule" id="@cdktf/provider-vsphere.vmfsDatastore"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

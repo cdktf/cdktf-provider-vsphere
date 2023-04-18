@@ -1,3 +1,7 @@
+# `vsphere_license`
+
+Refer to the Terraform Registory for docs: [`vsphere_license`](https://www.terraform.io/docs/providers/vsphere/r/license).
+
 # `license` Submodule <a name="`license` Submodule" id="@cdktf/provider-vsphere.license"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

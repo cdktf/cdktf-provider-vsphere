@@ -1,3 +1,7 @@
+# `vsphere_host_port_group`
+
+Refer to the Terraform Registory for docs: [`vsphere_host_port_group`](https://www.terraform.io/docs/providers/vsphere/r/host_port_group).
+
 # `hostPortGroup` Submodule <a name="`hostPortGroup` Submodule" id="@cdktf/provider-vsphere.hostPortGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

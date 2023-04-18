@@ -1,3 +1,7 @@
+# `data_vsphere_storage_policy`
+
+Refer to the Terraform Registory for docs: [`data_vsphere_storage_policy`](https://www.terraform.io/docs/providers/vsphere/d/storage_policy).
+
 # `dataVsphereStoragePolicy` Submodule <a name="`dataVsphereStoragePolicy` Submodule" id="@cdktf/provider-vsphere.dataVsphereStoragePolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

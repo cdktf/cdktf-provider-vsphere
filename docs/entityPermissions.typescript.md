@@ -1,3 +1,7 @@
+# `vsphere_entity_permissions`
+
+Refer to the Terraform Registory for docs: [`vsphere_entity_permissions`](https://www.terraform.io/docs/providers/vsphere/r/entity_permissions).
+
 # `entityPermissions` Submodule <a name="`entityPermissions` Submodule" id="@cdktf/provider-vsphere.entityPermissions"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `data_vsphere_distributed_virtual_switch`
+
+Refer to the Terraform Registory for docs: [`data_vsphere_distributed_virtual_switch`](https://www.terraform.io/docs/providers/vsphere/d/distributed_virtual_switch).
+
 # `dataVsphereDistributedVirtualSwitch` Submodule <a name="`dataVsphereDistributedVirtualSwitch` Submodule" id="@cdktf/provider-vsphere.dataVsphereDistributedVirtualSwitch"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
