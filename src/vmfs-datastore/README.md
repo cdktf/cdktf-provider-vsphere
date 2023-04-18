@@ -1,3 +1,3 @@
 # `vsphere_vmfs_datastore`
 
-Refer to the Terraform Registory for docs: [`vsphere_vmfs_datastore`](https://www.terraform.io/docs/providers/vsphere/r/vmfs_datastore).
+Refer to the Terraform Registory for docs: [`vsphere_vmfs_datastore`](https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vmfs_datastore).

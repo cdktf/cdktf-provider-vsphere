@@ -1,6 +1,6 @@
 # `data_vsphere_custom_attribute`
 
-Refer to the Terraform Registory for docs: [`data_vsphere_custom_attribute`](https://www.terraform.io/docs/providers/vsphere/d/custom_attribute).
+Refer to the Terraform Registory for docs: [`data_vsphere_custom_attribute`](https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/custom_attribute).
 
 # `dataVsphereCustomAttribute` Submodule <a name="`dataVsphereCustomAttribute` Submodule" id="@cdktf/provider-vsphere.dataVsphereCustomAttribute"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_vsphere_custom_attribute`](htt
 
 ### DataVsphereCustomAttribute <a name="DataVsphereCustomAttribute" id="@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttribute"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vsphere/d/custom_attribute vsphere_custom_attribute}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/custom_attribute vsphere_custom_attribute}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttribute.Initializer"></a>
 
@@ -345,7 +345,7 @@ DataVsphereCustomAttribute.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttribute.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttribute.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttribute.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttribute.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttribute.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttribute.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttribute.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttribute.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -433,10 +433,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttribute.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -559,7 +559,7 @@ using HashiCorp.Cdktf.Providers.Vsphere;
 
 new DataVsphereCustomAttributeConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -575,14 +575,14 @@ new DataVsphereCustomAttributeConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttributeConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttributeConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttributeConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttributeConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttributeConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttributeConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttributeConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttributeConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttributeConfig.property.name">Name</a></code> | <code>string</code> | The display name of the custom attribute. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttributeConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/custom_attribute#id DataVsphereCustomAttribute#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttributeConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/custom_attribute#id DataVsphereCustomAttribute#id}. |
 
 ---
 
@@ -599,10 +599,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttributeConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -666,7 +666,7 @@ public string Name { get; set; }
 
 The display name of the custom attribute.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/custom_attribute#name DataVsphereCustomAttribute#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/custom_attribute#name DataVsphereCustomAttribute#name}
 
 ---
 
@@ -678,7 +678,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/custom_attribute#id DataVsphereCustomAttribute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/custom_attribute#id DataVsphereCustomAttribute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

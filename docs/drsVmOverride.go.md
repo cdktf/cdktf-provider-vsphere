@@ -1,6 +1,6 @@
 # `vsphere_drs_vm_override`
 
-Refer to the Terraform Registory for docs: [`vsphere_drs_vm_override`](https://www.terraform.io/docs/providers/vsphere/r/drs_vm_override).
+Refer to the Terraform Registory for docs: [`vsphere_drs_vm_override`](https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/drs_vm_override).
 
 # `drsVmOverride` Submodule <a name="`drsVmOverride` Submodule" id="@cdktf/provider-vsphere.drsVmOverride"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vsphere_drs_vm_override`](https://w
 
 ### DrsVmOverride <a name="DrsVmOverride" id="@cdktf/provider-vsphere.drsVmOverride.DrsVmOverride"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vsphere/r/drs_vm_override vsphere_drs_vm_override}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/drs_vm_override vsphere_drs_vm_override}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.drsVmOverride.DrsVmOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/drsvmoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/drsvmoverride"
 
 drsvmoverride.NewDrsVmOverride(scope Construct, id *string, config DrsVmOverrideConfig) DrsVmOverride
 ```
@@ -291,7 +291,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.drsVmOverride.DrsVmOverride.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/drsvmoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/drsvmoverride"
 
 drsvmoverride.DrsVmOverride_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.drsVmOverride.DrsVmOverride.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/drsvmoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/drsvmoverride"
 
 drsvmoverride.DrsVmOverride_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ drsvmoverride.DrsVmOverride_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.drsVmOverride.DrsVmOverride.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/drsvmoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/drsvmoverride"
 
 drsvmoverride.DrsVmOverride_IsTerraformResource(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ drsvmoverride.DrsVmOverride_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-vsphere.drsVmOverride.DrsVmOverride.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.drsVmOverride.DrsVmOverride.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.drsVmOverride.DrsVmOverride.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.drsVmOverride.DrsVmOverride.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.drsVmOverride.DrsVmOverride.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.drsVmOverride.DrsVmOverride.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.drsVmOverride.DrsVmOverride.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.drsVmOverride.DrsVmOverride.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -464,10 +464,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.drsVmOverride.DrsVmOverride.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -646,11 +646,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.drsVmOverride.DrsVmOverrideConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/drsvmoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/drsvmoverride"
 
 &drsvmoverride.DrsVmOverrideConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -669,7 +669,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/drsvmoverride"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.drsVmOverride.DrsVmOverrideConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.drsVmOverride.DrsVmOverrideConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.drsVmOverride.DrsVmOverrideConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.drsVmOverride.DrsVmOverrideConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.drsVmOverride.DrsVmOverrideConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.drsVmOverride.DrsVmOverrideConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -679,7 +679,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/drsvmoverride"
 | <code><a href="#@cdktf/provider-vsphere.drsVmOverride.DrsVmOverrideConfig.property.virtualMachineId">VirtualMachineId</a></code> | <code>*string</code> | The managed object ID of the virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.drsVmOverride.DrsVmOverrideConfig.property.drsAutomationLevel">DrsAutomationLevel</a></code> | <code>*string</code> | The automation level for this virtual machine in the cluster. Can be one of manual, partiallyAutomated, or fullyAutomated. |
 | <code><a href="#@cdktf/provider-vsphere.drsVmOverride.DrsVmOverrideConfig.property.drsEnabled">DrsEnabled</a></code> | <code>interface{}</code> | Enable DRS for this virtual machine. |
-| <code><a href="#@cdktf/provider-vsphere.drsVmOverride.DrsVmOverrideConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/drs_vm_override#id DrsVmOverride#id}. |
+| <code><a href="#@cdktf/provider-vsphere.drsVmOverride.DrsVmOverrideConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/drs_vm_override#id DrsVmOverride#id}. |
 
 ---
 
@@ -696,10 +696,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.drsVmOverride.DrsVmOverrideConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -763,7 +763,7 @@ ComputeClusterId *string
 
 The managed object ID of the cluster.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/drs_vm_override#compute_cluster_id DrsVmOverride#compute_cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/drs_vm_override#compute_cluster_id DrsVmOverride#compute_cluster_id}
 
 ---
 
@@ -777,7 +777,7 @@ VirtualMachineId *string
 
 The managed object ID of the virtual machine.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/drs_vm_override#virtual_machine_id DrsVmOverride#virtual_machine_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/drs_vm_override#virtual_machine_id DrsVmOverride#virtual_machine_id}
 
 ---
 
@@ -791,7 +791,7 @@ DrsAutomationLevel *string
 
 The automation level for this virtual machine in the cluster. Can be one of manual, partiallyAutomated, or fullyAutomated.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/drs_vm_override#drs_automation_level DrsVmOverride#drs_automation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/drs_vm_override#drs_automation_level DrsVmOverride#drs_automation_level}
 
 ---
 
@@ -805,7 +805,7 @@ DrsEnabled interface{}
 
 Enable DRS for this virtual machine.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/drs_vm_override#drs_enabled DrsVmOverride#drs_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/drs_vm_override#drs_enabled DrsVmOverride#drs_enabled}
 
 ---
 
@@ -817,7 +817,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/drs_vm_override#id DrsVmOverride#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/drs_vm_override#id DrsVmOverride#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

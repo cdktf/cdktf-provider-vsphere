@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/vsphere/d/content_library_item
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/content_library_item
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataVsphereContentLibraryItemConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/content_library_item#id DataVsphereContentLibraryItem#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/content_library_item#id DataVsphereContentLibraryItem#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,25 +17,25 @@ export interface DataVsphereContentLibraryItemConfig extends cdktf.TerraformMeta
   /**
   * ID of the content library to contain item.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/content_library_item#library_id DataVsphereContentLibraryItem#library_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/content_library_item#library_id DataVsphereContentLibraryItem#library_id}
   */
   readonly libraryId: string;
   /**
   * The name of the content library item.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/content_library_item#name DataVsphereContentLibraryItem#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/content_library_item#name DataVsphereContentLibraryItem#name}
   */
   readonly name: string;
   /**
   * Type of content library item.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/content_library_item#type DataVsphereContentLibraryItem#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/content_library_item#type DataVsphereContentLibraryItem#type}
   */
   readonly type: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/vsphere/d/content_library_item vsphere_content_library_item}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/content_library_item vsphere_content_library_item}
 */
 export class DataVsphereContentLibraryItem extends cdktf.TerraformDataSource {
 
@@ -49,7 +49,7 @@ export class DataVsphereContentLibraryItem extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/vsphere/d/content_library_item vsphere_content_library_item} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/content_library_item vsphere_content_library_item} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/vsphere/r/folder
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/folder
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface FolderConfig extends cdktf.TerraformMetaArguments {
   /**
   * A list of custom attributes to set on this resource.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/folder#custom_attributes Folder#custom_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/folder#custom_attributes Folder#custom_attributes}
   */
   readonly customAttributes?: { [key: string]: string };
   /**
   * The ID of the datacenter. Can be ignored if creating a datacenter folder, otherwise required.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/folder#datacenter_id Folder#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/folder#datacenter_id Folder#datacenter_id}
   */
   readonly datacenterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/folder#id Folder#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/folder#id Folder#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,25 +29,25 @@ export interface FolderConfig extends cdktf.TerraformMetaArguments {
   /**
   * The path of the folder and any parents, relative to the datacenter and folder type being defined.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/folder#path Folder#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/folder#path Folder#path}
   */
   readonly path: string;
   /**
   * A list of tag IDs to apply to this object.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/folder#tags Folder#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/folder#tags Folder#tags}
   */
   readonly tags?: string[];
   /**
   * The type of the folder.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/folder#type Folder#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/folder#type Folder#type}
   */
   readonly type: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/vsphere/r/folder vsphere_folder}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/folder vsphere_folder}
 */
 export class Folder extends cdktf.TerraformResource {
 
@@ -61,7 +61,7 @@ export class Folder extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/vsphere/r/folder vsphere_folder} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/folder vsphere_folder} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

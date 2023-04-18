@@ -1,3 +1,3 @@
 # `vsphere_drs_vm_override`
 
-Refer to the Terraform Registory for docs: [`vsphere_drs_vm_override`](https://www.terraform.io/docs/providers/vsphere/r/drs_vm_override).
+Refer to the Terraform Registory for docs: [`vsphere_drs_vm_override`](https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/drs_vm_override).

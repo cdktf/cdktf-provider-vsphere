@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/vsphere
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,89 +10,89 @@ export interface VsphereProviderConfig {
   /**
   * If set, VMware vSphere client will permit unverifiable SSL certificates.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere#allow_unverified_ssl VsphereProvider#allow_unverified_ssl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs#allow_unverified_ssl VsphereProvider#allow_unverified_ssl}
   */
   readonly allowUnverifiedSsl?: boolean | cdktf.IResolvable;
   /**
   * API timeout in minutes (Default: 5)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere#api_timeout VsphereProvider#api_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs#api_timeout VsphereProvider#api_timeout}
   */
   readonly apiTimeout?: number;
   /**
   * govmomi debug
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere#client_debug VsphereProvider#client_debug}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs#client_debug VsphereProvider#client_debug}
   */
   readonly clientDebug?: boolean | cdktf.IResolvable;
   /**
   * govmomi debug path for debug
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere#client_debug_path VsphereProvider#client_debug_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs#client_debug_path VsphereProvider#client_debug_path}
   */
   readonly clientDebugPath?: string;
   /**
   * govmomi debug path for a single run
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere#client_debug_path_run VsphereProvider#client_debug_path_run}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs#client_debug_path_run VsphereProvider#client_debug_path_run}
   */
   readonly clientDebugPathRun?: string;
   /**
   * The user password for vSphere API operations.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere#password VsphereProvider#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs#password VsphereProvider#password}
   */
   readonly password: string;
   /**
   * Persist vSphere client sessions to disk
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere#persist_session VsphereProvider#persist_session}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs#persist_session VsphereProvider#persist_session}
   */
   readonly persistSession?: boolean | cdktf.IResolvable;
   /**
   * The directory to save vSphere REST API sessions to
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere#rest_session_path VsphereProvider#rest_session_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs#rest_session_path VsphereProvider#rest_session_path}
   */
   readonly restSessionPath?: string;
   /**
   * The user name for vSphere API operations.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere#user VsphereProvider#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs#user VsphereProvider#user}
   */
   readonly user: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere#vcenter_server VsphereProvider#vcenter_server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs#vcenter_server VsphereProvider#vcenter_server}
   */
   readonly vcenterServer?: string;
   /**
   * Keep alive interval for the VIM session in minutes
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere#vim_keep_alive VsphereProvider#vim_keep_alive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs#vim_keep_alive VsphereProvider#vim_keep_alive}
   */
   readonly vimKeepAlive?: number;
   /**
   * The directory to save vSphere SOAP API sessions to
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere#vim_session_path VsphereProvider#vim_session_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs#vim_session_path VsphereProvider#vim_session_path}
   */
   readonly vimSessionPath?: string;
   /**
   * The vSphere Server name for vSphere API operations.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere#vsphere_server VsphereProvider#vsphere_server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs#vsphere_server VsphereProvider#vsphere_server}
   */
   readonly vsphereServer?: string;
   /**
   * Alias name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere#alias VsphereProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs#alias VsphereProvider#alias}
   */
   readonly alias?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/vsphere vsphere}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs vsphere}
 */
 export class VsphereProvider extends cdktf.TerraformProvider {
 
@@ -106,7 +106,7 @@ export class VsphereProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/vsphere vsphere} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs vsphere} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

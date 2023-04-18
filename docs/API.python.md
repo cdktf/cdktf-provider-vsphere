@@ -50,7 +50,7 @@ The following submodules are available:
 - [host](./host.python.md)
 - [hostPortGroup](./hostPortGroup.python.md)
 - [hostVirtualSwitch](./hostVirtualSwitch.python.md)
-- [license](./license.python.md)
+- [licenseResource](./licenseResource.python.md)
 - [nasDatastore](./nasDatastore.python.md)
 - [provider](./provider.python.md)
 - [resourcePool](./resourcePool.python.md)

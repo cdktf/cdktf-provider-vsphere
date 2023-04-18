@@ -1,6 +1,6 @@
 # `vsphere_vapp_container`
 
-Refer to the Terraform Registory for docs: [`vsphere_vapp_container`](https://www.terraform.io/docs/providers/vsphere/r/vapp_container).
+Refer to the Terraform Registory for docs: [`vsphere_vapp_container`](https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_container).
 
 # `vappContainer` Submodule <a name="`vappContainer` Submodule" id="@cdktf/provider-vsphere.vappContainer"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vsphere_vapp_container`](https://ww
 
 ### VappContainer <a name="VappContainer" id="@cdktf/provider-vsphere.vappContainer.VappContainer"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_container vsphere_vapp_container}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_container vsphere_vapp_container}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.vappContainer.VappContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/vappcontainer"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vappcontainer"
 
 vappcontainer.NewVappContainer(scope Construct, id *string, config VappContainerConfig) VappContainer
 ```
@@ -368,7 +368,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.vappContainer.VappContainer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/vappcontainer"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vappcontainer"
 
 vappcontainer.VappContainer_IsConstruct(x interface{}) *bool
 ```
@@ -400,7 +400,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.vappContainer.VappContainer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/vappcontainer"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vappcontainer"
 
 vappcontainer.VappContainer_IsTerraformElement(x interface{}) *bool
 ```
@@ -414,7 +414,7 @@ vappcontainer.VappContainer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.vappContainer.VappContainer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/vappcontainer"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vappcontainer"
 
 vappcontainer.VappContainer_IsTerraformResource(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ vappcontainer.VappContainer_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainer.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainer.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainer.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainer.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainer.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainer.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainer.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainer.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -563,10 +563,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.vappContainer.VappContainer.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -965,11 +965,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.vappContainer.VappContainerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/vappcontainer"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vappcontainer"
 
 &vappcontainer.VappContainerConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -999,7 +999,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/vappcontainer"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainerConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainerConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainerConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainerConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainerConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainerConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1013,7 +1013,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/vappcontainer"
 | <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainerConfig.property.cpuShareLevel">CpuShareLevel</a></code> | <code>*string</code> | The allocation level. |
 | <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainerConfig.property.cpuShares">CpuShares</a></code> | <code>*f64</code> | The number of shares allocated. |
 | <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainerConfig.property.customAttributes">CustomAttributes</a></code> | <code>*map[string]*string</code> | A list of custom attributes to set on this resource. |
-| <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_container#id VappContainer#id}. |
+| <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_container#id VappContainer#id}. |
 | <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainerConfig.property.memoryExpandable">MemoryExpandable</a></code> | <code>interface{}</code> | Determines if the reservation on a vApp container can grow beyond the specified value, if the parent resource pool has unreserved resources. |
 | <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainerConfig.property.memoryLimit">MemoryLimit</a></code> | <code>*f64</code> | The utilization of a vApp container will not exceed this limit, even if there are available resources. |
 | <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainerConfig.property.memoryReservation">MemoryReservation</a></code> | <code>*f64</code> | Amount of memory (MB) that is guaranteed available to the vApp container. |
@@ -1037,10 +1037,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.vappContainer.VappContainerConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -1104,7 +1104,7 @@ Name *string
 
 The name of the vApp container.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_container#name VappContainer#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_container#name VappContainer#name}
 
 ---
 
@@ -1118,7 +1118,7 @@ ParentResourcePoolId *string
 
 The managed object ID of the parent resource pool or the compute resource the vApp container is in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_container#parent_resource_pool_id VappContainer#parent_resource_pool_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_container#parent_resource_pool_id VappContainer#parent_resource_pool_id}
 
 ---
 
@@ -1132,7 +1132,7 @@ CpuExpandable interface{}
 
 Determines if the reservation on a vApp container can grow beyond the specified value, if the parent resource pool has unreserved resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_container#cpu_expandable VappContainer#cpu_expandable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_container#cpu_expandable VappContainer#cpu_expandable}
 
 ---
 
@@ -1148,7 +1148,7 @@ The utilization of a vApp container will not exceed this limit, even if there ar
 
 Set to -1 for unlimited.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_container#cpu_limit VappContainer#cpu_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_container#cpu_limit VappContainer#cpu_limit}
 
 ---
 
@@ -1162,7 +1162,7 @@ CpuReservation *f64
 
 Amount of CPU (MHz) that is guaranteed available to the vApp container.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_container#cpu_reservation VappContainer#cpu_reservation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_container#cpu_reservation VappContainer#cpu_reservation}
 
 ---
 
@@ -1178,7 +1178,7 @@ The allocation level.
 
 The level is a simplified view of shares. Levels map to a pre-determined set of numeric values for shares. Can be one of low, normal, high, or custom.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_container#cpu_share_level VappContainer#cpu_share_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_container#cpu_share_level VappContainer#cpu_share_level}
 
 ---
 
@@ -1194,7 +1194,7 @@ The number of shares allocated.
 
 Used to determine resource allocation in case of resource contention. If this is set, cpu_share_level must be custom.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_container#cpu_shares VappContainer#cpu_shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_container#cpu_shares VappContainer#cpu_shares}
 
 ---
 
@@ -1208,7 +1208,7 @@ CustomAttributes *map[string]*string
 
 A list of custom attributes to set on this resource.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_container#custom_attributes VappContainer#custom_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_container#custom_attributes VappContainer#custom_attributes}
 
 ---
 
@@ -1220,7 +1220,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_container#id VappContainer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_container#id VappContainer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1237,7 +1237,7 @@ MemoryExpandable interface{}
 
 Determines if the reservation on a vApp container can grow beyond the specified value, if the parent resource pool has unreserved resources.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_container#memory_expandable VappContainer#memory_expandable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_container#memory_expandable VappContainer#memory_expandable}
 
 ---
 
@@ -1253,7 +1253,7 @@ The utilization of a vApp container will not exceed this limit, even if there ar
 
 Set to -1 for unlimited.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_container#memory_limit VappContainer#memory_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_container#memory_limit VappContainer#memory_limit}
 
 ---
 
@@ -1267,7 +1267,7 @@ MemoryReservation *f64
 
 Amount of memory (MB) that is guaranteed available to the vApp container.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_container#memory_reservation VappContainer#memory_reservation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_container#memory_reservation VappContainer#memory_reservation}
 
 ---
 
@@ -1283,7 +1283,7 @@ The allocation level.
 
 The level is a simplified view of shares. Levels map to a pre-determined set of numeric values for shares. Can be one of low, normal, high, or custom.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_container#memory_share_level VappContainer#memory_share_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_container#memory_share_level VappContainer#memory_share_level}
 
 ---
 
@@ -1299,7 +1299,7 @@ The number of shares allocated.
 
 Used to determine resource allocation in case of resource contention. If this is set, memory_share_level must be custom.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_container#memory_shares VappContainer#memory_shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_container#memory_shares VappContainer#memory_shares}
 
 ---
 
@@ -1313,7 +1313,7 @@ ParentFolderId *string
 
 The ID of the parent VM folder.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_container#parent_folder_id VappContainer#parent_folder_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_container#parent_folder_id VappContainer#parent_folder_id}
 
 ---
 
@@ -1327,7 +1327,7 @@ Tags *[]*string
 
 A list of tag IDs to apply to this object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_container#tags VappContainer#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_container#tags VappContainer#tags}
 
 ---
 

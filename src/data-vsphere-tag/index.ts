@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/vsphere/d/tag
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/tag
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface DataVsphereTagConfig extends cdktf.TerraformMetaArguments {
   /**
   * The unique identifier of the parent category for this tag.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/tag#category_id DataVsphereTag#category_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/tag#category_id DataVsphereTag#category_id}
   */
   readonly categoryId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/tag#id DataVsphereTag#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/tag#id DataVsphereTag#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,13 +23,13 @@ export interface DataVsphereTagConfig extends cdktf.TerraformMetaArguments {
   /**
   * The display name of the tag.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/tag#name DataVsphereTag#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/tag#name DataVsphereTag#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/vsphere/d/tag vsphere_tag}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/tag vsphere_tag}
 */
 export class DataVsphereTag extends cdktf.TerraformDataSource {
 
@@ -43,7 +43,7 @@ export class DataVsphereTag extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/vsphere/d/tag vsphere_tag} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/tag vsphere_tag} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

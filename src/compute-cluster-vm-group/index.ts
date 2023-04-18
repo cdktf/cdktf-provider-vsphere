@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/vsphere/r/compute_cluster_vm_group
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/compute_cluster_vm_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface ComputeClusterVmGroupConfig extends cdktf.TerraformMetaArgument
   /**
   * The managed object ID of the cluster.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster_vm_group#compute_cluster_id ComputeClusterVmGroup#compute_cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/compute_cluster_vm_group#compute_cluster_id ComputeClusterVmGroup#compute_cluster_id}
   */
   readonly computeClusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster_vm_group#id ComputeClusterVmGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/compute_cluster_vm_group#id ComputeClusterVmGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,19 +23,19 @@ export interface ComputeClusterVmGroupConfig extends cdktf.TerraformMetaArgument
   /**
   * The unique name of the virtual machine group in the cluster.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster_vm_group#name ComputeClusterVmGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/compute_cluster_vm_group#name ComputeClusterVmGroup#name}
   */
   readonly name: string;
   /**
   * The UUIDs of the virtual machines in this group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster_vm_group#virtual_machine_ids ComputeClusterVmGroup#virtual_machine_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/compute_cluster_vm_group#virtual_machine_ids ComputeClusterVmGroup#virtual_machine_ids}
   */
   readonly virtualMachineIds?: string[];
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster_vm_group vsphere_compute_cluster_vm_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/compute_cluster_vm_group vsphere_compute_cluster_vm_group}
 */
 export class ComputeClusterVmGroup extends cdktf.TerraformResource {
 
@@ -49,7 +49,7 @@ export class ComputeClusterVmGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/vsphere/r/compute_cluster_vm_group vsphere_compute_cluster_vm_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/compute_cluster_vm_group vsphere_compute_cluster_vm_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

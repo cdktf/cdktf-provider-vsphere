@@ -1,3 +1,3 @@
 # `vsphere_vnic`
 
-Refer to the Terraform Registory for docs: [`vsphere_vnic`](https://www.terraform.io/docs/providers/vsphere/r/vnic).
+Refer to the Terraform Registory for docs: [`vsphere_vnic`](https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vnic).

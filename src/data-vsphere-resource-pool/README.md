@@ -1,3 +1,3 @@
 # `data_vsphere_resource_pool`
 
-Refer to the Terraform Registory for docs: [`data_vsphere_resource_pool`](https://www.terraform.io/docs/providers/vsphere/d/resource_pool).
+Refer to the Terraform Registory for docs: [`data_vsphere_resource_pool`](https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/resource_pool).

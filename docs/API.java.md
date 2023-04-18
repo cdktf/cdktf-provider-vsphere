@@ -50,7 +50,7 @@ The following submodules are available:
 - [host](./host.java.md)
 - [hostPortGroup](./hostPortGroup.java.md)
 - [hostVirtualSwitch](./hostVirtualSwitch.java.md)
-- [license](./license.java.md)
+- [licenseResource](./licenseResource.java.md)
 - [nasDatastore](./nasDatastore.java.md)
 - [provider](./provider.java.md)
 - [resourcePool](./resourcePool.java.md)

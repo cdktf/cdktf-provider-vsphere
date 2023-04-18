@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/vsphere/d/vapp_container
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/vapp_container
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface DataVsphereVappContainerConfig extends cdktf.TerraformMetaArgum
   /**
   * The Managed Object ID of the datacenter.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/vapp_container#datacenter_id DataVsphereVappContainer#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/vapp_container#datacenter_id DataVsphereVappContainer#datacenter_id}
   */
   readonly datacenterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/vapp_container#id DataVsphereVappContainer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/vapp_container#id DataVsphereVappContainer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,13 +23,13 @@ export interface DataVsphereVappContainerConfig extends cdktf.TerraformMetaArgum
   /**
   * The name of the vApp container.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/vapp_container#name DataVsphereVappContainer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/vapp_container#name DataVsphereVappContainer#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/vsphere/d/vapp_container vsphere_vapp_container}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/vapp_container vsphere_vapp_container}
 */
 export class DataVsphereVappContainer extends cdktf.TerraformDataSource {
 
@@ -43,7 +43,7 @@ export class DataVsphereVappContainer extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/vsphere/d/vapp_container vsphere_vapp_container} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/vapp_container vsphere_vapp_container} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
