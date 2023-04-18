@@ -50,7 +50,7 @@ The following submodules are available:
 - [host](./host.csharp.md)
 - [hostPortGroup](./hostPortGroup.csharp.md)
 - [hostVirtualSwitch](./hostVirtualSwitch.csharp.md)
-- [license](./license.csharp.md)
+- [licenseResource](./licenseResource.csharp.md)
 - [nasDatastore](./nasDatastore.csharp.md)
 - [provider](./provider.csharp.md)
 - [resourcePool](./resourcePool.csharp.md)

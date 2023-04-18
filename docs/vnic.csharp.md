@@ -1,6 +1,6 @@
 # `vsphere_vnic`
 
-Refer to the Terraform Registory for docs: [`vsphere_vnic`](https://www.terraform.io/docs/providers/vsphere/r/vnic).
+Refer to the Terraform Registory for docs: [`vsphere_vnic`](https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vnic).
 
 # `vnic` Submodule <a name="`vnic` Submodule" id="@cdktf/provider-vsphere.vnic"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vsphere_vnic`](https://www.terrafor
 
 ### Vnic <a name="Vnic" id="@cdktf/provider-vsphere.vnic.Vnic"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vsphere/r/vnic vsphere_vnic}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vnic vsphere_vnic}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.vnic.Vnic.Initializer"></a>
 
@@ -428,7 +428,7 @@ Vnic.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-vsphere.vnic.Vnic.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.Vnic.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.Vnic.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.vnic.Vnic.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vnic.Vnic.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.Vnic.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.Vnic.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.Vnic.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -542,10 +542,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.vnic.Vnic.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -828,7 +828,7 @@ using HashiCorp.Cdktf.Providers.Vsphere;
 
 new VnicConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -852,7 +852,7 @@ new VnicConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.vnic.VnicConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vnic.VnicConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -861,7 +861,7 @@ new VnicConfig {
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicConfig.property.host">Host</a></code> | <code>string</code> | ESX host the interface belongs to. |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicConfig.property.distributedPortGroup">DistributedPortGroup</a></code> | <code>string</code> | Key of the distributed portgroup the nic will connect to. |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicConfig.property.distributedSwitchPort">DistributedSwitchPort</a></code> | <code>string</code> | UUID of the DVSwitch the nic will be attached to. Do not set if you set portgroup. |
-| <code><a href="#@cdktf/provider-vsphere.vnic.VnicConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vnic#id Vnic#id}. |
+| <code><a href="#@cdktf/provider-vsphere.vnic.VnicConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vnic#id Vnic#id}. |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicConfig.property.ipv4">Ipv4</a></code> | <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv4">VnicIpv4</a></code> | ipv4 block. |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicConfig.property.ipv6">Ipv6</a></code> | <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv6">VnicIpv6</a></code> | ipv6 block. |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicConfig.property.mac">Mac</a></code> | <code>string</code> | MAC address of the interface. |
@@ -884,10 +884,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.vnic.VnicConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -951,7 +951,7 @@ public string Host { get; set; }
 
 ESX host the interface belongs to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vnic#host Vnic#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vnic#host Vnic#host}
 
 ---
 
@@ -965,7 +965,7 @@ public string DistributedPortGroup { get; set; }
 
 Key of the distributed portgroup the nic will connect to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vnic#distributed_port_group Vnic#distributed_port_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vnic#distributed_port_group Vnic#distributed_port_group}
 
 ---
 
@@ -979,7 +979,7 @@ public string DistributedSwitchPort { get; set; }
 
 UUID of the DVSwitch the nic will be attached to. Do not set if you set portgroup.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vnic#distributed_switch_port Vnic#distributed_switch_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vnic#distributed_switch_port Vnic#distributed_switch_port}
 
 ---
 
@@ -991,7 +991,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vnic#id Vnic#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vnic#id Vnic#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1008,7 +1008,7 @@ public VnicIpv4 Ipv4 { get; set; }
 
 ipv4 block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vnic#ipv4 Vnic#ipv4}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vnic#ipv4 Vnic#ipv4}
 
 ---
 
@@ -1022,7 +1022,7 @@ public VnicIpv6 Ipv6 { get; set; }
 
 ipv6 block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vnic#ipv6 Vnic#ipv6}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vnic#ipv6 Vnic#ipv6}
 
 ---
 
@@ -1036,7 +1036,7 @@ public string Mac { get; set; }
 
 MAC address of the interface.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vnic#mac Vnic#mac}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vnic#mac Vnic#mac}
 
 ---
 
@@ -1050,7 +1050,7 @@ public double Mtu { get; set; }
 
 MTU of the interface.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vnic#mtu Vnic#mtu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vnic#mtu Vnic#mtu}
 
 ---
 
@@ -1064,7 +1064,7 @@ public string Netstack { get; set; }
 
 TCP/IP stack setting for this interface. Possible values are 'defaultTcpipStack', 'vmotion', 'provisioning'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vnic#netstack Vnic#netstack}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vnic#netstack Vnic#netstack}
 
 ---
 
@@ -1078,7 +1078,7 @@ public string Portgroup { get; set; }
 
 portgroup to attach the nic to. Do not set if you set distributed_switch_port.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vnic#portgroup Vnic#portgroup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vnic#portgroup Vnic#portgroup}
 
 ---
 
@@ -1118,7 +1118,7 @@ public object Dhcp { get; set; }
 
 Use DHCP to configure the interface's IPv4 stack.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vnic#dhcp Vnic#dhcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vnic#dhcp Vnic#dhcp}
 
 ---
 
@@ -1132,7 +1132,7 @@ public string Gw { get; set; }
 
 IP address of the default gateway, if DHCP is not set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vnic#gw Vnic#gw}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vnic#gw Vnic#gw}
 
 ---
 
@@ -1146,7 +1146,7 @@ public string Ip { get; set; }
 
 address of the interface, if DHCP is not set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vnic#ip Vnic#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vnic#ip Vnic#ip}
 
 ---
 
@@ -1160,7 +1160,7 @@ public string Netmask { get; set; }
 
 netmask of the interface, if DHCP is not set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vnic#netmask Vnic#netmask}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vnic#netmask Vnic#netmask}
 
 ---
 
@@ -1200,7 +1200,7 @@ public string[] Addresses { get; set; }
 
 List of IPv6 addresses.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vnic#addresses Vnic#addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vnic#addresses Vnic#addresses}
 
 ---
 
@@ -1214,7 +1214,7 @@ public object Autoconfig { get; set; }
 
 Use IPv6 Autoconfiguration (RFC2462).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vnic#autoconfig Vnic#autoconfig}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vnic#autoconfig Vnic#autoconfig}
 
 ---
 
@@ -1228,7 +1228,7 @@ public object Dhcp { get; set; }
 
 Use DHCP to configure the interface's IPv4 stack.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vnic#dhcp Vnic#dhcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vnic#dhcp Vnic#dhcp}
 
 ---
 
@@ -1242,7 +1242,7 @@ public string Gw { get; set; }
 
 IP address of the default gateway, if DHCP or autoconfig is not set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vnic#gw Vnic#gw}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vnic#gw Vnic#gw}
 
 ---
 

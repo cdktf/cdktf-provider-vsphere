@@ -1,6 +1,6 @@
 # `data_vsphere_ovf_vm_template`
 
-Refer to the Terraform Registory for docs: [`data_vsphere_ovf_vm_template`](https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template).
+Refer to the Terraform Registory for docs: [`data_vsphere_ovf_vm_template`](https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template).
 
 # `dataVsphereOvfVmTemplate` Submodule <a name="`dataVsphereOvfVmTemplate` Submodule" id="@cdktf/provider-vsphere.dataVsphereOvfVmTemplate"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_vsphere_ovf_vm_template`](http
 
 ### DataVsphereOvfVmTemplate <a name="DataVsphereOvfVmTemplate" id="@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template vsphere_ovf_vm_template}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template vsphere_ovf_vm_template}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.Initializer"></a>
 
@@ -19,7 +19,7 @@ dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -48,7 +48,7 @@ dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate(
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -63,7 +63,7 @@ dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate(
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.Initializer.parameter.diskProvisioning">disk_provisioning</a></code> | <code>str</code> | An optional disk provisioning. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.Initializer.parameter.enableHiddenProperties">enable_hidden_properties</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow properties with ovf:userConfigurable=false to be set. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.Initializer.parameter.folder">folder</a></code> | <code>str</code> | The name of the folder to locate the virtual machine in. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#id DataVsphereOvfVmTemplate#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#id DataVsphereOvfVmTemplate#id}. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.Initializer.parameter.ipAllocationPolicy">ip_allocation_policy</a></code> | <code>str</code> | The IP allocation policy. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.Initializer.parameter.ipProtocol">ip_protocol</a></code> | <code>str</code> | The IP protocol. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.Initializer.parameter.localOvfPath">local_ovf_path</a></code> | <code>str</code> | The absolute path to the ovf/ova file in the local system. |
@@ -98,7 +98,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -138,7 +138,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of an optional host system to pin the virtual machine to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#host_system_id DataVsphereOvfVmTemplate#host_system_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#host_system_id DataVsphereOvfVmTemplate#host_system_id}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphe
 
 Name of the virtual machine to create.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#name DataVsphereOvfVmTemplate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#name DataVsphereOvfVmTemplate#name}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphe
 
 The ID of a resource pool to put the virtual machine in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#resource_pool_id DataVsphereOvfVmTemplate#resource_pool_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#resource_pool_id DataVsphereOvfVmTemplate#resource_pool_id}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphe
 
 Allow unverified ssl certificates while deploying ovf/ova from url.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#allow_unverified_ssl_cert DataVsphereOvfVmTemplate#allow_unverified_ssl_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#allow_unverified_ssl_cert DataVsphereOvfVmTemplate#allow_unverified_ssl_cert}
 
 ---
 
@@ -180,7 +180,7 @@ The ID of the virtual machine's datastore.
 
 The virtual machine configuration is placed here, along with any virtual disks that are created without datastores.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#datastore_id DataVsphereOvfVmTemplate#datastore_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#datastore_id DataVsphereOvfVmTemplate#datastore_id}
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphe
 
 The Deployment option to be chosen. If empty, the default option is used.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#deployment_option DataVsphereOvfVmTemplate#deployment_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#deployment_option DataVsphereOvfVmTemplate#deployment_option}
 
 ---
 
@@ -202,7 +202,7 @@ An optional disk provisioning.
 
 If set, all the disks in the deployed ovf will have the same specified disk type (e.g., thin provisioned).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#disk_provisioning DataVsphereOvfVmTemplate#disk_provisioning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#disk_provisioning DataVsphereOvfVmTemplate#disk_provisioning}
 
 ---
 
@@ -212,7 +212,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphe
 
 Allow properties with ovf:userConfigurable=false to be set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#enable_hidden_properties DataVsphereOvfVmTemplate#enable_hidden_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#enable_hidden_properties DataVsphereOvfVmTemplate#enable_hidden_properties}
 
 ---
 
@@ -222,7 +222,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphe
 
 The name of the folder to locate the virtual machine in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#folder DataVsphereOvfVmTemplate#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#folder DataVsphereOvfVmTemplate#folder}
 
 ---
 
@@ -230,7 +230,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphe
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#id DataVsphereOvfVmTemplate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#id DataVsphereOvfVmTemplate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -243,7 +243,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The IP allocation policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#ip_allocation_policy DataVsphereOvfVmTemplate#ip_allocation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#ip_allocation_policy DataVsphereOvfVmTemplate#ip_allocation_policy}
 
 ---
 
@@ -253,7 +253,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphe
 
 The IP protocol.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#ip_protocol DataVsphereOvfVmTemplate#ip_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#ip_protocol DataVsphereOvfVmTemplate#ip_protocol}
 
 ---
 
@@ -263,7 +263,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphe
 
 The absolute path to the ovf/ova file in the local system.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#local_ovf_path DataVsphereOvfVmTemplate#local_ovf_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#local_ovf_path DataVsphereOvfVmTemplate#local_ovf_path}
 
 ---
 
@@ -273,7 +273,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphe
 
 The mapping of name of network identifiers from the ovf descriptor to network UUID in the VI infrastructure.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#ovf_network_map DataVsphereOvfVmTemplate#ovf_network_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#ovf_network_map DataVsphereOvfVmTemplate#ovf_network_map}
 
 ---
 
@@ -283,7 +283,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphe
 
 URL to the remote ovf/ova file to be deployed.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#remote_ovf_url DataVsphereOvfVmTemplate#remote_ovf_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#remote_ovf_url DataVsphereOvfVmTemplate#remote_ovf_url}
 
 ---
 
@@ -690,7 +690,7 @@ dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.is_terraform_data_source(
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -820,10 +820,10 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1366,7 +1366,7 @@ from cdktf_cdktf_provider_vsphere import data_vsphere_ovf_vm_template
 
 dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplateConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -1395,7 +1395,7 @@ dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplateConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplateConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplateConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplateConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplateConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplateConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplateConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1410,7 +1410,7 @@ dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplateConfig(
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplateConfig.property.diskProvisioning">disk_provisioning</a></code> | <code>str</code> | An optional disk provisioning. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplateConfig.property.enableHiddenProperties">enable_hidden_properties</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow properties with ovf:userConfigurable=false to be set. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplateConfig.property.folder">folder</a></code> | <code>str</code> | The name of the folder to locate the virtual machine in. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplateConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#id DataVsphereOvfVmTemplate#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplateConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#id DataVsphereOvfVmTemplate#id}. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplateConfig.property.ipAllocationPolicy">ip_allocation_policy</a></code> | <code>str</code> | The IP allocation policy. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplateConfig.property.ipProtocol">ip_protocol</a></code> | <code>str</code> | The IP protocol. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplateConfig.property.localOvfPath">local_ovf_path</a></code> | <code>str</code> | The absolute path to the ovf/ova file in the local system. |
@@ -1432,10 +1432,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplateConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1499,7 +1499,7 @@ host_system_id: str
 
 The ID of an optional host system to pin the virtual machine to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#host_system_id DataVsphereOvfVmTemplate#host_system_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#host_system_id DataVsphereOvfVmTemplate#host_system_id}
 
 ---
 
@@ -1513,7 +1513,7 @@ name: str
 
 Name of the virtual machine to create.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#name DataVsphereOvfVmTemplate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#name DataVsphereOvfVmTemplate#name}
 
 ---
 
@@ -1527,7 +1527,7 @@ resource_pool_id: str
 
 The ID of a resource pool to put the virtual machine in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#resource_pool_id DataVsphereOvfVmTemplate#resource_pool_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#resource_pool_id DataVsphereOvfVmTemplate#resource_pool_id}
 
 ---
 
@@ -1541,7 +1541,7 @@ allow_unverified_ssl_cert: typing.Union[bool, IResolvable]
 
 Allow unverified ssl certificates while deploying ovf/ova from url.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#allow_unverified_ssl_cert DataVsphereOvfVmTemplate#allow_unverified_ssl_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#allow_unverified_ssl_cert DataVsphereOvfVmTemplate#allow_unverified_ssl_cert}
 
 ---
 
@@ -1557,7 +1557,7 @@ The ID of the virtual machine's datastore.
 
 The virtual machine configuration is placed here, along with any virtual disks that are created without datastores.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#datastore_id DataVsphereOvfVmTemplate#datastore_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#datastore_id DataVsphereOvfVmTemplate#datastore_id}
 
 ---
 
@@ -1571,7 +1571,7 @@ deployment_option: str
 
 The Deployment option to be chosen. If empty, the default option is used.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#deployment_option DataVsphereOvfVmTemplate#deployment_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#deployment_option DataVsphereOvfVmTemplate#deployment_option}
 
 ---
 
@@ -1587,7 +1587,7 @@ An optional disk provisioning.
 
 If set, all the disks in the deployed ovf will have the same specified disk type (e.g., thin provisioned).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#disk_provisioning DataVsphereOvfVmTemplate#disk_provisioning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#disk_provisioning DataVsphereOvfVmTemplate#disk_provisioning}
 
 ---
 
@@ -1601,7 +1601,7 @@ enable_hidden_properties: typing.Union[bool, IResolvable]
 
 Allow properties with ovf:userConfigurable=false to be set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#enable_hidden_properties DataVsphereOvfVmTemplate#enable_hidden_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#enable_hidden_properties DataVsphereOvfVmTemplate#enable_hidden_properties}
 
 ---
 
@@ -1615,7 +1615,7 @@ folder: str
 
 The name of the folder to locate the virtual machine in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#folder DataVsphereOvfVmTemplate#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#folder DataVsphereOvfVmTemplate#folder}
 
 ---
 
@@ -1627,7 +1627,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#id DataVsphereOvfVmTemplate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#id DataVsphereOvfVmTemplate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1644,7 +1644,7 @@ ip_allocation_policy: str
 
 The IP allocation policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#ip_allocation_policy DataVsphereOvfVmTemplate#ip_allocation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#ip_allocation_policy DataVsphereOvfVmTemplate#ip_allocation_policy}
 
 ---
 
@@ -1658,7 +1658,7 @@ ip_protocol: str
 
 The IP protocol.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#ip_protocol DataVsphereOvfVmTemplate#ip_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#ip_protocol DataVsphereOvfVmTemplate#ip_protocol}
 
 ---
 
@@ -1672,7 +1672,7 @@ local_ovf_path: str
 
 The absolute path to the ovf/ova file in the local system.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#local_ovf_path DataVsphereOvfVmTemplate#local_ovf_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#local_ovf_path DataVsphereOvfVmTemplate#local_ovf_path}
 
 ---
 
@@ -1686,7 +1686,7 @@ ovf_network_map: typing.Mapping[str]
 
 The mapping of name of network identifiers from the ovf descriptor to network UUID in the VI infrastructure.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#ovf_network_map DataVsphereOvfVmTemplate#ovf_network_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#ovf_network_map DataVsphereOvfVmTemplate#ovf_network_map}
 
 ---
 
@@ -1700,7 +1700,7 @@ remote_ovf_url: str
 
 URL to the remote ovf/ova file to be deployed.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/ovf_vm_template#remote_ovf_url DataVsphereOvfVmTemplate#remote_ovf_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/ovf_vm_template#remote_ovf_url DataVsphereOvfVmTemplate#remote_ovf_url}
 
 ---
 

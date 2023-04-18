@@ -23,7 +23,7 @@ export * as haVmOverride from './ha-vm-override';
 export * as host from './host';
 export * as hostPortGroup from './host-port-group';
 export * as hostVirtualSwitch from './host-virtual-switch';
-export * as license from './license';
+export * as licenseResource from './license-resource';
 export * as nasDatastore from './nas-datastore';
 export * as resourcePool from './resource-pool';
 export * as role from './role';

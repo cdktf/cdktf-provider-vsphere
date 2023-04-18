@@ -1,3 +1,3 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`vsphere`](https://www.terraform.io/docs/providers/vsphere).
+Refer to the Terraform Registory for docs: [`vsphere`](https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs).

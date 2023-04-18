@@ -1,6 +1,6 @@
 # `data_vsphere_folder`
 
-Refer to the Terraform Registory for docs: [`data_vsphere_folder`](https://www.terraform.io/docs/providers/vsphere/d/folder).
+Refer to the Terraform Registory for docs: [`data_vsphere_folder`](https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/folder).
 
 # `dataVsphereFolder` Submodule <a name="`dataVsphereFolder` Submodule" id="@cdktf/provider-vsphere.dataVsphereFolder"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_vsphere_folder`](https://www.t
 
 ### DataVsphereFolder <a name="DataVsphereFolder" id="@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vsphere/d/folder vsphere_folder}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/folder vsphere_folder}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder.Initializer"></a>
 
@@ -345,7 +345,7 @@ DataVsphereFolder.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -432,10 +432,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -548,7 +548,7 @@ using HashiCorp.Cdktf.Providers.Vsphere;
 
 new DataVsphereFolderConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -564,14 +564,14 @@ new DataVsphereFolderConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolderConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolderConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolderConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolderConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolderConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolderConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolderConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolderConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolderConfig.property.path">Path</a></code> | <code>string</code> | The absolute path of the folder. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolderConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/folder#id DataVsphereFolder#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolderConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/folder#id DataVsphereFolder#id}. |
 
 ---
 
@@ -588,10 +588,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolderConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -655,7 +655,7 @@ public string Path { get; set; }
 
 The absolute path of the folder.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/folder#path DataVsphereFolder#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/folder#path DataVsphereFolder#path}
 
 ---
 
@@ -667,7 +667,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/folder#id DataVsphereFolder#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/folder#id DataVsphereFolder#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,6 +1,6 @@
 # `vsphere_vapp_entity`
 
-Refer to the Terraform Registory for docs: [`vsphere_vapp_entity`](https://www.terraform.io/docs/providers/vsphere/r/vapp_entity).
+Refer to the Terraform Registory for docs: [`vsphere_vapp_entity`](https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_entity).
 
 # `vappEntity` Submodule <a name="`vappEntity` Submodule" id="@cdktf/provider-vsphere.vappEntity"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vsphere_vapp_entity`](https://www.t
 
 ### VappEntity <a name="VappEntity" id="@cdktf/provider-vsphere.vappEntity.VappEntity"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_entity vsphere_vapp_entity}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_entity vsphere_vapp_entity}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.vappEntity.VappEntity.Initializer"></a>
 
@@ -19,6 +19,7 @@ VappEntity.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -46,7 +47,7 @@ VappEntity.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntity.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntity.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntity.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntity.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntity.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntity.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntity.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntity.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -55,7 +56,7 @@ VappEntity.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntity.Initializer.parameter.containerId">containerId</a></code> | <code>java.lang.String</code> | Managed object ID of the vApp container the entity is a member of. |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntity.Initializer.parameter.targetId">targetId</a></code> | <code>java.lang.String</code> | Managed object ID of the entity to power on or power off. |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntity.Initializer.parameter.customAttributes">customAttributes</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A list of custom attributes to set on this resource. |
-| <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntity.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_entity#id VappEntity#id}. |
+| <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntity.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_entity#id VappEntity#id}. |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntity.Initializer.parameter.startAction">startAction</a></code> | <code>java.lang.String</code> | How to start the entity. |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntity.Initializer.parameter.startDelay">startDelay</a></code> | <code>java.lang.Number</code> | Delay in seconds before continuing with the next entity in the order of entities to be started. |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntity.Initializer.parameter.startOrder">startOrder</a></code> | <code>java.lang.Number</code> | Order to start and stop target in vApp. |
@@ -92,7 +93,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vsphere.vappEntity.VappEntity.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -132,7 +133,7 @@ Must be unique amongst siblings in the same scope
 
 Managed object ID of the vApp container the entity is a member of.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_entity#container_id VappEntity#container_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_entity#container_id VappEntity#container_id}
 
 ---
 
@@ -144,7 +145,7 @@ Managed object ID of the entity to power on or power off.
 
 This can be a virtual machine or a vApp.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_entity#target_id VappEntity#target_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_entity#target_id VappEntity#target_id}
 
 ---
 
@@ -154,7 +155,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphe
 
 A list of custom attributes to set on this resource.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_entity#custom_attributes VappEntity#custom_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_entity#custom_attributes VappEntity#custom_attributes}
 
 ---
 
@@ -162,7 +163,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphe
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_entity#id VappEntity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_entity#id VappEntity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -177,7 +178,7 @@ How to start the entity.
 
 Valid settings are none or powerOn. If set to none, then the entity does not participate in auto-start.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_entity#start_action VappEntity#start_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_entity#start_action VappEntity#start_action}
 
 ---
 
@@ -187,7 +188,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphe
 
 Delay in seconds before continuing with the next entity in the order of entities to be started.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_entity#start_delay VappEntity#start_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_entity#start_delay VappEntity#start_delay}
 
 ---
 
@@ -197,7 +198,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphe
 
 Order to start and stop target in vApp.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_entity#start_order VappEntity#start_order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_entity#start_order VappEntity#start_order}
 
 ---
 
@@ -209,7 +210,7 @@ Defines the stop action for the entity.
 
 Can be set to none, powerOff, guestShutdown, or suspend. If set to none, then the entity does not participate in auto-stop.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_entity#stop_action VappEntity#stop_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_entity#stop_action VappEntity#stop_action}
 
 ---
 
@@ -219,7 +220,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphe
 
 Delay in seconds before continuing with the next entity in the order of entities to be stopped.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_entity#stop_delay VappEntity#stop_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_entity#stop_delay VappEntity#stop_delay}
 
 ---
 
@@ -229,7 +230,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphe
 
 A list of tag IDs to apply to this object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_entity#tags VappEntity#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_entity#tags VappEntity#tags}
 
 ---
 
@@ -241,7 +242,7 @@ Determines if the VM should be marked as being started when VMware Tools are rea
 
 This property has no effect for vApps.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_entity#wait_for_guest VappEntity#wait_for_guest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_entity#wait_for_guest VappEntity#wait_for_guest}
 
 ---
 
@@ -597,7 +598,7 @@ VappEntity.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntity.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntity.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntity.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntity.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntity.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntity.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntity.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntity.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -713,10 +714,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vsphere.vappEntity.VappEntity.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1021,6 +1022,7 @@ VappEntityConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -1048,7 +1050,7 @@ VappEntityConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntityConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntityConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntityConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntityConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntityConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntityConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1057,7 +1059,7 @@ VappEntityConfig.builder()
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntityConfig.property.containerId">containerId</a></code> | <code>java.lang.String</code> | Managed object ID of the vApp container the entity is a member of. |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntityConfig.property.targetId">targetId</a></code> | <code>java.lang.String</code> | Managed object ID of the entity to power on or power off. |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntityConfig.property.customAttributes">customAttributes</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A list of custom attributes to set on this resource. |
-| <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntityConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_entity#id VappEntity#id}. |
+| <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntityConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_entity#id VappEntity#id}. |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntityConfig.property.startAction">startAction</a></code> | <code>java.lang.String</code> | How to start the entity. |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntityConfig.property.startDelay">startDelay</a></code> | <code>java.lang.Number</code> | Delay in seconds before continuing with the next entity in the order of entities to be started. |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntityConfig.property.startOrder">startOrder</a></code> | <code>java.lang.Number</code> | Order to start and stop target in vApp. |
@@ -1081,10 +1083,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vsphere.vappEntity.VappEntityConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1148,7 +1150,7 @@ public java.lang.String getContainerId();
 
 Managed object ID of the vApp container the entity is a member of.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_entity#container_id VappEntity#container_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_entity#container_id VappEntity#container_id}
 
 ---
 
@@ -1164,7 +1166,7 @@ Managed object ID of the entity to power on or power off.
 
 This can be a virtual machine or a vApp.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_entity#target_id VappEntity#target_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_entity#target_id VappEntity#target_id}
 
 ---
 
@@ -1178,7 +1180,7 @@ public java.util.Map<java.lang.String, java.lang.String> getCustomAttributes();
 
 A list of custom attributes to set on this resource.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_entity#custom_attributes VappEntity#custom_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_entity#custom_attributes VappEntity#custom_attributes}
 
 ---
 
@@ -1190,7 +1192,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_entity#id VappEntity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_entity#id VappEntity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1209,7 +1211,7 @@ How to start the entity.
 
 Valid settings are none or powerOn. If set to none, then the entity does not participate in auto-start.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_entity#start_action VappEntity#start_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_entity#start_action VappEntity#start_action}
 
 ---
 
@@ -1223,7 +1225,7 @@ public java.lang.Number getStartDelay();
 
 Delay in seconds before continuing with the next entity in the order of entities to be started.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_entity#start_delay VappEntity#start_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_entity#start_delay VappEntity#start_delay}
 
 ---
 
@@ -1237,7 +1239,7 @@ public java.lang.Number getStartOrder();
 
 Order to start and stop target in vApp.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_entity#start_order VappEntity#start_order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_entity#start_order VappEntity#start_order}
 
 ---
 
@@ -1253,7 +1255,7 @@ Defines the stop action for the entity.
 
 Can be set to none, powerOff, guestShutdown, or suspend. If set to none, then the entity does not participate in auto-stop.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_entity#stop_action VappEntity#stop_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_entity#stop_action VappEntity#stop_action}
 
 ---
 
@@ -1267,7 +1269,7 @@ public java.lang.Number getStopDelay();
 
 Delay in seconds before continuing with the next entity in the order of entities to be stopped.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_entity#stop_delay VappEntity#stop_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_entity#stop_delay VappEntity#stop_delay}
 
 ---
 
@@ -1281,7 +1283,7 @@ public java.util.List<java.lang.String> getTags();
 
 A list of tag IDs to apply to this object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_entity#tags VappEntity#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_entity#tags VappEntity#tags}
 
 ---
 
@@ -1297,7 +1299,7 @@ Determines if the VM should be marked as being started when VMware Tools are rea
 
 This property has no effect for vApps.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vapp_entity#wait_for_guest VappEntity#wait_for_guest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_entity#wait_for_guest VappEntity#wait_for_guest}
 
 ---
 

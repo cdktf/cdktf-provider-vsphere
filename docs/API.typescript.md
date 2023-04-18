@@ -50,7 +50,7 @@ The following submodules are available:
 - [host](./host.typescript.md)
 - [hostPortGroup](./hostPortGroup.typescript.md)
 - [hostVirtualSwitch](./hostVirtualSwitch.typescript.md)
-- [license](./license.typescript.md)
+- [licenseResource](./licenseResource.typescript.md)
 - [nasDatastore](./nasDatastore.typescript.md)
 - [provider](./provider.typescript.md)
 - [resourcePool](./resourcePool.typescript.md)

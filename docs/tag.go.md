@@ -1,6 +1,6 @@
 # `vsphere_tag`
 
-Refer to the Terraform Registory for docs: [`vsphere_tag`](https://www.terraform.io/docs/providers/vsphere/r/tag).
+Refer to the Terraform Registory for docs: [`vsphere_tag`](https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/tag).
 
 # `tag` Submodule <a name="`tag` Submodule" id="@cdktf/provider-vsphere.tag"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vsphere_tag`](https://www.terraform
 
 ### Tag <a name="Tag" id="@cdktf/provider-vsphere.tag.Tag"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vsphere/r/tag vsphere_tag}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/tag vsphere_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.tag.Tag.Initializer"></a>
 
@@ -353,7 +353,7 @@ tag.Tag_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-vsphere.tag.Tag.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.tag.Tag.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.tag.Tag.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.tag.Tag.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.tag.Tag.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.tag.Tag.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.tag.Tag.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.tag.Tag.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -455,10 +455,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.tag.Tag.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -621,7 +621,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/tag"
 
 &tag.TagConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -639,7 +639,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/tag"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.tag.TagConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.tag.TagConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.tag.TagConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.tag.TagConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.tag.TagConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.tag.TagConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -648,7 +648,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/tag"
 | <code><a href="#@cdktf/provider-vsphere.tag.TagConfig.property.categoryId">CategoryId</a></code> | <code>*string</code> | The unique identifier of the parent category in which this tag will be created. |
 | <code><a href="#@cdktf/provider-vsphere.tag.TagConfig.property.name">Name</a></code> | <code>*string</code> | The display name of the tag. The name must be unique within its category. |
 | <code><a href="#@cdktf/provider-vsphere.tag.TagConfig.property.description">Description</a></code> | <code>*string</code> | The description of the tag. |
-| <code><a href="#@cdktf/provider-vsphere.tag.TagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/tag#id Tag#id}. |
+| <code><a href="#@cdktf/provider-vsphere.tag.TagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/tag#id Tag#id}. |
 
 ---
 
@@ -665,10 +665,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.tag.TagConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -732,7 +732,7 @@ CategoryId *string
 
 The unique identifier of the parent category in which this tag will be created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/tag#category_id Tag#category_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/tag#category_id Tag#category_id}
 
 ---
 
@@ -746,7 +746,7 @@ Name *string
 
 The display name of the tag. The name must be unique within its category.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/tag#name Tag#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/tag#name Tag#name}
 
 ---
 
@@ -760,7 +760,7 @@ Description *string
 
 The description of the tag.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/tag#description Tag#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/tag#description Tag#description}
 
 ---
 
@@ -772,7 +772,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/tag#id Tag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/tag#id Tag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,6 +1,6 @@
 # `data_vsphere_vapp_container`
 
-Refer to the Terraform Registory for docs: [`data_vsphere_vapp_container`](https://www.terraform.io/docs/providers/vsphere/d/vapp_container).
+Refer to the Terraform Registory for docs: [`data_vsphere_vapp_container`](https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/vapp_container).
 
 # `dataVsphereVappContainer` Submodule <a name="`dataVsphereVappContainer` Submodule" id="@cdktf/provider-vsphere.dataVsphereVappContainer"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_vsphere_vapp_container`](https
 
 ### DataVsphereVappContainer <a name="DataVsphereVappContainer" id="@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainer"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vsphere/d/vapp_container vsphere_vapp_container}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/vapp_container vsphere_vapp_container}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainer.Initializer"></a>
 
@@ -345,7 +345,7 @@ DataVsphereVappContainer.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainer.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainer.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainer.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainer.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainer.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainer.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainer.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainer.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -434,10 +434,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainer.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -570,7 +570,7 @@ using HashiCorp.Cdktf.Providers.Vsphere;
 
 new DataVsphereVappContainerConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -587,7 +587,7 @@ new DataVsphereVappContainerConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainerConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainerConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainerConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainerConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainerConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainerConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -595,7 +595,7 @@ new DataVsphereVappContainerConfig {
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainerConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainerConfig.property.datacenterId">DatacenterId</a></code> | <code>string</code> | The Managed Object ID of the datacenter. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainerConfig.property.name">Name</a></code> | <code>string</code> | The name of the vApp container. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainerConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/vapp_container#id DataVsphereVappContainer#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainerConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/vapp_container#id DataVsphereVappContainer#id}. |
 
 ---
 
@@ -612,10 +612,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainerConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -679,7 +679,7 @@ public string DatacenterId { get; set; }
 
 The Managed Object ID of the datacenter.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/vapp_container#datacenter_id DataVsphereVappContainer#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/vapp_container#datacenter_id DataVsphereVappContainer#datacenter_id}
 
 ---
 
@@ -693,7 +693,7 @@ public string Name { get; set; }
 
 The name of the vApp container.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/vapp_container#name DataVsphereVappContainer#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/vapp_container#name DataVsphereVappContainer#name}
 
 ---
 
@@ -705,7 +705,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/vapp_container#id DataVsphereVappContainer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/vapp_container#id DataVsphereVappContainer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

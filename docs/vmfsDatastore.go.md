@@ -1,6 +1,6 @@
 # `vsphere_vmfs_datastore`
 
-Refer to the Terraform Registory for docs: [`vsphere_vmfs_datastore`](https://www.terraform.io/docs/providers/vsphere/r/vmfs_datastore).
+Refer to the Terraform Registory for docs: [`vsphere_vmfs_datastore`](https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vmfs_datastore).
 
 # `vmfsDatastore` Submodule <a name="`vmfsDatastore` Submodule" id="@cdktf/provider-vsphere.vmfsDatastore"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vsphere_vmfs_datastore`](https://ww
 
 ### VmfsDatastore <a name="VmfsDatastore" id="@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vsphere/r/vmfs_datastore vsphere_vmfs_datastore}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vmfs_datastore vsphere_vmfs_datastore}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.Initializer"></a>
 
@@ -374,7 +374,7 @@ vmfsdatastore.VmfsDatastore_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -491,10 +491,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -807,7 +807,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/vmfsdatastore"
 
 &vmfsdatastore.VmfsDatastoreConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -829,7 +829,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/vmfsdatastore"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastoreConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastoreConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastoreConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastoreConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastoreConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastoreConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -841,7 +841,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/vmfsdatastore"
 | <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastoreConfig.property.customAttributes">CustomAttributes</a></code> | <code>*map[string]*string</code> | A list of custom attributes to set on this resource. |
 | <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastoreConfig.property.datastoreClusterId">DatastoreClusterId</a></code> | <code>*string</code> | The managed object ID of the datastore cluster to place the datastore in. |
 | <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastoreConfig.property.folder">Folder</a></code> | <code>*string</code> | The path to the datastore folder to put the datastore in. |
-| <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastoreConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vmfs_datastore#id VmfsDatastore#id}. |
+| <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastoreConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vmfs_datastore#id VmfsDatastore#id}. |
 | <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastoreConfig.property.tags">Tags</a></code> | <code>*[]*string</code> | A list of tag IDs to apply to this object. |
 
 ---
@@ -859,10 +859,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastoreConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -926,7 +926,7 @@ Disks *[]*string
 
 The disks to add to the datastore.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vmfs_datastore#disks VmfsDatastore#disks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vmfs_datastore#disks VmfsDatastore#disks}
 
 ---
 
@@ -940,7 +940,7 @@ HostSystemId *string
 
 The managed object ID of the host to set up the datastore on.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vmfs_datastore#host_system_id VmfsDatastore#host_system_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vmfs_datastore#host_system_id VmfsDatastore#host_system_id}
 
 ---
 
@@ -954,7 +954,7 @@ Name *string
 
 The name of the datastore.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vmfs_datastore#name VmfsDatastore#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vmfs_datastore#name VmfsDatastore#name}
 
 ---
 
@@ -968,7 +968,7 @@ CustomAttributes *map[string]*string
 
 A list of custom attributes to set on this resource.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vmfs_datastore#custom_attributes VmfsDatastore#custom_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vmfs_datastore#custom_attributes VmfsDatastore#custom_attributes}
 
 ---
 
@@ -982,7 +982,7 @@ DatastoreClusterId *string
 
 The managed object ID of the datastore cluster to place the datastore in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vmfs_datastore#datastore_cluster_id VmfsDatastore#datastore_cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vmfs_datastore#datastore_cluster_id VmfsDatastore#datastore_cluster_id}
 
 ---
 
@@ -996,7 +996,7 @@ Folder *string
 
 The path to the datastore folder to put the datastore in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vmfs_datastore#folder VmfsDatastore#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vmfs_datastore#folder VmfsDatastore#folder}
 
 ---
 
@@ -1008,7 +1008,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vmfs_datastore#id VmfsDatastore#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vmfs_datastore#id VmfsDatastore#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1025,7 +1025,7 @@ Tags *[]*string
 
 A list of tag IDs to apply to this object.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vmfs_datastore#tags VmfsDatastore#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vmfs_datastore#tags VmfsDatastore#tags}
 
 ---
 

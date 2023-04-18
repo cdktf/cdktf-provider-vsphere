@@ -1,6 +1,6 @@
 # `vsphere_tag_category`
 
-Refer to the Terraform Registory for docs: [`vsphere_tag_category`](https://www.terraform.io/docs/providers/vsphere/r/tag_category).
+Refer to the Terraform Registory for docs: [`vsphere_tag_category`](https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/tag_category).
 
 # `tagCategory` Submodule <a name="`tagCategory` Submodule" id="@cdktf/provider-vsphere.tagCategory"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vsphere_tag_category`](https://www.
 
 ### TagCategory <a name="TagCategory" id="@cdktf/provider-vsphere.tagCategory.TagCategory"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vsphere/r/tag_category vsphere_tag_category}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/tag_category vsphere_tag_category}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.tagCategory.TagCategory.Initializer"></a>
 
@@ -353,7 +353,7 @@ tagCategory.TagCategory.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-vsphere.tagCategory.TagCategory.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.tagCategory.TagCategory.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.tagCategory.TagCategory.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.tagCategory.TagCategory.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.tagCategory.TagCategory.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.tagCategory.TagCategory.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.tagCategory.TagCategory.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.tagCategory.TagCategory.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -457,10 +457,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vsphere.tagCategory.TagCategory.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -649,7 +649,7 @@ const tagCategoryConfig: tagCategory.TagCategoryConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.tagCategory.TagCategoryConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.tagCategory.TagCategoryConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.tagCategory.TagCategoryConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.tagCategory.TagCategoryConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.tagCategory.TagCategoryConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.tagCategory.TagCategoryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -659,7 +659,7 @@ const tagCategoryConfig: tagCategory.TagCategoryConfig = { ... }
 | <code><a href="#@cdktf/provider-vsphere.tagCategory.TagCategoryConfig.property.cardinality">cardinality</a></code> | <code>string</code> | The associated cardinality of the category. |
 | <code><a href="#@cdktf/provider-vsphere.tagCategory.TagCategoryConfig.property.name">name</a></code> | <code>string</code> | The display name of the category. |
 | <code><a href="#@cdktf/provider-vsphere.tagCategory.TagCategoryConfig.property.description">description</a></code> | <code>string</code> | The description of the category. |
-| <code><a href="#@cdktf/provider-vsphere.tagCategory.TagCategoryConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/tag_category#id TagCategory#id}. |
+| <code><a href="#@cdktf/provider-vsphere.tagCategory.TagCategoryConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/tag_category#id TagCategory#id}. |
 
 ---
 
@@ -676,10 +676,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vsphere.tagCategory.TagCategoryConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -745,7 +745,7 @@ Object types to which this category's tags can be attached.
 
 Valid types include: Folder, ClusterComputeResource, Datacenter, Datastore, StoragePod, DistributedVirtualPortgroup, DistributedVirtualSwitch, VmwareDistributedVirtualSwitch, HostSystem, com.vmware.content.Library, com.vmware.content.library.Item, HostNetwork, Network, OpaqueNetwork, ResourcePool, VirtualApp, VirtualMachine.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/tag_category#associable_types TagCategory#associable_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/tag_category#associable_types TagCategory#associable_types}
 
 ---
 
@@ -761,7 +761,7 @@ The associated cardinality of the category.
 
 Can be one of SINGLE (object can only be assigned one tag in this category) or MULTIPLE (object can be assigned multiple tags in this category).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/tag_category#cardinality TagCategory#cardinality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/tag_category#cardinality TagCategory#cardinality}
 
 ---
 
@@ -775,7 +775,7 @@ public readonly name: string;
 
 The display name of the category.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/tag_category#name TagCategory#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/tag_category#name TagCategory#name}
 
 ---
 
@@ -789,7 +789,7 @@ public readonly description: string;
 
 The description of the category.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/tag_category#description TagCategory#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/tag_category#description TagCategory#description}
 
 ---
 
@@ -801,7 +801,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/tag_category#id TagCategory#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/tag_category#id TagCategory#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,6 +1,6 @@
 # `vsphere_vm_storage_policy`
 
-Refer to the Terraform Registory for docs: [`vsphere_vm_storage_policy`](https://www.terraform.io/docs/providers/vsphere/r/vm_storage_policy).
+Refer to the Terraform Registory for docs: [`vsphere_vm_storage_policy`](https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vm_storage_policy).
 
 # `vmStoragePolicy` Submodule <a name="`vmStoragePolicy` Submodule" id="@cdktf/provider-vsphere.vmStoragePolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vsphere_vm_storage_policy`](https:/
 
 ### VmStoragePolicy <a name="VmStoragePolicy" id="@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vsphere/r/vm_storage_policy vsphere_vm_storage_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vm_storage_policy vsphere_vm_storage_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicy.Initializer"></a>
 
@@ -366,7 +366,7 @@ VmStoragePolicy.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicy.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicy.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicy.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicy.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicy.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicy.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicy.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicy.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -468,10 +468,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicy.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -634,7 +634,7 @@ using HashiCorp.Cdktf.Providers.Vsphere;
 
 new VmStoragePolicyConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -652,7 +652,7 @@ new VmStoragePolicyConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -661,7 +661,7 @@ new VmStoragePolicyConfig {
 | <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyConfig.property.name">Name</a></code> | <code>string</code> | Name of the storage policy. |
 | <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyConfig.property.tagRules">TagRules</a></code> | <code>object</code> | tag_rules block. |
 | <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyConfig.property.description">Description</a></code> | <code>string</code> | Description of the storage policy. |
-| <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vm_storage_policy#id VmStoragePolicy#id}. |
+| <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vm_storage_policy#id VmStoragePolicy#id}. |
 
 ---
 
@@ -678,10 +678,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -745,7 +745,7 @@ public string Name { get; set; }
 
 Name of the storage policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vm_storage_policy#name VmStoragePolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vm_storage_policy#name VmStoragePolicy#name}
 
 ---
 
@@ -759,7 +759,7 @@ public object TagRules { get; set; }
 
 tag_rules block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vm_storage_policy#tag_rules VmStoragePolicy#tag_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vm_storage_policy#tag_rules VmStoragePolicy#tag_rules}
 
 ---
 
@@ -773,7 +773,7 @@ public string Description { get; set; }
 
 Description of the storage policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vm_storage_policy#description VmStoragePolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vm_storage_policy#description VmStoragePolicy#description}
 
 ---
 
@@ -785,7 +785,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vm_storage_policy#id VmStoragePolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vm_storage_policy#id VmStoragePolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -826,7 +826,7 @@ public string TagCategory { get; set; }
 
 The tag category to select the tags from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vm_storage_policy#tag_category VmStoragePolicy#tag_category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vm_storage_policy#tag_category VmStoragePolicy#tag_category}
 
 ---
 
@@ -840,7 +840,7 @@ public string[] Tags { get; set; }
 
 The tags to use for creating a tag-based vm placement rule.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vm_storage_policy#tags VmStoragePolicy#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vm_storage_policy#tags VmStoragePolicy#tags}
 
 ---
 
@@ -854,7 +854,7 @@ public object IncludeDatastoresWithTags { get; set; }
 
 Whether to include or exclude datastores tagged with the provided tags.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/vm_storage_policy#include_datastores_with_tags VmStoragePolicy#include_datastores_with_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vm_storage_policy#include_datastores_with_tags VmStoragePolicy#include_datastores_with_tags}
 
 ---
 

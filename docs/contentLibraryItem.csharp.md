@@ -1,6 +1,6 @@
 # `vsphere_content_library_item`
 
-Refer to the Terraform Registory for docs: [`vsphere_content_library_item`](https://www.terraform.io/docs/providers/vsphere/r/content_library_item).
+Refer to the Terraform Registory for docs: [`vsphere_content_library_item`](https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/content_library_item).
 
 # `contentLibraryItem` Submodule <a name="`contentLibraryItem` Submodule" id="@cdktf/provider-vsphere.contentLibraryItem"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vsphere_content_library_item`](http
 
 ### ContentLibraryItem <a name="ContentLibraryItem" id="@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItem"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vsphere/r/content_library_item vsphere_content_library_item}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/content_library_item vsphere_content_library_item}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItem.Initializer"></a>
 
@@ -374,7 +374,7 @@ ContentLibraryItem.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItem.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItem.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItem.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItem.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItem.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItem.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItem.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItem.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -482,10 +482,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItem.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -708,7 +708,7 @@ using HashiCorp.Cdktf.Providers.Vsphere;
 
 new ContentLibraryItemConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -729,7 +729,7 @@ new ContentLibraryItemConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItemConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItemConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItemConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItemConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItemConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItemConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -739,7 +739,7 @@ new ContentLibraryItemConfig {
 | <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItemConfig.property.name">Name</a></code> | <code>string</code> | The name of the content library item. |
 | <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItemConfig.property.description">Description</a></code> | <code>string</code> | Optional description of the content library item. |
 | <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItemConfig.property.fileUrl">FileUrl</a></code> | <code>string</code> | ID of source VM of content library item. |
-| <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItemConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/content_library_item#id ContentLibraryItem#id}. |
+| <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItemConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/content_library_item#id ContentLibraryItem#id}. |
 | <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItemConfig.property.sourceUuid">SourceUuid</a></code> | <code>string</code> | The managed object ID of an existing VM to be cloned to the content library. |
 | <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItemConfig.property.type">Type</a></code> | <code>string</code> | Type of content library item. |
 
@@ -758,10 +758,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItemConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -825,7 +825,7 @@ public string LibraryId { get; set; }
 
 ID of the content library to contain item.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/content_library_item#library_id ContentLibraryItem#library_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/content_library_item#library_id ContentLibraryItem#library_id}
 
 ---
 
@@ -839,7 +839,7 @@ public string Name { get; set; }
 
 The name of the content library item.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/content_library_item#name ContentLibraryItem#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/content_library_item#name ContentLibraryItem#name}
 
 ---
 
@@ -853,7 +853,7 @@ public string Description { get; set; }
 
 Optional description of the content library item.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/content_library_item#description ContentLibraryItem#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/content_library_item#description ContentLibraryItem#description}
 
 ---
 
@@ -867,7 +867,7 @@ public string FileUrl { get; set; }
 
 ID of source VM of content library item.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/content_library_item#file_url ContentLibraryItem#file_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/content_library_item#file_url ContentLibraryItem#file_url}
 
 ---
 
@@ -879,7 +879,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/content_library_item#id ContentLibraryItem#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/content_library_item#id ContentLibraryItem#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -896,7 +896,7 @@ public string SourceUuid { get; set; }
 
 The managed object ID of an existing VM to be cloned to the content library.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/content_library_item#source_uuid ContentLibraryItem#source_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/content_library_item#source_uuid ContentLibraryItem#source_uuid}
 
 ---
 
@@ -910,7 +910,7 @@ public string Type { get; set; }
 
 Type of content library item.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/content_library_item#type ContentLibraryItem#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/content_library_item#type ContentLibraryItem#type}
 
 ---
 

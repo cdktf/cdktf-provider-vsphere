@@ -1,6 +1,6 @@
 # `data_vsphere_content_library`
 
-Refer to the Terraform Registory for docs: [`data_vsphere_content_library`](https://www.terraform.io/docs/providers/vsphere/d/content_library).
+Refer to the Terraform Registory for docs: [`data_vsphere_content_library`](https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/content_library).
 
 # `dataVsphereContentLibrary` Submodule <a name="`dataVsphereContentLibrary` Submodule" id="@cdktf/provider-vsphere.dataVsphereContentLibrary"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_vsphere_content_library`](http
 
 ### DataVsphereContentLibrary <a name="DataVsphereContentLibrary" id="@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibrary"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vsphere/d/content_library vsphere_content_library}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/content_library vsphere_content_library}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibrary.Initializer"></a>
 
@@ -345,7 +345,7 @@ dataVsphereContentLibrary.DataVsphereContentLibrary.isTerraformDataSource(x: any
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibrary.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibrary.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibrary.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibrary.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibrary.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibrary.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibrary.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibrary.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -432,10 +432,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibrary.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -554,14 +554,14 @@ const dataVsphereContentLibraryConfig: dataVsphereContentLibrary.DataVsphereCont
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibraryConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibraryConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibraryConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibraryConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibraryConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibraryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibraryConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibraryConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibraryConfig.property.name">name</a></code> | <code>string</code> | The name of the content library. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibraryConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/content_library#id DataVsphereContentLibrary#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibraryConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/content_library#id DataVsphereContentLibrary#id}. |
 
 ---
 
@@ -578,10 +578,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibraryConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -645,7 +645,7 @@ public readonly name: string;
 
 The name of the content library.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/content_library#name DataVsphereContentLibrary#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/content_library#name DataVsphereContentLibrary#name}
 
 ---
 
@@ -657,7 +657,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/content_library#id DataVsphereContentLibrary#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/content_library#id DataVsphereContentLibrary#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

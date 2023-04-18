@@ -1,3 +1,3 @@
 # `vsphere_nas_datastore`
 
-Refer to the Terraform Registory for docs: [`vsphere_nas_datastore`](https://www.terraform.io/docs/providers/vsphere/r/nas_datastore).
+Refer to the Terraform Registory for docs: [`vsphere_nas_datastore`](https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/nas_datastore).

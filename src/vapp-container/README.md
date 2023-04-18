@@ -1,3 +1,3 @@
 # `vsphere_vapp_container`
 
-Refer to the Terraform Registory for docs: [`vsphere_vapp_container`](https://www.terraform.io/docs/providers/vsphere/r/vapp_container).
+Refer to the Terraform Registory for docs: [`vsphere_vapp_container`](https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/vapp_container).

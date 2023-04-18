@@ -50,7 +50,7 @@ The following submodules are available:
 - [host](./host.go.md)
 - [hostPortGroup](./hostPortGroup.go.md)
 - [hostVirtualSwitch](./hostVirtualSwitch.go.md)
-- [license](./license.go.md)
+- [licenseResource](./licenseResource.go.md)
 - [nasDatastore](./nasDatastore.go.md)
 - [provider](./provider.go.md)
 - [resourcePool](./resourcePool.go.md)

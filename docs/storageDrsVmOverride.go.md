@@ -1,6 +1,6 @@
 # `vsphere_storage_drs_vm_override`
 
-Refer to the Terraform Registory for docs: [`vsphere_storage_drs_vm_override`](https://www.terraform.io/docs/providers/vsphere/r/storage_drs_vm_override).
+Refer to the Terraform Registory for docs: [`vsphere_storage_drs_vm_override`](https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/storage_drs_vm_override).
 
 # `storageDrsVmOverride` Submodule <a name="`storageDrsVmOverride` Submodule" id="@cdktf/provider-vsphere.storageDrsVmOverride"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vsphere_storage_drs_vm_override`](h
 
 ### StorageDrsVmOverride <a name="StorageDrsVmOverride" id="@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverride"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vsphere/r/storage_drs_vm_override vsphere_storage_drs_vm_override}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/storage_drs_vm_override vsphere_storage_drs_vm_override}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverride.Initializer"></a>
 
@@ -367,7 +367,7 @@ storagedrsvmoverride.StorageDrsVmOverride_IsTerraformResource(x interface{}) *bo
 | <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverride.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverride.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverride.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverride.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverride.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverride.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverride.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverride.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -473,10 +473,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverride.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -679,7 +679,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/storagedrsvmoverri
 
 &storagedrsvmoverride.StorageDrsVmOverrideConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -699,7 +699,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/storagedrsvmoverri
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverrideConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverrideConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverrideConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverrideConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverrideConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverrideConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -707,7 +707,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/storagedrsvmoverri
 | <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverrideConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverrideConfig.property.datastoreClusterId">DatastoreClusterId</a></code> | <code>*string</code> | The managed object ID of the datastore cluster. |
 | <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverrideConfig.property.virtualMachineId">VirtualMachineId</a></code> | <code>*string</code> | The managed object ID of the virtual machine. |
-| <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverrideConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/storage_drs_vm_override#id StorageDrsVmOverride#id}. |
+| <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverrideConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/storage_drs_vm_override#id StorageDrsVmOverride#id}. |
 | <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverrideConfig.property.sdrsAutomationLevel">SdrsAutomationLevel</a></code> | <code>*string</code> | Overrides any Storage DRS automation levels for this virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverrideConfig.property.sdrsEnabled">SdrsEnabled</a></code> | <code>*string</code> | Overrides the default Storage DRS setting for this virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverrideConfig.property.sdrsIntraVmAffinity">SdrsIntraVmAffinity</a></code> | <code>*string</code> | Overrides the intra-VM affinity setting for this virtual machine. |
@@ -727,10 +727,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverrideConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -794,7 +794,7 @@ DatastoreClusterId *string
 
 The managed object ID of the datastore cluster.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/storage_drs_vm_override#datastore_cluster_id StorageDrsVmOverride#datastore_cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/storage_drs_vm_override#datastore_cluster_id StorageDrsVmOverride#datastore_cluster_id}
 
 ---
 
@@ -808,7 +808,7 @@ VirtualMachineId *string
 
 The managed object ID of the virtual machine.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/storage_drs_vm_override#virtual_machine_id StorageDrsVmOverride#virtual_machine_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/storage_drs_vm_override#virtual_machine_id StorageDrsVmOverride#virtual_machine_id}
 
 ---
 
@@ -820,7 +820,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/storage_drs_vm_override#id StorageDrsVmOverride#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/storage_drs_vm_override#id StorageDrsVmOverride#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -837,7 +837,7 @@ SdrsAutomationLevel *string
 
 Overrides any Storage DRS automation levels for this virtual machine.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/storage_drs_vm_override#sdrs_automation_level StorageDrsVmOverride#sdrs_automation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/storage_drs_vm_override#sdrs_automation_level StorageDrsVmOverride#sdrs_automation_level}
 
 ---
 
@@ -851,7 +851,7 @@ SdrsEnabled *string
 
 Overrides the default Storage DRS setting for this virtual machine.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/storage_drs_vm_override#sdrs_enabled StorageDrsVmOverride#sdrs_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/storage_drs_vm_override#sdrs_enabled StorageDrsVmOverride#sdrs_enabled}
 
 ---
 
@@ -865,7 +865,7 @@ SdrsIntraVmAffinity *string
 
 Overrides the intra-VM affinity setting for this virtual machine.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/storage_drs_vm_override#sdrs_intra_vm_affinity StorageDrsVmOverride#sdrs_intra_vm_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/storage_drs_vm_override#sdrs_intra_vm_affinity StorageDrsVmOverride#sdrs_intra_vm_affinity}
 
 ---
 

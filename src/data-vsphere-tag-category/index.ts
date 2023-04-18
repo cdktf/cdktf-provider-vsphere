@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/vsphere/d/tag_category
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/tag_category
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataVsphereTagCategoryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/tag_category#id DataVsphereTagCategory#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/tag_category#id DataVsphereTagCategory#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,13 +17,13 @@ export interface DataVsphereTagCategoryConfig extends cdktf.TerraformMetaArgumen
   /**
   * The display name of the category.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/tag_category#name DataVsphereTagCategory#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/tag_category#name DataVsphereTagCategory#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/vsphere/d/tag_category vsphere_tag_category}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/tag_category vsphere_tag_category}
 */
 export class DataVsphereTagCategory extends cdktf.TerraformDataSource {
 
@@ -37,7 +37,7 @@ export class DataVsphereTagCategory extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/vsphere/d/tag_category vsphere_tag_category} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/tag_category vsphere_tag_category} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

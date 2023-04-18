@@ -1,6 +1,6 @@
 # `data_vsphere_host`
 
-Refer to the Terraform Registory for docs: [`data_vsphere_host`](https://www.terraform.io/docs/providers/vsphere/d/host).
+Refer to the Terraform Registory for docs: [`data_vsphere_host`](https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/host).
 
 # `dataVsphereHost` Submodule <a name="`dataVsphereHost` Submodule" id="@cdktf/provider-vsphere.dataVsphereHost"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_vsphere_host`](https://www.ter
 
 ### DataVsphereHost <a name="DataVsphereHost" id="@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHost"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vsphere/d/host vsphere_host}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/host vsphere_host}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHost.Initializer"></a>
 
@@ -352,7 +352,7 @@ dataVsphereHost.DataVsphereHost.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHost.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHost.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHost.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHost.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHost.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHost.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHost.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHost.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -442,10 +442,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHost.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -594,14 +594,14 @@ const dataVsphereHostConfig: dataVsphereHost.DataVsphereHostConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHostConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHostConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHostConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHostConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHostConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHostConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHostConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHostConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHostConfig.property.datacenterId">datacenterId</a></code> | <code>string</code> | The managed object ID of the datacenter to look for the host in. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHostConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/host#id DataVsphereHost#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHostConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/host#id DataVsphereHost#id}. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHostConfig.property.name">name</a></code> | <code>string</code> | The name of the host. This can be a name or path.	If not provided, the default host is used. |
 
 ---
@@ -619,10 +619,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHostConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -686,7 +686,7 @@ public readonly datacenterId: string;
 
 The managed object ID of the datacenter to look for the host in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/host#datacenter_id DataVsphereHost#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/host#datacenter_id DataVsphereHost#datacenter_id}
 
 ---
 
@@ -698,7 +698,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/host#id DataVsphereHost#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/host#id DataVsphereHost#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -715,7 +715,7 @@ public readonly name: string;
 
 The name of the host. This can be a name or path.	If not provided, the default host is used.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/d/host#name DataVsphereHost#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/host#name DataVsphereHost#name}
 
 ---
 

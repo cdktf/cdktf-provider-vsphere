@@ -1,3 +1,3 @@
 # `vsphere_tag`
 
-Refer to the Terraform Registory for docs: [`vsphere_tag`](https://www.terraform.io/docs/providers/vsphere/r/tag).
+Refer to the Terraform Registory for docs: [`vsphere_tag`](https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/tag).

@@ -1,6 +1,6 @@
 # `vsphere_ha_vm_override`
 
-Refer to the Terraform Registory for docs: [`vsphere_ha_vm_override`](https://www.terraform.io/docs/providers/vsphere/r/ha_vm_override).
+Refer to the Terraform Registory for docs: [`vsphere_ha_vm_override`](https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/ha_vm_override).
 
 # `haVmOverride` Submodule <a name="`haVmOverride` Submodule" id="@cdktf/provider-vsphere.haVmOverride"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vsphere_ha_vm_override`](https://ww
 
 ### HaVmOverride <a name="HaVmOverride" id="@cdktf/provider-vsphere.haVmOverride.HaVmOverride"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/vsphere/r/ha_vm_override vsphere_ha_vm_override}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/ha_vm_override vsphere_ha_vm_override}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.haVmOverride.HaVmOverride.Initializer"></a>
 
@@ -437,7 +437,7 @@ HaVmOverride.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-vsphere.haVmOverride.HaVmOverride.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.haVmOverride.HaVmOverride.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.haVmOverride.HaVmOverride.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.haVmOverride.HaVmOverride.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.haVmOverride.HaVmOverride.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.haVmOverride.HaVmOverride.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.haVmOverride.HaVmOverride.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.haVmOverride.HaVmOverride.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -563,10 +563,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.haVmOverride.HaVmOverride.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -969,7 +969,7 @@ using HashiCorp.Cdktf.Providers.Vsphere;
 
 new HaVmOverrideConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -999,7 +999,7 @@ new HaVmOverrideConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.haVmOverride.HaVmOverrideConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.haVmOverride.HaVmOverrideConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.haVmOverride.HaVmOverrideConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.haVmOverride.HaVmOverrideConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.haVmOverride.HaVmOverrideConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.haVmOverride.HaVmOverrideConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1020,7 +1020,7 @@ new HaVmOverrideConfig {
 | <code><a href="#@cdktf/provider-vsphere.haVmOverride.HaVmOverrideConfig.property.haVmMonitoringUseClusterDefaults">HaVmMonitoringUseClusterDefaults</a></code> | <code>object</code> | Determines whether or not the cluster's default settings or the VM override settings specified in this resource are used for virtual machine monitoring. |
 | <code><a href="#@cdktf/provider-vsphere.haVmOverride.HaVmOverrideConfig.property.haVmRestartPriority">HaVmRestartPriority</a></code> | <code>string</code> | The restart priority for this virtual machine when vSphere detects a host failure. |
 | <code><a href="#@cdktf/provider-vsphere.haVmOverride.HaVmOverrideConfig.property.haVmRestartTimeout">HaVmRestartTimeout</a></code> | <code>double</code> | The maximum time, in seconds, that vSphere HA will wait for the virtual machine to be ready. |
-| <code><a href="#@cdktf/provider-vsphere.haVmOverride.HaVmOverrideConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/ha_vm_override#id HaVmOverride#id}. |
+| <code><a href="#@cdktf/provider-vsphere.haVmOverride.HaVmOverrideConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/ha_vm_override#id HaVmOverride#id}. |
 
 ---
 
@@ -1037,10 +1037,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.haVmOverride.HaVmOverrideConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -1104,7 +1104,7 @@ public string ComputeClusterId { get; set; }
 
 The managed object ID of the cluster.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/ha_vm_override#compute_cluster_id HaVmOverride#compute_cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/ha_vm_override#compute_cluster_id HaVmOverride#compute_cluster_id}
 
 ---
 
@@ -1118,7 +1118,7 @@ public string VirtualMachineId { get; set; }
 
 The managed object ID of the virtual machine.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/ha_vm_override#virtual_machine_id HaVmOverride#virtual_machine_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/ha_vm_override#virtual_machine_id HaVmOverride#virtual_machine_id}
 
 ---
 
@@ -1134,7 +1134,7 @@ Controls the action to take on this virtual machine if an APD status on an affec
 
 Can be one of useClusterDefault, none or reset.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/ha_vm_override#ha_datastore_apd_recovery_action HaVmOverride#ha_datastore_apd_recovery_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/ha_vm_override#ha_datastore_apd_recovery_action HaVmOverride#ha_datastore_apd_recovery_action}
 
 ---
 
@@ -1150,7 +1150,7 @@ Controls the action to take on this virtual machine when the cluster has detecte
 
 Can be one of clusterDefault, disabled, warning, restartConservative, or restartAggressive.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/ha_vm_override#ha_datastore_apd_response HaVmOverride#ha_datastore_apd_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/ha_vm_override#ha_datastore_apd_response HaVmOverride#ha_datastore_apd_response}
 
 ---
 
@@ -1166,7 +1166,7 @@ Controls the delay in seconds to wait after an APD timeout event to execute the 
 
 Specify -1 to use the cluster setting.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/ha_vm_override#ha_datastore_apd_response_delay HaVmOverride#ha_datastore_apd_response_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/ha_vm_override#ha_datastore_apd_response_delay HaVmOverride#ha_datastore_apd_response_delay}
 
 ---
 
@@ -1182,7 +1182,7 @@ Controls the action to take on this virtual machine when the cluster has detecte
 
 Can be one of clusterDefault, disabled, warning, or restartAggressive.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/ha_vm_override#ha_datastore_pdl_response HaVmOverride#ha_datastore_pdl_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/ha_vm_override#ha_datastore_pdl_response HaVmOverride#ha_datastore_pdl_response}
 
 ---
 
@@ -1198,7 +1198,7 @@ The action to take on this virtual machine when a host is isolated from the rest
 
 Can be one of clusterIsolationResponse, none, powerOff, or shutdown.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/ha_vm_override#ha_host_isolation_response HaVmOverride#ha_host_isolation_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/ha_vm_override#ha_host_isolation_response HaVmOverride#ha_host_isolation_response}
 
 ---
 
@@ -1214,7 +1214,7 @@ If a heartbeat from this virtual machine is not received within this configured 
 
 The value is in seconds.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/ha_vm_override#ha_vm_failure_interval HaVmOverride#ha_vm_failure_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/ha_vm_override#ha_vm_failure_interval HaVmOverride#ha_vm_failure_interval}
 
 ---
 
@@ -1230,7 +1230,7 @@ The length of the reset window in which ha_vm_maximum_resets can operate.
 
 When this window expires, no more resets are attempted regardless of the setting configured in ha_vm_maximum_resets. -1 means no window, meaning an unlimited reset time is allotted.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/ha_vm_override#ha_vm_maximum_failure_window HaVmOverride#ha_vm_maximum_failure_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/ha_vm_override#ha_vm_maximum_failure_window HaVmOverride#ha_vm_maximum_failure_window}
 
 ---
 
@@ -1244,7 +1244,7 @@ public double HaVmMaximumResets { get; set; }
 
 The maximum number of resets that HA will perform to this virtual machine when responding to a failure event.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/ha_vm_override#ha_vm_maximum_resets HaVmOverride#ha_vm_maximum_resets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/ha_vm_override#ha_vm_maximum_resets HaVmOverride#ha_vm_maximum_resets}
 
 ---
 
@@ -1258,7 +1258,7 @@ public double HaVmMinimumUptime { get; set; }
 
 The time, in seconds, that HA waits after powering on this virtual machine before monitoring for heartbeats.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/ha_vm_override#ha_vm_minimum_uptime HaVmOverride#ha_vm_minimum_uptime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/ha_vm_override#ha_vm_minimum_uptime HaVmOverride#ha_vm_minimum_uptime}
 
 ---
 
@@ -1274,7 +1274,7 @@ The type of virtual machine monitoring to use for this virtual machine.
 
 Can be one of vmMonitoringDisabled, vmMonitoringOnly, or vmAndAppMonitoring.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/ha_vm_override#ha_vm_monitoring HaVmOverride#ha_vm_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/ha_vm_override#ha_vm_monitoring HaVmOverride#ha_vm_monitoring}
 
 ---
 
@@ -1290,7 +1290,7 @@ Determines whether or not the cluster's default settings or the VM override sett
 
 The default is true (use cluster defaults) - set to false to have overrides take effect.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/ha_vm_override#ha_vm_monitoring_use_cluster_defaults HaVmOverride#ha_vm_monitoring_use_cluster_defaults}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/ha_vm_override#ha_vm_monitoring_use_cluster_defaults HaVmOverride#ha_vm_monitoring_use_cluster_defaults}
 
 ---
 
@@ -1306,7 +1306,7 @@ The restart priority for this virtual machine when vSphere detects a host failur
 
 Can be one of clusterRestartPriority, lowest, low, medium, high, or highest.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/ha_vm_override#ha_vm_restart_priority HaVmOverride#ha_vm_restart_priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/ha_vm_override#ha_vm_restart_priority HaVmOverride#ha_vm_restart_priority}
 
 ---
 
@@ -1322,7 +1322,7 @@ The maximum time, in seconds, that vSphere HA will wait for the virtual machine 
 
 Use -1 to use the cluster default.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/ha_vm_override#ha_vm_restart_timeout HaVmOverride#ha_vm_restart_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/ha_vm_override#ha_vm_restart_timeout HaVmOverride#ha_vm_restart_timeout}
 
 ---
 
@@ -1334,7 +1334,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vsphere/r/ha_vm_override#id HaVmOverride#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/ha_vm_override#id HaVmOverride#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
