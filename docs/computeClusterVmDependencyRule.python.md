@@ -1,3 +1,7 @@
+# `vsphere_compute_cluster_vm_dependency_rule`
+
+Refer to the Terraform Registory for docs: [`vsphere_compute_cluster_vm_dependency_rule`](https://www.terraform.io/docs/providers/vsphere/r/compute_cluster_vm_dependency_rule).
+
 # `computeClusterVmDependencyRule` Submodule <a name="`computeClusterVmDependencyRule` Submodule" id="@cdktf/provider-vsphere.computeClusterVmDependencyRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

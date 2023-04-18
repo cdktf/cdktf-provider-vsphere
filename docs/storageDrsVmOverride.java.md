@@ -1,3 +1,7 @@
+# `vsphere_storage_drs_vm_override`
+
+Refer to the Terraform Registory for docs: [`vsphere_storage_drs_vm_override`](https://www.terraform.io/docs/providers/vsphere/r/storage_drs_vm_override).
+
 # `storageDrsVmOverride` Submodule <a name="`storageDrsVmOverride` Submodule" id="@cdktf/provider-vsphere.storageDrsVmOverride"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

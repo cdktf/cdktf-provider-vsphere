@@ -1,3 +1,7 @@
+# `vsphere_host`
+
+Refer to the Terraform Registory for docs: [`vsphere_host`](https://www.terraform.io/docs/providers/vsphere/r/host).
+
 # `host` Submodule <a name="`host` Submodule" id="@cdktf/provider-vsphere.host"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

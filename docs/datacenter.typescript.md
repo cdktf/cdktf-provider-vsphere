@@ -1,3 +1,7 @@
+# `vsphere_datacenter`
+
+Refer to the Terraform Registory for docs: [`vsphere_datacenter`](https://www.terraform.io/docs/providers/vsphere/r/datacenter).
+
 # `datacenter` Submodule <a name="`datacenter` Submodule" id="@cdktf/provider-vsphere.datacenter"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

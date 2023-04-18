@@ -1,3 +1,7 @@
+# `vsphere_folder`
+
+Refer to the Terraform Registory for docs: [`vsphere_folder`](https://www.terraform.io/docs/providers/vsphere/r/folder).
+
 # `folder` Submodule <a name="`folder` Submodule" id="@cdktf/provider-vsphere.folder"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

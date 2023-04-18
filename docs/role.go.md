@@ -1,3 +1,7 @@
+# `vsphere_role`
+
+Refer to the Terraform Registory for docs: [`vsphere_role`](https://www.terraform.io/docs/providers/vsphere/r/role).
+
 # `role` Submodule <a name="`role` Submodule" id="@cdktf/provider-vsphere.role"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

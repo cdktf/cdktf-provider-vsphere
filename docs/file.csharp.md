@@ -1,3 +1,7 @@
+# `vsphere_file`
+
+Refer to the Terraform Registory for docs: [`vsphere_file`](https://www.terraform.io/docs/providers/vsphere/r/file).
+
 # `file` Submodule <a name="`file` Submodule" id="@cdktf/provider-vsphere.file"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

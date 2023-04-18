@@ -1,3 +1,7 @@
+# `data_vsphere_datastore`
+
+Refer to the Terraform Registory for docs: [`data_vsphere_datastore`](https://www.terraform.io/docs/providers/vsphere/d/datastore).
+
 # `dataVsphereDatastore` Submodule <a name="`dataVsphereDatastore` Submodule" id="@cdktf/provider-vsphere.dataVsphereDatastore"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
