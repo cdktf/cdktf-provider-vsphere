@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherefolder"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/datavspherefolder"
 
 datavspherefolder.NewDataVsphereFolder(scope Construct, id *string, config DataVsphereFolderConfig) DataVsphereFolder
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherefolder"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/datavspherefolder"
 
 datavspherefolder.DataVsphereFolder_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherefolder"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/datavspherefolder"
 
 datavspherefolder.DataVsphereFolder_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datavspherefolder.DataVsphereFolder_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherefolder"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/datavspherefolder"
 
 datavspherefolder.DataVsphereFolder_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -544,7 +544,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherefolder"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/datavspherefolder"
 
 &datavspherefolder.DataVsphereFolderConfig {
 	Connection: interface{},
