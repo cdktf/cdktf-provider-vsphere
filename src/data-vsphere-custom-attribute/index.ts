@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/custom_attribute
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/custom_attribute
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataVsphereCustomAttributeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/custom_attribute#id DataVsphereCustomAttribute#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/custom_attribute#id DataVsphereCustomAttribute#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,13 +17,13 @@ export interface DataVsphereCustomAttributeConfig extends cdktf.TerraformMetaArg
   /**
   * The display name of the custom attribute.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/custom_attribute#name DataVsphereCustomAttribute#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/custom_attribute#name DataVsphereCustomAttribute#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/custom_attribute vsphere_custom_attribute}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/custom_attribute vsphere_custom_attribute}
 */
 export class DataVsphereCustomAttribute extends cdktf.TerraformDataSource {
 
@@ -37,7 +37,7 @@ export class DataVsphereCustomAttribute extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/custom_attribute vsphere_custom_attribute} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/custom_attribute vsphere_custom_attribute} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -48,7 +48,7 @@ export class DataVsphereCustomAttribute extends cdktf.TerraformDataSource {
       terraformResourceType: 'vsphere_custom_attribute',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.3.1',
+        providerVersion: '2.4.0',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,

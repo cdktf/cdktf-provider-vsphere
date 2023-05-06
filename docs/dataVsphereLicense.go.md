@@ -1,6 +1,6 @@
 # `data_vsphere_license`
 
-Refer to the Terraform Registory for docs: [`data_vsphere_license`](https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/license).
+Refer to the Terraform Registory for docs: [`data_vsphere_license`](https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/license).
 
 # `dataVsphereLicense` Submodule <a name="`dataVsphereLicense` Submodule" id="@cdktf/provider-vsphere.dataVsphereLicense"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_vsphere_license`](https://regi
 
 ### DataVsphereLicense <a name="DataVsphereLicense" id="@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicense"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/license vsphere_license}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/license vsphere_license}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicense.Initializer"></a>
 
@@ -606,7 +606,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/datavspherelicense
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicenseConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicenseConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicenseConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicenseConfig.property.licenseKey">LicenseKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/license#license_key DataVsphereLicense#license_key}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicenseConfig.property.licenseKey">LicenseKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/license#license_key DataVsphereLicense#license_key}. |
 
 ---
 
@@ -688,7 +688,7 @@ LicenseKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/data-sources/license#license_key DataVsphereLicense#license_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/license#license_key DataVsphereLicense#license_key}.
 
 ---
 
