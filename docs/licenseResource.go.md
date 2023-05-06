@@ -1,6 +1,6 @@
 # `vsphere_license`
 
-Refer to the Terraform Registory for docs: [`vsphere_license`](https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/license).
+Refer to the Terraform Registory for docs: [`vsphere_license`](https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/license).
 
 # `licenseResource` Submodule <a name="`licenseResource` Submodule" id="@cdktf/provider-vsphere.licenseResource"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vsphere_license`](https://registry.
 
 ### LicenseResource <a name="LicenseResource" id="@cdktf/provider-vsphere.licenseResource.LicenseResource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/license vsphere_license}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/license vsphere_license}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.licenseResource.LicenseResource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/licenseresource"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/licenseresource"
 
 licenseresource.NewLicenseResource(scope Construct, id *string, config LicenseResourceConfig) LicenseResource
 ```
@@ -284,7 +284,7 @@ func ResetLabels()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.licenseResource.LicenseResource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/licenseresource"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/licenseresource"
 
 licenseresource.LicenseResource_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.licenseResource.LicenseResource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/licenseresource"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/licenseresource"
 
 licenseresource.LicenseResource_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ licenseresource.LicenseResource_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.licenseResource.LicenseResource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/licenseresource"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/licenseresource"
 
 licenseresource.LicenseResource_IsTerraformResource(x interface{}) *bool
 ```
@@ -639,7 +639,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.licenseResource.LicenseResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/licenseresource"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/licenseresource"
 
 &licenseresource.LicenseResourceConfig {
 	Connection: interface{},
@@ -666,9 +666,9 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/licenseresource"
 | <code><a href="#@cdktf/provider-vsphere.licenseResource.LicenseResourceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.licenseResource.LicenseResourceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.licenseResource.LicenseResourceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.licenseResource.LicenseResourceConfig.property.licenseKey">LicenseKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/license#license_key LicenseResource#license_key}. |
-| <code><a href="#@cdktf/provider-vsphere.licenseResource.LicenseResourceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/license#id LicenseResource#id}. |
-| <code><a href="#@cdktf/provider-vsphere.licenseResource.LicenseResourceConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/license#labels LicenseResource#labels}. |
+| <code><a href="#@cdktf/provider-vsphere.licenseResource.LicenseResourceConfig.property.licenseKey">LicenseKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/license#license_key LicenseResource#license_key}. |
+| <code><a href="#@cdktf/provider-vsphere.licenseResource.LicenseResourceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/license#id LicenseResource#id}. |
+| <code><a href="#@cdktf/provider-vsphere.licenseResource.LicenseResourceConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/license#labels LicenseResource#labels}. |
 
 ---
 
@@ -750,7 +750,7 @@ LicenseKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/license#license_key LicenseResource#license_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/license#license_key LicenseResource#license_key}.
 
 ---
 
@@ -762,7 +762,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/license#id LicenseResource#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/license#id LicenseResource#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -777,7 +777,7 @@ Labels *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/license#labels LicenseResource#labels}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/license#labels LicenseResource#labels}.
 
 ---
 

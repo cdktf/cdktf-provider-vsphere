@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/host
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,47 +10,47 @@ export interface HostConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID of the vSphere cluster the host will belong to.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/host#cluster Host#cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host#cluster Host#cluster}
   */
   readonly cluster?: string;
   /**
   * Must be set if host is a member of a managed compute_cluster resource.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/host#cluster_managed Host#cluster_managed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host#cluster_managed Host#cluster_managed}
   */
   readonly clusterManaged?: boolean | cdktf.IResolvable;
   /**
   * Set the state of the host. If set to false then the host will be asked to disconnect.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/host#connected Host#connected}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host#connected Host#connected}
   */
   readonly connected?: boolean | cdktf.IResolvable;
   /**
   * A list of custom attributes to set on this resource.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/host#custom_attributes Host#custom_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host#custom_attributes Host#custom_attributes}
   */
   readonly customAttributes?: { [key: string]: string };
   /**
   * ID of the vSphere datacenter the host will belong to.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/host#datacenter Host#datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host#datacenter Host#datacenter}
   */
   readonly datacenter?: string;
   /**
   * Force add the host to the vSphere inventory even if it's already managed by a different vCenter Server instance.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/host#force Host#force}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host#force Host#force}
   */
   readonly force?: boolean | cdktf.IResolvable;
   /**
   * FQDN or IP address of the host.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/host#hostname Host#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host#hostname Host#hostname}
   */
   readonly hostname: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/host#id Host#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host#id Host#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -59,49 +59,49 @@ export interface HostConfig extends cdktf.TerraformMetaArguments {
   /**
   * License key that will be applied to this host.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/host#license Host#license}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host#license Host#license}
   */
   readonly license?: string;
   /**
   * Set the host's lockdown status. Default is disabled. Valid options are 'disabled', 'normal', 'strict'
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/host#lockdown Host#lockdown}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host#lockdown Host#lockdown}
   */
   readonly lockdown?: string;
   /**
   * Set the host's maintenance mode. Default is false
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/host#maintenance Host#maintenance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host#maintenance Host#maintenance}
   */
   readonly maintenance?: boolean | cdktf.IResolvable;
   /**
   * Password of the administration account of the host.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/host#password Host#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host#password Host#password}
   */
   readonly password: string;
   /**
   * A list of tag IDs to apply to this object.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/host#tags Host#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host#tags Host#tags}
   */
   readonly tags?: string[];
   /**
   * Host's certificate SHA-1 thumbprint. If not set then the CA that signed the host's certificate must be trusted.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/host#thumbprint Host#thumbprint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host#thumbprint Host#thumbprint}
   */
   readonly thumbprint?: string;
   /**
   * Username of the administration account of the host.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/host#username Host#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host#username Host#username}
   */
   readonly username: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/host vsphere_host}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host vsphere_host}
 */
 export class Host extends cdktf.TerraformResource {
 
@@ -115,7 +115,7 @@ export class Host extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.3.1/docs/resources/host vsphere_host} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host vsphere_host} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -126,7 +126,7 @@ export class Host extends cdktf.TerraformResource {
       terraformResourceType: 'vsphere_host',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.3.1',
+        providerVersion: '2.4.0',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,
