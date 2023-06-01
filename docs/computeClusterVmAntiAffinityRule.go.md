@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmantiaffinityrule"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/computeclustervmantiaffinityrule"
 
 computeclustervmantiaffinityrule.NewComputeClusterVmAntiAffinityRule(scope Construct, id *string, config ComputeClusterVmAntiAffinityRuleConfig) ComputeClusterVmAntiAffinityRule
 ```
@@ -291,7 +291,7 @@ func ResetMandatory()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmantiaffinityrule"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/computeclustervmantiaffinityrule"
 
 computeclustervmantiaffinityrule.ComputeClusterVmAntiAffinityRule_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmantiaffinityrule"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/computeclustervmantiaffinityrule"
 
 computeclustervmantiaffinityrule.ComputeClusterVmAntiAffinityRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ computeclustervmantiaffinityrule.ComputeClusterVmAntiAffinityRule_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmantiaffinityrule"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/computeclustervmantiaffinityrule"
 
 computeclustervmantiaffinityrule.ComputeClusterVmAntiAffinityRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -668,7 +668,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmantiaffinityrule"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v4/computeclustervmantiaffinityrule"
 
 &computeclustervmantiaffinityrule.ComputeClusterVmAntiAffinityRuleConfig {
 	Connection: interface{},
