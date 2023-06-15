@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.virtualMachineSnapshot.VirtualMachineSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/virtualmachinesnapshot"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/virtualmachinesnapshot"
 
 virtualmachinesnapshot.NewVirtualMachineSnapshot(scope Construct, id *string, config VirtualMachineSnapshotConfig) VirtualMachineSnapshot
 ```
@@ -291,7 +291,7 @@ func ResetRemoveChildren()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.virtualMachineSnapshot.VirtualMachineSnapshot.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/virtualmachinesnapshot"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/virtualmachinesnapshot"
 
 virtualmachinesnapshot.VirtualMachineSnapshot_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.virtualMachineSnapshot.VirtualMachineSnapshot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/virtualmachinesnapshot"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/virtualmachinesnapshot"
 
 virtualmachinesnapshot.VirtualMachineSnapshot_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ virtualmachinesnapshot.VirtualMachineSnapshot_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.virtualMachineSnapshot.VirtualMachineSnapshot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/virtualmachinesnapshot"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/virtualmachinesnapshot"
 
 virtualmachinesnapshot.VirtualMachineSnapshot_IsTerraformResource(x interface{}) *bool
 ```
@@ -712,7 +712,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.virtualMachineSnapshot.VirtualMachineSnapshotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/virtualmachinesnapshot"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/virtualmachinesnapshot"
 
 &virtualmachinesnapshot.VirtualMachineSnapshotConfig {
 	Connection: interface{},

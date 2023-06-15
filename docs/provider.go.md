@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.provider.VsphereProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/provider"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/provider"
 
 provider.NewVsphereProvider(scope Construct, id *string, config VsphereProviderConfig) VsphereProvider
 ```
@@ -224,7 +224,7 @@ func ResetVsphereServer()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.provider.VsphereProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/provider"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/provider"
 
 provider.VsphereProvider_IsConstruct(x interface{}) *bool
 ```
@@ -256,7 +256,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.provider.VsphereProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/provider"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/provider"
 
 provider.VsphereProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -270,7 +270,7 @@ provider.VsphereProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-vsphere.provider.VsphereProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/provider"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/provider"
 
 provider.VsphereProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.provider.VsphereProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/provider"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/provider"
 
 &provider.VsphereProviderConfig {
 	Password: *string,
