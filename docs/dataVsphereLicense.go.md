@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicense.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherelicense"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/datavspherelicense"
 
 datavspherelicense.NewDataVsphereLicense(scope Construct, id *string, config DataVsphereLicenseConfig) DataVsphereLicense
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicense.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherelicense"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/datavspherelicense"
 
 datavspherelicense.DataVsphereLicense_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicense.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherelicense"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/datavspherelicense"
 
 datavspherelicense.DataVsphereLicense_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ datavspherelicense.DataVsphereLicense_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicense.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherelicense"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/datavspherelicense"
 
 datavspherelicense.DataVsphereLicense_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -581,7 +581,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicenseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherelicense"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v5/datavspherelicense"
 
 &datavspherelicense.DataVsphereLicenseConfig {
 	Connection: interface{},
