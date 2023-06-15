@@ -5039,7 +5039,7 @@ def reset_storage() -> None
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupOutputReference.property.storageInput">storage_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupOutputReference.property.cache">cache</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupOutputReference.property.storage">storage</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>]</code> | *No description.* |
 
 ---
 
@@ -5110,10 +5110,10 @@ storage: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ComputeClusterVsanDiskGroup, IResolvable]
+internal_value: typing.Union[IResolvable, ComputeClusterVsanDiskGroup]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>]
 
 ---
 

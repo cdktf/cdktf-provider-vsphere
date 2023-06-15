@@ -1228,7 +1228,7 @@ public resetIncludeDatastoresWithTags(): void
 | <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyTagRulesOutputReference.property.includeDatastoresWithTags">includeDatastoresWithTags</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyTagRulesOutputReference.property.tagCategory">tagCategory</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyTagRulesOutputReference.property.tags">tags</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyTagRulesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyTagRules">VmStoragePolicyTagRules</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyTagRulesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyTagRules">VmStoragePolicyTagRules</a></code> | *No description.* |
 
 ---
 
@@ -1319,10 +1319,10 @@ public readonly tags: string[];
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyTagRulesOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: VmStoragePolicyTagRules | IResolvable;
+public readonly internalValue: IResolvable | VmStoragePolicyTagRules;
 ```
 
-- *Type:* <a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyTagRules">VmStoragePolicyTagRules</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyTagRules">VmStoragePolicyTagRules</a>
 
 ---
 

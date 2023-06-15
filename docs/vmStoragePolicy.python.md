@@ -1413,7 +1413,7 @@ def reset_include_datastores_with_tags() -> None
 | <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyTagRulesOutputReference.property.includeDatastoresWithTags">include_datastores_with_tags</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyTagRulesOutputReference.property.tagCategory">tag_category</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyTagRulesOutputReference.property.tags">tags</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyTagRulesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyTagRules">VmStoragePolicyTagRules</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyTagRulesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyTagRules">VmStoragePolicyTagRules</a>]</code> | *No description.* |
 
 ---
 
@@ -1504,10 +1504,10 @@ tags: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyTagRulesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[VmStoragePolicyTagRules, IResolvable]
+internal_value: typing.Union[IResolvable, VmStoragePolicyTagRules]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyTagRules">VmStoragePolicyTagRules</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vsphere.vmStoragePolicy.VmStoragePolicyTagRules">VmStoragePolicyTagRules</a>]
 
 ---
 
