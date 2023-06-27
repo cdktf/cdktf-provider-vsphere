@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host_virtual_switch
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_virtual_switch
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,53 +15,53 @@ export interface HostVirtualSwitchConfig extends cdktf.TerraformMetaArguments {
   /**
   * List of active network adapters used for load balancing.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host_virtual_switch#active_nics HostVirtualSwitch#active_nics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_virtual_switch#active_nics HostVirtualSwitch#active_nics}
   */
   readonly activeNics: string[];
   /**
   * Controls whether or not the virtual network adapter is allowed to send network traffic with a different MAC address than that of its own.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host_virtual_switch#allow_forged_transmits HostVirtualSwitch#allow_forged_transmits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_virtual_switch#allow_forged_transmits HostVirtualSwitch#allow_forged_transmits}
   */
   readonly allowForgedTransmits?: boolean | cdktf.IResolvable;
   /**
   * Controls whether or not the Media Access Control (MAC) address can be changed.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host_virtual_switch#allow_mac_changes HostVirtualSwitch#allow_mac_changes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_virtual_switch#allow_mac_changes HostVirtualSwitch#allow_mac_changes}
   */
   readonly allowMacChanges?: boolean | cdktf.IResolvable;
   /**
   * Enable promiscuous mode on the network. This flag indicates whether or not all traffic is seen on a given port.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host_virtual_switch#allow_promiscuous HostVirtualSwitch#allow_promiscuous}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_virtual_switch#allow_promiscuous HostVirtualSwitch#allow_promiscuous}
   */
   readonly allowPromiscuous?: boolean | cdktf.IResolvable;
   /**
   * Determines how often, in seconds, a beacon should be sent to probe for the validity of a link.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host_virtual_switch#beacon_interval HostVirtualSwitch#beacon_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_virtual_switch#beacon_interval HostVirtualSwitch#beacon_interval}
   */
   readonly beaconInterval?: number;
   /**
   * Enable beacon probing. Requires that the vSwitch has been configured to use a beacon. If disabled, link status is used only.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host_virtual_switch#check_beacon HostVirtualSwitch#check_beacon}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_virtual_switch#check_beacon HostVirtualSwitch#check_beacon}
   */
   readonly checkBeacon?: boolean | cdktf.IResolvable;
   /**
   * If true, the teaming policy will re-activate failed interfaces higher in precedence when they come back up.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host_virtual_switch#failback HostVirtualSwitch#failback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_virtual_switch#failback HostVirtualSwitch#failback}
   */
   readonly failback?: boolean | cdktf.IResolvable;
   /**
   * The managed object ID of the host to set the virtual switch up on.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host_virtual_switch#host_system_id HostVirtualSwitch#host_system_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_virtual_switch#host_system_id HostVirtualSwitch#host_system_id}
   */
   readonly hostSystemId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host_virtual_switch#id HostVirtualSwitch#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_virtual_switch#id HostVirtualSwitch#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -70,85 +70,85 @@ export interface HostVirtualSwitchConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether to advertise or listen for link discovery. Valid values are advertise, both, listen, and none.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host_virtual_switch#link_discovery_operation HostVirtualSwitch#link_discovery_operation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_virtual_switch#link_discovery_operation HostVirtualSwitch#link_discovery_operation}
   */
   readonly linkDiscoveryOperation?: string;
   /**
   * The discovery protocol type. Valid values are cdp and lldp.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host_virtual_switch#link_discovery_protocol HostVirtualSwitch#link_discovery_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_virtual_switch#link_discovery_protocol HostVirtualSwitch#link_discovery_protocol}
   */
   readonly linkDiscoveryProtocol?: string;
   /**
   * The maximum transmission unit (MTU) of the virtual switch in bytes.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host_virtual_switch#mtu HostVirtualSwitch#mtu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_virtual_switch#mtu HostVirtualSwitch#mtu}
   */
   readonly mtu?: number;
   /**
   * The name of the virtual switch.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host_virtual_switch#name HostVirtualSwitch#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_virtual_switch#name HostVirtualSwitch#name}
   */
   readonly name: string;
   /**
   * The list of network adapters to bind to this virtual switch.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host_virtual_switch#network_adapters HostVirtualSwitch#network_adapters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_virtual_switch#network_adapters HostVirtualSwitch#network_adapters}
   */
   readonly networkAdapters: string[];
   /**
   * If true, the teaming policy will notify the broadcast network of a NIC failover, triggering cache updates.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host_virtual_switch#notify_switches HostVirtualSwitch#notify_switches}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_virtual_switch#notify_switches HostVirtualSwitch#notify_switches}
   */
   readonly notifySwitches?: boolean | cdktf.IResolvable;
   /**
   * The number of ports that this virtual switch is configured to use.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host_virtual_switch#number_of_ports HostVirtualSwitch#number_of_ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_virtual_switch#number_of_ports HostVirtualSwitch#number_of_ports}
   */
   readonly numberOfPorts?: number;
   /**
   * The average bandwidth in bits per second if traffic shaping is enabled.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host_virtual_switch#shaping_average_bandwidth HostVirtualSwitch#shaping_average_bandwidth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_virtual_switch#shaping_average_bandwidth HostVirtualSwitch#shaping_average_bandwidth}
   */
   readonly shapingAverageBandwidth?: number;
   /**
   * The maximum burst size allowed in bytes if traffic shaping is enabled.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host_virtual_switch#shaping_burst_size HostVirtualSwitch#shaping_burst_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_virtual_switch#shaping_burst_size HostVirtualSwitch#shaping_burst_size}
   */
   readonly shapingBurstSize?: number;
   /**
   * Enable traffic shaping on this virtual switch or port group.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host_virtual_switch#shaping_enabled HostVirtualSwitch#shaping_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_virtual_switch#shaping_enabled HostVirtualSwitch#shaping_enabled}
   */
   readonly shapingEnabled?: boolean | cdktf.IResolvable;
   /**
   * The peak bandwidth during bursts in bits per second if traffic shaping is enabled.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host_virtual_switch#shaping_peak_bandwidth HostVirtualSwitch#shaping_peak_bandwidth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_virtual_switch#shaping_peak_bandwidth HostVirtualSwitch#shaping_peak_bandwidth}
   */
   readonly shapingPeakBandwidth?: number;
   /**
   * List of standby network adapters used for failover.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host_virtual_switch#standby_nics HostVirtualSwitch#standby_nics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_virtual_switch#standby_nics HostVirtualSwitch#standby_nics}
   */
   readonly standbyNics?: string[];
   /**
   * The network adapter teaming policy. Can be one of loadbalance_ip, loadbalance_srcmac, loadbalance_srcid, or failover_explicit.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host_virtual_switch#teaming_policy HostVirtualSwitch#teaming_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_virtual_switch#teaming_policy HostVirtualSwitch#teaming_policy}
   */
   readonly teamingPolicy?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host_virtual_switch vsphere_host_virtual_switch}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_virtual_switch vsphere_host_virtual_switch}
 */
 export class HostVirtualSwitch extends cdktf.TerraformResource {
 
@@ -162,7 +162,7 @@ export class HostVirtualSwitch extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/host_virtual_switch vsphere_host_virtual_switch} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_virtual_switch vsphere_host_virtual_switch} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -173,7 +173,7 @@ export class HostVirtualSwitch extends cdktf.TerraformResource {
       terraformResourceType: 'vsphere_host_virtual_switch',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.4.0',
+        providerVersion: '2.4.1',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,
