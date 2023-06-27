@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/nas_datastore
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/nas_datastore
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,35 +10,35 @@ export interface NasDatastoreConfig extends cdktf.TerraformMetaArguments {
   /**
   * Access mode for the mount point. Can be one of readOnly or readWrite.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/nas_datastore#access_mode NasDatastore#access_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/nas_datastore#access_mode NasDatastore#access_mode}
   */
   readonly accessMode?: string;
   /**
   * A list of custom attributes to set on this resource.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/nas_datastore#custom_attributes NasDatastore#custom_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/nas_datastore#custom_attributes NasDatastore#custom_attributes}
   */
   readonly customAttributes?: { [key: string]: string };
   /**
   * The managed object ID of the datastore cluster to place the datastore in.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/nas_datastore#datastore_cluster_id NasDatastore#datastore_cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/nas_datastore#datastore_cluster_id NasDatastore#datastore_cluster_id}
   */
   readonly datastoreClusterId?: string;
   /**
   * The path to the datastore folder to put the datastore in.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/nas_datastore#folder NasDatastore#folder}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/nas_datastore#folder NasDatastore#folder}
   */
   readonly folder?: string;
   /**
   * The managed object IDs of the hosts to mount the datastore on.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/nas_datastore#host_system_ids NasDatastore#host_system_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/nas_datastore#host_system_ids NasDatastore#host_system_ids}
   */
   readonly hostSystemIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/nas_datastore#id NasDatastore#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/nas_datastore#id NasDatastore#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,43 +47,43 @@ export interface NasDatastoreConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the datastore.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/nas_datastore#name NasDatastore#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/nas_datastore#name NasDatastore#name}
   */
   readonly name: string;
   /**
   * The hostnames or IP addresses of the remote server or servers. Only one element should be present for NFS v3 but multiple can be present for NFS v4.1.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/nas_datastore#remote_hosts NasDatastore#remote_hosts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/nas_datastore#remote_hosts NasDatastore#remote_hosts}
   */
   readonly remoteHosts: string[];
   /**
   * The remote path of the mount point.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/nas_datastore#remote_path NasDatastore#remote_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/nas_datastore#remote_path NasDatastore#remote_path}
   */
   readonly remotePath: string;
   /**
   * The security type to use.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/nas_datastore#security_type NasDatastore#security_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/nas_datastore#security_type NasDatastore#security_type}
   */
   readonly securityType?: string;
   /**
   * A list of tag IDs to apply to this object.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/nas_datastore#tags NasDatastore#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/nas_datastore#tags NasDatastore#tags}
   */
   readonly tags?: string[];
   /**
   * The type of NAS volume. Can be one of NFS (to denote v3) or NFS41 (to denote NFS v4.1).
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/nas_datastore#type NasDatastore#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/nas_datastore#type NasDatastore#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/nas_datastore vsphere_nas_datastore}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/nas_datastore vsphere_nas_datastore}
 */
 export class NasDatastore extends cdktf.TerraformResource {
 
@@ -102,7 +97,7 @@ export class NasDatastore extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/nas_datastore vsphere_nas_datastore} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/nas_datastore vsphere_nas_datastore} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -113,7 +108,7 @@ export class NasDatastore extends cdktf.TerraformResource {
       terraformResourceType: 'vsphere_nas_datastore',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.4.0',
+        providerVersion: '2.4.1',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,

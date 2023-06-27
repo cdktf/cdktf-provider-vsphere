@@ -1,6 +1,6 @@
 # `vsphere_drs_vm_override`
 
-Refer to the Terraform Registory for docs: [`vsphere_drs_vm_override`](https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/drs_vm_override).
+Refer to the Terraform Registory for docs: [`vsphere_drs_vm_override`](https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/drs_vm_override).
 
 # `drsVmOverride` Submodule <a name="`drsVmOverride` Submodule" id="@cdktf/provider-vsphere.drsVmOverride"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vsphere_drs_vm_override`](https://r
 
 ### DrsVmOverride <a name="DrsVmOverride" id="@cdktf/provider-vsphere.drsVmOverride.DrsVmOverride"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/drs_vm_override vsphere_drs_vm_override}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/drs_vm_override vsphere_drs_vm_override}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.drsVmOverride.DrsVmOverride.Initializer"></a>
 
@@ -666,7 +666,7 @@ const drsVmOverrideConfig: drsVmOverride.DrsVmOverrideConfig = { ... }
 | <code><a href="#@cdktf/provider-vsphere.drsVmOverride.DrsVmOverrideConfig.property.virtualMachineId">virtualMachineId</a></code> | <code>string</code> | The managed object ID of the virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.drsVmOverride.DrsVmOverrideConfig.property.drsAutomationLevel">drsAutomationLevel</a></code> | <code>string</code> | The automation level for this virtual machine in the cluster. Can be one of manual, partiallyAutomated, or fullyAutomated. |
 | <code><a href="#@cdktf/provider-vsphere.drsVmOverride.DrsVmOverrideConfig.property.drsEnabled">drsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable DRS for this virtual machine. |
-| <code><a href="#@cdktf/provider-vsphere.drsVmOverride.DrsVmOverrideConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/drs_vm_override#id DrsVmOverride#id}. |
+| <code><a href="#@cdktf/provider-vsphere.drsVmOverride.DrsVmOverrideConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/drs_vm_override#id DrsVmOverride#id}. |
 
 ---
 
@@ -750,7 +750,7 @@ public readonly computeClusterId: string;
 
 The managed object ID of the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/drs_vm_override#compute_cluster_id DrsVmOverride#compute_cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/drs_vm_override#compute_cluster_id DrsVmOverride#compute_cluster_id}
 
 ---
 
@@ -764,7 +764,7 @@ public readonly virtualMachineId: string;
 
 The managed object ID of the virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/drs_vm_override#virtual_machine_id DrsVmOverride#virtual_machine_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/drs_vm_override#virtual_machine_id DrsVmOverride#virtual_machine_id}
 
 ---
 
@@ -778,7 +778,7 @@ public readonly drsAutomationLevel: string;
 
 The automation level for this virtual machine in the cluster. Can be one of manual, partiallyAutomated, or fullyAutomated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/drs_vm_override#drs_automation_level DrsVmOverride#drs_automation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/drs_vm_override#drs_automation_level DrsVmOverride#drs_automation_level}
 
 ---
 
@@ -792,7 +792,7 @@ public readonly drsEnabled: boolean | IResolvable;
 
 Enable DRS for this virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/drs_vm_override#drs_enabled DrsVmOverride#drs_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/drs_vm_override#drs_enabled DrsVmOverride#drs_enabled}
 
 ---
 
@@ -804,7 +804,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/resources/drs_vm_override#id DrsVmOverride#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/drs_vm_override#id DrsVmOverride#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

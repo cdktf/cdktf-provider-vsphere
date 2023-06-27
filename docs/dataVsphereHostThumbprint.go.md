@@ -1,6 +1,6 @@
 # `data_vsphere_host_thumbprint`
 
-Refer to the Terraform Registory for docs: [`data_vsphere_host_thumbprint`](https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/host_thumbprint).
+Refer to the Terraform Registory for docs: [`data_vsphere_host_thumbprint`](https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host_thumbprint).
 
 # `dataVsphereHostThumbprint` Submodule <a name="`dataVsphereHostThumbprint` Submodule" id="@cdktf/provider-vsphere.dataVsphereHostThumbprint"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_vsphere_host_thumbprint`](http
 
 ### DataVsphereHostThumbprint <a name="DataVsphereHostThumbprint" id="@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/host_thumbprint vsphere_host_thumbprint}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host_thumbprint vsphere_host_thumbprint}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/datavspherehostthumbprint"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostthumbprint"
 
 datavspherehostthumbprint.NewDataVsphereHostThumbprint(scope Construct, id *string, config DataVsphereHostThumbprintConfig) DataVsphereHostThumbprint
 ```
@@ -291,7 +291,7 @@ func ResetPort()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/datavspherehostthumbprint"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostthumbprint"
 
 datavspherehostthumbprint.DataVsphereHostThumbprint_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/datavspherehostthumbprint"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostthumbprint"
 
 datavspherehostthumbprint.DataVsphereHostThumbprint_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ datavspherehostthumbprint.DataVsphereHostThumbprint_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprint.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/datavspherehostthumbprint"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostthumbprint"
 
 datavspherehostthumbprint.DataVsphereHostThumbprint_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -602,7 +602,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprintConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/datavspherehostthumbprint"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostthumbprint"
 
 &datavspherehostthumbprint.DataVsphereHostThumbprintConfig {
 	Connection: interface{},
@@ -631,7 +631,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/datavspherehostthu
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprintConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprintConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprintConfig.property.address">Address</a></code> | <code>*string</code> | The address of the ESXi to extract the thumbprint from. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprintConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/host_thumbprint#id DataVsphereHostThumbprint#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprintConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host_thumbprint#id DataVsphereHostThumbprint#id}. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprintConfig.property.insecure">Insecure</a></code> | <code>interface{}</code> | Boolean that can be set to true to disable SSL certificate verification. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprintConfig.property.port">Port</a></code> | <code>*string</code> | The port to connect to on the ESXi host. |
 
@@ -717,7 +717,7 @@ Address *string
 
 The address of the ESXi to extract the thumbprint from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/host_thumbprint#address DataVsphereHostThumbprint#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host_thumbprint#address DataVsphereHostThumbprint#address}
 
 ---
 
@@ -729,7 +729,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/host_thumbprint#id DataVsphereHostThumbprint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host_thumbprint#id DataVsphereHostThumbprint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -746,7 +746,7 @@ Insecure interface{}
 
 Boolean that can be set to true to disable SSL certificate verification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/host_thumbprint#insecure DataVsphereHostThumbprint#insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host_thumbprint#insecure DataVsphereHostThumbprint#insecure}
 
 ---
 
@@ -760,7 +760,7 @@ Port *string
 
 The port to connect to on the ESXi host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/host_thumbprint#port DataVsphereHostThumbprint#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host_thumbprint#port DataVsphereHostThumbprint#port}
 
 ---
 

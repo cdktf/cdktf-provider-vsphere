@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/host_pci_device
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host_pci_device
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface DataVsphereHostPciDeviceConfig extends cdktf.TerraformMetaArgum
   /**
   * The hexadecimal value of the PCI device's class ID.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/host_pci_device#class_id DataVsphereHostPciDevice#class_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host_pci_device#class_id DataVsphereHostPciDevice#class_id}
   */
   readonly classId?: string;
   /**
   * The Managed Object ID of the host system.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/host_pci_device#host_id DataVsphereHostPciDevice#host_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host_pci_device#host_id DataVsphereHostPciDevice#host_id}
   */
   readonly hostId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/host_pci_device#id DataVsphereHostPciDevice#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host_pci_device#id DataVsphereHostPciDevice#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,19 +29,19 @@ export interface DataVsphereHostPciDeviceConfig extends cdktf.TerraformMetaArgum
   /**
   * A regular expression used to match the PCI device name.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/host_pci_device#name_regex DataVsphereHostPciDevice#name_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host_pci_device#name_regex DataVsphereHostPciDevice#name_regex}
   */
   readonly nameRegex?: string;
   /**
   * The hexadecimal value of the PCI device's vendor ID.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/host_pci_device#vendor_id DataVsphereHostPciDevice#vendor_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host_pci_device#vendor_id DataVsphereHostPciDevice#vendor_id}
   */
   readonly vendorId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/host_pci_device vsphere_host_pci_device}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host_pci_device vsphere_host_pci_device}
 */
 export class DataVsphereHostPciDevice extends cdktf.TerraformDataSource {
 
@@ -60,7 +55,7 @@ export class DataVsphereHostPciDevice extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/host_pci_device vsphere_host_pci_device} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host_pci_device vsphere_host_pci_device} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +66,7 @@ export class DataVsphereHostPciDevice extends cdktf.TerraformDataSource {
       terraformResourceType: 'vsphere_host_pci_device',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.4.0',
+        providerVersion: '2.4.1',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,

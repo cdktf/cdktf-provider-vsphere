@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/datastore
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/datastore
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface DataVsphereDatastoreConfig extends cdktf.TerraformMetaArguments
   /**
   * The managed object ID of the datacenter the datastore is in. This is not required when using ESXi directly, or if there is only one datacenter in your infrastructure.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/datastore#datacenter_id DataVsphereDatastore#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/datastore#datacenter_id DataVsphereDatastore#datacenter_id}
   */
   readonly datacenterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/datastore#id DataVsphereDatastore#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/datastore#id DataVsphereDatastore#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +23,13 @@ export interface DataVsphereDatastoreConfig extends cdktf.TerraformMetaArguments
   /**
   * The name or path of the datastore.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/datastore#name DataVsphereDatastore#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/datastore#name DataVsphereDatastore#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/datastore vsphere_datastore}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/datastore vsphere_datastore}
 */
 export class DataVsphereDatastore extends cdktf.TerraformDataSource {
 
@@ -48,7 +43,7 @@ export class DataVsphereDatastore extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.0/docs/data-sources/datastore vsphere_datastore} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/datastore vsphere_datastore} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +54,7 @@ export class DataVsphereDatastore extends cdktf.TerraformDataSource {
       terraformResourceType: 'vsphere_datastore',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.4.0',
+        providerVersion: '2.4.1',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,
