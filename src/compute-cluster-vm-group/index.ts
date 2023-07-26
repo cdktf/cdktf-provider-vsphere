@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface ComputeClusterVmGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * The managed object ID of the cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_vm_group#compute_cluster_id ComputeClusterVmGroup#compute_cluster_id}
   */
   readonly computeClusterId: string;
@@ -27,13 +27,13 @@ export interface ComputeClusterVmGroupConfig extends cdktf.TerraformMetaArgument
   readonly id?: string;
   /**
   * The unique name of the virtual machine group in the cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_vm_group#name ComputeClusterVmGroup#name}
   */
   readonly name: string;
   /**
   * The UUIDs of the virtual machines in this group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_vm_group#virtual_machine_ids ComputeClusterVmGroup#virtual_machine_ids}
   */
   readonly virtualMachineIds?: string[];

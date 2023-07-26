@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface ComputeClusterVmAffinityRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The managed object ID of the cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_vm_affinity_rule#compute_cluster_id ComputeClusterVmAffinityRule#compute_cluster_id}
   */
   readonly computeClusterId: string;
   /**
   * Enable this rule in the cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_vm_affinity_rule#enabled ComputeClusterVmAffinityRule#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
@@ -33,19 +33,19 @@ export interface ComputeClusterVmAffinityRuleConfig extends cdktf.TerraformMetaA
   readonly id?: string;
   /**
   * When true, prevents any virtual machine operations that may violate this rule.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_vm_affinity_rule#mandatory ComputeClusterVmAffinityRule#mandatory}
   */
   readonly mandatory?: boolean | cdktf.IResolvable;
   /**
   * The unique name of the virtual machine group in the cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_vm_affinity_rule#name ComputeClusterVmAffinityRule#name}
   */
   readonly name: string;
   /**
   * The UUIDs of the virtual machines to run on the same host together.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_vm_affinity_rule#virtual_machine_ids ComputeClusterVmAffinityRule#virtual_machine_ids}
   */
   readonly virtualMachineIds: string[];

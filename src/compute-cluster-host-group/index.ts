@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface ComputeClusterHostGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * The managed object ID of the cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_host_group#compute_cluster_id ComputeClusterHostGroup#compute_cluster_id}
   */
   readonly computeClusterId: string;
   /**
   * The managed object IDs of the hosts.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_host_group#host_system_ids ComputeClusterHostGroup#host_system_ids}
   */
   readonly hostSystemIds?: string[];
@@ -33,7 +33,7 @@ export interface ComputeClusterHostGroupConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * The unique name of the host group in the cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_host_group#name ComputeClusterHostGroup#name}
   */
   readonly name: string;

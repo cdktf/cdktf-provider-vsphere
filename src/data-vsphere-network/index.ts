@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface DataVsphereNetworkConfig extends cdktf.TerraformMetaArguments {
   /**
   * The managed object ID of the datacenter the network is in. This is required if the supplied path is not an absolute path containing a datacenter and there are multiple datacenters in your infrastructure.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/network#datacenter_id DataVsphereNetwork#datacenter_id}
   */
   readonly datacenterId?: string;
   /**
   * Id of the distributed virtual switch of which the port group is a part of
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/network#distributed_virtual_switch_uuid DataVsphereNetwork#distributed_virtual_switch_uuid}
   */
   readonly distributedVirtualSwitchUuid?: string;
@@ -33,7 +33,7 @@ export interface DataVsphereNetworkConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The name or path of the network.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/network#name DataVsphereNetwork#name}
   */
   readonly name: string;

@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface FolderConfig extends cdktf.TerraformMetaArguments {
   /**
   * A list of custom attributes to set on this resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/folder#custom_attributes Folder#custom_attributes}
   */
   readonly customAttributes?: { [key: string]: string };
   /**
   * The ID of the datacenter. Can be ignored if creating a datacenter folder, otherwise required.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/folder#datacenter_id Folder#datacenter_id}
   */
   readonly datacenterId?: string;
@@ -33,19 +33,19 @@ export interface FolderConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The path of the folder and any parents, relative to the datacenter and folder type being defined.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/folder#path Folder#path}
   */
   readonly path: string;
   /**
   * A list of tag IDs to apply to this object.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/folder#tags Folder#tags}
   */
   readonly tags?: string[];
   /**
   * The type of the folder.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/folder#type Folder#type}
   */
   readonly type: string;

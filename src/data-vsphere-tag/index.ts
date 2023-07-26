@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataVsphereTagConfig extends cdktf.TerraformMetaArguments {
   /**
   * The unique identifier of the parent category for this tag.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/tag#category_id DataVsphereTag#category_id}
   */
   readonly categoryId: string;
@@ -27,7 +27,7 @@ export interface DataVsphereTagConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The display name of the tag.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/tag#name DataVsphereTag#name}
   */
   readonly name: string;

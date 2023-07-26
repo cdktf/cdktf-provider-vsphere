@@ -14,181 +14,181 @@ import * as cdktf from 'cdktf';
 export interface DistributedVirtualSwitchConfig extends cdktf.TerraformMetaArguments {
   /**
   * List of active uplinks used for load balancing, matching the names of the uplinks assigned in the DVS.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#active_uplinks DistributedVirtualSwitch#active_uplinks}
   */
   readonly activeUplinks?: string[];
   /**
   * Controls whether or not the virtual network adapter is allowed to send network traffic with a different MAC address than that of its own.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#allow_forged_transmits DistributedVirtualSwitch#allow_forged_transmits}
   */
   readonly allowForgedTransmits?: boolean | cdktf.IResolvable;
   /**
   * Controls whether or not the Media Access Control (MAC) address can be changed.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#allow_mac_changes DistributedVirtualSwitch#allow_mac_changes}
   */
   readonly allowMacChanges?: boolean | cdktf.IResolvable;
   /**
   * Enable promiscuous mode on the network. This flag indicates whether or not all traffic is seen on a given port.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#allow_promiscuous DistributedVirtualSwitch#allow_promiscuous}
   */
   readonly allowPromiscuous?: boolean | cdktf.IResolvable;
   /**
   * The maximum allowed usage for the backupNfc traffic class, in Mbits/sec.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#backupnfc_maximum_mbit DistributedVirtualSwitch#backupnfc_maximum_mbit}
   */
   readonly backupnfcMaximumMbit?: number;
   /**
   * The amount of guaranteed bandwidth for the backupNfc traffic class, in Mbits/sec.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#backupnfc_reservation_mbit DistributedVirtualSwitch#backupnfc_reservation_mbit}
   */
   readonly backupnfcReservationMbit?: number;
   /**
   * The amount of shares to allocate to the backupNfc traffic class for a custom share level.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#backupnfc_share_count DistributedVirtualSwitch#backupnfc_share_count}
   */
   readonly backupnfcShareCount?: number;
   /**
   * The allocation level for the backupNfc traffic class. Can be one of high, low, normal, or custom.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#backupnfc_share_level DistributedVirtualSwitch#backupnfc_share_level}
   */
   readonly backupnfcShareLevel?: string;
   /**
   * Indicates whether to block all ports by default.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#block_all_ports DistributedVirtualSwitch#block_all_ports}
   */
   readonly blockAllPorts?: boolean | cdktf.IResolvable;
   /**
   * Enable beacon probing on the ports this policy applies to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#check_beacon DistributedVirtualSwitch#check_beacon}
   */
   readonly checkBeacon?: boolean | cdktf.IResolvable;
   /**
   * The contact detail for this DVS.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#contact_detail DistributedVirtualSwitch#contact_detail}
   */
   readonly contactDetail?: string;
   /**
   * The contact name for this DVS.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#contact_name DistributedVirtualSwitch#contact_name}
   */
   readonly contactName?: string;
   /**
   * A list of custom attributes to set on this resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#custom_attributes DistributedVirtualSwitch#custom_attributes}
   */
   readonly customAttributes?: { [key: string]: string };
   /**
   * The ID of the datacenter to create this virtual switch in.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#datacenter_id DistributedVirtualSwitch#datacenter_id}
   */
   readonly datacenterId: string;
   /**
   * The description of the DVS.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#description DistributedVirtualSwitch#description}
   */
   readonly description?: string;
   /**
   * Allow VMDirectPath Gen2 on the ports this policy applies to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#directpath_gen2_allowed DistributedVirtualSwitch#directpath_gen2_allowed}
   */
   readonly directpathGen2Allowed?: boolean | cdktf.IResolvable;
   /**
   * The average egress bandwidth in bits per second if egress shaping is enabled on the port.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#egress_shaping_average_bandwidth DistributedVirtualSwitch#egress_shaping_average_bandwidth}
   */
   readonly egressShapingAverageBandwidth?: number;
   /**
   * The maximum egress burst size allowed in bytes if egress shaping is enabled on the port.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#egress_shaping_burst_size DistributedVirtualSwitch#egress_shaping_burst_size}
   */
   readonly egressShapingBurstSize?: number;
   /**
   * True if the traffic shaper is enabled for egress traffic on the port.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#egress_shaping_enabled DistributedVirtualSwitch#egress_shaping_enabled}
   */
   readonly egressShapingEnabled?: boolean | cdktf.IResolvable;
   /**
   * The peak egress bandwidth during bursts in bits per second if egress traffic shaping is enabled on the port.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#egress_shaping_peak_bandwidth DistributedVirtualSwitch#egress_shaping_peak_bandwidth}
   */
   readonly egressShapingPeakBandwidth?: number;
   /**
   * If true, the teaming policy will re-activate failed interfaces higher in precedence when they come back up.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#failback DistributedVirtualSwitch#failback}
   */
   readonly failback?: boolean | cdktf.IResolvable;
   /**
   * The maximum allowed usage for the faultTolerance traffic class, in Mbits/sec.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#faulttolerance_maximum_mbit DistributedVirtualSwitch#faulttolerance_maximum_mbit}
   */
   readonly faulttoleranceMaximumMbit?: number;
   /**
   * The amount of guaranteed bandwidth for the faultTolerance traffic class, in Mbits/sec.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#faulttolerance_reservation_mbit DistributedVirtualSwitch#faulttolerance_reservation_mbit}
   */
   readonly faulttoleranceReservationMbit?: number;
   /**
   * The amount of shares to allocate to the faultTolerance traffic class for a custom share level.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#faulttolerance_share_count DistributedVirtualSwitch#faulttolerance_share_count}
   */
   readonly faulttoleranceShareCount?: number;
   /**
   * The allocation level for the faultTolerance traffic class. Can be one of high, low, normal, or custom.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#faulttolerance_share_level DistributedVirtualSwitch#faulttolerance_share_level}
   */
   readonly faulttoleranceShareLevel?: string;
   /**
   * The folder to create this virtual switch in, relative to the datacenter.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#folder DistributedVirtualSwitch#folder}
   */
   readonly folder?: string;
   /**
   * The maximum allowed usage for the hbr traffic class, in Mbits/sec.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#hbr_maximum_mbit DistributedVirtualSwitch#hbr_maximum_mbit}
   */
   readonly hbrMaximumMbit?: number;
   /**
   * The amount of guaranteed bandwidth for the hbr traffic class, in Mbits/sec.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#hbr_reservation_mbit DistributedVirtualSwitch#hbr_reservation_mbit}
   */
   readonly hbrReservationMbit?: number;
   /**
   * The amount of shares to allocate to the hbr traffic class for a custom share level.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#hbr_share_count DistributedVirtualSwitch#hbr_share_count}
   */
   readonly hbrShareCount?: number;
   /**
   * The allocation level for the hbr traffic class. Can be one of high, low, normal, or custom.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#hbr_share_level DistributedVirtualSwitch#hbr_share_level}
   */
   readonly hbrShareLevel?: string;
@@ -201,385 +201,385 @@ export interface DistributedVirtualSwitchConfig extends cdktf.TerraformMetaArgum
   readonly id?: string;
   /**
   * Whether to ignore existing PVLAN mappings not managed by this resource. Defaults to false.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#ignore_other_pvlan_mappings DistributedVirtualSwitch#ignore_other_pvlan_mappings}
   */
   readonly ignoreOtherPvlanMappings?: boolean | cdktf.IResolvable;
   /**
   * The average ingress bandwidth in bits per second if ingress shaping is enabled on the port.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#ingress_shaping_average_bandwidth DistributedVirtualSwitch#ingress_shaping_average_bandwidth}
   */
   readonly ingressShapingAverageBandwidth?: number;
   /**
   * The maximum ingress burst size allowed in bytes if ingress shaping is enabled on the port.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#ingress_shaping_burst_size DistributedVirtualSwitch#ingress_shaping_burst_size}
   */
   readonly ingressShapingBurstSize?: number;
   /**
   * True if the traffic shaper is enabled for ingress traffic on the port.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#ingress_shaping_enabled DistributedVirtualSwitch#ingress_shaping_enabled}
   */
   readonly ingressShapingEnabled?: boolean | cdktf.IResolvable;
   /**
   * The peak ingress bandwidth during bursts in bits per second if ingress traffic shaping is enabled on the port.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#ingress_shaping_peak_bandwidth DistributedVirtualSwitch#ingress_shaping_peak_bandwidth}
   */
   readonly ingressShapingPeakBandwidth?: number;
   /**
   * The IPv4 address of the switch. This can be used to see the DVS as a unique device with NetFlow.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#ipv4_address DistributedVirtualSwitch#ipv4_address}
   */
   readonly ipv4Address?: string;
   /**
   * The maximum allowed usage for the iSCSI traffic class, in Mbits/sec.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#iscsi_maximum_mbit DistributedVirtualSwitch#iscsi_maximum_mbit}
   */
   readonly iscsiMaximumMbit?: number;
   /**
   * The amount of guaranteed bandwidth for the iSCSI traffic class, in Mbits/sec.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#iscsi_reservation_mbit DistributedVirtualSwitch#iscsi_reservation_mbit}
   */
   readonly iscsiReservationMbit?: number;
   /**
   * The amount of shares to allocate to the iSCSI traffic class for a custom share level.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#iscsi_share_count DistributedVirtualSwitch#iscsi_share_count}
   */
   readonly iscsiShareCount?: number;
   /**
   * The allocation level for the iSCSI traffic class. Can be one of high, low, normal, or custom.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#iscsi_share_level DistributedVirtualSwitch#iscsi_share_level}
   */
   readonly iscsiShareLevel?: string;
   /**
   * The Link Aggregation Control Protocol group version in the switch. Can be one of singleLag or multipleLag.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#lacp_api_version DistributedVirtualSwitch#lacp_api_version}
   */
   readonly lacpApiVersion?: string;
   /**
   * Whether or not to enable LACP on all uplink ports.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#lacp_enabled DistributedVirtualSwitch#lacp_enabled}
   */
   readonly lacpEnabled?: boolean | cdktf.IResolvable;
   /**
   * The uplink LACP mode to use. Can be one of active or passive.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#lacp_mode DistributedVirtualSwitch#lacp_mode}
   */
   readonly lacpMode?: string;
   /**
   * Whether to advertise or listen for link discovery. Valid values are advertise, both, listen, and none.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#link_discovery_operation DistributedVirtualSwitch#link_discovery_operation}
   */
   readonly linkDiscoveryOperation?: string;
   /**
   * The discovery protocol type. Valid values are cdp and lldp.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#link_discovery_protocol DistributedVirtualSwitch#link_discovery_protocol}
   */
   readonly linkDiscoveryProtocol?: string;
   /**
   * The maximum allowed usage for the management traffic class, in Mbits/sec.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#management_maximum_mbit DistributedVirtualSwitch#management_maximum_mbit}
   */
   readonly managementMaximumMbit?: number;
   /**
   * The amount of guaranteed bandwidth for the management traffic class, in Mbits/sec.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#management_reservation_mbit DistributedVirtualSwitch#management_reservation_mbit}
   */
   readonly managementReservationMbit?: number;
   /**
   * The amount of shares to allocate to the management traffic class for a custom share level.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#management_share_count DistributedVirtualSwitch#management_share_count}
   */
   readonly managementShareCount?: number;
   /**
   * The allocation level for the management traffic class. Can be one of high, low, normal, or custom.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#management_share_level DistributedVirtualSwitch#management_share_level}
   */
   readonly managementShareLevel?: string;
   /**
   * The maximum MTU on the switch.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#max_mtu DistributedVirtualSwitch#max_mtu}
   */
   readonly maxMtu?: number;
   /**
   * The multicast filtering mode on the switch. Can be one of legacyFiltering, or snooping.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#multicast_filtering_mode DistributedVirtualSwitch#multicast_filtering_mode}
   */
   readonly multicastFilteringMode?: string;
   /**
   * The name for the DVS. Must be unique in the folder that it is being created in.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#name DistributedVirtualSwitch#name}
   */
   readonly name: string;
   /**
   * The number of seconds after which active flows are forced to be exported to the collector.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#netflow_active_flow_timeout DistributedVirtualSwitch#netflow_active_flow_timeout}
   */
   readonly netflowActiveFlowTimeout?: number;
   /**
   * IP address for the netflow collector, using IPv4 or IPv6. IPv6 is supported in vSphere Distributed Switch Version 6.0 or later.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#netflow_collector_ip_address DistributedVirtualSwitch#netflow_collector_ip_address}
   */
   readonly netflowCollectorIpAddress?: string;
   /**
   * The port for the netflow collector.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#netflow_collector_port DistributedVirtualSwitch#netflow_collector_port}
   */
   readonly netflowCollectorPort?: number;
   /**
   * Indicates whether to enable netflow on all ports.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#netflow_enabled DistributedVirtualSwitch#netflow_enabled}
   */
   readonly netflowEnabled?: boolean | cdktf.IResolvable;
   /**
   * The number of seconds after which idle flows are forced to be exported to the collector.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#netflow_idle_flow_timeout DistributedVirtualSwitch#netflow_idle_flow_timeout}
   */
   readonly netflowIdleFlowTimeout?: number;
   /**
   * Whether to limit analysis to traffic that has both source and destination served by the same host.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#netflow_internal_flows_only DistributedVirtualSwitch#netflow_internal_flows_only}
   */
   readonly netflowInternalFlowsOnly?: boolean | cdktf.IResolvable;
   /**
   * The observation Domain ID for the netflow collector.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#netflow_observation_domain_id DistributedVirtualSwitch#netflow_observation_domain_id}
   */
   readonly netflowObservationDomainId?: number;
   /**
   * The ratio of total number of packets to the number of packets analyzed. Set to 0 to disable sampling, meaning that all packets are analyzed.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#netflow_sampling_rate DistributedVirtualSwitch#netflow_sampling_rate}
   */
   readonly netflowSamplingRate?: number;
   /**
   * Whether or not to enable network resource control, enabling advanced traffic shaping and resource control features.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#network_resource_control_enabled DistributedVirtualSwitch#network_resource_control_enabled}
   */
   readonly networkResourceControlEnabled?: boolean | cdktf.IResolvable;
   /**
   * The network I/O control version to use. Can be one of version2 or version3.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#network_resource_control_version DistributedVirtualSwitch#network_resource_control_version}
   */
   readonly networkResourceControlVersion?: string;
   /**
   * The maximum allowed usage for the nfs traffic class, in Mbits/sec.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#nfs_maximum_mbit DistributedVirtualSwitch#nfs_maximum_mbit}
   */
   readonly nfsMaximumMbit?: number;
   /**
   * The amount of guaranteed bandwidth for the nfs traffic class, in Mbits/sec.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#nfs_reservation_mbit DistributedVirtualSwitch#nfs_reservation_mbit}
   */
   readonly nfsReservationMbit?: number;
   /**
   * The amount of shares to allocate to the nfs traffic class for a custom share level.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#nfs_share_count DistributedVirtualSwitch#nfs_share_count}
   */
   readonly nfsShareCount?: number;
   /**
   * The allocation level for the nfs traffic class. Can be one of high, low, normal, or custom.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#nfs_share_level DistributedVirtualSwitch#nfs_share_level}
   */
   readonly nfsShareLevel?: string;
   /**
   * If true, the teaming policy will notify the broadcast network of a NIC failover, triggering cache updates.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#notify_switches DistributedVirtualSwitch#notify_switches}
   */
   readonly notifySwitches?: boolean | cdktf.IResolvable;
   /**
   * The secondary VLAN ID for this port.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#port_private_secondary_vlan_id DistributedVirtualSwitch#port_private_secondary_vlan_id}
   */
   readonly portPrivateSecondaryVlanId?: number;
   /**
   * List of standby uplinks used for load balancing, matching the names of the uplinks assigned in the DVS.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#standby_uplinks DistributedVirtualSwitch#standby_uplinks}
   */
   readonly standbyUplinks?: string[];
   /**
   * A list of tag IDs to apply to this object.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#tags DistributedVirtualSwitch#tags}
   */
   readonly tags?: string[];
   /**
   * The network adapter teaming policy. Can be one of loadbalance_ip, loadbalance_srcmac, loadbalance_srcid, failover_explicit, or loadbalance_loadbased.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#teaming_policy DistributedVirtualSwitch#teaming_policy}
   */
   readonly teamingPolicy?: string;
   /**
   * If true, a copy of packets sent to the switch will always be forwarded to an uplink in addition to the regular packet forwarded done by the switch.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#tx_uplink DistributedVirtualSwitch#tx_uplink}
   */
   readonly txUplink?: boolean | cdktf.IResolvable;
   /**
   * A list of uplink ports. The contents of this list control both the uplink count and names of the uplinks on the DVS across hosts.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#uplinks DistributedVirtualSwitch#uplinks}
   */
   readonly uplinks?: string[];
   /**
   * The maximum allowed usage for the vdp traffic class, in Mbits/sec.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#vdp_maximum_mbit DistributedVirtualSwitch#vdp_maximum_mbit}
   */
   readonly vdpMaximumMbit?: number;
   /**
   * The amount of guaranteed bandwidth for the vdp traffic class, in Mbits/sec.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#vdp_reservation_mbit DistributedVirtualSwitch#vdp_reservation_mbit}
   */
   readonly vdpReservationMbit?: number;
   /**
   * The amount of shares to allocate to the vdp traffic class for a custom share level.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#vdp_share_count DistributedVirtualSwitch#vdp_share_count}
   */
   readonly vdpShareCount?: number;
   /**
   * The allocation level for the vdp traffic class. Can be one of high, low, normal, or custom.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#vdp_share_level DistributedVirtualSwitch#vdp_share_level}
   */
   readonly vdpShareLevel?: string;
   /**
   * The version of this virtual switch. Allowed versions are 8.0.0, 7.0.3, 7.0.2, 7.0.0, 6.6.0, 6.5.0, 6.0.0, 5.5.0, 5.1.0, and 5.0.0.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#version DistributedVirtualSwitch#version}
   */
   readonly version?: string;
   /**
   * The maximum allowed usage for the virtualMachine traffic class, in Mbits/sec.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#virtualmachine_maximum_mbit DistributedVirtualSwitch#virtualmachine_maximum_mbit}
   */
   readonly virtualmachineMaximumMbit?: number;
   /**
   * The amount of guaranteed bandwidth for the virtualMachine traffic class, in Mbits/sec.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#virtualmachine_reservation_mbit DistributedVirtualSwitch#virtualmachine_reservation_mbit}
   */
   readonly virtualmachineReservationMbit?: number;
   /**
   * The amount of shares to allocate to the virtualMachine traffic class for a custom share level.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#virtualmachine_share_count DistributedVirtualSwitch#virtualmachine_share_count}
   */
   readonly virtualmachineShareCount?: number;
   /**
   * The allocation level for the virtualMachine traffic class. Can be one of high, low, normal, or custom.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#virtualmachine_share_level DistributedVirtualSwitch#virtualmachine_share_level}
   */
   readonly virtualmachineShareLevel?: string;
   /**
   * The VLAN ID for single VLAN mode. 0 denotes no VLAN.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#vlan_id DistributedVirtualSwitch#vlan_id}
   */
   readonly vlanId?: number;
   /**
   * The maximum allowed usage for the vmotion traffic class, in Mbits/sec.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#vmotion_maximum_mbit DistributedVirtualSwitch#vmotion_maximum_mbit}
   */
   readonly vmotionMaximumMbit?: number;
   /**
   * The amount of guaranteed bandwidth for the vmotion traffic class, in Mbits/sec.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#vmotion_reservation_mbit DistributedVirtualSwitch#vmotion_reservation_mbit}
   */
   readonly vmotionReservationMbit?: number;
   /**
   * The amount of shares to allocate to the vmotion traffic class for a custom share level.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#vmotion_share_count DistributedVirtualSwitch#vmotion_share_count}
   */
   readonly vmotionShareCount?: number;
   /**
   * The allocation level for the vmotion traffic class. Can be one of high, low, normal, or custom.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#vmotion_share_level DistributedVirtualSwitch#vmotion_share_level}
   */
   readonly vmotionShareLevel?: string;
   /**
   * The maximum allowed usage for the vsan traffic class, in Mbits/sec.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#vsan_maximum_mbit DistributedVirtualSwitch#vsan_maximum_mbit}
   */
   readonly vsanMaximumMbit?: number;
   /**
   * The amount of guaranteed bandwidth for the vsan traffic class, in Mbits/sec.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#vsan_reservation_mbit DistributedVirtualSwitch#vsan_reservation_mbit}
   */
   readonly vsanReservationMbit?: number;
   /**
   * The amount of shares to allocate to the vsan traffic class for a custom share level.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#vsan_share_count DistributedVirtualSwitch#vsan_share_count}
   */
   readonly vsanShareCount?: number;
   /**
   * The allocation level for the vsan traffic class. Can be one of high, low, normal, or custom.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#vsan_share_level DistributedVirtualSwitch#vsan_share_level}
   */
   readonly vsanShareLevel?: string;
   /**
   * host block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#host DistributedVirtualSwitch#host}
   */
   readonly host?: DistributedVirtualSwitchHost[] | cdktf.IResolvable;
   /**
   * pvlan_mapping block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#pvlan_mapping DistributedVirtualSwitch#pvlan_mapping}
   */
   readonly pvlanMapping?: DistributedVirtualSwitchPvlanMapping[] | cdktf.IResolvable;
   /**
   * vlan_range block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#vlan_range DistributedVirtualSwitch#vlan_range}
   */
   readonly vlanRange?: DistributedVirtualSwitchVlanRange[] | cdktf.IResolvable;
@@ -587,13 +587,13 @@ export interface DistributedVirtualSwitchConfig extends cdktf.TerraformMetaArgum
 export interface DistributedVirtualSwitchHost {
   /**
   * Name of the physical NIC to be added to the proxy switch.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#devices DistributedVirtualSwitch#devices}
   */
   readonly devices?: string[];
   /**
   * The managed object ID of the host this specification applies to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#host_system_id DistributedVirtualSwitch#host_system_id}
   */
   readonly hostSystemId: string;
@@ -712,19 +712,19 @@ export class DistributedVirtualSwitchHostList extends cdktf.ComplexList {
 export interface DistributedVirtualSwitchPvlanMapping {
   /**
   * The primary VLAN ID. The VLAN IDs of 0 and 4095 are reserved and cannot be used in this property.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#primary_vlan_id DistributedVirtualSwitch#primary_vlan_id}
   */
   readonly primaryVlanId: number;
   /**
   * The private VLAN type. Valid values are promiscuous, community and isolated.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#pvlan_type DistributedVirtualSwitch#pvlan_type}
   */
   readonly pvlanType: string;
   /**
   * The secondary VLAN ID. The VLAN IDs of 0 and 4095 are reserved and cannot be used in this property.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#secondary_vlan_id DistributedVirtualSwitch#secondary_vlan_id}
   */
   readonly secondaryVlanId: number;
@@ -860,13 +860,13 @@ export class DistributedVirtualSwitchPvlanMappingList extends cdktf.ComplexList 
 export interface DistributedVirtualSwitchVlanRange {
   /**
   * The minimum VLAN to use in the range.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#max_vlan DistributedVirtualSwitch#max_vlan}
   */
   readonly maxVlan: number;
   /**
   * The minimum VLAN to use in the range.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/distributed_virtual_switch#min_vlan DistributedVirtualSwitch#min_vlan}
   */
   readonly minVlan: number;

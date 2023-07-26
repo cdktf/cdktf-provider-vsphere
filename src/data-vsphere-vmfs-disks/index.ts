@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface DataVsphereVmfsDisksConfig extends cdktf.TerraformMetaArguments {
   /**
   * A regular expression to filter the disks against. Only disks with canonical names that match will be included.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/vmfs_disks#filter DataVsphereVmfsDisks#filter}
   */
   readonly filter?: string;
   /**
   * The managed object ID of the host to search for disks on.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/vmfs_disks#host_system_id DataVsphereVmfsDisks#host_system_id}
   */
   readonly hostSystemId: string;
@@ -33,7 +33,7 @@ export interface DataVsphereVmfsDisksConfig extends cdktf.TerraformMetaArguments
   readonly id?: string;
   /**
   * Rescan the system for disks before querying. This may lengthen the time it takes to gather information.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/vmfs_disks#rescan DataVsphereVmfsDisks#rescan}
   */
   readonly rescan?: boolean | cdktf.IResolvable;

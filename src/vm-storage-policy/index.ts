@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface VmStoragePolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Description of the storage policy.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vm_storage_policy#description VmStoragePolicy#description}
   */
   readonly description?: string;
@@ -27,13 +27,13 @@ export interface VmStoragePolicyConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Name of the storage policy.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vm_storage_policy#name VmStoragePolicy#name}
   */
   readonly name: string;
   /**
   * tag_rules block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vm_storage_policy#tag_rules VmStoragePolicy#tag_rules}
   */
   readonly tagRules: VmStoragePolicyTagRules[] | cdktf.IResolvable;
@@ -41,19 +41,19 @@ export interface VmStoragePolicyConfig extends cdktf.TerraformMetaArguments {
 export interface VmStoragePolicyTagRules {
   /**
   * Whether to include or exclude datastores tagged with the provided tags
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vm_storage_policy#include_datastores_with_tags VmStoragePolicy#include_datastores_with_tags}
   */
   readonly includeDatastoresWithTags?: boolean | cdktf.IResolvable;
   /**
   * The tag category to select the tags from.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vm_storage_policy#tag_category VmStoragePolicy#tag_category}
   */
   readonly tagCategory: string;
   /**
   * The tags to use for creating a tag-based vm placement rule.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vm_storage_policy#tags VmStoragePolicy#tags}
   */
   readonly tags: string[];

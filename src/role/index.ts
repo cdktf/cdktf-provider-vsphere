@@ -21,13 +21,13 @@ export interface RoleConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Name of the storage policy.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/role#name Role#name}
   */
   readonly name: string;
   /**
   * The privileges to be associated with the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/role#role_privileges Role#role_privileges}
   */
   readonly rolePrivileges?: string[];

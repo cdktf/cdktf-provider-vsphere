@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface DatastoreClusterVmAntiAffinityRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The managed object ID of the datastore cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/datastore_cluster_vm_anti_affinity_rule#datastore_cluster_id DatastoreClusterVmAntiAffinityRule#datastore_cluster_id}
   */
   readonly datastoreClusterId: string;
   /**
   * Enable this rule in the cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/datastore_cluster_vm_anti_affinity_rule#enabled DatastoreClusterVmAntiAffinityRule#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
@@ -33,19 +33,19 @@ export interface DatastoreClusterVmAntiAffinityRuleConfig extends cdktf.Terrafor
   readonly id?: string;
   /**
   * When true, prevents any virtual machine operations that may violate this rule.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/datastore_cluster_vm_anti_affinity_rule#mandatory DatastoreClusterVmAntiAffinityRule#mandatory}
   */
   readonly mandatory?: boolean | cdktf.IResolvable;
   /**
   * The unique name of the virtual machine group in the cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/datastore_cluster_vm_anti_affinity_rule#name DatastoreClusterVmAntiAffinityRule#name}
   */
   readonly name: string;
   /**
   * The UUIDs of the virtual machines to run on different datastores from each other.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/datastore_cluster_vm_anti_affinity_rule#virtual_machine_ids DatastoreClusterVmAntiAffinityRule#virtual_machine_ids}
   */
   readonly virtualMachineIds: string[];

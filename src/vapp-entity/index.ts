@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface VappEntityConfig extends cdktf.TerraformMetaArguments {
   /**
   * Managed object ID of the vApp container the entity is a member of.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vapp_entity#container_id VappEntity#container_id}
   */
   readonly containerId: string;
   /**
   * A list of custom attributes to set on this resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vapp_entity#custom_attributes VappEntity#custom_attributes}
   */
   readonly customAttributes?: { [key: string]: string };
@@ -33,49 +33,49 @@ export interface VappEntityConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * How to start the entity. Valid settings are none or powerOn. If set to none, then the entity does not participate in auto-start.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vapp_entity#start_action VappEntity#start_action}
   */
   readonly startAction?: string;
   /**
   * Delay in seconds before continuing with the next entity in the order of entities to be started.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vapp_entity#start_delay VappEntity#start_delay}
   */
   readonly startDelay?: number;
   /**
   * Order to start and stop target in vApp.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vapp_entity#start_order VappEntity#start_order}
   */
   readonly startOrder?: number;
   /**
   * Defines the stop action for the entity. Can be set to none, powerOff, guestShutdown, or suspend. If set to none, then the entity does not participate in auto-stop.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vapp_entity#stop_action VappEntity#stop_action}
   */
   readonly stopAction?: string;
   /**
   * Delay in seconds before continuing with the next entity in the order of entities to be stopped.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vapp_entity#stop_delay VappEntity#stop_delay}
   */
   readonly stopDelay?: number;
   /**
   * A list of tag IDs to apply to this object.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vapp_entity#tags VappEntity#tags}
   */
   readonly tags?: string[];
   /**
   * Managed object ID of the entity to power on or power off. This can be a virtual machine or a vApp.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vapp_entity#target_id VappEntity#target_id}
   */
   readonly targetId: string;
   /**
   * Determines if the VM should be marked as being started when VMware Tools are ready instead of waiting for start_delay. This property has no effect for vApps.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vapp_entity#wait_for_guest VappEntity#wait_for_guest}
   */
   readonly waitForGuest?: boolean | cdktf.IResolvable;

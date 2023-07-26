@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataVsphereVappContainerConfig extends cdktf.TerraformMetaArguments {
   /**
   * The Managed Object ID of the datacenter.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/vapp_container#datacenter_id DataVsphereVappContainer#datacenter_id}
   */
   readonly datacenterId: string;
@@ -27,7 +27,7 @@ export interface DataVsphereVappContainerConfig extends cdktf.TerraformMetaArgum
   readonly id?: string;
   /**
   * The name of the vApp container.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/vapp_container#name DataVsphereVappContainer#name}
   */
   readonly name: string;

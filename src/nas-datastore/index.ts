@@ -14,31 +14,31 @@ import * as cdktf from 'cdktf';
 export interface NasDatastoreConfig extends cdktf.TerraformMetaArguments {
   /**
   * Access mode for the mount point. Can be one of readOnly or readWrite.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/nas_datastore#access_mode NasDatastore#access_mode}
   */
   readonly accessMode?: string;
   /**
   * A list of custom attributes to set on this resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/nas_datastore#custom_attributes NasDatastore#custom_attributes}
   */
   readonly customAttributes?: { [key: string]: string };
   /**
   * The managed object ID of the datastore cluster to place the datastore in.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/nas_datastore#datastore_cluster_id NasDatastore#datastore_cluster_id}
   */
   readonly datastoreClusterId?: string;
   /**
   * The path to the datastore folder to put the datastore in.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/nas_datastore#folder NasDatastore#folder}
   */
   readonly folder?: string;
   /**
   * The managed object IDs of the hosts to mount the datastore on.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/nas_datastore#host_system_ids NasDatastore#host_system_ids}
   */
   readonly hostSystemIds: string[];
@@ -51,37 +51,37 @@ export interface NasDatastoreConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The name of the datastore.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/nas_datastore#name NasDatastore#name}
   */
   readonly name: string;
   /**
   * The hostnames or IP addresses of the remote server or servers. Only one element should be present for NFS v3 but multiple can be present for NFS v4.1.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/nas_datastore#remote_hosts NasDatastore#remote_hosts}
   */
   readonly remoteHosts: string[];
   /**
   * The remote path of the mount point.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/nas_datastore#remote_path NasDatastore#remote_path}
   */
   readonly remotePath: string;
   /**
   * The security type to use.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/nas_datastore#security_type NasDatastore#security_type}
   */
   readonly securityType?: string;
   /**
   * A list of tag IDs to apply to this object.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/nas_datastore#tags NasDatastore#tags}
   */
   readonly tags?: string[];
   /**
   * The type of NAS volume. Can be one of NFS (to denote v3) or NFS41 (to denote NFS v4.1).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/nas_datastore#type NasDatastore#type}
   */
   readonly type?: string;

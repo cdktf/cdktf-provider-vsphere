@@ -21,7 +21,7 @@ export interface DataVsphereStoragePolicyConfig extends cdktf.TerraformMetaArgum
   readonly id?: string;
   /**
   * The display name of the storage policy.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/storage_policy#name DataVsphereStoragePolicy#name}
   */
   readonly name: string;

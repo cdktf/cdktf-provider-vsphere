@@ -21,7 +21,7 @@ export interface DataVsphereContentLibraryConfig extends cdktf.TerraformMetaArgu
   readonly id?: string;
   /**
   * The name of the content library.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/content_library#name DataVsphereContentLibrary#name}
   */
   readonly name: string;

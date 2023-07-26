@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataVsphereDynamicConfig extends cdktf.TerraformMetaArguments {
   /**
   * List of tag IDs to match target.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/dynamic#filter DataVsphereDynamic#filter}
   */
   readonly filter: string[];
@@ -27,13 +27,13 @@ export interface DataVsphereDynamicConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * A regular expression used to match against managed object names.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/dynamic#name_regex DataVsphereDynamic#name_regex}
   */
   readonly nameRegex?: string;
   /**
   * The type of managed object to return.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/dynamic#type DataVsphereDynamic#type}
   */
   readonly type?: string;

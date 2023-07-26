@@ -14,31 +14,31 @@ import * as cdktf from 'cdktf';
 export interface VmfsDatastoreConfig extends cdktf.TerraformMetaArguments {
   /**
   * A list of custom attributes to set on this resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vmfs_datastore#custom_attributes VmfsDatastore#custom_attributes}
   */
   readonly customAttributes?: { [key: string]: string };
   /**
   * The managed object ID of the datastore cluster to place the datastore in.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vmfs_datastore#datastore_cluster_id VmfsDatastore#datastore_cluster_id}
   */
   readonly datastoreClusterId?: string;
   /**
   * The disks to add to the datastore.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vmfs_datastore#disks VmfsDatastore#disks}
   */
   readonly disks: string[];
   /**
   * The path to the datastore folder to put the datastore in.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vmfs_datastore#folder VmfsDatastore#folder}
   */
   readonly folder?: string;
   /**
   * The managed object ID of the host to set up the datastore on.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vmfs_datastore#host_system_id VmfsDatastore#host_system_id}
   */
   readonly hostSystemId: string;
@@ -51,13 +51,13 @@ export interface VmfsDatastoreConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The name of the datastore.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vmfs_datastore#name VmfsDatastore#name}
   */
   readonly name: string;
   /**
   * A list of tag IDs to apply to this object.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vmfs_datastore#tags VmfsDatastore#tags}
   */
   readonly tags?: string[];

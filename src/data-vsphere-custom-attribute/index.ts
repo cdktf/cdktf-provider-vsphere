@@ -21,7 +21,7 @@ export interface DataVsphereCustomAttributeConfig extends cdktf.TerraformMetaArg
   readonly id?: string;
   /**
   * The display name of the custom attribute.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/custom_attribute#name DataVsphereCustomAttribute#name}
   */
   readonly name: string;

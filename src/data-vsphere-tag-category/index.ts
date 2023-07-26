@@ -21,7 +21,7 @@ export interface DataVsphereTagCategoryConfig extends cdktf.TerraformMetaArgumen
   readonly id?: string;
   /**
   * The display name of the category.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/tag_category#name DataVsphereTagCategory#name}
   */
   readonly name: string;

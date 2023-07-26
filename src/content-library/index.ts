@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface ContentLibraryConfig extends cdktf.TerraformMetaArguments {
   /**
   * Optional description of the content library.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/content_library#description ContentLibrary#description}
   */
   readonly description?: string;
@@ -27,25 +27,25 @@ export interface ContentLibraryConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The name of the content library.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/content_library#name ContentLibrary#name}
   */
   readonly name: string;
   /**
   * The name of the content library.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/content_library#storage_backing ContentLibrary#storage_backing}
   */
   readonly storageBacking: string[];
   /**
   * publication block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/content_library#publication ContentLibrary#publication}
   */
   readonly publication?: ContentLibraryPublication;
   /**
   * subscription block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/content_library#subscription ContentLibrary#subscription}
   */
   readonly subscription?: ContentLibrarySubscription;

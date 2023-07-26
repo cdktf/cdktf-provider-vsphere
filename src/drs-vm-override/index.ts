@@ -14,19 +14,19 @@ import * as cdktf from 'cdktf';
 export interface DrsVmOverrideConfig extends cdktf.TerraformMetaArguments {
   /**
   * The managed object ID of the cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/drs_vm_override#compute_cluster_id DrsVmOverride#compute_cluster_id}
   */
   readonly computeClusterId: string;
   /**
   * The automation level for this virtual machine in the cluster. Can be one of manual, partiallyAutomated, or fullyAutomated.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/drs_vm_override#drs_automation_level DrsVmOverride#drs_automation_level}
   */
   readonly drsAutomationLevel?: string;
   /**
   * Enable DRS for this virtual machine.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/drs_vm_override#drs_enabled DrsVmOverride#drs_enabled}
   */
   readonly drsEnabled?: boolean | cdktf.IResolvable;
@@ -39,7 +39,7 @@ export interface DrsVmOverrideConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The managed object ID of the virtual machine.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/drs_vm_override#virtual_machine_id DrsVmOverride#virtual_machine_id}
   */
   readonly virtualMachineId: string;

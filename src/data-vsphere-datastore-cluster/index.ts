@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface DataVsphereDatastoreClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * The managed object ID of the datacenter the cluster is located in. Not required if using an absolute path.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/datastore_cluster#datacenter_id DataVsphereDatastoreCluster#datacenter_id}
   */
   readonly datacenterId?: string;
@@ -27,7 +27,7 @@ export interface DataVsphereDatastoreClusterConfig extends cdktf.TerraformMetaAr
   readonly id?: string;
   /**
   * The name or absolute path to the datastore cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/datastore_cluster#name DataVsphereDatastoreCluster#name}
   */
   readonly name: string;

@@ -14,55 +14,55 @@ import * as cdktf from 'cdktf';
 export interface VsphereProviderConfig {
   /**
   * If set, VMware vSphere client will permit unverifiable SSL certificates.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs#allow_unverified_ssl VsphereProvider#allow_unverified_ssl}
   */
   readonly allowUnverifiedSsl?: boolean | cdktf.IResolvable;
   /**
   * API timeout in minutes (Default: 5)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs#api_timeout VsphereProvider#api_timeout}
   */
   readonly apiTimeout?: number;
   /**
   * govmomi debug
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs#client_debug VsphereProvider#client_debug}
   */
   readonly clientDebug?: boolean | cdktf.IResolvable;
   /**
   * govmomi debug path for debug
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs#client_debug_path VsphereProvider#client_debug_path}
   */
   readonly clientDebugPath?: string;
   /**
   * govmomi debug path for a single run
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs#client_debug_path_run VsphereProvider#client_debug_path_run}
   */
   readonly clientDebugPathRun?: string;
   /**
   * The user password for vSphere API operations.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs#password VsphereProvider#password}
   */
   readonly password: string;
   /**
   * Persist vSphere client sessions to disk
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs#persist_session VsphereProvider#persist_session}
   */
   readonly persistSession?: boolean | cdktf.IResolvable;
   /**
   * The directory to save vSphere REST API sessions to
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs#rest_session_path VsphereProvider#rest_session_path}
   */
   readonly restSessionPath?: string;
   /**
   * The user name for vSphere API operations.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs#user VsphereProvider#user}
   */
   readonly user: string;
@@ -72,25 +72,25 @@ export interface VsphereProviderConfig {
   readonly vcenterServer?: string;
   /**
   * Keep alive interval for the VIM session in minutes
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs#vim_keep_alive VsphereProvider#vim_keep_alive}
   */
   readonly vimKeepAlive?: number;
   /**
   * The directory to save vSphere SOAP API sessions to
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs#vim_session_path VsphereProvider#vim_session_path}
   */
   readonly vimSessionPath?: string;
   /**
   * The vSphere Server name for vSphere API operations.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs#vsphere_server VsphereProvider#vsphere_server}
   */
   readonly vsphereServer?: string;
   /**
   * Alias name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs#alias VsphereProvider#alias}
   */
   readonly alias?: string;

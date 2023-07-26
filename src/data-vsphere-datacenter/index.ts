@@ -21,7 +21,7 @@ export interface DataVsphereDatacenterConfig extends cdktf.TerraformMetaArgument
   readonly id?: string;
   /**
   * The name of the datacenter. This can be a name or path. Can be omitted if there is only one datacenter in your inventory.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/datacenter#name DataVsphereDatacenter#name}
   */
   readonly name?: string;
