@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/datacenter
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DatacenterConfig extends cdktf.TerraformMetaArguments {
   /**
   * A list of custom attributes to set on this resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/datacenter#custom_attributes Datacenter#custom_attributes}
   */
   readonly customAttributes?: { [key: string]: string };
@@ -35,7 +30,7 @@ export interface DatacenterConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /**
   * A list of tag IDs to apply to this object.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/datacenter#tags Datacenter#tags}
   */
   readonly tags?: string[];

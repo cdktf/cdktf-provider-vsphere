@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DataVsphereHostConfig extends cdktf.TerraformMetaArguments {
   /**
   * The managed object ID of the datacenter to look for the host in.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host#datacenter_id DataVsphereHost#datacenter_id}
   */
   readonly datacenterId: string;
@@ -27,7 +22,7 @@ export interface DataVsphereHostConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The name of the host. This can be a name or path.	If not provided, the default host is used.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host#name DataVsphereHost#name}
   */
   readonly name?: string;

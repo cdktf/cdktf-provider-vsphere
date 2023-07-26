@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/entity_permissions
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface EntityPermissionsConfig extends cdktf.TerraformMetaArguments {
   /**
   * The managed object id or uuid of the entity.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/entity_permissions#entity_id EntityPermissions#entity_id}
   */
   readonly entityId: string;
   /**
   * The entity managed object type.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/entity_permissions#entity_type EntityPermissions#entity_type}
   */
   readonly entityType: string;
@@ -33,7 +28,7 @@ export interface EntityPermissionsConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * permissions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/entity_permissions#permissions EntityPermissions#permissions}
   */
   readonly permissions: EntityPermissionsPermissions[] | cdktf.IResolvable;
@@ -41,25 +36,25 @@ export interface EntityPermissionsConfig extends cdktf.TerraformMetaArguments {
 export interface EntityPermissionsPermissions {
   /**
   * Whether user_or_group field refers to a user or a group. True for a group and false for a user.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/entity_permissions#is_group EntityPermissions#is_group}
   */
   readonly isGroup: boolean | cdktf.IResolvable;
   /**
   * Whether or not this permission propagates down the hierarchy to sub-entities.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/entity_permissions#propagate EntityPermissions#propagate}
   */
   readonly propagate: boolean | cdktf.IResolvable;
   /**
   * Reference to the role providing the access.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/entity_permissions#role_id EntityPermissions#role_id}
   */
   readonly roleId: string;
   /**
   * User or group receiving access.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/entity_permissions#user_or_group EntityPermissions#user_or_group}
   */
   readonly userOrGroup: string;

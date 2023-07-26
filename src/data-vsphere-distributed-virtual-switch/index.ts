@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/distributed_virtual_switch
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DataVsphereDistributedVirtualSwitchConfig extends cdktf.TerraformMetaArguments {
   /**
   * The managed object ID of the datacenter the DVS is in. This is required if the supplied path is not an absolute path containing a datacenter and there are multiple datacenters in your infrastructure.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/distributed_virtual_switch#datacenter_id DataVsphereDistributedVirtualSwitch#datacenter_id}
   */
   readonly datacenterId?: string;
@@ -27,7 +22,7 @@ export interface DataVsphereDistributedVirtualSwitchConfig extends cdktf.Terrafo
   readonly id?: string;
   /**
   * The name of the distributed virtual switch. This can be a name or path.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/distributed_virtual_switch#name DataVsphereDistributedVirtualSwitch#name}
   */
   readonly name: string;

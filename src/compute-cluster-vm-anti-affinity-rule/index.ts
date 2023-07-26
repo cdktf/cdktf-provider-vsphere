@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_vm_anti_affinity_rule
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface ComputeClusterVmAntiAffinityRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The managed object ID of the cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_vm_anti_affinity_rule#compute_cluster_id ComputeClusterVmAntiAffinityRule#compute_cluster_id}
   */
   readonly computeClusterId: string;
   /**
   * Enable this rule in the cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_vm_anti_affinity_rule#enabled ComputeClusterVmAntiAffinityRule#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
@@ -33,19 +28,19 @@ export interface ComputeClusterVmAntiAffinityRuleConfig extends cdktf.TerraformM
   readonly id?: string;
   /**
   * When true, prevents any virtual machine operations that may violate this rule.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_vm_anti_affinity_rule#mandatory ComputeClusterVmAntiAffinityRule#mandatory}
   */
   readonly mandatory?: boolean | cdktf.IResolvable;
   /**
   * The unique name of the virtual machine group in the cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_vm_anti_affinity_rule#name ComputeClusterVmAntiAffinityRule#name}
   */
   readonly name: string;
   /**
   * The UUIDs of the virtual machines to run on hosts different from each other.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_vm_anti_affinity_rule#virtual_machine_ids ComputeClusterVmAntiAffinityRule#virtual_machine_ids}
   */
   readonly virtualMachineIds: string[];

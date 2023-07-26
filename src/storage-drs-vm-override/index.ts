@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/storage_drs_vm_override
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface StorageDrsVmOverrideConfig extends cdktf.TerraformMetaArguments {
   /**
   * The managed object ID of the datastore cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/storage_drs_vm_override#datastore_cluster_id StorageDrsVmOverride#datastore_cluster_id}
   */
   readonly datastoreClusterId: string;
@@ -27,25 +22,25 @@ export interface StorageDrsVmOverrideConfig extends cdktf.TerraformMetaArguments
   readonly id?: string;
   /**
   * Overrides any Storage DRS automation levels for this virtual machine.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/storage_drs_vm_override#sdrs_automation_level StorageDrsVmOverride#sdrs_automation_level}
   */
   readonly sdrsAutomationLevel?: string;
   /**
   * Overrides the default Storage DRS setting for this virtual machine.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/storage_drs_vm_override#sdrs_enabled StorageDrsVmOverride#sdrs_enabled}
   */
   readonly sdrsEnabled?: string;
   /**
   * Overrides the intra-VM affinity setting for this virtual machine.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/storage_drs_vm_override#sdrs_intra_vm_affinity StorageDrsVmOverride#sdrs_intra_vm_affinity}
   */
   readonly sdrsIntraVmAffinity?: string;
   /**
   * The managed object ID of the virtual machine.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/storage_drs_vm_override#virtual_machine_id StorageDrsVmOverride#virtual_machine_id}
   */
   readonly virtualMachineId: string;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/content_library_item
 // generated from terraform resource schema
 
@@ -21,19 +16,19 @@ export interface DataVsphereContentLibraryItemConfig extends cdktf.TerraformMeta
   readonly id?: string;
   /**
   * ID of the content library to contain item.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/content_library_item#library_id DataVsphereContentLibraryItem#library_id}
   */
   readonly libraryId: string;
   /**
   * The name of the content library item.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/content_library_item#name DataVsphereContentLibraryItem#name}
   */
   readonly name: string;
   /**
   * Type of content library item.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/content_library_item#type DataVsphereContentLibraryItem#type}
   */
   readonly type: string;

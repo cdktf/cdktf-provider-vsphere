@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host_thumbprint
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DataVsphereHostThumbprintConfig extends cdktf.TerraformMetaArguments {
   /**
   * The address of the ESXi to extract the thumbprint from.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host_thumbprint#address DataVsphereHostThumbprint#address}
   */
   readonly address: string;
@@ -27,13 +22,13 @@ export interface DataVsphereHostThumbprintConfig extends cdktf.TerraformMetaArgu
   readonly id?: string;
   /**
   * Boolean that can be set to true to disable SSL certificate verification.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host_thumbprint#insecure DataVsphereHostThumbprint#insecure}
   */
   readonly insecure?: boolean | cdktf.IResolvable;
   /**
   * The port to connect to on the ESXi host.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host_thumbprint#port DataVsphereHostThumbprint#port}
   */
   readonly port?: string;

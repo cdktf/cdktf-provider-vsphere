@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/datastore
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DataVsphereDatastoreConfig extends cdktf.TerraformMetaArguments {
   /**
   * The managed object ID of the datacenter the datastore is in. This is not required when using ESXi directly, or if there is only one datacenter in your infrastructure.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/datastore#datacenter_id DataVsphereDatastore#datacenter_id}
   */
   readonly datacenterId?: string;
@@ -27,7 +22,7 @@ export interface DataVsphereDatastoreConfig extends cdktf.TerraformMetaArguments
   readonly id?: string;
   /**
   * The name or path of the datastore.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/datastore#name DataVsphereDatastore#name}
   */
   readonly name: string;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/ovf_vm_template
 // generated from terraform resource schema
 
@@ -14,43 +9,43 @@ import * as cdktf from 'cdktf';
 export interface DataVsphereOvfVmTemplateConfig extends cdktf.TerraformMetaArguments {
   /**
   * Allow unverified ssl certificates while deploying ovf/ova from url.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/ovf_vm_template#allow_unverified_ssl_cert DataVsphereOvfVmTemplate#allow_unverified_ssl_cert}
   */
   readonly allowUnverifiedSslCert?: boolean | cdktf.IResolvable;
   /**
   * The ID of the virtual machine's datastore. The virtual machine configuration is placed here, along with any virtual disks that are created without datastores.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/ovf_vm_template#datastore_id DataVsphereOvfVmTemplate#datastore_id}
   */
   readonly datastoreId?: string;
   /**
   * The Deployment option to be chosen. If empty, the default option is used.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/ovf_vm_template#deployment_option DataVsphereOvfVmTemplate#deployment_option}
   */
   readonly deploymentOption?: string;
   /**
   * An optional disk provisioning. If set, all the disks in the deployed ovf will have the same specified disk type (e.g., thin provisioned).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/ovf_vm_template#disk_provisioning DataVsphereOvfVmTemplate#disk_provisioning}
   */
   readonly diskProvisioning?: string;
   /**
   * Allow properties with ovf:userConfigurable=false to be set.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/ovf_vm_template#enable_hidden_properties DataVsphereOvfVmTemplate#enable_hidden_properties}
   */
   readonly enableHiddenProperties?: boolean | cdktf.IResolvable;
   /**
   * The name of the folder to locate the virtual machine in.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/ovf_vm_template#folder DataVsphereOvfVmTemplate#folder}
   */
   readonly folder?: string;
   /**
   * The ID of an optional host system to pin the virtual machine to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/ovf_vm_template#host_system_id DataVsphereOvfVmTemplate#host_system_id}
   */
   readonly hostSystemId: string;
@@ -63,43 +58,43 @@ export interface DataVsphereOvfVmTemplateConfig extends cdktf.TerraformMetaArgum
   readonly id?: string;
   /**
   * The IP allocation policy.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/ovf_vm_template#ip_allocation_policy DataVsphereOvfVmTemplate#ip_allocation_policy}
   */
   readonly ipAllocationPolicy?: string;
   /**
   * The IP protocol.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/ovf_vm_template#ip_protocol DataVsphereOvfVmTemplate#ip_protocol}
   */
   readonly ipProtocol?: string;
   /**
   * The absolute path to the ovf/ova file in the local system.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/ovf_vm_template#local_ovf_path DataVsphereOvfVmTemplate#local_ovf_path}
   */
   readonly localOvfPath?: string;
   /**
   * Name of the virtual machine to create.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/ovf_vm_template#name DataVsphereOvfVmTemplate#name}
   */
   readonly name: string;
   /**
   * The mapping of name of network identifiers from the ovf descriptor to network UUID in the VI infrastructure.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/ovf_vm_template#ovf_network_map DataVsphereOvfVmTemplate#ovf_network_map}
   */
   readonly ovfNetworkMap?: { [key: string]: string };
   /**
   * URL to the remote ovf/ova file to be deployed.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/ovf_vm_template#remote_ovf_url DataVsphereOvfVmTemplate#remote_ovf_url}
   */
   readonly remoteOvfUrl?: string;
   /**
   * The ID of a resource pool to put the virtual machine in.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/ovf_vm_template#resource_pool_id DataVsphereOvfVmTemplate#resource_pool_id}
   */
   readonly resourcePoolId: string;

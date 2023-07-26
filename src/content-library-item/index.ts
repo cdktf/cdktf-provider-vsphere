@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/content_library_item
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface ContentLibraryItemConfig extends cdktf.TerraformMetaArguments {
   /**
   * Optional description of the content library item.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/content_library_item#description ContentLibraryItem#description}
   */
   readonly description?: string;
   /**
   * ID of source VM of content library item.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/content_library_item#file_url ContentLibraryItem#file_url}
   */
   readonly fileUrl?: string;
@@ -33,25 +28,25 @@ export interface ContentLibraryItemConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * ID of the content library to contain item
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/content_library_item#library_id ContentLibraryItem#library_id}
   */
   readonly libraryId: string;
   /**
   * The name of the content library item.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/content_library_item#name ContentLibraryItem#name}
   */
   readonly name: string;
   /**
   * The managed object ID of an existing VM to be cloned to the content library.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/content_library_item#source_uuid ContentLibraryItem#source_uuid}
   */
   readonly sourceUuid?: string;
   /**
   * Type of content library item.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/content_library_item#type ContentLibraryItem#type}
   */
   readonly type?: string;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_vm_host_rule
 // generated from terraform resource schema
 
@@ -14,25 +9,25 @@ import * as cdktf from 'cdktf';
 export interface ComputeClusterVmHostRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * When this field is used, virtual machines defined in vm_group_name will be run on the hosts defined in this host group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_vm_host_rule#affinity_host_group_name ComputeClusterVmHostRule#affinity_host_group_name}
   */
   readonly affinityHostGroupName?: string;
   /**
   * When this field is used, virtual machines defined in vm_group_name will not be run on the hosts defined in this host group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_vm_host_rule#anti_affinity_host_group_name ComputeClusterVmHostRule#anti_affinity_host_group_name}
   */
   readonly antiAffinityHostGroupName?: string;
   /**
   * The managed object ID of the cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_vm_host_rule#compute_cluster_id ComputeClusterVmHostRule#compute_cluster_id}
   */
   readonly computeClusterId: string;
   /**
   * Enable this rule in the cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_vm_host_rule#enabled ComputeClusterVmHostRule#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
@@ -45,19 +40,19 @@ export interface ComputeClusterVmHostRuleConfig extends cdktf.TerraformMetaArgum
   readonly id?: string;
   /**
   * When true, prevents any virtual machine operations that may violate this rule.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_vm_host_rule#mandatory ComputeClusterVmHostRule#mandatory}
   */
   readonly mandatory?: boolean | cdktf.IResolvable;
   /**
   * The unique name of the virtual machine group in the cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_vm_host_rule#name ComputeClusterVmHostRule#name}
   */
   readonly name: string;
   /**
   * The name of the virtual machine group to use with this rule.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/compute_cluster_vm_host_rule#vm_group_name ComputeClusterVmHostRule#vm_group_name}
   */
   readonly vmGroupName: string;

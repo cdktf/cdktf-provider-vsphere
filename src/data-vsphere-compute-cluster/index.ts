@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/compute_cluster
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DataVsphereComputeClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * The managed object ID of the datacenter the cluster is located in. Not required if using an absolute path.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/compute_cluster#datacenter_id DataVsphereComputeCluster#datacenter_id}
   */
   readonly datacenterId?: string;
@@ -27,7 +22,7 @@ export interface DataVsphereComputeClusterConfig extends cdktf.TerraformMetaArgu
   readonly id?: string;
   /**
   * The name or absolute path to the cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/compute_cluster#name DataVsphereComputeCluster#name}
   */
   readonly name: string;

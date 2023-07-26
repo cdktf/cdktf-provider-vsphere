@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_port_group
 // generated from terraform resource schema
 
@@ -14,43 +9,43 @@ import * as cdktf from 'cdktf';
 export interface HostPortGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * List of active network adapters used for load balancing.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_port_group#active_nics HostPortGroup#active_nics}
   */
   readonly activeNics?: string[];
   /**
   * Controls whether or not the virtual network adapter is allowed to send network traffic with a different MAC address than that of its own.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_port_group#allow_forged_transmits HostPortGroup#allow_forged_transmits}
   */
   readonly allowForgedTransmits?: boolean | cdktf.IResolvable;
   /**
   * Controls whether or not the Media Access Control (MAC) address can be changed.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_port_group#allow_mac_changes HostPortGroup#allow_mac_changes}
   */
   readonly allowMacChanges?: boolean | cdktf.IResolvable;
   /**
   * Enable promiscuous mode on the network. This flag indicates whether or not all traffic is seen on a given port.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_port_group#allow_promiscuous HostPortGroup#allow_promiscuous}
   */
   readonly allowPromiscuous?: boolean | cdktf.IResolvable;
   /**
   * Enable beacon probing. Requires that the vSwitch has been configured to use a beacon. If disabled, link status is used only.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_port_group#check_beacon HostPortGroup#check_beacon}
   */
   readonly checkBeacon?: boolean | cdktf.IResolvable;
   /**
   * If true, the teaming policy will re-activate failed interfaces higher in precedence when they come back up.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_port_group#failback HostPortGroup#failback}
   */
   readonly failback?: boolean | cdktf.IResolvable;
   /**
   * The managed object ID of the host to set the virtual switch up on.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_port_group#host_system_id HostPortGroup#host_system_id}
   */
   readonly hostSystemId: string;
@@ -63,61 +58,61 @@ export interface HostPortGroupConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The name of the port group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_port_group#name HostPortGroup#name}
   */
   readonly name: string;
   /**
   * If true, the teaming policy will notify the broadcast network of a NIC failover, triggering cache updates.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_port_group#notify_switches HostPortGroup#notify_switches}
   */
   readonly notifySwitches?: boolean | cdktf.IResolvable;
   /**
   * The average bandwidth in bits per second if traffic shaping is enabled.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_port_group#shaping_average_bandwidth HostPortGroup#shaping_average_bandwidth}
   */
   readonly shapingAverageBandwidth?: number;
   /**
   * The maximum burst size allowed in bytes if traffic shaping is enabled.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_port_group#shaping_burst_size HostPortGroup#shaping_burst_size}
   */
   readonly shapingBurstSize?: number;
   /**
   * Enable traffic shaping on this virtual switch or port group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_port_group#shaping_enabled HostPortGroup#shaping_enabled}
   */
   readonly shapingEnabled?: boolean | cdktf.IResolvable;
   /**
   * The peak bandwidth during bursts in bits per second if traffic shaping is enabled.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_port_group#shaping_peak_bandwidth HostPortGroup#shaping_peak_bandwidth}
   */
   readonly shapingPeakBandwidth?: number;
   /**
   * List of standby network adapters used for failover.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_port_group#standby_nics HostPortGroup#standby_nics}
   */
   readonly standbyNics?: string[];
   /**
   * The network adapter teaming policy. Can be one of loadbalance_ip, loadbalance_srcmac, loadbalance_srcid, or failover_explicit.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_port_group#teaming_policy HostPortGroup#teaming_policy}
   */
   readonly teamingPolicy?: string;
   /**
   * The name of the virtual switch to bind this port group to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_port_group#virtual_switch_name HostPortGroup#virtual_switch_name}
   */
   readonly virtualSwitchName: string;
   /**
   * The VLAN ID/trunk mode for this port group. An ID of 0 denotes no tagging, an ID of 1-4094 tags with the specific ID, and an ID of 4095 enables trunk mode, allowing the guest to manage its own tagging.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/host_port_group#vlan_id HostPortGroup#vlan_id}
   */
   readonly vlanId?: number;

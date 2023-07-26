@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host_pci_device
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface DataVsphereHostPciDeviceConfig extends cdktf.TerraformMetaArguments {
   /**
   * The hexadecimal value of the PCI device's class ID.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host_pci_device#class_id DataVsphereHostPciDevice#class_id}
   */
   readonly classId?: string;
   /**
   * The Managed Object ID of the host system.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host_pci_device#host_id DataVsphereHostPciDevice#host_id}
   */
   readonly hostId: string;
@@ -33,13 +28,13 @@ export interface DataVsphereHostPciDeviceConfig extends cdktf.TerraformMetaArgum
   readonly id?: string;
   /**
   * A regular expression used to match the PCI device name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host_pci_device#name_regex DataVsphereHostPciDevice#name_regex}
   */
   readonly nameRegex?: string;
   /**
   * The hexadecimal value of the PCI device's vendor ID.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/host_pci_device#vendor_id DataVsphereHostPciDevice#vendor_id}
   */
   readonly vendorId?: string;

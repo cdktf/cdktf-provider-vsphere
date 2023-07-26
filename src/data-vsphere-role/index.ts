@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/role
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DataVsphereRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Description of the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/role#description DataVsphereRole#description}
   */
   readonly description?: string;
@@ -27,19 +22,19 @@ export interface DataVsphereRoleConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The display label of the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/role#label DataVsphereRole#label}
   */
   readonly label: string;
   /**
   * Name of the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/role#name DataVsphereRole#name}
   */
   readonly name?: string;
   /**
   * Privileges to be associated with the role
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/role#role_privileges DataVsphereRole#role_privileges}
   */
   readonly rolePrivileges?: string[];

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/resource_pool
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DataVsphereResourcePoolConfig extends cdktf.TerraformMetaArguments {
   /**
   * The managed object ID of the datacenter the resource pool is in. This is not required when using ESXi directly, or if there is only one datacenter in your infrastructure.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/resource_pool#datacenter_id DataVsphereResourcePool#datacenter_id}
   */
   readonly datacenterId?: string;
@@ -27,7 +22,7 @@ export interface DataVsphereResourcePoolConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * The name or path of the resource pool.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/resource_pool#name DataVsphereResourcePool#name}
   */
   readonly name?: string;

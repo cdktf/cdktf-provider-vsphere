@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/folder
 // generated from terraform resource schema
 
@@ -21,7 +16,7 @@ export interface DataVsphereFolderConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The absolute path of the folder.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/folder#path DataVsphereFolder#path}
   */
   readonly path: string;

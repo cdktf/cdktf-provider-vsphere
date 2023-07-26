@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/storage_policy
 // generated from terraform resource schema
 
@@ -21,7 +16,7 @@ export interface DataVsphereStoragePolicyConfig extends cdktf.TerraformMetaArgum
   readonly id?: string;
   /**
   * The display name of the storage policy.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/storage_policy#name DataVsphereStoragePolicy#name}
   */
   readonly name: string;

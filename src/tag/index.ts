@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/tag
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface TagConfig extends cdktf.TerraformMetaArguments {
   /**
   * The unique identifier of the parent category in which this tag will be created.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/tag#category_id Tag#category_id}
   */
   readonly categoryId: string;
   /**
   * The description of the tag.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/tag#description Tag#description}
   */
   readonly description?: string;
@@ -33,7 +28,7 @@ export interface TagConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The display name of the tag. The name must be unique within its category.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/tag#name Tag#name}
   */
   readonly name: string;

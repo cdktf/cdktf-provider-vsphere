@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/custom_attribute
 // generated from terraform resource schema
 
@@ -21,13 +16,13 @@ export interface CustomAttributeConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Object type for which the custom attribute is valid. If not specified, the attribute is valid for all managed object types.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/custom_attribute#managed_object_type CustomAttribute#managed_object_type}
   */
   readonly managedObjectType?: string;
   /**
   * The display name of the custom attribute.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/custom_attribute#name CustomAttribute#name}
   */
   readonly name: string;
