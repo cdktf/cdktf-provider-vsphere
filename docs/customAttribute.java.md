@@ -1,6 +1,6 @@
 # `vsphere_custom_attribute`
 
-Refer to the Terraform Registory for docs: [`vsphere_custom_attribute`](https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/custom_attribute).
+Refer to the Terraform Registory for docs: [`vsphere_custom_attribute`](https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/custom_attribute).
 
 # `customAttribute` Submodule <a name="`customAttribute` Submodule" id="@cdktf/provider-vsphere.customAttribute"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vsphere_custom_attribute`](https://
 
 ### CustomAttribute <a name="CustomAttribute" id="@cdktf/provider-vsphere.customAttribute.CustomAttribute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/custom_attribute vsphere_custom_attribute}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/custom_attribute vsphere_custom_attribute}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.customAttribute.CustomAttribute.Initializer"></a>
 
@@ -45,7 +45,7 @@ CustomAttribute.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vsphere.customAttribute.CustomAttribute.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.customAttribute.CustomAttribute.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.customAttribute.CustomAttribute.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The display name of the custom attribute. |
-| <code><a href="#@cdktf/provider-vsphere.customAttribute.CustomAttribute.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/custom_attribute#id CustomAttribute#id}. |
+| <code><a href="#@cdktf/provider-vsphere.customAttribute.CustomAttribute.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/custom_attribute#id CustomAttribute#id}. |
 | <code><a href="#@cdktf/provider-vsphere.customAttribute.CustomAttribute.Initializer.parameter.managedObjectType">managedObjectType</a></code> | <code>java.lang.String</code> | Object type for which the custom attribute is valid. |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The display name of the custom attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/custom_attribute#name CustomAttribute#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/custom_attribute#name CustomAttribute#name}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/custom_attribute#id CustomAttribute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/custom_attribute#id CustomAttribute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -139,7 +139,7 @@ Object type for which the custom attribute is valid.
 
 If not specified, the attribute is valid for all managed object types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/custom_attribute#managed_object_type CustomAttribute#managed_object_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/custom_attribute#managed_object_type CustomAttribute#managed_object_type}
 
 ---
 
@@ -720,7 +720,7 @@ CustomAttributeConfig.builder()
 | <code><a href="#@cdktf/provider-vsphere.customAttribute.CustomAttributeConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.customAttribute.CustomAttributeConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.customAttribute.CustomAttributeConfig.property.name">name</a></code> | <code>java.lang.String</code> | The display name of the custom attribute. |
-| <code><a href="#@cdktf/provider-vsphere.customAttribute.CustomAttributeConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/custom_attribute#id CustomAttribute#id}. |
+| <code><a href="#@cdktf/provider-vsphere.customAttribute.CustomAttributeConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/custom_attribute#id CustomAttribute#id}. |
 | <code><a href="#@cdktf/provider-vsphere.customAttribute.CustomAttributeConfig.property.managedObjectType">managedObjectType</a></code> | <code>java.lang.String</code> | Object type for which the custom attribute is valid. |
 
 ---
@@ -805,7 +805,7 @@ public java.lang.String getName();
 
 The display name of the custom attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/custom_attribute#name CustomAttribute#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/custom_attribute#name CustomAttribute#name}
 
 ---
 
@@ -817,7 +817,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/custom_attribute#id CustomAttribute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/custom_attribute#id CustomAttribute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -836,7 +836,7 @@ Object type for which the custom attribute is valid.
 
 If not specified, the attribute is valid for all managed object types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/custom_attribute#managed_object_type CustomAttribute#managed_object_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/custom_attribute#managed_object_type CustomAttribute#managed_object_type}
 
 ---
 

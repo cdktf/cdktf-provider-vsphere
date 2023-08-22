@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/storage_drs_vm_override
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/storage_drs_vm_override
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface StorageDrsVmOverrideConfig extends cdktf.TerraformMetaArguments
   /**
   * The managed object ID of the datastore cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/storage_drs_vm_override#datastore_cluster_id StorageDrsVmOverride#datastore_cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/storage_drs_vm_override#datastore_cluster_id StorageDrsVmOverride#datastore_cluster_id}
   */
   readonly datastoreClusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/storage_drs_vm_override#id StorageDrsVmOverride#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/storage_drs_vm_override#id StorageDrsVmOverride#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,31 +23,31 @@ export interface StorageDrsVmOverrideConfig extends cdktf.TerraformMetaArguments
   /**
   * Overrides any Storage DRS automation levels for this virtual machine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/storage_drs_vm_override#sdrs_automation_level StorageDrsVmOverride#sdrs_automation_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/storage_drs_vm_override#sdrs_automation_level StorageDrsVmOverride#sdrs_automation_level}
   */
   readonly sdrsAutomationLevel?: string;
   /**
   * Overrides the default Storage DRS setting for this virtual machine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/storage_drs_vm_override#sdrs_enabled StorageDrsVmOverride#sdrs_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/storage_drs_vm_override#sdrs_enabled StorageDrsVmOverride#sdrs_enabled}
   */
   readonly sdrsEnabled?: string;
   /**
   * Overrides the intra-VM affinity setting for this virtual machine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/storage_drs_vm_override#sdrs_intra_vm_affinity StorageDrsVmOverride#sdrs_intra_vm_affinity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/storage_drs_vm_override#sdrs_intra_vm_affinity StorageDrsVmOverride#sdrs_intra_vm_affinity}
   */
   readonly sdrsIntraVmAffinity?: string;
   /**
   * The managed object ID of the virtual machine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/storage_drs_vm_override#virtual_machine_id StorageDrsVmOverride#virtual_machine_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/storage_drs_vm_override#virtual_machine_id StorageDrsVmOverride#virtual_machine_id}
   */
   readonly virtualMachineId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/storage_drs_vm_override vsphere_storage_drs_vm_override}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/storage_drs_vm_override vsphere_storage_drs_vm_override}
 */
 export class StorageDrsVmOverride extends cdktf.TerraformResource {
 
@@ -66,7 +61,7 @@ export class StorageDrsVmOverride extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/storage_drs_vm_override vsphere_storage_drs_vm_override} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/storage_drs_vm_override vsphere_storage_drs_vm_override} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +72,7 @@ export class StorageDrsVmOverride extends cdktf.TerraformResource {
       terraformResourceType: 'vsphere_storage_drs_vm_override',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.4.1',
+        providerVersion: '2.4.2',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/compute_cluster_host_group
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/compute_cluster_host_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface DataVsphereComputeClusterHostGroupConfig extends cdktf.Terrafor
   /**
   * The managed object ID of the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/compute_cluster_host_group#compute_cluster_id DataVsphereComputeClusterHostGroup#compute_cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/compute_cluster_host_group#compute_cluster_id DataVsphereComputeClusterHostGroup#compute_cluster_id}
   */
   readonly computeClusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/compute_cluster_host_group#id DataVsphereComputeClusterHostGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/compute_cluster_host_group#id DataVsphereComputeClusterHostGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +23,13 @@ export interface DataVsphereComputeClusterHostGroupConfig extends cdktf.Terrafor
   /**
   * The unique name of the host group in the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/compute_cluster_host_group#name DataVsphereComputeClusterHostGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/compute_cluster_host_group#name DataVsphereComputeClusterHostGroup#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/compute_cluster_host_group vsphere_compute_cluster_host_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/compute_cluster_host_group vsphere_compute_cluster_host_group}
 */
 export class DataVsphereComputeClusterHostGroup extends cdktf.TerraformDataSource {
 
@@ -48,7 +43,7 @@ export class DataVsphereComputeClusterHostGroup extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/compute_cluster_host_group vsphere_compute_cluster_host_group} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/compute_cluster_host_group vsphere_compute_cluster_host_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +54,7 @@ export class DataVsphereComputeClusterHostGroup extends cdktf.TerraformDataSourc
       terraformResourceType: 'vsphere_compute_cluster_host_group',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.4.1',
+        providerVersion: '2.4.2',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,

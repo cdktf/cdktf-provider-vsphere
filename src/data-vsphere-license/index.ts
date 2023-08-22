@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/license
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/license
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataVsphereLicenseConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/license#license_key DataVsphereLicense#license_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/license#license_key DataVsphereLicense#license_key}
   */
   readonly licenseKey: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/license vsphere_license}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/license vsphere_license}
 */
 export class DataVsphereLicense extends cdktf.TerraformDataSource {
 
@@ -33,7 +28,7 @@ export class DataVsphereLicense extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/data-sources/license vsphere_license} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/license vsphere_license} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -44,7 +39,7 @@ export class DataVsphereLicense extends cdktf.TerraformDataSource {
       terraformResourceType: 'vsphere_license',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.4.1',
+        providerVersion: '2.4.2',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,
