@@ -1,6 +1,6 @@
 # `vsphere_vapp_entity`
 
-Refer to the Terraform Registory for docs: [`vsphere_vapp_entity`](https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vapp_entity).
+Refer to the Terraform Registory for docs: [`vsphere_vapp_entity`](https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vapp_entity).
 
 # `vappEntity` Submodule <a name="`vappEntity` Submodule" id="@cdktf/provider-vsphere.vappEntity"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vsphere_vapp_entity`](https://regis
 
 ### VappEntity <a name="VappEntity" id="@cdktf/provider-vsphere.vappEntity.VappEntity"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vapp_entity vsphere_vapp_entity}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vapp_entity vsphere_vapp_entity}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.vappEntity.VappEntity.Initializer"></a>
 
@@ -858,7 +858,7 @@ new VappEntityConfig {
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntityConfig.property.containerId">ContainerId</a></code> | <code>string</code> | Managed object ID of the vApp container the entity is a member of. |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntityConfig.property.targetId">TargetId</a></code> | <code>string</code> | Managed object ID of the entity to power on or power off. |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntityConfig.property.customAttributes">CustomAttributes</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A list of custom attributes to set on this resource. |
-| <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntityConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vapp_entity#id VappEntity#id}. |
+| <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntityConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vapp_entity#id VappEntity#id}. |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntityConfig.property.startAction">StartAction</a></code> | <code>string</code> | How to start the entity. |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntityConfig.property.startDelay">StartDelay</a></code> | <code>double</code> | Delay in seconds before continuing with the next entity in the order of entities to be started. |
 | <code><a href="#@cdktf/provider-vsphere.vappEntity.VappEntityConfig.property.startOrder">StartOrder</a></code> | <code>double</code> | Order to start and stop target in vApp. |
@@ -949,7 +949,7 @@ public string ContainerId { get; set; }
 
 Managed object ID of the vApp container the entity is a member of.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vapp_entity#container_id VappEntity#container_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vapp_entity#container_id VappEntity#container_id}
 
 ---
 
@@ -965,7 +965,7 @@ Managed object ID of the entity to power on or power off.
 
 This can be a virtual machine or a vApp.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vapp_entity#target_id VappEntity#target_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vapp_entity#target_id VappEntity#target_id}
 
 ---
 
@@ -979,7 +979,7 @@ public System.Collections.Generic.IDictionary<string, string> CustomAttributes {
 
 A list of custom attributes to set on this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vapp_entity#custom_attributes VappEntity#custom_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vapp_entity#custom_attributes VappEntity#custom_attributes}
 
 ---
 
@@ -991,7 +991,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vapp_entity#id VappEntity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vapp_entity#id VappEntity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1010,7 +1010,7 @@ How to start the entity.
 
 Valid settings are none or powerOn. If set to none, then the entity does not participate in auto-start.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vapp_entity#start_action VappEntity#start_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vapp_entity#start_action VappEntity#start_action}
 
 ---
 
@@ -1024,7 +1024,7 @@ public double StartDelay { get; set; }
 
 Delay in seconds before continuing with the next entity in the order of entities to be started.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vapp_entity#start_delay VappEntity#start_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vapp_entity#start_delay VappEntity#start_delay}
 
 ---
 
@@ -1038,7 +1038,7 @@ public double StartOrder { get; set; }
 
 Order to start and stop target in vApp.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vapp_entity#start_order VappEntity#start_order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vapp_entity#start_order VappEntity#start_order}
 
 ---
 
@@ -1054,7 +1054,7 @@ Defines the stop action for the entity.
 
 Can be set to none, powerOff, guestShutdown, or suspend. If set to none, then the entity does not participate in auto-stop.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vapp_entity#stop_action VappEntity#stop_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vapp_entity#stop_action VappEntity#stop_action}
 
 ---
 
@@ -1068,7 +1068,7 @@ public double StopDelay { get; set; }
 
 Delay in seconds before continuing with the next entity in the order of entities to be stopped.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vapp_entity#stop_delay VappEntity#stop_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vapp_entity#stop_delay VappEntity#stop_delay}
 
 ---
 
@@ -1082,7 +1082,7 @@ public string[] Tags { get; set; }
 
 A list of tag IDs to apply to this object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vapp_entity#tags VappEntity#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vapp_entity#tags VappEntity#tags}
 
 ---
 
@@ -1098,7 +1098,7 @@ Determines if the VM should be marked as being started when VMware Tools are rea
 
 This property has no effect for vApps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/vapp_entity#wait_for_guest VappEntity#wait_for_guest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vapp_entity#wait_for_guest VappEntity#wait_for_guest}
 
 ---
 

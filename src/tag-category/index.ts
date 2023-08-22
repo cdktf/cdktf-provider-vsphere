@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/tag_category
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/tag_category
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface TagCategoryConfig extends cdktf.TerraformMetaArguments {
   /**
   * Object types to which this category's tags can be attached. Valid types include: Folder, ClusterComputeResource, Datacenter, Datastore, StoragePod, DistributedVirtualPortgroup, DistributedVirtualSwitch, VmwareDistributedVirtualSwitch, HostSystem, com.vmware.content.Library, com.vmware.content.library.Item, HostNetwork, Network, OpaqueNetwork, ResourcePool, VirtualApp, VirtualMachine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/tag_category#associable_types TagCategory#associable_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/tag_category#associable_types TagCategory#associable_types}
   */
   readonly associableTypes: string[];
   /**
   * The associated cardinality of the category. Can be one of SINGLE (object can only be assigned one tag in this category) or MULTIPLE (object can be assigned multiple tags in this category).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/tag_category#cardinality TagCategory#cardinality}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/tag_category#cardinality TagCategory#cardinality}
   */
   readonly cardinality: string;
   /**
   * The description of the category.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/tag_category#description TagCategory#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/tag_category#description TagCategory#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/tag_category#id TagCategory#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/tag_category#id TagCategory#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,13 +40,13 @@ export interface TagCategoryConfig extends cdktf.TerraformMetaArguments {
   /**
   * The display name of the category.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/tag_category#name TagCategory#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/tag_category#name TagCategory#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/tag_category vsphere_tag_category}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/tag_category vsphere_tag_category}
 */
 export class TagCategory extends cdktf.TerraformResource {
 
@@ -60,7 +60,7 @@ export class TagCategory extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/tag_category vsphere_tag_category} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/tag_category vsphere_tag_category} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,7 @@ export class TagCategory extends cdktf.TerraformResource {
       terraformResourceType: 'vsphere_tag_category',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.4.1',
+        providerVersion: '2.4.2',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,

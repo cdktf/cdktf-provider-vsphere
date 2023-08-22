@@ -1,6 +1,6 @@
 # `vsphere_entity_permissions`
 
-Refer to the Terraform Registory for docs: [`vsphere_entity_permissions`](https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/entity_permissions).
+Refer to the Terraform Registory for docs: [`vsphere_entity_permissions`](https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/entity_permissions).
 
 # `entityPermissions` Submodule <a name="`entityPermissions` Submodule" id="@cdktf/provider-vsphere.entityPermissions"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vsphere_entity_permissions`](https:
 
 ### EntityPermissions <a name="EntityPermissions" id="@cdktf/provider-vsphere.entityPermissions.EntityPermissions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/entity_permissions vsphere_entity_permissions}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/entity_permissions vsphere_entity_permissions}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.entityPermissions.EntityPermissions.Initializer"></a>
 
@@ -642,7 +642,7 @@ const entityPermissionsConfig: entityPermissions.EntityPermissionsConfig = { ...
 | <code><a href="#@cdktf/provider-vsphere.entityPermissions.EntityPermissionsConfig.property.entityId">entityId</a></code> | <code>string</code> | The managed object id or uuid of the entity. |
 | <code><a href="#@cdktf/provider-vsphere.entityPermissions.EntityPermissionsConfig.property.entityType">entityType</a></code> | <code>string</code> | The entity managed object type. |
 | <code><a href="#@cdktf/provider-vsphere.entityPermissions.EntityPermissionsConfig.property.permissions">permissions</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vsphere.entityPermissions.EntityPermissionsPermissions">EntityPermissionsPermissions</a>[]</code> | permissions block. |
-| <code><a href="#@cdktf/provider-vsphere.entityPermissions.EntityPermissionsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/entity_permissions#id EntityPermissions#id}. |
+| <code><a href="#@cdktf/provider-vsphere.entityPermissions.EntityPermissionsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/entity_permissions#id EntityPermissions#id}. |
 
 ---
 
@@ -726,7 +726,7 @@ public readonly entityId: string;
 
 The managed object id or uuid of the entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/entity_permissions#entity_id EntityPermissions#entity_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/entity_permissions#entity_id EntityPermissions#entity_id}
 
 ---
 
@@ -740,7 +740,7 @@ public readonly entityType: string;
 
 The entity managed object type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/entity_permissions#entity_type EntityPermissions#entity_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/entity_permissions#entity_type EntityPermissions#entity_type}
 
 ---
 
@@ -754,7 +754,7 @@ public readonly permissions: IResolvable | EntityPermissionsPermissions[];
 
 permissions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/entity_permissions#permissions EntityPermissions#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/entity_permissions#permissions EntityPermissions#permissions}
 
 ---
 
@@ -766,7 +766,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/entity_permissions#id EntityPermissions#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/entity_permissions#id EntityPermissions#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -804,7 +804,7 @@ public readonly isGroup: boolean | IResolvable;
 
 Whether user_or_group field refers to a user or a group. True for a group and false for a user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/entity_permissions#is_group EntityPermissions#is_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/entity_permissions#is_group EntityPermissions#is_group}
 
 ---
 
@@ -818,7 +818,7 @@ public readonly propagate: boolean | IResolvable;
 
 Whether or not this permission propagates down the hierarchy to sub-entities.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/entity_permissions#propagate EntityPermissions#propagate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/entity_permissions#propagate EntityPermissions#propagate}
 
 ---
 
@@ -832,7 +832,7 @@ public readonly roleId: string;
 
 Reference to the role providing the access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/entity_permissions#role_id EntityPermissions#role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/entity_permissions#role_id EntityPermissions#role_id}
 
 ---
 
@@ -846,7 +846,7 @@ public readonly userOrGroup: string;
 
 User or group receiving access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.1/docs/resources/entity_permissions#user_or_group EntityPermissions#user_or_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/entity_permissions#user_or_group EntityPermissions#user_or_group}
 
 ---
 
