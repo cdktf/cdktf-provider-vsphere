@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeClusterVmGroup.ComputeClusterVmGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmgroup"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/computeclustervmgroup"
 
 computeclustervmgroup.NewComputeClusterVmGroup(scope Construct, id *string, config ComputeClusterVmGroupConfig) ComputeClusterVmGroup
 ```
@@ -284,7 +284,7 @@ func ResetVirtualMachineIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.computeClusterVmGroup.ComputeClusterVmGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmgroup"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/computeclustervmgroup"
 
 computeclustervmgroup.ComputeClusterVmGroup_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.computeClusterVmGroup.ComputeClusterVmGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmgroup"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/computeclustervmgroup"
 
 computeclustervmgroup.ComputeClusterVmGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ computeclustervmgroup.ComputeClusterVmGroup_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.computeClusterVmGroup.ComputeClusterVmGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmgroup"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/computeclustervmgroup"
 
 computeclustervmgroup.ComputeClusterVmGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -617,7 +617,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.computeClusterVmGroup.ComputeClusterVmGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmgroup"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/computeclustervmgroup"
 
 &computeclustervmgroup.ComputeClusterVmGroupConfig {
 	Connection: interface{},
