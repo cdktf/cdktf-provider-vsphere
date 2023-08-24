@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.datastoreCluster.DatastoreCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/datastorecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datastorecluster"
 
 datastorecluster.NewDatastoreCluster(scope Construct, id *string, config DatastoreClusterConfig) DatastoreCluster
 ```
@@ -438,7 +438,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.datastoreCluster.DatastoreCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/datastorecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datastorecluster"
 
 datastorecluster.DatastoreCluster_IsConstruct(x interface{}) *bool
 ```
@@ -470,7 +470,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.datastoreCluster.DatastoreCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/datastorecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datastorecluster"
 
 datastorecluster.DatastoreCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -484,7 +484,7 @@ datastorecluster.DatastoreCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.datastoreCluster.DatastoreCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/datastorecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datastorecluster"
 
 datastorecluster.DatastoreCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -1255,7 +1255,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.datastoreCluster.DatastoreClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v6/datastorecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datastorecluster"
 
 &datastorecluster.DatastoreClusterConfig {
 	Connection: interface{},
