@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereComputeCluster.DataVsphereComputeCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspherecomputecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherecomputecluster"
 
 datavspherecomputecluster.NewDataVsphereComputeCluster(scope Construct, id *string, config DataVsphereComputeClusterConfig) DataVsphereComputeCluster
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereComputeCluster.DataVsphereComputeCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspherecomputecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherecomputecluster"
 
 datavspherecomputecluster.DataVsphereComputeCluster_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereComputeCluster.DataVsphereComputeCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspherecomputecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherecomputecluster"
 
 datavspherecomputecluster.DataVsphereComputeCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datavspherecomputecluster.DataVsphereComputeCluster_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereComputeCluster.DataVsphereComputeCluster.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspherecomputecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherecomputecluster"
 
 datavspherecomputecluster.DataVsphereComputeCluster_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereComputeCluster.DataVsphereComputeClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspherecomputecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherecomputecluster"
 
 &datavspherecomputecluster.DataVsphereComputeClusterConfig {
 	Connection: interface{},
