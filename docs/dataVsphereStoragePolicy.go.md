@@ -1,6 +1,6 @@
 # `data_vsphere_storage_policy`
 
-Refer to the Terraform Registory for docs: [`data_vsphere_storage_policy`](https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/storage_policy).
+Refer to the Terraform Registory for docs: [`data_vsphere_storage_policy`](https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/storage_policy).
 
 # `dataVsphereStoragePolicy` Submodule <a name="`dataVsphereStoragePolicy` Submodule" id="@cdktf/provider-vsphere.dataVsphereStoragePolicy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_vsphere_storage_policy`](https
 
 ### DataVsphereStoragePolicy <a name="DataVsphereStoragePolicy" id="@cdktf/provider-vsphere.dataVsphereStoragePolicy.DataVsphereStoragePolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/storage_policy vsphere_storage_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/storage_policy vsphere_storage_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereStoragePolicy.DataVsphereStoragePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspherestoragepolicy"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherestoragepolicy"
 
 datavspherestoragepolicy.NewDataVsphereStoragePolicy(scope Construct, id *string, config DataVsphereStoragePolicyConfig) DataVsphereStoragePolicy
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereStoragePolicy.DataVsphereStoragePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspherestoragepolicy"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherestoragepolicy"
 
 datavspherestoragepolicy.DataVsphereStoragePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereStoragePolicy.DataVsphereStoragePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspherestoragepolicy"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherestoragepolicy"
 
 datavspherestoragepolicy.DataVsphereStoragePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datavspherestoragepolicy.DataVsphereStoragePolicy_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereStoragePolicy.DataVsphereStoragePolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspherestoragepolicy"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherestoragepolicy"
 
 datavspherestoragepolicy.DataVsphereStoragePolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -544,7 +544,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereStoragePolicy.DataVsphereStoragePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspherestoragepolicy"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherestoragepolicy"
 
 &datavspherestoragepolicy.DataVsphereStoragePolicyConfig {
 	Connection: interface{},
@@ -571,7 +571,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspherestorage
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereStoragePolicy.DataVsphereStoragePolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereStoragePolicy.DataVsphereStoragePolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereStoragePolicy.DataVsphereStoragePolicyConfig.property.name">Name</a></code> | <code>*string</code> | The display name of the storage policy. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereStoragePolicy.DataVsphereStoragePolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/storage_policy#id DataVsphereStoragePolicy#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereStoragePolicy.DataVsphereStoragePolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/storage_policy#id DataVsphereStoragePolicy#id}. |
 
 ---
 
@@ -655,7 +655,7 @@ Name *string
 
 The display name of the storage policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/storage_policy#name DataVsphereStoragePolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/storage_policy#name DataVsphereStoragePolicy#name}
 
 ---
 
@@ -667,7 +667,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/storage_policy#id DataVsphereStoragePolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/storage_policy#id DataVsphereStoragePolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

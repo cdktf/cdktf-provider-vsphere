@@ -1,6 +1,6 @@
 # `data_vsphere_compute_cluster_host_group`
 
-Refer to the Terraform Registory for docs: [`data_vsphere_compute_cluster_host_group`](https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/compute_cluster_host_group).
+Refer to the Terraform Registory for docs: [`data_vsphere_compute_cluster_host_group`](https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/compute_cluster_host_group).
 
 # `dataVsphereComputeClusterHostGroup` Submodule <a name="`dataVsphereComputeClusterHostGroup` Submodule" id="@cdktf/provider-vsphere.dataVsphereComputeClusterHostGroup"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_vsphere_compute_cluster_host_g
 
 ### DataVsphereComputeClusterHostGroup <a name="DataVsphereComputeClusterHostGroup" id="@cdktf/provider-vsphere.dataVsphereComputeClusterHostGroup.DataVsphereComputeClusterHostGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/compute_cluster_host_group vsphere_compute_cluster_host_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/compute_cluster_host_group vsphere_compute_cluster_host_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereComputeClusterHostGroup.DataVsphereComputeClusterHostGroup.Initializer"></a>
 
@@ -606,7 +606,7 @@ new DataVsphereComputeClusterHostGroupConfig {
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereComputeClusterHostGroup.DataVsphereComputeClusterHostGroupConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereComputeClusterHostGroup.DataVsphereComputeClusterHostGroupConfig.property.computeClusterId">ComputeClusterId</a></code> | <code>string</code> | The managed object ID of the cluster. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereComputeClusterHostGroup.DataVsphereComputeClusterHostGroupConfig.property.name">Name</a></code> | <code>string</code> | The unique name of the host group in the cluster. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereComputeClusterHostGroup.DataVsphereComputeClusterHostGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/compute_cluster_host_group#id DataVsphereComputeClusterHostGroup#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereComputeClusterHostGroup.DataVsphereComputeClusterHostGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/compute_cluster_host_group#id DataVsphereComputeClusterHostGroup#id}. |
 
 ---
 
@@ -690,7 +690,7 @@ public string ComputeClusterId { get; set; }
 
 The managed object ID of the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/compute_cluster_host_group#compute_cluster_id DataVsphereComputeClusterHostGroup#compute_cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/compute_cluster_host_group#compute_cluster_id DataVsphereComputeClusterHostGroup#compute_cluster_id}
 
 ---
 
@@ -704,7 +704,7 @@ public string Name { get; set; }
 
 The unique name of the host group in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/compute_cluster_host_group#name DataVsphereComputeClusterHostGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/compute_cluster_host_group#name DataVsphereComputeClusterHostGroup#name}
 
 ---
 
@@ -716,7 +716,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/compute_cluster_host_group#id DataVsphereComputeClusterHostGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/compute_cluster_host_group#id DataVsphereComputeClusterHostGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

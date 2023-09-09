@@ -1,6 +1,6 @@
 # `vsphere_dpm_host_override`
 
-Refer to the Terraform Registory for docs: [`vsphere_dpm_host_override`](https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/dpm_host_override).
+Refer to the Terraform Registory for docs: [`vsphere_dpm_host_override`](https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/dpm_host_override).
 
 # `dpmHostOverride` Submodule <a name="`dpmHostOverride` Submodule" id="@cdktf/provider-vsphere.dpmHostOverride"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vsphere_dpm_host_override`](https:/
 
 ### DpmHostOverride <a name="DpmHostOverride" id="@cdktf/provider-vsphere.dpmHostOverride.DpmHostOverride"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/dpm_host_override vsphere_dpm_host_override}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/dpm_host_override vsphere_dpm_host_override}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dpmHostOverride.DpmHostOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/dpmhostoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/dpmhostoverride"
 
 dpmhostoverride.NewDpmHostOverride(scope Construct, id *string, config DpmHostOverrideConfig) DpmHostOverride
 ```
@@ -291,7 +291,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dpmHostOverride.DpmHostOverride.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/dpmhostoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/dpmhostoverride"
 
 dpmhostoverride.DpmHostOverride_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dpmHostOverride.DpmHostOverride.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/dpmhostoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/dpmhostoverride"
 
 dpmhostoverride.DpmHostOverride_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ dpmhostoverride.DpmHostOverride_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.dpmHostOverride.DpmHostOverride.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/dpmhostoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/dpmhostoverride"
 
 dpmhostoverride.DpmHostOverride_IsTerraformResource(x interface{}) *bool
 ```
@@ -646,7 +646,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dpmHostOverride.DpmHostOverrideConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/dpmhostoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/dpmhostoverride"
 
 &dpmhostoverride.DpmHostOverrideConfig {
 	Connection: interface{},
@@ -679,7 +679,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/dpmhostoverride"
 | <code><a href="#@cdktf/provider-vsphere.dpmHostOverride.DpmHostOverrideConfig.property.hostSystemId">HostSystemId</a></code> | <code>*string</code> | The managed object ID of the host. |
 | <code><a href="#@cdktf/provider-vsphere.dpmHostOverride.DpmHostOverrideConfig.property.dpmAutomationLevel">DpmAutomationLevel</a></code> | <code>*string</code> | The automation level for power operations on this host. Can be one of manual or automated. |
 | <code><a href="#@cdktf/provider-vsphere.dpmHostOverride.DpmHostOverrideConfig.property.dpmEnabled">DpmEnabled</a></code> | <code>interface{}</code> | Enable DPM for this host. |
-| <code><a href="#@cdktf/provider-vsphere.dpmHostOverride.DpmHostOverrideConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/dpm_host_override#id DpmHostOverride#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dpmHostOverride.DpmHostOverrideConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/dpm_host_override#id DpmHostOverride#id}. |
 
 ---
 
@@ -763,7 +763,7 @@ ComputeClusterId *string
 
 The managed object ID of the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/dpm_host_override#compute_cluster_id DpmHostOverride#compute_cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/dpm_host_override#compute_cluster_id DpmHostOverride#compute_cluster_id}
 
 ---
 
@@ -777,7 +777,7 @@ HostSystemId *string
 
 The managed object ID of the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/dpm_host_override#host_system_id DpmHostOverride#host_system_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/dpm_host_override#host_system_id DpmHostOverride#host_system_id}
 
 ---
 
@@ -791,7 +791,7 @@ DpmAutomationLevel *string
 
 The automation level for power operations on this host. Can be one of manual or automated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/dpm_host_override#dpm_automation_level DpmHostOverride#dpm_automation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/dpm_host_override#dpm_automation_level DpmHostOverride#dpm_automation_level}
 
 ---
 
@@ -805,7 +805,7 @@ DpmEnabled interface{}
 
 Enable DPM for this host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/dpm_host_override#dpm_enabled DpmHostOverride#dpm_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/dpm_host_override#dpm_enabled DpmHostOverride#dpm_enabled}
 
 ---
 
@@ -817,7 +817,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/dpm_host_override#id DpmHostOverride#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/dpm_host_override#id DpmHostOverride#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

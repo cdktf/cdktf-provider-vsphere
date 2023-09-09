@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vnic
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/vnic
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,23 @@ export interface VnicConfig extends cdktf.TerraformMetaArguments {
   /**
   * Key of the distributed portgroup the nic will connect to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vnic#distributed_port_group Vnic#distributed_port_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/vnic#distributed_port_group Vnic#distributed_port_group}
   */
   readonly distributedPortGroup?: string;
   /**
   * UUID of the DVSwitch the nic will be attached to. Do not set if you set portgroup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vnic#distributed_switch_port Vnic#distributed_switch_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/vnic#distributed_switch_port Vnic#distributed_switch_port}
   */
   readonly distributedSwitchPort?: string;
   /**
   * ESX host the interface belongs to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vnic#host Vnic#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/vnic#host Vnic#host}
   */
   readonly host: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vnic#id Vnic#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/vnic#id Vnic#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,43 +35,43 @@ export interface VnicConfig extends cdktf.TerraformMetaArguments {
   /**
   * MAC address of the interface.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vnic#mac Vnic#mac}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/vnic#mac Vnic#mac}
   */
   readonly mac?: string;
   /**
   * MTU of the interface.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vnic#mtu Vnic#mtu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/vnic#mtu Vnic#mtu}
   */
   readonly mtu?: number;
   /**
   * TCP/IP stack setting for this interface. Possible values are 'defaultTcpipStack', 'vmotion', 'provisioning'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vnic#netstack Vnic#netstack}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/vnic#netstack Vnic#netstack}
   */
   readonly netstack?: string;
   /**
   * portgroup to attach the nic to. Do not set if you set distributed_switch_port.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vnic#portgroup Vnic#portgroup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/vnic#portgroup Vnic#portgroup}
   */
   readonly portgroup?: string;
   /**
   * Enabled services setting for this interface. Current possible values are 'vmotion', 'management' and 'vsan'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vnic#services Vnic#services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/vnic#services Vnic#services}
   */
   readonly services?: string[];
   /**
   * ipv4 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vnic#ipv4 Vnic#ipv4}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/vnic#ipv4 Vnic#ipv4}
   */
   readonly ipv4?: VnicIpv4;
   /**
   * ipv6 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vnic#ipv6 Vnic#ipv6}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/vnic#ipv6 Vnic#ipv6}
   */
   readonly ipv6?: VnicIpv6;
 }
@@ -84,25 +79,25 @@ export interface VnicIpv4 {
   /**
   * Use DHCP to configure the interface's IPv4 stack.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vnic#dhcp Vnic#dhcp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/vnic#dhcp Vnic#dhcp}
   */
   readonly dhcp?: boolean | cdktf.IResolvable;
   /**
   * IP address of the default gateway, if DHCP is not set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vnic#gw Vnic#gw}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/vnic#gw Vnic#gw}
   */
   readonly gw?: string;
   /**
   * address of the interface, if DHCP is not set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vnic#ip Vnic#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/vnic#ip Vnic#ip}
   */
   readonly ip?: string;
   /**
   * netmask of the interface, if DHCP is not set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vnic#netmask Vnic#netmask}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/vnic#netmask Vnic#netmask}
   */
   readonly netmask?: string;
 }
@@ -238,25 +233,25 @@ export interface VnicIpv6 {
   /**
   * List of IPv6 addresses
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vnic#addresses Vnic#addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/vnic#addresses Vnic#addresses}
   */
   readonly addresses?: string[];
   /**
   * Use IPv6 Autoconfiguration (RFC2462).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vnic#autoconfig Vnic#autoconfig}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/vnic#autoconfig Vnic#autoconfig}
   */
   readonly autoconfig?: boolean | cdktf.IResolvable;
   /**
   * Use DHCP to configure the interface's IPv4 stack.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vnic#dhcp Vnic#dhcp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/vnic#dhcp Vnic#dhcp}
   */
   readonly dhcp?: boolean | cdktf.IResolvable;
   /**
   * IP address of the default gateway, if DHCP or autoconfig is not set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vnic#gw Vnic#gw}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/vnic#gw Vnic#gw}
   */
   readonly gw?: string;
 }
@@ -390,7 +385,7 @@ export class VnicIpv6OutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vnic vsphere_vnic}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/vnic vsphere_vnic}
 */
 export class Vnic extends cdktf.TerraformResource {
 
@@ -404,7 +399,7 @@ export class Vnic extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/resources/vnic vsphere_vnic} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/vnic vsphere_vnic} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -415,7 +410,7 @@ export class Vnic extends cdktf.TerraformResource {
       terraformResourceType: 'vsphere_vnic',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.4.2',
+        providerVersion: '2.4.3',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,
