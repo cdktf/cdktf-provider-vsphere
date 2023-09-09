@@ -1,6 +1,6 @@
 # `data_vsphere_distributed_virtual_switch`
 
-Refer to the Terraform Registory for docs: [`data_vsphere_distributed_virtual_switch`](https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/distributed_virtual_switch).
+Refer to the Terraform Registory for docs: [`data_vsphere_distributed_virtual_switch`](https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/distributed_virtual_switch).
 
 # `dataVsphereDistributedVirtualSwitch` Submodule <a name="`dataVsphereDistributedVirtualSwitch` Submodule" id="@cdktf/provider-vsphere.dataVsphereDistributedVirtualSwitch"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_vsphere_distributed_virtual_sw
 
 ### DataVsphereDistributedVirtualSwitch <a name="DataVsphereDistributedVirtualSwitch" id="@cdktf/provider-vsphere.dataVsphereDistributedVirtualSwitch.DataVsphereDistributedVirtualSwitch"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/distributed_virtual_switch vsphere_distributed_virtual_switch}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/distributed_virtual_switch vsphere_distributed_virtual_switch}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereDistributedVirtualSwitch.DataVsphereDistributedVirtualSwitch.Initializer"></a>
 
@@ -44,7 +44,7 @@ dataVsphereDistributedVirtualSwitch.DataVsphereDistributedVirtualSwitch(
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDistributedVirtualSwitch.DataVsphereDistributedVirtualSwitch.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDistributedVirtualSwitch.DataVsphereDistributedVirtualSwitch.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the distributed virtual switch. This can be a name or path. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDistributedVirtualSwitch.DataVsphereDistributedVirtualSwitch.Initializer.parameter.datacenterId">datacenter_id</a></code> | <code>str</code> | The managed object ID of the datacenter the DVS is in. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereDistributedVirtualSwitch.DataVsphereDistributedVirtualSwitch.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/distributed_virtual_switch#id DataVsphereDistributedVirtualSwitch#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereDistributedVirtualSwitch.DataVsphereDistributedVirtualSwitch.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/distributed_virtual_switch#id DataVsphereDistributedVirtualSwitch#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the distributed virtual switch. This can be a name or path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/distributed_virtual_switch#name DataVsphereDistributedVirtualSwitch#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/distributed_virtual_switch#name DataVsphereDistributedVirtualSwitch#name}
 
 ---
 
@@ -126,7 +126,7 @@ The managed object ID of the datacenter the DVS is in.
 
 This is required if the supplied path is not an absolute path containing a datacenter and there are multiple datacenters in your infrastructure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/distributed_virtual_switch#datacenter_id DataVsphereDistributedVirtualSwitch#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/distributed_virtual_switch#datacenter_id DataVsphereDistributedVirtualSwitch#datacenter_id}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/distributed_virtual_switch#id DataVsphereDistributedVirtualSwitch#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/distributed_virtual_switch#id DataVsphereDistributedVirtualSwitch#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -735,7 +735,7 @@ dataVsphereDistributedVirtualSwitch.DataVsphereDistributedVirtualSwitchConfig(
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDistributedVirtualSwitch.DataVsphereDistributedVirtualSwitchConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDistributedVirtualSwitch.DataVsphereDistributedVirtualSwitchConfig.property.name">name</a></code> | <code>str</code> | The name of the distributed virtual switch. This can be a name or path. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDistributedVirtualSwitch.DataVsphereDistributedVirtualSwitchConfig.property.datacenterId">datacenter_id</a></code> | <code>str</code> | The managed object ID of the datacenter the DVS is in. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereDistributedVirtualSwitch.DataVsphereDistributedVirtualSwitchConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/distributed_virtual_switch#id DataVsphereDistributedVirtualSwitch#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereDistributedVirtualSwitch.DataVsphereDistributedVirtualSwitchConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/distributed_virtual_switch#id DataVsphereDistributedVirtualSwitch#id}. |
 
 ---
 
@@ -819,7 +819,7 @@ name: str
 
 The name of the distributed virtual switch. This can be a name or path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/distributed_virtual_switch#name DataVsphereDistributedVirtualSwitch#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/distributed_virtual_switch#name DataVsphereDistributedVirtualSwitch#name}
 
 ---
 
@@ -835,7 +835,7 @@ The managed object ID of the datacenter the DVS is in.
 
 This is required if the supplied path is not an absolute path containing a datacenter and there are multiple datacenters in your infrastructure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/distributed_virtual_switch#datacenter_id DataVsphereDistributedVirtualSwitch#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/distributed_virtual_switch#datacenter_id DataVsphereDistributedVirtualSwitch#datacenter_id}
 
 ---
 
@@ -847,7 +847,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.2/docs/data-sources/distributed_virtual_switch#id DataVsphereDistributedVirtualSwitch#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/distributed_virtual_switch#id DataVsphereDistributedVirtualSwitch#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
