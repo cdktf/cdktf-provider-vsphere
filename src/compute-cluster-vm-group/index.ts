@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/compute_cluster_vm_group
 // generated from terraform resource schema
 
