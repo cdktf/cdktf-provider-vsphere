@@ -1,3 +1,3 @@
 # `data_vsphere_host_thumbprint`
 
-Refer to the Terraform Registory for docs: [`data_vsphere_host_thumbprint`](https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/host_thumbprint).
+Refer to the Terraform Registory for docs: [`data_vsphere_host_thumbprint`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/host_thumbprint).

@@ -1,6 +1,6 @@
 # `data_vsphere_datastore`
 
-Refer to the Terraform Registory for docs: [`data_vsphere_datastore`](https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/datastore).
+Refer to the Terraform Registory for docs: [`data_vsphere_datastore`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/datastore).
 
 # `dataVsphereDatastore` Submodule <a name="`dataVsphereDatastore` Submodule" id="@cdktf/provider-vsphere.dataVsphereDatastore"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_vsphere_datastore`](https://re
 
 ### DataVsphereDatastore <a name="DataVsphereDatastore" id="@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/datastore vsphere_datastore}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/datastore vsphere_datastore}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.Initializer"></a>
 
@@ -46,7 +46,7 @@ DataVsphereDatastore.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name or path of the datastore. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.Initializer.parameter.datacenterId">datacenterId</a></code> | <code>java.lang.String</code> | The managed object ID of the datacenter the datastore is in. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/datastore#id DataVsphereDatastore#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/datastore#id DataVsphereDatastore#id}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The name or path of the datastore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/datastore#name DataVsphereDatastore#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/datastore#name DataVsphereDatastore#name}
 
 ---
 
@@ -128,7 +128,7 @@ The managed object ID of the datacenter the datastore is in.
 
 This is not required when using ESXi directly, or if there is only one datacenter in your infrastructure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/datastore#datacenter_id DataVsphereDatastore#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/datastore#datacenter_id DataVsphereDatastore#datacenter_id}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/datastore#id DataVsphereDatastore#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/datastore#id DataVsphereDatastore#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -699,7 +699,7 @@ DataVsphereDatastoreConfig.builder()
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastoreConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastoreConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name or path of the datastore. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastoreConfig.property.datacenterId">datacenterId</a></code> | <code>java.lang.String</code> | The managed object ID of the datacenter the datastore is in. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastoreConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/datastore#id DataVsphereDatastore#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastoreConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/datastore#id DataVsphereDatastore#id}. |
 
 ---
 
@@ -783,7 +783,7 @@ public java.lang.String getName();
 
 The name or path of the datastore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/datastore#name DataVsphereDatastore#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/datastore#name DataVsphereDatastore#name}
 
 ---
 
@@ -799,7 +799,7 @@ The managed object ID of the datacenter the datastore is in.
 
 This is not required when using ESXi directly, or if there is only one datacenter in your infrastructure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/datastore#datacenter_id DataVsphereDatastore#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/datastore#datacenter_id DataVsphereDatastore#datacenter_id}
 
 ---
 
@@ -811,7 +811,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/datastore#id DataVsphereDatastore#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/datastore#id DataVsphereDatastore#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,6 +1,6 @@
 # `data_vsphere_tag_category`
 
-Refer to the Terraform Registory for docs: [`data_vsphere_tag_category`](https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/tag_category).
+Refer to the Terraform Registory for docs: [`data_vsphere_tag_category`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/tag_category).
 
 # `dataVsphereTagCategory` Submodule <a name="`dataVsphereTagCategory` Submodule" id="@cdktf/provider-vsphere.dataVsphereTagCategory"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_vsphere_tag_category`](https:/
 
 ### DataVsphereTagCategory <a name="DataVsphereTagCategory" id="@cdktf/provider-vsphere.dataVsphereTagCategory.DataVsphereTagCategory"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/tag_category vsphere_tag_category}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/tag_category vsphere_tag_category}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereTagCategory.DataVsphereTagCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspheretagcategory"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheretagcategory"
 
 datavspheretagcategory.NewDataVsphereTagCategory(scope Construct, id *string, config DataVsphereTagCategoryConfig) DataVsphereTagCategory
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereTagCategory.DataVsphereTagCategory.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspheretagcategory"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheretagcategory"
 
 datavspheretagcategory.DataVsphereTagCategory_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereTagCategory.DataVsphereTagCategory.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspheretagcategory"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheretagcategory"
 
 datavspheretagcategory.DataVsphereTagCategory_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datavspheretagcategory.DataVsphereTagCategory_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereTagCategory.DataVsphereTagCategory.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspheretagcategory"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheretagcategory"
 
 datavspheretagcategory.DataVsphereTagCategory_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -577,7 +577,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereTagCategory.DataVsphereTagCategoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspheretagcategory"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheretagcategory"
 
 &datavspheretagcategory.DataVsphereTagCategoryConfig {
 	Connection: interface{},
@@ -604,7 +604,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspheretagcate
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereTagCategory.DataVsphereTagCategoryConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereTagCategory.DataVsphereTagCategoryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereTagCategory.DataVsphereTagCategoryConfig.property.name">Name</a></code> | <code>*string</code> | The display name of the category. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereTagCategory.DataVsphereTagCategoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/tag_category#id DataVsphereTagCategory#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereTagCategory.DataVsphereTagCategoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/tag_category#id DataVsphereTagCategory#id}. |
 
 ---
 
@@ -688,7 +688,7 @@ Name *string
 
 The display name of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/tag_category#name DataVsphereTagCategory#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/tag_category#name DataVsphereTagCategory#name}
 
 ---
 
@@ -700,7 +700,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/tag_category#id DataVsphereTagCategory#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/tag_category#id DataVsphereTagCategory#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

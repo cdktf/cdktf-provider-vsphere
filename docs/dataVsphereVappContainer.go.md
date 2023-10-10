@@ -1,6 +1,6 @@
 # `data_vsphere_vapp_container`
 
-Refer to the Terraform Registory for docs: [`data_vsphere_vapp_container`](https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/vapp_container).
+Refer to the Terraform Registory for docs: [`data_vsphere_vapp_container`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/vapp_container).
 
 # `dataVsphereVappContainer` Submodule <a name="`dataVsphereVappContainer` Submodule" id="@cdktf/provider-vsphere.dataVsphereVappContainer"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_vsphere_vapp_container`](https
 
 ### DataVsphereVappContainer <a name="DataVsphereVappContainer" id="@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/vapp_container vsphere_vapp_container}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/vapp_container vsphere_vapp_container}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspherevappcontainer"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevappcontainer"
 
 datavspherevappcontainer.NewDataVsphereVappContainer(scope Construct, id *string, config DataVsphereVappContainerConfig) DataVsphereVappContainer
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspherevappcontainer"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevappcontainer"
 
 datavspherevappcontainer.DataVsphereVappContainer_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspherevappcontainer"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevappcontainer"
 
 datavspherevappcontainer.DataVsphereVappContainer_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datavspherevappcontainer.DataVsphereVappContainer_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainer.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspherevappcontainer"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevappcontainer"
 
 datavspherevappcontainer.DataVsphereVappContainer_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -566,7 +566,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspherevappcontainer"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevappcontainer"
 
 &datavspherevappcontainer.DataVsphereVappContainerConfig {
 	Connection: interface{},
@@ -595,7 +595,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspherevappcon
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainerConfig.property.datacenterId">DatacenterId</a></code> | <code>*string</code> | The Managed Object ID of the datacenter. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainerConfig.property.name">Name</a></code> | <code>*string</code> | The name of the vApp container. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/vapp_container#id DataVsphereVappContainer#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/vapp_container#id DataVsphereVappContainer#id}. |
 
 ---
 
@@ -679,7 +679,7 @@ DatacenterId *string
 
 The Managed Object ID of the datacenter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/vapp_container#datacenter_id DataVsphereVappContainer#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/vapp_container#datacenter_id DataVsphereVappContainer#datacenter_id}
 
 ---
 
@@ -693,7 +693,7 @@ Name *string
 
 The name of the vApp container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/vapp_container#name DataVsphereVappContainer#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/vapp_container#name DataVsphereVappContainer#name}
 
 ---
 
@@ -705,7 +705,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/data-sources/vapp_container#id DataVsphereVappContainer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/vapp_container#id DataVsphereVappContainer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

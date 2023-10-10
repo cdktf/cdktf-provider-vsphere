@@ -1,6 +1,6 @@
 # `vsphere_file`
 
-Refer to the Terraform Registory for docs: [`vsphere_file`](https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/file).
+Refer to the Terraform Registory for docs: [`vsphere_file`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/file).
 
 # `file` Submodule <a name="`file` Submodule" id="@cdktf/provider-vsphere.file"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`vsphere_file`](https://registry.ter
 
 ### File <a name="File" id="@cdktf/provider-vsphere.file.File"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/file vsphere_file}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/file vsphere_file}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.file.File.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/file"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/file"
 
 file.NewFile(scope Construct, id *string, config FileConfig) File
 ```
@@ -305,7 +305,7 @@ func ResetSourceDatastore()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.file.File.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/file"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/file"
 
 file.File_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.file.File.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/file"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/file"
 
 file.File_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ file.File_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.file.File.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/file"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/file"
 
 file.File_IsTerraformResource(x interface{}) *bool
 ```
@@ -726,7 +726,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.file.FileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/file"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/file"
 
 &file.FileConfig {
 	Connection: interface{},
@@ -758,14 +758,14 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/file"
 | <code><a href="#@cdktf/provider-vsphere.file.FileConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.file.FileConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.file.FileConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.file.FileConfig.property.datastore">Datastore</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/file#datastore File#datastore}. |
-| <code><a href="#@cdktf/provider-vsphere.file.FileConfig.property.destinationFile">DestinationFile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/file#destination_file File#destination_file}. |
-| <code><a href="#@cdktf/provider-vsphere.file.FileConfig.property.sourceFile">SourceFile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/file#source_file File#source_file}. |
-| <code><a href="#@cdktf/provider-vsphere.file.FileConfig.property.createDirectories">CreateDirectories</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/file#create_directories File#create_directories}. |
-| <code><a href="#@cdktf/provider-vsphere.file.FileConfig.property.datacenter">Datacenter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/file#datacenter File#datacenter}. |
-| <code><a href="#@cdktf/provider-vsphere.file.FileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/file#id File#id}. |
-| <code><a href="#@cdktf/provider-vsphere.file.FileConfig.property.sourceDatacenter">SourceDatacenter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/file#source_datacenter File#source_datacenter}. |
-| <code><a href="#@cdktf/provider-vsphere.file.FileConfig.property.sourceDatastore">SourceDatastore</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/file#source_datastore File#source_datastore}. |
+| <code><a href="#@cdktf/provider-vsphere.file.FileConfig.property.datastore">Datastore</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/file#datastore File#datastore}. |
+| <code><a href="#@cdktf/provider-vsphere.file.FileConfig.property.destinationFile">DestinationFile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/file#destination_file File#destination_file}. |
+| <code><a href="#@cdktf/provider-vsphere.file.FileConfig.property.sourceFile">SourceFile</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/file#source_file File#source_file}. |
+| <code><a href="#@cdktf/provider-vsphere.file.FileConfig.property.createDirectories">CreateDirectories</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/file#create_directories File#create_directories}. |
+| <code><a href="#@cdktf/provider-vsphere.file.FileConfig.property.datacenter">Datacenter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/file#datacenter File#datacenter}. |
+| <code><a href="#@cdktf/provider-vsphere.file.FileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/file#id File#id}. |
+| <code><a href="#@cdktf/provider-vsphere.file.FileConfig.property.sourceDatacenter">SourceDatacenter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/file#source_datacenter File#source_datacenter}. |
+| <code><a href="#@cdktf/provider-vsphere.file.FileConfig.property.sourceDatastore">SourceDatastore</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/file#source_datastore File#source_datastore}. |
 
 ---
 
@@ -847,7 +847,7 @@ Datastore *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/file#datastore File#datastore}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/file#datastore File#datastore}.
 
 ---
 
@@ -859,7 +859,7 @@ DestinationFile *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/file#destination_file File#destination_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/file#destination_file File#destination_file}.
 
 ---
 
@@ -871,7 +871,7 @@ SourceFile *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/file#source_file File#source_file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/file#source_file File#source_file}.
 
 ---
 
@@ -883,7 +883,7 @@ CreateDirectories interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/file#create_directories File#create_directories}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/file#create_directories File#create_directories}.
 
 ---
 
@@ -895,7 +895,7 @@ Datacenter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/file#datacenter File#datacenter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/file#datacenter File#datacenter}.
 
 ---
 
@@ -907,7 +907,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/file#id File#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/file#id File#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -922,7 +922,7 @@ SourceDatacenter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/file#source_datacenter File#source_datacenter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/file#source_datacenter File#source_datacenter}.
 
 ---
 
@@ -934,7 +934,7 @@ SourceDatastore *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.4.3/docs/resources/file#source_datastore File#source_datastore}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/file#source_datastore File#source_datastore}.
 
 ---
 
