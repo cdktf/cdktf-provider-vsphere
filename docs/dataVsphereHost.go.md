@@ -1,6 +1,6 @@
 # `data_vsphere_host`
 
-Refer to the Terraform Registory for docs: [`data_vsphere_host`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/host).
+Refer to the Terraform Registory for docs: [`data_vsphere_host`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/host).
 
 # `dataVsphereHost` Submodule <a name="`dataVsphereHost` Submodule" id="@cdktf/provider-vsphere.dataVsphereHost"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_vsphere_host`](https://registr
 
 ### DataVsphereHost <a name="DataVsphereHost" id="@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHost"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/host vsphere_host}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/host vsphere_host}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHost.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspherehost"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehost"
 
 datavspherehost.NewDataVsphereHost(scope Construct, id *string, config DataVsphereHostConfig) DataVsphereHost
 ```
@@ -284,7 +284,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHost.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspherehost"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehost"
 
 datavspherehost.DataVsphereHost_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHost.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspherehost"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehost"
 
 datavspherehost.DataVsphereHost_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datavspherehost.DataVsphereHost_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHost.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspherehost"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehost"
 
 datavspherehost.DataVsphereHost_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHostConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspherehost"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehost"
 
 &datavspherehost.DataVsphereHostConfig {
 	Connection: interface{},
@@ -612,7 +612,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspherehost"
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHostConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHostConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHostConfig.property.datacenterId">DatacenterId</a></code> | <code>*string</code> | The managed object ID of the datacenter to look for the host in. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHostConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/host#id DataVsphereHost#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHostConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/host#id DataVsphereHost#id}. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHost.DataVsphereHostConfig.property.name">Name</a></code> | <code>*string</code> | The name of the host. This can be a name or path.	If not provided, the default host is used. |
 
 ---
@@ -697,7 +697,7 @@ DatacenterId *string
 
 The managed object ID of the datacenter to look for the host in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/host#datacenter_id DataVsphereHost#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/host#datacenter_id DataVsphereHost#datacenter_id}
 
 ---
 
@@ -709,7 +709,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/host#id DataVsphereHost#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/host#id DataVsphereHost#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -726,7 +726,7 @@ Name *string
 
 The name of the host. This can be a name or path.	If not provided, the default host is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/host#name DataVsphereHost#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/host#name DataVsphereHost#name}
 
 ---
 
