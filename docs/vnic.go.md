@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.vnic.Vnic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vnic"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vnic"
 
 vnic.NewVnic(scope Construct, id *string, config VnicConfig) Vnic
 ```
@@ -366,7 +366,7 @@ func ResetServices()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.vnic.Vnic.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vnic"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vnic"
 
 vnic.Vnic_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.vnic.Vnic.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vnic"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vnic"
 
 vnic.Vnic_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ vnic.Vnic_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.vnic.Vnic.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vnic"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vnic"
 
 vnic.Vnic_IsTerraformResource(x interface{}) *bool
 ```
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.vnic.VnicConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vnic"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vnic"
 
 &vnic.VnicConfig {
 	Connection: interface{},
@@ -867,8 +867,8 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vnic"
 	DistributedPortGroup: *string,
 	DistributedSwitchPort: *string,
 	Id: *string,
-	Ipv4: github.com/cdktf/cdktf-provider-vsphere-go/vsphere.vnic.VnicIpv4,
-	Ipv6: github.com/cdktf/cdktf-provider-vsphere-go/vsphere.vnic.VnicIpv6,
+	Ipv4: github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8.vnic.VnicIpv4,
+	Ipv6: github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8.vnic.VnicIpv6,
 	Mac: *string,
 	Mtu: *f64,
 	Netstack: *string,
@@ -1132,7 +1132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.vnic.VnicIpv4.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vnic"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vnic"
 
 &vnic.VnicIpv4 {
 	Dhcp: interface{},
@@ -1214,7 +1214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.vnic.VnicIpv6.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vnic"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vnic"
 
 &vnic.VnicIpv6 {
 	Addresses: *[]*string,
@@ -1298,7 +1298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.vnic.VnicIpv4OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vnic"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vnic"
 
 vnic.NewVnicIpv4OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VnicIpv4OutputReference
 ```
@@ -1663,7 +1663,7 @@ func InternalValue() VnicIpv4
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.vnic.VnicIpv6OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vnic"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vnic"
 
 vnic.NewVnicIpv6OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VnicIpv6OutputReference
 ```
