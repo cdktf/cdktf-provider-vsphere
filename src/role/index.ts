@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/role
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface RoleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/role#id Role#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/role#id Role#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +22,19 @@ export interface RoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the storage policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/role#name Role#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/role#name Role#name}
   */
   readonly name: string;
   /**
   * The privileges to be associated with the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/role#role_privileges Role#role_privileges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/role#role_privileges Role#role_privileges}
   */
   readonly rolePrivileges?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/role vsphere_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/role vsphere_role}
 */
 export class Role extends cdktf.TerraformResource {
 
@@ -48,7 +48,7 @@ export class Role extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/role vsphere_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/role vsphere_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,7 @@ export class Role extends cdktf.TerraformResource {
       terraformResourceType: 'vsphere_role',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.5.0',
+        providerVersion: '2.5.1',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,

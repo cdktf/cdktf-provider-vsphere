@@ -1,6 +1,6 @@
 # `vsphere_nas_datastore`
 
-Refer to the Terraform Registory for docs: [`vsphere_nas_datastore`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore).
+Refer to the Terraform Registory for docs: [`vsphere_nas_datastore`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/nas_datastore).
 
 # `nasDatastore` Submodule <a name="`nasDatastore` Submodule" id="@cdktf/provider-vsphere.nasDatastore"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vsphere_nas_datastore`](https://reg
 
 ### NasDatastore <a name="NasDatastore" id="@cdktf/provider-vsphere.nasDatastore.NasDatastore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore vsphere_nas_datastore}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/nas_datastore vsphere_nas_datastore}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.nasDatastore.NasDatastore.Initializer"></a>
 
@@ -61,7 +61,7 @@ NasDatastore.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vsphere.nasDatastore.NasDatastore.Initializer.parameter.customAttributes">customAttributes</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A list of custom attributes to set on this resource. |
 | <code><a href="#@cdktf/provider-vsphere.nasDatastore.NasDatastore.Initializer.parameter.datastoreClusterId">datastoreClusterId</a></code> | <code>java.lang.String</code> | The managed object ID of the datastore cluster to place the datastore in. |
 | <code><a href="#@cdktf/provider-vsphere.nasDatastore.NasDatastore.Initializer.parameter.folder">folder</a></code> | <code>java.lang.String</code> | The path to the datastore folder to put the datastore in. |
-| <code><a href="#@cdktf/provider-vsphere.nasDatastore.NasDatastore.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore#id NasDatastore#id}. |
+| <code><a href="#@cdktf/provider-vsphere.nasDatastore.NasDatastore.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/nas_datastore#id NasDatastore#id}. |
 | <code><a href="#@cdktf/provider-vsphere.nasDatastore.NasDatastore.Initializer.parameter.securityType">securityType</a></code> | <code>java.lang.String</code> | The security type to use. |
 | <code><a href="#@cdktf/provider-vsphere.nasDatastore.NasDatastore.Initializer.parameter.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | A list of tag IDs to apply to this object. |
 | <code><a href="#@cdktf/provider-vsphere.nasDatastore.NasDatastore.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | The type of NAS volume. Can be one of NFS (to denote v3) or NFS41 (to denote NFS v4.1). |
@@ -134,7 +134,7 @@ Must be unique amongst siblings in the same scope
 
 The managed object IDs of the hosts to mount the datastore on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore#host_system_ids NasDatastore#host_system_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/nas_datastore#host_system_ids NasDatastore#host_system_ids}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the datastore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore#name NasDatastore#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/nas_datastore#name NasDatastore#name}
 
 ---
 
@@ -156,7 +156,7 @@ The hostnames or IP addresses of the remote server or servers.
 
 Only one element should be present for NFS v3 but multiple can be present for NFS v4.1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore#remote_hosts NasDatastore#remote_hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/nas_datastore#remote_hosts NasDatastore#remote_hosts}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The remote path of the mount point.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore#remote_path NasDatastore#remote_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/nas_datastore#remote_path NasDatastore#remote_path}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Access mode for the mount point. Can be one of readOnly or readWrite.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore#access_mode NasDatastore#access_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/nas_datastore#access_mode NasDatastore#access_mode}
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of custom attributes to set on this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore#custom_attributes NasDatastore#custom_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/nas_datastore#custom_attributes NasDatastore#custom_attributes}
 
 ---
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The managed object ID of the datastore cluster to place the datastore in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore#datastore_cluster_id NasDatastore#datastore_cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/nas_datastore#datastore_cluster_id NasDatastore#datastore_cluster_id}
 
 ---
 
@@ -206,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The path to the datastore folder to put the datastore in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore#folder NasDatastore#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/nas_datastore#folder NasDatastore#folder}
 
 ---
 
@@ -214,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore#id NasDatastore#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/nas_datastore#id NasDatastore#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -227,7 +227,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The security type to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore#security_type NasDatastore#security_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/nas_datastore#security_type NasDatastore#security_type}
 
 ---
 
@@ -237,7 +237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of tag IDs to apply to this object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore#tags NasDatastore#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/nas_datastore#tags NasDatastore#tags}
 
 ---
 
@@ -247,7 +247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The type of NAS volume. Can be one of NFS (to denote v3) or NFS41 (to denote NFS v4.1).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore#type NasDatastore#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/nas_datastore#type NasDatastore#type}
 
 ---
 
@@ -1172,7 +1172,7 @@ NasDatastoreConfig.builder()
 | <code><a href="#@cdktf/provider-vsphere.nasDatastore.NasDatastoreConfig.property.customAttributes">customAttributes</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A list of custom attributes to set on this resource. |
 | <code><a href="#@cdktf/provider-vsphere.nasDatastore.NasDatastoreConfig.property.datastoreClusterId">datastoreClusterId</a></code> | <code>java.lang.String</code> | The managed object ID of the datastore cluster to place the datastore in. |
 | <code><a href="#@cdktf/provider-vsphere.nasDatastore.NasDatastoreConfig.property.folder">folder</a></code> | <code>java.lang.String</code> | The path to the datastore folder to put the datastore in. |
-| <code><a href="#@cdktf/provider-vsphere.nasDatastore.NasDatastoreConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore#id NasDatastore#id}. |
+| <code><a href="#@cdktf/provider-vsphere.nasDatastore.NasDatastoreConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/nas_datastore#id NasDatastore#id}. |
 | <code><a href="#@cdktf/provider-vsphere.nasDatastore.NasDatastoreConfig.property.securityType">securityType</a></code> | <code>java.lang.String</code> | The security type to use. |
 | <code><a href="#@cdktf/provider-vsphere.nasDatastore.NasDatastoreConfig.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | A list of tag IDs to apply to this object. |
 | <code><a href="#@cdktf/provider-vsphere.nasDatastore.NasDatastoreConfig.property.type">type</a></code> | <code>java.lang.String</code> | The type of NAS volume. Can be one of NFS (to denote v3) or NFS41 (to denote NFS v4.1). |
@@ -1259,7 +1259,7 @@ public java.util.List<java.lang.String> getHostSystemIds();
 
 The managed object IDs of the hosts to mount the datastore on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore#host_system_ids NasDatastore#host_system_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/nas_datastore#host_system_ids NasDatastore#host_system_ids}
 
 ---
 
@@ -1273,7 +1273,7 @@ public java.lang.String getName();
 
 The name of the datastore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore#name NasDatastore#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/nas_datastore#name NasDatastore#name}
 
 ---
 
@@ -1289,7 +1289,7 @@ The hostnames or IP addresses of the remote server or servers.
 
 Only one element should be present for NFS v3 but multiple can be present for NFS v4.1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore#remote_hosts NasDatastore#remote_hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/nas_datastore#remote_hosts NasDatastore#remote_hosts}
 
 ---
 
@@ -1303,7 +1303,7 @@ public java.lang.String getRemotePath();
 
 The remote path of the mount point.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore#remote_path NasDatastore#remote_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/nas_datastore#remote_path NasDatastore#remote_path}
 
 ---
 
@@ -1317,7 +1317,7 @@ public java.lang.String getAccessMode();
 
 Access mode for the mount point. Can be one of readOnly or readWrite.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore#access_mode NasDatastore#access_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/nas_datastore#access_mode NasDatastore#access_mode}
 
 ---
 
@@ -1331,7 +1331,7 @@ public java.util.Map<java.lang.String, java.lang.String> getCustomAttributes();
 
 A list of custom attributes to set on this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore#custom_attributes NasDatastore#custom_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/nas_datastore#custom_attributes NasDatastore#custom_attributes}
 
 ---
 
@@ -1345,7 +1345,7 @@ public java.lang.String getDatastoreClusterId();
 
 The managed object ID of the datastore cluster to place the datastore in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore#datastore_cluster_id NasDatastore#datastore_cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/nas_datastore#datastore_cluster_id NasDatastore#datastore_cluster_id}
 
 ---
 
@@ -1359,7 +1359,7 @@ public java.lang.String getFolder();
 
 The path to the datastore folder to put the datastore in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore#folder NasDatastore#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/nas_datastore#folder NasDatastore#folder}
 
 ---
 
@@ -1371,7 +1371,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore#id NasDatastore#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/nas_datastore#id NasDatastore#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1388,7 +1388,7 @@ public java.lang.String getSecurityType();
 
 The security type to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore#security_type NasDatastore#security_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/nas_datastore#security_type NasDatastore#security_type}
 
 ---
 
@@ -1402,7 +1402,7 @@ public java.util.List<java.lang.String> getTags();
 
 A list of tag IDs to apply to this object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore#tags NasDatastore#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/nas_datastore#tags NasDatastore#tags}
 
 ---
 
@@ -1416,7 +1416,7 @@ public java.lang.String getType();
 
 The type of NAS volume. Can be one of NFS (to denote v3) or NFS41 (to denote NFS v4.1).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/nas_datastore#type NasDatastore#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/nas_datastore#type NasDatastore#type}
 
 ---
 

@@ -1,6 +1,6 @@
 # `vsphere_vmfs_datastore`
 
-Refer to the Terraform Registory for docs: [`vsphere_vmfs_datastore`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/vmfs_datastore).
+Refer to the Terraform Registory for docs: [`vsphere_vmfs_datastore`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/vmfs_datastore).
 
 # `vmfsDatastore` Submodule <a name="`vmfsDatastore` Submodule" id="@cdktf/provider-vsphere.vmfsDatastore"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vsphere_vmfs_datastore`](https://re
 
 ### VmfsDatastore <a name="VmfsDatastore" id="@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/vmfs_datastore vsphere_vmfs_datastore}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/vmfs_datastore vsphere_vmfs_datastore}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.Initializer"></a>
 
@@ -53,7 +53,7 @@ vmfsDatastore.VmfsDatastore(
 | <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.Initializer.parameter.customAttributes">custom_attributes</a></code> | <code>typing.Mapping[str]</code> | A list of custom attributes to set on this resource. |
 | <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.Initializer.parameter.datastoreClusterId">datastore_cluster_id</a></code> | <code>str</code> | The managed object ID of the datastore cluster to place the datastore in. |
 | <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.Initializer.parameter.folder">folder</a></code> | <code>str</code> | The path to the datastore folder to put the datastore in. |
-| <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/vmfs_datastore#id VmfsDatastore#id}. |
+| <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/vmfs_datastore#id VmfsDatastore#id}. |
 | <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | A list of tag IDs to apply to this object. |
 
 ---
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 The disks to add to the datastore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/vmfs_datastore#disks VmfsDatastore#disks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/vmfs_datastore#disks VmfsDatastore#disks}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The managed object ID of the host to set up the datastore on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/vmfs_datastore#host_system_id VmfsDatastore#host_system_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/vmfs_datastore#host_system_id VmfsDatastore#host_system_id}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the datastore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/vmfs_datastore#name VmfsDatastore#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/vmfs_datastore#name VmfsDatastore#name}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of custom attributes to set on this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/vmfs_datastore#custom_attributes VmfsDatastore#custom_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/vmfs_datastore#custom_attributes VmfsDatastore#custom_attributes}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The managed object ID of the datastore cluster to place the datastore in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/vmfs_datastore#datastore_cluster_id VmfsDatastore#datastore_cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/vmfs_datastore#datastore_cluster_id VmfsDatastore#datastore_cluster_id}
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The path to the datastore folder to put the datastore in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/vmfs_datastore#folder VmfsDatastore#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/vmfs_datastore#folder VmfsDatastore#folder}
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/vmfs_datastore#id VmfsDatastore#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/vmfs_datastore#id VmfsDatastore#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -195,7 +195,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 A list of tag IDs to apply to this object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/vmfs_datastore#tags VmfsDatastore#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/vmfs_datastore#tags VmfsDatastore#tags}
 
 ---
 
@@ -1021,7 +1021,7 @@ vmfsDatastore.VmfsDatastoreConfig(
 | <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastoreConfig.property.customAttributes">custom_attributes</a></code> | <code>typing.Mapping[str]</code> | A list of custom attributes to set on this resource. |
 | <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastoreConfig.property.datastoreClusterId">datastore_cluster_id</a></code> | <code>str</code> | The managed object ID of the datastore cluster to place the datastore in. |
 | <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastoreConfig.property.folder">folder</a></code> | <code>str</code> | The path to the datastore folder to put the datastore in. |
-| <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastoreConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/vmfs_datastore#id VmfsDatastore#id}. |
+| <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastoreConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/vmfs_datastore#id VmfsDatastore#id}. |
 | <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastoreConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | A list of tag IDs to apply to this object. |
 
 ---
@@ -1106,7 +1106,7 @@ disks: typing.List[str]
 
 The disks to add to the datastore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/vmfs_datastore#disks VmfsDatastore#disks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/vmfs_datastore#disks VmfsDatastore#disks}
 
 ---
 
@@ -1120,7 +1120,7 @@ host_system_id: str
 
 The managed object ID of the host to set up the datastore on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/vmfs_datastore#host_system_id VmfsDatastore#host_system_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/vmfs_datastore#host_system_id VmfsDatastore#host_system_id}
 
 ---
 
@@ -1134,7 +1134,7 @@ name: str
 
 The name of the datastore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/vmfs_datastore#name VmfsDatastore#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/vmfs_datastore#name VmfsDatastore#name}
 
 ---
 
@@ -1148,7 +1148,7 @@ custom_attributes: typing.Mapping[str]
 
 A list of custom attributes to set on this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/vmfs_datastore#custom_attributes VmfsDatastore#custom_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/vmfs_datastore#custom_attributes VmfsDatastore#custom_attributes}
 
 ---
 
@@ -1162,7 +1162,7 @@ datastore_cluster_id: str
 
 The managed object ID of the datastore cluster to place the datastore in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/vmfs_datastore#datastore_cluster_id VmfsDatastore#datastore_cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/vmfs_datastore#datastore_cluster_id VmfsDatastore#datastore_cluster_id}
 
 ---
 
@@ -1176,7 +1176,7 @@ folder: str
 
 The path to the datastore folder to put the datastore in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/vmfs_datastore#folder VmfsDatastore#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/vmfs_datastore#folder VmfsDatastore#folder}
 
 ---
 
@@ -1188,7 +1188,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/vmfs_datastore#id VmfsDatastore#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/vmfs_datastore#id VmfsDatastore#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1205,7 +1205,7 @@ tags: typing.List[str]
 
 A list of tag IDs to apply to this object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/vmfs_datastore#tags VmfsDatastore#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/vmfs_datastore#tags VmfsDatastore#tags}
 
 ---
 

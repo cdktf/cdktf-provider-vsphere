@@ -1,6 +1,6 @@
 # `vsphere_datastore_cluster`
 
-Refer to the Terraform Registory for docs: [`vsphere_datastore_cluster`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/datastore_cluster).
+Refer to the Terraform Registory for docs: [`vsphere_datastore_cluster`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datastore_cluster).
 
 # `datastoreCluster` Submodule <a name="`datastoreCluster` Submodule" id="@cdktf/provider-vsphere.datastoreCluster"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`vsphere_datastore_cluster`](https:/
 
 ### DatastoreCluster <a name="DatastoreCluster" id="@cdktf/provider-vsphere.datastoreCluster.DatastoreCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/datastore_cluster vsphere_datastore_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datastore_cluster vsphere_datastore_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.datastoreCluster.DatastoreCluster.Initializer"></a>
 
@@ -1275,7 +1275,7 @@ const datastoreClusterConfig: datastoreCluster.DatastoreClusterConfig = { ... }
 | <code><a href="#@cdktf/provider-vsphere.datastoreCluster.DatastoreClusterConfig.property.name">name</a></code> | <code>string</code> | Name for the new storage pod. |
 | <code><a href="#@cdktf/provider-vsphere.datastoreCluster.DatastoreClusterConfig.property.customAttributes">customAttributes</a></code> | <code>{[ key: string ]: string}</code> | A list of custom attributes to set on this resource. |
 | <code><a href="#@cdktf/provider-vsphere.datastoreCluster.DatastoreClusterConfig.property.folder">folder</a></code> | <code>string</code> | The name of the folder to locate the datastore cluster in. |
-| <code><a href="#@cdktf/provider-vsphere.datastoreCluster.DatastoreClusterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/datastore_cluster#id DatastoreCluster#id}. |
+| <code><a href="#@cdktf/provider-vsphere.datastoreCluster.DatastoreClusterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datastore_cluster#id DatastoreCluster#id}. |
 | <code><a href="#@cdktf/provider-vsphere.datastoreCluster.DatastoreClusterConfig.property.sdrsAdvancedOptions">sdrsAdvancedOptions</a></code> | <code>{[ key: string ]: string}</code> | Advanced configuration options for storage DRS. |
 | <code><a href="#@cdktf/provider-vsphere.datastoreCluster.DatastoreClusterConfig.property.sdrsAutomationLevel">sdrsAutomationLevel</a></code> | <code>string</code> | The default automation level for all virtual machines in this storage cluster. |
 | <code><a href="#@cdktf/provider-vsphere.datastoreCluster.DatastoreClusterConfig.property.sdrsDefaultIntraVmAffinity">sdrsDefaultIntraVmAffinity</a></code> | <code>boolean \| cdktf.IResolvable</code> | When true, storage DRS keeps VMDKs for individual VMs on the same datastore by default. |
@@ -1380,7 +1380,7 @@ public readonly datacenterId: string;
 
 The managed object ID of the datacenter to put the datastore cluster in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/datastore_cluster#datacenter_id DatastoreCluster#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datastore_cluster#datacenter_id DatastoreCluster#datacenter_id}
 
 ---
 
@@ -1394,7 +1394,7 @@ public readonly name: string;
 
 Name for the new storage pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/datastore_cluster#name DatastoreCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datastore_cluster#name DatastoreCluster#name}
 
 ---
 
@@ -1408,7 +1408,7 @@ public readonly customAttributes: {[ key: string ]: string};
 
 A list of custom attributes to set on this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/datastore_cluster#custom_attributes DatastoreCluster#custom_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datastore_cluster#custom_attributes DatastoreCluster#custom_attributes}
 
 ---
 
@@ -1422,7 +1422,7 @@ public readonly folder: string;
 
 The name of the folder to locate the datastore cluster in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/datastore_cluster#folder DatastoreCluster#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datastore_cluster#folder DatastoreCluster#folder}
 
 ---
 
@@ -1434,7 +1434,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/datastore_cluster#id DatastoreCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datastore_cluster#id DatastoreCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1451,7 +1451,7 @@ public readonly sdrsAdvancedOptions: {[ key: string ]: string};
 
 Advanced configuration options for storage DRS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/datastore_cluster#sdrs_advanced_options DatastoreCluster#sdrs_advanced_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datastore_cluster#sdrs_advanced_options DatastoreCluster#sdrs_advanced_options}
 
 ---
 
@@ -1465,7 +1465,7 @@ public readonly sdrsAutomationLevel: string;
 
 The default automation level for all virtual machines in this storage cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/datastore_cluster#sdrs_automation_level DatastoreCluster#sdrs_automation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datastore_cluster#sdrs_automation_level DatastoreCluster#sdrs_automation_level}
 
 ---
 
@@ -1479,7 +1479,7 @@ public readonly sdrsDefaultIntraVmAffinity: boolean | IResolvable;
 
 When true, storage DRS keeps VMDKs for individual VMs on the same datastore by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/datastore_cluster#sdrs_default_intra_vm_affinity DatastoreCluster#sdrs_default_intra_vm_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datastore_cluster#sdrs_default_intra_vm_affinity DatastoreCluster#sdrs_default_intra_vm_affinity}
 
 ---
 
@@ -1493,7 +1493,7 @@ public readonly sdrsEnabled: boolean | IResolvable;
 
 Enable storage DRS for this datastore cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/datastore_cluster#sdrs_enabled DatastoreCluster#sdrs_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datastore_cluster#sdrs_enabled DatastoreCluster#sdrs_enabled}
 
 ---
 
@@ -1507,7 +1507,7 @@ public readonly sdrsFreeSpaceThreshold: number;
 
 The threshold, in GB, that storage DRS uses to make decisions to migrate VMs out of a datastore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/datastore_cluster#sdrs_free_space_threshold DatastoreCluster#sdrs_free_space_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datastore_cluster#sdrs_free_space_threshold DatastoreCluster#sdrs_free_space_threshold}
 
 ---
 
@@ -1523,7 +1523,7 @@ The free space threshold to use.
 
 When set to utilization, drs_space_utilization_threshold is used, and when set to freeSpace, drs_free_space_threshold is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/datastore_cluster#sdrs_free_space_threshold_mode DatastoreCluster#sdrs_free_space_threshold_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datastore_cluster#sdrs_free_space_threshold_mode DatastoreCluster#sdrs_free_space_threshold_mode}
 
 ---
 
@@ -1537,7 +1537,7 @@ public readonly sdrsFreeSpaceUtilizationDifference: number;
 
 The threshold, in percent, of difference between space utilization in datastores before storage DRS makes decisions to balance the space.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/datastore_cluster#sdrs_free_space_utilization_difference DatastoreCluster#sdrs_free_space_utilization_difference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datastore_cluster#sdrs_free_space_utilization_difference DatastoreCluster#sdrs_free_space_utilization_difference}
 
 ---
 
@@ -1551,7 +1551,7 @@ public readonly sdrsIoBalanceAutomationLevel: string;
 
 Overrides the default automation settings when correcting I/O load imbalances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/datastore_cluster#sdrs_io_balance_automation_level DatastoreCluster#sdrs_io_balance_automation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datastore_cluster#sdrs_io_balance_automation_level DatastoreCluster#sdrs_io_balance_automation_level}
 
 ---
 
@@ -1565,7 +1565,7 @@ public readonly sdrsIoLatencyThreshold: number;
 
 The I/O latency threshold, in milliseconds, that storage DRS uses to make recommendations to move disks from this datastore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/datastore_cluster#sdrs_io_latency_threshold DatastoreCluster#sdrs_io_latency_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datastore_cluster#sdrs_io_latency_threshold DatastoreCluster#sdrs_io_latency_threshold}
 
 ---
 
@@ -1579,7 +1579,7 @@ public readonly sdrsIoLoadBalanceEnabled: boolean | IResolvable;
 
 Enable I/O load balancing for this datastore cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/datastore_cluster#sdrs_io_load_balance_enabled DatastoreCluster#sdrs_io_load_balance_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datastore_cluster#sdrs_io_load_balance_enabled DatastoreCluster#sdrs_io_load_balance_enabled}
 
 ---
 
@@ -1593,7 +1593,7 @@ public readonly sdrsIoLoadImbalanceThreshold: number;
 
 The difference between load in datastores in the cluster before storage DRS makes recommendations to balance the load.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/datastore_cluster#sdrs_io_load_imbalance_threshold DatastoreCluster#sdrs_io_load_imbalance_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datastore_cluster#sdrs_io_load_imbalance_threshold DatastoreCluster#sdrs_io_load_imbalance_threshold}
 
 ---
 
@@ -1607,7 +1607,7 @@ public readonly sdrsIoReservableIopsThreshold: number;
 
 The threshold of reservable IOPS of all virtual machines on the datastore before storage DRS makes recommendations to move VMs off of a datastore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/datastore_cluster#sdrs_io_reservable_iops_threshold DatastoreCluster#sdrs_io_reservable_iops_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datastore_cluster#sdrs_io_reservable_iops_threshold DatastoreCluster#sdrs_io_reservable_iops_threshold}
 
 ---
 
@@ -1621,7 +1621,7 @@ public readonly sdrsIoReservablePercentThreshold: number;
 
 The threshold, in percent, of actual estimated performance of the datastore (in IOPS) that storage DRS uses to make recommendations to move VMs off of a datastore when the total reservable IOPS exceeds the threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/datastore_cluster#sdrs_io_reservable_percent_threshold DatastoreCluster#sdrs_io_reservable_percent_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datastore_cluster#sdrs_io_reservable_percent_threshold DatastoreCluster#sdrs_io_reservable_percent_threshold}
 
 ---
 
@@ -1635,7 +1635,7 @@ public readonly sdrsIoReservableThresholdMode: string;
 
 The reservable IOPS threshold to use, percent in the event of automatic, or manual threshold in the event of manual.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/datastore_cluster#sdrs_io_reservable_threshold_mode DatastoreCluster#sdrs_io_reservable_threshold_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datastore_cluster#sdrs_io_reservable_threshold_mode DatastoreCluster#sdrs_io_reservable_threshold_mode}
 
 ---
 
@@ -1649,7 +1649,7 @@ public readonly sdrsLoadBalanceInterval: number;
 
 The storage DRS poll interval, in minutes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/datastore_cluster#sdrs_load_balance_interval DatastoreCluster#sdrs_load_balance_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datastore_cluster#sdrs_load_balance_interval DatastoreCluster#sdrs_load_balance_interval}
 
 ---
 
@@ -1663,7 +1663,7 @@ public readonly sdrsPolicyEnforcementAutomationLevel: string;
 
 Overrides the default automation settings when correcting storage and VM policy violations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/datastore_cluster#sdrs_policy_enforcement_automation_level DatastoreCluster#sdrs_policy_enforcement_automation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datastore_cluster#sdrs_policy_enforcement_automation_level DatastoreCluster#sdrs_policy_enforcement_automation_level}
 
 ---
 
@@ -1677,7 +1677,7 @@ public readonly sdrsRuleEnforcementAutomationLevel: string;
 
 Overrides the default automation settings when correcting affinity rule violations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/datastore_cluster#sdrs_rule_enforcement_automation_level DatastoreCluster#sdrs_rule_enforcement_automation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datastore_cluster#sdrs_rule_enforcement_automation_level DatastoreCluster#sdrs_rule_enforcement_automation_level}
 
 ---
 
@@ -1691,7 +1691,7 @@ public readonly sdrsSpaceBalanceAutomationLevel: string;
 
 Overrides the default automation settings when correcting disk space imbalances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/datastore_cluster#sdrs_space_balance_automation_level DatastoreCluster#sdrs_space_balance_automation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datastore_cluster#sdrs_space_balance_automation_level DatastoreCluster#sdrs_space_balance_automation_level}
 
 ---
 
@@ -1705,7 +1705,7 @@ public readonly sdrsSpaceUtilizationThreshold: number;
 
 The threshold, in percent of used space, that storage DRS uses to make decisions to migrate VMs out of a datastore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/datastore_cluster#sdrs_space_utilization_threshold DatastoreCluster#sdrs_space_utilization_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datastore_cluster#sdrs_space_utilization_threshold DatastoreCluster#sdrs_space_utilization_threshold}
 
 ---
 
@@ -1719,7 +1719,7 @@ public readonly sdrsVmEvacuationAutomationLevel: string;
 
 Overrides the default automation settings when generating recommendations for datastore evacuation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/datastore_cluster#sdrs_vm_evacuation_automation_level DatastoreCluster#sdrs_vm_evacuation_automation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datastore_cluster#sdrs_vm_evacuation_automation_level DatastoreCluster#sdrs_vm_evacuation_automation_level}
 
 ---
 
@@ -1733,7 +1733,7 @@ public readonly tags: string[];
 
 A list of tag IDs to apply to this object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/resources/datastore_cluster#tags DatastoreCluster#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datastore_cluster#tags DatastoreCluster#tags}
 
 ---
 

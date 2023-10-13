@@ -1,6 +1,6 @@
 # `data_vsphere_folder`
 
-Refer to the Terraform Registory for docs: [`data_vsphere_folder`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/folder).
+Refer to the Terraform Registory for docs: [`data_vsphere_folder`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/folder).
 
 # `dataVsphereFolder` Submodule <a name="`dataVsphereFolder` Submodule" id="@cdktf/provider-vsphere.dataVsphereFolder"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_vsphere_folder`](https://regis
 
 ### DataVsphereFolder <a name="DataVsphereFolder" id="@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/folder vsphere_folder}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/folder vsphere_folder}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder.Initializer"></a>
 
@@ -571,7 +571,7 @@ new DataVsphereFolderConfig {
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolderConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolderConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolderConfig.property.path">Path</a></code> | <code>string</code> | The absolute path of the folder. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolderConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/folder#id DataVsphereFolder#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolderConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/folder#id DataVsphereFolder#id}. |
 
 ---
 
@@ -655,7 +655,7 @@ public string Path { get; set; }
 
 The absolute path of the folder.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/folder#path DataVsphereFolder#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/folder#path DataVsphereFolder#path}
 
 ---
 
@@ -667,7 +667,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.0/docs/data-sources/folder#id DataVsphereFolder#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/folder#id DataVsphereFolder#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
