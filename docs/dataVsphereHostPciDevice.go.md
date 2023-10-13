@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereHostPciDevice.DataVsphereHostPciDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspherehostpcidevice"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherehostpcidevice"
 
 datavspherehostpcidevice.NewDataVsphereHostPciDevice(scope Construct, id *string, config DataVsphereHostPciDeviceConfig) DataVsphereHostPciDevice
 ```
@@ -298,7 +298,7 @@ func ResetVendorId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereHostPciDevice.DataVsphereHostPciDevice.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspherehostpcidevice"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherehostpcidevice"
 
 datavspherehostpcidevice.DataVsphereHostPciDevice_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereHostPciDevice.DataVsphereHostPciDevice.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspherehostpcidevice"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherehostpcidevice"
 
 datavspherehostpcidevice.DataVsphereHostPciDevice_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datavspherehostpcidevice.DataVsphereHostPciDevice_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereHostPciDevice.DataVsphereHostPciDevice.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspherehostpcidevice"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherehostpcidevice"
 
 datavspherehostpcidevice.DataVsphereHostPciDevice_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -642,7 +642,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereHostPciDevice.DataVsphereHostPciDeviceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/datavspherehostpcidevice"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherehostpcidevice"
 
 &datavspherehostpcidevice.DataVsphereHostPciDeviceConfig {
 	Connection: interface{},

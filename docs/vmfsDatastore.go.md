@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/vmfsdatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vmfsdatastore"
 
 vmfsdatastore.NewVmfsDatastore(scope Construct, id *string, config VmfsDatastoreConfig) VmfsDatastore
 ```
@@ -305,7 +305,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/vmfsdatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vmfsdatastore"
 
 vmfsdatastore.VmfsDatastore_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/vmfsdatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vmfsdatastore"
 
 vmfsdatastore.VmfsDatastore_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ vmfsdatastore.VmfsDatastore_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/vmfsdatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vmfsdatastore"
 
 vmfsdatastore.VmfsDatastore_IsTerraformResource(x interface{}) *bool
 ```
@@ -803,7 +803,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v7/vmfsdatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vmfsdatastore"
 
 &vmfsdatastore.VmfsDatastoreConfig {
 	Connection: interface{},
