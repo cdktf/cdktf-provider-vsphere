@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/storagedrsvmoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/storagedrsvmoverride"
 
 storagedrsvmoverride.NewStorageDrsVmOverride(scope Construct, id *string, config StorageDrsVmOverrideConfig) StorageDrsVmOverride
 ```
@@ -360,7 +360,7 @@ func ResetSdrsIntraVmAffinity()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverride.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/storagedrsvmoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/storagedrsvmoverride"
 
 storagedrsvmoverride.StorageDrsVmOverride_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverride.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/storagedrsvmoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/storagedrsvmoverride"
 
 storagedrsvmoverride.StorageDrsVmOverride_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ storagedrsvmoverride.StorageDrsVmOverride_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverride.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/storagedrsvmoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/storagedrsvmoverride"
 
 storagedrsvmoverride.StorageDrsVmOverride_IsTerraformResource(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ storagedrsvmoverride.StorageDrsVmOverride_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverride.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/storagedrsvmoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/storagedrsvmoverride"
 
 storagedrsvmoverride.StorageDrsVmOverride_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -781,7 +781,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverrideConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/storagedrsvmoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/storagedrsvmoverride"
 
 &storagedrsvmoverride.StorageDrsVmOverrideConfig {
 	Connection: interface{},
