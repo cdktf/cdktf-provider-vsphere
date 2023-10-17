@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/compute_cluster
 // generated from terraform resource schema
 
@@ -548,6 +543,20 @@ export class ComputeCluster extends cdktf.TerraformResource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "vsphere_compute_cluster";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a ComputeCluster resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the ComputeCluster to import
+  * @param importFromId The id of the existing ComputeCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/compute_cluster#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the ComputeCluster to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vsphere_compute_cluster", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER
