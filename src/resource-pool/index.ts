@@ -121,6 +121,20 @@ export class ResourcePool extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "vsphere_resource_pool";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a ResourcePool resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the ResourcePool to import
+  * @param importFromId The id of the existing ResourcePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/resource_pool#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the ResourcePool to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vsphere_resource_pool", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========
