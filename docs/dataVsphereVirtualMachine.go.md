@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherevirtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevirtualmachine"
 
 datavspherevirtualmachine.NewDataVsphereVirtualMachine(scope Construct, id *string, config DataVsphereVirtualMachineConfig) DataVsphereVirtualMachine
 ```
@@ -655,13 +655,14 @@ func ResetVvtdEnabled()
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataVsphereVirtualMachine resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherevirtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevirtualmachine"
 
 datavspherevirtualmachine.DataVsphereVirtualMachine_IsConstruct(x interface{}) *bool
 ```
@@ -693,7 +694,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherevirtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevirtualmachine"
 
 datavspherevirtualmachine.DataVsphereVirtualMachine_IsTerraformElement(x interface{}) *bool
 ```
@@ -707,7 +708,7 @@ datavspherevirtualmachine.DataVsphereVirtualMachine_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherevirtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevirtualmachine"
 
 datavspherevirtualmachine.DataVsphereVirtualMachine_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -715,6 +716,50 @@ datavspherevirtualmachine.DataVsphereVirtualMachine_IsTerraformDataSource(x inte
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevirtualmachine"
+
+datavspherevirtualmachine.DataVsphereVirtualMachine_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataVsphereVirtualMachine resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataVsphereVirtualMachine to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataVsphereVirtualMachine that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/virtual_machine#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataVsphereVirtualMachine to import is found.
 
 ---
 
@@ -2171,7 +2216,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherevirtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevirtualmachine"
 
 &datavspherevirtualmachine.DataVsphereVirtualMachineConfig {
 	Connection: interface{},
@@ -2232,7 +2277,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherevirtual
 	SyncTimeWithHostPeriodically: interface{},
 	ToolsUpgradePolicy: *string,
 	Uuid: *string,
-	Vapp: github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8.dataVsphereVirtualMachine.DataVsphereVirtualMachineVapp,
+	Vapp: github.com/cdktf/cdktf-provider-vsphere-go/vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineVapp,
 	VbsEnabled: interface{},
 	VvtdEnabled: interface{},
 }
@@ -3150,7 +3195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineDisks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherevirtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevirtualmachine"
 
 &datavspherevirtualmachine.DataVsphereVirtualMachineDisks {
 
@@ -3163,7 +3208,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherevirtual
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineNetworkInterfaces.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherevirtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevirtualmachine"
 
 &datavspherevirtualmachine.DataVsphereVirtualMachineNetworkInterfaces {
 
@@ -3176,7 +3221,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherevirtual
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineVapp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherevirtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevirtualmachine"
 
 &datavspherevirtualmachine.DataVsphereVirtualMachineVapp {
 	Properties: *map[string]*string,
@@ -3214,7 +3259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineDisksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherevirtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevirtualmachine"
 
 datavspherevirtualmachine.NewDataVsphereVirtualMachineDisksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataVsphereVirtualMachineDisksList
 ```
@@ -3346,7 +3391,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineDisksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherevirtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevirtualmachine"
 
 datavspherevirtualmachine.NewDataVsphereVirtualMachineDisksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataVsphereVirtualMachineDisksOutputReference
 ```
@@ -3668,7 +3713,7 @@ func InternalValue() DataVsphereVirtualMachineDisks
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineNetworkInterfacesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherevirtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevirtualmachine"
 
 datavspherevirtualmachine.NewDataVsphereVirtualMachineNetworkInterfacesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataVsphereVirtualMachineNetworkInterfacesList
 ```
@@ -3800,7 +3845,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineNetworkInterfacesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherevirtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevirtualmachine"
 
 datavspherevirtualmachine.NewDataVsphereVirtualMachineNetworkInterfacesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataVsphereVirtualMachineNetworkInterfacesOutputReference
 ```
@@ -4144,7 +4189,7 @@ func InternalValue() DataVsphereVirtualMachineNetworkInterfaces
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineVappOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherevirtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevirtualmachine"
 
 datavspherevirtualmachine.NewDataVsphereVirtualMachineVappOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataVsphereVirtualMachineVappOutputReference
 ```

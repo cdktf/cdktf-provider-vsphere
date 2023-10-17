@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
 
 virtualmachine.NewVirtualMachine(scope Construct, id *string, config VirtualMachineConfig) VirtualMachine
 ```
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
@@ -69,7 +70,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.importFrom">ImportFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.putCdrom">PutCdrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.putClone">PutClone</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.putDisk">PutDisk</a></code> | *No description.* |
@@ -216,6 +219,22 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.addMoveTarget"></a>
+
+```go
+func AddMoveTarget(moveTarget *string)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The string move target that will correspond to this resource.
+
+---
+
 ##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.getAnyMapAttribute"></a>
 
 ```go
@@ -324,6 +343,24 @@ func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 
 ---
 
+##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.importFrom"></a>
+
+```go
+func ImportFrom(id *string, provider TerraformProvider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.importFrom.parameter.id"></a>
+
+- *Type:* *string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.importFrom.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
 ##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.interpolationForAttribute"></a>
 
 ```go
@@ -333,6 +370,30 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
+
+---
+
+##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.moveTo"></a>
+
+```go
+func MoveTo(moveTarget *string, index interface{})
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.moveTo.parameter.moveTarget"></a>
+
+- *Type:* *string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.moveTo.parameter.index"></a>
+
+- *Type:* interface{}
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
 ---
 
@@ -853,13 +914,14 @@ func ResetWaitForGuestNetTimeout()
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a VirtualMachine resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
 
 virtualmachine.VirtualMachine_IsConstruct(x interface{}) *bool
 ```
@@ -891,7 +953,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
 
 virtualmachine.VirtualMachine_IsTerraformElement(x interface{}) *bool
 ```
@@ -905,7 +967,7 @@ virtualmachine.VirtualMachine_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
 
 virtualmachine.VirtualMachine_IsTerraformResource(x interface{}) *bool
 ```
@@ -913,6 +975,50 @@ virtualmachine.VirtualMachine_IsTerraformResource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
+
+virtualmachine.VirtualMachine_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a VirtualMachine resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the VirtualMachine to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing VirtualMachine that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the VirtualMachine to import is found.
 
 ---
 
@@ -2875,7 +2981,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
 
 &virtualmachine.VirtualMachineCdrom {
 	ClientDevice: interface{},
@@ -2941,11 +3047,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineClone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
 
 &virtualmachine.VirtualMachineClone {
 	TemplateUuid: *string,
-	Customize: github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8.virtualMachine.VirtualMachineCloneCustomize,
+	Customize: github.com/cdktf/cdktf-provider-vsphere-go/vsphere.virtualMachine.VirtualMachineCloneCustomize,
 	LinkedClone: interface{},
 	OvfNetworkMap: *map[string]*string,
 	OvfStorageMap: *map[string]*string,
@@ -3057,17 +3163,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomize.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
 
 &virtualmachine.VirtualMachineCloneCustomize {
 	DnsServerList: *[]*string,
 	DnsSuffixList: *[]*string,
 	Ipv4Gateway: *string,
 	Ipv6Gateway: *string,
-	LinuxOptions: github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8.virtualMachine.VirtualMachineCloneCustomizeLinuxOptions,
+	LinuxOptions: github.com/cdktf/cdktf-provider-vsphere-go/vsphere.virtualMachine.VirtualMachineCloneCustomizeLinuxOptions,
 	NetworkInterface: interface{},
 	Timeout: *f64,
-	WindowsOptions: github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8.virtualMachine.VirtualMachineCloneCustomizeWindowsOptions,
+	WindowsOptions: github.com/cdktf/cdktf-provider-vsphere-go/vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptions,
 	WindowsSysprepText: *string,
 }
 ```
@@ -3225,7 +3331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeLinuxOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
 
 &virtualmachine.VirtualMachineCloneCustomizeLinuxOptions {
 	Domain: *string,
@@ -3323,7 +3429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterface.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
 
 &virtualmachine.VirtualMachineCloneCustomizeNetworkInterface {
 	DnsDomain: *string,
@@ -3437,7 +3543,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
 
 &virtualmachine.VirtualMachineCloneCustomizeWindowsOptions {
 	ComputerName: *string,
@@ -3663,7 +3769,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
 
 &virtualmachine.VirtualMachineConfig {
 	Connection: interface{},
@@ -3681,7 +3787,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
 	BootRetryDelay: *f64,
 	BootRetryEnabled: interface{},
 	Cdrom: interface{},
-	Clone: github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8.virtualMachine.VirtualMachineClone,
+	Clone: github.com/cdktf/cdktf-provider-vsphere-go/vsphere.virtualMachine.VirtualMachineClone,
 	CpuHotAddEnabled: interface{},
 	CpuHotRemoveEnabled: interface{},
 	CpuLimit: *f64,
@@ -3722,7 +3828,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
 	NetworkInterface: interface{},
 	NumCoresPerSocket: *f64,
 	NumCpus: *f64,
-	OvfDeploy: github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8.virtualMachine.VirtualMachineOvfDeploy,
+	OvfDeploy: github.com/cdktf/cdktf-provider-vsphere-go/vsphere.virtualMachine.VirtualMachineOvfDeploy,
 	PciDeviceId: *[]*string,
 	PoweronTimeout: *f64,
 	ReplaceTrigger: *string,
@@ -3742,7 +3848,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
 	SyncTimeWithHostPeriodically: interface{},
 	Tags: *[]*string,
 	ToolsUpgradePolicy: *string,
-	Vapp: github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8.virtualMachine.VirtualMachineVapp,
+	Vapp: github.com/cdktf/cdktf-provider-vsphere-go/vsphere.virtualMachine.VirtualMachineVapp,
 	VbsEnabled: interface{},
 	VvtdEnabled: interface{},
 	WaitForGuestIpTimeout: *f64,
@@ -4990,7 +5096,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
 
 &virtualmachine.VirtualMachineDisk {
 	Label: *string,
@@ -5304,7 +5410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
 
 &virtualmachine.VirtualMachineNetworkInterface {
 	NetworkId: *string,
@@ -5466,7 +5572,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeploy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
 
 &virtualmachine.VirtualMachineOvfDeploy {
 	AllowUnverifiedSslCert: interface{},
@@ -5630,7 +5736,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineVapp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
 
 &virtualmachine.VirtualMachineVapp {
 	Properties: *map[string]*string,
@@ -5668,7 +5774,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
 
 virtualmachine.NewVirtualMachineCdromList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VirtualMachineCdromList
 ```
@@ -5811,7 +5917,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
 
 virtualmachine.NewVirtualMachineCdromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VirtualMachineCdromOutputReference
 ```
@@ -6187,7 +6293,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeLinuxOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
 
 virtualmachine.NewVirtualMachineCloneCustomizeLinuxOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineCloneCustomizeLinuxOptionsOutputReference
 ```
@@ -6567,7 +6673,7 @@ func InternalValue() VirtualMachineCloneCustomizeLinuxOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterfaceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
 
 virtualmachine.NewVirtualMachineCloneCustomizeNetworkInterfaceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VirtualMachineCloneCustomizeNetworkInterfaceList
 ```
@@ -6710,7 +6816,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterfaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
 
 virtualmachine.NewVirtualMachineCloneCustomizeNetworkInterfaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VirtualMachineCloneCustomizeNetworkInterfaceOutputReference
 ```
@@ -7151,7 +7257,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
 
 virtualmachine.NewVirtualMachineCloneCustomizeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineCloneCustomizeOutputReference
 ```
@@ -7700,7 +7806,7 @@ func InternalValue() VirtualMachineCloneCustomize
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
 
 virtualmachine.NewVirtualMachineCloneCustomizeWindowsOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineCloneCustomizeWindowsOptionsOutputReference
 ```
@@ -8319,7 +8425,7 @@ func InternalValue() VirtualMachineCloneCustomizeWindowsOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
 
 virtualmachine.NewVirtualMachineCloneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineCloneOutputReference
 ```
@@ -8748,7 +8854,7 @@ func InternalValue() VirtualMachineClone
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
 
 virtualmachine.NewVirtualMachineDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VirtualMachineDiskList
 ```
@@ -8891,7 +8997,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
 
 virtualmachine.NewVirtualMachineDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VirtualMachineDiskOutputReference
 ```
@@ -9706,7 +9812,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
 
 virtualmachine.NewVirtualMachineNetworkInterfaceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VirtualMachineNetworkInterfaceList
 ```
@@ -9849,7 +9955,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
 
 virtualmachine.NewVirtualMachineNetworkInterfaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VirtualMachineNetworkInterfaceOutputReference
 ```
@@ -10392,7 +10498,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeployOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
 
 virtualmachine.NewVirtualMachineOvfDeployOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineOvfDeployOutputReference
 ```
@@ -10902,7 +11008,7 @@ func InternalValue() VirtualMachineOvfDeploy
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineVappOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/virtualmachine"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachine"
 
 virtualmachine.NewVirtualMachineVappOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VirtualMachineVappOutputReference
 ```

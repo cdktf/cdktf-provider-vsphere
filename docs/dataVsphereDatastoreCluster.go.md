@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereDatastoreCluster.DataVsphereDatastoreCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspheredatastorecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredatastorecluster"
 
 datavspheredatastorecluster.NewDataVsphereDatastoreCluster(scope Construct, id *string, config DataVsphereDatastoreClusterConfig) DataVsphereDatastoreCluster
 ```
@@ -278,13 +278,14 @@ func ResetId()
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastoreCluster.DataVsphereDatastoreCluster.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastoreCluster.DataVsphereDatastoreCluster.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastoreCluster.DataVsphereDatastoreCluster.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastoreCluster.DataVsphereDatastoreCluster.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataVsphereDatastoreCluster resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereDatastoreCluster.DataVsphereDatastoreCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspheredatastorecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredatastorecluster"
 
 datavspheredatastorecluster.DataVsphereDatastoreCluster_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereDatastoreCluster.DataVsphereDatastoreCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspheredatastorecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredatastorecluster"
 
 datavspheredatastorecluster.DataVsphereDatastoreCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +331,7 @@ datavspheredatastorecluster.DataVsphereDatastoreCluster_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereDatastoreCluster.DataVsphereDatastoreCluster.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspheredatastorecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredatastorecluster"
 
 datavspheredatastorecluster.DataVsphereDatastoreCluster_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,6 +339,50 @@ datavspheredatastorecluster.DataVsphereDatastoreCluster_IsTerraformDataSource(x 
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereDatastoreCluster.DataVsphereDatastoreCluster.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.dataVsphereDatastoreCluster.DataVsphereDatastoreCluster.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredatastorecluster"
+
+datavspheredatastorecluster.DataVsphereDatastoreCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataVsphereDatastoreCluster resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-vsphere.dataVsphereDatastoreCluster.DataVsphereDatastoreCluster.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-vsphere.dataVsphereDatastoreCluster.DataVsphereDatastoreCluster.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataVsphereDatastoreCluster to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-vsphere.dataVsphereDatastoreCluster.DataVsphereDatastoreCluster.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataVsphereDatastoreCluster that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/datastore_cluster#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vsphere.dataVsphereDatastoreCluster.DataVsphereDatastoreCluster.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataVsphereDatastoreCluster to import is found.
 
 ---
 
@@ -573,7 +618,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereDatastoreCluster.DataVsphereDatastoreClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspheredatastorecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredatastorecluster"
 
 &datavspheredatastorecluster.DataVsphereDatastoreClusterConfig {
 	Connection: interface{},

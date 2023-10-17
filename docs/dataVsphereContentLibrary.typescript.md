@@ -271,6 +271,7 @@ public resetId(): void
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibrary.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibrary.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibrary.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibrary.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DataVsphereContentLibrary resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -331,6 +332,50 @@ dataVsphereContentLibrary.DataVsphereContentLibrary.isTerraformDataSource(x: any
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibrary.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* any
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibrary.generateConfigForImport"></a>
+
+```typescript
+import { dataVsphereContentLibrary } from '@cdktf/provider-vsphere'
+
+dataVsphereContentLibrary.DataVsphereContentLibrary.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
+```
+
+Generates CDKTF code for importing a DataVsphereContentLibrary resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibrary.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibrary.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the DataVsphereContentLibrary to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibrary.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing DataVsphereContentLibrary that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/content_library#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vsphere.dataVsphereContentLibrary.DataVsphereContentLibrary.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataVsphereContentLibrary to import is found.
 
 ---
 
