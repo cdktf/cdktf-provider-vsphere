@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.haVmOverride.HaVmOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/havmoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/havmoverride"
 
 havmoverride.NewHaVmOverride(scope Construct, id *string, config HaVmOverrideConfig) HaVmOverride
 ```
@@ -430,7 +430,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.haVmOverride.HaVmOverride.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/havmoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/havmoverride"
 
 havmoverride.HaVmOverride_IsConstruct(x interface{}) *bool
 ```
@@ -462,7 +462,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.haVmOverride.HaVmOverride.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/havmoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/havmoverride"
 
 havmoverride.HaVmOverride_IsTerraformElement(x interface{}) *bool
 ```
@@ -476,7 +476,7 @@ havmoverride.HaVmOverride_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.haVmOverride.HaVmOverride.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/havmoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/havmoverride"
 
 havmoverride.HaVmOverride_IsTerraformResource(x interface{}) *bool
 ```
@@ -490,7 +490,7 @@ havmoverride.HaVmOverride_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.haVmOverride.HaVmOverride.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/havmoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/havmoverride"
 
 havmoverride.HaVmOverride_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1071,7 +1071,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.haVmOverride.HaVmOverrideConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/havmoverride"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/havmoverride"
 
 &havmoverride.HaVmOverrideConfig {
 	Connection: interface{},

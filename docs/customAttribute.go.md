@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.customAttribute.CustomAttribute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/customattribute"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/customattribute"
 
 customattribute.NewCustomAttribute(scope Construct, id *string, config CustomAttributeConfig) CustomAttribute
 ```
@@ -346,7 +346,7 @@ func ResetManagedObjectType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.customAttribute.CustomAttribute.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/customattribute"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/customattribute"
 
 customattribute.CustomAttribute_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.customAttribute.CustomAttribute.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/customattribute"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/customattribute"
 
 customattribute.CustomAttribute_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ customattribute.CustomAttribute_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.customAttribute.CustomAttribute.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/customattribute"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/customattribute"
 
 customattribute.CustomAttribute_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ customattribute.CustomAttribute_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.customAttribute.CustomAttribute.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/customattribute"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/customattribute"
 
 customattribute.CustomAttribute_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -701,7 +701,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.customAttribute.CustomAttributeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/customattribute"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/customattribute"
 
 &customattribute.CustomAttributeConfig {
 	Connection: interface{},
