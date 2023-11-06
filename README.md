@@ -1,7 +1,9 @@
 
-# Terraform CDK vsphere Provider ~> 2.2
+# Terraform CDK vsphere Provider tracks ~> 2.2
 
 This repo builds and publishes the Terraform vsphere Provider bindings for [CDK for Terraform](https://cdk.tf).
+
+Is based directly on vsphere 2.5.1
 
 ## Available Packages
 
@@ -61,7 +63,7 @@ This project is explicitly not tracking the Terraform vsphere Provider version 1
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform vsphere Provider](https://registry.terraform.io/providers/hashicorp/vsphere/2.2.0)
+- [Terraform vsphere Provider](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1)
     - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-vsphere/releases)
 - [Terraform Engine](https://terraform.io)
 
