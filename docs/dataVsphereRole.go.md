@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereRole.DataVsphereRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavsphererole"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphererole"
 
 datavsphererole.NewDataVsphereRole(scope Construct, id *string, config DataVsphereRoleConfig) DataVsphereRole
 ```
@@ -299,7 +299,7 @@ func ResetRolePrivileges()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereRole.DataVsphereRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavsphererole"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphererole"
 
 datavsphererole.DataVsphereRole_IsConstruct(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereRole.DataVsphereRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavsphererole"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphererole"
 
 datavsphererole.DataVsphereRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ datavsphererole.DataVsphereRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereRole.DataVsphereRole.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavsphererole"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphererole"
 
 datavsphererole.DataVsphereRole_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -359,7 +359,7 @@ datavsphererole.DataVsphereRole_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.dataVsphereRole.DataVsphereRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavsphererole"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphererole"
 
 datavsphererole.DataVsphereRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -676,7 +676,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereRole.DataVsphereRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavsphererole"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphererole"
 
 &datavsphererole.DataVsphereRoleConfig {
 	Connection: interface{},
