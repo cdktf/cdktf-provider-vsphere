@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherehostthumbprint"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostthumbprint"
 
 datavspherehostthumbprint.NewDataVsphereHostThumbprint(scope Construct, id *string, config DataVsphereHostThumbprintConfig) DataVsphereHostThumbprint
 ```
@@ -292,7 +292,7 @@ func ResetPort()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprint.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherehostthumbprint"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostthumbprint"
 
 datavspherehostthumbprint.DataVsphereHostThumbprint_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherehostthumbprint"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostthumbprint"
 
 datavspherehostthumbprint.DataVsphereHostThumbprint_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datavspherehostthumbprint.DataVsphereHostThumbprint_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprint.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherehostthumbprint"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostthumbprint"
 
 datavspherehostthumbprint.DataVsphereHostThumbprint_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ datavspherehostthumbprint.DataVsphereHostThumbprint_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprint.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherehostthumbprint"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostthumbprint"
 
 datavspherehostthumbprint.DataVsphereHostThumbprint_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -647,7 +647,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprintConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherehostthumbprint"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostthumbprint"
 
 &datavspherehostthumbprint.DataVsphereHostThumbprintConfig {
 	Connection: interface{},
