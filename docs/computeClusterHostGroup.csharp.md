@@ -1,7 +1,3 @@
-# `vsphere_compute_cluster_host_group`
-
-Refer to the Terraform Registory for docs: [`vsphere_compute_cluster_host_group`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/compute_cluster_host_group).
-
 # `computeClusterHostGroup` Submodule <a name="`computeClusterHostGroup` Submodule" id="@cdktf/provider-vsphere.computeClusterHostGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

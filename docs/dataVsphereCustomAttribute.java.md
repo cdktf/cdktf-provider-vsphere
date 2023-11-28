@@ -1,7 +1,3 @@
-# `data_vsphere_custom_attribute`
-
-Refer to the Terraform Registory for docs: [`data_vsphere_custom_attribute`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/custom_attribute).
-
 # `dataVsphereCustomAttribute` Submodule <a name="`dataVsphereCustomAttribute` Submodule" id="@cdktf/provider-vsphere.dataVsphereCustomAttribute"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

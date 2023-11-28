@@ -1,7 +1,3 @@
-# `vsphere_host_virtual_switch`
-
-Refer to the Terraform Registory for docs: [`vsphere_host_virtual_switch`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_virtual_switch).
-
 # `hostVirtualSwitch` Submodule <a name="`hostVirtualSwitch` Submodule" id="@cdktf/provider-vsphere.hostVirtualSwitch"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/hostvirtualswitch"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/hostvirtualswitch"
 
 hostvirtualswitch.NewHostVirtualSwitch(scope Construct, id *string, config HostVirtualSwitchConfig) HostVirtualSwitch
 ```
@@ -458,7 +454,7 @@ func ResetTeamingPolicy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitch.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/hostvirtualswitch"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/hostvirtualswitch"
 
 hostvirtualswitch.HostVirtualSwitch_IsConstruct(x interface{}) *bool
 ```
@@ -490,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitch.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/hostvirtualswitch"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/hostvirtualswitch"
 
 hostvirtualswitch.HostVirtualSwitch_IsTerraformElement(x interface{}) *bool
 ```
@@ -504,7 +500,7 @@ hostvirtualswitch.HostVirtualSwitch_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitch.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/hostvirtualswitch"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/hostvirtualswitch"
 
 hostvirtualswitch.HostVirtualSwitch_IsTerraformResource(x interface{}) *bool
 ```
@@ -518,7 +514,7 @@ hostvirtualswitch.HostVirtualSwitch_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitch.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/hostvirtualswitch"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/hostvirtualswitch"
 
 hostvirtualswitch.HostVirtualSwitch_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1231,7 +1227,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.hostVirtualSwitch.HostVirtualSwitchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/hostvirtualswitch"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/hostvirtualswitch"
 
 &hostvirtualswitch.HostVirtualSwitchConfig {
 	Connection: interface{},

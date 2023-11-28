@@ -1,7 +1,3 @@
-# `data_vsphere_datastore_cluster`
-
-Refer to the Terraform Registory for docs: [`data_vsphere_datastore_cluster`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/datastore_cluster).
-
 # `dataVsphereDatastoreCluster` Submodule <a name="`dataVsphereDatastoreCluster` Submodule" id="@cdktf/provider-vsphere.dataVsphereDatastoreCluster"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

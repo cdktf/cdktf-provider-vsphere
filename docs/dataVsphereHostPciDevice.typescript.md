@@ -1,7 +1,3 @@
-# `data_vsphere_host_pci_device`
-
-Refer to the Terraform Registory for docs: [`data_vsphere_host_pci_device`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/host_pci_device).
-
 # `dataVsphereHostPciDevice` Submodule <a name="`dataVsphereHostPciDevice` Submodule" id="@cdktf/provider-vsphere.dataVsphereHostPciDevice"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

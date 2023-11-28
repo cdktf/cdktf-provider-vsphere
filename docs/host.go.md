@@ -1,7 +1,3 @@
-# `vsphere_host`
-
-Refer to the Terraform Registory for docs: [`vsphere_host`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host).
-
 # `host` Submodule <a name="`host` Submodule" id="@cdktf/provider-vsphere.host"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.host.Host.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/host"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/host"
 
 host.NewHost(scope Construct, id *string, config HostConfig) Host
 ```
@@ -416,7 +412,7 @@ func ResetThumbprint()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.host.Host.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/host"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/host"
 
 host.Host_IsConstruct(x interface{}) *bool
 ```
@@ -448,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.host.Host.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/host"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/host"
 
 host.Host_IsTerraformElement(x interface{}) *bool
 ```
@@ -462,7 +458,7 @@ host.Host_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.host.Host.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/host"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/host"
 
 host.Host_IsTerraformResource(x interface{}) *bool
 ```
@@ -476,7 +472,7 @@ host.Host_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.host.Host.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/host"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/host"
 
 host.Host_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1035,7 +1031,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.host.HostConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/host"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/host"
 
 &host.HostConfig {
 	Connection: interface{},

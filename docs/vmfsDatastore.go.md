@@ -1,7 +1,3 @@
-# `vsphere_vmfs_datastore`
-
-Refer to the Terraform Registory for docs: [`vsphere_vmfs_datastore`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/vmfs_datastore).
-
 # `vmfsDatastore` Submodule <a name="`vmfsDatastore` Submodule" id="@cdktf/provider-vsphere.vmfsDatastore"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vmfsdatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vmfsdatastore"
 
 vmfsdatastore.NewVmfsDatastore(scope Construct, id *string, config VmfsDatastoreConfig) VmfsDatastore
 ```
@@ -367,7 +363,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vmfsdatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vmfsdatastore"
 
 vmfsdatastore.VmfsDatastore_IsConstruct(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vmfsdatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vmfsdatastore"
 
 vmfsdatastore.VmfsDatastore_IsTerraformElement(x interface{}) *bool
 ```
@@ -413,7 +409,7 @@ vmfsdatastore.VmfsDatastore_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vmfsdatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vmfsdatastore"
 
 vmfsdatastore.VmfsDatastore_IsTerraformResource(x interface{}) *bool
 ```
@@ -427,7 +423,7 @@ vmfsdatastore.VmfsDatastore_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vmfsdatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vmfsdatastore"
 
 vmfsdatastore.VmfsDatastore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -909,7 +905,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vmfsdatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vmfsdatastore"
 
 &vmfsdatastore.VmfsDatastoreConfig {
 	Connection: interface{},

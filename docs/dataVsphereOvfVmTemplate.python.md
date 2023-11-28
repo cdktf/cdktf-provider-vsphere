@@ -1,7 +1,3 @@
-# `data_vsphere_ovf_vm_template`
-
-Refer to the Terraform Registory for docs: [`data_vsphere_ovf_vm_template`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/ovf_vm_template).
-
 # `dataVsphereOvfVmTemplate` Submodule <a name="`dataVsphereOvfVmTemplate` Submodule" id="@cdktf/provider-vsphere.dataVsphereOvfVmTemplate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

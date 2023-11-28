@@ -1,7 +1,3 @@
-# `data_vsphere_network`
-
-Refer to the Terraform Registory for docs: [`data_vsphere_network`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/network).
-
 # `dataVsphereNetwork` Submodule <a name="`dataVsphereNetwork` Submodule" id="@cdktf/provider-vsphere.dataVsphereNetwork"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

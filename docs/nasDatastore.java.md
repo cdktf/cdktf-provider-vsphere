@@ -1,7 +1,3 @@
-# `vsphere_nas_datastore`
-
-Refer to the Terraform Registory for docs: [`vsphere_nas_datastore`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/nas_datastore).
-
 # `nasDatastore` Submodule <a name="`nasDatastore` Submodule" id="@cdktf/provider-vsphere.nasDatastore"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
