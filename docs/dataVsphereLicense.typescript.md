@@ -1,7 +1,3 @@
-# `data_vsphere_license`
-
-Refer to the Terraform Registory for docs: [`data_vsphere_license`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/license).
-
 # `dataVsphereLicense` Submodule <a name="`dataVsphereLicense` Submodule" id="@cdktf/provider-vsphere.dataVsphereLicense"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

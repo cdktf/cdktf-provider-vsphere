@@ -1,7 +1,3 @@
-# `data_vsphere_host_thumbprint`
-
-Refer to the Terraform Registory for docs: [`data_vsphere_host_thumbprint`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/host_thumbprint).
-
 # `dataVsphereHostThumbprint` Submodule <a name="`dataVsphereHostThumbprint` Submodule" id="@cdktf/provider-vsphere.dataVsphereHostThumbprint"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

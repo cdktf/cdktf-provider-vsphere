@@ -1,7 +1,3 @@
-# `data_vsphere_folder`
-
-Refer to the Terraform Registory for docs: [`data_vsphere_folder`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/folder).
-
 # `dataVsphereFolder` Submodule <a name="`dataVsphereFolder` Submodule" id="@cdktf/provider-vsphere.dataVsphereFolder"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

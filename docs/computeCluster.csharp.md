@@ -1,7 +1,3 @@
-# `vsphere_compute_cluster`
-
-Refer to the Terraform Registory for docs: [`vsphere_compute_cluster`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/compute_cluster).
-
 # `computeCluster` Submodule <a name="`computeCluster` Submodule" id="@cdktf/provider-vsphere.computeCluster"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

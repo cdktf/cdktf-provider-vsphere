@@ -1,7 +1,3 @@
-# `vsphere_vnic`
-
-Refer to the Terraform Registory for docs: [`vsphere_vnic`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/vnic).
-
 # `vnic` Submodule <a name="`vnic` Submodule" id="@cdktf/provider-vsphere.vnic"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

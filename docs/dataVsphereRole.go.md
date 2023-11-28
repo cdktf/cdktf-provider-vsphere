@@ -1,7 +1,3 @@
-# `data_vsphere_role`
-
-Refer to the Terraform Registory for docs: [`data_vsphere_role`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/role).
-
 # `dataVsphereRole` Submodule <a name="`dataVsphereRole` Submodule" id="@cdktf/provider-vsphere.dataVsphereRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

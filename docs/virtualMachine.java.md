@@ -1,7 +1,3 @@
-# `vsphere_virtual_machine`
-
-Refer to the Terraform Registory for docs: [`vsphere_virtual_machine`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine).
-
 # `virtualMachine` Submodule <a name="`virtualMachine` Submodule" id="@cdktf/provider-vsphere.virtualMachine"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

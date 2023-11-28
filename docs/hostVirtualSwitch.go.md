@@ -1,7 +1,3 @@
-# `vsphere_host_virtual_switch`
-
-Refer to the Terraform Registory for docs: [`vsphere_host_virtual_switch`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_virtual_switch).
-
 # `hostVirtualSwitch` Submodule <a name="`hostVirtualSwitch` Submodule" id="@cdktf/provider-vsphere.hostVirtualSwitch"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

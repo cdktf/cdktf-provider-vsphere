@@ -1,7 +1,3 @@
-# `vsphere_drs_vm_override`
-
-Refer to the Terraform Registory for docs: [`vsphere_drs_vm_override`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/drs_vm_override).
-
 # `drsVmOverride` Submodule <a name="`drsVmOverride` Submodule" id="@cdktf/provider-vsphere.drsVmOverride"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_vsphere_tag_category`
-
-Refer to the Terraform Registory for docs: [`data_vsphere_tag_category`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/tag_category).
-
 # `dataVsphereTagCategory` Submodule <a name="`dataVsphereTagCategory` Submodule" id="@cdktf/provider-vsphere.dataVsphereTagCategory"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

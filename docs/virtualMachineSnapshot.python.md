@@ -1,7 +1,3 @@
-# `vsphere_virtual_machine_snapshot`
-
-Refer to the Terraform Registory for docs: [`vsphere_virtual_machine_snapshot`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine_snapshot).
-
 # `virtualMachineSnapshot` Submodule <a name="`virtualMachineSnapshot` Submodule" id="@cdktf/provider-vsphere.virtualMachineSnapshot"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

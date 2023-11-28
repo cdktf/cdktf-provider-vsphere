@@ -1,7 +1,3 @@
-# `vsphere_resource_pool`
-
-Refer to the Terraform Registory for docs: [`vsphere_resource_pool`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/resource_pool).
-
 # `resourcePool` Submodule <a name="`resourcePool` Submodule" id="@cdktf/provider-vsphere.resourcePool"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

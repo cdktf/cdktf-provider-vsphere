@@ -1,7 +1,3 @@
-# `data_vsphere_tag`
-
-Refer to the Terraform Registory for docs: [`data_vsphere_tag`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/tag).
-
 # `dataVsphereTag` Submodule <a name="`dataVsphereTag` Submodule" id="@cdktf/provider-vsphere.dataVsphereTag"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

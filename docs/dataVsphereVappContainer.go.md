@@ -1,7 +1,3 @@
-# `data_vsphere_vapp_container`
-
-Refer to the Terraform Registory for docs: [`data_vsphere_vapp_container`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/vapp_container).
-
 # `dataVsphereVappContainer` Submodule <a name="`dataVsphereVappContainer` Submodule" id="@cdktf/provider-vsphere.dataVsphereVappContainer"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

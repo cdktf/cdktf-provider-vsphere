@@ -1,7 +1,3 @@
-# `vsphere_compute_cluster_vm_anti_affinity_rule`
-
-Refer to the Terraform Registory for docs: [`vsphere_compute_cluster_vm_anti_affinity_rule`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/compute_cluster_vm_anti_affinity_rule).
-
 # `computeClusterVmAntiAffinityRule` Submodule <a name="`computeClusterVmAntiAffinityRule` Submodule" id="@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

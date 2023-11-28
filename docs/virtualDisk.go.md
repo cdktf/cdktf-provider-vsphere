@@ -1,7 +1,3 @@
-# `vsphere_virtual_disk`
-
-Refer to the Terraform Registory for docs: [`vsphere_virtual_disk`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_disk).
-
 # `virtualDisk` Submodule <a name="`virtualDisk` Submodule" id="@cdktf/provider-vsphere.virtualDisk"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
