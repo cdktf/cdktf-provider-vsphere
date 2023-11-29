@@ -4,7 +4,7 @@
 
 ### VirtualMachine <a name="VirtualMachine" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine vsphere_virtual_machine}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine vsphere_virtual_machine}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer"></a>
 
@@ -1006,7 +1006,7 @@ The construct id used in the generated config for the VirtualMachine to import.
 
 The id of the existing VirtualMachine that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -3002,7 +3002,7 @@ public readonly clientDevice: boolean | IResolvable;
 
 Indicates whether the device should be mapped to a remote client device.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#client_device VirtualMachine#client_device}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#client_device VirtualMachine#client_device}
 
 ---
 
@@ -3016,7 +3016,7 @@ public readonly datastoreId: string;
 
 The datastore ID the ISO is located on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#datastore_id VirtualMachine#datastore_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#datastore_id VirtualMachine#datastore_id}
 
 ---
 
@@ -3030,7 +3030,7 @@ public readonly path: string;
 
 The path to the ISO file on the datastore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#path VirtualMachine#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#path VirtualMachine#path}
 
 ---
 
@@ -3049,6 +3049,7 @@ const virtualMachineClone: virtualMachine.VirtualMachineClone = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineClone.property.templateUuid">templateUuid</a></code> | <code>string</code> | The UUID of the source virtual machine or template. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineClone.property.customizationSpec">customizationSpec</a></code> | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpec">VirtualMachineCloneCustomizationSpec</a></code> | customization_spec block. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineClone.property.customize">customize</a></code> | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomize">VirtualMachineCloneCustomize</a></code> | customize block. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineClone.property.linkedClone">linkedClone</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not to create a linked clone when cloning. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineClone.property.ovfNetworkMap">ovfNetworkMap</a></code> | <code>{[ key: string ]: string}</code> | Mapping of ovf networks to the networks to use in vSphere. |
@@ -3067,7 +3068,21 @@ public readonly templateUuid: string;
 
 The UUID of the source virtual machine or template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#template_uuid VirtualMachine#template_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#template_uuid VirtualMachine#template_uuid}
+
+---
+
+##### `customizationSpec`<sup>Optional</sup> <a name="customizationSpec" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineClone.property.customizationSpec"></a>
+
+```typescript
+public readonly customizationSpec: VirtualMachineCloneCustomizationSpec;
+```
+
+- *Type:* <a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpec">VirtualMachineCloneCustomizationSpec</a>
+
+customization_spec block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#customization_spec VirtualMachine#customization_spec}
 
 ---
 
@@ -3081,7 +3096,7 @@ public readonly customize: VirtualMachineCloneCustomize;
 
 customize block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#customize VirtualMachine#customize}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#customize VirtualMachine#customize}
 
 ---
 
@@ -3097,7 +3112,7 @@ Whether or not to create a linked clone when cloning.
 
 When this option is used, the source VM must have a single snapshot associated with it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#linked_clone VirtualMachine#linked_clone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#linked_clone VirtualMachine#linked_clone}
 
 ---
 
@@ -3111,7 +3126,7 @@ public readonly ovfNetworkMap: {[ key: string ]: string};
 
 Mapping of ovf networks to the networks to use in vSphere.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#ovf_network_map VirtualMachine#ovf_network_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#ovf_network_map VirtualMachine#ovf_network_map}
 
 ---
 
@@ -3125,7 +3140,7 @@ public readonly ovfStorageMap: {[ key: string ]: string};
 
 Mapping of ovf storage to the datastores to use in vSphere.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#ovf_storage_map VirtualMachine#ovf_storage_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#ovf_storage_map VirtualMachine#ovf_storage_map}
 
 ---
 
@@ -3139,7 +3154,59 @@ public readonly timeout: number;
 
 The timeout, in minutes, to wait for the virtual machine clone to complete.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#timeout VirtualMachine#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#timeout VirtualMachine#timeout}
+
+---
+
+### VirtualMachineCloneCustomizationSpec <a name="VirtualMachineCloneCustomizationSpec" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpec"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpec.Initializer"></a>
+
+```typescript
+import { virtualMachine } from '@cdktf/provider-vsphere'
+
+const virtualMachineCloneCustomizationSpec: virtualMachine.VirtualMachineCloneCustomizationSpec = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpec.property.id">id</a></code> | <code>string</code> | The unique identifier of the customization specification is its name and is unique per vCenter Server instance. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpec.property.timeout">timeout</a></code> | <code>number</code> | The amount of time, in minutes, to wait for guest OS customization to complete before returning with an error. |
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpec.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+The unique identifier of the customization specification is its name and is unique per vCenter Server instance.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#id VirtualMachine#id}
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `timeout`<sup>Optional</sup> <a name="timeout" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpec.property.timeout"></a>
+
+```typescript
+public readonly timeout: number;
+```
+
+- *Type:* number
+
+The amount of time, in minutes, to wait for guest OS customization to complete before returning with an error.
+
+Setting this value to 0 or a negative value skips the waiter. Default: 10.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#timeout VirtualMachine#timeout}
 
 ---
 
@@ -3179,7 +3246,7 @@ public readonly dnsServerList: string[];
 
 The list of DNS servers for a virtual network adapter with a static IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#dns_server_list VirtualMachine#dns_server_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#dns_server_list VirtualMachine#dns_server_list}
 
 ---
 
@@ -3193,7 +3260,7 @@ public readonly dnsSuffixList: string[];
 
 A list of DNS search domains to add to the DNS configuration on the virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#dns_suffix_list VirtualMachine#dns_suffix_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#dns_suffix_list VirtualMachine#dns_suffix_list}
 
 ---
 
@@ -3209,7 +3276,7 @@ The IPv4 default gateway when using network_interface customization on the virtu
 
 This address must be local to a static IPv4 address configured in an interface sub-resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#ipv4_gateway VirtualMachine#ipv4_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#ipv4_gateway VirtualMachine#ipv4_gateway}
 
 ---
 
@@ -3225,7 +3292,7 @@ The IPv6 default gateway when using network_interface customization on the virtu
 
 This address must be local to a static IPv4 address configured in an interface sub-resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#ipv6_gateway VirtualMachine#ipv6_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#ipv6_gateway VirtualMachine#ipv6_gateway}
 
 ---
 
@@ -3239,7 +3306,7 @@ public readonly linuxOptions: VirtualMachineCloneCustomizeLinuxOptions;
 
 linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#linux_options VirtualMachine#linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#linux_options VirtualMachine#linux_options}
 
 ---
 
@@ -3253,7 +3320,7 @@ public readonly networkInterface: IResolvable | VirtualMachineCloneCustomizeNetw
 
 network_interface block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#network_interface VirtualMachine#network_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#network_interface VirtualMachine#network_interface}
 
 ---
 
@@ -3267,9 +3334,9 @@ public readonly timeout: number;
 
 The amount of time, in minutes, to wait for guest OS customization to complete before returning with an error.
 
-Setting this value to 0 or a negative value skips the waiter.
+Setting this value to 0 or a negative value skips the waiter. Default: 10.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#timeout VirtualMachine#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#timeout VirtualMachine#timeout}
 
 ---
 
@@ -3283,7 +3350,7 @@ public readonly windowsOptions: VirtualMachineCloneCustomizeWindowsOptions;
 
 windows_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#windows_options VirtualMachine#windows_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#windows_options VirtualMachine#windows_options}
 
 ---
 
@@ -3297,7 +3364,7 @@ public readonly windowsSysprepText: string;
 
 Use this option to specify a windows sysprep file directly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#windows_sysprep_text VirtualMachine#windows_sysprep_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#windows_sysprep_text VirtualMachine#windows_sysprep_text}
 
 ---
 
@@ -3333,7 +3400,7 @@ public readonly domain: string;
 
 The domain name for this virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#domain VirtualMachine#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#domain VirtualMachine#domain}
 
 ---
 
@@ -3347,7 +3414,7 @@ public readonly hostName: string;
 
 The hostname for this virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#host_name VirtualMachine#host_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#host_name VirtualMachine#host_name}
 
 ---
 
@@ -3361,7 +3428,7 @@ public readonly hwClockUtc: boolean | IResolvable;
 
 Specifies whether or not the hardware clock should be in UTC or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#hw_clock_utc VirtualMachine#hw_clock_utc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#hw_clock_utc VirtualMachine#hw_clock_utc}
 
 ---
 
@@ -3375,7 +3442,7 @@ public readonly scriptText: string;
 
 The customization script to run before and or after guest customization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#script_text VirtualMachine#script_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#script_text VirtualMachine#script_text}
 
 ---
 
@@ -3389,7 +3456,7 @@ public readonly timeZone: string;
 
 Customize the time zone on the VM. This should be a time zone-style entry, like America/Los_Angeles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#time_zone VirtualMachine#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#time_zone VirtualMachine#time_zone}
 
 ---
 
@@ -3426,7 +3493,7 @@ public readonly dnsDomain: string;
 
 A DNS search domain to add to the DNS configuration on the virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#dns_domain VirtualMachine#dns_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#dns_domain VirtualMachine#dns_domain}
 
 ---
 
@@ -3440,7 +3507,7 @@ public readonly dnsServerList: string[];
 
 Network-interface specific DNS settings for Windows operating systems. Ignored on Linux.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#dns_server_list VirtualMachine#dns_server_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#dns_server_list VirtualMachine#dns_server_list}
 
 ---
 
@@ -3454,7 +3521,7 @@ public readonly ipv4Address: string;
 
 The IPv4 address assigned to this network adapter. If left blank, DHCP is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#ipv4_address VirtualMachine#ipv4_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#ipv4_address VirtualMachine#ipv4_address}
 
 ---
 
@@ -3468,7 +3535,7 @@ public readonly ipv4Netmask: number;
 
 The IPv4 CIDR netmask for the supplied IP address. Ignored if DHCP is selected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#ipv4_netmask VirtualMachine#ipv4_netmask}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#ipv4_netmask VirtualMachine#ipv4_netmask}
 
 ---
 
@@ -3482,7 +3549,7 @@ public readonly ipv6Address: string;
 
 The IPv6 address assigned to this network adapter. If left blank, default auto-configuration is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#ipv6_address VirtualMachine#ipv6_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#ipv6_address VirtualMachine#ipv6_address}
 
 ---
 
@@ -3496,7 +3563,7 @@ public readonly ipv6Netmask: number;
 
 The IPv6 CIDR netmask for the supplied IP address. Ignored if auto-configuration is selected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#ipv6_netmask VirtualMachine#ipv6_netmask}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#ipv6_netmask VirtualMachine#ipv6_netmask}
 
 ---
 
@@ -3540,7 +3607,7 @@ public readonly computerName: string;
 
 The host name for this virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#computer_name VirtualMachine#computer_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#computer_name VirtualMachine#computer_name}
 
 ---
 
@@ -3554,7 +3621,7 @@ public readonly adminPassword: string;
 
 The new administrator password for this virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#admin_password VirtualMachine#admin_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#admin_password VirtualMachine#admin_password}
 
 ---
 
@@ -3568,7 +3635,7 @@ public readonly autoLogon: boolean | IResolvable;
 
 Specifies whether or not the VM automatically logs on as Administrator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#auto_logon VirtualMachine#auto_logon}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#auto_logon VirtualMachine#auto_logon}
 
 ---
 
@@ -3582,7 +3649,7 @@ public readonly autoLogonCount: number;
 
 Specifies how many times the VM should auto-logon the Administrator account when auto_logon is true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#auto_logon_count VirtualMachine#auto_logon_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#auto_logon_count VirtualMachine#auto_logon_count}
 
 ---
 
@@ -3596,7 +3663,7 @@ public readonly domainAdminPassword: string;
 
 The password of the domain administrator used to join this virtual machine to the domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#domain_admin_password VirtualMachine#domain_admin_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#domain_admin_password VirtualMachine#domain_admin_password}
 
 ---
 
@@ -3610,7 +3677,7 @@ public readonly domainAdminUser: string;
 
 The user account of the domain administrator used to join this virtual machine to the domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#domain_admin_user VirtualMachine#domain_admin_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#domain_admin_user VirtualMachine#domain_admin_user}
 
 ---
 
@@ -3624,7 +3691,7 @@ public readonly fullName: string;
 
 The full name of the user of this virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#full_name VirtualMachine#full_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#full_name VirtualMachine#full_name}
 
 ---
 
@@ -3638,7 +3705,7 @@ public readonly joinDomain: string;
 
 The domain that the virtual machine should join.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#join_domain VirtualMachine#join_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#join_domain VirtualMachine#join_domain}
 
 ---
 
@@ -3652,7 +3719,7 @@ public readonly organizationName: string;
 
 The organization name this virtual machine is being installed for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#organization_name VirtualMachine#organization_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#organization_name VirtualMachine#organization_name}
 
 ---
 
@@ -3666,7 +3733,7 @@ public readonly productKey: string;
 
 The product key for this virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#product_key VirtualMachine#product_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#product_key VirtualMachine#product_key}
 
 ---
 
@@ -3680,7 +3747,7 @@ public readonly runOnceCommandList: string[];
 
 A list of commands to run at first user logon, after guest customization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#run_once_command_list VirtualMachine#run_once_command_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#run_once_command_list VirtualMachine#run_once_command_list}
 
 ---
 
@@ -3694,7 +3761,7 @@ public readonly timeZone: number;
 
 The new time zone for the virtual machine. This is a sysprep-dictated timezone code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#time_zone VirtualMachine#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#time_zone VirtualMachine#time_zone}
 
 ---
 
@@ -3708,7 +3775,7 @@ public readonly workgroup: string;
 
 The workgroup for this virtual machine if not joining a domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#workgroup VirtualMachine#workgroup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#workgroup VirtualMachine#workgroup}
 
 ---
 
@@ -3767,7 +3834,7 @@ const virtualMachineConfig: virtualMachine.VirtualMachineConfig = { ... }
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.hardwareVersion">hardwareVersion</a></code> | <code>number</code> | The hardware version for the virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.hostSystemId">hostSystemId</a></code> | <code>string</code> | The ID of an optional host system to pin the virtual machine to. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.hvMode">hvMode</a></code> | <code>string</code> | The (non-nested) hardware virtualization setting for this virtual machine. Can be one of hvAuto, hvOn, or hvOff. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#id VirtualMachine#id}. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#id VirtualMachine#id}. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.ideControllerCount">ideControllerCount</a></code> | <code>number</code> | The number of IDE controllers that Terraform manages on this virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.ignoredGuestIps">ignoredGuestIps</a></code> | <code>string[]</code> | List of IP addresses and CIDR networks to ignore while waiting for an IP. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.latencySensitivity">latencySensitivity</a></code> | <code>string</code> | Controls the scheduling delay of the virtual machine. |
@@ -3891,7 +3958,7 @@ public readonly name: string;
 
 The name of this virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#name VirtualMachine#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#name VirtualMachine#name}
 
 ---
 
@@ -3905,7 +3972,7 @@ public readonly resourcePoolId: string;
 
 The ID of a resource pool to put the virtual machine in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#resource_pool_id VirtualMachine#resource_pool_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#resource_pool_id VirtualMachine#resource_pool_id}
 
 ---
 
@@ -3919,7 +3986,7 @@ public readonly alternateGuestName: string;
 
 The guest name for the operating system when guest_id is otherGuest or otherGuest64.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#alternate_guest_name VirtualMachine#alternate_guest_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#alternate_guest_name VirtualMachine#alternate_guest_name}
 
 ---
 
@@ -3933,7 +4000,7 @@ public readonly annotation: string;
 
 User-provided description of the virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#annotation VirtualMachine#annotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#annotation VirtualMachine#annotation}
 
 ---
 
@@ -3947,7 +4014,7 @@ public readonly bootDelay: number;
 
 The number of milliseconds to wait before starting the boot sequence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#boot_delay VirtualMachine#boot_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#boot_delay VirtualMachine#boot_delay}
 
 ---
 
@@ -3961,7 +4028,7 @@ public readonly bootRetryDelay: number;
 
 The number of milliseconds to wait before retrying the boot sequence. This only valid if boot_retry_enabled is true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#boot_retry_delay VirtualMachine#boot_retry_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#boot_retry_delay VirtualMachine#boot_retry_delay}
 
 ---
 
@@ -3975,7 +4042,7 @@ public readonly bootRetryEnabled: boolean | IResolvable;
 
 If set to true, a virtual machine that fails to boot will try again after the delay defined in boot_retry_delay.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#boot_retry_enabled VirtualMachine#boot_retry_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#boot_retry_enabled VirtualMachine#boot_retry_enabled}
 
 ---
 
@@ -3989,7 +4056,7 @@ public readonly cdrom: IResolvable | VirtualMachineCdrom[];
 
 cdrom block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#cdrom VirtualMachine#cdrom}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#cdrom VirtualMachine#cdrom}
 
 ---
 
@@ -4003,7 +4070,7 @@ public readonly clone: VirtualMachineClone;
 
 clone block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#clone VirtualMachine#clone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#clone VirtualMachine#clone}
 
 ---
 
@@ -4017,7 +4084,7 @@ public readonly cpuHotAddEnabled: boolean | IResolvable;
 
 Allow CPUs to be added to this virtual machine while it is running.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#cpu_hot_add_enabled VirtualMachine#cpu_hot_add_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#cpu_hot_add_enabled VirtualMachine#cpu_hot_add_enabled}
 
 ---
 
@@ -4031,7 +4098,7 @@ public readonly cpuHotRemoveEnabled: boolean | IResolvable;
 
 Allow CPUs to be added to this virtual machine while it is running.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#cpu_hot_remove_enabled VirtualMachine#cpu_hot_remove_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#cpu_hot_remove_enabled VirtualMachine#cpu_hot_remove_enabled}
 
 ---
 
@@ -4045,7 +4112,7 @@ public readonly cpuLimit: number;
 
 The maximum amount of memory (in MB) or CPU (in MHz) that this virtual machine can consume, regardless of available resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#cpu_limit VirtualMachine#cpu_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#cpu_limit VirtualMachine#cpu_limit}
 
 ---
 
@@ -4059,7 +4126,7 @@ public readonly cpuPerformanceCountersEnabled: boolean | IResolvable;
 
 Enable CPU performance counters on this virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#cpu_performance_counters_enabled VirtualMachine#cpu_performance_counters_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#cpu_performance_counters_enabled VirtualMachine#cpu_performance_counters_enabled}
 
 ---
 
@@ -4073,7 +4140,7 @@ public readonly cpuReservation: number;
 
 The amount of memory (in MB) or CPU (in MHz) that this virtual machine is guaranteed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#cpu_reservation VirtualMachine#cpu_reservation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#cpu_reservation VirtualMachine#cpu_reservation}
 
 ---
 
@@ -4087,7 +4154,7 @@ public readonly cpuShareCount: number;
 
 The amount of shares to allocate to cpu for a custom share level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#cpu_share_count VirtualMachine#cpu_share_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#cpu_share_count VirtualMachine#cpu_share_count}
 
 ---
 
@@ -4101,7 +4168,7 @@ public readonly cpuShareLevel: string;
 
 The allocation level for cpu resources. Can be one of high, low, normal, or custom.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#cpu_share_level VirtualMachine#cpu_share_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#cpu_share_level VirtualMachine#cpu_share_level}
 
 ---
 
@@ -4115,7 +4182,7 @@ public readonly customAttributes: {[ key: string ]: string};
 
 A list of custom attributes to set on this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#custom_attributes VirtualMachine#custom_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#custom_attributes VirtualMachine#custom_attributes}
 
 ---
 
@@ -4129,7 +4196,7 @@ public readonly datacenterId: string;
 
 The ID of the datacenter where the VM is to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#datacenter_id VirtualMachine#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#datacenter_id VirtualMachine#datacenter_id}
 
 ---
 
@@ -4143,7 +4210,7 @@ public readonly datastoreClusterId: string;
 
 The ID of a datastore cluster to put the virtual machine in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#datastore_cluster_id VirtualMachine#datastore_cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#datastore_cluster_id VirtualMachine#datastore_cluster_id}
 
 ---
 
@@ -4159,7 +4226,7 @@ The ID of the virtual machine's datastore.
 
 The virtual machine configuration is placed here, along with any virtual disks that are created without datastores.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#datastore_id VirtualMachine#datastore_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#datastore_id VirtualMachine#datastore_id}
 
 ---
 
@@ -4173,7 +4240,7 @@ public readonly disk: IResolvable | VirtualMachineDisk[];
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#disk VirtualMachine#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#disk VirtualMachine#disk}
 
 ---
 
@@ -4187,7 +4254,7 @@ public readonly efiSecureBootEnabled: boolean | IResolvable;
 
 When the boot type set in firmware is efi, this enables EFI secure boot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#efi_secure_boot_enabled VirtualMachine#efi_secure_boot_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#efi_secure_boot_enabled VirtualMachine#efi_secure_boot_enabled}
 
 ---
 
@@ -4201,7 +4268,7 @@ public readonly enableDiskUuid: boolean | IResolvable;
 
 Expose the UUIDs of attached virtual disks to the virtual machine, allowing access to them in the guest.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#enable_disk_uuid VirtualMachine#enable_disk_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#enable_disk_uuid VirtualMachine#enable_disk_uuid}
 
 ---
 
@@ -4215,7 +4282,7 @@ public readonly enableLogging: boolean | IResolvable;
 
 Enable logging on this virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#enable_logging VirtualMachine#enable_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#enable_logging VirtualMachine#enable_logging}
 
 ---
 
@@ -4229,7 +4296,7 @@ public readonly eptRviMode: string;
 
 The EPT/RVI (hardware memory virtualization) setting for this virtual machine. Can be one of automatic, on, or off.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#ept_rvi_mode VirtualMachine#ept_rvi_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#ept_rvi_mode VirtualMachine#ept_rvi_mode}
 
 ---
 
@@ -4245,7 +4312,7 @@ Extra configuration data for this virtual machine.
 
 Can be used to supply advanced parameters not normally in configuration, such as instance metadata, or configuration data for OVF images.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#extra_config VirtualMachine#extra_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#extra_config VirtualMachine#extra_config}
 
 ---
 
@@ -4259,7 +4326,7 @@ public readonly extraConfigRebootRequired: boolean | IResolvable;
 
 Allow the virtual machine to be rebooted when a change to `extra_config` occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#extra_config_reboot_required VirtualMachine#extra_config_reboot_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#extra_config_reboot_required VirtualMachine#extra_config_reboot_required}
 
 ---
 
@@ -4273,7 +4340,7 @@ public readonly firmware: string;
 
 The firmware interface to use on the virtual machine. Can be one of bios or efi.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#firmware VirtualMachine#firmware}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#firmware VirtualMachine#firmware}
 
 ---
 
@@ -4287,7 +4354,7 @@ public readonly folder: string;
 
 The name of the folder to locate the virtual machine in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#folder VirtualMachine#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#folder VirtualMachine#folder}
 
 ---
 
@@ -4301,7 +4368,7 @@ public readonly forcePowerOff: boolean | IResolvable;
 
 Set to true to force power-off a virtual machine if a graceful guest shutdown failed for a necessary operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#force_power_off VirtualMachine#force_power_off}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#force_power_off VirtualMachine#force_power_off}
 
 ---
 
@@ -4315,7 +4382,7 @@ public readonly guestId: string;
 
 The guest ID for the operating system.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#guest_id VirtualMachine#guest_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#guest_id VirtualMachine#guest_id}
 
 ---
 
@@ -4329,7 +4396,7 @@ public readonly hardwareVersion: number;
 
 The hardware version for the virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#hardware_version VirtualMachine#hardware_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#hardware_version VirtualMachine#hardware_version}
 
 ---
 
@@ -4343,7 +4410,7 @@ public readonly hostSystemId: string;
 
 The ID of an optional host system to pin the virtual machine to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#host_system_id VirtualMachine#host_system_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#host_system_id VirtualMachine#host_system_id}
 
 ---
 
@@ -4357,7 +4424,7 @@ public readonly hvMode: string;
 
 The (non-nested) hardware virtualization setting for this virtual machine. Can be one of hvAuto, hvOn, or hvOff.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#hv_mode VirtualMachine#hv_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#hv_mode VirtualMachine#hv_mode}
 
 ---
 
@@ -4369,7 +4436,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#id VirtualMachine#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#id VirtualMachine#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4388,7 +4455,7 @@ The number of IDE controllers that Terraform manages on this virtual machine.
 
 This directly affects the amount of disks you can add to the virtual machine and the maximum disk unit number. Note that lowering this value does not remove controllers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#ide_controller_count VirtualMachine#ide_controller_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#ide_controller_count VirtualMachine#ide_controller_count}
 
 ---
 
@@ -4402,7 +4469,7 @@ public readonly ignoredGuestIps: string[];
 
 List of IP addresses and CIDR networks to ignore while waiting for an IP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#ignored_guest_ips VirtualMachine#ignored_guest_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#ignored_guest_ips VirtualMachine#ignored_guest_ips}
 
 ---
 
@@ -4418,7 +4485,7 @@ Controls the scheduling delay of the virtual machine.
 
 Use a higher sensitivity for applications that require lower latency, such as VOIP, media player applications, or applications that require frequent access to mouse or keyboard devices. Can be one of low, normal, medium, or high.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#latency_sensitivity VirtualMachine#latency_sensitivity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#latency_sensitivity VirtualMachine#latency_sensitivity}
 
 ---
 
@@ -4432,7 +4499,7 @@ public readonly memory: number;
 
 The size of the virtual machine's memory, in MB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#memory VirtualMachine#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#memory VirtualMachine#memory}
 
 ---
 
@@ -4446,7 +4513,7 @@ public readonly memoryHotAddEnabled: boolean | IResolvable;
 
 Allow memory to be added to this virtual machine while it is running.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#memory_hot_add_enabled VirtualMachine#memory_hot_add_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#memory_hot_add_enabled VirtualMachine#memory_hot_add_enabled}
 
 ---
 
@@ -4460,7 +4527,7 @@ public readonly memoryLimit: number;
 
 The maximum amount of memory (in MB) or CPU (in MHz) that this virtual machine can consume, regardless of available resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#memory_limit VirtualMachine#memory_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#memory_limit VirtualMachine#memory_limit}
 
 ---
 
@@ -4474,7 +4541,7 @@ public readonly memoryReservation: number;
 
 The amount of memory (in MB) or CPU (in MHz) that this virtual machine is guaranteed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#memory_reservation VirtualMachine#memory_reservation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#memory_reservation VirtualMachine#memory_reservation}
 
 ---
 
@@ -4488,7 +4555,7 @@ public readonly memoryShareCount: number;
 
 The amount of shares to allocate to memory for a custom share level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#memory_share_count VirtualMachine#memory_share_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#memory_share_count VirtualMachine#memory_share_count}
 
 ---
 
@@ -4502,7 +4569,7 @@ public readonly memoryShareLevel: string;
 
 The allocation level for memory resources. Can be one of high, low, normal, or custom.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#memory_share_level VirtualMachine#memory_share_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#memory_share_level VirtualMachine#memory_share_level}
 
 ---
 
@@ -4516,7 +4583,7 @@ public readonly migrateWaitTimeout: number;
 
 The amount of time, in minutes, to wait for a vMotion operation to complete before failing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#migrate_wait_timeout VirtualMachine#migrate_wait_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#migrate_wait_timeout VirtualMachine#migrate_wait_timeout}
 
 ---
 
@@ -4530,7 +4597,7 @@ public readonly nestedHvEnabled: boolean | IResolvable;
 
 Enable nested hardware virtualization on this virtual machine, facilitating nested virtualization in the guest.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#nested_hv_enabled VirtualMachine#nested_hv_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#nested_hv_enabled VirtualMachine#nested_hv_enabled}
 
 ---
 
@@ -4544,7 +4611,7 @@ public readonly networkInterface: IResolvable | VirtualMachineNetworkInterface[]
 
 network_interface block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#network_interface VirtualMachine#network_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#network_interface VirtualMachine#network_interface}
 
 ---
 
@@ -4560,7 +4627,7 @@ The number of cores to distribute amongst the CPUs in this virtual machine.
 
 If specified, the value supplied to num_cpus must be evenly divisible by this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#num_cores_per_socket VirtualMachine#num_cores_per_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#num_cores_per_socket VirtualMachine#num_cores_per_socket}
 
 ---
 
@@ -4574,7 +4641,7 @@ public readonly numCpus: number;
 
 The number of virtual processors to assign to this virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#num_cpus VirtualMachine#num_cpus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#num_cpus VirtualMachine#num_cpus}
 
 ---
 
@@ -4588,7 +4655,7 @@ public readonly ovfDeploy: VirtualMachineOvfDeploy;
 
 ovf_deploy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#ovf_deploy VirtualMachine#ovf_deploy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#ovf_deploy VirtualMachine#ovf_deploy}
 
 ---
 
@@ -4602,7 +4669,7 @@ public readonly pciDeviceId: string[];
 
 A list of PCI passthrough devices.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#pci_device_id VirtualMachine#pci_device_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#pci_device_id VirtualMachine#pci_device_id}
 
 ---
 
@@ -4616,7 +4683,7 @@ public readonly poweronTimeout: number;
 
 The amount of time, in seconds, that we will be trying to power on a VM.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#poweron_timeout VirtualMachine#poweron_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#poweron_timeout VirtualMachine#poweron_timeout}
 
 ---
 
@@ -4630,7 +4697,7 @@ public readonly replaceTrigger: string;
 
 Triggers replacement of resource whenever it changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#replace_trigger VirtualMachine#replace_trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#replace_trigger VirtualMachine#replace_trigger}
 
 ---
 
@@ -4644,7 +4711,7 @@ public readonly runToolsScriptsAfterPowerOn: boolean | IResolvable;
 
 Enable the run of scripts after virtual machine power-on when VMware Tools is installed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#run_tools_scripts_after_power_on VirtualMachine#run_tools_scripts_after_power_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#run_tools_scripts_after_power_on VirtualMachine#run_tools_scripts_after_power_on}
 
 ---
 
@@ -4658,7 +4725,7 @@ public readonly runToolsScriptsAfterResume: boolean | IResolvable;
 
 Enable the run of scripts after virtual machine resume when when VMware Tools is installed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#run_tools_scripts_after_resume VirtualMachine#run_tools_scripts_after_resume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#run_tools_scripts_after_resume VirtualMachine#run_tools_scripts_after_resume}
 
 ---
 
@@ -4672,7 +4739,7 @@ public readonly runToolsScriptsBeforeGuestReboot: boolean | IResolvable;
 
 Enable the run of scripts before guest operating system reboot when VMware Tools is installed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#run_tools_scripts_before_guest_reboot VirtualMachine#run_tools_scripts_before_guest_reboot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#run_tools_scripts_before_guest_reboot VirtualMachine#run_tools_scripts_before_guest_reboot}
 
 ---
 
@@ -4686,7 +4753,7 @@ public readonly runToolsScriptsBeforeGuestShutdown: boolean | IResolvable;
 
 Enable the run of scripts before guest operating system shutdown when VMware Tools is installed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#run_tools_scripts_before_guest_shutdown VirtualMachine#run_tools_scripts_before_guest_shutdown}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#run_tools_scripts_before_guest_shutdown VirtualMachine#run_tools_scripts_before_guest_shutdown}
 
 ---
 
@@ -4700,7 +4767,7 @@ public readonly runToolsScriptsBeforeGuestStandby: boolean | IResolvable;
 
 Enable the run of scripts before guest operating system standby when VMware Tools is installed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#run_tools_scripts_before_guest_standby VirtualMachine#run_tools_scripts_before_guest_standby}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#run_tools_scripts_before_guest_standby VirtualMachine#run_tools_scripts_before_guest_standby}
 
 ---
 
@@ -4716,7 +4783,7 @@ The number of SATA controllers that Terraform manages on this virtual machine.
 
 This directly affects the amount of disks you can add to the virtual machine and the maximum disk unit number. Note that lowering this value does not remove controllers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#sata_controller_count VirtualMachine#sata_controller_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#sata_controller_count VirtualMachine#sata_controller_count}
 
 ---
 
@@ -4730,7 +4797,7 @@ public readonly scsiBusSharing: string;
 
 Mode for sharing the SCSI bus. The modes are physicalSharing, virtualSharing, and noSharing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#scsi_bus_sharing VirtualMachine#scsi_bus_sharing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#scsi_bus_sharing VirtualMachine#scsi_bus_sharing}
 
 ---
 
@@ -4746,7 +4813,7 @@ The number of SCSI controllers that Terraform manages on this virtual machine.
 
 This directly affects the amount of disks you can add to the virtual machine and the maximum disk unit number. Note that lowering this value does not remove controllers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#scsi_controller_count VirtualMachine#scsi_controller_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#scsi_controller_count VirtualMachine#scsi_controller_count}
 
 ---
 
@@ -4760,7 +4827,7 @@ public readonly scsiType: string;
 
 The type of SCSI bus this virtual machine will have. Can be one of lsilogic, lsilogic-sas or pvscsi.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#scsi_type VirtualMachine#scsi_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#scsi_type VirtualMachine#scsi_type}
 
 ---
 
@@ -4774,7 +4841,7 @@ public readonly shutdownWaitTimeout: number;
 
 The amount of time, in minutes, to wait for shutdown when making necessary updates to the virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#shutdown_wait_timeout VirtualMachine#shutdown_wait_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#shutdown_wait_timeout VirtualMachine#shutdown_wait_timeout}
 
 ---
 
@@ -4788,7 +4855,7 @@ public readonly storagePolicyId: string;
 
 The ID of the storage policy to assign to the virtual machine home directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#storage_policy_id VirtualMachine#storage_policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#storage_policy_id VirtualMachine#storage_policy_id}
 
 ---
 
@@ -4802,7 +4869,7 @@ public readonly swapPlacementPolicy: string;
 
 The swap file placement policy for this virtual machine. Can be one of inherit, hostLocal, or vmDirectory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#swap_placement_policy VirtualMachine#swap_placement_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#swap_placement_policy VirtualMachine#swap_placement_policy}
 
 ---
 
@@ -4818,7 +4885,7 @@ Enable guest clock synchronization with the host.
 
 On vSphere 7.0 U1 and above, with only this setting the clock is synchronized on startup and resume. Requires VMware Tools to be installed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#sync_time_with_host VirtualMachine#sync_time_with_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#sync_time_with_host VirtualMachine#sync_time_with_host}
 
 ---
 
@@ -4834,7 +4901,7 @@ Enable periodic clock synchronization with the host.
 
 Supported only on vSphere 7.0 U1 and above. On prior versions setting `sync_time_with_host` is enough for periodic synchronization. Requires VMware Tools to be installed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#sync_time_with_host_periodically VirtualMachine#sync_time_with_host_periodically}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#sync_time_with_host_periodically VirtualMachine#sync_time_with_host_periodically}
 
 ---
 
@@ -4848,7 +4915,7 @@ public readonly tags: string[];
 
 A list of tag IDs to apply to this object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#tags VirtualMachine#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#tags VirtualMachine#tags}
 
 ---
 
@@ -4862,7 +4929,7 @@ public readonly toolsUpgradePolicy: string;
 
 Set the upgrade policy for VMware Tools. Can be one of `manual` or `upgradeAtPowerCycle`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#tools_upgrade_policy VirtualMachine#tools_upgrade_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#tools_upgrade_policy VirtualMachine#tools_upgrade_policy}
 
 ---
 
@@ -4876,7 +4943,7 @@ public readonly vapp: VirtualMachineVapp;
 
 vapp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#vapp VirtualMachine#vapp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#vapp VirtualMachine#vapp}
 
 ---
 
@@ -4890,7 +4957,7 @@ public readonly vbsEnabled: boolean | IResolvable;
 
 Flag to specify if Virtualization-based security is enabled for this virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#vbs_enabled VirtualMachine#vbs_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#vbs_enabled VirtualMachine#vbs_enabled}
 
 ---
 
@@ -4904,7 +4971,7 @@ public readonly vvtdEnabled: boolean | IResolvable;
 
 Flag to specify if I/O MMU virtualization, also called Intel Virtualization Technology for Directed I/O (VT-d) and AMD I/O Virtualization (AMD-Vi or IOMMU), is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#vvtd_enabled VirtualMachine#vvtd_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#vvtd_enabled VirtualMachine#vvtd_enabled}
 
 ---
 
@@ -4920,7 +4987,7 @@ The amount of time, in minutes, to wait for an available IP address on this virt
 
 A value less than 1 disables the waiter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#wait_for_guest_ip_timeout VirtualMachine#wait_for_guest_ip_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#wait_for_guest_ip_timeout VirtualMachine#wait_for_guest_ip_timeout}
 
 ---
 
@@ -4936,7 +5003,7 @@ Controls whether or not the guest network waiter waits for a routable address.
 
 When false, the waiter does not wait for a default gateway, nor are IP addresses checked against any discovered default gateways as part of its success criteria.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#wait_for_guest_net_routable VirtualMachine#wait_for_guest_net_routable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#wait_for_guest_net_routable VirtualMachine#wait_for_guest_net_routable}
 
 ---
 
@@ -4952,7 +5019,7 @@ The amount of time, in minutes, to wait for an available IP address on this virt
 
 A value less than 1 disables the waiter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#wait_for_guest_net_timeout VirtualMachine#wait_for_guest_net_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#wait_for_guest_net_timeout VirtualMachine#wait_for_guest_net_timeout}
 
 ---
 
@@ -5001,7 +5068,7 @@ public readonly label: string;
 
 A unique label for this disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#label VirtualMachine#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#label VirtualMachine#label}
 
 ---
 
@@ -5015,7 +5082,7 @@ public readonly attach: boolean | IResolvable;
 
 If this is true, the disk is attached instead of created. Implies keep_on_remove.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#attach VirtualMachine#attach}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#attach VirtualMachine#attach}
 
 ---
 
@@ -5029,7 +5096,7 @@ public readonly controllerType: string;
 
 The type of controller the disk should be connected to. Must be 'scsi', 'sata', or 'ide'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#controller_type VirtualMachine#controller_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#controller_type VirtualMachine#controller_type}
 
 ---
 
@@ -5043,7 +5110,7 @@ public readonly datastoreId: string;
 
 The datastore ID for this virtual disk, if different than the virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#datastore_id VirtualMachine#datastore_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#datastore_id VirtualMachine#datastore_id}
 
 ---
 
@@ -5059,7 +5126,7 @@ The mode of this this virtual disk for purposes of writes and snapshotting.
 
 Can be one of append, independent_nonpersistent, independent_persistent, nonpersistent, persistent, or undoable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#disk_mode VirtualMachine#disk_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#disk_mode VirtualMachine#disk_mode}
 
 ---
 
@@ -5073,7 +5140,7 @@ public readonly diskSharing: string;
 
 The sharing mode of this virtual disk. Can be one of sharingMultiWriter or sharingNone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#disk_sharing VirtualMachine#disk_sharing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#disk_sharing VirtualMachine#disk_sharing}
 
 ---
 
@@ -5089,7 +5156,7 @@ The virtual disk file zeroing policy when thin_provision is not true.
 
 The default is false, which lazily-zeros the disk, speeding up thick-provisioned disk creation time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#eagerly_scrub VirtualMachine#eagerly_scrub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#eagerly_scrub VirtualMachine#eagerly_scrub}
 
 ---
 
@@ -5103,7 +5170,7 @@ public readonly ioLimit: number;
 
 The upper limit of IOPS that this disk can use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#io_limit VirtualMachine#io_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#io_limit VirtualMachine#io_limit}
 
 ---
 
@@ -5117,7 +5184,7 @@ public readonly ioReservation: number;
 
 The I/O guarantee that this disk has, in IOPS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#io_reservation VirtualMachine#io_reservation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#io_reservation VirtualMachine#io_reservation}
 
 ---
 
@@ -5131,7 +5198,7 @@ public readonly ioShareCount: number;
 
 The share count for this disk when the share level is custom.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#io_share_count VirtualMachine#io_share_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#io_share_count VirtualMachine#io_share_count}
 
 ---
 
@@ -5145,7 +5212,7 @@ public readonly ioShareLevel: string;
 
 The share allocation level for this disk. Can be one of low, normal, high, or custom.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#io_share_level VirtualMachine#io_share_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#io_share_level VirtualMachine#io_share_level}
 
 ---
 
@@ -5159,7 +5226,7 @@ public readonly keepOnRemove: boolean | IResolvable;
 
 Set to true to keep the underlying VMDK file when removing this virtual disk from configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#keep_on_remove VirtualMachine#keep_on_remove}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#keep_on_remove VirtualMachine#keep_on_remove}
 
 ---
 
@@ -5175,7 +5242,7 @@ The full path of the virtual disk.
 
 This can only be provided if attach is set to true, otherwise it is a read-only value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#path VirtualMachine#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#path VirtualMachine#path}
 
 ---
 
@@ -5189,7 +5256,7 @@ public readonly size: number;
 
 The size of the disk, in GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#size VirtualMachine#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#size VirtualMachine#size}
 
 ---
 
@@ -5203,7 +5270,7 @@ public readonly storagePolicyId: string;
 
 The ID of the storage policy to assign to the virtual disk in VM.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#storage_policy_id VirtualMachine#storage_policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#storage_policy_id VirtualMachine#storage_policy_id}
 
 ---
 
@@ -5217,7 +5284,7 @@ public readonly thinProvisioned: boolean | IResolvable;
 
 If true, this disk is thin provisioned, with space for the file being allocated on an as-needed basis.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#thin_provisioned VirtualMachine#thin_provisioned}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#thin_provisioned VirtualMachine#thin_provisioned}
 
 ---
 
@@ -5233,7 +5300,7 @@ The unique device number for this disk.
 
 This number determines where on the SCSI bus this device will be attached.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#unit_number VirtualMachine#unit_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#unit_number VirtualMachine#unit_number}
 
 ---
 
@@ -5247,7 +5314,7 @@ public readonly writeThrough: boolean | IResolvable;
 
 If true, writes for this disk are sent directly to the filesystem immediately instead of being buffered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#write_through VirtualMachine#write_through}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#write_through VirtualMachine#write_through}
 
 ---
 
@@ -5266,13 +5333,14 @@ const virtualMachineNetworkInterface: virtualMachine.VirtualMachineNetworkInterf
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface.property.networkId">networkId</a></code> | <code>string</code> | The ID of the network to connect this network interface to. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface.property.adapterType">adapterType</a></code> | <code>string</code> | The controller type. Can be one of e1000, e1000e, vmxnet3, or vrdma. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface.property.adapterType">adapterType</a></code> | <code>string</code> | The controller type. Can be one of e1000, e1000e, sriov, vmxnet3, or vrdma. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface.property.bandwidthLimit">bandwidthLimit</a></code> | <code>number</code> | The upper bandwidth limit of this network interface, in Mbits/sec. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface.property.bandwidthReservation">bandwidthReservation</a></code> | <code>number</code> | The bandwidth reservation of this network interface, in Mbits/sec. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface.property.bandwidthShareCount">bandwidthShareCount</a></code> | <code>number</code> | The share count for this network interface when the share level is custom. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface.property.bandwidthShareLevel">bandwidthShareLevel</a></code> | <code>string</code> | The bandwidth share allocation level for this interface. Can be one of low, normal, high, or custom. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface.property.macAddress">macAddress</a></code> | <code>string</code> | The MAC address of this network interface. Can only be manually set if use_static_mac is true. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface.property.ovfMapping">ovfMapping</a></code> | <code>string</code> | Mapping of network interface to OVF network. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface.property.physicalFunction">physicalFunction</a></code> | <code>string</code> | The ID of the Physical SR-IOV NIC to attach to, e.g. '0000:d8:00.0'. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface.property.useStaticMac">useStaticMac</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, the mac_address field is treated as a static MAC address and set accordingly. |
 
 ---
@@ -5287,7 +5355,7 @@ public readonly networkId: string;
 
 The ID of the network to connect this network interface to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#network_id VirtualMachine#network_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#network_id VirtualMachine#network_id}
 
 ---
 
@@ -5299,9 +5367,9 @@ public readonly adapterType: string;
 
 - *Type:* string
 
-The controller type. Can be one of e1000, e1000e, vmxnet3, or vrdma.
+The controller type. Can be one of e1000, e1000e, sriov, vmxnet3, or vrdma.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#adapter_type VirtualMachine#adapter_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#adapter_type VirtualMachine#adapter_type}
 
 ---
 
@@ -5315,7 +5383,7 @@ public readonly bandwidthLimit: number;
 
 The upper bandwidth limit of this network interface, in Mbits/sec.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#bandwidth_limit VirtualMachine#bandwidth_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#bandwidth_limit VirtualMachine#bandwidth_limit}
 
 ---
 
@@ -5329,7 +5397,7 @@ public readonly bandwidthReservation: number;
 
 The bandwidth reservation of this network interface, in Mbits/sec.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#bandwidth_reservation VirtualMachine#bandwidth_reservation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#bandwidth_reservation VirtualMachine#bandwidth_reservation}
 
 ---
 
@@ -5343,7 +5411,7 @@ public readonly bandwidthShareCount: number;
 
 The share count for this network interface when the share level is custom.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#bandwidth_share_count VirtualMachine#bandwidth_share_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#bandwidth_share_count VirtualMachine#bandwidth_share_count}
 
 ---
 
@@ -5357,7 +5425,7 @@ public readonly bandwidthShareLevel: string;
 
 The bandwidth share allocation level for this interface. Can be one of low, normal, high, or custom.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#bandwidth_share_level VirtualMachine#bandwidth_share_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#bandwidth_share_level VirtualMachine#bandwidth_share_level}
 
 ---
 
@@ -5371,7 +5439,7 @@ public readonly macAddress: string;
 
 The MAC address of this network interface. Can only be manually set if use_static_mac is true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#mac_address VirtualMachine#mac_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#mac_address VirtualMachine#mac_address}
 
 ---
 
@@ -5385,7 +5453,21 @@ public readonly ovfMapping: string;
 
 Mapping of network interface to OVF network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#ovf_mapping VirtualMachine#ovf_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#ovf_mapping VirtualMachine#ovf_mapping}
+
+---
+
+##### `physicalFunction`<sup>Optional</sup> <a name="physicalFunction" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface.property.physicalFunction"></a>
+
+```typescript
+public readonly physicalFunction: string;
+```
+
+- *Type:* string
+
+The ID of the Physical SR-IOV NIC to attach to, e.g. '0000:d8:00.0'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#physical_function VirtualMachine#physical_function}
 
 ---
 
@@ -5399,7 +5481,7 @@ public readonly useStaticMac: boolean | IResolvable;
 
 If true, the mac_address field is treated as a static MAC address and set accordingly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#use_static_mac VirtualMachine#use_static_mac}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#use_static_mac VirtualMachine#use_static_mac}
 
 ---
 
@@ -5439,7 +5521,7 @@ public readonly allowUnverifiedSslCert: boolean | IResolvable;
 
 Allow unverified ssl certificates while deploying ovf/ova from url.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#allow_unverified_ssl_cert VirtualMachine#allow_unverified_ssl_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#allow_unverified_ssl_cert VirtualMachine#allow_unverified_ssl_cert}
 
 ---
 
@@ -5453,7 +5535,7 @@ public readonly deploymentOption: string;
 
 The Deployment option to be chosen. If empty, the default option is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#deployment_option VirtualMachine#deployment_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#deployment_option VirtualMachine#deployment_option}
 
 ---
 
@@ -5469,7 +5551,7 @@ An optional disk provisioning.
 
 If set, all the disks in the deployed ovf will have the same specified disk type (e.g., thin provisioned).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#disk_provisioning VirtualMachine#disk_provisioning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#disk_provisioning VirtualMachine#disk_provisioning}
 
 ---
 
@@ -5483,7 +5565,7 @@ public readonly enableHiddenProperties: boolean | IResolvable;
 
 Allow properties with ovf:userConfigurable=false to be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#enable_hidden_properties VirtualMachine#enable_hidden_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#enable_hidden_properties VirtualMachine#enable_hidden_properties}
 
 ---
 
@@ -5497,7 +5579,7 @@ public readonly ipAllocationPolicy: string;
 
 The IP allocation policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#ip_allocation_policy VirtualMachine#ip_allocation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#ip_allocation_policy VirtualMachine#ip_allocation_policy}
 
 ---
 
@@ -5511,7 +5593,7 @@ public readonly ipProtocol: string;
 
 The IP protocol.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#ip_protocol VirtualMachine#ip_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#ip_protocol VirtualMachine#ip_protocol}
 
 ---
 
@@ -5525,7 +5607,7 @@ public readonly localOvfPath: string;
 
 The absolute path to the ovf/ova file in the local system.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#local_ovf_path VirtualMachine#local_ovf_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#local_ovf_path VirtualMachine#local_ovf_path}
 
 ---
 
@@ -5539,7 +5621,7 @@ public readonly ovfNetworkMap: {[ key: string ]: string};
 
 The mapping of name of network identifiers from the ovf descriptor to network UUID in the VI infrastructure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#ovf_network_map VirtualMachine#ovf_network_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#ovf_network_map VirtualMachine#ovf_network_map}
 
 ---
 
@@ -5553,7 +5635,7 @@ public readonly remoteOvfUrl: string;
 
 URL to the remote ovf/ova file to be deployed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#remote_ovf_url VirtualMachine#remote_ovf_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#remote_ovf_url VirtualMachine#remote_ovf_url}
 
 ---
 
@@ -5587,7 +5669,7 @@ A map of customizable vApp properties and their values.
 
 Allows customization of VMs cloned from OVF templates which have customizable vApp properties.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/virtual_machine#properties VirtualMachine#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/virtual_machine#properties VirtualMachine#properties}
 
 ---
 
@@ -6108,6 +6190,306 @@ public readonly internalValue: IResolvable | VirtualMachineCdrom;
 ```
 
 - *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom">VirtualMachineCdrom</a>
+
+---
+
+
+### VirtualMachineCloneCustomizationSpecOutputReference <a name="VirtualMachineCloneCustomizationSpecOutputReference" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.Initializer"></a>
+
+```typescript
+import { virtualMachine } from '@cdktf/provider-vsphere'
+
+new virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.resetTimeout">resetTimeout</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetTimeout` <a name="resetTimeout" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.resetTimeout"></a>
+
+```typescript
+public resetTimeout(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.property.timeoutInput">timeoutInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.property.timeout">timeout</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpec">VirtualMachineCloneCustomizationSpec</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `timeoutInput`<sup>Optional</sup> <a name="timeoutInput" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.property.timeoutInput"></a>
+
+```typescript
+public readonly timeoutInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `timeout`<sup>Required</sup> <a name="timeout" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.property.timeout"></a>
+
+```typescript
+public readonly timeout: number;
+```
+
+- *Type:* number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: VirtualMachineCloneCustomizationSpec;
+```
+
+- *Type:* <a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpec">VirtualMachineCloneCustomizationSpec</a>
 
 ---
 
@@ -8294,7 +8676,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.putCustomizationSpec">putCustomizationSpec</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.putCustomize">putCustomize</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.resetCustomizationSpec">resetCustomizationSpec</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.resetCustomize">resetCustomize</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.resetLinkedClone">resetLinkedClone</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.resetOvfNetworkMap">resetOvfNetworkMap</a></code> | *No description.* |
@@ -8453,6 +8837,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `putCustomizationSpec` <a name="putCustomizationSpec" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.putCustomizationSpec"></a>
+
+```typescript
+public putCustomizationSpec(value: VirtualMachineCloneCustomizationSpec): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.putCustomizationSpec.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpec">VirtualMachineCloneCustomizationSpec</a>
+
+---
+
 ##### `putCustomize` <a name="putCustomize" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.putCustomize"></a>
 
 ```typescript
@@ -8464,6 +8860,12 @@ public putCustomize(value: VirtualMachineCloneCustomize): void
 - *Type:* <a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomize">VirtualMachineCloneCustomize</a>
 
 ---
+
+##### `resetCustomizationSpec` <a name="resetCustomizationSpec" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.resetCustomizationSpec"></a>
+
+```typescript
+public resetCustomizationSpec(): void
+```
 
 ##### `resetCustomize` <a name="resetCustomize" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.resetCustomize"></a>
 
@@ -8502,7 +8904,9 @@ public resetTimeout(): void
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.property.customizationSpec">customizationSpec</a></code> | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference">VirtualMachineCloneCustomizationSpecOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.property.customize">customize</a></code> | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeOutputReference">VirtualMachineCloneCustomizeOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.property.customizationSpecInput">customizationSpecInput</a></code> | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpec">VirtualMachineCloneCustomizationSpec</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.property.customizeInput">customizeInput</a></code> | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomize">VirtualMachineCloneCustomize</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.property.linkedCloneInput">linkedCloneInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.property.ovfNetworkMapInput">ovfNetworkMapInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -8542,6 +8946,16 @@ public readonly fqn: string;
 
 ---
 
+##### `customizationSpec`<sup>Required</sup> <a name="customizationSpec" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.property.customizationSpec"></a>
+
+```typescript
+public readonly customizationSpec: VirtualMachineCloneCustomizationSpecOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpecOutputReference">VirtualMachineCloneCustomizationSpecOutputReference</a>
+
+---
+
 ##### `customize`<sup>Required</sup> <a name="customize" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.property.customize"></a>
 
 ```typescript
@@ -8549,6 +8963,16 @@ public readonly customize: VirtualMachineCloneCustomizeOutputReference;
 ```
 
 - *Type:* <a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeOutputReference">VirtualMachineCloneCustomizeOutputReference</a>
+
+---
+
+##### `customizationSpecInput`<sup>Optional</sup> <a name="customizationSpecInput" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.property.customizationSpecInput"></a>
+
+```typescript
+public readonly customizationSpecInput: VirtualMachineCloneCustomizationSpec;
+```
+
+- *Type:* <a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpec">VirtualMachineCloneCustomizationSpec</a>
 
 ---
 
@@ -9849,6 +10273,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.resetBandwidthShareLevel">resetBandwidthShareLevel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.resetMacAddress">resetMacAddress</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.resetOvfMapping">resetOvfMapping</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.resetPhysicalFunction">resetPhysicalFunction</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.resetUseStaticMac">resetUseStaticMac</a></code> | *No description.* |
 
 ---
@@ -10045,6 +10470,12 @@ public resetMacAddress(): void
 public resetOvfMapping(): void
 ```
 
+##### `resetPhysicalFunction` <a name="resetPhysicalFunction" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.resetPhysicalFunction"></a>
+
+```typescript
+public resetPhysicalFunction(): void
+```
+
 ##### `resetUseStaticMac` <a name="resetUseStaticMac" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.resetUseStaticMac"></a>
 
 ```typescript
@@ -10068,6 +10499,7 @@ public resetUseStaticMac(): void
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.macAddressInput">macAddressInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.networkIdInput">networkIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.ovfMappingInput">ovfMappingInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.physicalFunctionInput">physicalFunctionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.useStaticMacInput">useStaticMacInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.adapterType">adapterType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.bandwidthLimit">bandwidthLimit</a></code> | <code>number</code> | *No description.* |
@@ -10077,6 +10509,7 @@ public resetUseStaticMac(): void
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.macAddress">macAddress</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.networkId">networkId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.ovfMapping">ovfMapping</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.physicalFunction">physicalFunction</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.useStaticMac">useStaticMac</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface">VirtualMachineNetworkInterface</a></code> | *No description.* |
 
@@ -10206,6 +10639,16 @@ public readonly ovfMappingInput: string;
 
 ---
 
+##### `physicalFunctionInput`<sup>Optional</sup> <a name="physicalFunctionInput" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.physicalFunctionInput"></a>
+
+```typescript
+public readonly physicalFunctionInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `useStaticMacInput`<sup>Optional</sup> <a name="useStaticMacInput" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.useStaticMacInput"></a>
 
 ```typescript
@@ -10290,6 +10733,16 @@ public readonly networkId: string;
 
 ```typescript
 public readonly ovfMapping: string;
+```
+
+- *Type:* string
+
+---
+
+##### `physicalFunction`<sup>Required</sup> <a name="physicalFunction" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.physicalFunction"></a>
+
+```typescript
+public readonly physicalFunction: string;
 ```
 
 - *Type:* string

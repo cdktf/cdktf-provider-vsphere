@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datacenter
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/datacenter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,34 +15,34 @@ export interface DatacenterConfig extends cdktf.TerraformMetaArguments {
   /**
   * A list of custom attributes to set on this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datacenter#custom_attributes Datacenter#custom_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/datacenter#custom_attributes Datacenter#custom_attributes}
   */
   readonly customAttributes?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datacenter#folder Datacenter#folder}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/datacenter#folder Datacenter#folder}
   */
   readonly folder?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datacenter#id Datacenter#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/datacenter#id Datacenter#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datacenter#name Datacenter#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/datacenter#name Datacenter#name}
   */
   readonly name: string;
   /**
   * A list of tag IDs to apply to this object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datacenter#tags Datacenter#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/datacenter#tags Datacenter#tags}
   */
   readonly tags?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datacenter vsphere_datacenter}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/datacenter vsphere_datacenter}
 */
 export class Datacenter extends cdktf.TerraformResource {
 
@@ -58,7 +58,7 @@ export class Datacenter extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Datacenter resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Datacenter to import
-  * @param importFromId The id of the existing Datacenter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datacenter#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Datacenter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/datacenter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Datacenter to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -70,7 +70,7 @@ export class Datacenter extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/datacenter vsphere_datacenter} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/datacenter vsphere_datacenter} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -81,7 +81,7 @@ export class Datacenter extends cdktf.TerraformResource {
       terraformResourceType: 'vsphere_datacenter',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.5.1',
+        providerVersion: '2.6.0',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,

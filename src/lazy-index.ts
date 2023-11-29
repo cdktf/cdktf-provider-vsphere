@@ -24,6 +24,7 @@ Object.defineProperty(exports, 'drsVmOverride', { get: function () { return requ
 Object.defineProperty(exports, 'entityPermissions', { get: function () { return require('./entity-permissions'); } });
 Object.defineProperty(exports, 'file', { get: function () { return require('./file'); } });
 Object.defineProperty(exports, 'folder', { get: function () { return require('./folder'); } });
+Object.defineProperty(exports, 'guestOsCustomization', { get: function () { return require('./guest-os-customization'); } });
 Object.defineProperty(exports, 'haVmOverride', { get: function () { return require('./ha-vm-override'); } });
 Object.defineProperty(exports, 'host', { get: function () { return require('./host'); } });
 Object.defineProperty(exports, 'hostPortGroup', { get: function () { return require('./host-port-group'); } });
@@ -54,6 +55,7 @@ Object.defineProperty(exports, 'dataVsphereDatastoreCluster', { get: function ()
 Object.defineProperty(exports, 'dataVsphereDistributedVirtualSwitch', { get: function () { return require('./data-vsphere-distributed-virtual-switch'); } });
 Object.defineProperty(exports, 'dataVsphereDynamic', { get: function () { return require('./data-vsphere-dynamic'); } });
 Object.defineProperty(exports, 'dataVsphereFolder', { get: function () { return require('./data-vsphere-folder'); } });
+Object.defineProperty(exports, 'dataVsphereGuestOsCustomization', { get: function () { return require('./data-vsphere-guest-os-customization'); } });
 Object.defineProperty(exports, 'dataVsphereHost', { get: function () { return require('./data-vsphere-host'); } });
 Object.defineProperty(exports, 'dataVsphereHostPciDevice', { get: function () { return require('./data-vsphere-host-pci-device'); } });
 Object.defineProperty(exports, 'dataVsphereHostThumbprint', { get: function () { return require('./data-vsphere-host-thumbprint'); } });

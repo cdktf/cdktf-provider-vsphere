@@ -4,7 +4,7 @@
 
 ### Tag <a name="Tag" id="@cdktf/provider-vsphere.tag.Tag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/tag vsphere_tag}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/tag vsphere_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.tag.Tag.Initializer"></a>
 
@@ -431,7 +431,7 @@ The construct id used in the generated config for the Tag to import.
 
 The id of the existing Tag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/tag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/tag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -750,7 +750,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/tag"
 | <code><a href="#@cdktf/provider-vsphere.tag.TagConfig.property.categoryId">CategoryId</a></code> | <code>*string</code> | The unique identifier of the parent category in which this tag will be created. |
 | <code><a href="#@cdktf/provider-vsphere.tag.TagConfig.property.name">Name</a></code> | <code>*string</code> | The display name of the tag. The name must be unique within its category. |
 | <code><a href="#@cdktf/provider-vsphere.tag.TagConfig.property.description">Description</a></code> | <code>*string</code> | The description of the tag. |
-| <code><a href="#@cdktf/provider-vsphere.tag.TagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/tag#id Tag#id}. |
+| <code><a href="#@cdktf/provider-vsphere.tag.TagConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/tag#id Tag#id}. |
 
 ---
 
@@ -834,7 +834,7 @@ CategoryId *string
 
 The unique identifier of the parent category in which this tag will be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/tag#category_id Tag#category_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/tag#category_id Tag#category_id}
 
 ---
 
@@ -848,7 +848,7 @@ Name *string
 
 The display name of the tag. The name must be unique within its category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/tag#name Tag#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/tag#name Tag#name}
 
 ---
 
@@ -862,7 +862,7 @@ Description *string
 
 The description of the tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/tag#description Tag#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/tag#description Tag#description}
 
 ---
 
@@ -874,7 +874,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/tag#id Tag#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/tag#id Tag#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

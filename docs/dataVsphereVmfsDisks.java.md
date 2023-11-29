@@ -4,7 +4,7 @@
 
 ### DataVsphereVmfsDisks <a name="DataVsphereVmfsDisks" id="@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisks"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/vmfs_disks vsphere_vmfs_disks}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/data-sources/vmfs_disks vsphere_vmfs_disks}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisks.Initializer"></a>
 
@@ -44,7 +44,7 @@ DataVsphereVmfsDisks.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisks.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisks.Initializer.parameter.hostSystemId">hostSystemId</a></code> | <code>java.lang.String</code> | The managed object ID of the host to search for disks on. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisks.Initializer.parameter.filter">filter</a></code> | <code>java.lang.String</code> | A regular expression to filter the disks against. Only disks with canonical names that match will be included. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisks.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/vmfs_disks#id DataVsphereVmfsDisks#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisks.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/data-sources/vmfs_disks#id DataVsphereVmfsDisks#id}. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisks.Initializer.parameter.rescan">rescan</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Rescan the system for disks before querying. This may lengthen the time it takes to gather information. |
 
 ---
@@ -115,7 +115,7 @@ Must be unique amongst siblings in the same scope
 
 The managed object ID of the host to search for disks on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/vmfs_disks#host_system_id DataVsphereVmfsDisks#host_system_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/data-sources/vmfs_disks#host_system_id DataVsphereVmfsDisks#host_system_id}
 
 ---
 
@@ -125,7 +125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A regular expression to filter the disks against. Only disks with canonical names that match will be included.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/vmfs_disks#filter DataVsphereVmfsDisks#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/data-sources/vmfs_disks#filter DataVsphereVmfsDisks#filter}
 
 ---
 
@@ -133,7 +133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/vmfs_disks#id DataVsphereVmfsDisks#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/data-sources/vmfs_disks#id DataVsphereVmfsDisks#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -146,7 +146,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Rescan the system for disks before querying. This may lengthen the time it takes to gather information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/vmfs_disks#rescan DataVsphereVmfsDisks#rescan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/data-sources/vmfs_disks#rescan DataVsphereVmfsDisks#rescan}
 
 ---
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the DataVsphereVmfsDisks to im
 
 The id of the existing DataVsphereVmfsDisks that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/vmfs_disks#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/data-sources/vmfs_disks#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -793,7 +793,7 @@ DataVsphereVmfsDisksConfig.builder()
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisksConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisksConfig.property.hostSystemId">hostSystemId</a></code> | <code>java.lang.String</code> | The managed object ID of the host to search for disks on. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisksConfig.property.filter">filter</a></code> | <code>java.lang.String</code> | A regular expression to filter the disks against. Only disks with canonical names that match will be included. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisksConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/vmfs_disks#id DataVsphereVmfsDisks#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisksConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/data-sources/vmfs_disks#id DataVsphereVmfsDisks#id}. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisksConfig.property.rescan">rescan</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Rescan the system for disks before querying. This may lengthen the time it takes to gather information. |
 
 ---
@@ -878,7 +878,7 @@ public java.lang.String getHostSystemId();
 
 The managed object ID of the host to search for disks on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/vmfs_disks#host_system_id DataVsphereVmfsDisks#host_system_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/data-sources/vmfs_disks#host_system_id DataVsphereVmfsDisks#host_system_id}
 
 ---
 
@@ -892,7 +892,7 @@ public java.lang.String getFilter();
 
 A regular expression to filter the disks against. Only disks with canonical names that match will be included.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/vmfs_disks#filter DataVsphereVmfsDisks#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/data-sources/vmfs_disks#filter DataVsphereVmfsDisks#filter}
 
 ---
 
@@ -904,7 +904,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/vmfs_disks#id DataVsphereVmfsDisks#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/data-sources/vmfs_disks#id DataVsphereVmfsDisks#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -921,7 +921,7 @@ public java.lang.Object getRescan();
 
 Rescan the system for disks before querying. This may lengthen the time it takes to gather information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/vmfs_disks#rescan DataVsphereVmfsDisks#rescan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/data-sources/vmfs_disks#rescan DataVsphereVmfsDisks#rescan}
 
 ---
 

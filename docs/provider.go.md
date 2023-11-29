@@ -4,7 +4,7 @@
 
 ### VsphereProvider <a name="VsphereProvider" id="@cdktf/provider-vsphere.provider.VsphereProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs vsphere}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs vsphere}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.provider.VsphereProvider.Initializer"></a>
 
@@ -310,7 +310,7 @@ The construct id used in the generated config for the VsphereProvider to import.
 
 The id of the existing VsphereProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -786,7 +786,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/provider"
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.clientDebugPathRun">ClientDebugPathRun</a></code> | <code>*string</code> | govmomi debug path for a single run. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.persistSession">PersistSession</a></code> | <code>interface{}</code> | Persist vSphere client sessions to disk. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.restSessionPath">RestSessionPath</a></code> | <code>*string</code> | The directory to save vSphere REST API sessions to. |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.vcenterServer">VcenterServer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs#vcenter_server VsphereProvider#vcenter_server}. |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.vcenterServer">VcenterServer</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs#vcenter_server VsphereProvider#vcenter_server}. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.vimKeepAlive">VimKeepAlive</a></code> | <code>*f64</code> | Keep alive interval for the VIM session in minutes. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.vimSessionPath">VimSessionPath</a></code> | <code>*string</code> | The directory to save vSphere SOAP API sessions to. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.vsphereServer">VsphereServer</a></code> | <code>*string</code> | The vSphere Server name for vSphere API operations. |
@@ -803,7 +803,7 @@ Password *string
 
 The user password for vSphere API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs#password VsphereProvider#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs#password VsphereProvider#password}
 
 ---
 
@@ -817,7 +817,7 @@ User *string
 
 The user name for vSphere API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs#user VsphereProvider#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs#user VsphereProvider#user}
 
 ---
 
@@ -831,7 +831,7 @@ Alias *string
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs#alias VsphereProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs#alias VsphereProvider#alias}
 
 ---
 
@@ -845,7 +845,7 @@ AllowUnverifiedSsl interface{}
 
 If set, VMware vSphere client will permit unverifiable SSL certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs#allow_unverified_ssl VsphereProvider#allow_unverified_ssl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs#allow_unverified_ssl VsphereProvider#allow_unverified_ssl}
 
 ---
 
@@ -859,7 +859,7 @@ ApiTimeout *f64
 
 API timeout in minutes (Default: 5).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs#api_timeout VsphereProvider#api_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs#api_timeout VsphereProvider#api_timeout}
 
 ---
 
@@ -873,7 +873,7 @@ ClientDebug interface{}
 
 govmomi debug.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs#client_debug VsphereProvider#client_debug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs#client_debug VsphereProvider#client_debug}
 
 ---
 
@@ -887,7 +887,7 @@ ClientDebugPath *string
 
 govmomi debug path for debug.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs#client_debug_path VsphereProvider#client_debug_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs#client_debug_path VsphereProvider#client_debug_path}
 
 ---
 
@@ -901,7 +901,7 @@ ClientDebugPathRun *string
 
 govmomi debug path for a single run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs#client_debug_path_run VsphereProvider#client_debug_path_run}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs#client_debug_path_run VsphereProvider#client_debug_path_run}
 
 ---
 
@@ -915,7 +915,7 @@ PersistSession interface{}
 
 Persist vSphere client sessions to disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs#persist_session VsphereProvider#persist_session}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs#persist_session VsphereProvider#persist_session}
 
 ---
 
@@ -929,7 +929,7 @@ RestSessionPath *string
 
 The directory to save vSphere REST API sessions to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs#rest_session_path VsphereProvider#rest_session_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs#rest_session_path VsphereProvider#rest_session_path}
 
 ---
 
@@ -941,7 +941,7 @@ VcenterServer *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs#vcenter_server VsphereProvider#vcenter_server}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs#vcenter_server VsphereProvider#vcenter_server}.
 
 ---
 
@@ -955,7 +955,7 @@ VimKeepAlive *f64
 
 Keep alive interval for the VIM session in minutes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs#vim_keep_alive VsphereProvider#vim_keep_alive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs#vim_keep_alive VsphereProvider#vim_keep_alive}
 
 ---
 
@@ -969,7 +969,7 @@ VimSessionPath *string
 
 The directory to save vSphere SOAP API sessions to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs#vim_session_path VsphereProvider#vim_session_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs#vim_session_path VsphereProvider#vim_session_path}
 
 ---
 
@@ -983,7 +983,7 @@ VsphereServer *string
 
 The vSphere Server name for vSphere API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs#vsphere_server VsphereProvider#vsphere_server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs#vsphere_server VsphereProvider#vsphere_server}
 
 ---
 
