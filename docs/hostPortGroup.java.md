@@ -4,7 +4,7 @@
 
 ### HostPortGroup <a name="HostPortGroup" id="@cdktf/provider-vsphere.hostPortGroup.HostPortGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group vsphere_host_port_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group vsphere_host_port_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.hostPortGroup.HostPortGroup.Initializer"></a>
 
@@ -71,7 +71,7 @@ HostPortGroup.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vsphere.hostPortGroup.HostPortGroup.Initializer.parameter.allowPromiscuous">allowPromiscuous</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enable promiscuous mode on the network. |
 | <code><a href="#@cdktf/provider-vsphere.hostPortGroup.HostPortGroup.Initializer.parameter.checkBeacon">checkBeacon</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enable beacon probing. |
 | <code><a href="#@cdktf/provider-vsphere.hostPortGroup.HostPortGroup.Initializer.parameter.failback">failback</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, the teaming policy will re-activate failed interfaces higher in precedence when they come back up. |
-| <code><a href="#@cdktf/provider-vsphere.hostPortGroup.HostPortGroup.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#id HostPortGroup#id}. |
+| <code><a href="#@cdktf/provider-vsphere.hostPortGroup.HostPortGroup.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#id HostPortGroup#id}. |
 | <code><a href="#@cdktf/provider-vsphere.hostPortGroup.HostPortGroup.Initializer.parameter.notifySwitches">notifySwitches</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, the teaming policy will notify the broadcast network of a NIC failover, triggering cache updates. |
 | <code><a href="#@cdktf/provider-vsphere.hostPortGroup.HostPortGroup.Initializer.parameter.shapingAverageBandwidth">shapingAverageBandwidth</a></code> | <code>java.lang.Number</code> | The average bandwidth in bits per second if traffic shaping is enabled. |
 | <code><a href="#@cdktf/provider-vsphere.hostPortGroup.HostPortGroup.Initializer.parameter.shapingBurstSize">shapingBurstSize</a></code> | <code>java.lang.Number</code> | The maximum burst size allowed in bytes if traffic shaping is enabled. |
@@ -149,7 +149,7 @@ Must be unique amongst siblings in the same scope
 
 The managed object ID of the host to set the virtual switch up on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#host_system_id HostPortGroup#host_system_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#host_system_id HostPortGroup#host_system_id}
 
 ---
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the port group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#name HostPortGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#name HostPortGroup#name}
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the virtual switch to bind this port group to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#virtual_switch_name HostPortGroup#virtual_switch_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#virtual_switch_name HostPortGroup#virtual_switch_name}
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of active network adapters used for load balancing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#active_nics HostPortGroup#active_nics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#active_nics HostPortGroup#active_nics}
 
 ---
 
@@ -189,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Controls whether or not the virtual network adapter is allowed to send network traffic with a different MAC address than that of its own.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#allow_forged_transmits HostPortGroup#allow_forged_transmits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#allow_forged_transmits HostPortGroup#allow_forged_transmits}
 
 ---
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Controls whether or not the Media Access Control (MAC) address can be changed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#allow_mac_changes HostPortGroup#allow_mac_changes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#allow_mac_changes HostPortGroup#allow_mac_changes}
 
 ---
 
@@ -211,7 +211,7 @@ Enable promiscuous mode on the network.
 
 This flag indicates whether or not all traffic is seen on a given port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#allow_promiscuous HostPortGroup#allow_promiscuous}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#allow_promiscuous HostPortGroup#allow_promiscuous}
 
 ---
 
@@ -223,7 +223,7 @@ Enable beacon probing.
 
 Requires that the vSwitch has been configured to use a beacon. If disabled, link status is used only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#check_beacon HostPortGroup#check_beacon}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#check_beacon HostPortGroup#check_beacon}
 
 ---
 
@@ -233,7 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If true, the teaming policy will re-activate failed interfaces higher in precedence when they come back up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#failback HostPortGroup#failback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#failback HostPortGroup#failback}
 
 ---
 
@@ -241,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#id HostPortGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#id HostPortGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -254,7 +254,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 If true, the teaming policy will notify the broadcast network of a NIC failover, triggering cache updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#notify_switches HostPortGroup#notify_switches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#notify_switches HostPortGroup#notify_switches}
 
 ---
 
@@ -264,7 +264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The average bandwidth in bits per second if traffic shaping is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#shaping_average_bandwidth HostPortGroup#shaping_average_bandwidth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#shaping_average_bandwidth HostPortGroup#shaping_average_bandwidth}
 
 ---
 
@@ -274,7 +274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The maximum burst size allowed in bytes if traffic shaping is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#shaping_burst_size HostPortGroup#shaping_burst_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#shaping_burst_size HostPortGroup#shaping_burst_size}
 
 ---
 
@@ -284,7 +284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Enable traffic shaping on this virtual switch or port group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#shaping_enabled HostPortGroup#shaping_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#shaping_enabled HostPortGroup#shaping_enabled}
 
 ---
 
@@ -294,7 +294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The peak bandwidth during bursts in bits per second if traffic shaping is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#shaping_peak_bandwidth HostPortGroup#shaping_peak_bandwidth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#shaping_peak_bandwidth HostPortGroup#shaping_peak_bandwidth}
 
 ---
 
@@ -304,7 +304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of standby network adapters used for failover.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#standby_nics HostPortGroup#standby_nics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#standby_nics HostPortGroup#standby_nics}
 
 ---
 
@@ -314,7 +314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The network adapter teaming policy. Can be one of loadbalance_ip, loadbalance_srcmac, loadbalance_srcid, or failover_explicit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#teaming_policy HostPortGroup#teaming_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#teaming_policy HostPortGroup#teaming_policy}
 
 ---
 
@@ -326,7 +326,7 @@ The VLAN ID/trunk mode for this port group.
 
 An ID of 0 denotes no tagging, an ID of 1-4094 tags with the specific ID, and an ID of 4095 enables trunk mode, allowing the guest to manage its own tagging.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#vlan_id HostPortGroup#vlan_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#vlan_id HostPortGroup#vlan_id}
 
 ---
 
@@ -808,7 +808,7 @@ The construct id used in the generated config for the HostPortGroup to import.
 
 The id of the existing HostPortGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1499,7 +1499,7 @@ HostPortGroupConfig.builder()
 | <code><a href="#@cdktf/provider-vsphere.hostPortGroup.HostPortGroupConfig.property.allowPromiscuous">allowPromiscuous</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enable promiscuous mode on the network. |
 | <code><a href="#@cdktf/provider-vsphere.hostPortGroup.HostPortGroupConfig.property.checkBeacon">checkBeacon</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enable beacon probing. |
 | <code><a href="#@cdktf/provider-vsphere.hostPortGroup.HostPortGroupConfig.property.failback">failback</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, the teaming policy will re-activate failed interfaces higher in precedence when they come back up. |
-| <code><a href="#@cdktf/provider-vsphere.hostPortGroup.HostPortGroupConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#id HostPortGroup#id}. |
+| <code><a href="#@cdktf/provider-vsphere.hostPortGroup.HostPortGroupConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#id HostPortGroup#id}. |
 | <code><a href="#@cdktf/provider-vsphere.hostPortGroup.HostPortGroupConfig.property.notifySwitches">notifySwitches</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, the teaming policy will notify the broadcast network of a NIC failover, triggering cache updates. |
 | <code><a href="#@cdktf/provider-vsphere.hostPortGroup.HostPortGroupConfig.property.shapingAverageBandwidth">shapingAverageBandwidth</a></code> | <code>java.lang.Number</code> | The average bandwidth in bits per second if traffic shaping is enabled. |
 | <code><a href="#@cdktf/provider-vsphere.hostPortGroup.HostPortGroupConfig.property.shapingBurstSize">shapingBurstSize</a></code> | <code>java.lang.Number</code> | The maximum burst size allowed in bytes if traffic shaping is enabled. |
@@ -1591,7 +1591,7 @@ public java.lang.String getHostSystemId();
 
 The managed object ID of the host to set the virtual switch up on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#host_system_id HostPortGroup#host_system_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#host_system_id HostPortGroup#host_system_id}
 
 ---
 
@@ -1605,7 +1605,7 @@ public java.lang.String getName();
 
 The name of the port group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#name HostPortGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#name HostPortGroup#name}
 
 ---
 
@@ -1619,7 +1619,7 @@ public java.lang.String getVirtualSwitchName();
 
 The name of the virtual switch to bind this port group to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#virtual_switch_name HostPortGroup#virtual_switch_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#virtual_switch_name HostPortGroup#virtual_switch_name}
 
 ---
 
@@ -1633,7 +1633,7 @@ public java.util.List<java.lang.String> getActiveNics();
 
 List of active network adapters used for load balancing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#active_nics HostPortGroup#active_nics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#active_nics HostPortGroup#active_nics}
 
 ---
 
@@ -1647,7 +1647,7 @@ public java.lang.Object getAllowForgedTransmits();
 
 Controls whether or not the virtual network adapter is allowed to send network traffic with a different MAC address than that of its own.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#allow_forged_transmits HostPortGroup#allow_forged_transmits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#allow_forged_transmits HostPortGroup#allow_forged_transmits}
 
 ---
 
@@ -1661,7 +1661,7 @@ public java.lang.Object getAllowMacChanges();
 
 Controls whether or not the Media Access Control (MAC) address can be changed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#allow_mac_changes HostPortGroup#allow_mac_changes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#allow_mac_changes HostPortGroup#allow_mac_changes}
 
 ---
 
@@ -1677,7 +1677,7 @@ Enable promiscuous mode on the network.
 
 This flag indicates whether or not all traffic is seen on a given port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#allow_promiscuous HostPortGroup#allow_promiscuous}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#allow_promiscuous HostPortGroup#allow_promiscuous}
 
 ---
 
@@ -1693,7 +1693,7 @@ Enable beacon probing.
 
 Requires that the vSwitch has been configured to use a beacon. If disabled, link status is used only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#check_beacon HostPortGroup#check_beacon}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#check_beacon HostPortGroup#check_beacon}
 
 ---
 
@@ -1707,7 +1707,7 @@ public java.lang.Object getFailback();
 
 If true, the teaming policy will re-activate failed interfaces higher in precedence when they come back up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#failback HostPortGroup#failback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#failback HostPortGroup#failback}
 
 ---
 
@@ -1719,7 +1719,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#id HostPortGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#id HostPortGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1736,7 +1736,7 @@ public java.lang.Object getNotifySwitches();
 
 If true, the teaming policy will notify the broadcast network of a NIC failover, triggering cache updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#notify_switches HostPortGroup#notify_switches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#notify_switches HostPortGroup#notify_switches}
 
 ---
 
@@ -1750,7 +1750,7 @@ public java.lang.Number getShapingAverageBandwidth();
 
 The average bandwidth in bits per second if traffic shaping is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#shaping_average_bandwidth HostPortGroup#shaping_average_bandwidth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#shaping_average_bandwidth HostPortGroup#shaping_average_bandwidth}
 
 ---
 
@@ -1764,7 +1764,7 @@ public java.lang.Number getShapingBurstSize();
 
 The maximum burst size allowed in bytes if traffic shaping is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#shaping_burst_size HostPortGroup#shaping_burst_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#shaping_burst_size HostPortGroup#shaping_burst_size}
 
 ---
 
@@ -1778,7 +1778,7 @@ public java.lang.Object getShapingEnabled();
 
 Enable traffic shaping on this virtual switch or port group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#shaping_enabled HostPortGroup#shaping_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#shaping_enabled HostPortGroup#shaping_enabled}
 
 ---
 
@@ -1792,7 +1792,7 @@ public java.lang.Number getShapingPeakBandwidth();
 
 The peak bandwidth during bursts in bits per second if traffic shaping is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#shaping_peak_bandwidth HostPortGroup#shaping_peak_bandwidth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#shaping_peak_bandwidth HostPortGroup#shaping_peak_bandwidth}
 
 ---
 
@@ -1806,7 +1806,7 @@ public java.util.List<java.lang.String> getStandbyNics();
 
 List of standby network adapters used for failover.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#standby_nics HostPortGroup#standby_nics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#standby_nics HostPortGroup#standby_nics}
 
 ---
 
@@ -1820,7 +1820,7 @@ public java.lang.String getTeamingPolicy();
 
 The network adapter teaming policy. Can be one of loadbalance_ip, loadbalance_srcmac, loadbalance_srcid, or failover_explicit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#teaming_policy HostPortGroup#teaming_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#teaming_policy HostPortGroup#teaming_policy}
 
 ---
 
@@ -1836,7 +1836,7 @@ The VLAN ID/trunk mode for this port group.
 
 An ID of 0 denotes no tagging, an ID of 1-4094 tags with the specific ID, and an ID of 4095 enables trunk mode, allowing the guest to manage its own tagging.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/host_port_group#vlan_id HostPortGroup#vlan_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/host_port_group#vlan_id HostPortGroup#vlan_id}
 
 ---
 

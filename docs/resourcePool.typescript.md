@@ -4,7 +4,7 @@
 
 ### ResourcePool <a name="ResourcePool" id="@cdktf/provider-vsphere.resourcePool.ResourcePool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/resource_pool vsphere_resource_pool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool vsphere_resource_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.resourcePool.ResourcePool.Initializer"></a>
 
@@ -515,7 +515,7 @@ The construct id used in the generated config for the ResourcePool to import.
 
 The id of the existing ResourcePool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/resource_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1091,7 +1091,7 @@ const resourcePoolConfig: resourcePool.ResourcePoolConfig = { ... }
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.cpuShareLevel">cpuShareLevel</a></code> | <code>string</code> | The allocation level. |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.cpuShares">cpuShares</a></code> | <code>number</code> | The number of shares allocated. |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.customAttributes">customAttributes</a></code> | <code>{[ key: string ]: string}</code> | A list of custom attributes to set on this resource. |
-| <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/resource_pool#id ResourcePool#id}. |
+| <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#id ResourcePool#id}. |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.memoryExpandable">memoryExpandable</a></code> | <code>boolean \| cdktf.IResolvable</code> | Determines if the reservation on a resource pool can grow beyond the specified value, if the parent resource pool has unreserved resources. |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.memoryLimit">memoryLimit</a></code> | <code>number</code> | The utilization of a resource pool will not exceed this limit, even if there are available resources. |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.memoryReservation">memoryReservation</a></code> | <code>number</code> | Amount of memory (MB) that is guaranteed available to the resource pool. |
@@ -1182,7 +1182,7 @@ public readonly name: string;
 
 Name of resource pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/resource_pool#name ResourcePool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#name ResourcePool#name}
 
 ---
 
@@ -1196,7 +1196,7 @@ public readonly parentResourcePoolId: string;
 
 The ID of the root resource pool of the compute resource the resource pool is in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/resource_pool#parent_resource_pool_id ResourcePool#parent_resource_pool_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#parent_resource_pool_id ResourcePool#parent_resource_pool_id}
 
 ---
 
@@ -1210,7 +1210,7 @@ public readonly cpuExpandable: boolean | IResolvable;
 
 Determines if the reservation on a resource pool can grow beyond the specified value, if the parent resource pool has unreserved resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/resource_pool#cpu_expandable ResourcePool#cpu_expandable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#cpu_expandable ResourcePool#cpu_expandable}
 
 ---
 
@@ -1226,7 +1226,7 @@ The utilization of a resource pool will not exceed this limit, even if there are
 
 Set to -1 for unlimited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/resource_pool#cpu_limit ResourcePool#cpu_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#cpu_limit ResourcePool#cpu_limit}
 
 ---
 
@@ -1240,7 +1240,7 @@ public readonly cpuReservation: number;
 
 Amount of CPU (MHz) that is guaranteed available to the resource pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/resource_pool#cpu_reservation ResourcePool#cpu_reservation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#cpu_reservation ResourcePool#cpu_reservation}
 
 ---
 
@@ -1256,7 +1256,7 @@ The allocation level.
 
 The level is a simplified view of shares. Levels map to a pre-determined set of numeric values for shares. Can be one of low, normal, high, or custom.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/resource_pool#cpu_share_level ResourcePool#cpu_share_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#cpu_share_level ResourcePool#cpu_share_level}
 
 ---
 
@@ -1272,7 +1272,7 @@ The number of shares allocated.
 
 Used to determine resource allocation in case of resource contention. If this is set, cpu_share_level must be custom.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/resource_pool#cpu_shares ResourcePool#cpu_shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#cpu_shares ResourcePool#cpu_shares}
 
 ---
 
@@ -1286,7 +1286,7 @@ public readonly customAttributes: {[ key: string ]: string};
 
 A list of custom attributes to set on this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/resource_pool#custom_attributes ResourcePool#custom_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#custom_attributes ResourcePool#custom_attributes}
 
 ---
 
@@ -1298,7 +1298,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/resource_pool#id ResourcePool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#id ResourcePool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1315,7 +1315,7 @@ public readonly memoryExpandable: boolean | IResolvable;
 
 Determines if the reservation on a resource pool can grow beyond the specified value, if the parent resource pool has unreserved resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/resource_pool#memory_expandable ResourcePool#memory_expandable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#memory_expandable ResourcePool#memory_expandable}
 
 ---
 
@@ -1331,7 +1331,7 @@ The utilization of a resource pool will not exceed this limit, even if there are
 
 Set to -1 for unlimited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/resource_pool#memory_limit ResourcePool#memory_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#memory_limit ResourcePool#memory_limit}
 
 ---
 
@@ -1345,7 +1345,7 @@ public readonly memoryReservation: number;
 
 Amount of memory (MB) that is guaranteed available to the resource pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/resource_pool#memory_reservation ResourcePool#memory_reservation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#memory_reservation ResourcePool#memory_reservation}
 
 ---
 
@@ -1361,7 +1361,7 @@ The allocation level.
 
 The level is a simplified view of shares. Levels map to a pre-determined set of numeric values for shares. Can be one of low, normal, high, or custom.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/resource_pool#memory_share_level ResourcePool#memory_share_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#memory_share_level ResourcePool#memory_share_level}
 
 ---
 
@@ -1377,7 +1377,7 @@ The number of shares allocated.
 
 Used to determine resource allocation in case of resource contention. If this is set, memory_share_level must be custom.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/resource_pool#memory_shares ResourcePool#memory_shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#memory_shares ResourcePool#memory_shares}
 
 ---
 
@@ -1391,7 +1391,7 @@ public readonly scaleDescendantsShares: string;
 
 Determines if the shares of all descendants of the resource pool are scaled up or down when the shares of the resource pool are scaled up or down.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/resource_pool#scale_descendants_shares ResourcePool#scale_descendants_shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#scale_descendants_shares ResourcePool#scale_descendants_shares}
 
 ---
 
@@ -1405,7 +1405,7 @@ public readonly tags: string[];
 
 A list of tag IDs to apply to this object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/resource_pool#tags ResourcePool#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#tags ResourcePool#tags}
 
 ---
 

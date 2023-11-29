@@ -1,3 +1,3 @@
 # `vsphere_compute_cluster_vm_host_rule`
 
-Refer to the Terraform Registory for docs: [`vsphere_compute_cluster_vm_host_rule`](https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/compute_cluster_vm_host_rule).
+Refer to the Terraform Registory for docs: [`vsphere_compute_cluster_vm_host_rule`](https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/compute_cluster_vm_host_rule).

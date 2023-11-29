@@ -4,7 +4,7 @@
 
 ### ContentLibraryItem <a name="ContentLibraryItem" id="@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItem"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/content_library_item vsphere_content_library_item}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/content_library_item vsphere_content_library_item}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItem.Initializer"></a>
 
@@ -46,7 +46,7 @@ contentLibraryItem.ContentLibraryItem(
 | <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItem.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the content library item. |
 | <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItem.Initializer.parameter.description">description</a></code> | <code>str</code> | Optional description of the content library item. |
 | <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItem.Initializer.parameter.fileUrl">file_url</a></code> | <code>str</code> | ID of source VM of content library item. |
-| <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItem.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/content_library_item#id ContentLibraryItem#id}. |
+| <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItem.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/content_library_item#id ContentLibraryItem#id}. |
 | <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItem.Initializer.parameter.sourceUuid">source_uuid</a></code> | <code>str</code> | The managed object ID of an existing VM to be cloned to the content library. |
 | <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItem.Initializer.parameter.type">type</a></code> | <code>str</code> | Type of content library item. |
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 ID of the content library to contain item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/content_library_item#library_id ContentLibraryItem#library_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/content_library_item#library_id ContentLibraryItem#library_id}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the content library item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/content_library_item#name ContentLibraryItem#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/content_library_item#name ContentLibraryItem#name}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional description of the content library item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/content_library_item#description ContentLibraryItem#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/content_library_item#description ContentLibraryItem#description}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ID of source VM of content library item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/content_library_item#file_url ContentLibraryItem#file_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/content_library_item#file_url ContentLibraryItem#file_url}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/content_library_item#id ContentLibraryItem#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/content_library_item#id ContentLibraryItem#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -169,7 +169,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The managed object ID of an existing VM to be cloned to the content library.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/content_library_item#source_uuid ContentLibraryItem#source_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/content_library_item#source_uuid ContentLibraryItem#source_uuid}
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Type of content library item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/content_library_item#type ContentLibraryItem#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/content_library_item#type ContentLibraryItem#type}
 
 ---
 
@@ -633,7 +633,7 @@ The construct id used in the generated config for the ContentLibraryItem to impo
 
 The id of the existing ContentLibraryItem that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/content_library_item#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/content_library_item#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1022,7 +1022,7 @@ contentLibraryItem.ContentLibraryItemConfig(
 | <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItemConfig.property.name">name</a></code> | <code>str</code> | The name of the content library item. |
 | <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItemConfig.property.description">description</a></code> | <code>str</code> | Optional description of the content library item. |
 | <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItemConfig.property.fileUrl">file_url</a></code> | <code>str</code> | ID of source VM of content library item. |
-| <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItemConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/content_library_item#id ContentLibraryItem#id}. |
+| <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItemConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/content_library_item#id ContentLibraryItem#id}. |
 | <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItemConfig.property.sourceUuid">source_uuid</a></code> | <code>str</code> | The managed object ID of an existing VM to be cloned to the content library. |
 | <code><a href="#@cdktf/provider-vsphere.contentLibraryItem.ContentLibraryItemConfig.property.type">type</a></code> | <code>str</code> | Type of content library item. |
 
@@ -1108,7 +1108,7 @@ library_id: str
 
 ID of the content library to contain item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/content_library_item#library_id ContentLibraryItem#library_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/content_library_item#library_id ContentLibraryItem#library_id}
 
 ---
 
@@ -1122,7 +1122,7 @@ name: str
 
 The name of the content library item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/content_library_item#name ContentLibraryItem#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/content_library_item#name ContentLibraryItem#name}
 
 ---
 
@@ -1136,7 +1136,7 @@ description: str
 
 Optional description of the content library item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/content_library_item#description ContentLibraryItem#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/content_library_item#description ContentLibraryItem#description}
 
 ---
 
@@ -1150,7 +1150,7 @@ file_url: str
 
 ID of source VM of content library item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/content_library_item#file_url ContentLibraryItem#file_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/content_library_item#file_url ContentLibraryItem#file_url}
 
 ---
 
@@ -1162,7 +1162,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/content_library_item#id ContentLibraryItem#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/content_library_item#id ContentLibraryItem#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1179,7 +1179,7 @@ source_uuid: str
 
 The managed object ID of an existing VM to be cloned to the content library.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/content_library_item#source_uuid ContentLibraryItem#source_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/content_library_item#source_uuid ContentLibraryItem#source_uuid}
 
 ---
 
@@ -1193,7 +1193,7 @@ type: str
 
 Type of content library item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/content_library_item#type ContentLibraryItem#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/content_library_item#type ContentLibraryItem#type}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### DataVsphereFolder <a name="DataVsphereFolder" id="@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/folder vsphere_folder}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/data-sources/folder vsphere_folder}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherefolder"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherefolder"
 
 datavspherefolder.NewDataVsphereFolder(scope Construct, id *string, config DataVsphereFolderConfig) DataVsphereFolder
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherefolder"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherefolder"
 
 datavspherefolder.DataVsphereFolder_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherefolder"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherefolder"
 
 datavspherefolder.DataVsphereFolder_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datavspherefolder.DataVsphereFolder_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherefolder"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherefolder"
 
 datavspherefolder.DataVsphereFolder_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datavspherefolder.DataVsphereFolder_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolder.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherefolder"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherefolder"
 
 datavspherefolder.DataVsphereFolder_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -363,7 +363,7 @@ The construct id used in the generated config for the DataVsphereFolder to impor
 
 The id of the existing DataVsphereFolder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/folder#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/data-sources/folder#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -585,7 +585,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherefolder"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherefolder"
 
 &datavspherefolder.DataVsphereFolderConfig {
 	Connection: interface{},
@@ -612,7 +612,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherefolder"
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolderConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolderConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolderConfig.property.path">Path</a></code> | <code>*string</code> | The absolute path of the folder. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/folder#id DataVsphereFolder#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereFolder.DataVsphereFolderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/data-sources/folder#id DataVsphereFolder#id}. |
 
 ---
 
@@ -696,7 +696,7 @@ Path *string
 
 The absolute path of the folder.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/folder#path DataVsphereFolder#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/data-sources/folder#path DataVsphereFolder#path}
 
 ---
 
@@ -708,7 +708,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/data-sources/folder#id DataVsphereFolder#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/data-sources/folder#id DataVsphereFolder#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -4,12 +4,12 @@
 
 ### ComputeClusterVmAffinityRule <a name="ComputeClusterVmAffinityRule" id="@cdktf/provider-vsphere.computeClusterVmAffinityRule.ComputeClusterVmAffinityRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/compute_cluster_vm_affinity_rule vsphere_compute_cluster_vm_affinity_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/compute_cluster_vm_affinity_rule vsphere_compute_cluster_vm_affinity_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeClusterVmAffinityRule.ComputeClusterVmAffinityRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computeclustervmaffinityrule"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmaffinityrule"
 
 computeclustervmaffinityrule.NewComputeClusterVmAffinityRule(scope Construct, id *string, config ComputeClusterVmAffinityRuleConfig) ComputeClusterVmAffinityRule
 ```
@@ -349,7 +349,7 @@ func ResetMandatory()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.computeClusterVmAffinityRule.ComputeClusterVmAffinityRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computeclustervmaffinityrule"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmaffinityrule"
 
 computeclustervmaffinityrule.ComputeClusterVmAffinityRule_IsConstruct(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.computeClusterVmAffinityRule.ComputeClusterVmAffinityRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computeclustervmaffinityrule"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmaffinityrule"
 
 computeclustervmaffinityrule.ComputeClusterVmAffinityRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ computeclustervmaffinityrule.ComputeClusterVmAffinityRule_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.computeClusterVmAffinityRule.ComputeClusterVmAffinityRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computeclustervmaffinityrule"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmaffinityrule"
 
 computeclustervmaffinityrule.ComputeClusterVmAffinityRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -409,7 +409,7 @@ computeclustervmaffinityrule.ComputeClusterVmAffinityRule_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.computeClusterVmAffinityRule.ComputeClusterVmAffinityRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computeclustervmaffinityrule"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmaffinityrule"
 
 computeclustervmaffinityrule.ComputeClusterVmAffinityRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -438,7 +438,7 @@ The construct id used in the generated config for the ComputeClusterVmAffinityRu
 
 The id of the existing ComputeClusterVmAffinityRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/compute_cluster_vm_affinity_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/compute_cluster_vm_affinity_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -770,7 +770,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.computeClusterVmAffinityRule.ComputeClusterVmAffinityRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computeclustervmaffinityrule"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmaffinityrule"
 
 &computeclustervmaffinityrule.ComputeClusterVmAffinityRuleConfig {
 	Connection: interface{},
@@ -804,7 +804,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computeclustervmaf
 | <code><a href="#@cdktf/provider-vsphere.computeClusterVmAffinityRule.ComputeClusterVmAffinityRuleConfig.property.name">Name</a></code> | <code>*string</code> | The unique name of the virtual machine group in the cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeClusterVmAffinityRule.ComputeClusterVmAffinityRuleConfig.property.virtualMachineIds">VirtualMachineIds</a></code> | <code>*[]*string</code> | The UUIDs of the virtual machines to run on the same host together. |
 | <code><a href="#@cdktf/provider-vsphere.computeClusterVmAffinityRule.ComputeClusterVmAffinityRuleConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Enable this rule in the cluster. |
-| <code><a href="#@cdktf/provider-vsphere.computeClusterVmAffinityRule.ComputeClusterVmAffinityRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/compute_cluster_vm_affinity_rule#id ComputeClusterVmAffinityRule#id}. |
+| <code><a href="#@cdktf/provider-vsphere.computeClusterVmAffinityRule.ComputeClusterVmAffinityRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/compute_cluster_vm_affinity_rule#id ComputeClusterVmAffinityRule#id}. |
 | <code><a href="#@cdktf/provider-vsphere.computeClusterVmAffinityRule.ComputeClusterVmAffinityRuleConfig.property.mandatory">Mandatory</a></code> | <code>interface{}</code> | When true, prevents any virtual machine operations that may violate this rule. |
 
 ---
@@ -889,7 +889,7 @@ ComputeClusterId *string
 
 The managed object ID of the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/compute_cluster_vm_affinity_rule#compute_cluster_id ComputeClusterVmAffinityRule#compute_cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/compute_cluster_vm_affinity_rule#compute_cluster_id ComputeClusterVmAffinityRule#compute_cluster_id}
 
 ---
 
@@ -903,7 +903,7 @@ Name *string
 
 The unique name of the virtual machine group in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/compute_cluster_vm_affinity_rule#name ComputeClusterVmAffinityRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/compute_cluster_vm_affinity_rule#name ComputeClusterVmAffinityRule#name}
 
 ---
 
@@ -917,7 +917,7 @@ VirtualMachineIds *[]*string
 
 The UUIDs of the virtual machines to run on the same host together.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/compute_cluster_vm_affinity_rule#virtual_machine_ids ComputeClusterVmAffinityRule#virtual_machine_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/compute_cluster_vm_affinity_rule#virtual_machine_ids ComputeClusterVmAffinityRule#virtual_machine_ids}
 
 ---
 
@@ -931,7 +931,7 @@ Enabled interface{}
 
 Enable this rule in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/compute_cluster_vm_affinity_rule#enabled ComputeClusterVmAffinityRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/compute_cluster_vm_affinity_rule#enabled ComputeClusterVmAffinityRule#enabled}
 
 ---
 
@@ -943,7 +943,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/compute_cluster_vm_affinity_rule#id ComputeClusterVmAffinityRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/compute_cluster_vm_affinity_rule#id ComputeClusterVmAffinityRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -960,7 +960,7 @@ Mandatory interface{}
 
 When true, prevents any virtual machine operations that may violate this rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.5.1/docs/resources/compute_cluster_vm_affinity_rule#mandatory ComputeClusterVmAffinityRule#mandatory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/compute_cluster_vm_affinity_rule#mandatory ComputeClusterVmAffinityRule#mandatory}
 
 ---
 
