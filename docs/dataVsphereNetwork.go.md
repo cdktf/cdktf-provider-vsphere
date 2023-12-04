@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherenetwork"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherenetwork"
 
 datavspherenetwork.NewDataVsphereNetwork(scope Construct, id *string, config DataVsphereNetworkConfig) DataVsphereNetwork
 ```
@@ -288,7 +288,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherenetwork"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherenetwork"
 
 datavspherenetwork.DataVsphereNetwork_IsConstruct(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherenetwork"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherenetwork"
 
 datavspherenetwork.DataVsphereNetwork_IsTerraformElement(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datavspherenetwork.DataVsphereNetwork_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherenetwork"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherenetwork"
 
 datavspherenetwork.DataVsphereNetwork_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -348,7 +348,7 @@ datavspherenetwork.DataVsphereNetwork_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherenetwork"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherenetwork"
 
 datavspherenetwork.DataVsphereNetwork_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -654,7 +654,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherenetwork"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherenetwork"
 
 &datavspherenetwork.DataVsphereNetworkConfig {
 	Connection: interface{},
