@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItem.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherecontentlibraryitem"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherecontentlibraryitem"
 
 datavspherecontentlibraryitem.NewDataVsphereContentLibraryItem(scope Construct, id *string, config DataVsphereContentLibraryItemConfig) DataVsphereContentLibraryItem
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItem.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherecontentlibraryitem"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherecontentlibraryitem"
 
 datavspherecontentlibraryitem.DataVsphereContentLibraryItem_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItem.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherecontentlibraryitem"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherecontentlibraryitem"
 
 datavspherecontentlibraryitem.DataVsphereContentLibraryItem_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datavspherecontentlibraryitem.DataVsphereContentLibraryItem_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItem.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherecontentlibraryitem"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherecontentlibraryitem"
 
 datavspherecontentlibraryitem.DataVsphereContentLibraryItem_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datavspherecontentlibraryitem.DataVsphereContentLibraryItem_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItem.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherecontentlibraryitem"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherecontentlibraryitem"
 
 datavspherecontentlibraryitem.DataVsphereContentLibraryItem_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -629,7 +629,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItemConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherecontentlibraryitem"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherecontentlibraryitem"
 
 &datavspherecontentlibraryitem.DataVsphereContentLibraryItemConfig {
 	Connection: interface{},
