@@ -4,7 +4,7 @@
 
 ### GuestOsCustomization <a name="GuestOsCustomization" id="@cdktf/provider-vsphere.guestOsCustomization.GuestOsCustomization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization vsphere_guest_os_customization}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization vsphere_guest_os_customization}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.guestOsCustomization.GuestOsCustomization.Initializer"></a>
 
@@ -44,7 +44,7 @@ guestOsCustomization.GuestOsCustomization(
 | <code><a href="#@cdktf/provider-vsphere.guestOsCustomization.GuestOsCustomization.Initializer.parameter.spec">spec</a></code> | <code><a href="#@cdktf/provider-vsphere.guestOsCustomization.GuestOsCustomizationSpec">GuestOsCustomizationSpec</a></code> | spec block. |
 | <code><a href="#@cdktf/provider-vsphere.guestOsCustomization.GuestOsCustomization.Initializer.parameter.type">type</a></code> | <code>str</code> | The type of customization specification: One among: Windows, Linux. |
 | <code><a href="#@cdktf/provider-vsphere.guestOsCustomization.GuestOsCustomization.Initializer.parameter.description">description</a></code> | <code>str</code> | The description for the customization specification. |
-| <code><a href="#@cdktf/provider-vsphere.guestOsCustomization.GuestOsCustomization.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#id GuestOsCustomization#id}. |
+| <code><a href="#@cdktf/provider-vsphere.guestOsCustomization.GuestOsCustomization.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#id GuestOsCustomization#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the customization specification is the unique identifier per vCenter Server instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#name GuestOsCustomization#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#name GuestOsCustomization#name}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#spec GuestOsCustomization#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#spec GuestOsCustomization#spec}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The type of customization specification: One among: Windows, Linux.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#type GuestOsCustomization#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#type GuestOsCustomization#type}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The description for the customization specification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#description GuestOsCustomization#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#description GuestOsCustomization#description}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#id GuestOsCustomization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#id GuestOsCustomization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -531,7 +531,7 @@ def put_spec(
 
 The list of DNS servers for a virtual network adapter with a static IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#dns_server_list GuestOsCustomization#dns_server_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#dns_server_list GuestOsCustomization#dns_server_list}
 
 ---
 
@@ -541,7 +541,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of DNS search domains to add to the DNS configuration on the virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#dns_suffix_list GuestOsCustomization#dns_suffix_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#dns_suffix_list GuestOsCustomization#dns_suffix_list}
 
 ---
 
@@ -553,7 +553,7 @@ The IPv4 default gateway when using network_interface customization on the virtu
 
 This address must be local to a static IPv4 address configured in an interface sub-resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#ipv4_gateway GuestOsCustomization#ipv4_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#ipv4_gateway GuestOsCustomization#ipv4_gateway}
 
 ---
 
@@ -565,7 +565,7 @@ The IPv6 default gateway when using network_interface customization on the virtu
 
 This address must be local to a static IPv4 address configured in an interface sub-resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#ipv6_gateway GuestOsCustomization#ipv6_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#ipv6_gateway GuestOsCustomization#ipv6_gateway}
 
 ---
 
@@ -575,7 +575,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#linux_options GuestOsCustomization#linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#linux_options GuestOsCustomization#linux_options}
 
 ---
 
@@ -585,7 +585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 network_interface block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#network_interface GuestOsCustomization#network_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#network_interface GuestOsCustomization#network_interface}
 
 ---
 
@@ -595,7 +595,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 windows_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#windows_options GuestOsCustomization#windows_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#windows_options GuestOsCustomization#windows_options}
 
 ---
 
@@ -605,7 +605,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Use this option to specify a windows sysprep file directly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#windows_sysprep_text GuestOsCustomization#windows_sysprep_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#windows_sysprep_text GuestOsCustomization#windows_sysprep_text}
 
 ---
 
@@ -735,7 +735,7 @@ The construct id used in the generated config for the GuestOsCustomization to im
 
 The id of the existing GuestOsCustomization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1100,7 +1100,7 @@ guestOsCustomization.GuestOsCustomizationConfig(
 | <code><a href="#@cdktf/provider-vsphere.guestOsCustomization.GuestOsCustomizationConfig.property.spec">spec</a></code> | <code><a href="#@cdktf/provider-vsphere.guestOsCustomization.GuestOsCustomizationSpec">GuestOsCustomizationSpec</a></code> | spec block. |
 | <code><a href="#@cdktf/provider-vsphere.guestOsCustomization.GuestOsCustomizationConfig.property.type">type</a></code> | <code>str</code> | The type of customization specification: One among: Windows, Linux. |
 | <code><a href="#@cdktf/provider-vsphere.guestOsCustomization.GuestOsCustomizationConfig.property.description">description</a></code> | <code>str</code> | The description for the customization specification. |
-| <code><a href="#@cdktf/provider-vsphere.guestOsCustomization.GuestOsCustomizationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#id GuestOsCustomization#id}. |
+| <code><a href="#@cdktf/provider-vsphere.guestOsCustomization.GuestOsCustomizationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#id GuestOsCustomization#id}. |
 
 ---
 
@@ -1184,7 +1184,7 @@ name: str
 
 The name of the customization specification is the unique identifier per vCenter Server instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#name GuestOsCustomization#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#name GuestOsCustomization#name}
 
 ---
 
@@ -1198,7 +1198,7 @@ spec: GuestOsCustomizationSpec
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#spec GuestOsCustomization#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#spec GuestOsCustomization#spec}
 
 ---
 
@@ -1212,7 +1212,7 @@ type: str
 
 The type of customization specification: One among: Windows, Linux.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#type GuestOsCustomization#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#type GuestOsCustomization#type}
 
 ---
 
@@ -1226,7 +1226,7 @@ description: str
 
 The description for the customization specification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#description GuestOsCustomization#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#description GuestOsCustomization#description}
 
 ---
 
@@ -1238,7 +1238,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#id GuestOsCustomization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#id GuestOsCustomization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1289,7 +1289,7 @@ dns_server_list: typing.List[str]
 
 The list of DNS servers for a virtual network adapter with a static IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#dns_server_list GuestOsCustomization#dns_server_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#dns_server_list GuestOsCustomization#dns_server_list}
 
 ---
 
@@ -1303,7 +1303,7 @@ dns_suffix_list: typing.List[str]
 
 A list of DNS search domains to add to the DNS configuration on the virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#dns_suffix_list GuestOsCustomization#dns_suffix_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#dns_suffix_list GuestOsCustomization#dns_suffix_list}
 
 ---
 
@@ -1319,7 +1319,7 @@ The IPv4 default gateway when using network_interface customization on the virtu
 
 This address must be local to a static IPv4 address configured in an interface sub-resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#ipv4_gateway GuestOsCustomization#ipv4_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#ipv4_gateway GuestOsCustomization#ipv4_gateway}
 
 ---
 
@@ -1335,7 +1335,7 @@ The IPv6 default gateway when using network_interface customization on the virtu
 
 This address must be local to a static IPv4 address configured in an interface sub-resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#ipv6_gateway GuestOsCustomization#ipv6_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#ipv6_gateway GuestOsCustomization#ipv6_gateway}
 
 ---
 
@@ -1349,7 +1349,7 @@ linux_options: GuestOsCustomizationSpecLinuxOptions
 
 linux_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#linux_options GuestOsCustomization#linux_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#linux_options GuestOsCustomization#linux_options}
 
 ---
 
@@ -1363,7 +1363,7 @@ network_interface: typing.Union[IResolvable, typing.List[GuestOsCustomizationSpe
 
 network_interface block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#network_interface GuestOsCustomization#network_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#network_interface GuestOsCustomization#network_interface}
 
 ---
 
@@ -1377,7 +1377,7 @@ windows_options: GuestOsCustomizationSpecWindowsOptions
 
 windows_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#windows_options GuestOsCustomization#windows_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#windows_options GuestOsCustomization#windows_options}
 
 ---
 
@@ -1391,7 +1391,7 @@ windows_sysprep_text: str
 
 Use this option to specify a windows sysprep file directly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#windows_sysprep_text GuestOsCustomization#windows_sysprep_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#windows_sysprep_text GuestOsCustomization#windows_sysprep_text}
 
 ---
 
@@ -1433,7 +1433,7 @@ domain: str
 
 The domain name for this virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#domain GuestOsCustomization#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#domain GuestOsCustomization#domain}
 
 ---
 
@@ -1447,7 +1447,7 @@ host_name: str
 
 The hostname for this virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#host_name GuestOsCustomization#host_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#host_name GuestOsCustomization#host_name}
 
 ---
 
@@ -1461,7 +1461,7 @@ hw_clock_utc: typing.Union[bool, IResolvable]
 
 Specifies whether or not the hardware clock should be in UTC or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#hw_clock_utc GuestOsCustomization#hw_clock_utc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#hw_clock_utc GuestOsCustomization#hw_clock_utc}
 
 ---
 
@@ -1475,7 +1475,7 @@ script_text: str
 
 The customization script to run before and or after guest customization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#script_text GuestOsCustomization#script_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#script_text GuestOsCustomization#script_text}
 
 ---
 
@@ -1489,7 +1489,7 @@ time_zone: str
 
 Customize the time zone on the VM. This should be a time zone-style entry, like America/Los_Angeles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#time_zone GuestOsCustomization#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#time_zone GuestOsCustomization#time_zone}
 
 ---
 
@@ -1533,7 +1533,7 @@ dns_domain: str
 
 A DNS search domain to add to the DNS configuration on the virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#dns_domain GuestOsCustomization#dns_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#dns_domain GuestOsCustomization#dns_domain}
 
 ---
 
@@ -1547,7 +1547,7 @@ dns_server_list: typing.List[str]
 
 Network-interface specific DNS settings for Windows operating systems. Ignored on Linux.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#dns_server_list GuestOsCustomization#dns_server_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#dns_server_list GuestOsCustomization#dns_server_list}
 
 ---
 
@@ -1561,7 +1561,7 @@ ipv4_address: str
 
 The IPv4 address assigned to this network adapter. If left blank, DHCP is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#ipv4_address GuestOsCustomization#ipv4_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#ipv4_address GuestOsCustomization#ipv4_address}
 
 ---
 
@@ -1575,7 +1575,7 @@ ipv4_netmask: typing.Union[int, float]
 
 The IPv4 CIDR netmask for the supplied IP address. Ignored if DHCP is selected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#ipv4_netmask GuestOsCustomization#ipv4_netmask}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#ipv4_netmask GuestOsCustomization#ipv4_netmask}
 
 ---
 
@@ -1589,7 +1589,7 @@ ipv6_address: str
 
 The IPv6 address assigned to this network adapter. If left blank, default auto-configuration is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#ipv6_address GuestOsCustomization#ipv6_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#ipv6_address GuestOsCustomization#ipv6_address}
 
 ---
 
@@ -1603,7 +1603,7 @@ ipv6_netmask: typing.Union[int, float]
 
 The IPv6 CIDR netmask for the supplied IP address. Ignored if auto-configuration is selected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#ipv6_netmask GuestOsCustomization#ipv6_netmask}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#ipv6_netmask GuestOsCustomization#ipv6_netmask}
 
 ---
 
@@ -1661,7 +1661,7 @@ computer_name: str
 
 The host name for this virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#computer_name GuestOsCustomization#computer_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#computer_name GuestOsCustomization#computer_name}
 
 ---
 
@@ -1675,7 +1675,7 @@ admin_password: str
 
 The new administrator password for this virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#admin_password GuestOsCustomization#admin_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#admin_password GuestOsCustomization#admin_password}
 
 ---
 
@@ -1689,7 +1689,7 @@ auto_logon: typing.Union[bool, IResolvable]
 
 Specifies whether or not the VM automatically logs on as Administrator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#auto_logon GuestOsCustomization#auto_logon}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#auto_logon GuestOsCustomization#auto_logon}
 
 ---
 
@@ -1703,7 +1703,7 @@ auto_logon_count: typing.Union[int, float]
 
 Specifies how many times the VM should auto-logon the Administrator account when auto_logon is true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#auto_logon_count GuestOsCustomization#auto_logon_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#auto_logon_count GuestOsCustomization#auto_logon_count}
 
 ---
 
@@ -1717,7 +1717,7 @@ domain_admin_password: str
 
 The password of the domain administrator used to join this virtual machine to the domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#domain_admin_password GuestOsCustomization#domain_admin_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#domain_admin_password GuestOsCustomization#domain_admin_password}
 
 ---
 
@@ -1731,7 +1731,7 @@ domain_admin_user: str
 
 The user account of the domain administrator used to join this virtual machine to the domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#domain_admin_user GuestOsCustomization#domain_admin_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#domain_admin_user GuestOsCustomization#domain_admin_user}
 
 ---
 
@@ -1745,7 +1745,7 @@ full_name: str
 
 The full name of the user of this virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#full_name GuestOsCustomization#full_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#full_name GuestOsCustomization#full_name}
 
 ---
 
@@ -1759,7 +1759,7 @@ join_domain: str
 
 The domain that the virtual machine should join.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#join_domain GuestOsCustomization#join_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#join_domain GuestOsCustomization#join_domain}
 
 ---
 
@@ -1773,7 +1773,7 @@ organization_name: str
 
 The organization name this virtual machine is being installed for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#organization_name GuestOsCustomization#organization_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#organization_name GuestOsCustomization#organization_name}
 
 ---
 
@@ -1787,7 +1787,7 @@ product_key: str
 
 The product key for this virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#product_key GuestOsCustomization#product_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#product_key GuestOsCustomization#product_key}
 
 ---
 
@@ -1801,7 +1801,7 @@ run_once_command_list: typing.List[str]
 
 A list of commands to run at first user logon, after guest customization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#run_once_command_list GuestOsCustomization#run_once_command_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#run_once_command_list GuestOsCustomization#run_once_command_list}
 
 ---
 
@@ -1815,7 +1815,7 @@ time_zone: typing.Union[int, float]
 
 The new time zone for the virtual machine. This is a sysprep-dictated timezone code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#time_zone GuestOsCustomization#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#time_zone GuestOsCustomization#time_zone}
 
 ---
 
@@ -1829,7 +1829,7 @@ workgroup: str
 
 The workgroup for this virtual machine if not joining a domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#workgroup GuestOsCustomization#workgroup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#workgroup GuestOsCustomization#workgroup}
 
 ---
 
@@ -3116,7 +3116,7 @@ def put_linux_options(
 
 The domain name for this virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#domain GuestOsCustomization#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#domain GuestOsCustomization#domain}
 
 ---
 
@@ -3126,7 +3126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The hostname for this virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#host_name GuestOsCustomization#host_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#host_name GuestOsCustomization#host_name}
 
 ---
 
@@ -3136,7 +3136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies whether or not the hardware clock should be in UTC or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#hw_clock_utc GuestOsCustomization#hw_clock_utc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#hw_clock_utc GuestOsCustomization#hw_clock_utc}
 
 ---
 
@@ -3146,7 +3146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The customization script to run before and or after guest customization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#script_text GuestOsCustomization#script_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#script_text GuestOsCustomization#script_text}
 
 ---
 
@@ -3156,7 +3156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Customize the time zone on the VM. This should be a time zone-style entry, like America/Los_Angeles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#time_zone GuestOsCustomization#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#time_zone GuestOsCustomization#time_zone}
 
 ---
 
@@ -3200,7 +3200,7 @@ def put_windows_options(
 
 The host name for this virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#computer_name GuestOsCustomization#computer_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#computer_name GuestOsCustomization#computer_name}
 
 ---
 
@@ -3210,7 +3210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The new administrator password for this virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#admin_password GuestOsCustomization#admin_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#admin_password GuestOsCustomization#admin_password}
 
 ---
 
@@ -3220,7 +3220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies whether or not the VM automatically logs on as Administrator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#auto_logon GuestOsCustomization#auto_logon}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#auto_logon GuestOsCustomization#auto_logon}
 
 ---
 
@@ -3230,7 +3230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies how many times the VM should auto-logon the Administrator account when auto_logon is true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#auto_logon_count GuestOsCustomization#auto_logon_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#auto_logon_count GuestOsCustomization#auto_logon_count}
 
 ---
 
@@ -3240,7 +3240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The password of the domain administrator used to join this virtual machine to the domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#domain_admin_password GuestOsCustomization#domain_admin_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#domain_admin_password GuestOsCustomization#domain_admin_password}
 
 ---
 
@@ -3250,7 +3250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The user account of the domain administrator used to join this virtual machine to the domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#domain_admin_user GuestOsCustomization#domain_admin_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#domain_admin_user GuestOsCustomization#domain_admin_user}
 
 ---
 
@@ -3260,7 +3260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The full name of the user of this virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#full_name GuestOsCustomization#full_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#full_name GuestOsCustomization#full_name}
 
 ---
 
@@ -3270,7 +3270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The domain that the virtual machine should join.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#join_domain GuestOsCustomization#join_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#join_domain GuestOsCustomization#join_domain}
 
 ---
 
@@ -3280,7 +3280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The organization name this virtual machine is being installed for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#organization_name GuestOsCustomization#organization_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#organization_name GuestOsCustomization#organization_name}
 
 ---
 
@@ -3290,7 +3290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The product key for this virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#product_key GuestOsCustomization#product_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#product_key GuestOsCustomization#product_key}
 
 ---
 
@@ -3300,7 +3300,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of commands to run at first user logon, after guest customization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#run_once_command_list GuestOsCustomization#run_once_command_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#run_once_command_list GuestOsCustomization#run_once_command_list}
 
 ---
 
@@ -3310,7 +3310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The new time zone for the virtual machine. This is a sysprep-dictated timezone code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#time_zone GuestOsCustomization#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#time_zone GuestOsCustomization#time_zone}
 
 ---
 
@@ -3320,7 +3320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The workgroup for this virtual machine if not joining a domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/guest_os_customization#workgroup GuestOsCustomization#workgroup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization#workgroup GuestOsCustomization#workgroup}
 
 ---
 
