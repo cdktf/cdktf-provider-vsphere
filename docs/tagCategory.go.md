@@ -4,7 +4,7 @@
 
 ### TagCategory <a name="TagCategory" id="@cdktf/provider-vsphere.tagCategory.TagCategory"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/tag_category vsphere_tag_category}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/tag_category vsphere_tag_category}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.tagCategory.TagCategory.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the TagCategory to import.
 
 The id of the existing TagCategory that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/tag_category#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/tag_category#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -817,7 +817,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/tagcategory"
 | <code><a href="#@cdktf/provider-vsphere.tagCategory.TagCategoryConfig.property.cardinality">Cardinality</a></code> | <code>*string</code> | The associated cardinality of the category. |
 | <code><a href="#@cdktf/provider-vsphere.tagCategory.TagCategoryConfig.property.name">Name</a></code> | <code>*string</code> | The display name of the category. |
 | <code><a href="#@cdktf/provider-vsphere.tagCategory.TagCategoryConfig.property.description">Description</a></code> | <code>*string</code> | The description of the category. |
-| <code><a href="#@cdktf/provider-vsphere.tagCategory.TagCategoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/tag_category#id TagCategory#id}. |
+| <code><a href="#@cdktf/provider-vsphere.tagCategory.TagCategoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/tag_category#id TagCategory#id}. |
 
 ---
 
@@ -903,7 +903,7 @@ Object types to which this category's tags can be attached.
 
 Valid types include: Folder, ClusterComputeResource, Datacenter, Datastore, StoragePod, DistributedVirtualPortgroup, DistributedVirtualSwitch, VmwareDistributedVirtualSwitch, HostSystem, com.vmware.content.Library, com.vmware.content.library.Item, HostNetwork, Network, OpaqueNetwork, ResourcePool, VirtualApp, VirtualMachine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/tag_category#associable_types TagCategory#associable_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/tag_category#associable_types TagCategory#associable_types}
 
 ---
 
@@ -919,7 +919,7 @@ The associated cardinality of the category.
 
 Can be one of SINGLE (object can only be assigned one tag in this category) or MULTIPLE (object can be assigned multiple tags in this category).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/tag_category#cardinality TagCategory#cardinality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/tag_category#cardinality TagCategory#cardinality}
 
 ---
 
@@ -933,7 +933,7 @@ Name *string
 
 The display name of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/tag_category#name TagCategory#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/tag_category#name TagCategory#name}
 
 ---
 
@@ -947,7 +947,7 @@ Description *string
 
 The description of the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/tag_category#description TagCategory#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/tag_category#description TagCategory#description}
 
 ---
 
@@ -959,7 +959,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/tag_category#id TagCategory#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/tag_category#id TagCategory#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

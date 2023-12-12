@@ -4,7 +4,7 @@
 
 ### CustomAttribute <a name="CustomAttribute" id="@cdktf/provider-vsphere.customAttribute.CustomAttribute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/custom_attribute vsphere_custom_attribute}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/custom_attribute vsphere_custom_attribute}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.customAttribute.CustomAttribute.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the CustomAttribute to import.
 
 The id of the existing CustomAttribute that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/custom_attribute#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/custom_attribute#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -768,7 +768,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/customattribute"
 | <code><a href="#@cdktf/provider-vsphere.customAttribute.CustomAttributeConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.customAttribute.CustomAttributeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.customAttribute.CustomAttributeConfig.property.name">Name</a></code> | <code>*string</code> | The display name of the custom attribute. |
-| <code><a href="#@cdktf/provider-vsphere.customAttribute.CustomAttributeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/custom_attribute#id CustomAttribute#id}. |
+| <code><a href="#@cdktf/provider-vsphere.customAttribute.CustomAttributeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/custom_attribute#id CustomAttribute#id}. |
 | <code><a href="#@cdktf/provider-vsphere.customAttribute.CustomAttributeConfig.property.managedObjectType">ManagedObjectType</a></code> | <code>*string</code> | Object type for which the custom attribute is valid. |
 
 ---
@@ -853,7 +853,7 @@ Name *string
 
 The display name of the custom attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/custom_attribute#name CustomAttribute#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/custom_attribute#name CustomAttribute#name}
 
 ---
 
@@ -865,7 +865,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/custom_attribute#id CustomAttribute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/custom_attribute#id CustomAttribute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -884,7 +884,7 @@ Object type for which the custom attribute is valid.
 
 If not specified, the attribute is valid for all managed object types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/custom_attribute#managed_object_type CustomAttribute#managed_object_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/custom_attribute#managed_object_type CustomAttribute#managed_object_type}
 
 ---
 

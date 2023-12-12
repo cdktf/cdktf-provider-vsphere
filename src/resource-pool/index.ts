@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/resource_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,41 +15,41 @@ export interface ResourcePoolConfig extends cdktf.TerraformMetaArguments {
   /**
   * Determines if the reservation on a resource pool can grow beyond the specified value, if the parent resource pool has unreserved resources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#cpu_expandable ResourcePool#cpu_expandable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/resource_pool#cpu_expandable ResourcePool#cpu_expandable}
   */
   readonly cpuExpandable?: boolean | cdktf.IResolvable;
   /**
   * The utilization of a resource pool will not exceed this limit, even if there are available resources. Set to -1 for unlimited.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#cpu_limit ResourcePool#cpu_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/resource_pool#cpu_limit ResourcePool#cpu_limit}
   */
   readonly cpuLimit?: number;
   /**
   * Amount of CPU (MHz) that is guaranteed available to the resource pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#cpu_reservation ResourcePool#cpu_reservation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/resource_pool#cpu_reservation ResourcePool#cpu_reservation}
   */
   readonly cpuReservation?: number;
   /**
   * The allocation level. The level is a simplified view of shares. Levels map to a pre-determined set of numeric values for shares. Can be one of low, normal, high, or custom.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#cpu_share_level ResourcePool#cpu_share_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/resource_pool#cpu_share_level ResourcePool#cpu_share_level}
   */
   readonly cpuShareLevel?: string;
   /**
   * The number of shares allocated. Used to determine resource allocation in case of resource contention. If this is set, cpu_share_level must be custom.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#cpu_shares ResourcePool#cpu_shares}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/resource_pool#cpu_shares ResourcePool#cpu_shares}
   */
   readonly cpuShares?: number;
   /**
   * A list of custom attributes to set on this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#custom_attributes ResourcePool#custom_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/resource_pool#custom_attributes ResourcePool#custom_attributes}
   */
   readonly customAttributes?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#id ResourcePool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/resource_pool#id ResourcePool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,61 +58,61 @@ export interface ResourcePoolConfig extends cdktf.TerraformMetaArguments {
   /**
   * Determines if the reservation on a resource pool can grow beyond the specified value, if the parent resource pool has unreserved resources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#memory_expandable ResourcePool#memory_expandable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/resource_pool#memory_expandable ResourcePool#memory_expandable}
   */
   readonly memoryExpandable?: boolean | cdktf.IResolvable;
   /**
   * The utilization of a resource pool will not exceed this limit, even if there are available resources. Set to -1 for unlimited.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#memory_limit ResourcePool#memory_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/resource_pool#memory_limit ResourcePool#memory_limit}
   */
   readonly memoryLimit?: number;
   /**
   * Amount of memory (MB) that is guaranteed available to the resource pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#memory_reservation ResourcePool#memory_reservation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/resource_pool#memory_reservation ResourcePool#memory_reservation}
   */
   readonly memoryReservation?: number;
   /**
   * The allocation level. The level is a simplified view of shares. Levels map to a pre-determined set of numeric values for shares. Can be one of low, normal, high, or custom.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#memory_share_level ResourcePool#memory_share_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/resource_pool#memory_share_level ResourcePool#memory_share_level}
   */
   readonly memoryShareLevel?: string;
   /**
   * The number of shares allocated. Used to determine resource allocation in case of resource contention. If this is set, memory_share_level must be custom.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#memory_shares ResourcePool#memory_shares}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/resource_pool#memory_shares ResourcePool#memory_shares}
   */
   readonly memoryShares?: number;
   /**
   * Name of resource pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#name ResourcePool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/resource_pool#name ResourcePool#name}
   */
   readonly name: string;
   /**
   * The ID of the root resource pool of the compute resource the resource pool is in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#parent_resource_pool_id ResourcePool#parent_resource_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/resource_pool#parent_resource_pool_id ResourcePool#parent_resource_pool_id}
   */
   readonly parentResourcePoolId: string;
   /**
   * Determines if the shares of all descendants of the resource pool are scaled up or down when the shares of the resource pool are scaled up or down.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#scale_descendants_shares ResourcePool#scale_descendants_shares}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/resource_pool#scale_descendants_shares ResourcePool#scale_descendants_shares}
   */
   readonly scaleDescendantsShares?: string;
   /**
   * A list of tag IDs to apply to this object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#tags ResourcePool#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/resource_pool#tags ResourcePool#tags}
   */
   readonly tags?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool vsphere_resource_pool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/resource_pool vsphere_resource_pool}
 */
 export class ResourcePool extends cdktf.TerraformResource {
 
@@ -128,7 +128,7 @@ export class ResourcePool extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ResourcePool resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ResourcePool to import
-  * @param importFromId The id of the existing ResourcePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ResourcePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/resource_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ResourcePool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -140,7 +140,7 @@ export class ResourcePool extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.0/docs/resources/resource_pool vsphere_resource_pool} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/resource_pool vsphere_resource_pool} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -151,7 +151,7 @@ export class ResourcePool extends cdktf.TerraformResource {
       terraformResourceType: 'vsphere_resource_pool',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.6.0',
+        providerVersion: '2.6.1',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,
