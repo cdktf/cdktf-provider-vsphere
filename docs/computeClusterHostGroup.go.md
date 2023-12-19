@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeClusterHostGroup.ComputeClusterHostGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclusterhostgroup"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computeclusterhostgroup"
 
 computeclusterhostgroup.NewComputeClusterHostGroup(scope Construct, id *string, config ComputeClusterHostGroupConfig) ComputeClusterHostGroup
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.computeClusterHostGroup.ComputeClusterHostGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclusterhostgroup"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computeclusterhostgroup"
 
 computeclusterhostgroup.ComputeClusterHostGroup_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.computeClusterHostGroup.ComputeClusterHostGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclusterhostgroup"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computeclusterhostgroup"
 
 computeclusterhostgroup.ComputeClusterHostGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ computeclusterhostgroup.ComputeClusterHostGroup_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.computeClusterHostGroup.ComputeClusterHostGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclusterhostgroup"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computeclusterhostgroup"
 
 computeclusterhostgroup.ComputeClusterHostGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ computeclusterhostgroup.ComputeClusterHostGroup_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.computeClusterHostGroup.ComputeClusterHostGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclusterhostgroup"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computeclusterhostgroup"
 
 computeclusterhostgroup.ComputeClusterHostGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.computeClusterHostGroup.ComputeClusterHostGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclusterhostgroup"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computeclusterhostgroup"
 
 &computeclusterhostgroup.ComputeClusterHostGroupConfig {
 	Connection: interface{},

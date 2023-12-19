@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.vappEntity.VappEntity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vappentity"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vappentity"
 
 vappentity.NewVappEntity(scope Construct, id *string, config VappEntityConfig) VappEntity
 ```
@@ -434,7 +434,7 @@ func ResetWaitForGuest()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.vappEntity.VappEntity.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vappentity"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vappentity"
 
 vappentity.VappEntity_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.vappEntity.VappEntity.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vappentity"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vappentity"
 
 vappentity.VappEntity_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ vappentity.VappEntity_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.vappEntity.VappEntity.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vappentity"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vappentity"
 
 vappentity.VappEntity_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ vappentity.VappEntity_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.vappEntity.VappEntity.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vappentity"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vappentity"
 
 vappentity.VappEntity_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -965,7 +965,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.vappEntity.VappEntityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vappentity"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vappentity"
 
 &vappentity.VappEntityConfig {
 	Connection: interface{},
