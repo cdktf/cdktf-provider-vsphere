@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereStoragePolicy.DataVsphereStoragePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherestoragepolicy"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherestoragepolicy"
 
 datavspherestoragepolicy.NewDataVsphereStoragePolicy(scope Construct, id *string, config DataVsphereStoragePolicyConfig) DataVsphereStoragePolicy
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereStoragePolicy.DataVsphereStoragePolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherestoragepolicy"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherestoragepolicy"
 
 datavspherestoragepolicy.DataVsphereStoragePolicy_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereStoragePolicy.DataVsphereStoragePolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherestoragepolicy"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherestoragepolicy"
 
 datavspherestoragepolicy.DataVsphereStoragePolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datavspherestoragepolicy.DataVsphereStoragePolicy_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereStoragePolicy.DataVsphereStoragePolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherestoragepolicy"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherestoragepolicy"
 
 datavspherestoragepolicy.DataVsphereStoragePolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datavspherestoragepolicy.DataVsphereStoragePolicy_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.dataVsphereStoragePolicy.DataVsphereStoragePolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherestoragepolicy"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherestoragepolicy"
 
 datavspherestoragepolicy.DataVsphereStoragePolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -585,7 +585,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereStoragePolicy.DataVsphereStoragePolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavspherestoragepolicy"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherestoragepolicy"
 
 &datavspherestoragepolicy.DataVsphereStoragePolicyConfig {
 	Connection: interface{},
