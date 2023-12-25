@@ -1,6 +1,9 @@
-# Submodules <a name="Submodules" id="submodules"></a>
+# API Reference <a name="API Reference" id="api-reference"></a>
+
+## Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+
 - [computeCluster](./computeCluster.go.md)
 - [computeClusterHostGroup](./computeClusterHostGroup.go.md)
 - [computeClusterVmAffinityRule](./computeClusterVmAffinityRule.go.md)
@@ -68,3 +71,8 @@ The following submodules are available:
 - [vmStoragePolicy](./vmStoragePolicy.go.md)
 - [vmfsDatastore](./vmfsDatastore.go.md)
 - [vnic](./vnic.go.md)
+
+
+
+
+
