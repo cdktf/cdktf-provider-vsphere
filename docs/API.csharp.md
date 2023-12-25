@@ -1,6 +1,9 @@
-# Submodules <a name="Submodules" id="submodules"></a>
+# API Reference <a name="API Reference" id="api-reference"></a>
+
+## Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+
 - [computeCluster](./computeCluster.csharp.md)
 - [computeClusterHostGroup](./computeClusterHostGroup.csharp.md)
 - [computeClusterVmAffinityRule](./computeClusterVmAffinityRule.csharp.md)
@@ -68,3 +71,8 @@ The following submodules are available:
 - [vmStoragePolicy](./vmStoragePolicy.csharp.md)
 - [vmfsDatastore](./vmfsDatastore.csharp.md)
 - [vnic](./vnic.csharp.md)
+
+
+
+
+
