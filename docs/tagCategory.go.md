@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.tagCategory.TagCategory.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/tagcategory"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/tagcategory"
 
 tagcategory.NewTagCategory(scope Construct, id *string, config TagCategoryConfig) TagCategory
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.tagCategory.TagCategory.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/tagcategory"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/tagcategory"
 
 tagcategory.TagCategory_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.tagCategory.TagCategory.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/tagcategory"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/tagcategory"
 
 tagcategory.TagCategory_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ tagcategory.TagCategory_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.tagCategory.TagCategory.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/tagcategory"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/tagcategory"
 
 tagcategory.TagCategory_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ tagcategory.TagCategory_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.tagCategory.TagCategory.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/tagcategory"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/tagcategory"
 
 tagcategory.TagCategory_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -784,7 +784,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.tagCategory.TagCategoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/tagcategory"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/tagcategory"
 
 &tagcategory.TagCategoryConfig {
 	Connection: interface{},
