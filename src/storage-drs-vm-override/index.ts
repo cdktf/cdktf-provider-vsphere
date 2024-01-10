@@ -218,4 +218,48 @@ export class StorageDrsVmOverride extends cdktf.TerraformResource {
       virtual_machine_id: cdktf.stringToTerraform(this._virtualMachineId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      datastore_cluster_id: {
+        value: cdktf.stringToHclTerraform(this._datastoreClusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sdrs_automation_level: {
+        value: cdktf.stringToHclTerraform(this._sdrsAutomationLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sdrs_enabled: {
+        value: cdktf.stringToHclTerraform(this._sdrsEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sdrs_intra_vm_affinity: {
+        value: cdktf.stringToHclTerraform(this._sdrsIntraVmAffinity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      virtual_machine_id: {
+        value: cdktf.stringToHclTerraform(this._virtualMachineId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

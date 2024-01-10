@@ -338,4 +338,78 @@ export class VappEntity extends cdktf.TerraformResource {
       wait_for_guest: cdktf.booleanToTerraform(this._waitForGuest),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      container_id: {
+        value: cdktf.stringToHclTerraform(this._containerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      custom_attributes: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._customAttributes),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      start_action: {
+        value: cdktf.stringToHclTerraform(this._startAction),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      start_delay: {
+        value: cdktf.numberToHclTerraform(this._startDelay),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      start_order: {
+        value: cdktf.numberToHclTerraform(this._startOrder),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      stop_action: {
+        value: cdktf.stringToHclTerraform(this._stopAction),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      stop_delay: {
+        value: cdktf.numberToHclTerraform(this._stopDelay),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      target_id: {
+        value: cdktf.stringToHclTerraform(this._targetId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      wait_for_guest: {
+        value: cdktf.booleanToHclTerraform(this._waitForGuest),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

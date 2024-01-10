@@ -243,4 +243,60 @@ export class VirtualMachineSnapshot extends cdktf.TerraformResource {
       virtual_machine_uuid: cdktf.stringToTerraform(this._virtualMachineUuid),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      consolidate: {
+        value: cdktf.booleanToHclTerraform(this._consolidate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      memory: {
+        value: cdktf.booleanToHclTerraform(this._memory),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      quiesce: {
+        value: cdktf.booleanToHclTerraform(this._quiesce),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      remove_children: {
+        value: cdktf.booleanToHclTerraform(this._removeChildren),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      snapshot_name: {
+        value: cdktf.stringToHclTerraform(this._snapshotName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      virtual_machine_uuid: {
+        value: cdktf.stringToHclTerraform(this._virtualMachineUuid),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

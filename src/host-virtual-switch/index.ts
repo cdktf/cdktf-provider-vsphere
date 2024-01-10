@@ -596,4 +596,144 @@ export class HostVirtualSwitch extends cdktf.TerraformResource {
       teaming_policy: cdktf.stringToTerraform(this._teamingPolicy),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      active_nics: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._activeNics),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      allow_forged_transmits: {
+        value: cdktf.booleanToHclTerraform(this._allowForgedTransmits),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      allow_mac_changes: {
+        value: cdktf.booleanToHclTerraform(this._allowMacChanges),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      allow_promiscuous: {
+        value: cdktf.booleanToHclTerraform(this._allowPromiscuous),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      beacon_interval: {
+        value: cdktf.numberToHclTerraform(this._beaconInterval),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      check_beacon: {
+        value: cdktf.booleanToHclTerraform(this._checkBeacon),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      failback: {
+        value: cdktf.booleanToHclTerraform(this._failback),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      host_system_id: {
+        value: cdktf.stringToHclTerraform(this._hostSystemId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      link_discovery_operation: {
+        value: cdktf.stringToHclTerraform(this._linkDiscoveryOperation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      link_discovery_protocol: {
+        value: cdktf.stringToHclTerraform(this._linkDiscoveryProtocol),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mtu: {
+        value: cdktf.numberToHclTerraform(this._mtu),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      network_adapters: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._networkAdapters),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      notify_switches: {
+        value: cdktf.booleanToHclTerraform(this._notifySwitches),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      number_of_ports: {
+        value: cdktf.numberToHclTerraform(this._numberOfPorts),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      shaping_average_bandwidth: {
+        value: cdktf.numberToHclTerraform(this._shapingAverageBandwidth),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      shaping_burst_size: {
+        value: cdktf.numberToHclTerraform(this._shapingBurstSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      shaping_enabled: {
+        value: cdktf.booleanToHclTerraform(this._shapingEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      shaping_peak_bandwidth: {
+        value: cdktf.numberToHclTerraform(this._shapingPeakBandwidth),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      standby_nics: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._standbyNics),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      teaming_policy: {
+        value: cdktf.stringToHclTerraform(this._teamingPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

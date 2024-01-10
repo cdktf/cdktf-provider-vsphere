@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.vappContainer.VappContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vappcontainer"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/vappcontainer"
 
 vappcontainer.NewVappContainer(scope Construct, id *string, config VappContainerConfig) VappContainer
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainer.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainer.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainer.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainer.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainer.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainer.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-vsphere.vappContainer.VappContainer.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -138,6 +139,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-vsphere.vappContainer.VappContainer.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-vsphere.vappContainer.VappContainer.toMetadata"></a>
 
@@ -469,7 +476,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.vappContainer.VappContainer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vappcontainer"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/vappcontainer"
 
 vappcontainer.VappContainer_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.vappContainer.VappContainer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vappcontainer"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/vappcontainer"
 
 vappcontainer.VappContainer_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +522,7 @@ vappcontainer.VappContainer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.vappContainer.VappContainer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vappcontainer"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/vappcontainer"
 
 vappcontainer.VappContainer_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +536,7 @@ vappcontainer.VappContainer_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.vappContainer.VappContainer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vappcontainer"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/vappcontainer"
 
 vappcontainer.VappContainer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1110,7 +1117,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.vappContainer.VappContainerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/vappcontainer"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/vappcontainer"
 
 &vappcontainer.VappContainerConfig {
 	Connection: interface{},

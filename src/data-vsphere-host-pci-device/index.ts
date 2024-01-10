@@ -202,4 +202,42 @@ export class DataVsphereHostPciDevice extends cdktf.TerraformDataSource {
       vendor_id: cdktf.stringToTerraform(this._vendorId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      class_id: {
+        value: cdktf.stringToHclTerraform(this._classId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      host_id: {
+        value: cdktf.stringToHclTerraform(this._hostId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name_regex: {
+        value: cdktf.stringToHclTerraform(this._nameRegex),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vendor_id: {
+        value: cdktf.stringToHclTerraform(this._vendorId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -458,4 +458,108 @@ export class VappContainer extends cdktf.TerraformResource {
       tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cpu_expandable: {
+        value: cdktf.booleanToHclTerraform(this._cpuExpandable),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      cpu_limit: {
+        value: cdktf.numberToHclTerraform(this._cpuLimit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      cpu_reservation: {
+        value: cdktf.numberToHclTerraform(this._cpuReservation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      cpu_share_level: {
+        value: cdktf.stringToHclTerraform(this._cpuShareLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cpu_shares: {
+        value: cdktf.numberToHclTerraform(this._cpuShares),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      custom_attributes: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._customAttributes),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      memory_expandable: {
+        value: cdktf.booleanToHclTerraform(this._memoryExpandable),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      memory_limit: {
+        value: cdktf.numberToHclTerraform(this._memoryLimit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      memory_reservation: {
+        value: cdktf.numberToHclTerraform(this._memoryReservation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      memory_share_level: {
+        value: cdktf.stringToHclTerraform(this._memoryShareLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      memory_shares: {
+        value: cdktf.numberToHclTerraform(this._memoryShares),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parent_folder_id: {
+        value: cdktf.stringToHclTerraform(this._parentFolderId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parent_resource_pool_id: {
+        value: cdktf.stringToHclTerraform(this._parentResourcePoolId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

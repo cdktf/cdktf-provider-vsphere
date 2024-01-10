@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computecluster"
 
 computecluster.NewComputeCluster(scope Construct, id *string, config ComputeClusterConfig) ComputeCluster
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -194,6 +195,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.toMetadata"></a>
 
@@ -879,7 +886,7 @@ func ResetVsanVerboseModeEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computecluster"
 
 computecluster.ComputeCluster_IsConstruct(x interface{}) *bool
 ```
@@ -911,7 +918,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computecluster"
 
 computecluster.ComputeCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -925,7 +932,7 @@ computecluster.ComputeCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computecluster"
 
 computecluster.ComputeCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -939,7 +946,7 @@ computecluster.ComputeCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computecluster"
 
 computecluster.ComputeCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -2697,7 +2704,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computecluster"
 
 &computecluster.ComputeClusterConfig {
 	Connection: interface{},
@@ -2773,7 +2780,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computecluster"
 	VsanNetworkDiagnosticModeEnabled: interface{},
 	VsanPerformanceEnabled: interface{},
 	VsanRemoteDatastoreIds: *[]*string,
-	VsanStretchedCluster: github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8.computeCluster.ComputeClusterVsanStretchedCluster,
+	VsanStretchedCluster: github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9.computeCluster.ComputeClusterVsanStretchedCluster,
 	VsanUnmapEnabled: interface{},
 	VsanVerboseModeEnabled: interface{},
 }
@@ -3950,7 +3957,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computecluster"
 
 &computecluster.ComputeClusterVsanDiskGroup {
 	Cache: *string,
@@ -4000,7 +4007,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computecluster"
 
 &computecluster.ComputeClusterVsanFaultDomains {
 	FaultDomain: interface{},
@@ -4034,7 +4041,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computecluster"
 
 &computecluster.ComputeClusterVsanFaultDomainsFaultDomain {
 	HostIds: *[]*string,
@@ -4084,7 +4091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanStretchedCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computecluster"
 
 &computecluster.ComputeClusterVsanStretchedCluster {
 	PreferredFaultDomainHostIds: *[]*string,
@@ -4184,7 +4191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computecluster"
 
 computecluster.NewComputeClusterVsanDiskGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeClusterVsanDiskGroupList
 ```
@@ -4225,10 +4232,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -4327,7 +4351,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computecluster"
 
 computecluster.NewComputeClusterVsanDiskGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeClusterVsanDiskGroupOutputReference
 ```
@@ -4652,7 +4676,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computecluster"
 
 computecluster.NewComputeClusterVsanFaultDomainsFaultDomainList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeClusterVsanFaultDomainsFaultDomainList
 ```
@@ -4693,10 +4717,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -4795,7 +4836,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computecluster"
 
 computecluster.NewComputeClusterVsanFaultDomainsFaultDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeClusterVsanFaultDomainsFaultDomainOutputReference
 ```
@@ -5106,7 +5147,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computecluster"
 
 computecluster.NewComputeClusterVsanFaultDomainsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeClusterVsanFaultDomainsList
 ```
@@ -5147,10 +5188,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -5249,7 +5307,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computecluster"
 
 computecluster.NewComputeClusterVsanFaultDomainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeClusterVsanFaultDomainsOutputReference
 ```
@@ -5558,7 +5616,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanStretchedClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computecluster"
 
 computecluster.NewComputeClusterVsanStretchedClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeClusterVsanStretchedClusterOutputReference
 ```

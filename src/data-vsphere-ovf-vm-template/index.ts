@@ -516,4 +516,102 @@ export class DataVsphereOvfVmTemplate extends cdktf.TerraformDataSource {
       resource_pool_id: cdktf.stringToTerraform(this._resourcePoolId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allow_unverified_ssl_cert: {
+        value: cdktf.booleanToHclTerraform(this._allowUnverifiedSslCert),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      datastore_id: {
+        value: cdktf.stringToHclTerraform(this._datastoreId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deployment_option: {
+        value: cdktf.stringToHclTerraform(this._deploymentOption),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disk_provisioning: {
+        value: cdktf.stringToHclTerraform(this._diskProvisioning),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable_hidden_properties: {
+        value: cdktf.booleanToHclTerraform(this._enableHiddenProperties),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      folder: {
+        value: cdktf.stringToHclTerraform(this._folder),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      host_system_id: {
+        value: cdktf.stringToHclTerraform(this._hostSystemId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ip_allocation_policy: {
+        value: cdktf.stringToHclTerraform(this._ipAllocationPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ip_protocol: {
+        value: cdktf.stringToHclTerraform(this._ipProtocol),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      local_ovf_path: {
+        value: cdktf.stringToHclTerraform(this._localOvfPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ovf_network_map: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._ovfNetworkMap),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      remote_ovf_url: {
+        value: cdktf.stringToHclTerraform(this._remoteOvfUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_pool_id: {
+        value: cdktf.stringToHclTerraform(this._resourcePoolId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

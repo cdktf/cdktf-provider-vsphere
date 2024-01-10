@@ -194,4 +194,42 @@ export class DrsVmOverride extends cdktf.TerraformResource {
       virtual_machine_id: cdktf.stringToTerraform(this._virtualMachineId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      compute_cluster_id: {
+        value: cdktf.stringToHclTerraform(this._computeClusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      drs_automation_level: {
+        value: cdktf.stringToHclTerraform(this._drsAutomationLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      drs_enabled: {
+        value: cdktf.booleanToHclTerraform(this._drsEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      virtual_machine_id: {
+        value: cdktf.stringToHclTerraform(this._virtualMachineId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

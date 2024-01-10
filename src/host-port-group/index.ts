@@ -134,6 +134,17 @@ export function hostPortGroupPortsToTerraform(struct?: HostPortGroupPorts): any 
   }
 }
 
+
+export function hostPortGroupPortsToHclTerraform(struct?: HostPortGroupPorts): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class HostPortGroupPortsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -593,5 +604,121 @@ export class HostPortGroup extends cdktf.TerraformResource {
       virtual_switch_name: cdktf.stringToTerraform(this._virtualSwitchName),
       vlan_id: cdktf.numberToTerraform(this._vlanId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      active_nics: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._activeNics),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      allow_forged_transmits: {
+        value: cdktf.booleanToHclTerraform(this._allowForgedTransmits),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      allow_mac_changes: {
+        value: cdktf.booleanToHclTerraform(this._allowMacChanges),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      allow_promiscuous: {
+        value: cdktf.booleanToHclTerraform(this._allowPromiscuous),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      check_beacon: {
+        value: cdktf.booleanToHclTerraform(this._checkBeacon),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      failback: {
+        value: cdktf.booleanToHclTerraform(this._failback),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      host_system_id: {
+        value: cdktf.stringToHclTerraform(this._hostSystemId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      notify_switches: {
+        value: cdktf.booleanToHclTerraform(this._notifySwitches),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      shaping_average_bandwidth: {
+        value: cdktf.numberToHclTerraform(this._shapingAverageBandwidth),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      shaping_burst_size: {
+        value: cdktf.numberToHclTerraform(this._shapingBurstSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      shaping_enabled: {
+        value: cdktf.booleanToHclTerraform(this._shapingEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      shaping_peak_bandwidth: {
+        value: cdktf.numberToHclTerraform(this._shapingPeakBandwidth),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      standby_nics: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._standbyNics),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      teaming_policy: {
+        value: cdktf.stringToHclTerraform(this._teamingPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      virtual_switch_name: {
+        value: cdktf.stringToHclTerraform(this._virtualSwitchName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vlan_id: {
+        value: cdktf.numberToHclTerraform(this._vlanId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

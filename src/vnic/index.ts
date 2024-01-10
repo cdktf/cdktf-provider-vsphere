@@ -120,6 +120,43 @@ export function vnicIpv4ToTerraform(struct?: VnicIpv4OutputReference | VnicIpv4)
   }
 }
 
+
+export function vnicIpv4ToHclTerraform(struct?: VnicIpv4OutputReference | VnicIpv4): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dhcp: {
+      value: cdktf.booleanToHclTerraform(struct!.dhcp),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    gw: {
+      value: cdktf.stringToHclTerraform(struct!.gw),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ip: {
+      value: cdktf.stringToHclTerraform(struct!.ip),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    netmask: {
+      value: cdktf.stringToHclTerraform(struct!.netmask),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class VnicIpv4OutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -272,6 +309,43 @@ export function vnicIpv6ToTerraform(struct?: VnicIpv6OutputReference | VnicIpv6)
     dhcp: cdktf.booleanToTerraform(struct!.dhcp),
     gw: cdktf.stringToTerraform(struct!.gw),
   }
+}
+
+
+export function vnicIpv6ToHclTerraform(struct?: VnicIpv6OutputReference | VnicIpv6): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    addresses: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.addresses),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    autoconfig: {
+      value: cdktf.booleanToHclTerraform(struct!.autoconfig),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    dhcp: {
+      value: cdktf.booleanToHclTerraform(struct!.dhcp),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    gw: {
+      value: cdktf.stringToHclTerraform(struct!.gw),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VnicIpv6OutputReference extends cdktf.ComplexObject {
@@ -648,5 +722,79 @@ export class Vnic extends cdktf.TerraformResource {
       ipv4: vnicIpv4ToTerraform(this._ipv4.internalValue),
       ipv6: vnicIpv6ToTerraform(this._ipv6.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      distributed_port_group: {
+        value: cdktf.stringToHclTerraform(this._distributedPortGroup),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      distributed_switch_port: {
+        value: cdktf.stringToHclTerraform(this._distributedSwitchPort),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      host: {
+        value: cdktf.stringToHclTerraform(this._host),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mac: {
+        value: cdktf.stringToHclTerraform(this._mac),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mtu: {
+        value: cdktf.numberToHclTerraform(this._mtu),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      netstack: {
+        value: cdktf.stringToHclTerraform(this._netstack),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      portgroup: {
+        value: cdktf.stringToHclTerraform(this._portgroup),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      services: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._services),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      ipv4: {
+        value: vnicIpv4ToHclTerraform(this._ipv4.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VnicIpv4List",
+      },
+      ipv6: {
+        value: vnicIpv6ToHclTerraform(this._ipv6.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VnicIpv6List",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

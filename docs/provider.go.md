@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.provider.VsphereProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/provider"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/provider"
 
 provider.NewVsphereProvider(scope Construct, id *string, config VsphereProviderConfig) VsphereProvider
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.resetAlias">ResetAlias</a></code> | *No description.* |
@@ -120,6 +121,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-vsphere.provider.VsphereProvider.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-vsphere.provider.VsphereProvider.toMetadata"></a>
 
@@ -221,7 +228,7 @@ func ResetVsphereServer()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.provider.VsphereProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/provider"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/provider"
 
 provider.VsphereProvider_IsConstruct(x interface{}) *bool
 ```
@@ -253,7 +260,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.provider.VsphereProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/provider"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/provider"
 
 provider.VsphereProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -267,7 +274,7 @@ provider.VsphereProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-vsphere.provider.VsphereProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/provider"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/provider"
 
 provider.VsphereProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -281,7 +288,7 @@ provider.VsphereProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.provider.VsphereProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/provider"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/provider"
 
 provider.VsphereProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -752,7 +759,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.provider.VsphereProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/provider"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/provider"
 
 &provider.VsphereProviderConfig {
 	Password: *string,

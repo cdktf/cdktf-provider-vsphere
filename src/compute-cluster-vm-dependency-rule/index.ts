@@ -236,4 +236,54 @@ export class ComputeClusterVmDependencyRule extends cdktf.TerraformResource {
       vm_group_name: cdktf.stringToTerraform(this._vmGroupName),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      compute_cluster_id: {
+        value: cdktf.stringToHclTerraform(this._computeClusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dependency_vm_group_name: {
+        value: cdktf.stringToHclTerraform(this._dependencyVmGroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mandatory: {
+        value: cdktf.booleanToHclTerraform(this._mandatory),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vm_group_name: {
+        value: cdktf.stringToHclTerraform(this._vmGroupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

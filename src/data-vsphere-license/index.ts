@@ -129,4 +129,18 @@ export class DataVsphereLicense extends cdktf.TerraformDataSource {
       license_key: cdktf.stringToTerraform(this._licenseKey),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      license_key: {
+        value: cdktf.stringToHclTerraform(this._licenseKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

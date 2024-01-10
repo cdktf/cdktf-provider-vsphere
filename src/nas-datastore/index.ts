@@ -396,4 +396,84 @@ export class NasDatastore extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_mode: {
+        value: cdktf.stringToHclTerraform(this._accessMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      custom_attributes: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._customAttributes),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      datastore_cluster_id: {
+        value: cdktf.stringToHclTerraform(this._datastoreClusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      folder: {
+        value: cdktf.stringToHclTerraform(this._folder),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      host_system_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._hostSystemIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      remote_hosts: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._remoteHosts),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      remote_path: {
+        value: cdktf.stringToHclTerraform(this._remotePath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      security_type: {
+        value: cdktf.stringToHclTerraform(this._securityType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

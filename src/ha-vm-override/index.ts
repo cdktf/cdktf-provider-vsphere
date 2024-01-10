@@ -458,4 +458,108 @@ export class HaVmOverride extends cdktf.TerraformResource {
       virtual_machine_id: cdktf.stringToTerraform(this._virtualMachineId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      compute_cluster_id: {
+        value: cdktf.stringToHclTerraform(this._computeClusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ha_datastore_apd_recovery_action: {
+        value: cdktf.stringToHclTerraform(this._haDatastoreApdRecoveryAction),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ha_datastore_apd_response: {
+        value: cdktf.stringToHclTerraform(this._haDatastoreApdResponse),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ha_datastore_apd_response_delay: {
+        value: cdktf.numberToHclTerraform(this._haDatastoreApdResponseDelay),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      ha_datastore_pdl_response: {
+        value: cdktf.stringToHclTerraform(this._haDatastorePdlResponse),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ha_host_isolation_response: {
+        value: cdktf.stringToHclTerraform(this._haHostIsolationResponse),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ha_vm_failure_interval: {
+        value: cdktf.numberToHclTerraform(this._haVmFailureInterval),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      ha_vm_maximum_failure_window: {
+        value: cdktf.numberToHclTerraform(this._haVmMaximumFailureWindow),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      ha_vm_maximum_resets: {
+        value: cdktf.numberToHclTerraform(this._haVmMaximumResets),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      ha_vm_minimum_uptime: {
+        value: cdktf.numberToHclTerraform(this._haVmMinimumUptime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      ha_vm_monitoring: {
+        value: cdktf.stringToHclTerraform(this._haVmMonitoring),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ha_vm_monitoring_use_cluster_defaults: {
+        value: cdktf.booleanToHclTerraform(this._haVmMonitoringUseClusterDefaults),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      ha_vm_restart_priority: {
+        value: cdktf.stringToHclTerraform(this._haVmRestartPriority),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ha_vm_restart_timeout: {
+        value: cdktf.numberToHclTerraform(this._haVmRestartTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      virtual_machine_id: {
+        value: cdktf.stringToHclTerraform(this._virtualMachineId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }
