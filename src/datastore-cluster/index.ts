@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/datastore_cluster
 // generated from terraform resource schema
 
@@ -697,5 +692,169 @@ export class DatastoreCluster extends cdktf.TerraformResource {
       sdrs_vm_evacuation_automation_level: cdktf.stringToTerraform(this._sdrsVmEvacuationAutomationLevel),
       tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      custom_attributes: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._customAttributes),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      datacenter_id: {
+        value: cdktf.stringToHclTerraform(this._datacenterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      folder: {
+        value: cdktf.stringToHclTerraform(this._folder),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sdrs_advanced_options: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._sdrsAdvancedOptions),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      sdrs_automation_level: {
+        value: cdktf.stringToHclTerraform(this._sdrsAutomationLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sdrs_default_intra_vm_affinity: {
+        value: cdktf.booleanToHclTerraform(this._sdrsDefaultIntraVmAffinity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      sdrs_enabled: {
+        value: cdktf.booleanToHclTerraform(this._sdrsEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      sdrs_free_space_threshold: {
+        value: cdktf.numberToHclTerraform(this._sdrsFreeSpaceThreshold),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      sdrs_free_space_threshold_mode: {
+        value: cdktf.stringToHclTerraform(this._sdrsFreeSpaceThresholdMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sdrs_free_space_utilization_difference: {
+        value: cdktf.numberToHclTerraform(this._sdrsFreeSpaceUtilizationDifference),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      sdrs_io_balance_automation_level: {
+        value: cdktf.stringToHclTerraform(this._sdrsIoBalanceAutomationLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sdrs_io_latency_threshold: {
+        value: cdktf.numberToHclTerraform(this._sdrsIoLatencyThreshold),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      sdrs_io_load_balance_enabled: {
+        value: cdktf.booleanToHclTerraform(this._sdrsIoLoadBalanceEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      sdrs_io_load_imbalance_threshold: {
+        value: cdktf.numberToHclTerraform(this._sdrsIoLoadImbalanceThreshold),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      sdrs_io_reservable_iops_threshold: {
+        value: cdktf.numberToHclTerraform(this._sdrsIoReservableIopsThreshold),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      sdrs_io_reservable_percent_threshold: {
+        value: cdktf.numberToHclTerraform(this._sdrsIoReservablePercentThreshold),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      sdrs_io_reservable_threshold_mode: {
+        value: cdktf.stringToHclTerraform(this._sdrsIoReservableThresholdMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sdrs_load_balance_interval: {
+        value: cdktf.numberToHclTerraform(this._sdrsLoadBalanceInterval),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      sdrs_policy_enforcement_automation_level: {
+        value: cdktf.stringToHclTerraform(this._sdrsPolicyEnforcementAutomationLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sdrs_rule_enforcement_automation_level: {
+        value: cdktf.stringToHclTerraform(this._sdrsRuleEnforcementAutomationLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sdrs_space_balance_automation_level: {
+        value: cdktf.stringToHclTerraform(this._sdrsSpaceBalanceAutomationLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sdrs_space_utilization_threshold: {
+        value: cdktf.numberToHclTerraform(this._sdrsSpaceUtilizationThreshold),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      sdrs_vm_evacuation_automation_level: {
+        value: cdktf.stringToHclTerraform(this._sdrsVmEvacuationAutomationLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

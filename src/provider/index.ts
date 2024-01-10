@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs
 // generated from terraform resource schema
 
@@ -400,5 +395,97 @@ export class VsphereProvider extends cdktf.TerraformProvider {
       vsphere_server: cdktf.stringToTerraform(this._vsphereServer),
       alias: cdktf.stringToTerraform(this._alias),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allow_unverified_ssl: {
+        value: cdktf.booleanToHclTerraform(this._allowUnverifiedSsl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      api_timeout: {
+        value: cdktf.numberToHclTerraform(this._apiTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      client_debug: {
+        value: cdktf.booleanToHclTerraform(this._clientDebug),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      client_debug_path: {
+        value: cdktf.stringToHclTerraform(this._clientDebugPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_debug_path_run: {
+        value: cdktf.stringToHclTerraform(this._clientDebugPathRun),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      password: {
+        value: cdktf.stringToHclTerraform(this._password),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      persist_session: {
+        value: cdktf.booleanToHclTerraform(this._persistSession),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      rest_session_path: {
+        value: cdktf.stringToHclTerraform(this._restSessionPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user: {
+        value: cdktf.stringToHclTerraform(this._user),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vcenter_server: {
+        value: cdktf.stringToHclTerraform(this._vcenterServer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vim_keep_alive: {
+        value: cdktf.numberToHclTerraform(this._vimKeepAlive),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      vim_session_path: {
+        value: cdktf.stringToHclTerraform(this._vimSessionPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vsphere_server: {
+        value: cdktf.stringToHclTerraform(this._vsphereServer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alias: {
+        value: cdktf.stringToHclTerraform(this._alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

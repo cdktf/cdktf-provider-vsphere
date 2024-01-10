@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavsphereovfvmtemplate"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereovfvmtemplate"
 
 datavsphereovfvmtemplate.NewDataVsphereOvfVmTemplate(scope Construct, id *string, config DataVsphereOvfVmTemplateConfig) DataVsphereOvfVmTemplate
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -130,6 +131,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.toMetadata"></a>
 
@@ -351,7 +360,7 @@ func ResetRemoteOvfUrl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavsphereovfvmtemplate"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereovfvmtemplate"
 
 datavsphereovfvmtemplate.DataVsphereOvfVmTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -383,7 +392,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavsphereovfvmtemplate"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereovfvmtemplate"
 
 datavsphereovfvmtemplate.DataVsphereOvfVmTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -397,7 +406,7 @@ datavsphereovfvmtemplate.DataVsphereOvfVmTemplate_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavsphereovfvmtemplate"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereovfvmtemplate"
 
 datavsphereovfvmtemplate.DataVsphereOvfVmTemplate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -411,7 +420,7 @@ datavsphereovfvmtemplate.DataVsphereOvfVmTemplate_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavsphereovfvmtemplate"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereovfvmtemplate"
 
 datavsphereovfvmtemplate.DataVsphereOvfVmTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1135,7 +1144,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereOvfVmTemplate.DataVsphereOvfVmTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/datavsphereovfvmtemplate"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereovfvmtemplate"
 
 &datavsphereovfvmtemplate.DataVsphereOvfVmTemplateConfig {
 	Connection: interface{},

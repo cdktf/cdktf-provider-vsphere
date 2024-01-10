@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/compute_cluster
 // generated from terraform resource schema
 
@@ -454,6 +449,31 @@ export function computeClusterVsanDiskGroupToTerraform(struct?: ComputeClusterVs
   }
 }
 
+
+export function computeClusterVsanDiskGroupToHclTerraform(struct?: ComputeClusterVsanDiskGroup | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cache: {
+      value: cdktf.stringToHclTerraform(struct!.cache),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    storage: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.storage),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ComputeClusterVsanDiskGroupOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -582,6 +602,31 @@ export function computeClusterVsanFaultDomainsFaultDomainToTerraform(struct?: Co
   }
 }
 
+
+export function computeClusterVsanFaultDomainsFaultDomainToHclTerraform(struct?: ComputeClusterVsanFaultDomainsFaultDomain | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    host_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.hostIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ComputeClusterVsanFaultDomainsFaultDomainOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -695,6 +740,25 @@ export function computeClusterVsanFaultDomainsToTerraform(struct?: ComputeCluste
   return {
     fault_domain: cdktf.listMapper(computeClusterVsanFaultDomainsFaultDomainToTerraform, true)(struct!.faultDomain),
   }
+}
+
+
+export function computeClusterVsanFaultDomainsToHclTerraform(struct?: ComputeClusterVsanFaultDomains | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    fault_domain: {
+      value: cdktf.listMapperHcl(computeClusterVsanFaultDomainsFaultDomainToHclTerraform, true)(struct!.faultDomain),
+      isBlock: true,
+      type: "set",
+      storageClassType: "ComputeClusterVsanFaultDomainsFaultDomainList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ComputeClusterVsanFaultDomainsOutputReference extends cdktf.ComplexObject {
@@ -822,6 +886,49 @@ export function computeClusterVsanStretchedClusterToTerraform(struct?: ComputeCl
     secondary_fault_domain_name: cdktf.stringToTerraform(struct!.secondaryFaultDomainName),
     witness_node: cdktf.stringToTerraform(struct!.witnessNode),
   }
+}
+
+
+export function computeClusterVsanStretchedClusterToHclTerraform(struct?: ComputeClusterVsanStretchedClusterOutputReference | ComputeClusterVsanStretchedCluster): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    preferred_fault_domain_host_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.preferredFaultDomainHostIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    preferred_fault_domain_name: {
+      value: cdktf.stringToHclTerraform(struct!.preferredFaultDomainName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    secondary_fault_domain_host_ids: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.secondaryFaultDomainHostIds),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    secondary_fault_domain_name: {
+      value: cdktf.stringToHclTerraform(struct!.secondaryFaultDomainName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    witness_node: {
+      value: cdktf.stringToHclTerraform(struct!.witnessNode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ComputeClusterVsanStretchedClusterOutputReference extends cdktf.ComplexObject {
@@ -2257,5 +2364,427 @@ export class ComputeCluster extends cdktf.TerraformResource {
       vsan_fault_domains: cdktf.listMapper(computeClusterVsanFaultDomainsToTerraform, true)(this._vsanFaultDomains.internalValue),
       vsan_stretched_cluster: computeClusterVsanStretchedClusterToTerraform(this._vsanStretchedCluster.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      custom_attributes: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._customAttributes),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      datacenter_id: {
+        value: cdktf.stringToHclTerraform(this._datacenterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dpm_automation_level: {
+        value: cdktf.stringToHclTerraform(this._dpmAutomationLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dpm_enabled: {
+        value: cdktf.booleanToHclTerraform(this._dpmEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      dpm_threshold: {
+        value: cdktf.numberToHclTerraform(this._dpmThreshold),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      drs_advanced_options: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._drsAdvancedOptions),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      drs_automation_level: {
+        value: cdktf.stringToHclTerraform(this._drsAutomationLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      drs_enable_predictive_drs: {
+        value: cdktf.booleanToHclTerraform(this._drsEnablePredictiveDrs),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      drs_enable_vm_overrides: {
+        value: cdktf.booleanToHclTerraform(this._drsEnableVmOverrides),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      drs_enabled: {
+        value: cdktf.booleanToHclTerraform(this._drsEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      drs_migration_threshold: {
+        value: cdktf.numberToHclTerraform(this._drsMigrationThreshold),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      drs_scale_descendants_shares: {
+        value: cdktf.stringToHclTerraform(this._drsScaleDescendantsShares),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      folder: {
+        value: cdktf.stringToHclTerraform(this._folder),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      force_evacuate_on_destroy: {
+        value: cdktf.booleanToHclTerraform(this._forceEvacuateOnDestroy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      ha_admission_control_failover_host_system_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._haAdmissionControlFailoverHostSystemIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      ha_admission_control_host_failure_tolerance: {
+        value: cdktf.numberToHclTerraform(this._haAdmissionControlHostFailureTolerance),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      ha_admission_control_performance_tolerance: {
+        value: cdktf.numberToHclTerraform(this._haAdmissionControlPerformanceTolerance),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      ha_admission_control_policy: {
+        value: cdktf.stringToHclTerraform(this._haAdmissionControlPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ha_admission_control_resource_percentage_auto_compute: {
+        value: cdktf.booleanToHclTerraform(this._haAdmissionControlResourcePercentageAutoCompute),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      ha_admission_control_resource_percentage_cpu: {
+        value: cdktf.numberToHclTerraform(this._haAdmissionControlResourcePercentageCpu),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      ha_admission_control_resource_percentage_memory: {
+        value: cdktf.numberToHclTerraform(this._haAdmissionControlResourcePercentageMemory),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      ha_admission_control_slot_policy_explicit_cpu: {
+        value: cdktf.numberToHclTerraform(this._haAdmissionControlSlotPolicyExplicitCpu),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      ha_admission_control_slot_policy_explicit_memory: {
+        value: cdktf.numberToHclTerraform(this._haAdmissionControlSlotPolicyExplicitMemory),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      ha_admission_control_slot_policy_use_explicit_size: {
+        value: cdktf.booleanToHclTerraform(this._haAdmissionControlSlotPolicyUseExplicitSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      ha_advanced_options: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._haAdvancedOptions),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      ha_datastore_apd_recovery_action: {
+        value: cdktf.stringToHclTerraform(this._haDatastoreApdRecoveryAction),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ha_datastore_apd_response: {
+        value: cdktf.stringToHclTerraform(this._haDatastoreApdResponse),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ha_datastore_apd_response_delay: {
+        value: cdktf.numberToHclTerraform(this._haDatastoreApdResponseDelay),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      ha_datastore_pdl_response: {
+        value: cdktf.stringToHclTerraform(this._haDatastorePdlResponse),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ha_enabled: {
+        value: cdktf.booleanToHclTerraform(this._haEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      ha_heartbeat_datastore_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._haHeartbeatDatastoreIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      ha_heartbeat_datastore_policy: {
+        value: cdktf.stringToHclTerraform(this._haHeartbeatDatastorePolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ha_host_isolation_response: {
+        value: cdktf.stringToHclTerraform(this._haHostIsolationResponse),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ha_host_monitoring: {
+        value: cdktf.stringToHclTerraform(this._haHostMonitoring),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ha_vm_component_protection: {
+        value: cdktf.stringToHclTerraform(this._haVmComponentProtection),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ha_vm_dependency_restart_condition: {
+        value: cdktf.stringToHclTerraform(this._haVmDependencyRestartCondition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ha_vm_failure_interval: {
+        value: cdktf.numberToHclTerraform(this._haVmFailureInterval),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      ha_vm_maximum_failure_window: {
+        value: cdktf.numberToHclTerraform(this._haVmMaximumFailureWindow),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      ha_vm_maximum_resets: {
+        value: cdktf.numberToHclTerraform(this._haVmMaximumResets),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      ha_vm_minimum_uptime: {
+        value: cdktf.numberToHclTerraform(this._haVmMinimumUptime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      ha_vm_monitoring: {
+        value: cdktf.stringToHclTerraform(this._haVmMonitoring),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ha_vm_restart_additional_delay: {
+        value: cdktf.numberToHclTerraform(this._haVmRestartAdditionalDelay),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      ha_vm_restart_priority: {
+        value: cdktf.stringToHclTerraform(this._haVmRestartPriority),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ha_vm_restart_timeout: {
+        value: cdktf.numberToHclTerraform(this._haVmRestartTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      host_cluster_exit_timeout: {
+        value: cdktf.numberToHclTerraform(this._hostClusterExitTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      host_managed: {
+        value: cdktf.booleanToHclTerraform(this._hostManaged),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      host_system_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._hostSystemIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      proactive_ha_automation_level: {
+        value: cdktf.stringToHclTerraform(this._proactiveHaAutomationLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      proactive_ha_enabled: {
+        value: cdktf.booleanToHclTerraform(this._proactiveHaEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      proactive_ha_moderate_remediation: {
+        value: cdktf.stringToHclTerraform(this._proactiveHaModerateRemediation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      proactive_ha_provider_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._proactiveHaProviderIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      proactive_ha_severe_remediation: {
+        value: cdktf.stringToHclTerraform(this._proactiveHaSevereRemediation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      vsan_compression_enabled: {
+        value: cdktf.booleanToHclTerraform(this._vsanCompressionEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      vsan_dedup_enabled: {
+        value: cdktf.booleanToHclTerraform(this._vsanDedupEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      vsan_dit_encryption_enabled: {
+        value: cdktf.booleanToHclTerraform(this._vsanDitEncryptionEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      vsan_dit_rekey_interval: {
+        value: cdktf.numberToHclTerraform(this._vsanDitRekeyInterval),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      vsan_enabled: {
+        value: cdktf.booleanToHclTerraform(this._vsanEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      vsan_esa_enabled: {
+        value: cdktf.booleanToHclTerraform(this._vsanEsaEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      vsan_network_diagnostic_mode_enabled: {
+        value: cdktf.booleanToHclTerraform(this._vsanNetworkDiagnosticModeEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      vsan_performance_enabled: {
+        value: cdktf.booleanToHclTerraform(this._vsanPerformanceEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      vsan_remote_datastore_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._vsanRemoteDatastoreIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      vsan_unmap_enabled: {
+        value: cdktf.booleanToHclTerraform(this._vsanUnmapEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      vsan_verbose_mode_enabled: {
+        value: cdktf.booleanToHclTerraform(this._vsanVerboseModeEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      vsan_disk_group: {
+        value: cdktf.listMapperHcl(computeClusterVsanDiskGroupToHclTerraform, true)(this._vsanDiskGroup.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ComputeClusterVsanDiskGroupList",
+      },
+      vsan_fault_domains: {
+        value: cdktf.listMapperHcl(computeClusterVsanFaultDomainsToHclTerraform, true)(this._vsanFaultDomains.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ComputeClusterVsanFaultDomainsList",
+      },
+      vsan_stretched_cluster: {
+        value: computeClusterVsanStretchedClusterToHclTerraform(this._vsanStretchedCluster.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ComputeClusterVsanStretchedClusterList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/host_thumbprint
 // generated from terraform resource schema
 
@@ -172,5 +167,37 @@ export class DataVsphereHostThumbprint extends cdktf.TerraformDataSource {
       insecure: cdktf.booleanToTerraform(this._insecure),
       port: cdktf.stringToTerraform(this._port),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      address: {
+        value: cdktf.stringToHclTerraform(this._address),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      insecure: {
+        value: cdktf.booleanToHclTerraform(this._insecure),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      port: {
+        value: cdktf.stringToHclTerraform(this._port),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/distributed_port_group
 // generated from terraform resource schema
 
@@ -320,6 +315,31 @@ export function distributedPortGroupVlanRangeToTerraform(struct?: DistributedPor
     max_vlan: cdktf.numberToTerraform(struct!.maxVlan),
     min_vlan: cdktf.numberToTerraform(struct!.minVlan),
   }
+}
+
+
+export function distributedPortGroupVlanRangeToHclTerraform(struct?: DistributedPortGroupVlanRange | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max_vlan: {
+      value: cdktf.numberToHclTerraform(struct!.maxVlan),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    min_vlan: {
+      value: cdktf.numberToHclTerraform(struct!.minVlan),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DistributedPortGroupVlanRangeOutputReference extends cdktf.ComplexObject {
@@ -1333,5 +1353,295 @@ export class DistributedPortGroup extends cdktf.TerraformResource {
       vlan_override_allowed: cdktf.booleanToTerraform(this._vlanOverrideAllowed),
       vlan_range: cdktf.listMapper(distributedPortGroupVlanRangeToTerraform, true)(this._vlanRange.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      active_uplinks: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._activeUplinks),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      allow_forged_transmits: {
+        value: cdktf.booleanToHclTerraform(this._allowForgedTransmits),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      allow_mac_changes: {
+        value: cdktf.booleanToHclTerraform(this._allowMacChanges),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      allow_promiscuous: {
+        value: cdktf.booleanToHclTerraform(this._allowPromiscuous),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      auto_expand: {
+        value: cdktf.booleanToHclTerraform(this._autoExpand),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      block_all_ports: {
+        value: cdktf.booleanToHclTerraform(this._blockAllPorts),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      block_override_allowed: {
+        value: cdktf.booleanToHclTerraform(this._blockOverrideAllowed),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      check_beacon: {
+        value: cdktf.booleanToHclTerraform(this._checkBeacon),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      custom_attributes: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._customAttributes),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      directpath_gen2_allowed: {
+        value: cdktf.booleanToHclTerraform(this._directpathGen2Allowed),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      distributed_virtual_switch_uuid: {
+        value: cdktf.stringToHclTerraform(this._distributedVirtualSwitchUuid),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      egress_shaping_average_bandwidth: {
+        value: cdktf.numberToHclTerraform(this._egressShapingAverageBandwidth),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      egress_shaping_burst_size: {
+        value: cdktf.numberToHclTerraform(this._egressShapingBurstSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      egress_shaping_enabled: {
+        value: cdktf.booleanToHclTerraform(this._egressShapingEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      egress_shaping_peak_bandwidth: {
+        value: cdktf.numberToHclTerraform(this._egressShapingPeakBandwidth),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      failback: {
+        value: cdktf.booleanToHclTerraform(this._failback),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ingress_shaping_average_bandwidth: {
+        value: cdktf.numberToHclTerraform(this._ingressShapingAverageBandwidth),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      ingress_shaping_burst_size: {
+        value: cdktf.numberToHclTerraform(this._ingressShapingBurstSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      ingress_shaping_enabled: {
+        value: cdktf.booleanToHclTerraform(this._ingressShapingEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      ingress_shaping_peak_bandwidth: {
+        value: cdktf.numberToHclTerraform(this._ingressShapingPeakBandwidth),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      lacp_enabled: {
+        value: cdktf.booleanToHclTerraform(this._lacpEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      lacp_mode: {
+        value: cdktf.stringToHclTerraform(this._lacpMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      live_port_moving_allowed: {
+        value: cdktf.booleanToHclTerraform(this._livePortMovingAllowed),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      netflow_enabled: {
+        value: cdktf.booleanToHclTerraform(this._netflowEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      netflow_override_allowed: {
+        value: cdktf.booleanToHclTerraform(this._netflowOverrideAllowed),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      network_resource_pool_key: {
+        value: cdktf.stringToHclTerraform(this._networkResourcePoolKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      network_resource_pool_override_allowed: {
+        value: cdktf.booleanToHclTerraform(this._networkResourcePoolOverrideAllowed),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      notify_switches: {
+        value: cdktf.booleanToHclTerraform(this._notifySwitches),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      number_of_ports: {
+        value: cdktf.numberToHclTerraform(this._numberOfPorts),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      port_config_reset_at_disconnect: {
+        value: cdktf.booleanToHclTerraform(this._portConfigResetAtDisconnect),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      port_name_format: {
+        value: cdktf.stringToHclTerraform(this._portNameFormat),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      port_private_secondary_vlan_id: {
+        value: cdktf.numberToHclTerraform(this._portPrivateSecondaryVlanId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      security_policy_override_allowed: {
+        value: cdktf.booleanToHclTerraform(this._securityPolicyOverrideAllowed),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      shaping_override_allowed: {
+        value: cdktf.booleanToHclTerraform(this._shapingOverrideAllowed),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      standby_uplinks: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._standbyUplinks),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      teaming_policy: {
+        value: cdktf.stringToHclTerraform(this._teamingPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      traffic_filter_override_allowed: {
+        value: cdktf.booleanToHclTerraform(this._trafficFilterOverrideAllowed),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      tx_uplink: {
+        value: cdktf.booleanToHclTerraform(this._txUplink),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      uplink_teaming_override_allowed: {
+        value: cdktf.booleanToHclTerraform(this._uplinkTeamingOverrideAllowed),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      vlan_id: {
+        value: cdktf.numberToHclTerraform(this._vlanId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      vlan_override_allowed: {
+        value: cdktf.booleanToHclTerraform(this._vlanOverrideAllowed),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      vlan_range: {
+        value: cdktf.listMapperHcl(distributedPortGroupVlanRangeToHclTerraform, true)(this._vlanRange.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DistributedPortGroupVlanRangeList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

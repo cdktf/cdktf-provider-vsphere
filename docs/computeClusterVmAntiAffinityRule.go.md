@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computeclustervmantiaffinityrule"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmantiaffinityrule"
 
 computeclustervmantiaffinityrule.NewComputeClusterVmAntiAffinityRule(scope Construct, id *string, config ComputeClusterVmAntiAffinityRuleConfig) ComputeClusterVmAntiAffinityRule
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -127,6 +128,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule.toMetadata"></a>
 
@@ -392,7 +399,7 @@ func ResetMandatory()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computeclustervmantiaffinityrule"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmantiaffinityrule"
 
 computeclustervmantiaffinityrule.ComputeClusterVmAntiAffinityRule_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computeclustervmantiaffinityrule"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmantiaffinityrule"
 
 computeclustervmantiaffinityrule.ComputeClusterVmAntiAffinityRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ computeclustervmantiaffinityrule.ComputeClusterVmAntiAffinityRule_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computeclustervmantiaffinityrule"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmantiaffinityrule"
 
 computeclustervmantiaffinityrule.ComputeClusterVmAntiAffinityRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ computeclustervmantiaffinityrule.ComputeClusterVmAntiAffinityRule_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computeclustervmantiaffinityrule"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmantiaffinityrule"
 
 computeclustervmantiaffinityrule.ComputeClusterVmAntiAffinityRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -813,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.computeClusterVmAntiAffinityRule.ComputeClusterVmAntiAffinityRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v8/computeclustervmantiaffinityrule"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmantiaffinityrule"
 
 &computeclustervmantiaffinityrule.ComputeClusterVmAntiAffinityRuleConfig {
 	Connection: interface{},

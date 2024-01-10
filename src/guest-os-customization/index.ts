@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/guest_os_customization
 // generated from terraform resource schema
 
@@ -89,6 +84,49 @@ export function guestOsCustomizationSpecLinuxOptionsToTerraform(struct?: GuestOs
     script_text: cdktf.stringToTerraform(struct!.scriptText),
     time_zone: cdktf.stringToTerraform(struct!.timeZone),
   }
+}
+
+
+export function guestOsCustomizationSpecLinuxOptionsToHclTerraform(struct?: GuestOsCustomizationSpecLinuxOptionsOutputReference | GuestOsCustomizationSpecLinuxOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    domain: {
+      value: cdktf.stringToHclTerraform(struct!.domain),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    host_name: {
+      value: cdktf.stringToHclTerraform(struct!.hostName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    hw_clock_utc: {
+      value: cdktf.booleanToHclTerraform(struct!.hwClockUtc),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    script_text: {
+      value: cdktf.stringToHclTerraform(struct!.scriptText),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    time_zone: {
+      value: cdktf.stringToHclTerraform(struct!.timeZone),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GuestOsCustomizationSpecLinuxOptionsOutputReference extends cdktf.ComplexObject {
@@ -273,6 +311,55 @@ export function guestOsCustomizationSpecNetworkInterfaceToTerraform(struct?: Gue
     ipv6_address: cdktf.stringToTerraform(struct!.ipv6Address),
     ipv6_netmask: cdktf.numberToTerraform(struct!.ipv6Netmask),
   }
+}
+
+
+export function guestOsCustomizationSpecNetworkInterfaceToHclTerraform(struct?: GuestOsCustomizationSpecNetworkInterface | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dns_domain: {
+      value: cdktf.stringToHclTerraform(struct!.dnsDomain),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    dns_server_list: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dnsServerList),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    ipv4_address: {
+      value: cdktf.stringToHclTerraform(struct!.ipv4Address),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ipv4_netmask: {
+      value: cdktf.numberToHclTerraform(struct!.ipv4Netmask),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ipv6_address: {
+      value: cdktf.stringToHclTerraform(struct!.ipv6Address),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ipv6_netmask: {
+      value: cdktf.numberToHclTerraform(struct!.ipv6Netmask),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GuestOsCustomizationSpecNetworkInterfaceOutputReference extends cdktf.ComplexObject {
@@ -566,6 +653,97 @@ export function guestOsCustomizationSpecWindowsOptionsToTerraform(struct?: Guest
     time_zone: cdktf.numberToTerraform(struct!.timeZone),
     workgroup: cdktf.stringToTerraform(struct!.workgroup),
   }
+}
+
+
+export function guestOsCustomizationSpecWindowsOptionsToHclTerraform(struct?: GuestOsCustomizationSpecWindowsOptionsOutputReference | GuestOsCustomizationSpecWindowsOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    admin_password: {
+      value: cdktf.stringToHclTerraform(struct!.adminPassword),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    auto_logon: {
+      value: cdktf.booleanToHclTerraform(struct!.autoLogon),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    auto_logon_count: {
+      value: cdktf.numberToHclTerraform(struct!.autoLogonCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    computer_name: {
+      value: cdktf.stringToHclTerraform(struct!.computerName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    domain_admin_password: {
+      value: cdktf.stringToHclTerraform(struct!.domainAdminPassword),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    domain_admin_user: {
+      value: cdktf.stringToHclTerraform(struct!.domainAdminUser),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    full_name: {
+      value: cdktf.stringToHclTerraform(struct!.fullName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    join_domain: {
+      value: cdktf.stringToHclTerraform(struct!.joinDomain),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    organization_name: {
+      value: cdktf.stringToHclTerraform(struct!.organizationName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    product_key: {
+      value: cdktf.stringToHclTerraform(struct!.productKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    run_once_command_list: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.runOnceCommandList),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    time_zone: {
+      value: cdktf.numberToHclTerraform(struct!.timeZone),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    workgroup: {
+      value: cdktf.stringToHclTerraform(struct!.workgroup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GuestOsCustomizationSpecWindowsOptionsOutputReference extends cdktf.ComplexObject {
@@ -945,6 +1123,67 @@ export function guestOsCustomizationSpecToTerraform(struct?: GuestOsCustomizatio
   }
 }
 
+
+export function guestOsCustomizationSpecToHclTerraform(struct?: GuestOsCustomizationSpecOutputReference | GuestOsCustomizationSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dns_server_list: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dnsServerList),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    dns_suffix_list: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dnsSuffixList),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    ipv4_gateway: {
+      value: cdktf.stringToHclTerraform(struct!.ipv4Gateway),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ipv6_gateway: {
+      value: cdktf.stringToHclTerraform(struct!.ipv6Gateway),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    windows_sysprep_text: {
+      value: cdktf.stringToHclTerraform(struct!.windowsSysprepText),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    linux_options: {
+      value: guestOsCustomizationSpecLinuxOptionsToHclTerraform(struct!.linuxOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GuestOsCustomizationSpecLinuxOptionsList",
+    },
+    network_interface: {
+      value: cdktf.listMapperHcl(guestOsCustomizationSpecNetworkInterfaceToHclTerraform, true)(struct!.networkInterface),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GuestOsCustomizationSpecNetworkInterfaceList",
+    },
+    windows_options: {
+      value: guestOsCustomizationSpecWindowsOptionsToHclTerraform(struct!.windowsOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "GuestOsCustomizationSpecWindowsOptionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GuestOsCustomizationSpecOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1303,5 +1542,43 @@ export class GuestOsCustomization extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       spec: guestOsCustomizationSpecToTerraform(this._spec.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      spec: {
+        value: guestOsCustomizationSpecToHclTerraform(this._spec.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GuestOsCustomizationSpecList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

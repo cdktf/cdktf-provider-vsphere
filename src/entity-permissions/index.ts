@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/entity_permissions
 // generated from terraform resource schema
 
@@ -76,6 +71,43 @@ export function entityPermissionsPermissionsToTerraform(struct?: EntityPermissio
     role_id: cdktf.stringToTerraform(struct!.roleId),
     user_or_group: cdktf.stringToTerraform(struct!.userOrGroup),
   }
+}
+
+
+export function entityPermissionsPermissionsToHclTerraform(struct?: EntityPermissionsPermissions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    is_group: {
+      value: cdktf.booleanToHclTerraform(struct!.isGroup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    propagate: {
+      value: cdktf.booleanToHclTerraform(struct!.propagate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    role_id: {
+      value: cdktf.stringToHclTerraform(struct!.roleId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    user_or_group: {
+      value: cdktf.stringToHclTerraform(struct!.userOrGroup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class EntityPermissionsPermissionsOutputReference extends cdktf.ComplexObject {
@@ -340,5 +372,37 @@ export class EntityPermissions extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       permissions: cdktf.listMapper(entityPermissionsPermissionsToTerraform, true)(this._permissions.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      entity_id: {
+        value: cdktf.stringToHclTerraform(this._entityId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      entity_type: {
+        value: cdktf.stringToHclTerraform(this._entityType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      permissions: {
+        value: cdktf.listMapperHcl(entityPermissionsPermissionsToHclTerraform, true)(this._permissions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "EntityPermissionsPermissionsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

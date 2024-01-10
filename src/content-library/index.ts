@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/content_library
 // generated from terraform resource schema
 
@@ -80,6 +75,43 @@ export function contentLibraryPublicationToTerraform(struct?: ContentLibraryPubl
     published: cdktf.booleanToTerraform(struct!.published),
     username: cdktf.stringToTerraform(struct!.username),
   }
+}
+
+
+export function contentLibraryPublicationToHclTerraform(struct?: ContentLibraryPublicationOutputReference | ContentLibraryPublication): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    authentication_method: {
+      value: cdktf.stringToHclTerraform(struct!.authenticationMethod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    published: {
+      value: cdktf.booleanToHclTerraform(struct!.published),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ContentLibraryPublicationOutputReference extends cdktf.ComplexObject {
@@ -241,6 +273,55 @@ export function contentLibrarySubscriptionToTerraform(struct?: ContentLibrarySub
     subscription_url: cdktf.stringToTerraform(struct!.subscriptionUrl),
     username: cdktf.stringToTerraform(struct!.username),
   }
+}
+
+
+export function contentLibrarySubscriptionToHclTerraform(struct?: ContentLibrarySubscriptionOutputReference | ContentLibrarySubscription): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    authentication_method: {
+      value: cdktf.stringToHclTerraform(struct!.authenticationMethod),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    automatic_sync: {
+      value: cdktf.booleanToHclTerraform(struct!.automaticSync),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    on_demand: {
+      value: cdktf.booleanToHclTerraform(struct!.onDemand),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subscription_url: {
+      value: cdktf.stringToHclTerraform(struct!.subscriptionUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ContentLibrarySubscriptionOutputReference extends cdktf.ComplexObject {
@@ -568,5 +649,49 @@ export class ContentLibrary extends cdktf.TerraformResource {
       publication: contentLibraryPublicationToTerraform(this._publication.internalValue),
       subscription: contentLibrarySubscriptionToTerraform(this._subscription.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      storage_backing: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._storageBacking),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      publication: {
+        value: contentLibraryPublicationToHclTerraform(this._publication.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ContentLibraryPublicationList",
+      },
+      subscription: {
+        value: contentLibrarySubscriptionToHclTerraform(this._subscription.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ContentLibrarySubscriptionList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

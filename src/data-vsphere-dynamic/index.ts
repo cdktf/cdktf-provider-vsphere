@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/dynamic
 // generated from terraform resource schema
 
@@ -172,5 +167,37 @@ export class DataVsphereDynamic extends cdktf.TerraformDataSource {
       name_regex: cdktf.stringToTerraform(this._nameRegex),
       type: cdktf.stringToTerraform(this._type),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      filter: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._filter),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name_regex: {
+        value: cdktf.stringToHclTerraform(this._nameRegex),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

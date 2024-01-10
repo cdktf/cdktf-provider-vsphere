@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/dpm_host_override
 // generated from terraform resource schema
 
@@ -193,5 +188,43 @@ export class DpmHostOverride extends cdktf.TerraformResource {
       host_system_id: cdktf.stringToTerraform(this._hostSystemId),
       id: cdktf.stringToTerraform(this._id),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      compute_cluster_id: {
+        value: cdktf.stringToHclTerraform(this._computeClusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dpm_automation_level: {
+        value: cdktf.stringToHclTerraform(this._dpmAutomationLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dpm_enabled: {
+        value: cdktf.booleanToHclTerraform(this._dpmEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      host_system_id: {
+        value: cdktf.stringToHclTerraform(this._hostSystemId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
