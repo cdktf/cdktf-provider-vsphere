@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.hostPortGroup.HostPortGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/hostportgroup"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/hostportgroup"
 
 hostportgroup.NewHostPortGroup(scope Construct, id *string, config HostPortGroupConfig) HostPortGroup
 ```
@@ -483,7 +483,7 @@ func ResetVlanId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.hostPortGroup.HostPortGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/hostportgroup"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/hostportgroup"
 
 hostportgroup.HostPortGroup_IsConstruct(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.hostPortGroup.HostPortGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/hostportgroup"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/hostportgroup"
 
 hostportgroup.HostPortGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ hostportgroup.HostPortGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.hostPortGroup.HostPortGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/hostportgroup"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/hostportgroup"
 
 hostportgroup.HostPortGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -543,7 +543,7 @@ hostportgroup.HostPortGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.hostPortGroup.HostPortGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/hostportgroup"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/hostportgroup"
 
 hostportgroup.HostPortGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1201,7 +1201,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.hostPortGroup.HostPortGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/hostportgroup"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/hostportgroup"
 
 &hostportgroup.HostPortGroupConfig {
 	Connection: interface{},
@@ -1598,7 +1598,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.hostPortGroup.HostPortGroupPorts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/hostportgroup"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/hostportgroup"
 
 &hostportgroup.HostPortGroupPorts {
 
@@ -1613,7 +1613,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/hostportgroup"
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.hostPortGroup.HostPortGroupPortsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/hostportgroup"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/hostportgroup"
 
 hostportgroup.NewHostPortGroupPortsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) HostPortGroupPortsList
 ```
@@ -1762,7 +1762,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.hostPortGroup.HostPortGroupPortsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/hostportgroup"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/hostportgroup"
 
 hostportgroup.NewHostPortGroupPortsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) HostPortGroupPortsOutputReference
 ```
