@@ -52,6 +52,7 @@ Object.defineProperty(exports, 'dataVsphereCustomAttribute', { get: function () 
 Object.defineProperty(exports, 'dataVsphereDatacenter', { get: function () { return require('./data-vsphere-datacenter'); } });
 Object.defineProperty(exports, 'dataVsphereDatastore', { get: function () { return require('./data-vsphere-datastore'); } });
 Object.defineProperty(exports, 'dataVsphereDatastoreCluster', { get: function () { return require('./data-vsphere-datastore-cluster'); } });
+Object.defineProperty(exports, 'dataVsphereDatastoreStats', { get: function () { return require('./data-vsphere-datastore-stats'); } });
 Object.defineProperty(exports, 'dataVsphereDistributedVirtualSwitch', { get: function () { return require('./data-vsphere-distributed-virtual-switch'); } });
 Object.defineProperty(exports, 'dataVsphereDynamic', { get: function () { return require('./data-vsphere-dynamic'); } });
 Object.defineProperty(exports, 'dataVsphereFolder', { get: function () { return require('./data-vsphere-folder'); } });
@@ -59,6 +60,7 @@ Object.defineProperty(exports, 'dataVsphereGuestOsCustomization', { get: functio
 Object.defineProperty(exports, 'dataVsphereHost', { get: function () { return require('./data-vsphere-host'); } });
 Object.defineProperty(exports, 'dataVsphereHostPciDevice', { get: function () { return require('./data-vsphere-host-pci-device'); } });
 Object.defineProperty(exports, 'dataVsphereHostThumbprint', { get: function () { return require('./data-vsphere-host-thumbprint'); } });
+Object.defineProperty(exports, 'dataVsphereHostVgpuProfile', { get: function () { return require('./data-vsphere-host-vgpu-profile'); } });
 Object.defineProperty(exports, 'dataVsphereLicense', { get: function () { return require('./data-vsphere-license'); } });
 Object.defineProperty(exports, 'dataVsphereNetwork', { get: function () { return require('./data-vsphere-network'); } });
 Object.defineProperty(exports, 'dataVsphereOvfVmTemplate', { get: function () { return require('./data-vsphere-ovf-vm-template'); } });

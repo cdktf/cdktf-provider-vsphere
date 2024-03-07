@@ -52,6 +52,7 @@ export * as dataVsphereCustomAttribute from './data-vsphere-custom-attribute';
 export * as dataVsphereDatacenter from './data-vsphere-datacenter';
 export * as dataVsphereDatastore from './data-vsphere-datastore';
 export * as dataVsphereDatastoreCluster from './data-vsphere-datastore-cluster';
+export * as dataVsphereDatastoreStats from './data-vsphere-datastore-stats';
 export * as dataVsphereDistributedVirtualSwitch from './data-vsphere-distributed-virtual-switch';
 export * as dataVsphereDynamic from './data-vsphere-dynamic';
 export * as dataVsphereFolder from './data-vsphere-folder';
@@ -59,6 +60,7 @@ export * as dataVsphereGuestOsCustomization from './data-vsphere-guest-os-custom
 export * as dataVsphereHost from './data-vsphere-host';
 export * as dataVsphereHostPciDevice from './data-vsphere-host-pci-device';
 export * as dataVsphereHostThumbprint from './data-vsphere-host-thumbprint';
+export * as dataVsphereHostVgpuProfile from './data-vsphere-host-vgpu-profile';
 export * as dataVsphereLicense from './data-vsphere-license';
 export * as dataVsphereNetwork from './data-vsphere-network';
 export * as dataVsphereOvfVmTemplate from './data-vsphere-ovf-vm-template';
