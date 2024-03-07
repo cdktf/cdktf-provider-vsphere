@@ -4,7 +4,7 @@
 
 ### DataVsphereDatastore <a name="DataVsphereDatastore" id="@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/datastore vsphere_datastore}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/datastore vsphere_datastore}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.Initializer"></a>
 
@@ -23,7 +23,8 @@ dataVsphereDatastore.DataVsphereDatastore(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   name: str,
   datacenter_id: str = None,
-  id: str = None
+  id: str = None,
+  stats: typing.Mapping[str] = None
 )
 ```
 
@@ -40,7 +41,8 @@ dataVsphereDatastore.DataVsphereDatastore(
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.Initializer.parameter.name">name</a></code> | <code>str</code> | The name or path of the datastore. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.Initializer.parameter.datacenterId">datacenter_id</a></code> | <code>str</code> | The managed object ID of the datacenter the datastore is in. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/datastore#id DataVsphereDatastore#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/datastore#id DataVsphereDatastore#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.Initializer.parameter.stats">stats</a></code> | <code>typing.Mapping[str]</code> | The usage stats of the datastore, include total capacity and free space in bytes. |
 
 ---
 
@@ -110,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The name or path of the datastore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/datastore#name DataVsphereDatastore#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/datastore#name DataVsphereDatastore#name}
 
 ---
 
@@ -122,7 +124,7 @@ The managed object ID of the datacenter the datastore is in.
 
 This is not required when using ESXi directly, or if there is only one datacenter in your infrastructure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/datastore#datacenter_id DataVsphereDatastore#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/datastore#datacenter_id DataVsphereDatastore#datacenter_id}
 
 ---
 
@@ -130,10 +132,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/datastore#id DataVsphereDatastore#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/datastore#id DataVsphereDatastore#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `stats`<sup>Optional</sup> <a name="stats" id="@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.Initializer.parameter.stats"></a>
+
+- *Type:* typing.Mapping[str]
+
+The usage stats of the datastore, include total capacity and free space in bytes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/datastore#stats DataVsphereDatastore#stats}
 
 ---
 
@@ -160,6 +172,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.resetDatacenterId">reset_datacenter_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.resetStats">reset_stats</a></code> | *No description.* |
 
 ---
 
@@ -392,6 +405,12 @@ def reset_datacenter_id() -> None
 def reset_id() -> None
 ```
 
+##### `reset_stats` <a name="reset_stats" id="@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.resetStats"></a>
+
+```python
+def reset_stats() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -506,7 +525,7 @@ The construct id used in the generated config for the DataVsphereDatastore to im
 
 The id of the existing DataVsphereDatastore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/datastore#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/datastore#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -537,9 +556,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.property.datacenterIdInput">datacenter_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.property.statsInput">stats_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.property.datacenterId">datacenter_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.property.stats">stats</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 
 ---
 
@@ -695,6 +716,16 @@ name_input: str
 
 ---
 
+##### `stats_input`<sup>Optional</sup> <a name="stats_input" id="@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.property.statsInput"></a>
+
+```python
+stats_input: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
 ##### `datacenter_id`<sup>Required</sup> <a name="datacenter_id" id="@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.property.datacenterId"></a>
 
 ```python
@@ -722,6 +753,16 @@ name: str
 ```
 
 - *Type:* str
+
+---
+
+##### `stats`<sup>Required</sup> <a name="stats" id="@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.property.stats"></a>
+
+```python
+stats: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
 
 ---
 
@@ -762,7 +803,8 @@ dataVsphereDatastore.DataVsphereDatastoreConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   name: str,
   datacenter_id: str = None,
-  id: str = None
+  id: str = None,
+  stats: typing.Mapping[str] = None
 )
 ```
 
@@ -779,7 +821,8 @@ dataVsphereDatastore.DataVsphereDatastoreConfig(
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastoreConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastoreConfig.property.name">name</a></code> | <code>str</code> | The name or path of the datastore. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastoreConfig.property.datacenterId">datacenter_id</a></code> | <code>str</code> | The managed object ID of the datacenter the datastore is in. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastoreConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/datastore#id DataVsphereDatastore#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastoreConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/datastore#id DataVsphereDatastore#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastoreConfig.property.stats">stats</a></code> | <code>typing.Mapping[str]</code> | The usage stats of the datastore, include total capacity and free space in bytes. |
 
 ---
 
@@ -863,7 +906,7 @@ name: str
 
 The name or path of the datastore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/datastore#name DataVsphereDatastore#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/datastore#name DataVsphereDatastore#name}
 
 ---
 
@@ -879,7 +922,7 @@ The managed object ID of the datacenter the datastore is in.
 
 This is not required when using ESXi directly, or if there is only one datacenter in your infrastructure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/datastore#datacenter_id DataVsphereDatastore#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/datastore#datacenter_id DataVsphereDatastore#datacenter_id}
 
 ---
 
@@ -891,10 +934,24 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/datastore#id DataVsphereDatastore#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/datastore#id DataVsphereDatastore#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `stats`<sup>Optional</sup> <a name="stats" id="@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastoreConfig.property.stats"></a>
+
+```python
+stats: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+The usage stats of the datastore, include total capacity and free space in bytes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/datastore#stats DataVsphereDatastore#stats}
 
 ---
 

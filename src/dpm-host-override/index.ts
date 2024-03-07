@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/dpm_host_override
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/dpm_host_override
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +10,29 @@ export interface DpmHostOverrideConfig extends cdktf.TerraformMetaArguments {
   /**
   * The managed object ID of the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/dpm_host_override#compute_cluster_id DpmHostOverride#compute_cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/dpm_host_override#compute_cluster_id DpmHostOverride#compute_cluster_id}
   */
   readonly computeClusterId: string;
   /**
   * The automation level for power operations on this host. Can be one of manual or automated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/dpm_host_override#dpm_automation_level DpmHostOverride#dpm_automation_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/dpm_host_override#dpm_automation_level DpmHostOverride#dpm_automation_level}
   */
   readonly dpmAutomationLevel?: string;
   /**
   * Enable DPM for this host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/dpm_host_override#dpm_enabled DpmHostOverride#dpm_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/dpm_host_override#dpm_enabled DpmHostOverride#dpm_enabled}
   */
   readonly dpmEnabled?: boolean | cdktf.IResolvable;
   /**
   * The managed object ID of the host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/dpm_host_override#host_system_id DpmHostOverride#host_system_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/dpm_host_override#host_system_id DpmHostOverride#host_system_id}
   */
   readonly hostSystemId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/dpm_host_override#id DpmHostOverride#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/dpm_host_override#id DpmHostOverride#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,7 +41,7 @@ export interface DpmHostOverrideConfig extends cdktf.TerraformMetaArguments {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/dpm_host_override vsphere_dpm_host_override}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/dpm_host_override vsphere_dpm_host_override}
 */
 export class DpmHostOverride extends cdktf.TerraformResource {
 
@@ -62,7 +57,7 @@ export class DpmHostOverride extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DpmHostOverride resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DpmHostOverride to import
-  * @param importFromId The id of the existing DpmHostOverride that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/dpm_host_override#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DpmHostOverride that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/dpm_host_override#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DpmHostOverride to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +69,7 @@ export class DpmHostOverride extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/resources/dpm_host_override vsphere_dpm_host_override} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/dpm_host_override vsphere_dpm_host_override} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +80,7 @@ export class DpmHostOverride extends cdktf.TerraformResource {
       terraformResourceType: 'vsphere_dpm_host_override',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.6.1',
+        providerVersion: '2.7.0',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,

@@ -1,3 +1,3 @@
 # `data_vsphere_license`
 
-Refer to the Terraform Registry for docs: [`data_vsphere_license`](https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/license).
+Refer to the Terraform Registry for docs: [`data_vsphere_license`](https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/license).

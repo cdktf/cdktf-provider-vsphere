@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/datastore
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/datastore
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface DataVsphereDatastoreConfig extends cdktf.TerraformMetaArguments
   /**
   * The managed object ID of the datacenter the datastore is in. This is not required when using ESXi directly, or if there is only one datacenter in your infrastructure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/datastore#datacenter_id DataVsphereDatastore#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/datastore#datacenter_id DataVsphereDatastore#datacenter_id}
   */
   readonly datacenterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/datastore#id DataVsphereDatastore#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/datastore#id DataVsphereDatastore#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +23,19 @@ export interface DataVsphereDatastoreConfig extends cdktf.TerraformMetaArguments
   /**
   * The name or path of the datastore.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/datastore#name DataVsphereDatastore#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/datastore#name DataVsphereDatastore#name}
   */
   readonly name: string;
+  /**
+  * The usage stats of the datastore, include total capacity and free space in bytes.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/datastore#stats DataVsphereDatastore#stats}
+  */
+  readonly stats?: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/datastore vsphere_datastore}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/datastore vsphere_datastore}
 */
 export class DataVsphereDatastore extends cdktf.TerraformDataSource {
 
@@ -50,7 +51,7 @@ export class DataVsphereDatastore extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataVsphereDatastore resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVsphereDatastore to import
-  * @param importFromId The id of the existing DataVsphereDatastore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/datastore#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVsphereDatastore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/datastore#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVsphereDatastore to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +63,7 @@ export class DataVsphereDatastore extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.6.1/docs/data-sources/datastore vsphere_datastore} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/datastore vsphere_datastore} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +74,7 @@ export class DataVsphereDatastore extends cdktf.TerraformDataSource {
       terraformResourceType: 'vsphere_datastore',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.6.1',
+        providerVersion: '2.7.0',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,
@@ -87,6 +88,7 @@ export class DataVsphereDatastore extends cdktf.TerraformDataSource {
     this._datacenterId = config.datacenterId;
     this._id = config.id;
     this._name = config.name;
+    this._stats = config.stats;
   }
 
   // ==========
@@ -138,6 +140,22 @@ export class DataVsphereDatastore extends cdktf.TerraformDataSource {
     return this._name;
   }
 
+  // stats - computed: false, optional: true, required: false
+  private _stats?: { [key: string]: string }; 
+  public get stats() {
+    return this.getStringMapAttribute('stats');
+  }
+  public set stats(value: { [key: string]: string }) {
+    this._stats = value;
+  }
+  public resetStats() {
+    this._stats = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statsInput() {
+    return this._stats;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -147,6 +165,7 @@ export class DataVsphereDatastore extends cdktf.TerraformDataSource {
       datacenter_id: cdktf.stringToTerraform(this._datacenterId),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      stats: cdktf.hashMapper(cdktf.stringToTerraform)(this._stats),
     };
   }
 
@@ -169,6 +188,12 @@ export class DataVsphereDatastore extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      stats: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._stats),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
       },
     };
 
