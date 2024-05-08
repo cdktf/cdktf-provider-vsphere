@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/content_library_item
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/content_library_item
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataVsphereContentLibraryItemConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/content_library_item#id DataVsphereContentLibraryItem#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/content_library_item#id DataVsphereContentLibraryItem#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,25 +17,25 @@ export interface DataVsphereContentLibraryItemConfig extends cdktf.TerraformMeta
   /**
   * ID of the content library to contain item.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/content_library_item#library_id DataVsphereContentLibraryItem#library_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/content_library_item#library_id DataVsphereContentLibraryItem#library_id}
   */
   readonly libraryId: string;
   /**
   * The name of the content library item.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/content_library_item#name DataVsphereContentLibraryItem#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/content_library_item#name DataVsphereContentLibraryItem#name}
   */
   readonly name: string;
   /**
   * Type of content library item.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/content_library_item#type DataVsphereContentLibraryItem#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/content_library_item#type DataVsphereContentLibraryItem#type}
   */
   readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/content_library_item vsphere_content_library_item}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/content_library_item vsphere_content_library_item}
 */
 export class DataVsphereContentLibraryItem extends cdktf.TerraformDataSource {
 
@@ -56,7 +51,7 @@ export class DataVsphereContentLibraryItem extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataVsphereContentLibraryItem resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVsphereContentLibraryItem to import
-  * @param importFromId The id of the existing DataVsphereContentLibraryItem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/content_library_item#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVsphereContentLibraryItem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/content_library_item#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVsphereContentLibraryItem to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +63,7 @@ export class DataVsphereContentLibraryItem extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/data-sources/content_library_item vsphere_content_library_item} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/content_library_item vsphere_content_library_item} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +74,7 @@ export class DataVsphereContentLibraryItem extends cdktf.TerraformDataSource {
       terraformResourceType: 'vsphere_content_library_item',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.7.0',
+        providerVersion: '2.8.0',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,
