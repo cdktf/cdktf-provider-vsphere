@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereHostBaseImages.DataVsphereHostBaseImages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostbaseimages"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherehostbaseimages"
 
 datavspherehostbaseimages.NewDataVsphereHostBaseImages(scope Construct, id *string, config DataVsphereHostBaseImagesConfig) DataVsphereHostBaseImages
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereHostBaseImages.DataVsphereHostBaseImages.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostbaseimages"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherehostbaseimages"
 
 datavspherehostbaseimages.DataVsphereHostBaseImages_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereHostBaseImages.DataVsphereHostBaseImages.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostbaseimages"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherehostbaseimages"
 
 datavspherehostbaseimages.DataVsphereHostBaseImages_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datavspherehostbaseimages.DataVsphereHostBaseImages_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereHostBaseImages.DataVsphereHostBaseImages.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostbaseimages"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherehostbaseimages"
 
 datavspherehostbaseimages.DataVsphereHostBaseImages_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datavspherehostbaseimages.DataVsphereHostBaseImages_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.dataVsphereHostBaseImages.DataVsphereHostBaseImages.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostbaseimages"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherehostbaseimages"
 
 datavspherehostbaseimages.DataVsphereHostBaseImages_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -583,7 +583,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereHostBaseImages.DataVsphereHostBaseImagesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostbaseimages"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherehostbaseimages"
 
 &datavspherehostbaseimages.DataVsphereHostBaseImagesConfig {
 	Connection: interface{},
