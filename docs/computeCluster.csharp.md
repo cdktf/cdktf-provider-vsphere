@@ -4,7 +4,7 @@
 
 ### ComputeCluster <a name="ComputeCluster" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster vsphere_compute_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster vsphere_compute_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer"></a>
 
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.putHostImage">PutHostImage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.putVsanDiskGroup">PutVsanDiskGroup</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.putVsanFaultDomains">PutVsanFaultDomains</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.putVsanStretchedCluster">PutVsanStretchedCluster</a></code> | *No description.* |
@@ -120,6 +121,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetHaVmRestartPriority">ResetHaVmRestartPriority</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetHaVmRestartTimeout">ResetHaVmRestartTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetHostClusterExitTimeout">ResetHostClusterExitTimeout</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetHostImage">ResetHostImage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetHostManaged">ResetHostManaged</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetHostSystemIds">ResetHostSystemIds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetId">ResetId</a></code> | *No description.* |
@@ -434,6 +436,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `PutHostImage` <a name="PutHostImage" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.putHostImage"></a>
+
+```csharp
+private void PutHostImage(ComputeClusterHostImage Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.putHostImage.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage">ComputeClusterHostImage</a>
+
+---
+
 ##### `PutVsanDiskGroup` <a name="PutVsanDiskGroup" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.putVsanDiskGroup"></a>
 
 ```csharp
@@ -734,6 +748,12 @@ private void ResetHaVmRestartTimeout()
 private void ResetHostClusterExitTimeout()
 ```
 
+##### `ResetHostImage` <a name="ResetHostImage" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetHostImage"></a>
+
+```csharp
+private void ResetHostImage()
+```
+
 ##### `ResetHostManaged` <a name="ResetHostManaged" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.resetHostManaged"></a>
 
 ```csharp
@@ -975,7 +995,7 @@ The construct id used in the generated config for the ComputeCluster to import.
 
 The id of the existing ComputeCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1005,6 +1025,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostImage">HostImage</a></code> | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference">ComputeClusterHostImageOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.resourcePoolId">ResourcePoolId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDiskGroup">VsanDiskGroup</a></code> | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupList">ComputeClusterVsanDiskGroupList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanFaultDomains">VsanFaultDomains</a></code> | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsList">ComputeClusterVsanFaultDomainsList</a></code> | *No description.* |
@@ -1054,6 +1075,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haVmRestartPriorityInput">HaVmRestartPriorityInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haVmRestartTimeoutInput">HaVmRestartTimeoutInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostClusterExitTimeoutInput">HostClusterExitTimeoutInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostImageInput">HostImageInput</a></code> | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage">ComputeClusterHostImage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostManagedInput">HostManagedInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostSystemIdsInput">HostSystemIdsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
@@ -1286,6 +1308,16 @@ public object[] Provisioners { get; }
 ```
 
 - *Type:* object[]
+
+---
+
+##### `HostImage`<sup>Required</sup> <a name="HostImage" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostImage"></a>
+
+```csharp
+public ComputeClusterHostImageOutputReference HostImage { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference">ComputeClusterHostImageOutputReference</a>
 
 ---
 
@@ -1776,6 +1808,16 @@ public double HostClusterExitTimeoutInput { get; }
 ```
 
 - *Type:* double
+
+---
+
+##### `HostImageInput`<sup>Optional</sup> <a name="HostImageInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostImageInput"></a>
+
+```csharp
+public ComputeClusterHostImage HostImageInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage">ComputeClusterHostImage</a>
 
 ---
 
@@ -2760,6 +2802,7 @@ new ComputeClusterConfig {
     string HaVmRestartPriority = null,
     double HaVmRestartTimeout = null,
     double HostClusterExitTimeout = null,
+    ComputeClusterHostImage HostImage = null,
     object HostManaged = null,
     string[] HostSystemIds = null,
     string Id = null,
@@ -2843,9 +2886,10 @@ new ComputeClusterConfig {
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haVmRestartPriority">HaVmRestartPriority</a></code> | <code>string</code> | The default restart priority for affected VMs when vSphere detects a host failure. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haVmRestartTimeout">HaVmRestartTimeout</a></code> | <code>double</code> | The maximum time, in seconds, that vSphere HA will wait for virtual machines in one priority to be ready before proceeding with the next priority. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.hostClusterExitTimeout">HostClusterExitTimeout</a></code> | <code>double</code> | The timeout for each host maintenance mode operation when removing hosts from a cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.hostImage">HostImage</a></code> | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage">ComputeClusterHostImage</a></code> | host_image block. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.hostManaged">HostManaged</a></code> | <code>object</code> | Must be set if cluster enrollment is managed from host resource. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.hostSystemIds">HostSystemIds</a></code> | <code>string[]</code> | The managed object IDs of the hosts to put in the cluster. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#id ComputeCluster#id}. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#id ComputeCluster#id}. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.proactiveHaAutomationLevel">ProactiveHaAutomationLevel</a></code> | <code>string</code> | The DRS behavior for proactive HA recommendations. Can be one of Automated or Manual. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.proactiveHaEnabled">ProactiveHaEnabled</a></code> | <code>object</code> | Enables proactive HA, allowing for vSphere to get HA data from external providers and use DRS to perform remediation. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.proactiveHaModerateRemediation">ProactiveHaModerateRemediation</a></code> | <code>string</code> | The configured remediation for moderately degraded hosts. |
@@ -2949,7 +2993,7 @@ public string DatacenterId { get; set; }
 
 The managed object ID of the datacenter to put the cluster in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#datacenter_id ComputeCluster#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#datacenter_id ComputeCluster#datacenter_id}
 
 ---
 
@@ -2963,7 +3007,7 @@ public string Name { get; set; }
 
 Name for the new cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#name ComputeCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#name ComputeCluster#name}
 
 ---
 
@@ -2977,7 +3021,7 @@ public System.Collections.Generic.IDictionary<string, string> CustomAttributes {
 
 A list of custom attributes to set on this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#custom_attributes ComputeCluster#custom_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#custom_attributes ComputeCluster#custom_attributes}
 
 ---
 
@@ -2991,7 +3035,7 @@ public string DpmAutomationLevel { get; set; }
 
 The automation level for host power operations in this cluster. Can be one of manual or automated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#dpm_automation_level ComputeCluster#dpm_automation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#dpm_automation_level ComputeCluster#dpm_automation_level}
 
 ---
 
@@ -3007,7 +3051,7 @@ Enable DPM support for DRS.
 
 This allows you to dynamically control the power of hosts depending on the needs of virtual machines in the cluster. Requires that DRS be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#dpm_enabled ComputeCluster#dpm_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#dpm_enabled ComputeCluster#dpm_enabled}
 
 ---
 
@@ -3023,7 +3067,7 @@ A value between 1 and 5 indicating the threshold of load within the cluster that
 
 This affects both power on and power off operations - a lower setting will tolerate more of a surplus/deficit than a higher setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#dpm_threshold ComputeCluster#dpm_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#dpm_threshold ComputeCluster#dpm_threshold}
 
 ---
 
@@ -3037,7 +3081,7 @@ public System.Collections.Generic.IDictionary<string, string> DrsAdvancedOptions
 
 Advanced configuration options for DRS and DPM.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#drs_advanced_options ComputeCluster#drs_advanced_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#drs_advanced_options ComputeCluster#drs_advanced_options}
 
 ---
 
@@ -3051,7 +3095,7 @@ public string DrsAutomationLevel { get; set; }
 
 The default automation level for all virtual machines in this cluster. Can be one of manual, partiallyAutomated, or fullyAutomated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#drs_automation_level ComputeCluster#drs_automation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#drs_automation_level ComputeCluster#drs_automation_level}
 
 ---
 
@@ -3065,7 +3109,7 @@ public object DrsEnabled { get; set; }
 
 Enable DRS for this cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#drs_enabled ComputeCluster#drs_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#drs_enabled ComputeCluster#drs_enabled}
 
 ---
 
@@ -3079,7 +3123,7 @@ public object DrsEnablePredictiveDrs { get; set; }
 
 When true, enables DRS to use data from vRealize Operations Manager to make proactive DRS recommendations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#drs_enable_predictive_drs ComputeCluster#drs_enable_predictive_drs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#drs_enable_predictive_drs ComputeCluster#drs_enable_predictive_drs}
 
 ---
 
@@ -3093,7 +3137,7 @@ public object DrsEnableVmOverrides { get; set; }
 
 When true, allows individual VM overrides within this cluster to be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#drs_enable_vm_overrides ComputeCluster#drs_enable_vm_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#drs_enable_vm_overrides ComputeCluster#drs_enable_vm_overrides}
 
 ---
 
@@ -3109,7 +3153,7 @@ A value between 1 and 5 indicating the threshold of imbalance tolerated between 
 
 A lower setting will tolerate more imbalance while a higher setting will tolerate less.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#drs_migration_threshold ComputeCluster#drs_migration_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#drs_migration_threshold ComputeCluster#drs_migration_threshold}
 
 ---
 
@@ -3123,7 +3167,7 @@ public string DrsScaleDescendantsShares { get; set; }
 
 Enable scalable shares for all descendants of this cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#drs_scale_descendants_shares ComputeCluster#drs_scale_descendants_shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#drs_scale_descendants_shares ComputeCluster#drs_scale_descendants_shares}
 
 ---
 
@@ -3137,7 +3181,7 @@ public string Folder { get; set; }
 
 The name of the folder to locate the cluster in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#folder ComputeCluster#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#folder ComputeCluster#folder}
 
 ---
 
@@ -3153,7 +3197,7 @@ Force removal of all hosts in the cluster during destroy and make them standalon
 
 Use of this flag mainly exists for testing and is not recommended in normal use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#force_evacuate_on_destroy ComputeCluster#force_evacuate_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#force_evacuate_on_destroy ComputeCluster#force_evacuate_on_destroy}
 
 ---
 
@@ -3169,7 +3213,7 @@ When ha_admission_control_policy is failoverHosts, this defines the managed obje
 
 These hosts are kept as available as possible - admission control will block access to the host, and DRS will ignore the host when making recommendations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_admission_control_failover_host_system_ids ComputeCluster#ha_admission_control_failover_host_system_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_admission_control_failover_host_system_ids ComputeCluster#ha_admission_control_failover_host_system_ids}
 
 ---
 
@@ -3185,7 +3229,7 @@ The maximum number of failed hosts that admission control tolerates when making 
 
 The maximum is one less than the number of hosts in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_admission_control_host_failure_tolerance ComputeCluster#ha_admission_control_host_failure_tolerance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_admission_control_host_failure_tolerance ComputeCluster#ha_admission_control_host_failure_tolerance}
 
 ---
 
@@ -3201,7 +3245,7 @@ The percentage of resource reduction that a cluster of VMs can tolerate in case 
 
 A value of 0 produces warnings only, whereas a value of 100 disables the setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_admission_control_performance_tolerance ComputeCluster#ha_admission_control_performance_tolerance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_admission_control_performance_tolerance ComputeCluster#ha_admission_control_performance_tolerance}
 
 ---
 
@@ -3217,7 +3261,7 @@ The type of admission control policy to use with vSphere HA, which controls whet
 
 Can be one of resourcePercentage, slotPolicy, failoverHosts, or disabled. Note that disabling admission control is not recommended and can lead to service issues.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_admission_control_policy ComputeCluster#ha_admission_control_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_admission_control_policy ComputeCluster#ha_admission_control_policy}
 
 ---
 
@@ -3233,7 +3277,7 @@ When ha_admission_control_policy is resourcePercentage, automatically determine 
 
 Disable to supply user-defined values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_admission_control_resource_percentage_auto_compute ComputeCluster#ha_admission_control_resource_percentage_auto_compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_admission_control_resource_percentage_auto_compute ComputeCluster#ha_admission_control_resource_percentage_auto_compute}
 
 ---
 
@@ -3247,7 +3291,7 @@ public double HaAdmissionControlResourcePercentageCpu { get; set; }
 
 When ha_admission_control_policy is resourcePercentage, this controls the user-defined percentage of CPU resources in the cluster to reserve for failover.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_admission_control_resource_percentage_cpu ComputeCluster#ha_admission_control_resource_percentage_cpu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_admission_control_resource_percentage_cpu ComputeCluster#ha_admission_control_resource_percentage_cpu}
 
 ---
 
@@ -3261,7 +3305,7 @@ public double HaAdmissionControlResourcePercentageMemory { get; set; }
 
 When ha_admission_control_policy is resourcePercentage, this controls the user-defined percentage of memory resources in the cluster to reserve for failover.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_admission_control_resource_percentage_memory ComputeCluster#ha_admission_control_resource_percentage_memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_admission_control_resource_percentage_memory ComputeCluster#ha_admission_control_resource_percentage_memory}
 
 ---
 
@@ -3275,7 +3319,7 @@ public double HaAdmissionControlSlotPolicyExplicitCpu { get; set; }
 
 When ha_admission_control_policy is slotPolicy, this controls the user-defined CPU slot size, in MHz.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_admission_control_slot_policy_explicit_cpu ComputeCluster#ha_admission_control_slot_policy_explicit_cpu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_admission_control_slot_policy_explicit_cpu ComputeCluster#ha_admission_control_slot_policy_explicit_cpu}
 
 ---
 
@@ -3289,7 +3333,7 @@ public double HaAdmissionControlSlotPolicyExplicitMemory { get; set; }
 
 When ha_admission_control_policy is slotPolicy, this controls the user-defined memory slot size, in MB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_admission_control_slot_policy_explicit_memory ComputeCluster#ha_admission_control_slot_policy_explicit_memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_admission_control_slot_policy_explicit_memory ComputeCluster#ha_admission_control_slot_policy_explicit_memory}
 
 ---
 
@@ -3305,7 +3349,7 @@ When ha_admission_control_policy is slotPolicy, this setting controls whether or
 
 The default is to gather a automatic average based on all powered-on virtual machines currently in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_admission_control_slot_policy_use_explicit_size ComputeCluster#ha_admission_control_slot_policy_use_explicit_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_admission_control_slot_policy_use_explicit_size ComputeCluster#ha_admission_control_slot_policy_use_explicit_size}
 
 ---
 
@@ -3319,7 +3363,7 @@ public System.Collections.Generic.IDictionary<string, string> HaAdvancedOptions 
 
 Advanced configuration options for vSphere HA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_advanced_options ComputeCluster#ha_advanced_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_advanced_options ComputeCluster#ha_advanced_options}
 
 ---
 
@@ -3335,7 +3379,7 @@ When ha_vm_component_protection is enabled, controls the action to take on virtu
 
 Can be one of none or reset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_datastore_apd_recovery_action ComputeCluster#ha_datastore_apd_recovery_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_datastore_apd_recovery_action ComputeCluster#ha_datastore_apd_recovery_action}
 
 ---
 
@@ -3351,7 +3395,7 @@ When ha_vm_component_protection is enabled, controls the action to take on virtu
 
 Can be one of disabled, warning, restartConservative, or restartAggressive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_datastore_apd_response ComputeCluster#ha_datastore_apd_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_datastore_apd_response ComputeCluster#ha_datastore_apd_response}
 
 ---
 
@@ -3365,7 +3409,7 @@ public double HaDatastoreApdResponseDelay { get; set; }
 
 When ha_vm_component_protection is enabled, controls the delay in seconds to wait after an APD timeout event to execute the response action defined in ha_datastore_apd_response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_datastore_apd_response_delay ComputeCluster#ha_datastore_apd_response_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_datastore_apd_response_delay ComputeCluster#ha_datastore_apd_response_delay}
 
 ---
 
@@ -3381,7 +3425,7 @@ When ha_vm_component_protection is enabled, controls the action to take on virtu
 
 Can be one of disabled, warning, or restartAggressive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_datastore_pdl_response ComputeCluster#ha_datastore_pdl_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_datastore_pdl_response ComputeCluster#ha_datastore_pdl_response}
 
 ---
 
@@ -3395,7 +3439,7 @@ public object HaEnabled { get; set; }
 
 Enable vSphere HA for this cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_enabled ComputeCluster#ha_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_enabled ComputeCluster#ha_enabled}
 
 ---
 
@@ -3411,7 +3455,7 @@ The list of managed object IDs for preferred datastores to use for HA heartbeati
 
 This setting is only useful when ha_heartbeat_datastore_policy is set to either userSelectedDs or allFeasibleDsWithUserPreference.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_heartbeat_datastore_ids ComputeCluster#ha_heartbeat_datastore_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_heartbeat_datastore_ids ComputeCluster#ha_heartbeat_datastore_ids}
 
 ---
 
@@ -3425,7 +3469,7 @@ public string HaHeartbeatDatastorePolicy { get; set; }
 
 The selection policy for HA heartbeat datastores. Can be one of allFeasibleDs, userSelectedDs, or allFeasibleDsWithUserPreference.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_heartbeat_datastore_policy ComputeCluster#ha_heartbeat_datastore_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_heartbeat_datastore_policy ComputeCluster#ha_heartbeat_datastore_policy}
 
 ---
 
@@ -3441,7 +3485,7 @@ The action to take on virtual machines when a host has detected that it has been
 
 Can be one of none, powerOff, or shutdown.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_host_isolation_response ComputeCluster#ha_host_isolation_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_host_isolation_response ComputeCluster#ha_host_isolation_response}
 
 ---
 
@@ -3455,7 +3499,7 @@ public string HaHostMonitoring { get; set; }
 
 Global setting that controls whether vSphere HA remediates VMs on host failure. Can be one of enabled or disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_host_monitoring ComputeCluster#ha_host_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_host_monitoring ComputeCluster#ha_host_monitoring}
 
 ---
 
@@ -3471,7 +3515,7 @@ Controls vSphere VM component protection for virtual machines in this cluster.
 
 This allows vSphere HA to react to failures between hosts and specific virtual machine components, such as datastores. Can be one of enabled or disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_vm_component_protection ComputeCluster#ha_vm_component_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_vm_component_protection ComputeCluster#ha_vm_component_protection}
 
 ---
 
@@ -3487,7 +3531,7 @@ The condition used to determine whether or not VMs in a certain restart priority
 
 Can be one of none, poweredOn, guestHbStatusGreen, or appHbStatusGreen.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_vm_dependency_restart_condition ComputeCluster#ha_vm_dependency_restart_condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_vm_dependency_restart_condition ComputeCluster#ha_vm_dependency_restart_condition}
 
 ---
 
@@ -3503,7 +3547,7 @@ If a heartbeat from a virtual machine is not received within this configured int
 
 The value is in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_vm_failure_interval ComputeCluster#ha_vm_failure_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_vm_failure_interval ComputeCluster#ha_vm_failure_interval}
 
 ---
 
@@ -3519,7 +3563,7 @@ The length of the reset window in which ha_vm_maximum_resets can operate.
 
 When this window expires, no more resets are attempted regardless of the setting configured in ha_vm_maximum_resets. -1 means no window, meaning an unlimited reset time is allotted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_vm_maximum_failure_window ComputeCluster#ha_vm_maximum_failure_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_vm_maximum_failure_window ComputeCluster#ha_vm_maximum_failure_window}
 
 ---
 
@@ -3533,7 +3577,7 @@ public double HaVmMaximumResets { get; set; }
 
 The maximum number of resets that HA will perform to a virtual machine when responding to a failure event.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_vm_maximum_resets ComputeCluster#ha_vm_maximum_resets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_vm_maximum_resets ComputeCluster#ha_vm_maximum_resets}
 
 ---
 
@@ -3547,7 +3591,7 @@ public double HaVmMinimumUptime { get; set; }
 
 The time, in seconds, that HA waits after powering on a virtual machine before monitoring for heartbeats.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_vm_minimum_uptime ComputeCluster#ha_vm_minimum_uptime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_vm_minimum_uptime ComputeCluster#ha_vm_minimum_uptime}
 
 ---
 
@@ -3563,7 +3607,7 @@ The type of virtual machine monitoring to use when HA is enabled in the cluster.
 
 Can be one of vmMonitoringDisabled, vmMonitoringOnly, or vmAndAppMonitoring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_vm_monitoring ComputeCluster#ha_vm_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_vm_monitoring ComputeCluster#ha_vm_monitoring}
 
 ---
 
@@ -3577,7 +3621,7 @@ public double HaVmRestartAdditionalDelay { get; set; }
 
 Additional delay in seconds after ready condition is met. A VM is considered ready at this point.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_vm_restart_additional_delay ComputeCluster#ha_vm_restart_additional_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_vm_restart_additional_delay ComputeCluster#ha_vm_restart_additional_delay}
 
 ---
 
@@ -3593,7 +3637,7 @@ The default restart priority for affected VMs when vSphere detects a host failur
 
 Can be one of lowest, low, medium, high, or highest.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_vm_restart_priority ComputeCluster#ha_vm_restart_priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_vm_restart_priority ComputeCluster#ha_vm_restart_priority}
 
 ---
 
@@ -3607,7 +3651,7 @@ public double HaVmRestartTimeout { get; set; }
 
 The maximum time, in seconds, that vSphere HA will wait for virtual machines in one priority to be ready before proceeding with the next priority.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#ha_vm_restart_timeout ComputeCluster#ha_vm_restart_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#ha_vm_restart_timeout ComputeCluster#ha_vm_restart_timeout}
 
 ---
 
@@ -3621,7 +3665,21 @@ public double HostClusterExitTimeout { get; set; }
 
 The timeout for each host maintenance mode operation when removing hosts from a cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#host_cluster_exit_timeout ComputeCluster#host_cluster_exit_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#host_cluster_exit_timeout ComputeCluster#host_cluster_exit_timeout}
+
+---
+
+##### `HostImage`<sup>Optional</sup> <a name="HostImage" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.hostImage"></a>
+
+```csharp
+public ComputeClusterHostImage HostImage { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage">ComputeClusterHostImage</a>
+
+host_image block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#host_image ComputeCluster#host_image}
 
 ---
 
@@ -3635,7 +3693,7 @@ public object HostManaged { get; set; }
 
 Must be set if cluster enrollment is managed from host resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#host_managed ComputeCluster#host_managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#host_managed ComputeCluster#host_managed}
 
 ---
 
@@ -3649,7 +3707,7 @@ public string[] HostSystemIds { get; set; }
 
 The managed object IDs of the hosts to put in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#host_system_ids ComputeCluster#host_system_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#host_system_ids ComputeCluster#host_system_ids}
 
 ---
 
@@ -3661,7 +3719,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#id ComputeCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#id ComputeCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3678,7 +3736,7 @@ public string ProactiveHaAutomationLevel { get; set; }
 
 The DRS behavior for proactive HA recommendations. Can be one of Automated or Manual.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#proactive_ha_automation_level ComputeCluster#proactive_ha_automation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#proactive_ha_automation_level ComputeCluster#proactive_ha_automation_level}
 
 ---
 
@@ -3692,7 +3750,7 @@ public object ProactiveHaEnabled { get; set; }
 
 Enables proactive HA, allowing for vSphere to get HA data from external providers and use DRS to perform remediation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#proactive_ha_enabled ComputeCluster#proactive_ha_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#proactive_ha_enabled ComputeCluster#proactive_ha_enabled}
 
 ---
 
@@ -3708,7 +3766,7 @@ The configured remediation for moderately degraded hosts.
 
 Can be one of MaintenanceMode or QuarantineMode. Note that this cannot be set to MaintenanceMode when proactive_ha_severe_remediation is set to QuarantineMode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#proactive_ha_moderate_remediation ComputeCluster#proactive_ha_moderate_remediation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#proactive_ha_moderate_remediation ComputeCluster#proactive_ha_moderate_remediation}
 
 ---
 
@@ -3722,7 +3780,7 @@ public string[] ProactiveHaProviderIds { get; set; }
 
 The list of IDs for health update providers configured for this cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#proactive_ha_provider_ids ComputeCluster#proactive_ha_provider_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#proactive_ha_provider_ids ComputeCluster#proactive_ha_provider_ids}
 
 ---
 
@@ -3738,7 +3796,7 @@ The configured remediation for severely degraded hosts.
 
 Can be one of MaintenanceMode or QuarantineMode. Note that this cannot be set to QuarantineMode when proactive_ha_moderate_remediation is set to MaintenanceMode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#proactive_ha_severe_remediation ComputeCluster#proactive_ha_severe_remediation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#proactive_ha_severe_remediation ComputeCluster#proactive_ha_severe_remediation}
 
 ---
 
@@ -3752,7 +3810,7 @@ public string[] Tags { get; set; }
 
 A list of tag IDs to apply to this object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#tags ComputeCluster#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#tags ComputeCluster#tags}
 
 ---
 
@@ -3766,7 +3824,7 @@ public object VsanCompressionEnabled { get; set; }
 
 Whether the vSAN compression service is enabled for the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#vsan_compression_enabled ComputeCluster#vsan_compression_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#vsan_compression_enabled ComputeCluster#vsan_compression_enabled}
 
 ---
 
@@ -3780,7 +3838,7 @@ public object VsanDedupEnabled { get; set; }
 
 Whether the vSAN deduplication service is enabled for the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#vsan_dedup_enabled ComputeCluster#vsan_dedup_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#vsan_dedup_enabled ComputeCluster#vsan_dedup_enabled}
 
 ---
 
@@ -3794,7 +3852,7 @@ public object VsanDiskGroup { get; set; }
 
 vsan_disk_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#vsan_disk_group ComputeCluster#vsan_disk_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#vsan_disk_group ComputeCluster#vsan_disk_group}
 
 ---
 
@@ -3808,7 +3866,7 @@ public object VsanDitEncryptionEnabled { get; set; }
 
 Whether the vSAN data-in-transit encryption is enabled for the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#vsan_dit_encryption_enabled ComputeCluster#vsan_dit_encryption_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#vsan_dit_encryption_enabled ComputeCluster#vsan_dit_encryption_enabled}
 
 ---
 
@@ -3822,7 +3880,7 @@ public double VsanDitRekeyInterval { get; set; }
 
 When vsan_dit_encryption_enabled is enabled, sets the rekey interval of data-in-transit encryption (in minutes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#vsan_dit_rekey_interval ComputeCluster#vsan_dit_rekey_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#vsan_dit_rekey_interval ComputeCluster#vsan_dit_rekey_interval}
 
 ---
 
@@ -3836,7 +3894,7 @@ public object VsanEnabled { get; set; }
 
 Whether the vSAN service is enabled for the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#vsan_enabled ComputeCluster#vsan_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#vsan_enabled ComputeCluster#vsan_enabled}
 
 ---
 
@@ -3850,7 +3908,7 @@ public object VsanEsaEnabled { get; set; }
 
 Whether the vSAN ESA service is enabled for the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#vsan_esa_enabled ComputeCluster#vsan_esa_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#vsan_esa_enabled ComputeCluster#vsan_esa_enabled}
 
 ---
 
@@ -3864,7 +3922,7 @@ public object VsanFaultDomains { get; set; }
 
 vsan_fault_domains block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#vsan_fault_domains ComputeCluster#vsan_fault_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#vsan_fault_domains ComputeCluster#vsan_fault_domains}
 
 ---
 
@@ -3878,7 +3936,7 @@ public object VsanNetworkDiagnosticModeEnabled { get; set; }
 
 Whether the vSAN network diagnostic mode is enabled for the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#vsan_network_diagnostic_mode_enabled ComputeCluster#vsan_network_diagnostic_mode_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#vsan_network_diagnostic_mode_enabled ComputeCluster#vsan_network_diagnostic_mode_enabled}
 
 ---
 
@@ -3892,7 +3950,7 @@ public object VsanPerformanceEnabled { get; set; }
 
 Whether the vSAN performance service is enabled for the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#vsan_performance_enabled ComputeCluster#vsan_performance_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#vsan_performance_enabled ComputeCluster#vsan_performance_enabled}
 
 ---
 
@@ -3906,7 +3964,7 @@ public string[] VsanRemoteDatastoreIds { get; set; }
 
 The managed object IDs of the vSAN datastore to be mounted on the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#vsan_remote_datastore_ids ComputeCluster#vsan_remote_datastore_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#vsan_remote_datastore_ids ComputeCluster#vsan_remote_datastore_ids}
 
 ---
 
@@ -3920,7 +3978,7 @@ public ComputeClusterVsanStretchedCluster VsanStretchedCluster { get; set; }
 
 vsan_stretched_cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#vsan_stretched_cluster ComputeCluster#vsan_stretched_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#vsan_stretched_cluster ComputeCluster#vsan_stretched_cluster}
 
 ---
 
@@ -3934,7 +3992,7 @@ public object VsanUnmapEnabled { get; set; }
 
 Whether the vSAN unmap service is enabled for the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#vsan_unmap_enabled ComputeCluster#vsan_unmap_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#vsan_unmap_enabled ComputeCluster#vsan_unmap_enabled}
 
 ---
 
@@ -3948,7 +4006,107 @@ public object VsanVerboseModeEnabled { get; set; }
 
 Whether the vSAN verbose mode is enabled for the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#vsan_verbose_mode_enabled ComputeCluster#vsan_verbose_mode_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#vsan_verbose_mode_enabled ComputeCluster#vsan_verbose_mode_enabled}
+
+---
+
+### ComputeClusterHostImage <a name="ComputeClusterHostImage" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Vsphere;
+
+new ComputeClusterHostImage {
+    object Component = null,
+    string EsxVersion = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage.property.component">Component</a></code> | <code>object</code> | component block. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage.property.esxVersion">EsxVersion</a></code> | <code>string</code> | The ESXi version which the image is based on. |
+
+---
+
+##### `Component`<sup>Optional</sup> <a name="Component" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage.property.component"></a>
+
+```csharp
+public object Component { get; set; }
+```
+
+- *Type:* object
+
+component block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#component ComputeCluster#component}
+
+---
+
+##### `EsxVersion`<sup>Optional</sup> <a name="EsxVersion" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage.property.esxVersion"></a>
+
+```csharp
+public string EsxVersion { get; set; }
+```
+
+- *Type:* string
+
+The ESXi version which the image is based on.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#esx_version ComputeCluster#esx_version}
+
+---
+
+### ComputeClusterHostImageComponent <a name="ComputeClusterHostImageComponent" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Vsphere;
+
+new ComputeClusterHostImageComponent {
+    string Key = null,
+    string Version = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent.property.key">Key</a></code> | <code>string</code> | The identifier for the component. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent.property.version">Version</a></code> | <code>string</code> | The version to use. |
+
+---
+
+##### `Key`<sup>Optional</sup> <a name="Key" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent.property.key"></a>
+
+```csharp
+public string Key { get; set; }
+```
+
+- *Type:* string
+
+The identifier for the component.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#key ComputeCluster#key}
+
+---
+
+##### `Version`<sup>Optional</sup> <a name="Version" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent.property.version"></a>
+
+```csharp
+public string Version { get; set; }
+```
+
+- *Type:* string
+
+The version to use.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#version ComputeCluster#version}
 
 ---
 
@@ -3984,7 +4142,7 @@ public string Cache { get; set; }
 
 Cache disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#cache ComputeCluster#cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#cache ComputeCluster#cache}
 
 ---
 
@@ -3998,7 +4156,7 @@ public string[] Storage { get; set; }
 
 List of storage disks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#storage ComputeCluster#storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#storage ComputeCluster#storage}
 
 ---
 
@@ -4032,7 +4190,7 @@ public object FaultDomain { get; set; }
 
 fault_domain block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#fault_domain ComputeCluster#fault_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#fault_domain ComputeCluster#fault_domain}
 
 ---
 
@@ -4068,7 +4226,7 @@ public string[] HostIds { get; set; }
 
 The managed object IDs of the hosts to put in the fault domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#host_ids ComputeCluster#host_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#host_ids ComputeCluster#host_ids}
 
 ---
 
@@ -4082,7 +4240,7 @@ public string Name { get; set; }
 
 The name of fault domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#name ComputeCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#name ComputeCluster#name}
 
 ---
 
@@ -4124,7 +4282,7 @@ public string[] PreferredFaultDomainHostIds { get; set; }
 
 The managed object IDs of the hosts to put in the first fault domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#preferred_fault_domain_host_ids ComputeCluster#preferred_fault_domain_host_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#preferred_fault_domain_host_ids ComputeCluster#preferred_fault_domain_host_ids}
 
 ---
 
@@ -4138,7 +4296,7 @@ public string[] SecondaryFaultDomainHostIds { get; set; }
 
 The managed object IDs of the hosts to put in the second fault domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#secondary_fault_domain_host_ids ComputeCluster#secondary_fault_domain_host_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#secondary_fault_domain_host_ids ComputeCluster#secondary_fault_domain_host_ids}
 
 ---
 
@@ -4152,7 +4310,7 @@ public string WitnessNode { get; set; }
 
 The managed object IDs of the host selected as witness node when enable stretched cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#witness_node ComputeCluster#witness_node}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#witness_node ComputeCluster#witness_node}
 
 ---
 
@@ -4166,7 +4324,7 @@ public string PreferredFaultDomainName { get; set; }
 
 The name of prepferred fault domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#preferred_fault_domain_name ComputeCluster#preferred_fault_domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#preferred_fault_domain_name ComputeCluster#preferred_fault_domain_name}
 
 ---
 
@@ -4180,11 +4338,816 @@ public string SecondaryFaultDomainName { get; set; }
 
 The name of secondary fault domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/compute_cluster#secondary_fault_domain_name ComputeCluster#secondary_fault_domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/compute_cluster#secondary_fault_domain_name ComputeCluster#secondary_fault_domain_name}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### ComputeClusterHostImageComponentList <a name="ComputeClusterHostImageComponentList" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Vsphere;
+
+new ComputeClusterHostImageComponentList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.get"></a>
+
+```csharp
+private ComputeClusterHostImageComponentOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### ComputeClusterHostImageComponentOutputReference <a name="ComputeClusterHostImageComponentOutputReference" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Vsphere;
+
+new ComputeClusterHostImageComponentOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.resetKey">ResetKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.resetVersion">ResetVersion</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetKey` <a name="ResetKey" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.resetKey"></a>
+
+```csharp
+private void ResetKey()
+```
+
+##### `ResetVersion` <a name="ResetVersion" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.resetVersion"></a>
+
+```csharp
+private void ResetVersion()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.property.keyInput">KeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.property.versionInput">VersionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.property.version">Version</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `KeyInput`<sup>Optional</sup> <a name="KeyInput" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.property.keyInput"></a>
+
+```csharp
+public string KeyInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `VersionInput`<sup>Optional</sup> <a name="VersionInput" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.property.versionInput"></a>
+
+```csharp
+public string VersionInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Key`<sup>Required</sup> <a name="Key" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.property.key"></a>
+
+```csharp
+public string Key { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Version`<sup>Required</sup> <a name="Version" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.property.version"></a>
+
+```csharp
+public string Version { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### ComputeClusterHostImageOutputReference <a name="ComputeClusterHostImageOutputReference" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Vsphere;
+
+new ComputeClusterHostImageOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.putComponent">PutComponent</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.resetComponent">ResetComponent</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.resetEsxVersion">ResetEsxVersion</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutComponent` <a name="PutComponent" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.putComponent"></a>
+
+```csharp
+private void PutComponent(object Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.putComponent.parameter.value"></a>
+
+- *Type:* object
+
+---
+
+##### `ResetComponent` <a name="ResetComponent" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.resetComponent"></a>
+
+```csharp
+private void ResetComponent()
+```
+
+##### `ResetEsxVersion` <a name="ResetEsxVersion" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.resetEsxVersion"></a>
+
+```csharp
+private void ResetEsxVersion()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.component">Component</a></code> | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList">ComputeClusterHostImageComponentList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.componentInput">ComponentInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.esxVersionInput">EsxVersionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.esxVersion">EsxVersion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage">ComputeClusterHostImage</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Component`<sup>Required</sup> <a name="Component" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.component"></a>
+
+```csharp
+public ComputeClusterHostImageComponentList Component { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList">ComputeClusterHostImageComponentList</a>
+
+---
+
+##### `ComponentInput`<sup>Optional</sup> <a name="ComponentInput" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.componentInput"></a>
+
+```csharp
+public object ComponentInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `EsxVersionInput`<sup>Optional</sup> <a name="EsxVersionInput" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.esxVersionInput"></a>
+
+```csharp
+public string EsxVersionInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `EsxVersion`<sup>Required</sup> <a name="EsxVersion" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.esxVersion"></a>
+
+```csharp
+public string EsxVersion { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.internalValue"></a>
+
+```csharp
+public ComputeClusterHostImage InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage">ComputeClusterHostImage</a>
+
+---
+
 
 ### ComputeClusterVsanDiskGroupList <a name="ComputeClusterVsanDiskGroupList" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupList"></a>
 

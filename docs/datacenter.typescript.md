@@ -4,7 +4,7 @@
 
 ### Datacenter <a name="Datacenter" id="@cdktf/provider-vsphere.datacenter.Datacenter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/datacenter vsphere_datacenter}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/datacenter vsphere_datacenter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.datacenter.Datacenter.Initializer"></a>
 
@@ -495,7 +495,7 @@ The construct id used in the generated config for the Datacenter to import.
 
 The id of the existing Datacenter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/datacenter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/datacenter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -832,10 +832,10 @@ const datacenterConfig: datacenter.DatacenterConfig = { ... }
 | <code><a href="#@cdktf/provider-vsphere.datacenter.DatacenterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.datacenter.DatacenterConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.datacenter.DatacenterConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.datacenter.DatacenterConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/datacenter#name Datacenter#name}. |
+| <code><a href="#@cdktf/provider-vsphere.datacenter.DatacenterConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/datacenter#name Datacenter#name}. |
 | <code><a href="#@cdktf/provider-vsphere.datacenter.DatacenterConfig.property.customAttributes">customAttributes</a></code> | <code>{[ key: string ]: string}</code> | A list of custom attributes to set on this resource. |
-| <code><a href="#@cdktf/provider-vsphere.datacenter.DatacenterConfig.property.folder">folder</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/datacenter#folder Datacenter#folder}. |
-| <code><a href="#@cdktf/provider-vsphere.datacenter.DatacenterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/datacenter#id Datacenter#id}. |
+| <code><a href="#@cdktf/provider-vsphere.datacenter.DatacenterConfig.property.folder">folder</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/datacenter#folder Datacenter#folder}. |
+| <code><a href="#@cdktf/provider-vsphere.datacenter.DatacenterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/datacenter#id Datacenter#id}. |
 | <code><a href="#@cdktf/provider-vsphere.datacenter.DatacenterConfig.property.tags">tags</a></code> | <code>string[]</code> | A list of tag IDs to apply to this object. |
 
 ---
@@ -918,7 +918,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/datacenter#name Datacenter#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/datacenter#name Datacenter#name}.
 
 ---
 
@@ -932,7 +932,7 @@ public readonly customAttributes: {[ key: string ]: string};
 
 A list of custom attributes to set on this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/datacenter#custom_attributes Datacenter#custom_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/datacenter#custom_attributes Datacenter#custom_attributes}
 
 ---
 
@@ -944,7 +944,7 @@ public readonly folder: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/datacenter#folder Datacenter#folder}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/datacenter#folder Datacenter#folder}.
 
 ---
 
@@ -956,7 +956,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/datacenter#id Datacenter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/datacenter#id Datacenter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -973,7 +973,7 @@ public readonly tags: string[];
 
 A list of tag IDs to apply to this object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.7.0/docs/resources/datacenter#tags Datacenter#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/datacenter#tags Datacenter#tags}
 
 ---
 

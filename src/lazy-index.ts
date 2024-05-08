@@ -31,15 +31,18 @@ Object.defineProperty(exports, 'hostPortGroup', { get: function () { return requ
 Object.defineProperty(exports, 'hostVirtualSwitch', { get: function () { return require('./host-virtual-switch'); } });
 Object.defineProperty(exports, 'licenseResource', { get: function () { return require('./license-resource'); } });
 Object.defineProperty(exports, 'nasDatastore', { get: function () { return require('./nas-datastore'); } });
+Object.defineProperty(exports, 'offlineSoftwareDepot', { get: function () { return require('./offline-software-depot'); } });
 Object.defineProperty(exports, 'resourcePool', { get: function () { return require('./resource-pool'); } });
 Object.defineProperty(exports, 'role', { get: function () { return require('./role'); } });
 Object.defineProperty(exports, 'storageDrsVmOverride', { get: function () { return require('./storage-drs-vm-override'); } });
+Object.defineProperty(exports, 'supervisor', { get: function () { return require('./supervisor'); } });
 Object.defineProperty(exports, 'tag', { get: function () { return require('./tag'); } });
 Object.defineProperty(exports, 'tagCategory', { get: function () { return require('./tag-category'); } });
 Object.defineProperty(exports, 'vappContainer', { get: function () { return require('./vapp-container'); } });
 Object.defineProperty(exports, 'vappEntity', { get: function () { return require('./vapp-entity'); } });
 Object.defineProperty(exports, 'virtualDisk', { get: function () { return require('./virtual-disk'); } });
 Object.defineProperty(exports, 'virtualMachine', { get: function () { return require('./virtual-machine'); } });
+Object.defineProperty(exports, 'virtualMachineClass', { get: function () { return require('./virtual-machine-class'); } });
 Object.defineProperty(exports, 'virtualMachineSnapshot', { get: function () { return require('./virtual-machine-snapshot'); } });
 Object.defineProperty(exports, 'vmStoragePolicy', { get: function () { return require('./vm-storage-policy'); } });
 Object.defineProperty(exports, 'vmfsDatastore', { get: function () { return require('./vmfs-datastore'); } });
@@ -58,6 +61,7 @@ Object.defineProperty(exports, 'dataVsphereDynamic', { get: function () { return
 Object.defineProperty(exports, 'dataVsphereFolder', { get: function () { return require('./data-vsphere-folder'); } });
 Object.defineProperty(exports, 'dataVsphereGuestOsCustomization', { get: function () { return require('./data-vsphere-guest-os-customization'); } });
 Object.defineProperty(exports, 'dataVsphereHost', { get: function () { return require('./data-vsphere-host'); } });
+Object.defineProperty(exports, 'dataVsphereHostBaseImages', { get: function () { return require('./data-vsphere-host-base-images'); } });
 Object.defineProperty(exports, 'dataVsphereHostPciDevice', { get: function () { return require('./data-vsphere-host-pci-device'); } });
 Object.defineProperty(exports, 'dataVsphereHostThumbprint', { get: function () { return require('./data-vsphere-host-thumbprint'); } });
 Object.defineProperty(exports, 'dataVsphereHostVgpuProfile', { get: function () { return require('./data-vsphere-host-vgpu-profile'); } });
