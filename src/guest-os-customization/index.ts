@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface GuestOsCustomizationConfig extends cdktf.TerraformMetaArguments
   /**
   * The description for the customization specification.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#description GuestOsCustomization#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#description GuestOsCustomization#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#id GuestOsCustomization#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#id GuestOsCustomization#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +28,19 @@ export interface GuestOsCustomizationConfig extends cdktf.TerraformMetaArguments
   /**
   * The name of the customization specification is the unique identifier per vCenter Server instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#name GuestOsCustomization#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#name GuestOsCustomization#name}
   */
   readonly name: string;
   /**
   * The type of customization specification: One among: Windows, Linux.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#type GuestOsCustomization#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#type GuestOsCustomization#type}
   */
   readonly type: string;
   /**
   * spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#spec GuestOsCustomization#spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#spec GuestOsCustomization#spec}
   */
   readonly spec: GuestOsCustomizationSpec;
 }
@@ -48,31 +48,31 @@ export interface GuestOsCustomizationSpecLinuxOptions {
   /**
   * The domain name for this virtual machine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#domain GuestOsCustomization#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#domain GuestOsCustomization#domain}
   */
   readonly domain: string;
   /**
   * The hostname for this virtual machine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#host_name GuestOsCustomization#host_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#host_name GuestOsCustomization#host_name}
   */
   readonly hostName: string;
   /**
   * Specifies whether or not the hardware clock should be in UTC or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#hw_clock_utc GuestOsCustomization#hw_clock_utc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#hw_clock_utc GuestOsCustomization#hw_clock_utc}
   */
   readonly hwClockUtc?: boolean | cdktf.IResolvable;
   /**
   * The customization script to run before and or after guest customization
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#script_text GuestOsCustomization#script_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#script_text GuestOsCustomization#script_text}
   */
   readonly scriptText?: string;
   /**
   * Customize the time zone on the VM. This should be a time zone-style entry, like America/Los_Angeles.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#time_zone GuestOsCustomization#time_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#time_zone GuestOsCustomization#time_zone}
   */
   readonly timeZone?: string;
 }
@@ -268,37 +268,37 @@ export interface GuestOsCustomizationSpecNetworkInterface {
   /**
   * A DNS search domain to add to the DNS configuration on the virtual machine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#dns_domain GuestOsCustomization#dns_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#dns_domain GuestOsCustomization#dns_domain}
   */
   readonly dnsDomain?: string;
   /**
   * Network-interface specific DNS settings for Windows operating systems. Ignored on Linux.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#dns_server_list GuestOsCustomization#dns_server_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#dns_server_list GuestOsCustomization#dns_server_list}
   */
   readonly dnsServerList?: string[];
   /**
   * The IPv4 address assigned to this network adapter. If left blank, DHCP is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#ipv4_address GuestOsCustomization#ipv4_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#ipv4_address GuestOsCustomization#ipv4_address}
   */
   readonly ipv4Address?: string;
   /**
   * The IPv4 CIDR netmask for the supplied IP address. Ignored if DHCP is selected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#ipv4_netmask GuestOsCustomization#ipv4_netmask}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#ipv4_netmask GuestOsCustomization#ipv4_netmask}
   */
   readonly ipv4Netmask?: number;
   /**
   * The IPv6 address assigned to this network adapter. If left blank, default auto-configuration is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#ipv6_address GuestOsCustomization#ipv6_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#ipv6_address GuestOsCustomization#ipv6_address}
   */
   readonly ipv6Address?: string;
   /**
   * The IPv6 CIDR netmask for the supplied IP address. Ignored if auto-configuration is selected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#ipv6_netmask GuestOsCustomization#ipv6_netmask}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#ipv6_netmask GuestOsCustomization#ipv6_netmask}
   */
   readonly ipv6Netmask?: number;
 }
@@ -561,85 +561,85 @@ export interface GuestOsCustomizationSpecWindowsOptions {
   /**
   * The new administrator password for this virtual machine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#admin_password GuestOsCustomization#admin_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#admin_password GuestOsCustomization#admin_password}
   */
   readonly adminPassword?: string;
   /**
   * Specifies whether or not the VM automatically logs on as Administrator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#auto_logon GuestOsCustomization#auto_logon}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#auto_logon GuestOsCustomization#auto_logon}
   */
   readonly autoLogon?: boolean | cdktf.IResolvable;
   /**
   * Specifies how many times the VM should auto-logon the Administrator account when auto_logon is true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#auto_logon_count GuestOsCustomization#auto_logon_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#auto_logon_count GuestOsCustomization#auto_logon_count}
   */
   readonly autoLogonCount?: number;
   /**
   * The host name for this virtual machine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#computer_name GuestOsCustomization#computer_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#computer_name GuestOsCustomization#computer_name}
   */
   readonly computerName: string;
   /**
   * The password of the domain administrator used to join this virtual machine to the domain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#domain_admin_password GuestOsCustomization#domain_admin_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#domain_admin_password GuestOsCustomization#domain_admin_password}
   */
   readonly domainAdminPassword?: string;
   /**
   * The user account of the domain administrator used to join this virtual machine to the domain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#domain_admin_user GuestOsCustomization#domain_admin_user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#domain_admin_user GuestOsCustomization#domain_admin_user}
   */
   readonly domainAdminUser?: string;
   /**
   * The MachineObjectOU which specifies the full LDAP path name of the OU to which the virtual machine belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#domain_ou GuestOsCustomization#domain_ou}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#domain_ou GuestOsCustomization#domain_ou}
   */
   readonly domainOu?: string;
   /**
   * The full name of the user of this virtual machine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#full_name GuestOsCustomization#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#full_name GuestOsCustomization#full_name}
   */
   readonly fullName?: string;
   /**
   * The domain that the virtual machine should join.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#join_domain GuestOsCustomization#join_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#join_domain GuestOsCustomization#join_domain}
   */
   readonly joinDomain?: string;
   /**
   * The organization name this virtual machine is being installed for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#organization_name GuestOsCustomization#organization_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#organization_name GuestOsCustomization#organization_name}
   */
   readonly organizationName?: string;
   /**
   * The product key for this virtual machine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#product_key GuestOsCustomization#product_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#product_key GuestOsCustomization#product_key}
   */
   readonly productKey?: string;
   /**
   * A list of commands to run at first user logon, after guest customization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#run_once_command_list GuestOsCustomization#run_once_command_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#run_once_command_list GuestOsCustomization#run_once_command_list}
   */
   readonly runOnceCommandList?: string[];
   /**
   * The new time zone for the virtual machine. This is a sysprep-dictated timezone code.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#time_zone GuestOsCustomization#time_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#time_zone GuestOsCustomization#time_zone}
   */
   readonly timeZone?: number;
   /**
   * The workgroup for this virtual machine if not joining a domain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#workgroup GuestOsCustomization#workgroup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#workgroup GuestOsCustomization#workgroup}
   */
   readonly workgroup?: string;
 }
@@ -1099,49 +1099,49 @@ export interface GuestOsCustomizationSpec {
   /**
   * The list of DNS servers for a virtual network adapter with a static IP address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#dns_server_list GuestOsCustomization#dns_server_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#dns_server_list GuestOsCustomization#dns_server_list}
   */
   readonly dnsServerList?: string[];
   /**
   * A list of DNS search domains to add to the DNS configuration on the virtual machine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#dns_suffix_list GuestOsCustomization#dns_suffix_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#dns_suffix_list GuestOsCustomization#dns_suffix_list}
   */
   readonly dnsSuffixList?: string[];
   /**
   * The IPv4 default gateway when using network_interface customization on the virtual machine. This address must be local to a static IPv4 address configured in an interface sub-resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#ipv4_gateway GuestOsCustomization#ipv4_gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#ipv4_gateway GuestOsCustomization#ipv4_gateway}
   */
   readonly ipv4Gateway?: string;
   /**
   * The IPv6 default gateway when using network_interface customization on the virtual machine. This address must be local to a static IPv4 address configured in an interface sub-resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#ipv6_gateway GuestOsCustomization#ipv6_gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#ipv6_gateway GuestOsCustomization#ipv6_gateway}
   */
   readonly ipv6Gateway?: string;
   /**
   * Use this option to specify a windows sysprep file directly.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#windows_sysprep_text GuestOsCustomization#windows_sysprep_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#windows_sysprep_text GuestOsCustomization#windows_sysprep_text}
   */
   readonly windowsSysprepText?: string;
   /**
   * linux_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#linux_options GuestOsCustomization#linux_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#linux_options GuestOsCustomization#linux_options}
   */
   readonly linuxOptions?: GuestOsCustomizationSpecLinuxOptions;
   /**
   * network_interface block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#network_interface GuestOsCustomization#network_interface}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#network_interface GuestOsCustomization#network_interface}
   */
   readonly networkInterface?: GuestOsCustomizationSpecNetworkInterface[] | cdktf.IResolvable;
   /**
   * windows_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#windows_options GuestOsCustomization#windows_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#windows_options GuestOsCustomization#windows_options}
   */
   readonly windowsOptions?: GuestOsCustomizationSpecWindowsOptions;
 }
@@ -1428,7 +1428,7 @@ export class GuestOsCustomizationSpecOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization vsphere_guest_os_customization}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization vsphere_guest_os_customization}
 */
 export class GuestOsCustomization extends cdktf.TerraformResource {
 
@@ -1444,7 +1444,7 @@ export class GuestOsCustomization extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a GuestOsCustomization resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GuestOsCustomization to import
-  * @param importFromId The id of the existing GuestOsCustomization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GuestOsCustomization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GuestOsCustomization to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1456,7 +1456,7 @@ export class GuestOsCustomization extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/guest_os_customization vsphere_guest_os_customization} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/guest_os_customization vsphere_guest_os_customization} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1467,7 +1467,7 @@ export class GuestOsCustomization extends cdktf.TerraformResource {
       terraformResourceType: 'vsphere_guest_os_customization',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.8.0',
+        providerVersion: '2.8.1',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,
