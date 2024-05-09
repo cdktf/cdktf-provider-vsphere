@@ -4,12 +4,12 @@
 
 ### DataVsphereDatacenter <a name="DataVsphereDatacenter" id="@cdktf/provider-vsphere.dataVsphereDatacenter.DataVsphereDatacenter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/datacenter vsphere_datacenter}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/datacenter vsphere_datacenter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereDatacenter.DataVsphereDatacenter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspheredatacenter"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredatacenter"
 
 datavspheredatacenter.NewDataVsphereDatacenter(scope Construct, id *string, config DataVsphereDatacenterConfig) DataVsphereDatacenter
 ```
@@ -290,7 +290,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereDatacenter.DataVsphereDatacenter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspheredatacenter"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredatacenter"
 
 datavspheredatacenter.DataVsphereDatacenter_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereDatacenter.DataVsphereDatacenter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspheredatacenter"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredatacenter"
 
 datavspheredatacenter.DataVsphereDatacenter_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datavspheredatacenter.DataVsphereDatacenter_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereDatacenter.DataVsphereDatacenter.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspheredatacenter"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredatacenter"
 
 datavspheredatacenter.DataVsphereDatacenter_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datavspheredatacenter.DataVsphereDatacenter_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.dataVsphereDatacenter.DataVsphereDatacenter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspheredatacenter"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredatacenter"
 
 datavspheredatacenter.DataVsphereDatacenter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataVsphereDatacenter to i
 
 The id of the existing DataVsphereDatacenter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/datacenter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/datacenter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -601,7 +601,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereDatacenter.DataVsphereDatacenterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspheredatacenter"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredatacenter"
 
 &datavspheredatacenter.DataVsphereDatacenterConfig {
 	Connection: interface{},
@@ -627,7 +627,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspheredatacen
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatacenter.DataVsphereDatacenterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatacenter.DataVsphereDatacenterConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatacenter.DataVsphereDatacenterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereDatacenter.DataVsphereDatacenterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/datacenter#id DataVsphereDatacenter#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereDatacenter.DataVsphereDatacenterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/datacenter#id DataVsphereDatacenter#id}. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatacenter.DataVsphereDatacenterConfig.property.name">Name</a></code> | <code>*string</code> | The name of the datacenter. |
 
 ---
@@ -710,7 +710,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/datacenter#id DataVsphereDatacenter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/datacenter#id DataVsphereDatacenter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -729,7 +729,7 @@ The name of the datacenter.
 
 This can be a name or path. Can be omitted if there is only one datacenter in your inventory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/datacenter#name DataVsphereDatacenter#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/datacenter#name DataVsphereDatacenter#name}
 
 ---
 

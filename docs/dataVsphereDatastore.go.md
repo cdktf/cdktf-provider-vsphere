@@ -4,12 +4,12 @@
 
 ### DataVsphereDatastore <a name="DataVsphereDatastore" id="@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/datastore vsphere_datastore}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/datastore vsphere_datastore}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspheredatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredatastore"
 
 datavspheredatastore.NewDataVsphereDatastore(scope Construct, id *string, config DataVsphereDatastoreConfig) DataVsphereDatastore
 ```
@@ -297,7 +297,7 @@ func ResetStats()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspheredatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredatastore"
 
 datavspheredatastore.DataVsphereDatastore_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspheredatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredatastore"
 
 datavspheredatastore.DataVsphereDatastore_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datavspheredatastore.DataVsphereDatastore_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspheredatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredatastore"
 
 datavspheredatastore.DataVsphereDatastore_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datavspheredatastore.DataVsphereDatastore_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspheredatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredatastore"
 
 datavspheredatastore.DataVsphereDatastore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataVsphereDatastore to im
 
 The id of the existing DataVsphereDatastore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/datastore#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/datastore#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -652,7 +652,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspheredatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredatastore"
 
 &datavspheredatastore.DataVsphereDatastoreConfig {
 	Connection: interface{},
@@ -682,7 +682,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspheredatasto
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastoreConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastoreConfig.property.name">Name</a></code> | <code>*string</code> | The name or path of the datastore. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastoreConfig.property.datacenterId">DatacenterId</a></code> | <code>*string</code> | The managed object ID of the datacenter the datastore is in. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastoreConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/datastore#id DataVsphereDatastore#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastoreConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/datastore#id DataVsphereDatastore#id}. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastore.DataVsphereDatastoreConfig.property.stats">Stats</a></code> | <code>*map[string]*string</code> | The usage stats of the datastore, include total capacity and free space in bytes. |
 
 ---
@@ -767,7 +767,7 @@ Name *string
 
 The name or path of the datastore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/datastore#name DataVsphereDatastore#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/datastore#name DataVsphereDatastore#name}
 
 ---
 
@@ -783,7 +783,7 @@ The managed object ID of the datacenter the datastore is in.
 
 This is not required when using ESXi directly, or if there is only one datacenter in your infrastructure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/datastore#datacenter_id DataVsphereDatastore#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/datastore#datacenter_id DataVsphereDatastore#datacenter_id}
 
 ---
 
@@ -795,7 +795,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/datastore#id DataVsphereDatastore#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/datastore#id DataVsphereDatastore#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -812,7 +812,7 @@ Stats *map[string]*string
 
 The usage stats of the datastore, include total capacity and free space in bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/data-sources/datastore#stats DataVsphereDatastore#stats}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/datastore#stats DataVsphereDatastore#stats}
 
 ---
 

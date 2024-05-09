@@ -4,12 +4,12 @@
 
 ### VmfsDatastore <a name="VmfsDatastore" id="@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/vmfs_datastore vsphere_vmfs_datastore}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/vmfs_datastore vsphere_vmfs_datastore}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/vmfsdatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vmfsdatastore"
 
 vmfsdatastore.NewVmfsDatastore(scope Construct, id *string, config VmfsDatastoreConfig) VmfsDatastore
 ```
@@ -413,7 +413,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/vmfsdatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vmfsdatastore"
 
 vmfsdatastore.VmfsDatastore_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/vmfsdatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vmfsdatastore"
 
 vmfsdatastore.VmfsDatastore_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ vmfsdatastore.VmfsDatastore_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/vmfsdatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vmfsdatastore"
 
 vmfsdatastore.VmfsDatastore_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ vmfsdatastore.VmfsDatastore_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/vmfsdatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vmfsdatastore"
 
 vmfsdatastore.VmfsDatastore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -502,7 +502,7 @@ The construct id used in the generated config for the VmfsDatastore to import.
 
 The id of the existing VmfsDatastore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/vmfs_datastore#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/vmfs_datastore#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -955,7 +955,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/vmfsdatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/vmfsdatastore"
 
 &vmfsdatastore.VmfsDatastoreConfig {
 	Connection: interface{},
@@ -993,7 +993,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/vmfsdatastore"
 | <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastoreConfig.property.customAttributes">CustomAttributes</a></code> | <code>*map[string]*string</code> | A list of custom attributes to set on this resource. |
 | <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastoreConfig.property.datastoreClusterId">DatastoreClusterId</a></code> | <code>*string</code> | The managed object ID of the datastore cluster to place the datastore in. |
 | <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastoreConfig.property.folder">Folder</a></code> | <code>*string</code> | The path to the datastore folder to put the datastore in. |
-| <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastoreConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/vmfs_datastore#id VmfsDatastore#id}. |
+| <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastoreConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/vmfs_datastore#id VmfsDatastore#id}. |
 | <code><a href="#@cdktf/provider-vsphere.vmfsDatastore.VmfsDatastoreConfig.property.tags">Tags</a></code> | <code>*[]*string</code> | A list of tag IDs to apply to this object. |
 
 ---
@@ -1078,7 +1078,7 @@ Disks *[]*string
 
 The disks to add to the datastore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/vmfs_datastore#disks VmfsDatastore#disks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/vmfs_datastore#disks VmfsDatastore#disks}
 
 ---
 
@@ -1092,7 +1092,7 @@ HostSystemId *string
 
 The managed object ID of the host to set up the datastore on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/vmfs_datastore#host_system_id VmfsDatastore#host_system_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/vmfs_datastore#host_system_id VmfsDatastore#host_system_id}
 
 ---
 
@@ -1106,7 +1106,7 @@ Name *string
 
 The name of the datastore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/vmfs_datastore#name VmfsDatastore#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/vmfs_datastore#name VmfsDatastore#name}
 
 ---
 
@@ -1120,7 +1120,7 @@ CustomAttributes *map[string]*string
 
 A list of custom attributes to set on this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/vmfs_datastore#custom_attributes VmfsDatastore#custom_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/vmfs_datastore#custom_attributes VmfsDatastore#custom_attributes}
 
 ---
 
@@ -1134,7 +1134,7 @@ DatastoreClusterId *string
 
 The managed object ID of the datastore cluster to place the datastore in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/vmfs_datastore#datastore_cluster_id VmfsDatastore#datastore_cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/vmfs_datastore#datastore_cluster_id VmfsDatastore#datastore_cluster_id}
 
 ---
 
@@ -1148,7 +1148,7 @@ Folder *string
 
 The path to the datastore folder to put the datastore in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/vmfs_datastore#folder VmfsDatastore#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/vmfs_datastore#folder VmfsDatastore#folder}
 
 ---
 
@@ -1160,7 +1160,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/vmfs_datastore#id VmfsDatastore#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/vmfs_datastore#id VmfsDatastore#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1177,7 +1177,7 @@ Tags *[]*string
 
 A list of tag IDs to apply to this object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/vmfs_datastore#tags VmfsDatastore#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/vmfs_datastore#tags VmfsDatastore#tags}
 
 ---
 

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/content_library
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/content_library
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface ContentLibraryConfig extends cdktf.TerraformMetaArguments {
   /**
   * Optional description of the content library.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/content_library#description ContentLibrary#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/content_library#description ContentLibrary#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/content_library#id ContentLibrary#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/content_library#id ContentLibrary#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,43 +23,43 @@ export interface ContentLibraryConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the content library.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/content_library#name ContentLibrary#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/content_library#name ContentLibrary#name}
   */
   readonly name: string;
   /**
   * The name of the content library.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/content_library#storage_backing ContentLibrary#storage_backing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/content_library#storage_backing ContentLibrary#storage_backing}
   */
   readonly storageBacking: string[];
   /**
   * publication block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/content_library#publication ContentLibrary#publication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/content_library#publication ContentLibrary#publication}
   */
   readonly publication?: ContentLibraryPublication;
   /**
   * subscription block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/content_library#subscription ContentLibrary#subscription}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/content_library#subscription ContentLibrary#subscription}
   */
   readonly subscription?: ContentLibrarySubscription;
 }
 export interface ContentLibraryPublication {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/content_library#authentication_method ContentLibrary#authentication_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/content_library#authentication_method ContentLibrary#authentication_method}
   */
   readonly authenticationMethod?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/content_library#password ContentLibrary#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/content_library#password ContentLibrary#password}
   */
   readonly password?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/content_library#published ContentLibrary#published}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/content_library#published ContentLibrary#published}
   */
   readonly published?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/content_library#username ContentLibrary#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/content_library#username ContentLibrary#username}
   */
   readonly username?: string;
 }
@@ -240,27 +235,27 @@ export class ContentLibraryPublicationOutputReference extends cdktf.ComplexObjec
 }
 export interface ContentLibrarySubscription {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/content_library#authentication_method ContentLibrary#authentication_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/content_library#authentication_method ContentLibrary#authentication_method}
   */
   readonly authenticationMethod?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/content_library#automatic_sync ContentLibrary#automatic_sync}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/content_library#automatic_sync ContentLibrary#automatic_sync}
   */
   readonly automaticSync?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/content_library#on_demand ContentLibrary#on_demand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/content_library#on_demand ContentLibrary#on_demand}
   */
   readonly onDemand?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/content_library#password ContentLibrary#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/content_library#password ContentLibrary#password}
   */
   readonly password?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/content_library#subscription_url ContentLibrary#subscription_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/content_library#subscription_url ContentLibrary#subscription_url}
   */
   readonly subscriptionUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/content_library#username ContentLibrary#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/content_library#username ContentLibrary#username}
   */
   readonly username?: string;
 }
@@ -489,7 +484,7 @@ export class ContentLibrarySubscriptionOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/content_library vsphere_content_library}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/content_library vsphere_content_library}
 */
 export class ContentLibrary extends cdktf.TerraformResource {
 
@@ -505,7 +500,7 @@ export class ContentLibrary extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ContentLibrary resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ContentLibrary to import
-  * @param importFromId The id of the existing ContentLibrary that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/content_library#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ContentLibrary that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/content_library#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ContentLibrary to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -517,7 +512,7 @@ export class ContentLibrary extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.0/docs/resources/content_library vsphere_content_library} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/content_library vsphere_content_library} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -528,7 +523,7 @@ export class ContentLibrary extends cdktf.TerraformResource {
       terraformResourceType: 'vsphere_content_library',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.8.0',
+        providerVersion: '2.8.1',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,
