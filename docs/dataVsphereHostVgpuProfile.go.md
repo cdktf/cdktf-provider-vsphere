@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereHostVgpuProfile.DataVsphereHostVgpuProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherehostvgpuprofile"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostvgpuprofile"
 
 datavspherehostvgpuprofile.NewDataVsphereHostVgpuProfile(scope Construct, id *string, config DataVsphereHostVgpuProfileConfig) DataVsphereHostVgpuProfile
 ```
@@ -290,7 +290,7 @@ func ResetNameRegex()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereHostVgpuProfile.DataVsphereHostVgpuProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherehostvgpuprofile"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostvgpuprofile"
 
 datavspherehostvgpuprofile.DataVsphereHostVgpuProfile_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereHostVgpuProfile.DataVsphereHostVgpuProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherehostvgpuprofile"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostvgpuprofile"
 
 datavspherehostvgpuprofile.DataVsphereHostVgpuProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datavspherehostvgpuprofile.DataVsphereHostVgpuProfile_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereHostVgpuProfile.DataVsphereHostVgpuProfile.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherehostvgpuprofile"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostvgpuprofile"
 
 datavspherehostvgpuprofile.DataVsphereHostVgpuProfile_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datavspherehostvgpuprofile.DataVsphereHostVgpuProfile_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.dataVsphereHostVgpuProfile.DataVsphereHostVgpuProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherehostvgpuprofile"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostvgpuprofile"
 
 datavspherehostvgpuprofile.DataVsphereHostVgpuProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereHostVgpuProfile.DataVsphereHostVgpuProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherehostvgpuprofile"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostvgpuprofile"
 
 &datavspherehostvgpuprofile.DataVsphereHostVgpuProfileConfig {
 	Connection: interface{},
@@ -785,7 +785,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereHostVgpuProfile.DataVsphereHostVgpuProfileVgpuProfiles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherehostvgpuprofile"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostvgpuprofile"
 
 &datavspherehostvgpuprofile.DataVsphereHostVgpuProfileVgpuProfiles {
 
@@ -800,7 +800,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherehostvgp
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereHostVgpuProfile.DataVsphereHostVgpuProfileVgpuProfilesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherehostvgpuprofile"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostvgpuprofile"
 
 datavspherehostvgpuprofile.NewDataVsphereHostVgpuProfileVgpuProfilesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataVsphereHostVgpuProfileVgpuProfilesList
 ```
@@ -949,7 +949,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereHostVgpuProfile.DataVsphereHostVgpuProfileVgpuProfilesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherehostvgpuprofile"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostvgpuprofile"
 
 datavspherehostvgpuprofile.NewDataVsphereHostVgpuProfileVgpuProfilesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataVsphereHostVgpuProfileVgpuProfilesOutputReference
 ```
