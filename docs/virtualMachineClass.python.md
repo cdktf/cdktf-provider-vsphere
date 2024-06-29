@@ -4,7 +4,7 @@
 
 ### VirtualMachineClass <a name="VirtualMachineClass" id="@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClass"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/virtual_machine_class vsphere_virtual_machine_class}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_class vsphere_virtual_machine_class}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClass.Initializer"></a>
 
@@ -46,7 +46,7 @@ virtualMachineClass.VirtualMachineClass(
 | <code><a href="#@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClass.Initializer.parameter.memory">memory</a></code> | <code>typing.Union[int, float]</code> | The amount of memory (in MB). |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClass.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the virtual machine class. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClass.Initializer.parameter.cpuReservation">cpu_reservation</a></code> | <code>typing.Union[int, float]</code> | The percentage of the available CPU capacity which will be reserved. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClass.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/virtual_machine_class#id VirtualMachineClass#id}. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClass.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_class#id VirtualMachineClass#id}. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClass.Initializer.parameter.memoryReservation">memory_reservation</a></code> | <code>typing.Union[int, float]</code> | The percentage of the available memory capacity which will be reserved. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClass.Initializer.parameter.vgpuDevices">vgpu_devices</a></code> | <code>typing.List[str]</code> | A comma-separated list of GPU devices. |
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The number of CPUs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/virtual_machine_class#cpus VirtualMachineClass#cpus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_class#cpus VirtualMachineClass#cpus}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The amount of memory (in MB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/virtual_machine_class#memory VirtualMachineClass#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_class#memory VirtualMachineClass#memory}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the virtual machine class.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/virtual_machine_class#name VirtualMachineClass#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_class#name VirtualMachineClass#name}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The percentage of the available CPU capacity which will be reserved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/virtual_machine_class#cpu_reservation VirtualMachineClass#cpu_reservation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_class#cpu_reservation VirtualMachineClass#cpu_reservation}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/virtual_machine_class#id VirtualMachineClass#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_class#id VirtualMachineClass#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -169,7 +169,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The percentage of the available memory capacity which will be reserved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/virtual_machine_class#memory_reservation VirtualMachineClass#memory_reservation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_class#memory_reservation VirtualMachineClass#memory_reservation}
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A comma-separated list of GPU devices.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/virtual_machine_class#vgpu_devices VirtualMachineClass#vgpu_devices}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_class#vgpu_devices VirtualMachineClass#vgpu_devices}
 
 ---
 
@@ -680,7 +680,7 @@ The construct id used in the generated config for the VirtualMachineClass to imp
 
 The id of the existing VirtualMachineClass that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/virtual_machine_class#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_class#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1069,7 +1069,7 @@ virtualMachineClass.VirtualMachineClassConfig(
 | <code><a href="#@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClassConfig.property.memory">memory</a></code> | <code>typing.Union[int, float]</code> | The amount of memory (in MB). |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClassConfig.property.name">name</a></code> | <code>str</code> | The name of the virtual machine class. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClassConfig.property.cpuReservation">cpu_reservation</a></code> | <code>typing.Union[int, float]</code> | The percentage of the available CPU capacity which will be reserved. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClassConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/virtual_machine_class#id VirtualMachineClass#id}. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClassConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_class#id VirtualMachineClass#id}. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClassConfig.property.memoryReservation">memory_reservation</a></code> | <code>typing.Union[int, float]</code> | The percentage of the available memory capacity which will be reserved. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClassConfig.property.vgpuDevices">vgpu_devices</a></code> | <code>typing.List[str]</code> | A comma-separated list of GPU devices. |
 
@@ -1155,7 +1155,7 @@ cpus: typing.Union[int, float]
 
 The number of CPUs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/virtual_machine_class#cpus VirtualMachineClass#cpus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_class#cpus VirtualMachineClass#cpus}
 
 ---
 
@@ -1169,7 +1169,7 @@ memory: typing.Union[int, float]
 
 The amount of memory (in MB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/virtual_machine_class#memory VirtualMachineClass#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_class#memory VirtualMachineClass#memory}
 
 ---
 
@@ -1183,7 +1183,7 @@ name: str
 
 The name of the virtual machine class.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/virtual_machine_class#name VirtualMachineClass#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_class#name VirtualMachineClass#name}
 
 ---
 
@@ -1197,7 +1197,7 @@ cpu_reservation: typing.Union[int, float]
 
 The percentage of the available CPU capacity which will be reserved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/virtual_machine_class#cpu_reservation VirtualMachineClass#cpu_reservation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_class#cpu_reservation VirtualMachineClass#cpu_reservation}
 
 ---
 
@@ -1209,7 +1209,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/virtual_machine_class#id VirtualMachineClass#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_class#id VirtualMachineClass#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1226,7 +1226,7 @@ memory_reservation: typing.Union[int, float]
 
 The percentage of the available memory capacity which will be reserved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/virtual_machine_class#memory_reservation VirtualMachineClass#memory_reservation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_class#memory_reservation VirtualMachineClass#memory_reservation}
 
 ---
 
@@ -1240,7 +1240,7 @@ vgpu_devices: typing.List[str]
 
 A comma-separated list of GPU devices.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/virtual_machine_class#vgpu_devices VirtualMachineClass#vgpu_devices}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_class#vgpu_devices VirtualMachineClass#vgpu_devices}
 
 ---
 

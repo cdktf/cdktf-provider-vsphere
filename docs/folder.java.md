@@ -4,7 +4,7 @@
 
 ### Folder <a name="Folder" id="@cdktf/provider-vsphere.folder.Folder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/folder vsphere_folder}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/folder vsphere_folder}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.folder.Folder.Initializer"></a>
 
@@ -47,7 +47,7 @@ Folder.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vsphere.folder.Folder.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | The type of the folder. |
 | <code><a href="#@cdktf/provider-vsphere.folder.Folder.Initializer.parameter.customAttributes">customAttributes</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A list of custom attributes to set on this resource. |
 | <code><a href="#@cdktf/provider-vsphere.folder.Folder.Initializer.parameter.datacenterId">datacenterId</a></code> | <code>java.lang.String</code> | The ID of the datacenter. Can be ignored if creating a datacenter folder, otherwise required. |
-| <code><a href="#@cdktf/provider-vsphere.folder.Folder.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/folder#id Folder#id}. |
+| <code><a href="#@cdktf/provider-vsphere.folder.Folder.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/folder#id Folder#id}. |
 | <code><a href="#@cdktf/provider-vsphere.folder.Folder.Initializer.parameter.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | A list of tag IDs to apply to this object. |
 
 ---
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The path of the folder and any parents, relative to the datacenter and folder type being defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/folder#path Folder#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/folder#path Folder#path}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The type of the folder.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/folder#type Folder#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/folder#type Folder#type}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of custom attributes to set on this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/folder#custom_attributes Folder#custom_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/folder#custom_attributes Folder#custom_attributes}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ID of the datacenter. Can be ignored if creating a datacenter folder, otherwise required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/folder#datacenter_id Folder#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/folder#datacenter_id Folder#datacenter_id}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/folder#id Folder#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/folder#id Folder#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -169,7 +169,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 A list of tag IDs to apply to this object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/folder#tags Folder#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/folder#tags Folder#tags}
 
 ---
 
@@ -624,7 +624,7 @@ The construct id used in the generated config for the Folder to import.
 
 The id of the existing Folder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/folder#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/folder#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -994,7 +994,7 @@ FolderConfig.builder()
 | <code><a href="#@cdktf/provider-vsphere.folder.FolderConfig.property.type">type</a></code> | <code>java.lang.String</code> | The type of the folder. |
 | <code><a href="#@cdktf/provider-vsphere.folder.FolderConfig.property.customAttributes">customAttributes</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A list of custom attributes to set on this resource. |
 | <code><a href="#@cdktf/provider-vsphere.folder.FolderConfig.property.datacenterId">datacenterId</a></code> | <code>java.lang.String</code> | The ID of the datacenter. Can be ignored if creating a datacenter folder, otherwise required. |
-| <code><a href="#@cdktf/provider-vsphere.folder.FolderConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/folder#id Folder#id}. |
+| <code><a href="#@cdktf/provider-vsphere.folder.FolderConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/folder#id Folder#id}. |
 | <code><a href="#@cdktf/provider-vsphere.folder.FolderConfig.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | A list of tag IDs to apply to this object. |
 
 ---
@@ -1079,7 +1079,7 @@ public java.lang.String getPath();
 
 The path of the folder and any parents, relative to the datacenter and folder type being defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/folder#path Folder#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/folder#path Folder#path}
 
 ---
 
@@ -1093,7 +1093,7 @@ public java.lang.String getType();
 
 The type of the folder.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/folder#type Folder#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/folder#type Folder#type}
 
 ---
 
@@ -1107,7 +1107,7 @@ public java.util.Map<java.lang.String, java.lang.String> getCustomAttributes();
 
 A list of custom attributes to set on this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/folder#custom_attributes Folder#custom_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/folder#custom_attributes Folder#custom_attributes}
 
 ---
 
@@ -1121,7 +1121,7 @@ public java.lang.String getDatacenterId();
 
 The ID of the datacenter. Can be ignored if creating a datacenter folder, otherwise required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/folder#datacenter_id Folder#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/folder#datacenter_id Folder#datacenter_id}
 
 ---
 
@@ -1133,7 +1133,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/folder#id Folder#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/folder#id Folder#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1150,7 +1150,7 @@ public java.util.List<java.lang.String> getTags();
 
 A list of tag IDs to apply to this object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/folder#tags Folder#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/folder#tags Folder#tags}
 
 ---
 

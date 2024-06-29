@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/storage_policy
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/storage_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataVsphereStoragePolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/storage_policy#id DataVsphereStoragePolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/storage_policy#id DataVsphereStoragePolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +17,13 @@ export interface DataVsphereStoragePolicyConfig extends cdktf.TerraformMetaArgum
   /**
   * The display name of the storage policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/storage_policy#name DataVsphereStoragePolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/storage_policy#name DataVsphereStoragePolicy#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/storage_policy vsphere_storage_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/storage_policy vsphere_storage_policy}
 */
 export class DataVsphereStoragePolicy extends cdktf.TerraformDataSource {
 
@@ -44,7 +39,7 @@ export class DataVsphereStoragePolicy extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataVsphereStoragePolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVsphereStoragePolicy to import
-  * @param importFromId The id of the existing DataVsphereStoragePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/storage_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVsphereStoragePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/storage_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVsphereStoragePolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -56,7 +51,7 @@ export class DataVsphereStoragePolicy extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/storage_policy vsphere_storage_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/storage_policy vsphere_storage_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +62,7 @@ export class DataVsphereStoragePolicy extends cdktf.TerraformDataSource {
       terraformResourceType: 'vsphere_storage_policy',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.8.1',
+        providerVersion: '2.8.2',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,

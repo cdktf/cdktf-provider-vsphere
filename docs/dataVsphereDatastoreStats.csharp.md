@@ -4,7 +4,7 @@
 
 ### DataVsphereDatastoreStats <a name="DataVsphereDatastoreStats" id="@cdktf/provider-vsphere.dataVsphereDatastoreStats.DataVsphereDatastoreStats"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/datastore_stats vsphere_datastore_stats}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/datastore_stats vsphere_datastore_stats}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereDatastoreStats.DataVsphereDatastoreStats.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataVsphereDatastoreStats 
 
 The id of the existing DataVsphereDatastoreStats that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/datastore_stats#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/datastore_stats#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -683,7 +683,7 @@ new DataVsphereDatastoreStatsConfig {
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastoreStats.DataVsphereDatastoreStatsConfig.property.datacenterId">DatacenterId</a></code> | <code>string</code> | The managed object ID of the datacenter to get datastores from. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastoreStats.DataVsphereDatastoreStatsConfig.property.capacity">Capacity</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | The capacity of the datastores. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastoreStats.DataVsphereDatastoreStatsConfig.property.freeSpace">FreeSpace</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | The free space of the datastores. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastoreStats.DataVsphereDatastoreStatsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/datastore_stats#id DataVsphereDatastoreStats#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereDatastoreStats.DataVsphereDatastoreStatsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/datastore_stats#id DataVsphereDatastoreStats#id}. |
 
 ---
 
@@ -767,7 +767,7 @@ public string DatacenterId { get; set; }
 
 The managed object ID of the datacenter to get datastores from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/datastore_stats#datacenter_id DataVsphereDatastoreStats#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/datastore_stats#datacenter_id DataVsphereDatastoreStats#datacenter_id}
 
 ---
 
@@ -781,7 +781,7 @@ public System.Collections.Generic.IDictionary<string, string> Capacity { get; se
 
 The capacity of the datastores.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/datastore_stats#capacity DataVsphereDatastoreStats#capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/datastore_stats#capacity DataVsphereDatastoreStats#capacity}
 
 ---
 
@@ -795,7 +795,7 @@ public System.Collections.Generic.IDictionary<string, string> FreeSpace { get; s
 
 The free space of the datastores.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/datastore_stats#free_space DataVsphereDatastoreStats#free_space}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/datastore_stats#free_space DataVsphereDatastoreStats#free_space}
 
 ---
 
@@ -807,7 +807,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/data-sources/datastore_stats#id DataVsphereDatastoreStats#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/datastore_stats#id DataVsphereDatastoreStats#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

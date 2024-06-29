@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/compute_cluster_host_group
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/compute_cluster_host_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface ComputeClusterHostGroupConfig extends cdktf.TerraformMetaArgume
   /**
   * The managed object ID of the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/compute_cluster_host_group#compute_cluster_id ComputeClusterHostGroup#compute_cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/compute_cluster_host_group#compute_cluster_id ComputeClusterHostGroup#compute_cluster_id}
   */
   readonly computeClusterId: string;
   /**
   * The managed object IDs of the hosts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/compute_cluster_host_group#host_system_ids ComputeClusterHostGroup#host_system_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/compute_cluster_host_group#host_system_ids ComputeClusterHostGroup#host_system_ids}
   */
   readonly hostSystemIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/compute_cluster_host_group#id ComputeClusterHostGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/compute_cluster_host_group#id ComputeClusterHostGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,13 +29,13 @@ export interface ComputeClusterHostGroupConfig extends cdktf.TerraformMetaArgume
   /**
   * The unique name of the host group in the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/compute_cluster_host_group#name ComputeClusterHostGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/compute_cluster_host_group#name ComputeClusterHostGroup#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/compute_cluster_host_group vsphere_compute_cluster_host_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/compute_cluster_host_group vsphere_compute_cluster_host_group}
 */
 export class ComputeClusterHostGroup extends cdktf.TerraformResource {
 
@@ -56,7 +51,7 @@ export class ComputeClusterHostGroup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ComputeClusterHostGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeClusterHostGroup to import
-  * @param importFromId The id of the existing ComputeClusterHostGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/compute_cluster_host_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeClusterHostGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/compute_cluster_host_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeClusterHostGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +63,7 @@ export class ComputeClusterHostGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/compute_cluster_host_group vsphere_compute_cluster_host_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/compute_cluster_host_group vsphere_compute_cluster_host_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +74,7 @@ export class ComputeClusterHostGroup extends cdktf.TerraformResource {
       terraformResourceType: 'vsphere_compute_cluster_host_group',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.8.1',
+        providerVersion: '2.8.2',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,
