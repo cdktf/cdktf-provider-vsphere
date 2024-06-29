@@ -4,7 +4,7 @@
 
 ### Host <a name="Host" id="@cdktf/provider-vsphere.host.Host"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/host vsphere_host}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/host vsphere_host}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.host.Host.Initializer"></a>
 
@@ -551,7 +551,7 @@ The construct id used in the generated config for the Host to import.
 
 The id of the existing Host that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/host#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/host#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1129,7 +1129,7 @@ new HostConfig {
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.customAttributes">CustomAttributes</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A list of custom attributes to set on this resource. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.datacenter">Datacenter</a></code> | <code>string</code> | ID of the vSphere datacenter the host will belong to. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.force">Force</a></code> | <code>object</code> | Force add the host to the vSphere inventory even if it's already managed by a different vCenter Server instance. |
-| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/host#id Host#id}. |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/host#id Host#id}. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.license">License</a></code> | <code>string</code> | License key that will be applied to this host. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.lockdown">Lockdown</a></code> | <code>string</code> | Set the host's lockdown status. Default is disabled. Valid options are 'disabled', 'normal', 'strict'. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.maintenance">Maintenance</a></code> | <code>object</code> | Set the host's maintenance mode. Default is false. |
@@ -1218,7 +1218,7 @@ public string Hostname { get; set; }
 
 FQDN or IP address of the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/host#hostname Host#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/host#hostname Host#hostname}
 
 ---
 
@@ -1232,7 +1232,7 @@ public string Password { get; set; }
 
 Password of the administration account of the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/host#password Host#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/host#password Host#password}
 
 ---
 
@@ -1246,7 +1246,7 @@ public string Username { get; set; }
 
 Username of the administration account of the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/host#username Host#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/host#username Host#username}
 
 ---
 
@@ -1260,7 +1260,7 @@ public string Cluster { get; set; }
 
 ID of the vSphere cluster the host will belong to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/host#cluster Host#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/host#cluster Host#cluster}
 
 ---
 
@@ -1274,7 +1274,7 @@ public object ClusterManaged { get; set; }
 
 Must be set if host is a member of a managed compute_cluster resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/host#cluster_managed Host#cluster_managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/host#cluster_managed Host#cluster_managed}
 
 ---
 
@@ -1288,7 +1288,7 @@ public object Connected { get; set; }
 
 Set the state of the host. If set to false then the host will be asked to disconnect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/host#connected Host#connected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/host#connected Host#connected}
 
 ---
 
@@ -1302,7 +1302,7 @@ public System.Collections.Generic.IDictionary<string, string> CustomAttributes {
 
 A list of custom attributes to set on this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/host#custom_attributes Host#custom_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/host#custom_attributes Host#custom_attributes}
 
 ---
 
@@ -1316,7 +1316,7 @@ public string Datacenter { get; set; }
 
 ID of the vSphere datacenter the host will belong to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/host#datacenter Host#datacenter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/host#datacenter Host#datacenter}
 
 ---
 
@@ -1330,7 +1330,7 @@ public object Force { get; set; }
 
 Force add the host to the vSphere inventory even if it's already managed by a different vCenter Server instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/host#force Host#force}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/host#force Host#force}
 
 ---
 
@@ -1342,7 +1342,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/host#id Host#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/host#id Host#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1359,7 +1359,7 @@ public string License { get; set; }
 
 License key that will be applied to this host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/host#license Host#license}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/host#license Host#license}
 
 ---
 
@@ -1373,7 +1373,7 @@ public string Lockdown { get; set; }
 
 Set the host's lockdown status. Default is disabled. Valid options are 'disabled', 'normal', 'strict'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/host#lockdown Host#lockdown}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/host#lockdown Host#lockdown}
 
 ---
 
@@ -1387,7 +1387,7 @@ public object Maintenance { get; set; }
 
 Set the host's maintenance mode. Default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/host#maintenance Host#maintenance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/host#maintenance Host#maintenance}
 
 ---
 
@@ -1401,7 +1401,7 @@ public string[] Tags { get; set; }
 
 A list of tag IDs to apply to this object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/host#tags Host#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/host#tags Host#tags}
 
 ---
 
@@ -1415,7 +1415,7 @@ public string Thumbprint { get; set; }
 
 Host's certificate SHA-1 thumbprint. If not set then the CA that signed the host's certificate must be trusted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.1/docs/resources/host#thumbprint Host#thumbprint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/host#thumbprint Host#thumbprint}
 
 ---
 
