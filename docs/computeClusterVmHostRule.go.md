@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeClusterVmHostRule.ComputeClusterVmHostRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmhostrule"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computeclustervmhostrule"
 
 computeclustervmhostrule.NewComputeClusterVmHostRule(scope Construct, id *string, config ComputeClusterVmHostRuleConfig) ComputeClusterVmHostRule
 ```
@@ -413,7 +413,7 @@ func ResetMandatory()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.computeClusterVmHostRule.ComputeClusterVmHostRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmhostrule"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computeclustervmhostrule"
 
 computeclustervmhostrule.ComputeClusterVmHostRule_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.computeClusterVmHostRule.ComputeClusterVmHostRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmhostrule"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computeclustervmhostrule"
 
 computeclustervmhostrule.ComputeClusterVmHostRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ computeclustervmhostrule.ComputeClusterVmHostRule_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.computeClusterVmHostRule.ComputeClusterVmHostRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmhostrule"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computeclustervmhostrule"
 
 computeclustervmhostrule.ComputeClusterVmHostRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ computeclustervmhostrule.ComputeClusterVmHostRule_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.computeClusterVmHostRule.ComputeClusterVmHostRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmhostrule"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computeclustervmhostrule"
 
 computeclustervmhostrule.ComputeClusterVmHostRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -878,7 +878,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.computeClusterVmHostRule.ComputeClusterVmHostRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclustervmhostrule"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computeclustervmhostrule"
 
 &computeclustervmhostrule.ComputeClusterVmHostRuleConfig {
 	Connection: interface{},
