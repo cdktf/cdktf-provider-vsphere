@@ -4,7 +4,7 @@
 
 ### DataVsphereHostThumbprint <a name="DataVsphereHostThumbprint" id="@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/host_thumbprint vsphere_host_thumbprint}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/host_thumbprint vsphere_host_thumbprint}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprint.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataVsphereHostThumbprint 
 
 The id of the existing DataVsphereHostThumbprint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/host_thumbprint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/host_thumbprint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -681,7 +681,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherehostthu
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprintConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprintConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprintConfig.property.address">Address</a></code> | <code>*string</code> | The address of the ESXi to extract the thumbprint from. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprintConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/host_thumbprint#id DataVsphereHostThumbprint#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprintConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/host_thumbprint#id DataVsphereHostThumbprint#id}. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprintConfig.property.insecure">Insecure</a></code> | <code>interface{}</code> | Boolean that can be set to true to disable SSL certificate verification. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHostThumbprint.DataVsphereHostThumbprintConfig.property.port">Port</a></code> | <code>*string</code> | The port to connect to on the ESXi host. |
 
@@ -767,7 +767,7 @@ Address *string
 
 The address of the ESXi to extract the thumbprint from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/host_thumbprint#address DataVsphereHostThumbprint#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/host_thumbprint#address DataVsphereHostThumbprint#address}
 
 ---
 
@@ -779,7 +779,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/host_thumbprint#id DataVsphereHostThumbprint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/host_thumbprint#id DataVsphereHostThumbprint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -796,7 +796,7 @@ Insecure interface{}
 
 Boolean that can be set to true to disable SSL certificate verification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/host_thumbprint#insecure DataVsphereHostThumbprint#insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/host_thumbprint#insecure DataVsphereHostThumbprint#insecure}
 
 ---
 
@@ -810,7 +810,7 @@ Port *string
 
 The port to connect to on the ESXi host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/host_thumbprint#port DataVsphereHostThumbprint#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/host_thumbprint#port DataVsphereHostThumbprint#port}
 
 ---
 
