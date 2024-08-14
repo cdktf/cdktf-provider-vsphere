@@ -4,12 +4,12 @@
 
 ### DataVsphereVmfsDisks <a name="DataVsphereVmfsDisks" id="@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisks"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/vmfs_disks vsphere_vmfs_disks}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/vmfs_disks vsphere_vmfs_disks}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherevmfsdisks"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevmfsdisks"
 
 datavspherevmfsdisks.NewDataVsphereVmfsDisks(scope Construct, id *string, config DataVsphereVmfsDisksConfig) DataVsphereVmfsDisks
 ```
@@ -297,7 +297,7 @@ func ResetRescan()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisks.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherevmfsdisks"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevmfsdisks"
 
 datavspherevmfsdisks.DataVsphereVmfsDisks_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherevmfsdisks"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevmfsdisks"
 
 datavspherevmfsdisks.DataVsphereVmfsDisks_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datavspherevmfsdisks.DataVsphereVmfsDisks_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisks.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherevmfsdisks"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevmfsdisks"
 
 datavspherevmfsdisks.DataVsphereVmfsDisks_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datavspherevmfsdisks.DataVsphereVmfsDisks_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisks.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherevmfsdisks"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevmfsdisks"
 
 datavspherevmfsdisks.DataVsphereVmfsDisks_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataVsphereVmfsDisks to im
 
 The id of the existing DataVsphereVmfsDisks that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/vmfs_disks#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/vmfs_disks#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -663,7 +663,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherevmfsdisks"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherevmfsdisks"
 
 &datavspherevmfsdisks.DataVsphereVmfsDisksConfig {
 	Connection: interface{},
@@ -693,7 +693,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherevmfsdis
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisksConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisksConfig.property.hostSystemId">HostSystemId</a></code> | <code>*string</code> | The managed object ID of the host to search for disks on. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisksConfig.property.filter">Filter</a></code> | <code>*string</code> | A regular expression to filter the disks against. Only disks with canonical names that match will be included. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisksConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/vmfs_disks#id DataVsphereVmfsDisks#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisksConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/vmfs_disks#id DataVsphereVmfsDisks#id}. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVmfsDisks.DataVsphereVmfsDisksConfig.property.rescan">Rescan</a></code> | <code>interface{}</code> | Rescan the system for disks before querying. This may lengthen the time it takes to gather information. |
 
 ---
@@ -778,7 +778,7 @@ HostSystemId *string
 
 The managed object ID of the host to search for disks on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/vmfs_disks#host_system_id DataVsphereVmfsDisks#host_system_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/vmfs_disks#host_system_id DataVsphereVmfsDisks#host_system_id}
 
 ---
 
@@ -792,7 +792,7 @@ Filter *string
 
 A regular expression to filter the disks against. Only disks with canonical names that match will be included.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/vmfs_disks#filter DataVsphereVmfsDisks#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/vmfs_disks#filter DataVsphereVmfsDisks#filter}
 
 ---
 
@@ -804,7 +804,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/vmfs_disks#id DataVsphereVmfsDisks#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/vmfs_disks#id DataVsphereVmfsDisks#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -821,7 +821,7 @@ Rescan interface{}
 
 Rescan the system for disks before querying. This may lengthen the time it takes to gather information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/data-sources/vmfs_disks#rescan DataVsphereVmfsDisks#rescan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/vmfs_disks#rescan DataVsphereVmfsDisks#rescan}
 
 ---
 

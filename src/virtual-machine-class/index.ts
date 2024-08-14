@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_class
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/virtual_machine_class
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface VirtualMachineClassConfig extends cdktf.TerraformMetaArguments 
   /**
   * The percentage of the available CPU capacity which will be reserved.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_class#cpu_reservation VirtualMachineClass#cpu_reservation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/virtual_machine_class#cpu_reservation VirtualMachineClass#cpu_reservation}
   */
   readonly cpuReservation?: number;
   /**
   * The number of CPUs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_class#cpus VirtualMachineClass#cpus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/virtual_machine_class#cpus VirtualMachineClass#cpus}
   */
   readonly cpus: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_class#id VirtualMachineClass#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/virtual_machine_class#id VirtualMachineClass#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,31 +29,31 @@ export interface VirtualMachineClassConfig extends cdktf.TerraformMetaArguments 
   /**
   * The amount of memory (in MB).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_class#memory VirtualMachineClass#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/virtual_machine_class#memory VirtualMachineClass#memory}
   */
   readonly memory: number;
   /**
   * The percentage of the available memory capacity which will be reserved.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_class#memory_reservation VirtualMachineClass#memory_reservation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/virtual_machine_class#memory_reservation VirtualMachineClass#memory_reservation}
   */
   readonly memoryReservation?: number;
   /**
   * The name of the virtual machine class.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_class#name VirtualMachineClass#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/virtual_machine_class#name VirtualMachineClass#name}
   */
   readonly name: string;
   /**
   * A comma-separated list of GPU devices.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_class#vgpu_devices VirtualMachineClass#vgpu_devices}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/virtual_machine_class#vgpu_devices VirtualMachineClass#vgpu_devices}
   */
   readonly vgpuDevices?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_class vsphere_virtual_machine_class}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/virtual_machine_class vsphere_virtual_machine_class}
 */
 export class VirtualMachineClass extends cdktf.TerraformResource {
 
@@ -74,7 +69,7 @@ export class VirtualMachineClass extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VirtualMachineClass resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VirtualMachineClass to import
-  * @param importFromId The id of the existing VirtualMachineClass that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_class#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VirtualMachineClass that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/virtual_machine_class#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VirtualMachineClass to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -86,7 +81,7 @@ export class VirtualMachineClass extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.2/docs/resources/virtual_machine_class vsphere_virtual_machine_class} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/virtual_machine_class vsphere_virtual_machine_class} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +92,7 @@ export class VirtualMachineClass extends cdktf.TerraformResource {
       terraformResourceType: 'vsphere_virtual_machine_class',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.8.2',
+        providerVersion: '2.8.3',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,
