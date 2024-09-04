@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/dynamic
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/dynamic
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataVsphereDynamicConfig extends cdktf.TerraformMetaArguments {
   /**
   * List of tag IDs to match target.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/dynamic#filter DataVsphereDynamic#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/dynamic#filter DataVsphereDynamic#filter}
   */
   readonly filter: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/dynamic#id DataVsphereDynamic#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/dynamic#id DataVsphereDynamic#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +28,19 @@ export interface DataVsphereDynamicConfig extends cdktf.TerraformMetaArguments {
   /**
   * A regular expression used to match against managed object names.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/dynamic#name_regex DataVsphereDynamic#name_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/dynamic#name_regex DataVsphereDynamic#name_regex}
   */
   readonly nameRegex?: string;
   /**
   * The type of managed object to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/dynamic#type DataVsphereDynamic#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/dynamic#type DataVsphereDynamic#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/dynamic vsphere_dynamic}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/dynamic vsphere_dynamic}
 */
 export class DataVsphereDynamic extends cdktf.TerraformDataSource {
 
@@ -56,7 +56,7 @@ export class DataVsphereDynamic extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataVsphereDynamic resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVsphereDynamic to import
-  * @param importFromId The id of the existing DataVsphereDynamic that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/dynamic#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVsphereDynamic that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/dynamic#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVsphereDynamic to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +68,7 @@ export class DataVsphereDynamic extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/dynamic vsphere_dynamic} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/dynamic vsphere_dynamic} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,7 @@ export class DataVsphereDynamic extends cdktf.TerraformDataSource {
       terraformResourceType: 'vsphere_dynamic',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.8.3',
+        providerVersion: '2.9.0',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,

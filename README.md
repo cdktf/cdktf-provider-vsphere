@@ -1,7 +1,7 @@
 
-# CDKTF prebuilt bindings for hashicorp/vsphere provider version 2.8.3
+# CDKTF prebuilt bindings for hashicorp/vsphere provider version 2.9.0
 
-This repo builds and publishes the [Terraform vsphere provider](https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform vsphere provider](https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Available Packages
 
@@ -63,7 +63,7 @@ This project is explicitly not tracking the Terraform vsphere provider version 1
 These are the upstream dependencies:
 
 - [CDK for Terraform](https://cdk.tf)
-- [Terraform vsphere provider](https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3)
+- [Terraform vsphere provider](https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0)
 - [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.

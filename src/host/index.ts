@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/host
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/host
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,47 +15,47 @@ export interface HostConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID of the vSphere cluster the host will belong to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/host#cluster Host#cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/host#cluster Host#cluster}
   */
   readonly cluster?: string;
   /**
   * Must be set if host is a member of a managed compute_cluster resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/host#cluster_managed Host#cluster_managed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/host#cluster_managed Host#cluster_managed}
   */
   readonly clusterManaged?: boolean | cdktf.IResolvable;
   /**
   * Set the state of the host. If set to false then the host will be asked to disconnect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/host#connected Host#connected}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/host#connected Host#connected}
   */
   readonly connected?: boolean | cdktf.IResolvable;
   /**
   * A list of custom attributes to set on this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/host#custom_attributes Host#custom_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/host#custom_attributes Host#custom_attributes}
   */
   readonly customAttributes?: { [key: string]: string };
   /**
   * ID of the vSphere datacenter the host will belong to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/host#datacenter Host#datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/host#datacenter Host#datacenter}
   */
   readonly datacenter?: string;
   /**
   * Force add the host to the vSphere inventory even if it's already managed by a different vCenter Server instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/host#force Host#force}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/host#force Host#force}
   */
   readonly force?: boolean | cdktf.IResolvable;
   /**
   * FQDN or IP address of the host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/host#hostname Host#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/host#hostname Host#hostname}
   */
   readonly hostname: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/host#id Host#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/host#id Host#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -64,49 +64,327 @@ export interface HostConfig extends cdktf.TerraformMetaArguments {
   /**
   * License key that will be applied to this host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/host#license Host#license}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/host#license Host#license}
   */
   readonly license?: string;
   /**
   * Set the host's lockdown status. Default is disabled. Valid options are 'disabled', 'normal', 'strict'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/host#lockdown Host#lockdown}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/host#lockdown Host#lockdown}
   */
   readonly lockdown?: string;
   /**
   * Set the host's maintenance mode. Default is false
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/host#maintenance Host#maintenance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/host#maintenance Host#maintenance}
   */
   readonly maintenance?: boolean | cdktf.IResolvable;
   /**
   * Password of the administration account of the host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/host#password Host#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/host#password Host#password}
   */
   readonly password: string;
   /**
   * A list of tag IDs to apply to this object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/host#tags Host#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/host#tags Host#tags}
   */
   readonly tags?: string[];
   /**
   * Host's certificate SHA-1 thumbprint. If not set then the CA that signed the host's certificate must be trusted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/host#thumbprint Host#thumbprint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/host#thumbprint Host#thumbprint}
   */
   readonly thumbprint?: string;
   /**
   * Username of the administration account of the host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/host#username Host#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/host#username Host#username}
   */
   readonly username: string;
+  /**
+  * services block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/host#services Host#services}
+  */
+  readonly services?: HostServices[] | cdktf.IResolvable;
+}
+export interface HostServicesNtpd {
+  /**
+  * Whether the NTP service is enabled. Default is false.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/host#enabled Host#enabled}
+  */
+  readonly enabled?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/host#ntp_servers Host#ntp_servers}
+  */
+  readonly ntpServers?: string[];
+  /**
+  * The policy for the NTP service. Valid values are 'Start and stop with host', 'Start and stop manually', 'Start and stop with port usage'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/host#policy Host#policy}
+  */
+  readonly policy?: string;
+}
+
+export function hostServicesNtpdToTerraform(struct?: HostServicesNtpdOutputReference | HostServicesNtpd): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    ntp_servers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ntpServers),
+    policy: cdktf.stringToTerraform(struct!.policy),
+  }
+}
+
+
+export function hostServicesNtpdToHclTerraform(struct?: HostServicesNtpdOutputReference | HostServicesNtpd): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    ntp_servers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ntpServers),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    policy: {
+      value: cdktf.stringToHclTerraform(struct!.policy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class HostServicesNtpdOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): HostServicesNtpd | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._ntpServers !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ntpServers = this._ntpServers;
+    }
+    if (this._policy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.policy = this._policy;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: HostServicesNtpd | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+      this._ntpServers = undefined;
+      this._policy = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+      this._ntpServers = value.ntpServers;
+      this._policy = value.policy;
+    }
+  }
+
+  // enabled - computed: false, optional: true, required: false
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // ntp_servers - computed: true, optional: true, required: false
+  private _ntpServers?: string[]; 
+  public get ntpServers() {
+    return this.getListAttribute('ntp_servers');
+  }
+  public set ntpServers(value: string[]) {
+    this._ntpServers = value;
+  }
+  public resetNtpServers() {
+    this._ntpServers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ntpServersInput() {
+    return this._ntpServers;
+  }
+
+  // policy - computed: false, optional: true, required: false
+  private _policy?: string; 
+  public get policy() {
+    return this.getStringAttribute('policy');
+  }
+  public set policy(value: string) {
+    this._policy = value;
+  }
+  public resetPolicy() {
+    this._policy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyInput() {
+    return this._policy;
+  }
+}
+export interface HostServices {
+  /**
+  * ntpd block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/host#ntpd Host#ntpd}
+  */
+  readonly ntpd?: HostServicesNtpd;
+}
+
+export function hostServicesToTerraform(struct?: HostServices | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    ntpd: hostServicesNtpdToTerraform(struct!.ntpd),
+  }
+}
+
+
+export function hostServicesToHclTerraform(struct?: HostServices | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ntpd: {
+      value: hostServicesNtpdToHclTerraform(struct!.ntpd),
+      isBlock: true,
+      type: "list",
+      storageClassType: "HostServicesNtpdList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class HostServicesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): HostServices | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ntpd?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ntpd = this._ntpd?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: HostServices | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._ntpd.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._ntpd.internalValue = value.ntpd;
+    }
+  }
+
+  // ntpd - computed: false, optional: true, required: false
+  private _ntpd = new HostServicesNtpdOutputReference(this, "ntpd");
+  public get ntpd() {
+    return this._ntpd;
+  }
+  public putNtpd(value: HostServicesNtpd) {
+    this._ntpd.internalValue = value;
+  }
+  public resetNtpd() {
+    this._ntpd.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ntpdInput() {
+    return this._ntpd.internalValue;
+  }
+}
+
+export class HostServicesList extends cdktf.ComplexList {
+  public internalValue? : HostServices[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): HostServicesOutputReference {
+    return new HostServicesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/host vsphere_host}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/host vsphere_host}
 */
 export class Host extends cdktf.TerraformResource {
 
@@ -122,7 +400,7 @@ export class Host extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Host resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Host to import
-  * @param importFromId The id of the existing Host that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/host#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Host that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/host#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Host to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -134,7 +412,7 @@ export class Host extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/host vsphere_host} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/host vsphere_host} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -145,7 +423,7 @@ export class Host extends cdktf.TerraformResource {
       terraformResourceType: 'vsphere_host',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.8.3',
+        providerVersion: '2.9.0',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,
@@ -171,6 +449,7 @@ export class Host extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._thumbprint = config.thumbprint;
     this._username = config.username;
+    this._services.internalValue = config.services;
   }
 
   // ==========
@@ -408,6 +687,22 @@ export class Host extends cdktf.TerraformResource {
     return this._username;
   }
 
+  // services - computed: false, optional: true, required: false
+  private _services = new HostServicesList(this, "services", true);
+  public get services() {
+    return this._services;
+  }
+  public putServices(value: HostServices[] | cdktf.IResolvable) {
+    this._services.internalValue = value;
+  }
+  public resetServices() {
+    this._services.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get servicesInput() {
+    return this._services.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -429,6 +724,7 @@ export class Host extends cdktf.TerraformResource {
       tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       thumbprint: cdktf.stringToTerraform(this._thumbprint),
       username: cdktf.stringToTerraform(this._username),
+      services: cdktf.listMapper(hostServicesToTerraform, true)(this._services.internalValue),
     };
   }
 
@@ -523,6 +819,12 @@ export class Host extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      services: {
+        value: cdktf.listMapperHcl(hostServicesToHclTerraform, true)(this._services.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "HostServicesList",
       },
     };
 
