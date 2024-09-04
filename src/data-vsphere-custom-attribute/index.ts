@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/custom_attribute
 // generated from terraform resource schema
 
