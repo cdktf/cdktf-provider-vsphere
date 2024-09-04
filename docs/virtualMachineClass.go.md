@@ -4,12 +4,12 @@
 
 ### VirtualMachineClass <a name="VirtualMachineClass" id="@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClass"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/virtual_machine_class vsphere_virtual_machine_class}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/virtual_machine_class vsphere_virtual_machine_class}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClass.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/virtualmachineclass"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachineclass"
 
 virtualmachineclass.NewVirtualMachineClass(scope Construct, id *string, config VirtualMachineClassConfig) VirtualMachineClass
 ```
@@ -406,7 +406,7 @@ func ResetVgpuDevices()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClass.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/virtualmachineclass"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachineclass"
 
 virtualmachineclass.VirtualMachineClass_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClass.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/virtualmachineclass"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachineclass"
 
 virtualmachineclass.VirtualMachineClass_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ virtualmachineclass.VirtualMachineClass_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClass.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/virtualmachineclass"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachineclass"
 
 virtualmachineclass.VirtualMachineClass_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ virtualmachineclass.VirtualMachineClass_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClass.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/virtualmachineclass"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachineclass"
 
 virtualmachineclass.VirtualMachineClass_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +495,7 @@ The construct id used in the generated config for the VirtualMachineClass to imp
 
 The id of the existing VirtualMachineClass that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/virtual_machine_class#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/virtual_machine_class#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -849,7 +849,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClassConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/virtualmachineclass"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachineclass"
 
 &virtualmachineclass.VirtualMachineClassConfig {
 	Connection: interface{},
@@ -884,7 +884,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/virtualmachineclas
 | <code><a href="#@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClassConfig.property.memory">Memory</a></code> | <code>*f64</code> | The amount of memory (in MB). |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClassConfig.property.name">Name</a></code> | <code>*string</code> | The name of the virtual machine class. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClassConfig.property.cpuReservation">CpuReservation</a></code> | <code>*f64</code> | The percentage of the available CPU capacity which will be reserved. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClassConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/virtual_machine_class#id VirtualMachineClass#id}. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClassConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/virtual_machine_class#id VirtualMachineClass#id}. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClassConfig.property.memoryReservation">MemoryReservation</a></code> | <code>*f64</code> | The percentage of the available memory capacity which will be reserved. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClassConfig.property.vgpuDevices">VgpuDevices</a></code> | <code>*[]*string</code> | A comma-separated list of GPU devices. |
 
@@ -970,7 +970,7 @@ Cpus *f64
 
 The number of CPUs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/virtual_machine_class#cpus VirtualMachineClass#cpus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/virtual_machine_class#cpus VirtualMachineClass#cpus}
 
 ---
 
@@ -984,7 +984,7 @@ Memory *f64
 
 The amount of memory (in MB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/virtual_machine_class#memory VirtualMachineClass#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/virtual_machine_class#memory VirtualMachineClass#memory}
 
 ---
 
@@ -998,7 +998,7 @@ Name *string
 
 The name of the virtual machine class.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/virtual_machine_class#name VirtualMachineClass#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/virtual_machine_class#name VirtualMachineClass#name}
 
 ---
 
@@ -1012,7 +1012,7 @@ CpuReservation *f64
 
 The percentage of the available CPU capacity which will be reserved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/virtual_machine_class#cpu_reservation VirtualMachineClass#cpu_reservation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/virtual_machine_class#cpu_reservation VirtualMachineClass#cpu_reservation}
 
 ---
 
@@ -1024,7 +1024,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/virtual_machine_class#id VirtualMachineClass#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/virtual_machine_class#id VirtualMachineClass#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1041,7 +1041,7 @@ MemoryReservation *f64
 
 The percentage of the available memory capacity which will be reserved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/virtual_machine_class#memory_reservation VirtualMachineClass#memory_reservation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/virtual_machine_class#memory_reservation VirtualMachineClass#memory_reservation}
 
 ---
 
@@ -1055,7 +1055,7 @@ VgpuDevices *[]*string
 
 A comma-separated list of GPU devices.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/resources/virtual_machine_class#vgpu_devices VirtualMachineClass#vgpu_devices}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/virtual_machine_class#vgpu_devices VirtualMachineClass#vgpu_devices}
 
 ---
 

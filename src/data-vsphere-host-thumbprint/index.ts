@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/host_thumbprint
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/host_thumbprint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface DataVsphereHostThumbprintConfig extends cdktf.TerraformMetaArgu
   /**
   * The address of the ESXi to extract the thumbprint from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/host_thumbprint#address DataVsphereHostThumbprint#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/host_thumbprint#address DataVsphereHostThumbprint#address}
   */
   readonly address: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/host_thumbprint#id DataVsphereHostThumbprint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/host_thumbprint#id DataVsphereHostThumbprint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +23,19 @@ export interface DataVsphereHostThumbprintConfig extends cdktf.TerraformMetaArgu
   /**
   * Boolean that can be set to true to disable SSL certificate verification.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/host_thumbprint#insecure DataVsphereHostThumbprint#insecure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/host_thumbprint#insecure DataVsphereHostThumbprint#insecure}
   */
   readonly insecure?: boolean | cdktf.IResolvable;
   /**
   * The port to connect to on the ESXi host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/host_thumbprint#port DataVsphereHostThumbprint#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/host_thumbprint#port DataVsphereHostThumbprint#port}
   */
   readonly port?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/host_thumbprint vsphere_host_thumbprint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/host_thumbprint vsphere_host_thumbprint}
 */
 export class DataVsphereHostThumbprint extends cdktf.TerraformDataSource {
 
@@ -56,7 +51,7 @@ export class DataVsphereHostThumbprint extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataVsphereHostThumbprint resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVsphereHostThumbprint to import
-  * @param importFromId The id of the existing DataVsphereHostThumbprint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/host_thumbprint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVsphereHostThumbprint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/host_thumbprint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVsphereHostThumbprint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +63,7 @@ export class DataVsphereHostThumbprint extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.8.3/docs/data-sources/host_thumbprint vsphere_host_thumbprint} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/host_thumbprint vsphere_host_thumbprint} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +74,7 @@ export class DataVsphereHostThumbprint extends cdktf.TerraformDataSource {
       terraformResourceType: 'vsphere_host_thumbprint',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.8.3',
+        providerVersion: '2.9.0',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,
