@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.nasDatastore.NasDatastore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/nasdatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/nasdatastore"
 
 nasdatastore.NewNasDatastore(scope Construct, id *string, config NasDatastoreConfig) NasDatastore
 ```
@@ -434,7 +434,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.nasDatastore.NasDatastore.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/nasdatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/nasdatastore"
 
 nasdatastore.NasDatastore_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.nasDatastore.NasDatastore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/nasdatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/nasdatastore"
 
 nasdatastore.NasDatastore_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ nasdatastore.NasDatastore_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.nasDatastore.NasDatastore.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/nasdatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/nasdatastore"
 
 nasdatastore.NasDatastore_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ nasdatastore.NasDatastore_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.nasDatastore.NasDatastore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/nasdatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/nasdatastore"
 
 nasdatastore.NasDatastore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1075,7 +1075,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.nasDatastore.NasDatastoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/nasdatastore"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/nasdatastore"
 
 &nasdatastore.NasDatastoreConfig {
 	Connection: interface{},
