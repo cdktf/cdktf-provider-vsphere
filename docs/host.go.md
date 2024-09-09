@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.host.Host.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/host"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/host"
 
 host.NewHost(scope Construct, id *string, config HostConfig) Host
 ```
@@ -482,7 +482,7 @@ func ResetThumbprint()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.host.Host.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/host"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/host"
 
 host.Host_IsConstruct(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.host.Host.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/host"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/host"
 
 host.Host_IsTerraformElement(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ host.Host_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.host.Host.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/host"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/host"
 
 host.Host_IsTerraformResource(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ host.Host_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.host.Host.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/host"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/host"
 
 host.Host_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1123,7 +1123,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.host.HostConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/host"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/host"
 
 &host.HostConfig {
 	Connection: interface{},
@@ -1482,10 +1482,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.host.HostServices.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/host"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/host"
 
 &host.HostServices {
-	Ntpd: github.com/cdktf/cdktf-provider-vsphere-go/vsphere.host.HostServicesNtpd,
+	Ntpd: github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9.host.HostServicesNtpd,
 }
 ```
 
@@ -1516,7 +1516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.host.HostServicesNtpd.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/host"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/host"
 
 &host.HostServicesNtpd {
 	Enabled: interface{},
@@ -1584,7 +1584,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.host.HostServicesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/host"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/host"
 
 host.NewHostServicesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) HostServicesList
 ```
@@ -1744,7 +1744,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.host.HostServicesNtpdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/host"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/host"
 
 host.NewHostServicesNtpdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) HostServicesNtpdOutputReference
 ```
@@ -2080,7 +2080,7 @@ func InternalValue() HostServicesNtpd
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.host.HostServicesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/host"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/host"
 
 host.NewHostServicesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) HostServicesOutputReference
 ```
