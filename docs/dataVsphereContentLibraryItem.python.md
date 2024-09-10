@@ -4,7 +4,7 @@
 
 ### DataVsphereContentLibraryItem <a name="DataVsphereContentLibraryItem" id="@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItem"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/content_library_item vsphere_content_library_item}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/data-sources/content_library_item vsphere_content_library_item}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItem.Initializer"></a>
 
@@ -42,7 +42,7 @@ dataVsphereContentLibraryItem.DataVsphereContentLibraryItem(
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItem.Initializer.parameter.libraryId">library_id</a></code> | <code>str</code> | ID of the content library to contain item. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItem.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the content library item. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItem.Initializer.parameter.type">type</a></code> | <code>str</code> | Type of content library item. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItem.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/content_library_item#id DataVsphereContentLibraryItem#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItem.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/data-sources/content_library_item#id DataVsphereContentLibraryItem#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 ID of the content library to contain item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/content_library_item#library_id DataVsphereContentLibraryItem#library_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/data-sources/content_library_item#library_id DataVsphereContentLibraryItem#library_id}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the content library item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/content_library_item#name DataVsphereContentLibraryItem#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/data-sources/content_library_item#name DataVsphereContentLibraryItem#name}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Type of content library item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/content_library_item#type DataVsphereContentLibraryItem#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/data-sources/content_library_item#type DataVsphereContentLibraryItem#type}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/content_library_item#id DataVsphereContentLibraryItem#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/data-sources/content_library_item#id DataVsphereContentLibraryItem#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -509,7 +509,7 @@ The construct id used in the generated config for the DataVsphereContentLibraryI
 
 The id of the existing DataVsphereContentLibraryItem that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/content_library_item#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/data-sources/content_library_item#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -806,7 +806,7 @@ dataVsphereContentLibraryItem.DataVsphereContentLibraryItemConfig(
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItemConfig.property.libraryId">library_id</a></code> | <code>str</code> | ID of the content library to contain item. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItemConfig.property.name">name</a></code> | <code>str</code> | The name of the content library item. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItemConfig.property.type">type</a></code> | <code>str</code> | Type of content library item. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItemConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/content_library_item#id DataVsphereContentLibraryItem#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItemConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/data-sources/content_library_item#id DataVsphereContentLibraryItem#id}. |
 
 ---
 
@@ -890,7 +890,7 @@ library_id: str
 
 ID of the content library to contain item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/content_library_item#library_id DataVsphereContentLibraryItem#library_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/data-sources/content_library_item#library_id DataVsphereContentLibraryItem#library_id}
 
 ---
 
@@ -904,7 +904,7 @@ name: str
 
 The name of the content library item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/content_library_item#name DataVsphereContentLibraryItem#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/data-sources/content_library_item#name DataVsphereContentLibraryItem#name}
 
 ---
 
@@ -918,7 +918,7 @@ type: str
 
 Type of content library item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/content_library_item#type DataVsphereContentLibraryItem#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/data-sources/content_library_item#type DataVsphereContentLibraryItem#type}
 
 ---
 
@@ -930,7 +930,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/content_library_item#id DataVsphereContentLibraryItem#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/data-sources/content_library_item#id DataVsphereContentLibraryItem#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

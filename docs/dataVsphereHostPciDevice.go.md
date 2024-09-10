@@ -4,7 +4,7 @@
 
 ### DataVsphereHostPciDevice <a name="DataVsphereHostPciDevice" id="@cdktf/provider-vsphere.dataVsphereHostPciDevice.DataVsphereHostPciDevice"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/host_pci_device vsphere_host_pci_device}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/data-sources/host_pci_device vsphere_host_pci_device}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereHostPciDevice.DataVsphereHostPciDevice.Initializer"></a>
 
@@ -393,7 +393,7 @@ The construct id used in the generated config for the DataVsphereHostPciDevice t
 
 The id of the existing DataVsphereHostPciDevice that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/host_pci_device#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/data-sources/host_pci_device#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -723,7 +723,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherehostpci
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHostPciDevice.DataVsphereHostPciDeviceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHostPciDevice.DataVsphereHostPciDeviceConfig.property.hostId">HostId</a></code> | <code>*string</code> | The Managed Object ID of the host system. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHostPciDevice.DataVsphereHostPciDeviceConfig.property.classId">ClassId</a></code> | <code>*string</code> | The hexadecimal value of the PCI device's class ID. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereHostPciDevice.DataVsphereHostPciDeviceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/host_pci_device#id DataVsphereHostPciDevice#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereHostPciDevice.DataVsphereHostPciDeviceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/data-sources/host_pci_device#id DataVsphereHostPciDevice#id}. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHostPciDevice.DataVsphereHostPciDeviceConfig.property.nameRegex">NameRegex</a></code> | <code>*string</code> | A regular expression used to match the PCI device name. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHostPciDevice.DataVsphereHostPciDeviceConfig.property.vendorId">VendorId</a></code> | <code>*string</code> | The hexadecimal value of the PCI device's vendor ID. |
 
@@ -809,7 +809,7 @@ HostId *string
 
 The Managed Object ID of the host system.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/host_pci_device#host_id DataVsphereHostPciDevice#host_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/data-sources/host_pci_device#host_id DataVsphereHostPciDevice#host_id}
 
 ---
 
@@ -823,7 +823,7 @@ ClassId *string
 
 The hexadecimal value of the PCI device's class ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/host_pci_device#class_id DataVsphereHostPciDevice#class_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/data-sources/host_pci_device#class_id DataVsphereHostPciDevice#class_id}
 
 ---
 
@@ -835,7 +835,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/host_pci_device#id DataVsphereHostPciDevice#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/data-sources/host_pci_device#id DataVsphereHostPciDevice#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -852,7 +852,7 @@ NameRegex *string
 
 A regular expression used to match the PCI device name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/host_pci_device#name_regex DataVsphereHostPciDevice#name_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/data-sources/host_pci_device#name_regex DataVsphereHostPciDevice#name_regex}
 
 ---
 
@@ -866,7 +866,7 @@ VendorId *string
 
 The hexadecimal value of the PCI device's vendor ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/data-sources/host_pci_device#vendor_id DataVsphereHostPciDevice#vendor_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/data-sources/host_pci_device#vendor_id DataVsphereHostPciDevice#vendor_id}
 
 ---
 
