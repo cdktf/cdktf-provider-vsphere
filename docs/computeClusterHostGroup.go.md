@@ -4,12 +4,12 @@
 
 ### ComputeClusterHostGroup <a name="ComputeClusterHostGroup" id="@cdktf/provider-vsphere.computeClusterHostGroup.ComputeClusterHostGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/compute_cluster_host_group vsphere_compute_cluster_host_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/compute_cluster_host_group vsphere_compute_cluster_host_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeClusterHostGroup.ComputeClusterHostGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computeclusterhostgroup"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclusterhostgroup"
 
 computeclusterhostgroup.NewComputeClusterHostGroup(scope Construct, id *string, config ComputeClusterHostGroupConfig) ComputeClusterHostGroup
 ```
@@ -392,7 +392,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.computeClusterHostGroup.ComputeClusterHostGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computeclusterhostgroup"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclusterhostgroup"
 
 computeclusterhostgroup.ComputeClusterHostGroup_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.computeClusterHostGroup.ComputeClusterHostGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computeclusterhostgroup"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclusterhostgroup"
 
 computeclusterhostgroup.ComputeClusterHostGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ computeclusterhostgroup.ComputeClusterHostGroup_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.computeClusterHostGroup.ComputeClusterHostGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computeclusterhostgroup"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclusterhostgroup"
 
 computeclusterhostgroup.ComputeClusterHostGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ computeclusterhostgroup.ComputeClusterHostGroup_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.computeClusterHostGroup.ComputeClusterHostGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computeclusterhostgroup"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclusterhostgroup"
 
 computeclusterhostgroup.ComputeClusterHostGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the ComputeClusterHostGroup to
 
 The id of the existing ComputeClusterHostGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/compute_cluster_host_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/compute_cluster_host_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.computeClusterHostGroup.ComputeClusterHostGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computeclusterhostgroup"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/computeclusterhostgroup"
 
 &computeclusterhostgroup.ComputeClusterHostGroupConfig {
 	Connection: interface{},
@@ -800,7 +800,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/computeclusterhost
 | <code><a href="#@cdktf/provider-vsphere.computeClusterHostGroup.ComputeClusterHostGroupConfig.property.computeClusterId">ComputeClusterId</a></code> | <code>*string</code> | The managed object ID of the cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeClusterHostGroup.ComputeClusterHostGroupConfig.property.name">Name</a></code> | <code>*string</code> | The unique name of the host group in the cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeClusterHostGroup.ComputeClusterHostGroupConfig.property.hostSystemIds">HostSystemIds</a></code> | <code>*[]*string</code> | The managed object IDs of the hosts. |
-| <code><a href="#@cdktf/provider-vsphere.computeClusterHostGroup.ComputeClusterHostGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/compute_cluster_host_group#id ComputeClusterHostGroup#id}. |
+| <code><a href="#@cdktf/provider-vsphere.computeClusterHostGroup.ComputeClusterHostGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/compute_cluster_host_group#id ComputeClusterHostGroup#id}. |
 
 ---
 
@@ -884,7 +884,7 @@ ComputeClusterId *string
 
 The managed object ID of the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/compute_cluster_host_group#compute_cluster_id ComputeClusterHostGroup#compute_cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/compute_cluster_host_group#compute_cluster_id ComputeClusterHostGroup#compute_cluster_id}
 
 ---
 
@@ -898,7 +898,7 @@ Name *string
 
 The unique name of the host group in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/compute_cluster_host_group#name ComputeClusterHostGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/compute_cluster_host_group#name ComputeClusterHostGroup#name}
 
 ---
 
@@ -912,7 +912,7 @@ HostSystemIds *[]*string
 
 The managed object IDs of the hosts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/compute_cluster_host_group#host_system_ids ComputeClusterHostGroup#host_system_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/compute_cluster_host_group#host_system_ids ComputeClusterHostGroup#host_system_ids}
 
 ---
 
@@ -924,7 +924,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.0/docs/resources/compute_cluster_host_group#id ComputeClusterHostGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/compute_cluster_host_group#id ComputeClusterHostGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
