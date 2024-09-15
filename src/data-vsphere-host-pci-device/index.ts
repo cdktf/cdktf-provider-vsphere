@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/data-sources/host_pci_device
 // generated from terraform resource schema
 
