@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/vapp_entity
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/vapp_entity
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface VappEntityConfig extends cdktf.TerraformMetaArguments {
   /**
   * Managed object ID of the vApp container the entity is a member of.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/vapp_entity#container_id VappEntity#container_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/vapp_entity#container_id VappEntity#container_id}
   */
   readonly containerId: string;
   /**
   * A list of custom attributes to set on this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/vapp_entity#custom_attributes VappEntity#custom_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/vapp_entity#custom_attributes VappEntity#custom_attributes}
   */
   readonly customAttributes?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/vapp_entity#id VappEntity#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/vapp_entity#id VappEntity#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,55 +34,55 @@ export interface VappEntityConfig extends cdktf.TerraformMetaArguments {
   /**
   * How to start the entity. Valid settings are none or powerOn. If set to none, then the entity does not participate in auto-start.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/vapp_entity#start_action VappEntity#start_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/vapp_entity#start_action VappEntity#start_action}
   */
   readonly startAction?: string;
   /**
   * Delay in seconds before continuing with the next entity in the order of entities to be started.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/vapp_entity#start_delay VappEntity#start_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/vapp_entity#start_delay VappEntity#start_delay}
   */
   readonly startDelay?: number;
   /**
   * Order to start and stop target in vApp.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/vapp_entity#start_order VappEntity#start_order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/vapp_entity#start_order VappEntity#start_order}
   */
   readonly startOrder?: number;
   /**
   * Defines the stop action for the entity. Can be set to none, powerOff, guestShutdown, or suspend. If set to none, then the entity does not participate in auto-stop.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/vapp_entity#stop_action VappEntity#stop_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/vapp_entity#stop_action VappEntity#stop_action}
   */
   readonly stopAction?: string;
   /**
   * Delay in seconds before continuing with the next entity in the order of entities to be stopped.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/vapp_entity#stop_delay VappEntity#stop_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/vapp_entity#stop_delay VappEntity#stop_delay}
   */
   readonly stopDelay?: number;
   /**
   * A list of tag IDs to apply to this object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/vapp_entity#tags VappEntity#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/vapp_entity#tags VappEntity#tags}
   */
   readonly tags?: string[];
   /**
   * Managed object ID of the entity to power on or power off. This can be a virtual machine or a vApp.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/vapp_entity#target_id VappEntity#target_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/vapp_entity#target_id VappEntity#target_id}
   */
   readonly targetId: string;
   /**
   * Determines if the VM should be marked as being started when VMware Tools are ready instead of waiting for start_delay. This property has no effect for vApps.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/vapp_entity#wait_for_guest VappEntity#wait_for_guest}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/vapp_entity#wait_for_guest VappEntity#wait_for_guest}
   */
   readonly waitForGuest?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/vapp_entity vsphere_vapp_entity}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/vapp_entity vsphere_vapp_entity}
 */
 export class VappEntity extends cdktf.TerraformResource {
 
@@ -98,7 +98,7 @@ export class VappEntity extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VappEntity resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VappEntity to import
-  * @param importFromId The id of the existing VappEntity that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/vapp_entity#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VappEntity that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/vapp_entity#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VappEntity to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -110,7 +110,7 @@ export class VappEntity extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/vapp_entity vsphere_vapp_entity} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/vapp_entity vsphere_vapp_entity} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -121,7 +121,7 @@ export class VappEntity extends cdktf.TerraformResource {
       terraformResourceType: 'vsphere_vapp_entity',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.9.1',
+        providerVersion: '2.9.2',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,
