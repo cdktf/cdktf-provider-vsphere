@@ -4,12 +4,12 @@
 
 ### OfflineSoftwareDepot <a name="OfflineSoftwareDepot" id="@cdktf/provider-vsphere.offlineSoftwareDepot.OfflineSoftwareDepot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/offline_software_depot vsphere_offline_software_depot}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/offline_software_depot vsphere_offline_software_depot}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.offlineSoftwareDepot.OfflineSoftwareDepot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/offlinesoftwaredepot"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/offlinesoftwaredepot"
 
 offlinesoftwaredepot.NewOfflineSoftwareDepot(scope Construct, id *string, config OfflineSoftwareDepotConfig) OfflineSoftwareDepot
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.offlineSoftwareDepot.OfflineSoftwareDepot.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/offlinesoftwaredepot"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/offlinesoftwaredepot"
 
 offlinesoftwaredepot.OfflineSoftwareDepot_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.offlineSoftwareDepot.OfflineSoftwareDepot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/offlinesoftwaredepot"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/offlinesoftwaredepot"
 
 offlinesoftwaredepot.OfflineSoftwareDepot_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ offlinesoftwaredepot.OfflineSoftwareDepot_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.offlineSoftwareDepot.OfflineSoftwareDepot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/offlinesoftwaredepot"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/offlinesoftwaredepot"
 
 offlinesoftwaredepot.OfflineSoftwareDepot_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ offlinesoftwaredepot.OfflineSoftwareDepot_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.offlineSoftwareDepot.OfflineSoftwareDepot.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/offlinesoftwaredepot"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/offlinesoftwaredepot"
 
 offlinesoftwaredepot.OfflineSoftwareDepot_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the OfflineSoftwareDepot to im
 
 The id of the existing OfflineSoftwareDepot that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/offline_software_depot#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/offline_software_depot#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -729,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.offlineSoftwareDepot.OfflineSoftwareDepotComponent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/offlinesoftwaredepot"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/offlinesoftwaredepot"
 
 &offlinesoftwaredepot.OfflineSoftwareDepotComponent {
 
@@ -742,7 +742,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/offlinesoftwaredep
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.offlineSoftwareDepot.OfflineSoftwareDepotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/offlinesoftwaredepot"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/offlinesoftwaredepot"
 
 &offlinesoftwaredepot.OfflineSoftwareDepotConfig {
 	Connection: interface{},
@@ -769,7 +769,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/offlinesoftwaredep
 | <code><a href="#@cdktf/provider-vsphere.offlineSoftwareDepot.OfflineSoftwareDepotConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.offlineSoftwareDepot.OfflineSoftwareDepotConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.offlineSoftwareDepot.OfflineSoftwareDepotConfig.property.location">Location</a></code> | <code>*string</code> | The remote location where the contents for this depot are served. |
-| <code><a href="#@cdktf/provider-vsphere.offlineSoftwareDepot.OfflineSoftwareDepotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/offline_software_depot#id OfflineSoftwareDepot#id}. |
+| <code><a href="#@cdktf/provider-vsphere.offlineSoftwareDepot.OfflineSoftwareDepotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/offline_software_depot#id OfflineSoftwareDepot#id}. |
 
 ---
 
@@ -853,7 +853,7 @@ Location *string
 
 The remote location where the contents for this depot are served.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/offline_software_depot#location OfflineSoftwareDepot#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/offline_software_depot#location OfflineSoftwareDepot#location}
 
 ---
 
@@ -865,7 +865,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/offline_software_depot#id OfflineSoftwareDepot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/offline_software_depot#id OfflineSoftwareDepot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -879,7 +879,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.offlineSoftwareDepot.OfflineSoftwareDepotComponentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/offlinesoftwaredepot"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/offlinesoftwaredepot"
 
 offlinesoftwaredepot.NewOfflineSoftwareDepotComponentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OfflineSoftwareDepotComponentList
 ```
@@ -1028,7 +1028,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.offlineSoftwareDepot.OfflineSoftwareDepotComponentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/offlinesoftwaredepot"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/offlinesoftwaredepot"
 
 offlinesoftwaredepot.NewOfflineSoftwareDepotComponentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OfflineSoftwareDepotComponentOutputReference
 ```

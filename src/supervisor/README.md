@@ -1,3 +1,3 @@
 # `vsphere_supervisor`
 
-Refer to the Terraform Registry for docs: [`vsphere_supervisor`](https://registry.terraform.io/providers/hashicorp/vsphere/2.9.1/docs/resources/supervisor).
+Refer to the Terraform Registry for docs: [`vsphere_supervisor`](https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/supervisor).
