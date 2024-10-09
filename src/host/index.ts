@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/host
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/host
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,47 +10,47 @@ export interface HostConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID of the vSphere cluster the host will belong to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/host#cluster Host#cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/host#cluster Host#cluster}
   */
   readonly cluster?: string;
   /**
   * Must be set if host is a member of a managed compute_cluster resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/host#cluster_managed Host#cluster_managed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/host#cluster_managed Host#cluster_managed}
   */
   readonly clusterManaged?: boolean | cdktf.IResolvable;
   /**
   * Set the state of the host. If set to false then the host will be asked to disconnect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/host#connected Host#connected}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/host#connected Host#connected}
   */
   readonly connected?: boolean | cdktf.IResolvable;
   /**
   * A list of custom attributes to set on this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/host#custom_attributes Host#custom_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/host#custom_attributes Host#custom_attributes}
   */
   readonly customAttributes?: { [key: string]: string };
   /**
   * ID of the vSphere datacenter the host will belong to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/host#datacenter Host#datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/host#datacenter Host#datacenter}
   */
   readonly datacenter?: string;
   /**
   * Force add the host to the vSphere inventory even if it's already managed by a different vCenter Server instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/host#force Host#force}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/host#force Host#force}
   */
   readonly force?: boolean | cdktf.IResolvable;
   /**
   * FQDN or IP address of the host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/host#hostname Host#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/host#hostname Host#hostname}
   */
   readonly hostname: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/host#id Host#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/host#id Host#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -64,49 +59,49 @@ export interface HostConfig extends cdktf.TerraformMetaArguments {
   /**
   * License key that will be applied to this host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/host#license Host#license}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/host#license Host#license}
   */
   readonly license?: string;
   /**
   * Set the host's lockdown status. Default is disabled. Valid options are 'disabled', 'normal', 'strict'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/host#lockdown Host#lockdown}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/host#lockdown Host#lockdown}
   */
   readonly lockdown?: string;
   /**
   * Set the host's maintenance mode. Default is false
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/host#maintenance Host#maintenance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/host#maintenance Host#maintenance}
   */
   readonly maintenance?: boolean | cdktf.IResolvable;
   /**
   * Password of the administration account of the host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/host#password Host#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/host#password Host#password}
   */
   readonly password: string;
   /**
   * A list of tag IDs to apply to this object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/host#tags Host#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/host#tags Host#tags}
   */
   readonly tags?: string[];
   /**
   * Host's certificate SHA-1 thumbprint. If not set then the CA that signed the host's certificate must be trusted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/host#thumbprint Host#thumbprint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/host#thumbprint Host#thumbprint}
   */
   readonly thumbprint?: string;
   /**
   * Username of the administration account of the host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/host#username Host#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/host#username Host#username}
   */
   readonly username: string;
   /**
   * services block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/host#services Host#services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/host#services Host#services}
   */
   readonly services?: HostServices[] | cdktf.IResolvable;
 }
@@ -114,17 +109,17 @@ export interface HostServicesNtpd {
   /**
   * Whether the NTP service is enabled. Default is false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/host#enabled Host#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/host#enabled Host#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/host#ntp_servers Host#ntp_servers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/host#ntp_servers Host#ntp_servers}
   */
   readonly ntpServers?: string[];
   /**
   * The policy for the NTP service. Valid values are 'Start and stop with host', 'Start and stop manually', 'Start and stop with port usage'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/host#policy Host#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/host#policy Host#policy}
   */
   readonly policy?: string;
 }
@@ -268,7 +263,7 @@ export interface HostServices {
   /**
   * ntpd block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/host#ntpd Host#ntpd}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/host#ntpd Host#ntpd}
   */
   readonly ntpd?: HostServicesNtpd;
 }
@@ -384,7 +379,7 @@ export class HostServicesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/host vsphere_host}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/host vsphere_host}
 */
 export class Host extends cdktf.TerraformResource {
 
@@ -400,7 +395,7 @@ export class Host extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Host resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Host to import
-  * @param importFromId The id of the existing Host that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/host#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Host that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/host#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Host to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -412,7 +407,7 @@ export class Host extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/host vsphere_host} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/host vsphere_host} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -423,7 +418,7 @@ export class Host extends cdktf.TerraformResource {
       terraformResourceType: 'vsphere_host',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.9.2',
+        providerVersion: '2.9.3',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,
