@@ -4,7 +4,7 @@
 
 ### VirtualDisk <a name="VirtualDisk" id="@cdktf/provider-vsphere.virtualDisk.VirtualDisk"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/virtual_disk vsphere_virtual_disk}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/virtual_disk vsphere_virtual_disk}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.virtualDisk.VirtualDisk.Initializer"></a>
 
@@ -502,7 +502,7 @@ The construct id used in the generated config for the VirtualDisk to import.
 
 The id of the existing VirtualDisk that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/virtual_disk#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/virtual_disk#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -910,14 +910,14 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/virtualdisk"
 | <code><a href="#@cdktf/provider-vsphere.virtualDisk.VirtualDiskConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualDisk.VirtualDiskConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualDisk.VirtualDiskConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualDisk.VirtualDiskConfig.property.datastore">Datastore</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/virtual_disk#datastore VirtualDisk#datastore}. |
-| <code><a href="#@cdktf/provider-vsphere.virtualDisk.VirtualDiskConfig.property.size">Size</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/virtual_disk#size VirtualDisk#size}. |
-| <code><a href="#@cdktf/provider-vsphere.virtualDisk.VirtualDiskConfig.property.vmdkPath">VmdkPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/virtual_disk#vmdk_path VirtualDisk#vmdk_path}. |
-| <code><a href="#@cdktf/provider-vsphere.virtualDisk.VirtualDiskConfig.property.adapterType">AdapterType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/virtual_disk#adapter_type VirtualDisk#adapter_type}. |
-| <code><a href="#@cdktf/provider-vsphere.virtualDisk.VirtualDiskConfig.property.createDirectories">CreateDirectories</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/virtual_disk#create_directories VirtualDisk#create_directories}. |
-| <code><a href="#@cdktf/provider-vsphere.virtualDisk.VirtualDiskConfig.property.datacenter">Datacenter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/virtual_disk#datacenter VirtualDisk#datacenter}. |
-| <code><a href="#@cdktf/provider-vsphere.virtualDisk.VirtualDiskConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/virtual_disk#id VirtualDisk#id}. |
-| <code><a href="#@cdktf/provider-vsphere.virtualDisk.VirtualDiskConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/virtual_disk#type VirtualDisk#type}. |
+| <code><a href="#@cdktf/provider-vsphere.virtualDisk.VirtualDiskConfig.property.datastore">Datastore</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/virtual_disk#datastore VirtualDisk#datastore}. |
+| <code><a href="#@cdktf/provider-vsphere.virtualDisk.VirtualDiskConfig.property.size">Size</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/virtual_disk#size VirtualDisk#size}. |
+| <code><a href="#@cdktf/provider-vsphere.virtualDisk.VirtualDiskConfig.property.vmdkPath">VmdkPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/virtual_disk#vmdk_path VirtualDisk#vmdk_path}. |
+| <code><a href="#@cdktf/provider-vsphere.virtualDisk.VirtualDiskConfig.property.adapterType">AdapterType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/virtual_disk#adapter_type VirtualDisk#adapter_type}. |
+| <code><a href="#@cdktf/provider-vsphere.virtualDisk.VirtualDiskConfig.property.createDirectories">CreateDirectories</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/virtual_disk#create_directories VirtualDisk#create_directories}. |
+| <code><a href="#@cdktf/provider-vsphere.virtualDisk.VirtualDiskConfig.property.datacenter">Datacenter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/virtual_disk#datacenter VirtualDisk#datacenter}. |
+| <code><a href="#@cdktf/provider-vsphere.virtualDisk.VirtualDiskConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/virtual_disk#id VirtualDisk#id}. |
+| <code><a href="#@cdktf/provider-vsphere.virtualDisk.VirtualDiskConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/virtual_disk#type VirtualDisk#type}. |
 
 ---
 
@@ -999,7 +999,7 @@ Datastore *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/virtual_disk#datastore VirtualDisk#datastore}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/virtual_disk#datastore VirtualDisk#datastore}.
 
 ---
 
@@ -1011,7 +1011,7 @@ Size *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/virtual_disk#size VirtualDisk#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/virtual_disk#size VirtualDisk#size}.
 
 ---
 
@@ -1023,7 +1023,7 @@ VmdkPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/virtual_disk#vmdk_path VirtualDisk#vmdk_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/virtual_disk#vmdk_path VirtualDisk#vmdk_path}.
 
 ---
 
@@ -1035,7 +1035,7 @@ AdapterType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/virtual_disk#adapter_type VirtualDisk#adapter_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/virtual_disk#adapter_type VirtualDisk#adapter_type}.
 
 ---
 
@@ -1047,7 +1047,7 @@ CreateDirectories interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/virtual_disk#create_directories VirtualDisk#create_directories}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/virtual_disk#create_directories VirtualDisk#create_directories}.
 
 ---
 
@@ -1059,7 +1059,7 @@ Datacenter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/virtual_disk#datacenter VirtualDisk#datacenter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/virtual_disk#datacenter VirtualDisk#datacenter}.
 
 ---
 
@@ -1071,7 +1071,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/virtual_disk#id VirtualDisk#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/virtual_disk#id VirtualDisk#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1086,7 +1086,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/resources/virtual_disk#type VirtualDisk#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/virtual_disk#type VirtualDisk#type}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataVsphereContentLibraryItem <a name="DataVsphereContentLibraryItem" id="@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItem"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/data-sources/content_library_item vsphere_content_library_item}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/content_library_item vsphere_content_library_item}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItem.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataVsphereContentLibraryI
 
 The id of the existing DataVsphereContentLibraryItem that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/data-sources/content_library_item#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/content_library_item#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -669,7 +669,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherecontent
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItemConfig.property.libraryId">LibraryId</a></code> | <code>*string</code> | ID of the content library to contain item. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItemConfig.property.name">Name</a></code> | <code>*string</code> | The name of the content library item. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItemConfig.property.type">Type</a></code> | <code>*string</code> | Type of content library item. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItemConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/data-sources/content_library_item#id DataVsphereContentLibraryItem#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereContentLibraryItem.DataVsphereContentLibraryItemConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/content_library_item#id DataVsphereContentLibraryItem#id}. |
 
 ---
 
@@ -753,7 +753,7 @@ LibraryId *string
 
 ID of the content library to contain item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/data-sources/content_library_item#library_id DataVsphereContentLibraryItem#library_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/content_library_item#library_id DataVsphereContentLibraryItem#library_id}
 
 ---
 
@@ -767,7 +767,7 @@ Name *string
 
 The name of the content library item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/data-sources/content_library_item#name DataVsphereContentLibraryItem#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/content_library_item#name DataVsphereContentLibraryItem#name}
 
 ---
 
@@ -781,7 +781,7 @@ Type *string
 
 Type of content library item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/data-sources/content_library_item#type DataVsphereContentLibraryItem#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/content_library_item#type DataVsphereContentLibraryItem#type}
 
 ---
 
@@ -793,7 +793,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.2/docs/data-sources/content_library_item#id DataVsphereContentLibraryItem#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/content_library_item#id DataVsphereContentLibraryItem#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
