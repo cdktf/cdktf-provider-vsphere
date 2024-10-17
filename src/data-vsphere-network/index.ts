@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/network
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/network
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface DataVsphereNetworkConfig extends cdktf.TerraformMetaArguments {
   /**
   * The managed object ID of the datacenter the network is in. This is required if the supplied path is not an absolute path containing a datacenter and there are multiple datacenters in your infrastructure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/network#datacenter_id DataVsphereNetwork#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/network#datacenter_id DataVsphereNetwork#datacenter_id}
   */
   readonly datacenterId?: string;
   /**
   * Id of the distributed virtual switch of which the port group is a part of
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/network#distributed_virtual_switch_uuid DataVsphereNetwork#distributed_virtual_switch_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/network#distributed_virtual_switch_uuid DataVsphereNetwork#distributed_virtual_switch_uuid}
   */
   readonly distributedVirtualSwitchUuid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/network#id DataVsphereNetwork#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/network#id DataVsphereNetwork#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,13 +34,137 @@ export interface DataVsphereNetworkConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name or path of the network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/network#name DataVsphereNetwork#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/network#name DataVsphereNetwork#name}
   */
   readonly name: string;
+  /**
+  * filter block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/network#filter DataVsphereNetwork#filter}
+  */
+  readonly filter?: DataVsphereNetworkFilter[] | cdktf.IResolvable;
+}
+export interface DataVsphereNetworkFilter {
+  /**
+  * The type of the network (e.g., Network, DistributedVirtualPortgroup, OpaqueNetwork)
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/network#network_type DataVsphereNetwork#network_type}
+  */
+  readonly networkType?: string;
+}
+
+export function dataVsphereNetworkFilterToTerraform(struct?: DataVsphereNetworkFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    network_type: cdktf.stringToTerraform(struct!.networkType),
+  }
+}
+
+
+export function dataVsphereNetworkFilterToHclTerraform(struct?: DataVsphereNetworkFilter | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    network_type: {
+      value: cdktf.stringToHclTerraform(struct!.networkType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataVsphereNetworkFilterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataVsphereNetworkFilter | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._networkType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkType = this._networkType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataVsphereNetworkFilter | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._networkType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._networkType = value.networkType;
+    }
+  }
+
+  // network_type - computed: false, optional: true, required: false
+  private _networkType?: string; 
+  public get networkType() {
+    return this.getStringAttribute('network_type');
+  }
+  public set networkType(value: string) {
+    this._networkType = value;
+  }
+  public resetNetworkType() {
+    this._networkType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkTypeInput() {
+    return this._networkType;
+  }
+}
+
+export class DataVsphereNetworkFilterList extends cdktf.ComplexList {
+  public internalValue? : DataVsphereNetworkFilter[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataVsphereNetworkFilterOutputReference {
+    return new DataVsphereNetworkFilterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/network vsphere_network}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/network vsphere_network}
 */
 export class DataVsphereNetwork extends cdktf.TerraformDataSource {
 
@@ -56,7 +180,7 @@ export class DataVsphereNetwork extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataVsphereNetwork resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVsphereNetwork to import
-  * @param importFromId The id of the existing DataVsphereNetwork that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/network#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVsphereNetwork that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/network#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVsphereNetwork to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +192,7 @@ export class DataVsphereNetwork extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/data-sources/network vsphere_network} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/network vsphere_network} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +203,7 @@ export class DataVsphereNetwork extends cdktf.TerraformDataSource {
       terraformResourceType: 'vsphere_network',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.9.3',
+        providerVersion: '2.10.0',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,
@@ -94,6 +218,7 @@ export class DataVsphereNetwork extends cdktf.TerraformDataSource {
     this._distributedVirtualSwitchUuid = config.distributedVirtualSwitchUuid;
     this._id = config.id;
     this._name = config.name;
+    this._filter.internalValue = config.filter;
   }
 
   // ==========
@@ -166,6 +291,22 @@ export class DataVsphereNetwork extends cdktf.TerraformDataSource {
     return this.getStringAttribute('type');
   }
 
+  // filter - computed: false, optional: true, required: false
+  private _filter = new DataVsphereNetworkFilterList(this, "filter", true);
+  public get filter() {
+    return this._filter;
+  }
+  public putFilter(value: DataVsphereNetworkFilter[] | cdktf.IResolvable) {
+    this._filter.internalValue = value;
+  }
+  public resetFilter() {
+    this._filter.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -176,6 +317,7 @@ export class DataVsphereNetwork extends cdktf.TerraformDataSource {
       distributed_virtual_switch_uuid: cdktf.stringToTerraform(this._distributedVirtualSwitchUuid),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      filter: cdktf.listMapper(dataVsphereNetworkFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 
@@ -204,6 +346,12 @@ export class DataVsphereNetwork extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      filter: {
+        value: cdktf.listMapperHcl(dataVsphereNetworkFilterToHclTerraform, true)(this._filter.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataVsphereNetworkFilterList",
       },
     };
 

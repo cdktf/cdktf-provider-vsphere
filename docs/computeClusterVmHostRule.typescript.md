@@ -4,7 +4,7 @@
 
 ### ComputeClusterVmHostRule <a name="ComputeClusterVmHostRule" id="@cdktf/provider-vsphere.computeClusterVmHostRule.ComputeClusterVmHostRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/compute_cluster_vm_host_rule vsphere_compute_cluster_vm_host_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/compute_cluster_vm_host_rule vsphere_compute_cluster_vm_host_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeClusterVmHostRule.ComputeClusterVmHostRule.Initializer"></a>
 
@@ -502,7 +502,7 @@ The construct id used in the generated config for the ComputeClusterVmHostRule t
 
 The id of the existing ComputeClusterVmHostRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/compute_cluster_vm_host_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/compute_cluster_vm_host_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -900,7 +900,7 @@ const computeClusterVmHostRuleConfig: computeClusterVmHostRule.ComputeClusterVmH
 | <code><a href="#@cdktf/provider-vsphere.computeClusterVmHostRule.ComputeClusterVmHostRuleConfig.property.affinityHostGroupName">affinityHostGroupName</a></code> | <code>string</code> | When this field is used, virtual machines defined in vm_group_name will be run on the hosts defined in this host group. |
 | <code><a href="#@cdktf/provider-vsphere.computeClusterVmHostRule.ComputeClusterVmHostRuleConfig.property.antiAffinityHostGroupName">antiAffinityHostGroupName</a></code> | <code>string</code> | When this field is used, virtual machines defined in vm_group_name will not be run on the hosts defined in this host group. |
 | <code><a href="#@cdktf/provider-vsphere.computeClusterVmHostRule.ComputeClusterVmHostRuleConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable this rule in the cluster. |
-| <code><a href="#@cdktf/provider-vsphere.computeClusterVmHostRule.ComputeClusterVmHostRuleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/compute_cluster_vm_host_rule#id ComputeClusterVmHostRule#id}. |
+| <code><a href="#@cdktf/provider-vsphere.computeClusterVmHostRule.ComputeClusterVmHostRuleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/compute_cluster_vm_host_rule#id ComputeClusterVmHostRule#id}. |
 | <code><a href="#@cdktf/provider-vsphere.computeClusterVmHostRule.ComputeClusterVmHostRuleConfig.property.mandatory">mandatory</a></code> | <code>boolean \| cdktf.IResolvable</code> | When true, prevents any virtual machine operations that may violate this rule. |
 
 ---
@@ -985,7 +985,7 @@ public readonly computeClusterId: string;
 
 The managed object ID of the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/compute_cluster_vm_host_rule#compute_cluster_id ComputeClusterVmHostRule#compute_cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/compute_cluster_vm_host_rule#compute_cluster_id ComputeClusterVmHostRule#compute_cluster_id}
 
 ---
 
@@ -999,7 +999,7 @@ public readonly name: string;
 
 The unique name of the virtual machine group in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/compute_cluster_vm_host_rule#name ComputeClusterVmHostRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/compute_cluster_vm_host_rule#name ComputeClusterVmHostRule#name}
 
 ---
 
@@ -1013,7 +1013,7 @@ public readonly vmGroupName: string;
 
 The name of the virtual machine group to use with this rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/compute_cluster_vm_host_rule#vm_group_name ComputeClusterVmHostRule#vm_group_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/compute_cluster_vm_host_rule#vm_group_name ComputeClusterVmHostRule#vm_group_name}
 
 ---
 
@@ -1027,7 +1027,7 @@ public readonly affinityHostGroupName: string;
 
 When this field is used, virtual machines defined in vm_group_name will be run on the hosts defined in this host group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/compute_cluster_vm_host_rule#affinity_host_group_name ComputeClusterVmHostRule#affinity_host_group_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/compute_cluster_vm_host_rule#affinity_host_group_name ComputeClusterVmHostRule#affinity_host_group_name}
 
 ---
 
@@ -1041,7 +1041,7 @@ public readonly antiAffinityHostGroupName: string;
 
 When this field is used, virtual machines defined in vm_group_name will not be run on the hosts defined in this host group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/compute_cluster_vm_host_rule#anti_affinity_host_group_name ComputeClusterVmHostRule#anti_affinity_host_group_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/compute_cluster_vm_host_rule#anti_affinity_host_group_name ComputeClusterVmHostRule#anti_affinity_host_group_name}
 
 ---
 
@@ -1055,7 +1055,7 @@ public readonly enabled: boolean | IResolvable;
 
 Enable this rule in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/compute_cluster_vm_host_rule#enabled ComputeClusterVmHostRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/compute_cluster_vm_host_rule#enabled ComputeClusterVmHostRule#enabled}
 
 ---
 
@@ -1067,7 +1067,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/compute_cluster_vm_host_rule#id ComputeClusterVmHostRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/compute_cluster_vm_host_rule#id ComputeClusterVmHostRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1084,7 +1084,7 @@ public readonly mandatory: boolean | IResolvable;
 
 When true, prevents any virtual machine operations that may violate this rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.9.3/docs/resources/compute_cluster_vm_host_rule#mandatory ComputeClusterVmHostRule#mandatory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/compute_cluster_vm_host_rule#mandatory ComputeClusterVmHostRule#mandatory}
 
 ---
 
