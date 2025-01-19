@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereGuestOsCustomization.DataVsphereGuestOsCustomization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavsphereguestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereguestoscustomization"
 
 datavsphereguestoscustomization.NewDataVsphereGuestOsCustomization(scope Construct, id *string, config DataVsphereGuestOsCustomizationConfig) DataVsphereGuestOsCustomization
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereGuestOsCustomization.DataVsphereGuestOsCustomization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavsphereguestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereguestoscustomization"
 
 datavsphereguestoscustomization.DataVsphereGuestOsCustomization_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereGuestOsCustomization.DataVsphereGuestOsCustomization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavsphereguestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereguestoscustomization"
 
 datavsphereguestoscustomization.DataVsphereGuestOsCustomization_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datavsphereguestoscustomization.DataVsphereGuestOsCustomization_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereGuestOsCustomization.DataVsphereGuestOsCustomization.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavsphereguestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereguestoscustomization"
 
 datavsphereguestoscustomization.DataVsphereGuestOsCustomization_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datavsphereguestoscustomization.DataVsphereGuestOsCustomization_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.dataVsphereGuestOsCustomization.DataVsphereGuestOsCustomization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavsphereguestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereguestoscustomization"
 
 datavsphereguestoscustomization.DataVsphereGuestOsCustomization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -649,7 +649,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereGuestOsCustomization.DataVsphereGuestOsCustomizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavsphereguestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereguestoscustomization"
 
 &datavsphereguestoscustomization.DataVsphereGuestOsCustomizationConfig {
 	Connection: interface{},
@@ -784,7 +784,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereGuestOsCustomization.DataVsphereGuestOsCustomizationSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavsphereguestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereguestoscustomization"
 
 &datavsphereguestoscustomization.DataVsphereGuestOsCustomizationSpec {
 
@@ -797,7 +797,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavsphereguestos
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereGuestOsCustomization.DataVsphereGuestOsCustomizationSpecLinuxOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavsphereguestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereguestoscustomization"
 
 &datavsphereguestoscustomization.DataVsphereGuestOsCustomizationSpecLinuxOptions {
 
@@ -810,7 +810,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavsphereguestos
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereGuestOsCustomization.DataVsphereGuestOsCustomizationSpecNetworkInterface.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavsphereguestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereguestoscustomization"
 
 &datavsphereguestoscustomization.DataVsphereGuestOsCustomizationSpecNetworkInterface {
 
@@ -823,7 +823,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavsphereguestos
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereGuestOsCustomization.DataVsphereGuestOsCustomizationSpecWindowsOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavsphereguestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereguestoscustomization"
 
 &datavsphereguestoscustomization.DataVsphereGuestOsCustomizationSpecWindowsOptions {
 
@@ -838,7 +838,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavsphereguestos
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereGuestOsCustomization.DataVsphereGuestOsCustomizationSpecLinuxOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavsphereguestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereguestoscustomization"
 
 datavsphereguestoscustomization.NewDataVsphereGuestOsCustomizationSpecLinuxOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataVsphereGuestOsCustomizationSpecLinuxOptionsList
 ```
@@ -987,7 +987,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereGuestOsCustomization.DataVsphereGuestOsCustomizationSpecLinuxOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavsphereguestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereguestoscustomization"
 
 datavsphereguestoscustomization.NewDataVsphereGuestOsCustomizationSpecLinuxOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataVsphereGuestOsCustomizationSpecLinuxOptionsOutputReference
 ```
@@ -1309,7 +1309,7 @@ func InternalValue() DataVsphereGuestOsCustomizationSpecLinuxOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereGuestOsCustomization.DataVsphereGuestOsCustomizationSpecList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavsphereguestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereguestoscustomization"
 
 datavsphereguestoscustomization.NewDataVsphereGuestOsCustomizationSpecList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataVsphereGuestOsCustomizationSpecList
 ```
@@ -1458,7 +1458,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereGuestOsCustomization.DataVsphereGuestOsCustomizationSpecNetworkInterfaceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavsphereguestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereguestoscustomization"
 
 datavsphereguestoscustomization.NewDataVsphereGuestOsCustomizationSpecNetworkInterfaceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataVsphereGuestOsCustomizationSpecNetworkInterfaceList
 ```
@@ -1607,7 +1607,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereGuestOsCustomization.DataVsphereGuestOsCustomizationSpecNetworkInterfaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavsphereguestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereguestoscustomization"
 
 datavsphereguestoscustomization.NewDataVsphereGuestOsCustomizationSpecNetworkInterfaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataVsphereGuestOsCustomizationSpecNetworkInterfaceOutputReference
 ```
@@ -1940,7 +1940,7 @@ func InternalValue() DataVsphereGuestOsCustomizationSpecNetworkInterface
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereGuestOsCustomization.DataVsphereGuestOsCustomizationSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavsphereguestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereguestoscustomization"
 
 datavsphereguestoscustomization.NewDataVsphereGuestOsCustomizationSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataVsphereGuestOsCustomizationSpecOutputReference
 ```
@@ -2273,7 +2273,7 @@ func InternalValue() DataVsphereGuestOsCustomizationSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereGuestOsCustomization.DataVsphereGuestOsCustomizationSpecWindowsOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavsphereguestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereguestoscustomization"
 
 datavsphereguestoscustomization.NewDataVsphereGuestOsCustomizationSpecWindowsOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataVsphereGuestOsCustomizationSpecWindowsOptionsList
 ```
@@ -2422,7 +2422,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereGuestOsCustomization.DataVsphereGuestOsCustomizationSpecWindowsOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavsphereguestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavsphereguestoscustomization"
 
 datavsphereguestoscustomization.NewDataVsphereGuestOsCustomizationSpecWindowsOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataVsphereGuestOsCustomizationSpecWindowsOptionsOutputReference
 ```
