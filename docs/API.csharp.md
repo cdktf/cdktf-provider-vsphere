@@ -48,6 +48,7 @@ The following submodules are available:
 - [datastoreClusterVmAntiAffinityRule](./datastoreClusterVmAntiAffinityRule.csharp.md)
 - [distributedPortGroup](./distributedPortGroup.csharp.md)
 - [distributedVirtualSwitch](./distributedVirtualSwitch.csharp.md)
+- [distributedVirtualSwitchPvlanMapping](./distributedVirtualSwitchPvlanMapping.csharp.md)
 - [dpmHostOverride](./dpmHostOverride.csharp.md)
 - [drsVmOverride](./drsVmOverride.csharp.md)
 - [entityPermissions](./entityPermissions.csharp.md)

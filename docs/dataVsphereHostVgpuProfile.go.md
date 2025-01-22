@@ -4,12 +4,12 @@
 
 ### DataVsphereHostVgpuProfile <a name="DataVsphereHostVgpuProfile" id="@cdktf/provider-vsphere.dataVsphereHostVgpuProfile.DataVsphereHostVgpuProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/host_vgpu_profile vsphere_host_vgpu_profile}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/host_vgpu_profile vsphere_host_vgpu_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereHostVgpuProfile.DataVsphereHostVgpuProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherehostvgpuprofile"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostvgpuprofile"
 
 datavspherehostvgpuprofile.NewDataVsphereHostVgpuProfile(scope Construct, id *string, config DataVsphereHostVgpuProfileConfig) DataVsphereHostVgpuProfile
 ```
@@ -290,7 +290,7 @@ func ResetNameRegex()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereHostVgpuProfile.DataVsphereHostVgpuProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherehostvgpuprofile"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostvgpuprofile"
 
 datavspherehostvgpuprofile.DataVsphereHostVgpuProfile_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereHostVgpuProfile.DataVsphereHostVgpuProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherehostvgpuprofile"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostvgpuprofile"
 
 datavspherehostvgpuprofile.DataVsphereHostVgpuProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datavspherehostvgpuprofile.DataVsphereHostVgpuProfile_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereHostVgpuProfile.DataVsphereHostVgpuProfile.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherehostvgpuprofile"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostvgpuprofile"
 
 datavspherehostvgpuprofile.DataVsphereHostVgpuProfile_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datavspherehostvgpuprofile.DataVsphereHostVgpuProfile_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.dataVsphereHostVgpuProfile.DataVsphereHostVgpuProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherehostvgpuprofile"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostvgpuprofile"
 
 datavspherehostvgpuprofile.DataVsphereHostVgpuProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataVsphereHostVgpuProfile
 
 The id of the existing DataVsphereHostVgpuProfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/host_vgpu_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/host_vgpu_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereHostVgpuProfile.DataVsphereHostVgpuProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherehostvgpuprofile"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostvgpuprofile"
 
 &datavspherehostvgpuprofile.DataVsphereHostVgpuProfileConfig {
 	Connection: interface{},
@@ -662,7 +662,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherehostvgp
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHostVgpuProfile.DataVsphereHostVgpuProfileConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHostVgpuProfile.DataVsphereHostVgpuProfileConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHostVgpuProfile.DataVsphereHostVgpuProfileConfig.property.hostId">HostId</a></code> | <code>*string</code> | The Managed Object ID of the host system. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereHostVgpuProfile.DataVsphereHostVgpuProfileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/host_vgpu_profile#id DataVsphereHostVgpuProfile#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereHostVgpuProfile.DataVsphereHostVgpuProfileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/host_vgpu_profile#id DataVsphereHostVgpuProfile#id}. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereHostVgpuProfile.DataVsphereHostVgpuProfileConfig.property.nameRegex">NameRegex</a></code> | <code>*string</code> | A regular expression used to match the vGPU Profile on the host. |
 
 ---
@@ -747,7 +747,7 @@ HostId *string
 
 The Managed Object ID of the host system.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/host_vgpu_profile#host_id DataVsphereHostVgpuProfile#host_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/host_vgpu_profile#host_id DataVsphereHostVgpuProfile#host_id}
 
 ---
 
@@ -759,7 +759,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/host_vgpu_profile#id DataVsphereHostVgpuProfile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/host_vgpu_profile#id DataVsphereHostVgpuProfile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -776,7 +776,7 @@ NameRegex *string
 
 A regular expression used to match the vGPU Profile on the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/host_vgpu_profile#name_regex DataVsphereHostVgpuProfile#name_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/host_vgpu_profile#name_regex DataVsphereHostVgpuProfile#name_regex}
 
 ---
 
@@ -785,7 +785,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereHostVgpuProfile.DataVsphereHostVgpuProfileVgpuProfiles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherehostvgpuprofile"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostvgpuprofile"
 
 &datavspherehostvgpuprofile.DataVsphereHostVgpuProfileVgpuProfiles {
 
@@ -800,7 +800,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherehostvgp
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereHostVgpuProfile.DataVsphereHostVgpuProfileVgpuProfilesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherehostvgpuprofile"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostvgpuprofile"
 
 datavspherehostvgpuprofile.NewDataVsphereHostVgpuProfileVgpuProfilesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataVsphereHostVgpuProfileVgpuProfilesList
 ```
@@ -949,7 +949,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereHostVgpuProfile.DataVsphereHostVgpuProfileVgpuProfilesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherehostvgpuprofile"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherehostvgpuprofile"
 
 datavspherehostvgpuprofile.NewDataVsphereHostVgpuProfileVgpuProfilesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataVsphereHostVgpuProfileVgpuProfilesOutputReference
 ```

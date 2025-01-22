@@ -48,6 +48,7 @@ The following submodules are available:
 - [datastoreClusterVmAntiAffinityRule](./datastoreClusterVmAntiAffinityRule.java.md)
 - [distributedPortGroup](./distributedPortGroup.java.md)
 - [distributedVirtualSwitch](./distributedVirtualSwitch.java.md)
+- [distributedVirtualSwitchPvlanMapping](./distributedVirtualSwitchPvlanMapping.java.md)
 - [dpmHostOverride](./dpmHostOverride.java.md)
 - [drsVmOverride](./drsVmOverride.java.md)
 - [entityPermissions](./entityPermissions.java.md)

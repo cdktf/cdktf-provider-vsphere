@@ -48,6 +48,7 @@ The following submodules are available:
 - [datastoreClusterVmAntiAffinityRule](./datastoreClusterVmAntiAffinityRule.go.md)
 - [distributedPortGroup](./distributedPortGroup.go.md)
 - [distributedVirtualSwitch](./distributedVirtualSwitch.go.md)
+- [distributedVirtualSwitchPvlanMapping](./distributedVirtualSwitchPvlanMapping.go.md)
 - [dpmHostOverride](./dpmHostOverride.go.md)
 - [drsVmOverride](./drsVmOverride.go.md)
 - [entityPermissions](./entityPermissions.go.md)

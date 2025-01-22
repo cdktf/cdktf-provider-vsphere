@@ -48,6 +48,7 @@ The following submodules are available:
 - [datastoreClusterVmAntiAffinityRule](./datastoreClusterVmAntiAffinityRule.typescript.md)
 - [distributedPortGroup](./distributedPortGroup.typescript.md)
 - [distributedVirtualSwitch](./distributedVirtualSwitch.typescript.md)
+- [distributedVirtualSwitchPvlanMapping](./distributedVirtualSwitchPvlanMapping.typescript.md)
 - [dpmHostOverride](./dpmHostOverride.typescript.md)
 - [drsVmOverride](./drsVmOverride.typescript.md)
 - [entityPermissions](./entityPermissions.typescript.md)

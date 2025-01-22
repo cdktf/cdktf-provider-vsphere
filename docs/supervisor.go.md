@@ -4,12 +4,12 @@
 
 ### Supervisor <a name="Supervisor" id="@cdktf/provider-vsphere.supervisor.Supervisor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor vsphere_supervisor}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor vsphere_supervisor}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.supervisor.Supervisor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.NewSupervisor(scope Construct, id *string, config SupervisorConfig) Supervisor
 ```
@@ -470,7 +470,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.supervisor.Supervisor.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.Supervisor_IsConstruct(x interface{}) *bool
 ```
@@ -502,7 +502,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.supervisor.Supervisor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.Supervisor_IsTerraformElement(x interface{}) *bool
 ```
@@ -516,7 +516,7 @@ supervisor.Supervisor_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.supervisor.Supervisor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.Supervisor_IsTerraformResource(x interface{}) *bool
 ```
@@ -530,7 +530,7 @@ supervisor.Supervisor_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.supervisor.Supervisor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.Supervisor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -559,7 +559,7 @@ The construct id used in the generated config for the Supervisor to import.
 
 The id of the existing Supervisor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1111,7 +1111,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.supervisor.SupervisorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 &supervisor.SupervisorConfig {
 	Connection: interface{},
@@ -1128,10 +1128,10 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
 	EgressCidr: interface{},
 	IngressCidr: interface{},
 	MainDns: *[]*string,
-	ManagementNetwork: github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9.supervisor.SupervisorManagementNetwork,
+	ManagementNetwork: github.com/cdktf/cdktf-provider-vsphere-go/vsphere.supervisor.SupervisorManagementNetwork,
 	PodCidr: interface{},
 	SearchDomains: *[]*string,
-	ServiceCidr: github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9.supervisor.SupervisorServiceCidr,
+	ServiceCidr: github.com/cdktf/cdktf-provider-vsphere-go/vsphere.supervisor.SupervisorServiceCidr,
 	SizingHint: *string,
 	StoragePolicy: *string,
 	WorkerDns: *[]*string,
@@ -1165,7 +1165,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.sizingHint">SizingHint</a></code> | <code>*string</code> | Size of the Kubernetes API server. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.storagePolicy">StoragePolicy</a></code> | <code>*string</code> | The name of a storage policy associated with the datastore where the container images will be stored. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.workerDns">WorkerDns</a></code> | <code>*[]*string</code> | List of DNS servers to use on the worker nodes. |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#id Supervisor#id}. |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#id Supervisor#id}. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.namespace">Namespace</a></code> | <code>interface{}</code> | namespace block. |
 
 ---
@@ -1250,7 +1250,7 @@ Cluster *string
 
 ID of the vSphere cluster on which workload management will be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#cluster Supervisor#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#cluster Supervisor#cluster}
 
 ---
 
@@ -1264,7 +1264,7 @@ ContentLibrary *string
 
 ID of the subscribed content library.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#content_library Supervisor#content_library}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#content_library Supervisor#content_library}
 
 ---
 
@@ -1278,7 +1278,7 @@ DvsUuid *string
 
 The UUID (not ID) of the distributed switch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#dvs_uuid Supervisor#dvs_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#dvs_uuid Supervisor#dvs_uuid}
 
 ---
 
@@ -1292,7 +1292,7 @@ EdgeCluster *string
 
 ID of the NSX Edge Cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#edge_cluster Supervisor#edge_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#edge_cluster Supervisor#edge_cluster}
 
 ---
 
@@ -1306,7 +1306,7 @@ EgressCidr interface{}
 
 egress_cidr block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#egress_cidr Supervisor#egress_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#egress_cidr Supervisor#egress_cidr}
 
 ---
 
@@ -1320,7 +1320,7 @@ IngressCidr interface{}
 
 ingress_cidr block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#ingress_cidr Supervisor#ingress_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#ingress_cidr Supervisor#ingress_cidr}
 
 ---
 
@@ -1334,7 +1334,7 @@ MainDns *[]*string
 
 List of DNS servers to use on the Kubernetes API server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#main_dns Supervisor#main_dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#main_dns Supervisor#main_dns}
 
 ---
 
@@ -1348,7 +1348,7 @@ ManagementNetwork SupervisorManagementNetwork
 
 management_network block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#management_network Supervisor#management_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#management_network Supervisor#management_network}
 
 ---
 
@@ -1362,7 +1362,7 @@ PodCidr interface{}
 
 pod_cidr block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#pod_cidr Supervisor#pod_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#pod_cidr Supervisor#pod_cidr}
 
 ---
 
@@ -1376,7 +1376,7 @@ SearchDomains *[]*string
 
 List of DNS search domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#search_domains Supervisor#search_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#search_domains Supervisor#search_domains}
 
 ---
 
@@ -1390,7 +1390,7 @@ ServiceCidr SupervisorServiceCidr
 
 service_cidr block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#service_cidr Supervisor#service_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#service_cidr Supervisor#service_cidr}
 
 ---
 
@@ -1404,7 +1404,7 @@ SizingHint *string
 
 Size of the Kubernetes API server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#sizing_hint Supervisor#sizing_hint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#sizing_hint Supervisor#sizing_hint}
 
 ---
 
@@ -1418,7 +1418,7 @@ StoragePolicy *string
 
 The name of a storage policy associated with the datastore where the container images will be stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#storage_policy Supervisor#storage_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#storage_policy Supervisor#storage_policy}
 
 ---
 
@@ -1432,7 +1432,7 @@ WorkerDns *[]*string
 
 List of DNS servers to use on the worker nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#worker_dns Supervisor#worker_dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#worker_dns Supervisor#worker_dns}
 
 ---
 
@@ -1444,7 +1444,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#id Supervisor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#id Supervisor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1461,7 +1461,7 @@ Namespace interface{}
 
 namespace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#namespace Supervisor#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#namespace Supervisor#namespace}
 
 ---
 
@@ -1470,7 +1470,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 &supervisor.SupervisorEgressCidr {
 	Address: *string,
@@ -1497,7 +1497,7 @@ Address *string
 
 Network address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#address Supervisor#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#address Supervisor#address}
 
 ---
 
@@ -1511,7 +1511,7 @@ Prefix *f64
 
 Subnet prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#prefix Supervisor#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#prefix Supervisor#prefix}
 
 ---
 
@@ -1520,7 +1520,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 &supervisor.SupervisorIngressCidr {
 	Address: *string,
@@ -1547,7 +1547,7 @@ Address *string
 
 Network address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#address Supervisor#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#address Supervisor#address}
 
 ---
 
@@ -1561,7 +1561,7 @@ Prefix *f64
 
 Subnet prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#prefix Supervisor#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#prefix Supervisor#prefix}
 
 ---
 
@@ -1570,7 +1570,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.supervisor.SupervisorManagementNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 &supervisor.SupervisorManagementNetwork {
 	AddressCount: *f64,
@@ -1603,7 +1603,7 @@ AddressCount *f64
 
 Number of addresses to allocate. Starts from 'starting_address'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#address_count Supervisor#address_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#address_count Supervisor#address_count}
 
 ---
 
@@ -1617,7 +1617,7 @@ Gateway *string
 
 Gateway IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#gateway Supervisor#gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#gateway Supervisor#gateway}
 
 ---
 
@@ -1631,7 +1631,7 @@ Network *string
 
 ID of the network. (e.g. a distributed port group).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#network Supervisor#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#network Supervisor#network}
 
 ---
 
@@ -1645,7 +1645,7 @@ StartingAddress *string
 
 Starting address of the management network range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#starting_address Supervisor#starting_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#starting_address Supervisor#starting_address}
 
 ---
 
@@ -1659,7 +1659,7 @@ SubnetMask *string
 
 Subnet mask.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#subnet_mask Supervisor#subnet_mask}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#subnet_mask Supervisor#subnet_mask}
 
 ---
 
@@ -1668,7 +1668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.supervisor.SupervisorNamespace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 &supervisor.SupervisorNamespace {
 	Name: *string,
@@ -1697,7 +1697,7 @@ Name *string
 
 The name of the namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#name Supervisor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#name Supervisor#name}
 
 ---
 
@@ -1711,7 +1711,7 @@ ContentLibraries *[]*string
 
 A list of content libraries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#content_libraries Supervisor#content_libraries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#content_libraries Supervisor#content_libraries}
 
 ---
 
@@ -1725,7 +1725,7 @@ VmClasses *[]*string
 
 A list of virtual machine classes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#vm_classes Supervisor#vm_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#vm_classes Supervisor#vm_classes}
 
 ---
 
@@ -1734,7 +1734,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.supervisor.SupervisorPodCidr.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 &supervisor.SupervisorPodCidr {
 	Address: *string,
@@ -1761,7 +1761,7 @@ Address *string
 
 Network address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#address Supervisor#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#address Supervisor#address}
 
 ---
 
@@ -1775,7 +1775,7 @@ Prefix *f64
 
 Subnet prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#prefix Supervisor#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#prefix Supervisor#prefix}
 
 ---
 
@@ -1784,7 +1784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.supervisor.SupervisorServiceCidr.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 &supervisor.SupervisorServiceCidr {
 	Address: *string,
@@ -1811,7 +1811,7 @@ Address *string
 
 Network address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#address Supervisor#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#address Supervisor#address}
 
 ---
 
@@ -1825,7 +1825,7 @@ Prefix *f64
 
 Subnet prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/resources/supervisor#prefix Supervisor#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/resources/supervisor#prefix Supervisor#prefix}
 
 ---
 
@@ -1836,7 +1836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.supervisor.SupervisorEgressCidrList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.NewSupervisorEgressCidrList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SupervisorEgressCidrList
 ```
@@ -1996,7 +1996,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.supervisor.SupervisorEgressCidrOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.NewSupervisorEgressCidrOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SupervisorEgressCidrOutputReference
 ```
@@ -2307,7 +2307,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.supervisor.SupervisorIngressCidrList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.NewSupervisorIngressCidrList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SupervisorIngressCidrList
 ```
@@ -2467,7 +2467,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.supervisor.SupervisorIngressCidrOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.NewSupervisorIngressCidrOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SupervisorIngressCidrOutputReference
 ```
@@ -2778,7 +2778,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.supervisor.SupervisorManagementNetworkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.NewSupervisorManagementNetworkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SupervisorManagementNetworkOutputReference
 ```
@@ -3137,7 +3137,7 @@ func InternalValue() SupervisorManagementNetwork
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.supervisor.SupervisorNamespaceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.NewSupervisorNamespaceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SupervisorNamespaceList
 ```
@@ -3297,7 +3297,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.supervisor.SupervisorNamespaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.NewSupervisorNamespaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SupervisorNamespaceOutputReference
 ```
@@ -3644,7 +3644,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.supervisor.SupervisorPodCidrList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.NewSupervisorPodCidrList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SupervisorPodCidrList
 ```
@@ -3804,7 +3804,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.supervisor.SupervisorPodCidrOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.NewSupervisorPodCidrOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SupervisorPodCidrOutputReference
 ```
@@ -4115,7 +4115,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.supervisor.SupervisorServiceCidrOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.NewSupervisorServiceCidrOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SupervisorServiceCidrOutputReference
 ```
