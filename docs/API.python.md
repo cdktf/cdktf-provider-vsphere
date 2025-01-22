@@ -48,6 +48,7 @@ The following submodules are available:
 - [datastoreClusterVmAntiAffinityRule](./datastoreClusterVmAntiAffinityRule.python.md)
 - [distributedPortGroup](./distributedPortGroup.python.md)
 - [distributedVirtualSwitch](./distributedVirtualSwitch.python.md)
+- [distributedVirtualSwitchPvlanMapping](./distributedVirtualSwitchPvlanMapping.python.md)
 - [dpmHostOverride](./dpmHostOverride.python.md)
 - [drsVmOverride](./drsVmOverride.python.md)
 - [entityPermissions](./entityPermissions.python.md)

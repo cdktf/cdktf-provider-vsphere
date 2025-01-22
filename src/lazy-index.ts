@@ -19,6 +19,7 @@ Object.defineProperty(exports, 'datastoreCluster', { get: function () { return r
 Object.defineProperty(exports, 'datastoreClusterVmAntiAffinityRule', { get: function () { return require('./datastore-cluster-vm-anti-affinity-rule'); } });
 Object.defineProperty(exports, 'distributedPortGroup', { get: function () { return require('./distributed-port-group'); } });
 Object.defineProperty(exports, 'distributedVirtualSwitch', { get: function () { return require('./distributed-virtual-switch'); } });
+Object.defineProperty(exports, 'distributedVirtualSwitchPvlanMapping', { get: function () { return require('./distributed-virtual-switch-pvlan-mapping'); } });
 Object.defineProperty(exports, 'dpmHostOverride', { get: function () { return require('./dpm-host-override'); } });
 Object.defineProperty(exports, 'drsVmOverride', { get: function () { return require('./drs-vm-override'); } });
 Object.defineProperty(exports, 'entityPermissions', { get: function () { return require('./entity-permissions'); } });

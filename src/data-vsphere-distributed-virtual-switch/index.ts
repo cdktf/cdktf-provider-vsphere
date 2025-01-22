@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/distributed_virtual_switch
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/distributed_virtual_switch
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataVsphereDistributedVirtualSwitchConfig extends cdktf.Terrafo
   /**
   * The managed object ID of the datacenter the DVS is in. This is required if the supplied path is not an absolute path containing a datacenter and there are multiple datacenters in your infrastructure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/distributed_virtual_switch#datacenter_id DataVsphereDistributedVirtualSwitch#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/distributed_virtual_switch#datacenter_id DataVsphereDistributedVirtualSwitch#datacenter_id}
   */
   readonly datacenterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/distributed_virtual_switch#id DataVsphereDistributedVirtualSwitch#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/distributed_virtual_switch#id DataVsphereDistributedVirtualSwitch#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +28,13 @@ export interface DataVsphereDistributedVirtualSwitchConfig extends cdktf.Terrafo
   /**
   * The name of the distributed virtual switch. This can be a name or path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/distributed_virtual_switch#name DataVsphereDistributedVirtualSwitch#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/distributed_virtual_switch#name DataVsphereDistributedVirtualSwitch#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/distributed_virtual_switch vsphere_distributed_virtual_switch}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/distributed_virtual_switch vsphere_distributed_virtual_switch}
 */
 export class DataVsphereDistributedVirtualSwitch extends cdktf.TerraformDataSource {
 
@@ -50,7 +50,7 @@ export class DataVsphereDistributedVirtualSwitch extends cdktf.TerraformDataSour
   * Generates CDKTF code for importing a DataVsphereDistributedVirtualSwitch resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVsphereDistributedVirtualSwitch to import
-  * @param importFromId The id of the existing DataVsphereDistributedVirtualSwitch that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/distributed_virtual_switch#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVsphereDistributedVirtualSwitch that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/distributed_virtual_switch#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVsphereDistributedVirtualSwitch to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +62,7 @@ export class DataVsphereDistributedVirtualSwitch extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.10.0/docs/data-sources/distributed_virtual_switch vsphere_distributed_virtual_switch} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/distributed_virtual_switch vsphere_distributed_virtual_switch} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +73,7 @@ export class DataVsphereDistributedVirtualSwitch extends cdktf.TerraformDataSour
       terraformResourceType: 'vsphere_distributed_virtual_switch',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.10.0',
+        providerVersion: '2.11.0',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,

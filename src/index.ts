@@ -19,6 +19,7 @@ export * as datastoreCluster from './datastore-cluster';
 export * as datastoreClusterVmAntiAffinityRule from './datastore-cluster-vm-anti-affinity-rule';
 export * as distributedPortGroup from './distributed-port-group';
 export * as distributedVirtualSwitch from './distributed-virtual-switch';
+export * as distributedVirtualSwitchPvlanMapping from './distributed-virtual-switch-pvlan-mapping';
 export * as dpmHostOverride from './dpm-host-override';
 export * as drsVmOverride from './drs-vm-override';
 export * as entityPermissions from './entity-permissions';
