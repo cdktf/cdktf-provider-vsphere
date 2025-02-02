@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.distributedVirtualSwitchPvlanMapping.DistributedVirtualSwitchPvlanMappingA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/distributedvirtualswitchpvlanmapping"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/distributedvirtualswitchpvlanmapping"
 
 distributedvirtualswitchpvlanmapping.NewDistributedVirtualSwitchPvlanMappingA(scope Construct, id *string, config DistributedVirtualSwitchPvlanMappingAConfig) DistributedVirtualSwitchPvlanMappingA
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.distributedVirtualSwitchPvlanMapping.DistributedVirtualSwitchPvlanMappingA.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/distributedvirtualswitchpvlanmapping"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/distributedvirtualswitchpvlanmapping"
 
 distributedvirtualswitchpvlanmapping.DistributedVirtualSwitchPvlanMappingA_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.distributedVirtualSwitchPvlanMapping.DistributedVirtualSwitchPvlanMappingA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/distributedvirtualswitchpvlanmapping"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/distributedvirtualswitchpvlanmapping"
 
 distributedvirtualswitchpvlanmapping.DistributedVirtualSwitchPvlanMappingA_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ distributedvirtualswitchpvlanmapping.DistributedVirtualSwitchPvlanMappingA_IsTer
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.distributedVirtualSwitchPvlanMapping.DistributedVirtualSwitchPvlanMappingA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/distributedvirtualswitchpvlanmapping"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/distributedvirtualswitchpvlanmapping"
 
 distributedvirtualswitchpvlanmapping.DistributedVirtualSwitchPvlanMappingA_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ distributedvirtualswitchpvlanmapping.DistributedVirtualSwitchPvlanMappingA_IsTer
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.distributedVirtualSwitchPvlanMapping.DistributedVirtualSwitchPvlanMappingA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/distributedvirtualswitchpvlanmapping"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/distributedvirtualswitchpvlanmapping"
 
 distributedvirtualswitchpvlanmapping.DistributedVirtualSwitchPvlanMappingA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -784,7 +784,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.distributedVirtualSwitchPvlanMapping.DistributedVirtualSwitchPvlanMappingAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/distributedvirtualswitchpvlanmapping"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/distributedvirtualswitchpvlanmapping"
 
 &distributedvirtualswitchpvlanmapping.DistributedVirtualSwitchPvlanMappingAConfig {
 	Connection: interface{},
