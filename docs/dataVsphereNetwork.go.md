@@ -4,12 +4,12 @@
 
 ### DataVsphereNetwork <a name="DataVsphereNetwork" id="@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/network vsphere_network}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/network vsphere_network}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherenetwork"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherenetwork"
 
 datavspherenetwork.NewDataVsphereNetwork(scope Construct, id *string, config DataVsphereNetworkConfig) DataVsphereNetwork
 ```
@@ -317,7 +317,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherenetwork"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherenetwork"
 
 datavspherenetwork.DataVsphereNetwork_IsConstruct(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherenetwork"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherenetwork"
 
 datavspherenetwork.DataVsphereNetwork_IsTerraformElement(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ datavspherenetwork.DataVsphereNetwork_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherenetwork"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherenetwork"
 
 datavspherenetwork.DataVsphereNetwork_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ datavspherenetwork.DataVsphereNetwork_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherenetwork"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherenetwork"
 
 datavspherenetwork.DataVsphereNetwork_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -406,7 +406,7 @@ The construct id used in the generated config for the DataVsphereNetwork to impo
 
 The id of the existing DataVsphereNetwork that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -705,7 +705,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherenetwork"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherenetwork"
 
 &datavspherenetwork.DataVsphereNetworkConfig {
 	Connection: interface{},
@@ -738,7 +738,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherenetwork
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetworkConfig.property.datacenterId">DatacenterId</a></code> | <code>*string</code> | The managed object ID of the datacenter the network is in. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetworkConfig.property.distributedVirtualSwitchUuid">DistributedVirtualSwitchUuid</a></code> | <code>*string</code> | Id of the distributed virtual switch of which the port group is a part of. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetworkConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetworkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/network#id DataVsphereNetwork#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetworkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/network#id DataVsphereNetwork#id}. |
 
 ---
 
@@ -822,7 +822,7 @@ Name *string
 
 The name or path of the network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/network#name DataVsphereNetwork#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/network#name DataVsphereNetwork#name}
 
 ---
 
@@ -838,7 +838,7 @@ The managed object ID of the datacenter the network is in.
 
 This is required if the supplied path is not an absolute path containing a datacenter and there are multiple datacenters in your infrastructure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/network#datacenter_id DataVsphereNetwork#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/network#datacenter_id DataVsphereNetwork#datacenter_id}
 
 ---
 
@@ -852,7 +852,7 @@ DistributedVirtualSwitchUuid *string
 
 Id of the distributed virtual switch of which the port group is a part of.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/network#distributed_virtual_switch_uuid DataVsphereNetwork#distributed_virtual_switch_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/network#distributed_virtual_switch_uuid DataVsphereNetwork#distributed_virtual_switch_uuid}
 
 ---
 
@@ -866,7 +866,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/network#filter DataVsphereNetwork#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/network#filter DataVsphereNetwork#filter}
 
 ---
 
@@ -878,7 +878,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/network#id DataVsphereNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/network#id DataVsphereNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -890,7 +890,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetworkFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherenetwork"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherenetwork"
 
 &datavspherenetwork.DataVsphereNetworkFilter {
 	NetworkType: *string,
@@ -915,7 +915,7 @@ NetworkType *string
 
 The type of the network (e.g., Network, DistributedVirtualPortgroup, OpaqueNetwork).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/network#network_type DataVsphereNetwork#network_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/network#network_type DataVsphereNetwork#network_type}
 
 ---
 
@@ -926,7 +926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetworkFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherenetwork"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherenetwork"
 
 datavspherenetwork.NewDataVsphereNetworkFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataVsphereNetworkFilterList
 ```
@@ -1086,7 +1086,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetworkFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherenetwork"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherenetwork"
 
 datavspherenetwork.NewDataVsphereNetworkFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataVsphereNetworkFilterOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### DataVsphereLicense <a name="DataVsphereLicense" id="@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicense"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/license vsphere_license}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/license vsphere_license}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicense.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherelicense"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherelicense"
 
 datavspherelicense.NewDataVsphereLicense(scope Construct, id *string, config DataVsphereLicenseConfig) DataVsphereLicense
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicense.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherelicense"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherelicense"
 
 datavspherelicense.DataVsphereLicense_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicense.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherelicense"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherelicense"
 
 datavspherelicense.DataVsphereLicense_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ datavspherelicense.DataVsphereLicense_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicense.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherelicense"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherelicense"
 
 datavspherelicense.DataVsphereLicense_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datavspherelicense.DataVsphereLicense_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicense.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherelicense"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherelicense"
 
 datavspherelicense.DataVsphereLicense_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataVsphereLicense to impo
 
 The id of the existing DataVsphereLicense that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/license#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/license#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -631,7 +631,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicenseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherelicense"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherelicense"
 
 &datavspherelicense.DataVsphereLicenseConfig {
 	Connection: interface{},
@@ -656,7 +656,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherelicense
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicenseConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicenseConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicenseConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicenseConfig.property.licenseKey">LicenseKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/license#license_key DataVsphereLicense#license_key}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicenseConfig.property.licenseKey">LicenseKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/license#license_key DataVsphereLicense#license_key}. |
 
 ---
 
@@ -738,7 +738,7 @@ LicenseKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/license#license_key DataVsphereLicense#license_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/license#license_key DataVsphereLicense#license_key}.
 
 ---
 

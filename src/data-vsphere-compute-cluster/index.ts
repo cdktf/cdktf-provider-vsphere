@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/compute_cluster
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/compute_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface DataVsphereComputeClusterConfig extends cdktf.TerraformMetaArgu
   /**
   * The managed object ID of the datacenter the cluster is located in. Not required if using an absolute path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/compute_cluster#datacenter_id DataVsphereComputeCluster#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/compute_cluster#datacenter_id DataVsphereComputeCluster#datacenter_id}
   */
   readonly datacenterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/compute_cluster#id DataVsphereComputeCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/compute_cluster#id DataVsphereComputeCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +23,13 @@ export interface DataVsphereComputeClusterConfig extends cdktf.TerraformMetaArgu
   /**
   * The name or absolute path to the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/compute_cluster#name DataVsphereComputeCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/compute_cluster#name DataVsphereComputeCluster#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/compute_cluster vsphere_compute_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/compute_cluster vsphere_compute_cluster}
 */
 export class DataVsphereComputeCluster extends cdktf.TerraformDataSource {
 
@@ -50,7 +45,7 @@ export class DataVsphereComputeCluster extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataVsphereComputeCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVsphereComputeCluster to import
-  * @param importFromId The id of the existing DataVsphereComputeCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/compute_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVsphereComputeCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/compute_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVsphereComputeCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +57,7 @@ export class DataVsphereComputeCluster extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/compute_cluster vsphere_compute_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/compute_cluster vsphere_compute_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +68,7 @@ export class DataVsphereComputeCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'vsphere_compute_cluster',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.11.0',
+        providerVersion: '2.11.1',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,
