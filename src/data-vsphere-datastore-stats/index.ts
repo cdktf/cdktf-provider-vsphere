@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/datastore_stats
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/datastore_stats
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface DataVsphereDatastoreStatsConfig extends cdktf.TerraformMetaArgu
   /**
   * The capacity of the datastores.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/datastore_stats#capacity DataVsphereDatastoreStats#capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/datastore_stats#capacity DataVsphereDatastoreStats#capacity}
   */
   readonly capacity?: { [key: string]: string };
   /**
   * The managed object ID of the datacenter to get datastores from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/datastore_stats#datacenter_id DataVsphereDatastoreStats#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/datastore_stats#datacenter_id DataVsphereDatastoreStats#datacenter_id}
   */
   readonly datacenterId: string;
   /**
   * The free space of the datastores.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/datastore_stats#free_space DataVsphereDatastoreStats#free_space}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/datastore_stats#free_space DataVsphereDatastoreStats#free_space}
   */
   readonly freeSpace?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/datastore_stats#id DataVsphereDatastoreStats#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/datastore_stats#id DataVsphereDatastoreStats#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,7 +40,7 @@ export interface DataVsphereDatastoreStatsConfig extends cdktf.TerraformMetaArgu
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/datastore_stats vsphere_datastore_stats}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/datastore_stats vsphere_datastore_stats}
 */
 export class DataVsphereDatastoreStats extends cdktf.TerraformDataSource {
 
@@ -56,7 +56,7 @@ export class DataVsphereDatastoreStats extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataVsphereDatastoreStats resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVsphereDatastoreStats to import
-  * @param importFromId The id of the existing DataVsphereDatastoreStats that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/datastore_stats#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVsphereDatastoreStats that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/datastore_stats#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVsphereDatastoreStats to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +68,7 @@ export class DataVsphereDatastoreStats extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.0/docs/data-sources/datastore_stats vsphere_datastore_stats} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/data-sources/datastore_stats vsphere_datastore_stats} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,7 @@ export class DataVsphereDatastoreStats extends cdktf.TerraformDataSource {
       terraformResourceType: 'vsphere_datastore_stats',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.11.0',
+        providerVersion: '2.11.1',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,
