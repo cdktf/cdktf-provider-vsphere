@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.supervisor.Supervisor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.NewSupervisor(scope Construct, id *string, config SupervisorConfig) Supervisor
 ```
@@ -470,7 +470,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.supervisor.Supervisor.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.Supervisor_IsConstruct(x interface{}) *bool
 ```
@@ -502,7 +502,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.supervisor.Supervisor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.Supervisor_IsTerraformElement(x interface{}) *bool
 ```
@@ -516,7 +516,7 @@ supervisor.Supervisor_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.supervisor.Supervisor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.Supervisor_IsTerraformResource(x interface{}) *bool
 ```
@@ -530,7 +530,7 @@ supervisor.Supervisor_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.supervisor.Supervisor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.Supervisor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1155,7 +1155,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.supervisor.SupervisorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 &supervisor.SupervisorConfig {
 	Connection: interface{},
@@ -1173,10 +1173,10 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
 	IngressCidr: interface{},
 	MainDns: *[]*string,
 	MainNtp: *[]*string,
-	ManagementNetwork: github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9.supervisor.SupervisorManagementNetwork,
+	ManagementNetwork: github.com/cdktf/cdktf-provider-vsphere-go/vsphere.supervisor.SupervisorManagementNetwork,
 	PodCidr: interface{},
 	SearchDomains: *[]*string,
-	ServiceCidr: github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9.supervisor.SupervisorServiceCidr,
+	ServiceCidr: github.com/cdktf/cdktf-provider-vsphere-go/vsphere.supervisor.SupervisorServiceCidr,
 	SizingHint: *string,
 	StoragePolicy: *string,
 	WorkerDns: *[]*string,
@@ -1546,7 +1546,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 &supervisor.SupervisorEgressCidr {
 	Address: *string,
@@ -1596,7 +1596,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 &supervisor.SupervisorIngressCidr {
 	Address: *string,
@@ -1646,7 +1646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.supervisor.SupervisorManagementNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 &supervisor.SupervisorManagementNetwork {
 	AddressCount: *f64,
@@ -1744,7 +1744,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.supervisor.SupervisorNamespace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 &supervisor.SupervisorNamespace {
 	Name: *string,
@@ -1810,7 +1810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.supervisor.SupervisorPodCidr.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 &supervisor.SupervisorPodCidr {
 	Address: *string,
@@ -1860,7 +1860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.supervisor.SupervisorServiceCidr.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 &supervisor.SupervisorServiceCidr {
 	Address: *string,
@@ -1912,7 +1912,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.supervisor.SupervisorEgressCidrList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.NewSupervisorEgressCidrList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SupervisorEgressCidrList
 ```
@@ -2072,7 +2072,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.supervisor.SupervisorEgressCidrOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.NewSupervisorEgressCidrOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SupervisorEgressCidrOutputReference
 ```
@@ -2383,7 +2383,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.supervisor.SupervisorIngressCidrList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.NewSupervisorIngressCidrList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SupervisorIngressCidrList
 ```
@@ -2543,7 +2543,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.supervisor.SupervisorIngressCidrOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.NewSupervisorIngressCidrOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SupervisorIngressCidrOutputReference
 ```
@@ -2854,7 +2854,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.supervisor.SupervisorManagementNetworkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.NewSupervisorManagementNetworkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SupervisorManagementNetworkOutputReference
 ```
@@ -3213,7 +3213,7 @@ func InternalValue() SupervisorManagementNetwork
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.supervisor.SupervisorNamespaceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.NewSupervisorNamespaceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SupervisorNamespaceList
 ```
@@ -3373,7 +3373,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.supervisor.SupervisorNamespaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.NewSupervisorNamespaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SupervisorNamespaceOutputReference
 ```
@@ -3720,7 +3720,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.supervisor.SupervisorPodCidrList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.NewSupervisorPodCidrList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SupervisorPodCidrList
 ```
@@ -3880,7 +3880,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.supervisor.SupervisorPodCidrOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.NewSupervisorPodCidrOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SupervisorPodCidrOutputReference
 ```
@@ -4191,7 +4191,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.supervisor.SupervisorServiceCidrOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/supervisor"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/supervisor"
 
 supervisor.NewSupervisorServiceCidrOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SupervisorServiceCidrOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.guestOsCustomization.GuestOsCustomization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/guestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/guestoscustomization"
 
 guestoscustomization.NewGuestOsCustomization(scope Construct, id *string, config GuestOsCustomizationConfig) GuestOsCustomization
 ```
@@ -405,7 +405,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.guestOsCustomization.GuestOsCustomization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/guestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/guestoscustomization"
 
 guestoscustomization.GuestOsCustomization_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.guestOsCustomization.GuestOsCustomization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/guestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/guestoscustomization"
 
 guestoscustomization.GuestOsCustomization_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ guestoscustomization.GuestOsCustomization_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.guestOsCustomization.GuestOsCustomization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/guestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/guestoscustomization"
 
 guestoscustomization.GuestOsCustomization_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ guestoscustomization.GuestOsCustomization_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.guestOsCustomization.GuestOsCustomization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/guestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/guestoscustomization"
 
 guestoscustomization.GuestOsCustomization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -826,7 +826,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.guestOsCustomization.GuestOsCustomizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/guestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/guestoscustomization"
 
 &guestoscustomization.GuestOsCustomizationConfig {
 	Connection: interface{},
@@ -837,7 +837,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/guestoscustomizati
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	Spec: github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9.guestOsCustomization.GuestOsCustomizationSpec,
+	Spec: github.com/cdktf/cdktf-provider-vsphere-go/vsphere.guestOsCustomization.GuestOsCustomizationSpec,
 	Type: *string,
 	Description: *string,
 	Id: *string,
@@ -1009,16 +1009,16 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.guestOsCustomization.GuestOsCustomizationSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/guestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/guestoscustomization"
 
 &guestoscustomization.GuestOsCustomizationSpec {
 	DnsServerList: *[]*string,
 	DnsSuffixList: *[]*string,
 	Ipv4Gateway: *string,
 	Ipv6Gateway: *string,
-	LinuxOptions: github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9.guestOsCustomization.GuestOsCustomizationSpecLinuxOptions,
+	LinuxOptions: github.com/cdktf/cdktf-provider-vsphere-go/vsphere.guestOsCustomization.GuestOsCustomizationSpecLinuxOptions,
 	NetworkInterface: interface{},
-	WindowsOptions: github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9.guestOsCustomization.GuestOsCustomizationSpecWindowsOptions,
+	WindowsOptions: github.com/cdktf/cdktf-provider-vsphere-go/vsphere.guestOsCustomization.GuestOsCustomizationSpecWindowsOptions,
 	WindowsSysprepText: *string,
 }
 ```
@@ -1159,7 +1159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.guestOsCustomization.GuestOsCustomizationSpecLinuxOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/guestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/guestoscustomization"
 
 &guestoscustomization.GuestOsCustomizationSpecLinuxOptions {
 	Domain: *string,
@@ -1257,7 +1257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.guestOsCustomization.GuestOsCustomizationSpecNetworkInterface.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/guestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/guestoscustomization"
 
 &guestoscustomization.GuestOsCustomizationSpecNetworkInterface {
 	DnsDomain: *string,
@@ -1371,7 +1371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.guestOsCustomization.GuestOsCustomizationSpecWindowsOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/guestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/guestoscustomization"
 
 &guestoscustomization.GuestOsCustomizationSpecWindowsOptions {
 	ComputerName: *string,
@@ -1615,7 +1615,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.guestOsCustomization.GuestOsCustomizationSpecLinuxOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/guestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/guestoscustomization"
 
 guestoscustomization.NewGuestOsCustomizationSpecLinuxOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GuestOsCustomizationSpecLinuxOptionsOutputReference
 ```
@@ -1995,7 +1995,7 @@ func InternalValue() GuestOsCustomizationSpecLinuxOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.guestOsCustomization.GuestOsCustomizationSpecNetworkInterfaceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/guestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/guestoscustomization"
 
 guestoscustomization.NewGuestOsCustomizationSpecNetworkInterfaceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GuestOsCustomizationSpecNetworkInterfaceList
 ```
@@ -2155,7 +2155,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.guestOsCustomization.GuestOsCustomizationSpecNetworkInterfaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/guestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/guestoscustomization"
 
 guestoscustomization.NewGuestOsCustomizationSpecNetworkInterfaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GuestOsCustomizationSpecNetworkInterfaceOutputReference
 ```
@@ -2596,7 +2596,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.guestOsCustomization.GuestOsCustomizationSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/guestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/guestoscustomization"
 
 guestoscustomization.NewGuestOsCustomizationSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GuestOsCustomizationSpecOutputReference
 ```
@@ -3116,7 +3116,7 @@ func InternalValue() GuestOsCustomizationSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.guestOsCustomization.GuestOsCustomizationSpecWindowsOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/guestoscustomization"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/guestoscustomization"
 
 guestoscustomization.NewGuestOsCustomizationSpecWindowsOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GuestOsCustomizationSpecWindowsOptionsOutputReference
 ```
