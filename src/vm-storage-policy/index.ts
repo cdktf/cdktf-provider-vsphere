@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/vm_storage_policy
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/vm_storage_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface VmStoragePolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Description of the storage policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/vm_storage_policy#description VmStoragePolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/vm_storage_policy#description VmStoragePolicy#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/vm_storage_policy#id VmStoragePolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/vm_storage_policy#id VmStoragePolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +28,13 @@ export interface VmStoragePolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the storage policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/vm_storage_policy#name VmStoragePolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/vm_storage_policy#name VmStoragePolicy#name}
   */
   readonly name: string;
   /**
   * tag_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/vm_storage_policy#tag_rules VmStoragePolicy#tag_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/vm_storage_policy#tag_rules VmStoragePolicy#tag_rules}
   */
   readonly tagRules: VmStoragePolicyTagRules[] | cdktf.IResolvable;
 }
@@ -42,19 +42,19 @@ export interface VmStoragePolicyTagRules {
   /**
   * Whether to include or exclude datastores tagged with the provided tags
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/vm_storage_policy#include_datastores_with_tags VmStoragePolicy#include_datastores_with_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/vm_storage_policy#include_datastores_with_tags VmStoragePolicy#include_datastores_with_tags}
   */
   readonly includeDatastoresWithTags?: boolean | cdktf.IResolvable;
   /**
   * The tag category to select the tags from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/vm_storage_policy#tag_category VmStoragePolicy#tag_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/vm_storage_policy#tag_category VmStoragePolicy#tag_category}
   */
   readonly tagCategory: string;
   /**
   * The tags to use for creating a tag-based vm placement rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/vm_storage_policy#tags VmStoragePolicy#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/vm_storage_policy#tags VmStoragePolicy#tags}
   */
   readonly tags: string[];
 }
@@ -222,7 +222,7 @@ export class VmStoragePolicyTagRulesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/vm_storage_policy vsphere_vm_storage_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/vm_storage_policy vsphere_vm_storage_policy}
 */
 export class VmStoragePolicy extends cdktf.TerraformResource {
 
@@ -238,7 +238,7 @@ export class VmStoragePolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VmStoragePolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VmStoragePolicy to import
-  * @param importFromId The id of the existing VmStoragePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/vm_storage_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VmStoragePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/vm_storage_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VmStoragePolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -250,7 +250,7 @@ export class VmStoragePolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/vm_storage_policy vsphere_vm_storage_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/vm_storage_policy vsphere_vm_storage_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -261,7 +261,7 @@ export class VmStoragePolicy extends cdktf.TerraformResource {
       terraformResourceType: 'vsphere_vm_storage_policy',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.11.1',
+        providerVersion: '2.12.0',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,
