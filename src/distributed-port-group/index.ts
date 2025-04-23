@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group
+// https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,107 +10,107 @@ export interface DistributedPortGroupConfig extends cdktf.TerraformMetaArguments
   /**
   * List of active uplinks used for load balancing, matching the names of the uplinks assigned in the DVS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#active_uplinks DistributedPortGroup#active_uplinks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#active_uplinks DistributedPortGroup#active_uplinks}
   */
   readonly activeUplinks?: string[];
   /**
   * Controls whether or not the virtual network adapter is allowed to send network traffic with a different MAC address than that of its own.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#allow_forged_transmits DistributedPortGroup#allow_forged_transmits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#allow_forged_transmits DistributedPortGroup#allow_forged_transmits}
   */
   readonly allowForgedTransmits?: boolean | cdktf.IResolvable;
   /**
   * Controls whether or not the Media Access Control (MAC) address can be changed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#allow_mac_changes DistributedPortGroup#allow_mac_changes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#allow_mac_changes DistributedPortGroup#allow_mac_changes}
   */
   readonly allowMacChanges?: boolean | cdktf.IResolvable;
   /**
   * Enable promiscuous mode on the network. This flag indicates whether or not all traffic is seen on a given port.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#allow_promiscuous DistributedPortGroup#allow_promiscuous}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#allow_promiscuous DistributedPortGroup#allow_promiscuous}
   */
   readonly allowPromiscuous?: boolean | cdktf.IResolvable;
   /**
   * Auto-expands the port group beyond the port count configured in number_of_ports when necessary.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#auto_expand DistributedPortGroup#auto_expand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#auto_expand DistributedPortGroup#auto_expand}
   */
   readonly autoExpand?: boolean | cdktf.IResolvable;
   /**
   * Indicates whether to block all ports by default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#block_all_ports DistributedPortGroup#block_all_ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#block_all_ports DistributedPortGroup#block_all_ports}
   */
   readonly blockAllPorts?: boolean | cdktf.IResolvable;
   /**
   * Allow the blocked setting of an individual port to override the setting in the portgroup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#block_override_allowed DistributedPortGroup#block_override_allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#block_override_allowed DistributedPortGroup#block_override_allowed}
   */
   readonly blockOverrideAllowed?: boolean | cdktf.IResolvable;
   /**
   * Enable beacon probing on the ports this policy applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#check_beacon DistributedPortGroup#check_beacon}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#check_beacon DistributedPortGroup#check_beacon}
   */
   readonly checkBeacon?: boolean | cdktf.IResolvable;
   /**
   * A list of custom attributes to set on this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#custom_attributes DistributedPortGroup#custom_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#custom_attributes DistributedPortGroup#custom_attributes}
   */
   readonly customAttributes?: { [key: string]: string };
   /**
   * The description of the portgroup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#description DistributedPortGroup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#description DistributedPortGroup#description}
   */
   readonly description?: string;
   /**
   * Allow VMDirectPath Gen2 on the ports this policy applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#directpath_gen2_allowed DistributedPortGroup#directpath_gen2_allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#directpath_gen2_allowed DistributedPortGroup#directpath_gen2_allowed}
   */
   readonly directpathGen2Allowed?: boolean | cdktf.IResolvable;
   /**
   * The UUID of the DVS to attach this port group to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#distributed_virtual_switch_uuid DistributedPortGroup#distributed_virtual_switch_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#distributed_virtual_switch_uuid DistributedPortGroup#distributed_virtual_switch_uuid}
   */
   readonly distributedVirtualSwitchUuid: string;
   /**
   * The average egress bandwidth in bits per second if egress shaping is enabled on the port.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#egress_shaping_average_bandwidth DistributedPortGroup#egress_shaping_average_bandwidth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#egress_shaping_average_bandwidth DistributedPortGroup#egress_shaping_average_bandwidth}
   */
   readonly egressShapingAverageBandwidth?: number;
   /**
   * The maximum egress burst size allowed in bytes if egress shaping is enabled on the port.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#egress_shaping_burst_size DistributedPortGroup#egress_shaping_burst_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#egress_shaping_burst_size DistributedPortGroup#egress_shaping_burst_size}
   */
   readonly egressShapingBurstSize?: number;
   /**
   * True if the traffic shaper is enabled for egress traffic on the port.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#egress_shaping_enabled DistributedPortGroup#egress_shaping_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#egress_shaping_enabled DistributedPortGroup#egress_shaping_enabled}
   */
   readonly egressShapingEnabled?: boolean | cdktf.IResolvable;
   /**
   * The peak egress bandwidth during bursts in bits per second if egress traffic shaping is enabled on the port.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#egress_shaping_peak_bandwidth DistributedPortGroup#egress_shaping_peak_bandwidth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#egress_shaping_peak_bandwidth DistributedPortGroup#egress_shaping_peak_bandwidth}
   */
   readonly egressShapingPeakBandwidth?: number;
   /**
   * If true, the teaming policy will re-activate failed interfaces higher in precedence when they come back up.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#failback DistributedPortGroup#failback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#failback DistributedPortGroup#failback}
   */
   readonly failback?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#id DistributedPortGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#id DistributedPortGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -124,175 +119,175 @@ export interface DistributedPortGroupConfig extends cdktf.TerraformMetaArguments
   /**
   * The average ingress bandwidth in bits per second if ingress shaping is enabled on the port.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#ingress_shaping_average_bandwidth DistributedPortGroup#ingress_shaping_average_bandwidth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#ingress_shaping_average_bandwidth DistributedPortGroup#ingress_shaping_average_bandwidth}
   */
   readonly ingressShapingAverageBandwidth?: number;
   /**
   * The maximum ingress burst size allowed in bytes if ingress shaping is enabled on the port.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#ingress_shaping_burst_size DistributedPortGroup#ingress_shaping_burst_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#ingress_shaping_burst_size DistributedPortGroup#ingress_shaping_burst_size}
   */
   readonly ingressShapingBurstSize?: number;
   /**
   * True if the traffic shaper is enabled for ingress traffic on the port.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#ingress_shaping_enabled DistributedPortGroup#ingress_shaping_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#ingress_shaping_enabled DistributedPortGroup#ingress_shaping_enabled}
   */
   readonly ingressShapingEnabled?: boolean | cdktf.IResolvable;
   /**
   * The peak ingress bandwidth during bursts in bits per second if ingress traffic shaping is enabled on the port.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#ingress_shaping_peak_bandwidth DistributedPortGroup#ingress_shaping_peak_bandwidth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#ingress_shaping_peak_bandwidth DistributedPortGroup#ingress_shaping_peak_bandwidth}
   */
   readonly ingressShapingPeakBandwidth?: number;
   /**
   * Whether or not to enable LACP on all uplink ports.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#lacp_enabled DistributedPortGroup#lacp_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#lacp_enabled DistributedPortGroup#lacp_enabled}
   */
   readonly lacpEnabled?: boolean | cdktf.IResolvable;
   /**
   * The uplink LACP mode to use. Can be one of active or passive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#lacp_mode DistributedPortGroup#lacp_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#lacp_mode DistributedPortGroup#lacp_mode}
   */
   readonly lacpMode?: string;
   /**
   * Allow a live port to be moved in and out of the portgroup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#live_port_moving_allowed DistributedPortGroup#live_port_moving_allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#live_port_moving_allowed DistributedPortGroup#live_port_moving_allowed}
   */
   readonly livePortMovingAllowed?: boolean | cdktf.IResolvable;
   /**
   * The name of the portgroup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#name DistributedPortGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#name DistributedPortGroup#name}
   */
   readonly name: string;
   /**
   * Indicates whether to enable netflow on all ports.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#netflow_enabled DistributedPortGroup#netflow_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#netflow_enabled DistributedPortGroup#netflow_enabled}
   */
   readonly netflowEnabled?: boolean | cdktf.IResolvable;
   /**
   * Allow the enabling or disabling of Netflow on a port, contrary to the policy in the portgroup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#netflow_override_allowed DistributedPortGroup#netflow_override_allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#netflow_override_allowed DistributedPortGroup#netflow_override_allowed}
   */
   readonly netflowOverrideAllowed?: boolean | cdktf.IResolvable;
   /**
   * The key of a network resource pool to associate with this portgroup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#network_resource_pool_key DistributedPortGroup#network_resource_pool_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#network_resource_pool_key DistributedPortGroup#network_resource_pool_key}
   */
   readonly networkResourcePoolKey?: string;
   /**
   * Allow the network resource pool of an individual port to override the setting in the portgroup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#network_resource_pool_override_allowed DistributedPortGroup#network_resource_pool_override_allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#network_resource_pool_override_allowed DistributedPortGroup#network_resource_pool_override_allowed}
   */
   readonly networkResourcePoolOverrideAllowed?: boolean | cdktf.IResolvable;
   /**
   * If true, the teaming policy will notify the broadcast network of a NIC failover, triggering cache updates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#notify_switches DistributedPortGroup#notify_switches}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#notify_switches DistributedPortGroup#notify_switches}
   */
   readonly notifySwitches?: boolean | cdktf.IResolvable;
   /**
   * The number of ports in this portgroup. The DVS will expand and shrink by modifying this setting.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#number_of_ports DistributedPortGroup#number_of_ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#number_of_ports DistributedPortGroup#number_of_ports}
   */
   readonly numberOfPorts?: number;
   /**
   * Reset the setting of any ports in this portgroup back to the default setting when the port disconnects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#port_config_reset_at_disconnect DistributedPortGroup#port_config_reset_at_disconnect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#port_config_reset_at_disconnect DistributedPortGroup#port_config_reset_at_disconnect}
   */
   readonly portConfigResetAtDisconnect?: boolean | cdktf.IResolvable;
   /**
   * A template string to use when creating ports in the portgroup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#port_name_format DistributedPortGroup#port_name_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#port_name_format DistributedPortGroup#port_name_format}
   */
   readonly portNameFormat?: string;
   /**
   * The secondary VLAN ID for this port.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#port_private_secondary_vlan_id DistributedPortGroup#port_private_secondary_vlan_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#port_private_secondary_vlan_id DistributedPortGroup#port_private_secondary_vlan_id}
   */
   readonly portPrivateSecondaryVlanId?: number;
   /**
   * Allow security policy settings on a port to override those on the portgroup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#security_policy_override_allowed DistributedPortGroup#security_policy_override_allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#security_policy_override_allowed DistributedPortGroup#security_policy_override_allowed}
   */
   readonly securityPolicyOverrideAllowed?: boolean | cdktf.IResolvable;
   /**
   * Allow the traffic shaping policies of an individual port to override the settings in the portgroup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#shaping_override_allowed DistributedPortGroup#shaping_override_allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#shaping_override_allowed DistributedPortGroup#shaping_override_allowed}
   */
   readonly shapingOverrideAllowed?: boolean | cdktf.IResolvable;
   /**
   * List of standby uplinks used for load balancing, matching the names of the uplinks assigned in the DVS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#standby_uplinks DistributedPortGroup#standby_uplinks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#standby_uplinks DistributedPortGroup#standby_uplinks}
   */
   readonly standbyUplinks?: string[];
   /**
   * A list of tag IDs to apply to this object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#tags DistributedPortGroup#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#tags DistributedPortGroup#tags}
   */
   readonly tags?: string[];
   /**
   * The network adapter teaming policy. Can be one of loadbalance_ip, loadbalance_srcmac, loadbalance_srcid, failover_explicit, or loadbalance_loadbased.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#teaming_policy DistributedPortGroup#teaming_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#teaming_policy DistributedPortGroup#teaming_policy}
   */
   readonly teamingPolicy?: string;
   /**
   * Allow any filter policies set on the individual port to override those in the portgroup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#traffic_filter_override_allowed DistributedPortGroup#traffic_filter_override_allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#traffic_filter_override_allowed DistributedPortGroup#traffic_filter_override_allowed}
   */
   readonly trafficFilterOverrideAllowed?: boolean | cdktf.IResolvable;
   /**
   * If true, a copy of packets sent to the switch will always be forwarded to an uplink in addition to the regular packet forwarded done by the switch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#tx_uplink DistributedPortGroup#tx_uplink}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#tx_uplink DistributedPortGroup#tx_uplink}
   */
   readonly txUplink?: boolean | cdktf.IResolvable;
   /**
   * The type of portgroup. Can be one of earlyBinding (static) or ephemeral.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#type DistributedPortGroup#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#type DistributedPortGroup#type}
   */
   readonly type?: string;
   /**
   * Allow the uplink teaming policies on a port to override those on the portgroup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#uplink_teaming_override_allowed DistributedPortGroup#uplink_teaming_override_allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#uplink_teaming_override_allowed DistributedPortGroup#uplink_teaming_override_allowed}
   */
   readonly uplinkTeamingOverrideAllowed?: boolean | cdktf.IResolvable;
   /**
   * The VLAN ID for single VLAN mode. 0 denotes no VLAN.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#vlan_id DistributedPortGroup#vlan_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#vlan_id DistributedPortGroup#vlan_id}
   */
   readonly vlanId?: number;
   /**
   * Allow the VLAN configuration on a port to override those on the portgroup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#vlan_override_allowed DistributedPortGroup#vlan_override_allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#vlan_override_allowed DistributedPortGroup#vlan_override_allowed}
   */
   readonly vlanOverrideAllowed?: boolean | cdktf.IResolvable;
   /**
   * vlan_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#vlan_range DistributedPortGroup#vlan_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#vlan_range DistributedPortGroup#vlan_range}
   */
   readonly vlanRange?: DistributedPortGroupVlanRange[] | cdktf.IResolvable;
 }
@@ -300,13 +295,13 @@ export interface DistributedPortGroupVlanRange {
   /**
   * The minimum VLAN to use in the range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#max_vlan DistributedPortGroup#max_vlan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#max_vlan DistributedPortGroup#max_vlan}
   */
   readonly maxVlan: number;
   /**
   * The minimum VLAN to use in the range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#min_vlan DistributedPortGroup#min_vlan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#min_vlan DistributedPortGroup#min_vlan}
   */
   readonly minVlan: number;
 }
@@ -445,7 +440,7 @@ export class DistributedPortGroupVlanRangeList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group vsphere_distributed_port_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group vsphere_distributed_port_group}
 */
 export class DistributedPortGroup extends cdktf.TerraformResource {
 
@@ -461,7 +456,7 @@ export class DistributedPortGroup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DistributedPortGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DistributedPortGroup to import
-  * @param importFromId The id of the existing DistributedPortGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DistributedPortGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DistributedPortGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -473,7 +468,7 @@ export class DistributedPortGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.11.1/docs/resources/distributed_port_group vsphere_distributed_port_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/distributed_port_group vsphere_distributed_port_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -484,7 +479,7 @@ export class DistributedPortGroup extends cdktf.TerraformResource {
       terraformResourceType: 'vsphere_distributed_port_group',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.11.1',
+        providerVersion: '2.12.0',
         providerVersionConstraint: '~> 2.2'
       },
       provider: config.provider,
