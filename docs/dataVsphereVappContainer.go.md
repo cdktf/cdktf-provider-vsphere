@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherevappcontainer"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/datavspherevappcontainer"
 
 datavspherevappcontainer.NewDataVsphereVappContainer(scope Construct, id *string, config DataVsphereVappContainerConfig) DataVsphereVappContainer
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherevappcontainer"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/datavspherevappcontainer"
 
 datavspherevappcontainer.DataVsphereVappContainer_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherevappcontainer"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/datavspherevappcontainer"
 
 datavspherevappcontainer.DataVsphereVappContainer_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datavspherevappcontainer.DataVsphereVappContainer_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainer.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherevappcontainer"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/datavspherevappcontainer"
 
 datavspherevappcontainer.DataVsphereVappContainer_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datavspherevappcontainer.DataVsphereVappContainer_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherevappcontainer"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/datavspherevappcontainer"
 
 datavspherevappcontainer.DataVsphereVappContainer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -616,7 +616,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereVappContainer.DataVsphereVappContainerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v9/datavspherevappcontainer"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/datavspherevappcontainer"
 
 &datavspherevappcontainer.DataVsphereVappContainerConfig {
 	Connection: interface{},
