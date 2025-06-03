@@ -13,8 +13,8 @@ const actions = require("@actions/core");
 // const { versionMatchesConstraint } = require('cdktf-cli/lib/dependencies/version-constraints');
 
 // set by the projen file that generates this script
-const CONSTRAINT = "~> 2.2";
-const FQ_PROVIDER_NAME = "hashicorp/vsphere";
+const CONSTRAINT = "~> 2.13";
+const FQ_PROVIDER_NAME = "vmware/vsphere";
 
 (async function main() {
   if (await newerMatchingProviderVersionExists()) {
