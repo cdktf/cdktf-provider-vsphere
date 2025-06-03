@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/file
+// https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/file
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,44 +8,58 @@ import * as cdktf from 'cdktf';
 
 export interface FileConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/file#create_directories File#create_directories}
+  * Specifies whether to create the parent directories of the destination file if they do not exist.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/file#create_directories File#create_directories}
   */
   readonly createDirectories?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/file#datacenter File#datacenter}
+  * The name of a datacenter to which the file will be uploaded.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/file#datacenter File#datacenter}
   */
   readonly datacenter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/file#datastore File#datastore}
+  * The name of the datastore to which to upload the file.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/file#datastore File#datastore}
   */
   readonly datastore: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/file#destination_file File#destination_file}
+  * The path to where the file should be uploaded or copied to on the destination datastore.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/file#destination_file File#destination_file}
   */
   readonly destinationFile: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/file#id File#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/file#id File#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/file#source_datacenter File#source_datacenter}
+  * The name of a datacenter from which the file will be copied.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/file#source_datacenter File#source_datacenter}
   */
   readonly sourceDatacenter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/file#source_datastore File#source_datastore}
+  * The name of the datastore from which file will be copied.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/file#source_datastore File#source_datastore}
   */
   readonly sourceDatastore?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/file#source_file File#source_file}
+  * The path to the file being uploaded from or copied.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/file#source_file File#source_file}
   */
   readonly sourceFile: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/file vsphere_file}
+* Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/file vsphere_file}
 */
 export class File extends cdktf.TerraformResource {
 
@@ -66,7 +75,7 @@ export class File extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a File resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the File to import
-  * @param importFromId The id of the existing File that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/file#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing File that should be imported. Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/file#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the File to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -78,7 +87,7 @@ export class File extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/file vsphere_file} Resource
+  * Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/file vsphere_file} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -89,8 +98,8 @@ export class File extends cdktf.TerraformResource {
       terraformResourceType: 'vsphere_file',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.12.0',
-        providerVersionConstraint: '~> 2.2'
+        providerVersion: '2.13.0',
+        providerVersionConstraint: '~> 2.13'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

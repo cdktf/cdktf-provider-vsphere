@@ -7,7 +7,7 @@ const { CdktfProviderProject } = require("@cdktf/provider-project");
 
 const project = new CdktfProviderProject({
   useCustomGithubRunner: false,
-  terraformProvider: "vsphere@~> 2.2",
+  terraformProvider: "vmware/vsphere@~> 2.13",
   cdktfVersion: "^0.20.0",
   constructsVersion: "^10.3.0",
   minNodeVersion: "20.9.0",
