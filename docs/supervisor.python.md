@@ -4,7 +4,7 @@
 
 ### Supervisor <a name="Supervisor" id="@cdktf/provider-vsphere.supervisor.Supervisor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor vsphere_supervisor}.
+Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor vsphere_supervisor}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.supervisor.Supervisor.Initializer"></a>
 
@@ -69,7 +69,7 @@ supervisor.Supervisor(
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.storagePolicy">storage_policy</a></code> | <code>str</code> | The name of a storage policy associated with the datastore where the container images will be stored. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.workerDns">worker_dns</a></code> | <code>typing.List[str]</code> | List of DNS servers to use on the worker nodes. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.workerNtp">worker_ntp</a></code> | <code>typing.List[str]</code> | List of NTP servers to use on the worker nodes. |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#id Supervisor#id}. |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#id Supervisor#id}. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.namespace">namespace</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>]]</code> | namespace block. |
 
 ---
@@ -140,7 +140,7 @@ Must be unique amongst siblings in the same scope
 
 ID of the vSphere cluster on which workload management will be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#cluster Supervisor#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#cluster Supervisor#cluster}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ID of the subscribed content library.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#content_library Supervisor#content_library}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#content_library Supervisor#content_library}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The UUID (not ID) of the distributed switch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#dvs_uuid Supervisor#dvs_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#dvs_uuid Supervisor#dvs_uuid}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ID of the NSX Edge Cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#edge_cluster Supervisor#edge_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#edge_cluster Supervisor#edge_cluster}
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 egress_cidr block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#egress_cidr Supervisor#egress_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#egress_cidr Supervisor#egress_cidr}
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ingress_cidr block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#ingress_cidr Supervisor#ingress_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#ingress_cidr Supervisor#ingress_cidr}
 
 ---
 
@@ -200,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of DNS servers to use on the Kubernetes API server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#main_dns Supervisor#main_dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#main_dns Supervisor#main_dns}
 
 ---
 
@@ -210,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of NTP servers to use on the Kubernetes API server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#main_ntp Supervisor#main_ntp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#main_ntp Supervisor#main_ntp}
 
 ---
 
@@ -220,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 management_network block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#management_network Supervisor#management_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#management_network Supervisor#management_network}
 
 ---
 
@@ -230,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 pod_cidr block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#pod_cidr Supervisor#pod_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#pod_cidr Supervisor#pod_cidr}
 
 ---
 
@@ -240,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of DNS search domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#search_domains Supervisor#search_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#search_domains Supervisor#search_domains}
 
 ---
 
@@ -250,7 +250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 service_cidr block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#service_cidr Supervisor#service_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#service_cidr Supervisor#service_cidr}
 
 ---
 
@@ -260,7 +260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Size of the Kubernetes API server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#sizing_hint Supervisor#sizing_hint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#sizing_hint Supervisor#sizing_hint}
 
 ---
 
@@ -270,7 +270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of a storage policy associated with the datastore where the container images will be stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#storage_policy Supervisor#storage_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#storage_policy Supervisor#storage_policy}
 
 ---
 
@@ -280,7 +280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of DNS servers to use on the worker nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#worker_dns Supervisor#worker_dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#worker_dns Supervisor#worker_dns}
 
 ---
 
@@ -290,7 +290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of NTP servers to use on the worker nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#worker_ntp Supervisor#worker_ntp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#worker_ntp Supervisor#worker_ntp}
 
 ---
 
@@ -298,7 +298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#id Supervisor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#id Supervisor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -311,7 +311,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 namespace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#namespace Supervisor#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#namespace Supervisor#namespace}
 
 ---
 
@@ -724,7 +724,7 @@ def put_management_network(
 
 Number of addresses to allocate. Starts from 'starting_address'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#address_count Supervisor#address_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#address_count Supervisor#address_count}
 
 ---
 
@@ -734,7 +734,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Gateway IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#gateway Supervisor#gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#gateway Supervisor#gateway}
 
 ---
 
@@ -744,7 +744,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ID of the network. (e.g. a distributed port group).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#network Supervisor#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#network Supervisor#network}
 
 ---
 
@@ -754,7 +754,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Starting address of the management network range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#starting_address Supervisor#starting_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#starting_address Supervisor#starting_address}
 
 ---
 
@@ -764,7 +764,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Subnet mask.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#subnet_mask Supervisor#subnet_mask}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#subnet_mask Supervisor#subnet_mask}
 
 ---
 
@@ -811,7 +811,7 @@ def put_service_cidr(
 
 Network address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#address Supervisor#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#address Supervisor#address}
 
 ---
 
@@ -821,7 +821,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Subnet prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#prefix Supervisor#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#prefix Supervisor#prefix}
 
 ---
 
@@ -951,7 +951,7 @@ The construct id used in the generated config for the Supervisor to import.
 
 The id of the existing Supervisor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1605,7 +1605,7 @@ supervisor.SupervisorConfig(
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.storagePolicy">storage_policy</a></code> | <code>str</code> | The name of a storage policy associated with the datastore where the container images will be stored. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.workerDns">worker_dns</a></code> | <code>typing.List[str]</code> | List of DNS servers to use on the worker nodes. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.workerNtp">worker_ntp</a></code> | <code>typing.List[str]</code> | List of NTP servers to use on the worker nodes. |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#id Supervisor#id}. |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#id Supervisor#id}. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.namespace">namespace</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>]]</code> | namespace block. |
 
 ---
@@ -1690,7 +1690,7 @@ cluster: str
 
 ID of the vSphere cluster on which workload management will be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#cluster Supervisor#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#cluster Supervisor#cluster}
 
 ---
 
@@ -1704,7 +1704,7 @@ content_library: str
 
 ID of the subscribed content library.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#content_library Supervisor#content_library}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#content_library Supervisor#content_library}
 
 ---
 
@@ -1718,7 +1718,7 @@ dvs_uuid: str
 
 The UUID (not ID) of the distributed switch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#dvs_uuid Supervisor#dvs_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#dvs_uuid Supervisor#dvs_uuid}
 
 ---
 
@@ -1732,7 +1732,7 @@ edge_cluster: str
 
 ID of the NSX Edge Cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#edge_cluster Supervisor#edge_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#edge_cluster Supervisor#edge_cluster}
 
 ---
 
@@ -1746,7 +1746,7 @@ egress_cidr: typing.Union[IResolvable, typing.List[SupervisorEgressCidr]]
 
 egress_cidr block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#egress_cidr Supervisor#egress_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#egress_cidr Supervisor#egress_cidr}
 
 ---
 
@@ -1760,7 +1760,7 @@ ingress_cidr: typing.Union[IResolvable, typing.List[SupervisorIngressCidr]]
 
 ingress_cidr block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#ingress_cidr Supervisor#ingress_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#ingress_cidr Supervisor#ingress_cidr}
 
 ---
 
@@ -1774,7 +1774,7 @@ main_dns: typing.List[str]
 
 List of DNS servers to use on the Kubernetes API server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#main_dns Supervisor#main_dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#main_dns Supervisor#main_dns}
 
 ---
 
@@ -1788,7 +1788,7 @@ main_ntp: typing.List[str]
 
 List of NTP servers to use on the Kubernetes API server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#main_ntp Supervisor#main_ntp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#main_ntp Supervisor#main_ntp}
 
 ---
 
@@ -1802,7 +1802,7 @@ management_network: SupervisorManagementNetwork
 
 management_network block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#management_network Supervisor#management_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#management_network Supervisor#management_network}
 
 ---
 
@@ -1816,7 +1816,7 @@ pod_cidr: typing.Union[IResolvable, typing.List[SupervisorPodCidr]]
 
 pod_cidr block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#pod_cidr Supervisor#pod_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#pod_cidr Supervisor#pod_cidr}
 
 ---
 
@@ -1830,7 +1830,7 @@ search_domains: typing.List[str]
 
 List of DNS search domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#search_domains Supervisor#search_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#search_domains Supervisor#search_domains}
 
 ---
 
@@ -1844,7 +1844,7 @@ service_cidr: SupervisorServiceCidr
 
 service_cidr block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#service_cidr Supervisor#service_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#service_cidr Supervisor#service_cidr}
 
 ---
 
@@ -1858,7 +1858,7 @@ sizing_hint: str
 
 Size of the Kubernetes API server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#sizing_hint Supervisor#sizing_hint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#sizing_hint Supervisor#sizing_hint}
 
 ---
 
@@ -1872,7 +1872,7 @@ storage_policy: str
 
 The name of a storage policy associated with the datastore where the container images will be stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#storage_policy Supervisor#storage_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#storage_policy Supervisor#storage_policy}
 
 ---
 
@@ -1886,7 +1886,7 @@ worker_dns: typing.List[str]
 
 List of DNS servers to use on the worker nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#worker_dns Supervisor#worker_dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#worker_dns Supervisor#worker_dns}
 
 ---
 
@@ -1900,7 +1900,7 @@ worker_ntp: typing.List[str]
 
 List of NTP servers to use on the worker nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#worker_ntp Supervisor#worker_ntp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#worker_ntp Supervisor#worker_ntp}
 
 ---
 
@@ -1912,7 +1912,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#id Supervisor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#id Supervisor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1929,7 +1929,7 @@ namespace: typing.Union[IResolvable, typing.List[SupervisorNamespace]]
 
 namespace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#namespace Supervisor#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#namespace Supervisor#namespace}
 
 ---
 
@@ -1965,7 +1965,7 @@ address: str
 
 Network address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#address Supervisor#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#address Supervisor#address}
 
 ---
 
@@ -1979,7 +1979,7 @@ prefix: typing.Union[int, float]
 
 Subnet prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#prefix Supervisor#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#prefix Supervisor#prefix}
 
 ---
 
@@ -2015,7 +2015,7 @@ address: str
 
 Network address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#address Supervisor#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#address Supervisor#address}
 
 ---
 
@@ -2029,7 +2029,7 @@ prefix: typing.Union[int, float]
 
 Subnet prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#prefix Supervisor#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#prefix Supervisor#prefix}
 
 ---
 
@@ -2071,7 +2071,7 @@ address_count: typing.Union[int, float]
 
 Number of addresses to allocate. Starts from 'starting_address'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#address_count Supervisor#address_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#address_count Supervisor#address_count}
 
 ---
 
@@ -2085,7 +2085,7 @@ gateway: str
 
 Gateway IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#gateway Supervisor#gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#gateway Supervisor#gateway}
 
 ---
 
@@ -2099,7 +2099,7 @@ network: str
 
 ID of the network. (e.g. a distributed port group).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#network Supervisor#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#network Supervisor#network}
 
 ---
 
@@ -2113,7 +2113,7 @@ starting_address: str
 
 Starting address of the management network range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#starting_address Supervisor#starting_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#starting_address Supervisor#starting_address}
 
 ---
 
@@ -2127,7 +2127,7 @@ subnet_mask: str
 
 Subnet mask.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#subnet_mask Supervisor#subnet_mask}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#subnet_mask Supervisor#subnet_mask}
 
 ---
 
@@ -2165,7 +2165,7 @@ name: str
 
 The name of the namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#name Supervisor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#name Supervisor#name}
 
 ---
 
@@ -2179,7 +2179,7 @@ content_libraries: typing.List[str]
 
 A list of content libraries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#content_libraries Supervisor#content_libraries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#content_libraries Supervisor#content_libraries}
 
 ---
 
@@ -2193,7 +2193,7 @@ vm_classes: typing.List[str]
 
 A list of virtual machine classes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#vm_classes Supervisor#vm_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#vm_classes Supervisor#vm_classes}
 
 ---
 
@@ -2229,7 +2229,7 @@ address: str
 
 Network address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#address Supervisor#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#address Supervisor#address}
 
 ---
 
@@ -2243,7 +2243,7 @@ prefix: typing.Union[int, float]
 
 Subnet prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#prefix Supervisor#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#prefix Supervisor#prefix}
 
 ---
 
@@ -2279,7 +2279,7 @@ address: str
 
 Network address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#address Supervisor#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#address Supervisor#address}
 
 ---
 
@@ -2293,7 +2293,7 @@ prefix: typing.Union[int, float]
 
 Subnet prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vsphere/2.12.0/docs/resources/supervisor#prefix Supervisor#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/supervisor#prefix Supervisor#prefix}
 
 ---
 

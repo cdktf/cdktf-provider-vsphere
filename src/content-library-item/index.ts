@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/content_library_item
 // generated from terraform resource schema
 
