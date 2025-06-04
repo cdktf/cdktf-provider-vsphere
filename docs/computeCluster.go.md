@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/computecluster"
 
 computecluster.NewComputeCluster(scope Construct, id *string, config ComputeClusterConfig) ComputeCluster
 ```
@@ -906,7 +906,7 @@ func ResetVsanVerboseModeEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/computecluster"
 
 computecluster.ComputeCluster_IsConstruct(x interface{}) *bool
 ```
@@ -938,7 +938,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/computecluster"
 
 computecluster.ComputeCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -952,7 +952,7 @@ computecluster.ComputeCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/computecluster"
 
 computecluster.ComputeCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -966,7 +966,7 @@ computecluster.ComputeCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/computecluster"
 
 computecluster.ComputeCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -2746,7 +2746,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/computecluster"
 
 &computecluster.ComputeClusterConfig {
 	Connection: interface{},
@@ -2802,7 +2802,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/computecluster"
 	HaVmRestartPriority: *string,
 	HaVmRestartTimeout: *f64,
 	HostClusterExitTimeout: *f64,
-	HostImage: github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10.computeCluster.ComputeClusterHostImage,
+	HostImage: github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11.computeCluster.ComputeClusterHostImage,
 	HostManaged: interface{},
 	HostSystemIds: *[]*string,
 	Id: *string,
@@ -2823,7 +2823,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/computecluster"
 	VsanNetworkDiagnosticModeEnabled: interface{},
 	VsanPerformanceEnabled: interface{},
 	VsanRemoteDatastoreIds: *[]*string,
-	VsanStretchedCluster: github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10.computeCluster.ComputeClusterVsanStretchedCluster,
+	VsanStretchedCluster: github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11.computeCluster.ComputeClusterVsanStretchedCluster,
 	VsanUnmapEnabled: interface{},
 	VsanVerboseModeEnabled: interface{},
 }
@@ -4015,7 +4015,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/computecluster"
 
 &computecluster.ComputeClusterHostImage {
 	Component: interface{},
@@ -4065,7 +4065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/computecluster"
 
 &computecluster.ComputeClusterHostImageComponent {
 	Key: *string,
@@ -4115,7 +4115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/computecluster"
 
 &computecluster.ComputeClusterVsanDiskGroup {
 	Cache: *string,
@@ -4165,7 +4165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/computecluster"
 
 &computecluster.ComputeClusterVsanFaultDomains {
 	FaultDomain: interface{},
@@ -4199,7 +4199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/computecluster"
 
 &computecluster.ComputeClusterVsanFaultDomainsFaultDomain {
 	HostIds: *[]*string,
@@ -4249,7 +4249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanStretchedCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/computecluster"
 
 &computecluster.ComputeClusterVsanStretchedCluster {
 	PreferredFaultDomainHostIds: *[]*string,
@@ -4349,7 +4349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/computecluster"
 
 computecluster.NewComputeClusterHostImageComponentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeClusterHostImageComponentList
 ```
@@ -4509,7 +4509,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/computecluster"
 
 computecluster.NewComputeClusterHostImageComponentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeClusterHostImageComponentOutputReference
 ```
@@ -4834,7 +4834,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/computecluster"
 
 computecluster.NewComputeClusterHostImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeClusterHostImageOutputReference
 ```
@@ -5154,7 +5154,7 @@ func InternalValue() ComputeClusterHostImage
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/computecluster"
 
 computecluster.NewComputeClusterVsanDiskGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeClusterVsanDiskGroupList
 ```
@@ -5314,7 +5314,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/computecluster"
 
 computecluster.NewComputeClusterVsanDiskGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeClusterVsanDiskGroupOutputReference
 ```
@@ -5639,7 +5639,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/computecluster"
 
 computecluster.NewComputeClusterVsanFaultDomainsFaultDomainList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeClusterVsanFaultDomainsFaultDomainList
 ```
@@ -5799,7 +5799,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/computecluster"
 
 computecluster.NewComputeClusterVsanFaultDomainsFaultDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeClusterVsanFaultDomainsFaultDomainOutputReference
 ```
@@ -6110,7 +6110,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/computecluster"
 
 computecluster.NewComputeClusterVsanFaultDomainsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeClusterVsanFaultDomainsList
 ```
@@ -6270,7 +6270,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/computecluster"
 
 computecluster.NewComputeClusterVsanFaultDomainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeClusterVsanFaultDomainsOutputReference
 ```
@@ -6579,7 +6579,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanStretchedClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v10/computecluster"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/computecluster"
 
 computecluster.NewComputeClusterVsanStretchedClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeClusterVsanStretchedClusterOutputReference
 ```
