@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/entity_permissions
+// https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/entity_permissions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface EntityPermissionsConfig extends cdktf.TerraformMetaArguments {
   /**
   * The managed object id or uuid of the entity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/entity_permissions#entity_id EntityPermissions#entity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/entity_permissions#entity_id EntityPermissions#entity_id}
   */
   readonly entityId: string;
   /**
   * The entity managed object type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/entity_permissions#entity_type EntityPermissions#entity_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/entity_permissions#entity_type EntityPermissions#entity_type}
   */
   readonly entityType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/entity_permissions#id EntityPermissions#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/entity_permissions#id EntityPermissions#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,7 +34,7 @@ export interface EntityPermissionsConfig extends cdktf.TerraformMetaArguments {
   /**
   * permissions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/entity_permissions#permissions EntityPermissions#permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/entity_permissions#permissions EntityPermissions#permissions}
   */
   readonly permissions: EntityPermissionsPermissions[] | cdktf.IResolvable;
 }
@@ -42,25 +42,25 @@ export interface EntityPermissionsPermissions {
   /**
   * Whether user_or_group field refers to a user or a group. True for a group and false for a user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/entity_permissions#is_group EntityPermissions#is_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/entity_permissions#is_group EntityPermissions#is_group}
   */
   readonly isGroup: boolean | cdktf.IResolvable;
   /**
   * Whether or not this permission propagates down the hierarchy to sub-entities.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/entity_permissions#propagate EntityPermissions#propagate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/entity_permissions#propagate EntityPermissions#propagate}
   */
   readonly propagate: boolean | cdktf.IResolvable;
   /**
   * Reference to the role providing the access.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/entity_permissions#role_id EntityPermissions#role_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/entity_permissions#role_id EntityPermissions#role_id}
   */
   readonly roleId: string;
   /**
   * User or group receiving access.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/entity_permissions#user_or_group EntityPermissions#user_or_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/entity_permissions#user_or_group EntityPermissions#user_or_group}
   */
   readonly userOrGroup: string;
 }
@@ -251,7 +251,7 @@ export class EntityPermissionsPermissionsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/entity_permissions vsphere_entity_permissions}
+* Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/entity_permissions vsphere_entity_permissions}
 */
 export class EntityPermissions extends cdktf.TerraformResource {
 
@@ -267,7 +267,7 @@ export class EntityPermissions extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EntityPermissions resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EntityPermissions to import
-  * @param importFromId The id of the existing EntityPermissions that should be imported. Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/entity_permissions#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EntityPermissions that should be imported. Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/entity_permissions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EntityPermissions to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -279,7 +279,7 @@ export class EntityPermissions extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/entity_permissions vsphere_entity_permissions} Resource
+  * Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/entity_permissions vsphere_entity_permissions} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -290,7 +290,7 @@ export class EntityPermissions extends cdktf.TerraformResource {
       terraformResourceType: 'vsphere_entity_permissions',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.13.0',
+        providerVersion: '2.14.0',
         providerVersionConstraint: '~> 2.13'
       },
       provider: config.provider,
