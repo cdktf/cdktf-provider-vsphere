@@ -4,7 +4,7 @@
 
 ### DistributedPortGroup <a name="DistributedPortGroup" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group vsphere_distributed_port_group}.
+Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group vsphere_distributed_port_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.Initializer"></a>
 
@@ -127,7 +127,7 @@ DistributedPortGroup.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.Initializer.parameter.egressShapingEnabled">egressShapingEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | True if the traffic shaper is enabled for egress traffic on the port. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.Initializer.parameter.egressShapingPeakBandwidth">egressShapingPeakBandwidth</a></code> | <code>java.lang.Number</code> | The peak egress bandwidth during bursts in bits per second if egress traffic shaping is enabled on the port. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.Initializer.parameter.failback">failback</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, the teaming policy will re-activate failed interfaces higher in precedence when they come back up. |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#id DistributedPortGroup#id}. |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#id DistributedPortGroup#id}. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.Initializer.parameter.ingressShapingAverageBandwidth">ingressShapingAverageBandwidth</a></code> | <code>java.lang.Number</code> | The average ingress bandwidth in bits per second if ingress shaping is enabled on the port. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.Initializer.parameter.ingressShapingBurstSize">ingressShapingBurstSize</a></code> | <code>java.lang.Number</code> | The maximum ingress burst size allowed in bytes if ingress shaping is enabled on the port. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.Initializer.parameter.ingressShapingEnabled">ingressShapingEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | True if the traffic shaper is enabled for ingress traffic on the port. |
@@ -225,7 +225,7 @@ Must be unique amongst siblings in the same scope
 
 The UUID of the DVS to attach this port group to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#distributed_virtual_switch_uuid DistributedPortGroup#distributed_virtual_switch_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#distributed_virtual_switch_uuid DistributedPortGroup#distributed_virtual_switch_uuid}
 
 ---
 
@@ -235,7 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 The name of the portgroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#name DistributedPortGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#name DistributedPortGroup#name}
 
 ---
 
@@ -245,7 +245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 List of active uplinks used for load balancing, matching the names of the uplinks assigned in the DVS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#active_uplinks DistributedPortGroup#active_uplinks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#active_uplinks DistributedPortGroup#active_uplinks}
 
 ---
 
@@ -255,7 +255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 Controls whether or not the virtual network adapter is allowed to send network traffic with a different MAC address than that of its own.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#allow_forged_transmits DistributedPortGroup#allow_forged_transmits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#allow_forged_transmits DistributedPortGroup#allow_forged_transmits}
 
 ---
 
@@ -265,7 +265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 Controls whether or not the Media Access Control (MAC) address can be changed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#allow_mac_changes DistributedPortGroup#allow_mac_changes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#allow_mac_changes DistributedPortGroup#allow_mac_changes}
 
 ---
 
@@ -277,7 +277,7 @@ Enable promiscuous mode on the network.
 
 This flag indicates whether or not all traffic is seen on a given port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#allow_promiscuous DistributedPortGroup#allow_promiscuous}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#allow_promiscuous DistributedPortGroup#allow_promiscuous}
 
 ---
 
@@ -287,7 +287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 Auto-expands the port group beyond the port count configured in number_of_ports when necessary.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#auto_expand DistributedPortGroup#auto_expand}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#auto_expand DistributedPortGroup#auto_expand}
 
 ---
 
@@ -297,7 +297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 Indicates whether to block all ports by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#block_all_ports DistributedPortGroup#block_all_ports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#block_all_ports DistributedPortGroup#block_all_ports}
 
 ---
 
@@ -307,7 +307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 Allow the blocked setting of an individual port to override the setting in the portgroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#block_override_allowed DistributedPortGroup#block_override_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#block_override_allowed DistributedPortGroup#block_override_allowed}
 
 ---
 
@@ -317,7 +317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 Enable beacon probing on the ports this policy applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#check_beacon DistributedPortGroup#check_beacon}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#check_beacon DistributedPortGroup#check_beacon}
 
 ---
 
@@ -327,7 +327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 A list of custom attributes to set on this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#custom_attributes DistributedPortGroup#custom_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#custom_attributes DistributedPortGroup#custom_attributes}
 
 ---
 
@@ -337,7 +337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 The description of the portgroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#description DistributedPortGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#description DistributedPortGroup#description}
 
 ---
 
@@ -347,7 +347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 Allow VMDirectPath Gen2 on the ports this policy applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#directpath_gen2_allowed DistributedPortGroup#directpath_gen2_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#directpath_gen2_allowed DistributedPortGroup#directpath_gen2_allowed}
 
 ---
 
@@ -357,7 +357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 The average egress bandwidth in bits per second if egress shaping is enabled on the port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#egress_shaping_average_bandwidth DistributedPortGroup#egress_shaping_average_bandwidth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#egress_shaping_average_bandwidth DistributedPortGroup#egress_shaping_average_bandwidth}
 
 ---
 
@@ -367,7 +367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 The maximum egress burst size allowed in bytes if egress shaping is enabled on the port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#egress_shaping_burst_size DistributedPortGroup#egress_shaping_burst_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#egress_shaping_burst_size DistributedPortGroup#egress_shaping_burst_size}
 
 ---
 
@@ -377,7 +377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 True if the traffic shaper is enabled for egress traffic on the port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#egress_shaping_enabled DistributedPortGroup#egress_shaping_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#egress_shaping_enabled DistributedPortGroup#egress_shaping_enabled}
 
 ---
 
@@ -387,7 +387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 The peak egress bandwidth during bursts in bits per second if egress traffic shaping is enabled on the port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#egress_shaping_peak_bandwidth DistributedPortGroup#egress_shaping_peak_bandwidth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#egress_shaping_peak_bandwidth DistributedPortGroup#egress_shaping_peak_bandwidth}
 
 ---
 
@@ -397,7 +397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 If true, the teaming policy will re-activate failed interfaces higher in precedence when they come back up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#failback DistributedPortGroup#failback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#failback DistributedPortGroup#failback}
 
 ---
 
@@ -405,7 +405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#id DistributedPortGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#id DistributedPortGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -418,7 +418,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The average ingress bandwidth in bits per second if ingress shaping is enabled on the port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#ingress_shaping_average_bandwidth DistributedPortGroup#ingress_shaping_average_bandwidth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#ingress_shaping_average_bandwidth DistributedPortGroup#ingress_shaping_average_bandwidth}
 
 ---
 
@@ -428,7 +428,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 The maximum ingress burst size allowed in bytes if ingress shaping is enabled on the port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#ingress_shaping_burst_size DistributedPortGroup#ingress_shaping_burst_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#ingress_shaping_burst_size DistributedPortGroup#ingress_shaping_burst_size}
 
 ---
 
@@ -438,7 +438,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 True if the traffic shaper is enabled for ingress traffic on the port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#ingress_shaping_enabled DistributedPortGroup#ingress_shaping_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#ingress_shaping_enabled DistributedPortGroup#ingress_shaping_enabled}
 
 ---
 
@@ -448,7 +448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 The peak ingress bandwidth during bursts in bits per second if ingress traffic shaping is enabled on the port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#ingress_shaping_peak_bandwidth DistributedPortGroup#ingress_shaping_peak_bandwidth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#ingress_shaping_peak_bandwidth DistributedPortGroup#ingress_shaping_peak_bandwidth}
 
 ---
 
@@ -458,7 +458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 Whether or not to enable LACP on all uplink ports.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#lacp_enabled DistributedPortGroup#lacp_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#lacp_enabled DistributedPortGroup#lacp_enabled}
 
 ---
 
@@ -468,7 +468,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 The uplink LACP mode to use. Can be one of active or passive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#lacp_mode DistributedPortGroup#lacp_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#lacp_mode DistributedPortGroup#lacp_mode}
 
 ---
 
@@ -478,7 +478,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 Allow a live port to be moved in and out of the portgroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#live_port_moving_allowed DistributedPortGroup#live_port_moving_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#live_port_moving_allowed DistributedPortGroup#live_port_moving_allowed}
 
 ---
 
@@ -488,7 +488,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 Indicates whether to enable netflow on all ports.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#netflow_enabled DistributedPortGroup#netflow_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#netflow_enabled DistributedPortGroup#netflow_enabled}
 
 ---
 
@@ -498,7 +498,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 Allow the enabling or disabling of Netflow on a port, contrary to the policy in the portgroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#netflow_override_allowed DistributedPortGroup#netflow_override_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#netflow_override_allowed DistributedPortGroup#netflow_override_allowed}
 
 ---
 
@@ -508,7 +508,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 The key of a network resource pool to associate with this portgroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#network_resource_pool_key DistributedPortGroup#network_resource_pool_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#network_resource_pool_key DistributedPortGroup#network_resource_pool_key}
 
 ---
 
@@ -518,7 +518,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 Allow the network resource pool of an individual port to override the setting in the portgroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#network_resource_pool_override_allowed DistributedPortGroup#network_resource_pool_override_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#network_resource_pool_override_allowed DistributedPortGroup#network_resource_pool_override_allowed}
 
 ---
 
@@ -528,7 +528,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 If true, the teaming policy will notify the broadcast network of a NIC failover, triggering cache updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#notify_switches DistributedPortGroup#notify_switches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#notify_switches DistributedPortGroup#notify_switches}
 
 ---
 
@@ -538,7 +538,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 The number of ports in this portgroup. The DVS will expand and shrink by modifying this setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#number_of_ports DistributedPortGroup#number_of_ports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#number_of_ports DistributedPortGroup#number_of_ports}
 
 ---
 
@@ -548,7 +548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 Reset the setting of any ports in this portgroup back to the default setting when the port disconnects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#port_config_reset_at_disconnect DistributedPortGroup#port_config_reset_at_disconnect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#port_config_reset_at_disconnect DistributedPortGroup#port_config_reset_at_disconnect}
 
 ---
 
@@ -558,7 +558,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 A template string to use when creating ports in the portgroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#port_name_format DistributedPortGroup#port_name_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#port_name_format DistributedPortGroup#port_name_format}
 
 ---
 
@@ -568,7 +568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 The secondary VLAN ID for this port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#port_private_secondary_vlan_id DistributedPortGroup#port_private_secondary_vlan_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#port_private_secondary_vlan_id DistributedPortGroup#port_private_secondary_vlan_id}
 
 ---
 
@@ -578,7 +578,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 Allow security policy settings on a port to override those on the portgroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#security_policy_override_allowed DistributedPortGroup#security_policy_override_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#security_policy_override_allowed DistributedPortGroup#security_policy_override_allowed}
 
 ---
 
@@ -588,7 +588,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 Allow the traffic shaping policies of an individual port to override the settings in the portgroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#shaping_override_allowed DistributedPortGroup#shaping_override_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#shaping_override_allowed DistributedPortGroup#shaping_override_allowed}
 
 ---
 
@@ -598,7 +598,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 List of standby uplinks used for load balancing, matching the names of the uplinks assigned in the DVS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#standby_uplinks DistributedPortGroup#standby_uplinks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#standby_uplinks DistributedPortGroup#standby_uplinks}
 
 ---
 
@@ -608,7 +608,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 A list of tag IDs to apply to this object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#tags DistributedPortGroup#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#tags DistributedPortGroup#tags}
 
 ---
 
@@ -618,7 +618,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 The network adapter teaming policy. Can be one of loadbalance_ip, loadbalance_srcmac, loadbalance_srcid, failover_explicit, or loadbalance_loadbased.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#teaming_policy DistributedPortGroup#teaming_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#teaming_policy DistributedPortGroup#teaming_policy}
 
 ---
 
@@ -628,7 +628,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 Allow any filter policies set on the individual port to override those in the portgroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#traffic_filter_override_allowed DistributedPortGroup#traffic_filter_override_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#traffic_filter_override_allowed DistributedPortGroup#traffic_filter_override_allowed}
 
 ---
 
@@ -638,7 +638,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 If true, a copy of packets sent to the switch will always be forwarded to an uplink in addition to the regular packet forwarded done by the switch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#tx_uplink DistributedPortGroup#tx_uplink}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#tx_uplink DistributedPortGroup#tx_uplink}
 
 ---
 
@@ -648,7 +648,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 The type of portgroup. Can be one of earlyBinding (static) or ephemeral.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#type DistributedPortGroup#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#type DistributedPortGroup#type}
 
 ---
 
@@ -658,7 +658,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 Allow the uplink teaming policies on a port to override those on the portgroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#uplink_teaming_override_allowed DistributedPortGroup#uplink_teaming_override_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#uplink_teaming_override_allowed DistributedPortGroup#uplink_teaming_override_allowed}
 
 ---
 
@@ -668,7 +668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 The VLAN ID for single VLAN mode. 0 denotes no VLAN.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#vlan_id DistributedPortGroup#vlan_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#vlan_id DistributedPortGroup#vlan_id}
 
 ---
 
@@ -678,7 +678,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 Allow the VLAN configuration on a port to override those on the portgroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#vlan_override_allowed DistributedPortGroup#vlan_override_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#vlan_override_allowed DistributedPortGroup#vlan_override_allowed}
 
 ---
 
@@ -688,7 +688,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 vlan_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#vlan_range DistributedPortGroup#vlan_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#vlan_range DistributedPortGroup#vlan_range}
 
 ---
 
@@ -1443,7 +1443,7 @@ The construct id used in the generated config for the DistributedPortGroup to im
 
 The id of the existing DistributedPortGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -2817,7 +2817,7 @@ DistributedPortGroupConfig.builder()
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.egressShapingEnabled">egressShapingEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | True if the traffic shaper is enabled for egress traffic on the port. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.egressShapingPeakBandwidth">egressShapingPeakBandwidth</a></code> | <code>java.lang.Number</code> | The peak egress bandwidth during bursts in bits per second if egress traffic shaping is enabled on the port. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.failback">failback</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, the teaming policy will re-activate failed interfaces higher in precedence when they come back up. |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#id DistributedPortGroup#id}. |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#id DistributedPortGroup#id}. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.ingressShapingAverageBandwidth">ingressShapingAverageBandwidth</a></code> | <code>java.lang.Number</code> | The average ingress bandwidth in bits per second if ingress shaping is enabled on the port. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.ingressShapingBurstSize">ingressShapingBurstSize</a></code> | <code>java.lang.Number</code> | The maximum ingress burst size allowed in bytes if ingress shaping is enabled on the port. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.ingressShapingEnabled">ingressShapingEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | True if the traffic shaper is enabled for ingress traffic on the port. |
@@ -2929,7 +2929,7 @@ public java.lang.String getDistributedVirtualSwitchUuid();
 
 The UUID of the DVS to attach this port group to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#distributed_virtual_switch_uuid DistributedPortGroup#distributed_virtual_switch_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#distributed_virtual_switch_uuid DistributedPortGroup#distributed_virtual_switch_uuid}
 
 ---
 
@@ -2943,7 +2943,7 @@ public java.lang.String getName();
 
 The name of the portgroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#name DistributedPortGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#name DistributedPortGroup#name}
 
 ---
 
@@ -2957,7 +2957,7 @@ public java.util.List<java.lang.String> getActiveUplinks();
 
 List of active uplinks used for load balancing, matching the names of the uplinks assigned in the DVS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#active_uplinks DistributedPortGroup#active_uplinks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#active_uplinks DistributedPortGroup#active_uplinks}
 
 ---
 
@@ -2971,7 +2971,7 @@ public java.lang.Object getAllowForgedTransmits();
 
 Controls whether or not the virtual network adapter is allowed to send network traffic with a different MAC address than that of its own.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#allow_forged_transmits DistributedPortGroup#allow_forged_transmits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#allow_forged_transmits DistributedPortGroup#allow_forged_transmits}
 
 ---
 
@@ -2985,7 +2985,7 @@ public java.lang.Object getAllowMacChanges();
 
 Controls whether or not the Media Access Control (MAC) address can be changed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#allow_mac_changes DistributedPortGroup#allow_mac_changes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#allow_mac_changes DistributedPortGroup#allow_mac_changes}
 
 ---
 
@@ -3001,7 +3001,7 @@ Enable promiscuous mode on the network.
 
 This flag indicates whether or not all traffic is seen on a given port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#allow_promiscuous DistributedPortGroup#allow_promiscuous}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#allow_promiscuous DistributedPortGroup#allow_promiscuous}
 
 ---
 
@@ -3015,7 +3015,7 @@ public java.lang.Object getAutoExpand();
 
 Auto-expands the port group beyond the port count configured in number_of_ports when necessary.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#auto_expand DistributedPortGroup#auto_expand}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#auto_expand DistributedPortGroup#auto_expand}
 
 ---
 
@@ -3029,7 +3029,7 @@ public java.lang.Object getBlockAllPorts();
 
 Indicates whether to block all ports by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#block_all_ports DistributedPortGroup#block_all_ports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#block_all_ports DistributedPortGroup#block_all_ports}
 
 ---
 
@@ -3043,7 +3043,7 @@ public java.lang.Object getBlockOverrideAllowed();
 
 Allow the blocked setting of an individual port to override the setting in the portgroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#block_override_allowed DistributedPortGroup#block_override_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#block_override_allowed DistributedPortGroup#block_override_allowed}
 
 ---
 
@@ -3057,7 +3057,7 @@ public java.lang.Object getCheckBeacon();
 
 Enable beacon probing on the ports this policy applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#check_beacon DistributedPortGroup#check_beacon}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#check_beacon DistributedPortGroup#check_beacon}
 
 ---
 
@@ -3071,7 +3071,7 @@ public java.util.Map<java.lang.String, java.lang.String> getCustomAttributes();
 
 A list of custom attributes to set on this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#custom_attributes DistributedPortGroup#custom_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#custom_attributes DistributedPortGroup#custom_attributes}
 
 ---
 
@@ -3085,7 +3085,7 @@ public java.lang.String getDescription();
 
 The description of the portgroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#description DistributedPortGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#description DistributedPortGroup#description}
 
 ---
 
@@ -3099,7 +3099,7 @@ public java.lang.Object getDirectpathGen2Allowed();
 
 Allow VMDirectPath Gen2 on the ports this policy applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#directpath_gen2_allowed DistributedPortGroup#directpath_gen2_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#directpath_gen2_allowed DistributedPortGroup#directpath_gen2_allowed}
 
 ---
 
@@ -3113,7 +3113,7 @@ public java.lang.Number getEgressShapingAverageBandwidth();
 
 The average egress bandwidth in bits per second if egress shaping is enabled on the port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#egress_shaping_average_bandwidth DistributedPortGroup#egress_shaping_average_bandwidth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#egress_shaping_average_bandwidth DistributedPortGroup#egress_shaping_average_bandwidth}
 
 ---
 
@@ -3127,7 +3127,7 @@ public java.lang.Number getEgressShapingBurstSize();
 
 The maximum egress burst size allowed in bytes if egress shaping is enabled on the port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#egress_shaping_burst_size DistributedPortGroup#egress_shaping_burst_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#egress_shaping_burst_size DistributedPortGroup#egress_shaping_burst_size}
 
 ---
 
@@ -3141,7 +3141,7 @@ public java.lang.Object getEgressShapingEnabled();
 
 True if the traffic shaper is enabled for egress traffic on the port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#egress_shaping_enabled DistributedPortGroup#egress_shaping_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#egress_shaping_enabled DistributedPortGroup#egress_shaping_enabled}
 
 ---
 
@@ -3155,7 +3155,7 @@ public java.lang.Number getEgressShapingPeakBandwidth();
 
 The peak egress bandwidth during bursts in bits per second if egress traffic shaping is enabled on the port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#egress_shaping_peak_bandwidth DistributedPortGroup#egress_shaping_peak_bandwidth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#egress_shaping_peak_bandwidth DistributedPortGroup#egress_shaping_peak_bandwidth}
 
 ---
 
@@ -3169,7 +3169,7 @@ public java.lang.Object getFailback();
 
 If true, the teaming policy will re-activate failed interfaces higher in precedence when they come back up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#failback DistributedPortGroup#failback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#failback DistributedPortGroup#failback}
 
 ---
 
@@ -3181,7 +3181,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#id DistributedPortGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#id DistributedPortGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3198,7 +3198,7 @@ public java.lang.Number getIngressShapingAverageBandwidth();
 
 The average ingress bandwidth in bits per second if ingress shaping is enabled on the port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#ingress_shaping_average_bandwidth DistributedPortGroup#ingress_shaping_average_bandwidth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#ingress_shaping_average_bandwidth DistributedPortGroup#ingress_shaping_average_bandwidth}
 
 ---
 
@@ -3212,7 +3212,7 @@ public java.lang.Number getIngressShapingBurstSize();
 
 The maximum ingress burst size allowed in bytes if ingress shaping is enabled on the port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#ingress_shaping_burst_size DistributedPortGroup#ingress_shaping_burst_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#ingress_shaping_burst_size DistributedPortGroup#ingress_shaping_burst_size}
 
 ---
 
@@ -3226,7 +3226,7 @@ public java.lang.Object getIngressShapingEnabled();
 
 True if the traffic shaper is enabled for ingress traffic on the port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#ingress_shaping_enabled DistributedPortGroup#ingress_shaping_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#ingress_shaping_enabled DistributedPortGroup#ingress_shaping_enabled}
 
 ---
 
@@ -3240,7 +3240,7 @@ public java.lang.Number getIngressShapingPeakBandwidth();
 
 The peak ingress bandwidth during bursts in bits per second if ingress traffic shaping is enabled on the port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#ingress_shaping_peak_bandwidth DistributedPortGroup#ingress_shaping_peak_bandwidth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#ingress_shaping_peak_bandwidth DistributedPortGroup#ingress_shaping_peak_bandwidth}
 
 ---
 
@@ -3254,7 +3254,7 @@ public java.lang.Object getLacpEnabled();
 
 Whether or not to enable LACP on all uplink ports.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#lacp_enabled DistributedPortGroup#lacp_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#lacp_enabled DistributedPortGroup#lacp_enabled}
 
 ---
 
@@ -3268,7 +3268,7 @@ public java.lang.String getLacpMode();
 
 The uplink LACP mode to use. Can be one of active or passive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#lacp_mode DistributedPortGroup#lacp_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#lacp_mode DistributedPortGroup#lacp_mode}
 
 ---
 
@@ -3282,7 +3282,7 @@ public java.lang.Object getLivePortMovingAllowed();
 
 Allow a live port to be moved in and out of the portgroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#live_port_moving_allowed DistributedPortGroup#live_port_moving_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#live_port_moving_allowed DistributedPortGroup#live_port_moving_allowed}
 
 ---
 
@@ -3296,7 +3296,7 @@ public java.lang.Object getNetflowEnabled();
 
 Indicates whether to enable netflow on all ports.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#netflow_enabled DistributedPortGroup#netflow_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#netflow_enabled DistributedPortGroup#netflow_enabled}
 
 ---
 
@@ -3310,7 +3310,7 @@ public java.lang.Object getNetflowOverrideAllowed();
 
 Allow the enabling or disabling of Netflow on a port, contrary to the policy in the portgroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#netflow_override_allowed DistributedPortGroup#netflow_override_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#netflow_override_allowed DistributedPortGroup#netflow_override_allowed}
 
 ---
 
@@ -3324,7 +3324,7 @@ public java.lang.String getNetworkResourcePoolKey();
 
 The key of a network resource pool to associate with this portgroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#network_resource_pool_key DistributedPortGroup#network_resource_pool_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#network_resource_pool_key DistributedPortGroup#network_resource_pool_key}
 
 ---
 
@@ -3338,7 +3338,7 @@ public java.lang.Object getNetworkResourcePoolOverrideAllowed();
 
 Allow the network resource pool of an individual port to override the setting in the portgroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#network_resource_pool_override_allowed DistributedPortGroup#network_resource_pool_override_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#network_resource_pool_override_allowed DistributedPortGroup#network_resource_pool_override_allowed}
 
 ---
 
@@ -3352,7 +3352,7 @@ public java.lang.Object getNotifySwitches();
 
 If true, the teaming policy will notify the broadcast network of a NIC failover, triggering cache updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#notify_switches DistributedPortGroup#notify_switches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#notify_switches DistributedPortGroup#notify_switches}
 
 ---
 
@@ -3366,7 +3366,7 @@ public java.lang.Number getNumberOfPorts();
 
 The number of ports in this portgroup. The DVS will expand and shrink by modifying this setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#number_of_ports DistributedPortGroup#number_of_ports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#number_of_ports DistributedPortGroup#number_of_ports}
 
 ---
 
@@ -3380,7 +3380,7 @@ public java.lang.Object getPortConfigResetAtDisconnect();
 
 Reset the setting of any ports in this portgroup back to the default setting when the port disconnects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#port_config_reset_at_disconnect DistributedPortGroup#port_config_reset_at_disconnect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#port_config_reset_at_disconnect DistributedPortGroup#port_config_reset_at_disconnect}
 
 ---
 
@@ -3394,7 +3394,7 @@ public java.lang.String getPortNameFormat();
 
 A template string to use when creating ports in the portgroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#port_name_format DistributedPortGroup#port_name_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#port_name_format DistributedPortGroup#port_name_format}
 
 ---
 
@@ -3408,7 +3408,7 @@ public java.lang.Number getPortPrivateSecondaryVlanId();
 
 The secondary VLAN ID for this port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#port_private_secondary_vlan_id DistributedPortGroup#port_private_secondary_vlan_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#port_private_secondary_vlan_id DistributedPortGroup#port_private_secondary_vlan_id}
 
 ---
 
@@ -3422,7 +3422,7 @@ public java.lang.Object getSecurityPolicyOverrideAllowed();
 
 Allow security policy settings on a port to override those on the portgroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#security_policy_override_allowed DistributedPortGroup#security_policy_override_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#security_policy_override_allowed DistributedPortGroup#security_policy_override_allowed}
 
 ---
 
@@ -3436,7 +3436,7 @@ public java.lang.Object getShapingOverrideAllowed();
 
 Allow the traffic shaping policies of an individual port to override the settings in the portgroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#shaping_override_allowed DistributedPortGroup#shaping_override_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#shaping_override_allowed DistributedPortGroup#shaping_override_allowed}
 
 ---
 
@@ -3450,7 +3450,7 @@ public java.util.List<java.lang.String> getStandbyUplinks();
 
 List of standby uplinks used for load balancing, matching the names of the uplinks assigned in the DVS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#standby_uplinks DistributedPortGroup#standby_uplinks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#standby_uplinks DistributedPortGroup#standby_uplinks}
 
 ---
 
@@ -3464,7 +3464,7 @@ public java.util.List<java.lang.String> getTags();
 
 A list of tag IDs to apply to this object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#tags DistributedPortGroup#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#tags DistributedPortGroup#tags}
 
 ---
 
@@ -3478,7 +3478,7 @@ public java.lang.String getTeamingPolicy();
 
 The network adapter teaming policy. Can be one of loadbalance_ip, loadbalance_srcmac, loadbalance_srcid, failover_explicit, or loadbalance_loadbased.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#teaming_policy DistributedPortGroup#teaming_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#teaming_policy DistributedPortGroup#teaming_policy}
 
 ---
 
@@ -3492,7 +3492,7 @@ public java.lang.Object getTrafficFilterOverrideAllowed();
 
 Allow any filter policies set on the individual port to override those in the portgroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#traffic_filter_override_allowed DistributedPortGroup#traffic_filter_override_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#traffic_filter_override_allowed DistributedPortGroup#traffic_filter_override_allowed}
 
 ---
 
@@ -3506,7 +3506,7 @@ public java.lang.Object getTxUplink();
 
 If true, a copy of packets sent to the switch will always be forwarded to an uplink in addition to the regular packet forwarded done by the switch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#tx_uplink DistributedPortGroup#tx_uplink}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#tx_uplink DistributedPortGroup#tx_uplink}
 
 ---
 
@@ -3520,7 +3520,7 @@ public java.lang.String getType();
 
 The type of portgroup. Can be one of earlyBinding (static) or ephemeral.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#type DistributedPortGroup#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#type DistributedPortGroup#type}
 
 ---
 
@@ -3534,7 +3534,7 @@ public java.lang.Object getUplinkTeamingOverrideAllowed();
 
 Allow the uplink teaming policies on a port to override those on the portgroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#uplink_teaming_override_allowed DistributedPortGroup#uplink_teaming_override_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#uplink_teaming_override_allowed DistributedPortGroup#uplink_teaming_override_allowed}
 
 ---
 
@@ -3548,7 +3548,7 @@ public java.lang.Number getVlanId();
 
 The VLAN ID for single VLAN mode. 0 denotes no VLAN.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#vlan_id DistributedPortGroup#vlan_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#vlan_id DistributedPortGroup#vlan_id}
 
 ---
 
@@ -3562,7 +3562,7 @@ public java.lang.Object getVlanOverrideAllowed();
 
 Allow the VLAN configuration on a port to override those on the portgroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#vlan_override_allowed DistributedPortGroup#vlan_override_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#vlan_override_allowed DistributedPortGroup#vlan_override_allowed}
 
 ---
 
@@ -3576,7 +3576,7 @@ public java.lang.Object getVlanRange();
 
 vlan_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#vlan_range DistributedPortGroup#vlan_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#vlan_range DistributedPortGroup#vlan_range}
 
 ---
 
@@ -3612,7 +3612,7 @@ public java.lang.Number getMaxVlan();
 
 The minimum VLAN to use in the range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#max_vlan DistributedPortGroup#max_vlan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#max_vlan DistributedPortGroup#max_vlan}
 
 ---
 
@@ -3626,7 +3626,7 @@ public java.lang.Number getMinVlan();
 
 The minimum VLAN to use in the range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/resources/distributed_port_group#min_vlan DistributedPortGroup#min_vlan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/distributed_port_group#min_vlan DistributedPortGroup#min_vlan}
 
 ---
 

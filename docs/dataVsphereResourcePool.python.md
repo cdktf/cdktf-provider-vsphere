@@ -4,7 +4,7 @@
 
 ### DataVsphereResourcePool <a name="DataVsphereResourcePool" id="@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/resource_pool vsphere_resource_pool}.
+Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/resource_pool vsphere_resource_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.Initializer"></a>
 
@@ -23,7 +23,8 @@ dataVsphereResourcePool.DataVsphereResourcePool(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   datacenter_id: str = None,
   id: str = None,
-  name: str = None
+  name: str = None,
+  parent_resource_pool_id: str = None
 )
 ```
 
@@ -39,8 +40,9 @@ dataVsphereResourcePool.DataVsphereResourcePool(
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.Initializer.parameter.datacenterId">datacenter_id</a></code> | <code>str</code> | The managed object ID of the datacenter the resource pool is in. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/resource_pool#id DataVsphereResourcePool#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/resource_pool#id DataVsphereResourcePool#id}. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.Initializer.parameter.name">name</a></code> | <code>str</code> | The name or path of the resource pool. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.Initializer.parameter.parentResourcePoolId">parent_resource_pool_id</a></code> | <code>str</code> | The managed object ID of the parent resource pool. |
 
 ---
 
@@ -112,7 +114,7 @@ The managed object ID of the datacenter the resource pool is in.
 
 This is not required when using ESXi directly, or if there is only one datacenter in your infrastructure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/resource_pool#datacenter_id DataVsphereResourcePool#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/resource_pool#datacenter_id DataVsphereResourcePool#datacenter_id}
 
 ---
 
@@ -120,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/resource_pool#id DataVsphereResourcePool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/resource_pool#id DataVsphereResourcePool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -133,7 +135,19 @@ If you experience problems setting this value it might not be settable. Please t
 
 The name or path of the resource pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/resource_pool#name DataVsphereResourcePool#name}
+When used with parent_resource_pool_id, this must be a simple name of a child resource pool, not a path.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/resource_pool#name DataVsphereResourcePool#name}
+
+---
+
+##### `parent_resource_pool_id`<sup>Optional</sup> <a name="parent_resource_pool_id" id="@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.Initializer.parameter.parentResourcePoolId"></a>
+
+- *Type:* str
+
+The managed object ID of the parent resource pool.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/resource_pool#parent_resource_pool_id DataVsphereResourcePool#parent_resource_pool_id}
 
 ---
 
@@ -161,6 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.resetDatacenterId">reset_datacenter_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.resetName">reset_name</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.resetParentResourcePoolId">reset_parent_resource_pool_id</a></code> | *No description.* |
 
 ---
 
@@ -399,6 +414,12 @@ def reset_id() -> None
 def reset_name() -> None
 ```
 
+##### `reset_parent_resource_pool_id` <a name="reset_parent_resource_pool_id" id="@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.resetParentResourcePoolId"></a>
+
+```python
+def reset_parent_resource_pool_id() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -513,7 +534,7 @@ The construct id used in the generated config for the DataVsphereResourcePool to
 
 The id of the existing DataVsphereResourcePool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/resource_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/resource_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -544,9 +565,11 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.property.datacenterIdInput">datacenter_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.property.parentResourcePoolIdInput">parent_resource_pool_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.property.datacenterId">datacenter_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.property.parentResourcePoolId">parent_resource_pool_id</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -702,6 +725,16 @@ name_input: str
 
 ---
 
+##### `parent_resource_pool_id_input`<sup>Optional</sup> <a name="parent_resource_pool_id_input" id="@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.property.parentResourcePoolIdInput"></a>
+
+```python
+parent_resource_pool_id_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `datacenter_id`<sup>Required</sup> <a name="datacenter_id" id="@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.property.datacenterId"></a>
 
 ```python
@@ -726,6 +759,16 @@ id: str
 
 ```python
 name: str
+```
+
+- *Type:* str
+
+---
+
+##### `parent_resource_pool_id`<sup>Required</sup> <a name="parent_resource_pool_id" id="@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePool.property.parentResourcePoolId"></a>
+
+```python
+parent_resource_pool_id: str
 ```
 
 - *Type:* str
@@ -769,7 +812,8 @@ dataVsphereResourcePool.DataVsphereResourcePoolConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   datacenter_id: str = None,
   id: str = None,
-  name: str = None
+  name: str = None,
+  parent_resource_pool_id: str = None
 )
 ```
 
@@ -785,8 +829,9 @@ dataVsphereResourcePool.DataVsphereResourcePoolConfig(
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePoolConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePoolConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePoolConfig.property.datacenterId">datacenter_id</a></code> | <code>str</code> | The managed object ID of the datacenter the resource pool is in. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePoolConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/resource_pool#id DataVsphereResourcePool#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePoolConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/resource_pool#id DataVsphereResourcePool#id}. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePoolConfig.property.name">name</a></code> | <code>str</code> | The name or path of the resource pool. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePoolConfig.property.parentResourcePoolId">parent_resource_pool_id</a></code> | <code>str</code> | The managed object ID of the parent resource pool. |
 
 ---
 
@@ -872,7 +917,7 @@ The managed object ID of the datacenter the resource pool is in.
 
 This is not required when using ESXi directly, or if there is only one datacenter in your infrastructure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/resource_pool#datacenter_id DataVsphereResourcePool#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/resource_pool#datacenter_id DataVsphereResourcePool#datacenter_id}
 
 ---
 
@@ -884,7 +929,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/resource_pool#id DataVsphereResourcePool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/resource_pool#id DataVsphereResourcePool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -901,7 +946,23 @@ name: str
 
 The name or path of the resource pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/resource_pool#name DataVsphereResourcePool#name}
+When used with parent_resource_pool_id, this must be a simple name of a child resource pool, not a path.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/resource_pool#name DataVsphereResourcePool#name}
+
+---
+
+##### `parent_resource_pool_id`<sup>Optional</sup> <a name="parent_resource_pool_id" id="@cdktf/provider-vsphere.dataVsphereResourcePool.DataVsphereResourcePoolConfig.property.parentResourcePoolId"></a>
+
+```python
+parent_resource_pool_id: str
+```
+
+- *Type:* str
+
+The managed object ID of the parent resource pool.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/resource_pool#parent_resource_pool_id DataVsphereResourcePool#parent_resource_pool_id}
 
 ---
 

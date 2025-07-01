@@ -4,7 +4,7 @@
 
 ### DataVsphereNetwork <a name="DataVsphereNetwork" id="@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/network vsphere_network}.
+Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/network vsphere_network}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.resetRetryInterval">ResetRetryInterval</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.resetRetryTimeout">ResetRetryTimeout</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.resetVpcId">ResetVpcId</a></code> | *No description.* |
 
 ---
 
@@ -317,6 +318,12 @@ func ResetRetryInterval()
 func ResetRetryTimeout()
 ```
 
+##### `ResetVpcId` <a name="ResetVpcId" id="@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.resetVpcId"></a>
+
+```go
+func ResetVpcId()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -420,7 +427,7 @@ The construct id used in the generated config for the DataVsphereNetwork to impo
 
 The id of the existing DataVsphereNetwork that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -457,12 +464,14 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.property.retryIntervalInput">RetryIntervalInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.property.retryTimeoutInput">RetryTimeoutInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.property.vpcIdInput">VpcIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.property.datacenterId">DatacenterId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.property.distributedVirtualSwitchUuid">DistributedVirtualSwitchUuid</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.property.retryInterval">RetryInterval</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.property.retryTimeout">RetryTimeout</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.property.vpcId">VpcId</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -678,6 +687,16 @@ func RetryTimeoutInput() *f64
 
 ---
 
+##### `VpcIdInput`<sup>Optional</sup> <a name="VpcIdInput" id="@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.property.vpcIdInput"></a>
+
+```go
+func VpcIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DatacenterId`<sup>Required</sup> <a name="DatacenterId" id="@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.property.datacenterId"></a>
 
 ```go
@@ -738,6 +757,16 @@ func RetryTimeout() *f64
 
 ---
 
+##### `VpcId`<sup>Required</sup> <a name="VpcId" id="@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetwork.property.vpcId"></a>
+
+```go
+func VpcId() *string
+```
+
+- *Type:* *string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -780,6 +809,7 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/datavspherenetwor
 	Id: *string,
 	RetryInterval: *f64,
 	RetryTimeout: *f64,
+	VpcId: *string,
 }
 ```
 
@@ -798,9 +828,10 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/datavspherenetwor
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetworkConfig.property.datacenterId">DatacenterId</a></code> | <code>*string</code> | The managed object ID of the datacenter the network is in. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetworkConfig.property.distributedVirtualSwitchUuid">DistributedVirtualSwitchUuid</a></code> | <code>*string</code> | Id of the distributed virtual switch of which the port group is a part of. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetworkConfig.property.filter">Filter</a></code> | <code>interface{}</code> | filter block. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetworkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/network#id DataVsphereNetwork#id}. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetworkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/network#id DataVsphereNetwork#id}. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetworkConfig.property.retryInterval">RetryInterval</a></code> | <code>*f64</code> | Retry interval (in milliseconds) when probing the network. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetworkConfig.property.retryTimeout">RetryTimeout</a></code> | <code>*f64</code> | Timeout (in seconds) if network is not present yet. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetworkConfig.property.vpcId">VpcId</a></code> | <code>*string</code> | Id of the VPC which the network belongs to. |
 
 ---
 
@@ -884,7 +915,7 @@ Name *string
 
 The name or path of the network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/network#name DataVsphereNetwork#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/network#name DataVsphereNetwork#name}
 
 ---
 
@@ -900,7 +931,7 @@ The managed object ID of the datacenter the network is in.
 
 This is required if the supplied path is not an absolute path containing a datacenter and there are multiple datacenters in your infrastructure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/network#datacenter_id DataVsphereNetwork#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/network#datacenter_id DataVsphereNetwork#datacenter_id}
 
 ---
 
@@ -914,7 +945,7 @@ DistributedVirtualSwitchUuid *string
 
 Id of the distributed virtual switch of which the port group is a part of.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/network#distributed_virtual_switch_uuid DataVsphereNetwork#distributed_virtual_switch_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/network#distributed_virtual_switch_uuid DataVsphereNetwork#distributed_virtual_switch_uuid}
 
 ---
 
@@ -928,7 +959,7 @@ Filter interface{}
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/network#filter DataVsphereNetwork#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/network#filter DataVsphereNetwork#filter}
 
 ---
 
@@ -940,7 +971,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/network#id DataVsphereNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/network#id DataVsphereNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -957,7 +988,7 @@ RetryInterval *f64
 
 Retry interval (in milliseconds) when probing the network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/network#retry_interval DataVsphereNetwork#retry_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/network#retry_interval DataVsphereNetwork#retry_interval}
 
 ---
 
@@ -971,7 +1002,21 @@ RetryTimeout *f64
 
 Timeout (in seconds) if network is not present yet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/network#retry_timeout DataVsphereNetwork#retry_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/network#retry_timeout DataVsphereNetwork#retry_timeout}
+
+---
+
+##### `VpcId`<sup>Optional</sup> <a name="VpcId" id="@cdktf/provider-vsphere.dataVsphereNetwork.DataVsphereNetworkConfig.property.vpcId"></a>
+
+```go
+VpcId *string
+```
+
+- *Type:* *string
+
+Id of the VPC which the network belongs to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/network#vpc_id DataVsphereNetwork#vpc_id}
 
 ---
 
@@ -1005,7 +1050,7 @@ NetworkType *string
 
 The type of the network (e.g., Network, DistributedVirtualPortgroup, OpaqueNetwork).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs/data-sources/network#network_type DataVsphereNetwork#network_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/data-sources/network#network_type DataVsphereNetwork#network_type}
 
 ---
 

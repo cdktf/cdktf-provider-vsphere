@@ -1,7 +1,7 @@
 
-# CDKTF prebuilt bindings for vmware/vsphere provider version 2.13.0
+# CDKTF prebuilt bindings for vmware/vsphere provider version 2.14.0
 
-This repo builds and publishes the [Terraform vsphere provider](https://registry.terraform.io/providers/vmware/vsphere/2.13.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform vsphere provider](https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Available Packages
 
@@ -63,7 +63,7 @@ This project is explicitly not tracking the Terraform vsphere provider version 1
 These are the upstream dependencies:
 
 - [CDK for Terraform](https://cdk.tf)
-- [Terraform vsphere provider](https://registry.terraform.io/providers/vmware/vsphere/2.13.0)
+- [Terraform vsphere provider](https://registry.terraform.io/providers/vmware/vsphere/2.14.0)
 - [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
