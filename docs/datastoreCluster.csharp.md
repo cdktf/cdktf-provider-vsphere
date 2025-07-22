@@ -4,7 +4,7 @@
 
 ### DatastoreCluster <a name="DatastoreCluster" id="@cdktf/provider-vsphere.datastoreCluster.DatastoreCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/datastore_cluster vsphere_datastore_cluster}.
+Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/datastore_cluster vsphere_datastore_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.datastoreCluster.DatastoreCluster.Initializer"></a>
 
@@ -635,7 +635,7 @@ The construct id used in the generated config for the DatastoreCluster to import
 
 The id of the existing DatastoreCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/datastore_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/datastore_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1461,7 +1461,7 @@ new DatastoreClusterConfig {
 | <code><a href="#@cdktf/provider-vsphere.datastoreCluster.DatastoreClusterConfig.property.name">Name</a></code> | <code>string</code> | Name for the new storage pod. |
 | <code><a href="#@cdktf/provider-vsphere.datastoreCluster.DatastoreClusterConfig.property.customAttributes">CustomAttributes</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A list of custom attributes to set on this resource. |
 | <code><a href="#@cdktf/provider-vsphere.datastoreCluster.DatastoreClusterConfig.property.folder">Folder</a></code> | <code>string</code> | The name of the folder to locate the datastore cluster in. |
-| <code><a href="#@cdktf/provider-vsphere.datastoreCluster.DatastoreClusterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/datastore_cluster#id DatastoreCluster#id}. |
+| <code><a href="#@cdktf/provider-vsphere.datastoreCluster.DatastoreClusterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/datastore_cluster#id DatastoreCluster#id}. |
 | <code><a href="#@cdktf/provider-vsphere.datastoreCluster.DatastoreClusterConfig.property.sdrsAdvancedOptions">SdrsAdvancedOptions</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Advanced configuration options for storage DRS. |
 | <code><a href="#@cdktf/provider-vsphere.datastoreCluster.DatastoreClusterConfig.property.sdrsAutomationLevel">SdrsAutomationLevel</a></code> | <code>string</code> | The default automation level for all virtual machines in this storage cluster. |
 | <code><a href="#@cdktf/provider-vsphere.datastoreCluster.DatastoreClusterConfig.property.sdrsDefaultIntraVmAffinity">SdrsDefaultIntraVmAffinity</a></code> | <code>object</code> | When true, storage DRS keeps VMDKs for individual VMs on the same datastore by default. |
@@ -1566,7 +1566,7 @@ public string DatacenterId { get; set; }
 
 The managed object ID of the datacenter to put the datastore cluster in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/datastore_cluster#datacenter_id DatastoreCluster#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/datastore_cluster#datacenter_id DatastoreCluster#datacenter_id}
 
 ---
 
@@ -1580,7 +1580,7 @@ public string Name { get; set; }
 
 Name for the new storage pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/datastore_cluster#name DatastoreCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/datastore_cluster#name DatastoreCluster#name}
 
 ---
 
@@ -1594,7 +1594,7 @@ public System.Collections.Generic.IDictionary<string, string> CustomAttributes {
 
 A list of custom attributes to set on this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/datastore_cluster#custom_attributes DatastoreCluster#custom_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/datastore_cluster#custom_attributes DatastoreCluster#custom_attributes}
 
 ---
 
@@ -1608,7 +1608,7 @@ public string Folder { get; set; }
 
 The name of the folder to locate the datastore cluster in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/datastore_cluster#folder DatastoreCluster#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/datastore_cluster#folder DatastoreCluster#folder}
 
 ---
 
@@ -1620,7 +1620,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/datastore_cluster#id DatastoreCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/datastore_cluster#id DatastoreCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1637,7 +1637,7 @@ public System.Collections.Generic.IDictionary<string, string> SdrsAdvancedOption
 
 Advanced configuration options for storage DRS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/datastore_cluster#sdrs_advanced_options DatastoreCluster#sdrs_advanced_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/datastore_cluster#sdrs_advanced_options DatastoreCluster#sdrs_advanced_options}
 
 ---
 
@@ -1651,7 +1651,7 @@ public string SdrsAutomationLevel { get; set; }
 
 The default automation level for all virtual machines in this storage cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/datastore_cluster#sdrs_automation_level DatastoreCluster#sdrs_automation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/datastore_cluster#sdrs_automation_level DatastoreCluster#sdrs_automation_level}
 
 ---
 
@@ -1665,7 +1665,7 @@ public object SdrsDefaultIntraVmAffinity { get; set; }
 
 When true, storage DRS keeps VMDKs for individual VMs on the same datastore by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/datastore_cluster#sdrs_default_intra_vm_affinity DatastoreCluster#sdrs_default_intra_vm_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/datastore_cluster#sdrs_default_intra_vm_affinity DatastoreCluster#sdrs_default_intra_vm_affinity}
 
 ---
 
@@ -1679,7 +1679,7 @@ public object SdrsEnabled { get; set; }
 
 Enable storage DRS for this datastore cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/datastore_cluster#sdrs_enabled DatastoreCluster#sdrs_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/datastore_cluster#sdrs_enabled DatastoreCluster#sdrs_enabled}
 
 ---
 
@@ -1693,7 +1693,7 @@ public double SdrsFreeSpaceThreshold { get; set; }
 
 The threshold, in GB, that storage DRS uses to make decisions to migrate VMs out of a datastore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/datastore_cluster#sdrs_free_space_threshold DatastoreCluster#sdrs_free_space_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/datastore_cluster#sdrs_free_space_threshold DatastoreCluster#sdrs_free_space_threshold}
 
 ---
 
@@ -1709,7 +1709,7 @@ The free space threshold to use.
 
 When set to utilization, drs_space_utilization_threshold is used, and when set to freeSpace, drs_free_space_threshold is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/datastore_cluster#sdrs_free_space_threshold_mode DatastoreCluster#sdrs_free_space_threshold_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/datastore_cluster#sdrs_free_space_threshold_mode DatastoreCluster#sdrs_free_space_threshold_mode}
 
 ---
 
@@ -1723,7 +1723,7 @@ public double SdrsFreeSpaceUtilizationDifference { get; set; }
 
 The threshold, in percent, of difference between space utilization in datastores before storage DRS makes decisions to balance the space.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/datastore_cluster#sdrs_free_space_utilization_difference DatastoreCluster#sdrs_free_space_utilization_difference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/datastore_cluster#sdrs_free_space_utilization_difference DatastoreCluster#sdrs_free_space_utilization_difference}
 
 ---
 
@@ -1737,7 +1737,7 @@ public string SdrsIoBalanceAutomationLevel { get; set; }
 
 Overrides the default automation settings when correcting I/O load imbalances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/datastore_cluster#sdrs_io_balance_automation_level DatastoreCluster#sdrs_io_balance_automation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/datastore_cluster#sdrs_io_balance_automation_level DatastoreCluster#sdrs_io_balance_automation_level}
 
 ---
 
@@ -1751,7 +1751,7 @@ public double SdrsIoLatencyThreshold { get; set; }
 
 The I/O latency threshold, in milliseconds, that storage DRS uses to make recommendations to move disks from this datastore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/datastore_cluster#sdrs_io_latency_threshold DatastoreCluster#sdrs_io_latency_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/datastore_cluster#sdrs_io_latency_threshold DatastoreCluster#sdrs_io_latency_threshold}
 
 ---
 
@@ -1765,7 +1765,7 @@ public object SdrsIoLoadBalanceEnabled { get; set; }
 
 Enable I/O load balancing for this datastore cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/datastore_cluster#sdrs_io_load_balance_enabled DatastoreCluster#sdrs_io_load_balance_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/datastore_cluster#sdrs_io_load_balance_enabled DatastoreCluster#sdrs_io_load_balance_enabled}
 
 ---
 
@@ -1779,7 +1779,7 @@ public double SdrsIoLoadImbalanceThreshold { get; set; }
 
 The difference between load in datastores in the cluster before storage DRS makes recommendations to balance the load.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/datastore_cluster#sdrs_io_load_imbalance_threshold DatastoreCluster#sdrs_io_load_imbalance_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/datastore_cluster#sdrs_io_load_imbalance_threshold DatastoreCluster#sdrs_io_load_imbalance_threshold}
 
 ---
 
@@ -1793,7 +1793,7 @@ public double SdrsIoReservableIopsThreshold { get; set; }
 
 The threshold of reservable IOPS of all virtual machines on the datastore before storage DRS makes recommendations to move VMs off of a datastore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/datastore_cluster#sdrs_io_reservable_iops_threshold DatastoreCluster#sdrs_io_reservable_iops_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/datastore_cluster#sdrs_io_reservable_iops_threshold DatastoreCluster#sdrs_io_reservable_iops_threshold}
 
 ---
 
@@ -1807,7 +1807,7 @@ public double SdrsIoReservablePercentThreshold { get; set; }
 
 The threshold, in percent, of actual estimated performance of the datastore (in IOPS) that storage DRS uses to make recommendations to move VMs off of a datastore when the total reservable IOPS exceeds the threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/datastore_cluster#sdrs_io_reservable_percent_threshold DatastoreCluster#sdrs_io_reservable_percent_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/datastore_cluster#sdrs_io_reservable_percent_threshold DatastoreCluster#sdrs_io_reservable_percent_threshold}
 
 ---
 
@@ -1821,7 +1821,7 @@ public string SdrsIoReservableThresholdMode { get; set; }
 
 The reservable IOPS threshold to use, percent in the event of automatic, or manual threshold in the event of manual.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/datastore_cluster#sdrs_io_reservable_threshold_mode DatastoreCluster#sdrs_io_reservable_threshold_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/datastore_cluster#sdrs_io_reservable_threshold_mode DatastoreCluster#sdrs_io_reservable_threshold_mode}
 
 ---
 
@@ -1835,7 +1835,7 @@ public double SdrsLoadBalanceInterval { get; set; }
 
 The storage DRS poll interval, in minutes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/datastore_cluster#sdrs_load_balance_interval DatastoreCluster#sdrs_load_balance_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/datastore_cluster#sdrs_load_balance_interval DatastoreCluster#sdrs_load_balance_interval}
 
 ---
 
@@ -1849,7 +1849,7 @@ public string SdrsPolicyEnforcementAutomationLevel { get; set; }
 
 Overrides the default automation settings when correcting storage and VM policy violations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/datastore_cluster#sdrs_policy_enforcement_automation_level DatastoreCluster#sdrs_policy_enforcement_automation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/datastore_cluster#sdrs_policy_enforcement_automation_level DatastoreCluster#sdrs_policy_enforcement_automation_level}
 
 ---
 
@@ -1863,7 +1863,7 @@ public string SdrsRuleEnforcementAutomationLevel { get; set; }
 
 Overrides the default automation settings when correcting affinity rule violations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/datastore_cluster#sdrs_rule_enforcement_automation_level DatastoreCluster#sdrs_rule_enforcement_automation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/datastore_cluster#sdrs_rule_enforcement_automation_level DatastoreCluster#sdrs_rule_enforcement_automation_level}
 
 ---
 
@@ -1877,7 +1877,7 @@ public string SdrsSpaceBalanceAutomationLevel { get; set; }
 
 Overrides the default automation settings when correcting disk space imbalances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/datastore_cluster#sdrs_space_balance_automation_level DatastoreCluster#sdrs_space_balance_automation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/datastore_cluster#sdrs_space_balance_automation_level DatastoreCluster#sdrs_space_balance_automation_level}
 
 ---
 
@@ -1891,7 +1891,7 @@ public double SdrsSpaceUtilizationThreshold { get; set; }
 
 The threshold, in percent of used space, that storage DRS uses to make decisions to migrate VMs out of a datastore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/datastore_cluster#sdrs_space_utilization_threshold DatastoreCluster#sdrs_space_utilization_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/datastore_cluster#sdrs_space_utilization_threshold DatastoreCluster#sdrs_space_utilization_threshold}
 
 ---
 
@@ -1905,7 +1905,7 @@ public string SdrsVmEvacuationAutomationLevel { get; set; }
 
 Overrides the default automation settings when generating recommendations for datastore evacuation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/datastore_cluster#sdrs_vm_evacuation_automation_level DatastoreCluster#sdrs_vm_evacuation_automation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/datastore_cluster#sdrs_vm_evacuation_automation_level DatastoreCluster#sdrs_vm_evacuation_automation_level}
 
 ---
 
@@ -1919,7 +1919,7 @@ public string[] Tags { get; set; }
 
 A list of tag IDs to apply to this object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/datastore_cluster#tags DatastoreCluster#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/datastore_cluster#tags DatastoreCluster#tags}
 
 ---
 
