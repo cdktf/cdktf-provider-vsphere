@@ -4,7 +4,7 @@
 
 ### VirtualMachineClass <a name="VirtualMachineClass" id="@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClass"></a>
 
-Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/virtual_machine_class vsphere_virtual_machine_class}.
+Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/virtual_machine_class vsphere_virtual_machine_class}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClass.Initializer"></a>
 
@@ -495,7 +495,7 @@ The construct id used in the generated config for the VirtualMachineClass to imp
 
 The id of the existing VirtualMachineClass that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/virtual_machine_class#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/virtual_machine_class#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -884,7 +884,7 @@ new VirtualMachineClassConfig {
 | <code><a href="#@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClassConfig.property.memory">Memory</a></code> | <code>double</code> | The amount of memory (in MB). |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClassConfig.property.name">Name</a></code> | <code>string</code> | The name of the virtual machine class. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClassConfig.property.cpuReservation">CpuReservation</a></code> | <code>double</code> | The percentage of the available CPU capacity which will be reserved. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClassConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/virtual_machine_class#id VirtualMachineClass#id}. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClassConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/virtual_machine_class#id VirtualMachineClass#id}. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClassConfig.property.memoryReservation">MemoryReservation</a></code> | <code>double</code> | The percentage of the available memory capacity which will be reserved. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClassConfig.property.vgpuDevices">VgpuDevices</a></code> | <code>string[]</code> | A comma-separated list of GPU devices. |
 
@@ -970,7 +970,7 @@ public double Cpus { get; set; }
 
 The number of CPUs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/virtual_machine_class#cpus VirtualMachineClass#cpus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/virtual_machine_class#cpus VirtualMachineClass#cpus}
 
 ---
 
@@ -984,7 +984,7 @@ public double Memory { get; set; }
 
 The amount of memory (in MB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/virtual_machine_class#memory VirtualMachineClass#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/virtual_machine_class#memory VirtualMachineClass#memory}
 
 ---
 
@@ -998,7 +998,7 @@ public string Name { get; set; }
 
 The name of the virtual machine class.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/virtual_machine_class#name VirtualMachineClass#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/virtual_machine_class#name VirtualMachineClass#name}
 
 ---
 
@@ -1012,7 +1012,7 @@ public double CpuReservation { get; set; }
 
 The percentage of the available CPU capacity which will be reserved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/virtual_machine_class#cpu_reservation VirtualMachineClass#cpu_reservation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/virtual_machine_class#cpu_reservation VirtualMachineClass#cpu_reservation}
 
 ---
 
@@ -1024,7 +1024,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/virtual_machine_class#id VirtualMachineClass#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/virtual_machine_class#id VirtualMachineClass#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1041,7 +1041,7 @@ public double MemoryReservation { get; set; }
 
 The percentage of the available memory capacity which will be reserved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/virtual_machine_class#memory_reservation VirtualMachineClass#memory_reservation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/virtual_machine_class#memory_reservation VirtualMachineClass#memory_reservation}
 
 ---
 
@@ -1055,7 +1055,7 @@ public string[] VgpuDevices { get; set; }
 
 A comma-separated list of GPU devices.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.0/docs/resources/virtual_machine_class#vgpu_devices VirtualMachineClass#vgpu_devices}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/virtual_machine_class#vgpu_devices VirtualMachineClass#vgpu_devices}
 
 ---
 
