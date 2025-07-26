@@ -1,3 +1,3 @@
 # `provider`
 
-Refer to the Terraform Registry for docs: [`vsphere`](https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs).
+Refer to the Terraform Registry for docs: [`vsphere`](https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs).
