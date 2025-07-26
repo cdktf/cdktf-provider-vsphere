@@ -1,3 +1,3 @@
 # `vsphere_entity_permissions`
 
-Refer to the Terraform Registry for docs: [`vsphere_entity_permissions`](https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/entity_permissions).
+Refer to the Terraform Registry for docs: [`vsphere_entity_permissions`](https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/entity_permissions).

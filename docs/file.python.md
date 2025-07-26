@@ -4,7 +4,7 @@
 
 ### File <a name="File" id="@cdktf/provider-vsphere.file.File"></a>
 
-Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/file vsphere_file}.
+Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/file vsphere_file}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.file.File.Initializer"></a>
 
@@ -48,7 +48,7 @@ file.File(
 | <code><a href="#@cdktf/provider-vsphere.file.File.Initializer.parameter.sourceFile">source_file</a></code> | <code>str</code> | The path to the file being uploaded from or copied. |
 | <code><a href="#@cdktf/provider-vsphere.file.File.Initializer.parameter.createDirectories">create_directories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to create the parent directories of the destination file if they do not exist. |
 | <code><a href="#@cdktf/provider-vsphere.file.File.Initializer.parameter.datacenter">datacenter</a></code> | <code>str</code> | The name of a datacenter to which the file will be uploaded. |
-| <code><a href="#@cdktf/provider-vsphere.file.File.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/file#id File#id}. |
+| <code><a href="#@cdktf/provider-vsphere.file.File.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/file#id File#id}. |
 | <code><a href="#@cdktf/provider-vsphere.file.File.Initializer.parameter.sourceDatacenter">source_datacenter</a></code> | <code>str</code> | The name of a datacenter from which the file will be copied. |
 | <code><a href="#@cdktf/provider-vsphere.file.File.Initializer.parameter.sourceDatastore">source_datastore</a></code> | <code>str</code> | The name of the datastore from which file will be copied. |
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the datastore to which to upload the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/file#datastore File#datastore}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/file#datastore File#datastore}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 The path to where the file should be uploaded or copied to on the destination datastore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/file#destination_file File#destination_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/file#destination_file File#destination_file}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 The path to the file being uploaded from or copied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/file#source_file File#source_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/file#source_file File#source_file}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 Specifies whether to create the parent directories of the destination file if they do not exist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/file#create_directories File#create_directories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/file#create_directories File#create_directories}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 The name of a datacenter to which the file will be uploaded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/file#datacenter File#datacenter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/file#datacenter File#datacenter}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/file#id File#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/file#id File#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -181,7 +181,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The name of a datacenter from which the file will be copied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/file#source_datacenter File#source_datacenter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/file#source_datacenter File#source_datacenter}
 
 ---
 
@@ -191,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 The name of the datastore from which file will be copied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/file#source_datastore File#source_datastore}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/file#source_datastore File#source_datastore}
 
 ---
 
@@ -699,7 +699,7 @@ The construct id used in the generated config for the File to import.
 
 The id of the existing File that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/file#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/file#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1112,7 +1112,7 @@ file.FileConfig(
 | <code><a href="#@cdktf/provider-vsphere.file.FileConfig.property.sourceFile">source_file</a></code> | <code>str</code> | The path to the file being uploaded from or copied. |
 | <code><a href="#@cdktf/provider-vsphere.file.FileConfig.property.createDirectories">create_directories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether to create the parent directories of the destination file if they do not exist. |
 | <code><a href="#@cdktf/provider-vsphere.file.FileConfig.property.datacenter">datacenter</a></code> | <code>str</code> | The name of a datacenter to which the file will be uploaded. |
-| <code><a href="#@cdktf/provider-vsphere.file.FileConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/file#id File#id}. |
+| <code><a href="#@cdktf/provider-vsphere.file.FileConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/file#id File#id}. |
 | <code><a href="#@cdktf/provider-vsphere.file.FileConfig.property.sourceDatacenter">source_datacenter</a></code> | <code>str</code> | The name of a datacenter from which the file will be copied. |
 | <code><a href="#@cdktf/provider-vsphere.file.FileConfig.property.sourceDatastore">source_datastore</a></code> | <code>str</code> | The name of the datastore from which file will be copied. |
 
@@ -1198,7 +1198,7 @@ datastore: str
 
 The name of the datastore to which to upload the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/file#datastore File#datastore}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/file#datastore File#datastore}
 
 ---
 
@@ -1212,7 +1212,7 @@ destination_file: str
 
 The path to where the file should be uploaded or copied to on the destination datastore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/file#destination_file File#destination_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/file#destination_file File#destination_file}
 
 ---
 
@@ -1226,7 +1226,7 @@ source_file: str
 
 The path to the file being uploaded from or copied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/file#source_file File#source_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/file#source_file File#source_file}
 
 ---
 
@@ -1240,7 +1240,7 @@ create_directories: typing.Union[bool, IResolvable]
 
 Specifies whether to create the parent directories of the destination file if they do not exist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/file#create_directories File#create_directories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/file#create_directories File#create_directories}
 
 ---
 
@@ -1254,7 +1254,7 @@ datacenter: str
 
 The name of a datacenter to which the file will be uploaded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/file#datacenter File#datacenter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/file#datacenter File#datacenter}
 
 ---
 
@@ -1266,7 +1266,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/file#id File#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/file#id File#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1283,7 +1283,7 @@ source_datacenter: str
 
 The name of a datacenter from which the file will be copied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/file#source_datacenter File#source_datacenter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/file#source_datacenter File#source_datacenter}
 
 ---
 
@@ -1297,7 +1297,7 @@ source_datastore: str
 
 The name of the datastore from which file will be copied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.1/docs/resources/file#source_datastore File#source_datastore}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/file#source_datastore File#source_datastore}
 
 ---
 
