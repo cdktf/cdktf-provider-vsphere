@@ -11,6 +11,7 @@ Object.defineProperty(exports, 'computeClusterVmAntiAffinityRule', { get: functi
 Object.defineProperty(exports, 'computeClusterVmDependencyRule', { get: function () { return require('./compute-cluster-vm-dependency-rule'); } });
 Object.defineProperty(exports, 'computeClusterVmGroup', { get: function () { return require('./compute-cluster-vm-group'); } });
 Object.defineProperty(exports, 'computeClusterVmHostRule', { get: function () { return require('./compute-cluster-vm-host-rule'); } });
+Object.defineProperty(exports, 'configurationProfile', { get: function () { return require('./configuration-profile'); } });
 Object.defineProperty(exports, 'contentLibrary', { get: function () { return require('./content-library'); } });
 Object.defineProperty(exports, 'contentLibraryItem', { get: function () { return require('./content-library-item'); } });
 Object.defineProperty(exports, 'customAttribute', { get: function () { return require('./custom-attribute'); } });
@@ -50,6 +51,7 @@ Object.defineProperty(exports, 'vmfsDatastore', { get: function () { return requ
 Object.defineProperty(exports, 'vnic', { get: function () { return require('./vnic'); } });
 Object.defineProperty(exports, 'dataVsphereComputeCluster', { get: function () { return require('./data-vsphere-compute-cluster'); } });
 Object.defineProperty(exports, 'dataVsphereComputeClusterHostGroup', { get: function () { return require('./data-vsphere-compute-cluster-host-group'); } });
+Object.defineProperty(exports, 'dataVsphereConfigurationProfile', { get: function () { return require('./data-vsphere-configuration-profile'); } });
 Object.defineProperty(exports, 'dataVsphereContentLibrary', { get: function () { return require('./data-vsphere-content-library'); } });
 Object.defineProperty(exports, 'dataVsphereContentLibraryItem', { get: function () { return require('./data-vsphere-content-library-item'); } });
 Object.defineProperty(exports, 'dataVsphereCustomAttribute', { get: function () { return require('./data-vsphere-custom-attribute'); } });

@@ -11,6 +11,7 @@ export * as computeClusterVmAntiAffinityRule from './compute-cluster-vm-anti-aff
 export * as computeClusterVmDependencyRule from './compute-cluster-vm-dependency-rule';
 export * as computeClusterVmGroup from './compute-cluster-vm-group';
 export * as computeClusterVmHostRule from './compute-cluster-vm-host-rule';
+export * as configurationProfile from './configuration-profile';
 export * as contentLibrary from './content-library';
 export * as contentLibraryItem from './content-library-item';
 export * as customAttribute from './custom-attribute';
@@ -50,6 +51,7 @@ export * as vmfsDatastore from './vmfs-datastore';
 export * as vnic from './vnic';
 export * as dataVsphereComputeCluster from './data-vsphere-compute-cluster';
 export * as dataVsphereComputeClusterHostGroup from './data-vsphere-compute-cluster-host-group';
+export * as dataVsphereConfigurationProfile from './data-vsphere-configuration-profile';
 export * as dataVsphereContentLibrary from './data-vsphere-content-library';
 export * as dataVsphereContentLibraryItem from './data-vsphere-content-library-item';
 export * as dataVsphereCustomAttribute from './data-vsphere-custom-attribute';
