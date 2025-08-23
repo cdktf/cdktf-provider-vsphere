@@ -4,7 +4,7 @@
 
 ### DataVsphereLicense <a name="DataVsphereLicense" id="@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicense"></a>
 
-Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/data-sources/license vsphere_license}.
+Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/data-sources/license vsphere_license}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereLicense.DataVsphereLicense.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataVsphereLicense to impo
 
 The id of the existing DataVsphereLicense that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/data-sources/license#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/data-sources/license#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,7 +740,7 @@ public string LicenseKey { get; set; }
 
 The license key value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/data-sources/license#license_key DataVsphereLicense#license_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/data-sources/license#license_key DataVsphereLicense#license_key}
 
 ---
 

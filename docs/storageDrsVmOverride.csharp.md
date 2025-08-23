@@ -4,7 +4,7 @@
 
 ### StorageDrsVmOverride <a name="StorageDrsVmOverride" id="@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverride"></a>
 
-Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/storage_drs_vm_override vsphere_storage_drs_vm_override}.
+Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/storage_drs_vm_override vsphere_storage_drs_vm_override}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverride.Initializer"></a>
 
@@ -495,7 +495,7 @@ The construct id used in the generated config for the StorageDrsVmOverride to im
 
 The id of the existing StorageDrsVmOverride that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/storage_drs_vm_override#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/storage_drs_vm_override#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -859,7 +859,7 @@ new StorageDrsVmOverrideConfig {
 | <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverrideConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverrideConfig.property.datastoreClusterId">DatastoreClusterId</a></code> | <code>string</code> | The managed object ID of the datastore cluster. |
 | <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverrideConfig.property.virtualMachineId">VirtualMachineId</a></code> | <code>string</code> | The managed object ID of the virtual machine. |
-| <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverrideConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/storage_drs_vm_override#id StorageDrsVmOverride#id}. |
+| <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverrideConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/storage_drs_vm_override#id StorageDrsVmOverride#id}. |
 | <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverrideConfig.property.sdrsAutomationLevel">SdrsAutomationLevel</a></code> | <code>string</code> | Overrides any Storage DRS automation levels for this virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverrideConfig.property.sdrsEnabled">SdrsEnabled</a></code> | <code>string</code> | Overrides the default Storage DRS setting for this virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.storageDrsVmOverride.StorageDrsVmOverrideConfig.property.sdrsIntraVmAffinity">SdrsIntraVmAffinity</a></code> | <code>string</code> | Overrides the intra-VM affinity setting for this virtual machine. |
@@ -946,7 +946,7 @@ public string DatastoreClusterId { get; set; }
 
 The managed object ID of the datastore cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/storage_drs_vm_override#datastore_cluster_id StorageDrsVmOverride#datastore_cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/storage_drs_vm_override#datastore_cluster_id StorageDrsVmOverride#datastore_cluster_id}
 
 ---
 
@@ -960,7 +960,7 @@ public string VirtualMachineId { get; set; }
 
 The managed object ID of the virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/storage_drs_vm_override#virtual_machine_id StorageDrsVmOverride#virtual_machine_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/storage_drs_vm_override#virtual_machine_id StorageDrsVmOverride#virtual_machine_id}
 
 ---
 
@@ -972,7 +972,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/storage_drs_vm_override#id StorageDrsVmOverride#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/storage_drs_vm_override#id StorageDrsVmOverride#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -989,7 +989,7 @@ public string SdrsAutomationLevel { get; set; }
 
 Overrides any Storage DRS automation levels for this virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/storage_drs_vm_override#sdrs_automation_level StorageDrsVmOverride#sdrs_automation_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/storage_drs_vm_override#sdrs_automation_level StorageDrsVmOverride#sdrs_automation_level}
 
 ---
 
@@ -1003,7 +1003,7 @@ public string SdrsEnabled { get; set; }
 
 Overrides the default Storage DRS setting for this virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/storage_drs_vm_override#sdrs_enabled StorageDrsVmOverride#sdrs_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/storage_drs_vm_override#sdrs_enabled StorageDrsVmOverride#sdrs_enabled}
 
 ---
 
@@ -1017,7 +1017,7 @@ public string SdrsIntraVmAffinity { get; set; }
 
 Overrides the intra-VM affinity setting for this virtual machine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/storage_drs_vm_override#sdrs_intra_vm_affinity StorageDrsVmOverride#sdrs_intra_vm_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/storage_drs_vm_override#sdrs_intra_vm_affinity StorageDrsVmOverride#sdrs_intra_vm_affinity}
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/drs_vm_override
+// https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/drs_vm_override
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface DrsVmOverrideConfig extends cdktf.TerraformMetaArguments {
   /**
   * The managed object ID of the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/drs_vm_override#compute_cluster_id DrsVmOverride#compute_cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/drs_vm_override#compute_cluster_id DrsVmOverride#compute_cluster_id}
   */
   readonly computeClusterId: string;
   /**
   * The automation level for this virtual machine in the cluster. Can be one of manual, partiallyAutomated, or fullyAutomated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/drs_vm_override#drs_automation_level DrsVmOverride#drs_automation_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/drs_vm_override#drs_automation_level DrsVmOverride#drs_automation_level}
   */
   readonly drsAutomationLevel?: string;
   /**
   * Enable DRS for this virtual machine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/drs_vm_override#drs_enabled DrsVmOverride#drs_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/drs_vm_override#drs_enabled DrsVmOverride#drs_enabled}
   */
   readonly drsEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/drs_vm_override#id DrsVmOverride#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/drs_vm_override#id DrsVmOverride#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,13 +40,13 @@ export interface DrsVmOverrideConfig extends cdktf.TerraformMetaArguments {
   /**
   * The managed object ID of the virtual machine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/drs_vm_override#virtual_machine_id DrsVmOverride#virtual_machine_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/drs_vm_override#virtual_machine_id DrsVmOverride#virtual_machine_id}
   */
   readonly virtualMachineId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/drs_vm_override vsphere_drs_vm_override}
+* Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/drs_vm_override vsphere_drs_vm_override}
 */
 export class DrsVmOverride extends cdktf.TerraformResource {
 
@@ -62,7 +62,7 @@ export class DrsVmOverride extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DrsVmOverride resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DrsVmOverride to import
-  * @param importFromId The id of the existing DrsVmOverride that should be imported. Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/drs_vm_override#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DrsVmOverride that should be imported. Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/drs_vm_override#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DrsVmOverride to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +74,7 @@ export class DrsVmOverride extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.14.2/docs/resources/drs_vm_override vsphere_drs_vm_override} Resource
+  * Create a new {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/drs_vm_override vsphere_drs_vm_override} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class DrsVmOverride extends cdktf.TerraformResource {
       terraformResourceType: 'vsphere_drs_vm_override',
       terraformGeneratorMetadata: {
         providerName: 'vsphere',
-        providerVersion: '2.14.2',
+        providerVersion: '2.15.0',
         providerVersionConstraint: '~> 2.13'
       },
       provider: config.provider,
