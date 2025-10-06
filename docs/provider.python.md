@@ -17,12 +17,12 @@ provider.VsphereProvider(
   password: str,
   user: str,
   alias: str = None,
-  allow_unverified_ssl: typing.Union[bool, IResolvable] = None,
+  allow_unverified_ssl: bool | IResolvable = None,
   api_timeout: typing.Union[int, float] = None,
-  client_debug: typing.Union[bool, IResolvable] = None,
+  client_debug: bool | IResolvable = None,
   client_debug_path: str = None,
   client_debug_path_run: str = None,
-  persist_session: typing.Union[bool, IResolvable] = None,
+  persist_session: bool | IResolvable = None,
   rest_session_path: str = None,
   vcenter_server: str = None,
   vim_keep_alive: typing.Union[int, float] = None,
@@ -38,12 +38,12 @@ provider.VsphereProvider(
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.password">password</a></code> | <code>str</code> | The user password for vSphere API operations. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.user">user</a></code> | <code>str</code> | The user name for vSphere API operations. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.allowUnverifiedSsl">allow_unverified_ssl</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set, VMware vSphere client will permit unverifiable SSL certificates. |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.allowUnverifiedSsl">allow_unverified_ssl</a></code> | <code>bool \| cdktf.IResolvable</code> | If set, VMware vSphere client will permit unverifiable SSL certificates. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.apiTimeout">api_timeout</a></code> | <code>typing.Union[int, float]</code> | API timeout in minutes (Default: 5). |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.clientDebug">client_debug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | govmomi debug. |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.clientDebug">client_debug</a></code> | <code>bool \| cdktf.IResolvable</code> | govmomi debug. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.clientDebugPath">client_debug_path</a></code> | <code>str</code> | govmomi debug path for debug. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.clientDebugPathRun">client_debug_path_run</a></code> | <code>str</code> | govmomi debug path for a single run. |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.persistSession">persist_session</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Persist vSphere client sessions to disk. |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.persistSession">persist_session</a></code> | <code>bool \| cdktf.IResolvable</code> | Persist vSphere client sessions to disk. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.restSessionPath">rest_session_path</a></code> | <code>str</code> | The directory to save vSphere REST API sessions to. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.vcenterServer">vcenter_server</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs#vcenter_server VsphereProvider#vcenter_server}. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.vimKeepAlive">vim_keep_alive</a></code> | <code>typing.Union[int, float]</code> | Keep alive interval for the VIM session in minutes. |
@@ -102,7 +102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `allow_unverified_ssl`<sup>Optional</sup> <a name="allow_unverified_ssl" id="@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.allowUnverifiedSsl"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If set, VMware vSphere client will permit unverifiable SSL certificates.
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `client_debug`<sup>Optional</sup> <a name="client_debug" id="@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.clientDebug"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 govmomi debug.
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `persist_session`<sup>Optional</sup> <a name="persist_session" id="@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.persistSession"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Persist vSphere client sessions to disk.
 
@@ -521,26 +521,26 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.terraformProviderSource">terraform_provider_source</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.alias">alias</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.aliasInput">alias_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.allowUnverifiedSslInput">allow_unverified_ssl_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.allowUnverifiedSslInput">allow_unverified_ssl_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.apiTimeoutInput">api_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebugInput">client_debug_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebugInput">client_debug_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebugPathInput">client_debug_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebugPathRunInput">client_debug_path_run_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.passwordInput">password_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.persistSessionInput">persist_session_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.persistSessionInput">persist_session_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.restSessionPathInput">rest_session_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.userInput">user_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.vcenterServerInput">vcenter_server_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.vimKeepAliveInput">vim_keep_alive_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.vimSessionPathInput">vim_session_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.vsphereServerInput">vsphere_server_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.allowUnverifiedSsl">allow_unverified_ssl</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.allowUnverifiedSsl">allow_unverified_ssl</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.apiTimeout">api_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebug">client_debug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebug">client_debug</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebugPath">client_debug_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebugPathRun">client_debug_path_run</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.password">password</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.persistSession">persist_session</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.persistSession">persist_session</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.restSessionPath">rest_session_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.user">user</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.vcenterServer">vcenter_server</a></code> | <code>str</code> | *No description.* |
@@ -655,10 +655,10 @@ alias_input: str
 ##### `allow_unverified_ssl_input`<sup>Optional</sup> <a name="allow_unverified_ssl_input" id="@cdktf/provider-vsphere.provider.VsphereProvider.property.allowUnverifiedSslInput"></a>
 
 ```python
-allow_unverified_ssl_input: typing.Union[bool, IResolvable]
+allow_unverified_ssl_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -675,10 +675,10 @@ api_timeout_input: typing.Union[int, float]
 ##### `client_debug_input`<sup>Optional</sup> <a name="client_debug_input" id="@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebugInput"></a>
 
 ```python
-client_debug_input: typing.Union[bool, IResolvable]
+client_debug_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -715,10 +715,10 @@ password_input: str
 ##### `persist_session_input`<sup>Optional</sup> <a name="persist_session_input" id="@cdktf/provider-vsphere.provider.VsphereProvider.property.persistSessionInput"></a>
 
 ```python
-persist_session_input: typing.Union[bool, IResolvable]
+persist_session_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -785,10 +785,10 @@ vsphere_server_input: str
 ##### `allow_unverified_ssl`<sup>Optional</sup> <a name="allow_unverified_ssl" id="@cdktf/provider-vsphere.provider.VsphereProvider.property.allowUnverifiedSsl"></a>
 
 ```python
-allow_unverified_ssl: typing.Union[bool, IResolvable]
+allow_unverified_ssl: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -805,10 +805,10 @@ api_timeout: typing.Union[int, float]
 ##### `client_debug`<sup>Optional</sup> <a name="client_debug" id="@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebug"></a>
 
 ```python
-client_debug: typing.Union[bool, IResolvable]
+client_debug: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -845,10 +845,10 @@ password: str
 ##### `persist_session`<sup>Optional</sup> <a name="persist_session" id="@cdktf/provider-vsphere.provider.VsphereProvider.property.persistSession"></a>
 
 ```python
-persist_session: typing.Union[bool, IResolvable]
+persist_session: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -943,12 +943,12 @@ provider.VsphereProviderConfig(
   password: str,
   user: str,
   alias: str = None,
-  allow_unverified_ssl: typing.Union[bool, IResolvable] = None,
+  allow_unverified_ssl: bool | IResolvable = None,
   api_timeout: typing.Union[int, float] = None,
-  client_debug: typing.Union[bool, IResolvable] = None,
+  client_debug: bool | IResolvable = None,
   client_debug_path: str = None,
   client_debug_path_run: str = None,
-  persist_session: typing.Union[bool, IResolvable] = None,
+  persist_session: bool | IResolvable = None,
   rest_session_path: str = None,
   vcenter_server: str = None,
   vim_keep_alive: typing.Union[int, float] = None,
@@ -964,12 +964,12 @@ provider.VsphereProviderConfig(
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.password">password</a></code> | <code>str</code> | The user password for vSphere API operations. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.user">user</a></code> | <code>str</code> | The user name for vSphere API operations. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.alias">alias</a></code> | <code>str</code> | Alias name. |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.allowUnverifiedSsl">allow_unverified_ssl</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set, VMware vSphere client will permit unverifiable SSL certificates. |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.allowUnverifiedSsl">allow_unverified_ssl</a></code> | <code>bool \| cdktf.IResolvable</code> | If set, VMware vSphere client will permit unverifiable SSL certificates. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.apiTimeout">api_timeout</a></code> | <code>typing.Union[int, float]</code> | API timeout in minutes (Default: 5). |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.clientDebug">client_debug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | govmomi debug. |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.clientDebug">client_debug</a></code> | <code>bool \| cdktf.IResolvable</code> | govmomi debug. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.clientDebugPath">client_debug_path</a></code> | <code>str</code> | govmomi debug path for debug. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.clientDebugPathRun">client_debug_path_run</a></code> | <code>str</code> | govmomi debug path for a single run. |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.persistSession">persist_session</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Persist vSphere client sessions to disk. |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.persistSession">persist_session</a></code> | <code>bool \| cdktf.IResolvable</code> | Persist vSphere client sessions to disk. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.restSessionPath">rest_session_path</a></code> | <code>str</code> | The directory to save vSphere REST API sessions to. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.vcenterServer">vcenter_server</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs#vcenter_server VsphereProvider#vcenter_server}. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.vimKeepAlive">vim_keep_alive</a></code> | <code>typing.Union[int, float]</code> | Keep alive interval for the VIM session in minutes. |
@@ -1023,10 +1023,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `allow_unverified_ssl`<sup>Optional</sup> <a name="allow_unverified_ssl" id="@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.allowUnverifiedSsl"></a>
 
 ```python
-allow_unverified_ssl: typing.Union[bool, IResolvable]
+allow_unverified_ssl: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If set, VMware vSphere client will permit unverifiable SSL certificates.
 
@@ -1051,10 +1051,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `client_debug`<sup>Optional</sup> <a name="client_debug" id="@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.clientDebug"></a>
 
 ```python
-client_debug: typing.Union[bool, IResolvable]
+client_debug: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 govmomi debug.
 
@@ -1093,10 +1093,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `persist_session`<sup>Optional</sup> <a name="persist_session" id="@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.persistSession"></a>
 
 ```python
-persist_session: typing.Union[bool, IResolvable]
+persist_session: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Persist vSphere client sessions to disk.
 

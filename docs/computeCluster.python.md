@@ -14,44 +14,44 @@ from cdktf_cdktf_provider_vsphere import compute_cluster
 computeCluster.ComputeCluster(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   datacenter_id: str,
   name: str,
   custom_attributes: typing.Mapping[str] = None,
   dpm_automation_level: str = None,
-  dpm_enabled: typing.Union[bool, IResolvable] = None,
+  dpm_enabled: bool | IResolvable = None,
   dpm_threshold: typing.Union[int, float] = None,
   drs_advanced_options: typing.Mapping[str] = None,
   drs_automation_level: str = None,
-  drs_enabled: typing.Union[bool, IResolvable] = None,
-  drs_enable_predictive_drs: typing.Union[bool, IResolvable] = None,
-  drs_enable_vm_overrides: typing.Union[bool, IResolvable] = None,
+  drs_enabled: bool | IResolvable = None,
+  drs_enable_predictive_drs: bool | IResolvable = None,
+  drs_enable_vm_overrides: bool | IResolvable = None,
   drs_migration_threshold: typing.Union[int, float] = None,
   drs_scale_descendants_shares: str = None,
   folder: str = None,
-  force_evacuate_on_destroy: typing.Union[bool, IResolvable] = None,
+  force_evacuate_on_destroy: bool | IResolvable = None,
   ha_admission_control_failover_host_system_ids: typing.List[str] = None,
   ha_admission_control_host_failure_tolerance: typing.Union[int, float] = None,
   ha_admission_control_performance_tolerance: typing.Union[int, float] = None,
   ha_admission_control_policy: str = None,
-  ha_admission_control_resource_percentage_auto_compute: typing.Union[bool, IResolvable] = None,
+  ha_admission_control_resource_percentage_auto_compute: bool | IResolvable = None,
   ha_admission_control_resource_percentage_cpu: typing.Union[int, float] = None,
   ha_admission_control_resource_percentage_memory: typing.Union[int, float] = None,
   ha_admission_control_slot_policy_explicit_cpu: typing.Union[int, float] = None,
   ha_admission_control_slot_policy_explicit_memory: typing.Union[int, float] = None,
-  ha_admission_control_slot_policy_use_explicit_size: typing.Union[bool, IResolvable] = None,
+  ha_admission_control_slot_policy_use_explicit_size: bool | IResolvable = None,
   ha_advanced_options: typing.Mapping[str] = None,
   ha_datastore_apd_recovery_action: str = None,
   ha_datastore_apd_response: str = None,
   ha_datastore_apd_response_delay: typing.Union[int, float] = None,
   ha_datastore_pdl_response: str = None,
-  ha_enabled: typing.Union[bool, IResolvable] = None,
+  ha_enabled: bool | IResolvable = None,
   ha_heartbeat_datastore_ids: typing.List[str] = None,
   ha_heartbeat_datastore_policy: str = None,
   ha_host_isolation_response: str = None,
@@ -68,29 +68,29 @@ computeCluster.ComputeCluster(
   ha_vm_restart_timeout: typing.Union[int, float] = None,
   host_cluster_exit_timeout: typing.Union[int, float] = None,
   host_image: ComputeClusterHostImage = None,
-  host_managed: typing.Union[bool, IResolvable] = None,
+  host_managed: bool | IResolvable = None,
   host_system_ids: typing.List[str] = None,
   id: str = None,
   proactive_ha_automation_level: str = None,
-  proactive_ha_enabled: typing.Union[bool, IResolvable] = None,
+  proactive_ha_enabled: bool | IResolvable = None,
   proactive_ha_moderate_remediation: str = None,
   proactive_ha_provider_ids: typing.List[str] = None,
   proactive_ha_severe_remediation: str = None,
   tags: typing.List[str] = None,
-  vsan_compression_enabled: typing.Union[bool, IResolvable] = None,
-  vsan_dedup_enabled: typing.Union[bool, IResolvable] = None,
-  vsan_disk_group: typing.Union[IResolvable, typing.List[ComputeClusterVsanDiskGroup]] = None,
-  vsan_dit_encryption_enabled: typing.Union[bool, IResolvable] = None,
+  vsan_compression_enabled: bool | IResolvable = None,
+  vsan_dedup_enabled: bool | IResolvable = None,
+  vsan_disk_group: IResolvable | typing.List[ComputeClusterVsanDiskGroup] = None,
+  vsan_dit_encryption_enabled: bool | IResolvable = None,
   vsan_dit_rekey_interval: typing.Union[int, float] = None,
-  vsan_enabled: typing.Union[bool, IResolvable] = None,
-  vsan_esa_enabled: typing.Union[bool, IResolvable] = None,
-  vsan_fault_domains: typing.Union[IResolvable, typing.List[ComputeClusterVsanFaultDomains]] = None,
-  vsan_network_diagnostic_mode_enabled: typing.Union[bool, IResolvable] = None,
-  vsan_performance_enabled: typing.Union[bool, IResolvable] = None,
+  vsan_enabled: bool | IResolvable = None,
+  vsan_esa_enabled: bool | IResolvable = None,
+  vsan_fault_domains: IResolvable | typing.List[ComputeClusterVsanFaultDomains] = None,
+  vsan_network_diagnostic_mode_enabled: bool | IResolvable = None,
+  vsan_performance_enabled: bool | IResolvable = None,
   vsan_remote_datastore_ids: typing.List[str] = None,
   vsan_stretched_cluster: ComputeClusterVsanStretchedCluster = None,
-  vsan_unmap_enabled: typing.Union[bool, IResolvable] = None,
-  vsan_verbose_mode_enabled: typing.Union[bool, IResolvable] = None
+  vsan_unmap_enabled: bool | IResolvable = None,
+  vsan_verbose_mode_enabled: bool | IResolvable = None
 )
 ```
 
@@ -98,44 +98,44 @@ computeCluster.ComputeCluster(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.datacenterId">datacenter_id</a></code> | <code>str</code> | The managed object ID of the datacenter to put the cluster in. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.name">name</a></code> | <code>str</code> | Name for the new cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.customAttributes">custom_attributes</a></code> | <code>typing.Mapping[str]</code> | A list of custom attributes to set on this resource. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.dpmAutomationLevel">dpm_automation_level</a></code> | <code>str</code> | The automation level for host power operations in this cluster. Can be one of manual or automated. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.dpmEnabled">dpm_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable DPM support for DRS. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.dpmEnabled">dpm_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable DPM support for DRS. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.dpmThreshold">dpm_threshold</a></code> | <code>typing.Union[int, float]</code> | A value between 1 and 5 indicating the threshold of load within the cluster that influences host power operations. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.drsAdvancedOptions">drs_advanced_options</a></code> | <code>typing.Mapping[str]</code> | Advanced configuration options for DRS and DPM. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.drsAutomationLevel">drs_automation_level</a></code> | <code>str</code> | The default automation level for all virtual machines in this cluster. Can be one of manual, partiallyAutomated, or fullyAutomated. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.drsEnabled">drs_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable DRS for this cluster. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.drsEnablePredictiveDrs">drs_enable_predictive_drs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When true, enables DRS to use data from vRealize Operations Manager to make proactive DRS recommendations. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.drsEnableVmOverrides">drs_enable_vm_overrides</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When true, allows individual VM overrides within this cluster to be set. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.drsEnabled">drs_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable DRS for this cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.drsEnablePredictiveDrs">drs_enable_predictive_drs</a></code> | <code>bool \| cdktf.IResolvable</code> | When true, enables DRS to use data from vRealize Operations Manager to make proactive DRS recommendations. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.drsEnableVmOverrides">drs_enable_vm_overrides</a></code> | <code>bool \| cdktf.IResolvable</code> | When true, allows individual VM overrides within this cluster to be set. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.drsMigrationThreshold">drs_migration_threshold</a></code> | <code>typing.Union[int, float]</code> | A value between 1 and 5 indicating the threshold of imbalance tolerated between hosts. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.drsScaleDescendantsShares">drs_scale_descendants_shares</a></code> | <code>str</code> | Enable scalable shares for all descendants of this cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.folder">folder</a></code> | <code>str</code> | The name of the folder to locate the cluster in. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.forceEvacuateOnDestroy">force_evacuate_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Force removal of all hosts in the cluster during destroy and make them standalone hosts. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.forceEvacuateOnDestroy">force_evacuate_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | Force removal of all hosts in the cluster during destroy and make them standalone hosts. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.haAdmissionControlFailoverHostSystemIds">ha_admission_control_failover_host_system_ids</a></code> | <code>typing.List[str]</code> | When ha_admission_control_policy is failoverHosts, this defines the managed object IDs of hosts to use as dedicated failover hosts. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.haAdmissionControlHostFailureTolerance">ha_admission_control_host_failure_tolerance</a></code> | <code>typing.Union[int, float]</code> | The maximum number of failed hosts that admission control tolerates when making decisions on whether to permit virtual machine operations. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.haAdmissionControlPerformanceTolerance">ha_admission_control_performance_tolerance</a></code> | <code>typing.Union[int, float]</code> | The percentage of resource reduction that a cluster of VMs can tolerate in case of a failover. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.haAdmissionControlPolicy">ha_admission_control_policy</a></code> | <code>str</code> | The type of admission control policy to use with vSphere HA, which controls whether or not specific VM operations are permitted in the cluster in order to protect the reliability of the cluster. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.haAdmissionControlResourcePercentageAutoCompute">ha_admission_control_resource_percentage_auto_compute</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When ha_admission_control_policy is resourcePercentage, automatically determine available resource percentages by subtracting the average number of host resources represented by the ha_admission_control_host_failure_tolerance setting from the total amount of resources in the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.haAdmissionControlResourcePercentageAutoCompute">ha_admission_control_resource_percentage_auto_compute</a></code> | <code>bool \| cdktf.IResolvable</code> | When ha_admission_control_policy is resourcePercentage, automatically determine available resource percentages by subtracting the average number of host resources represented by the ha_admission_control_host_failure_tolerance setting from the total amount of resources in the cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.haAdmissionControlResourcePercentageCpu">ha_admission_control_resource_percentage_cpu</a></code> | <code>typing.Union[int, float]</code> | When ha_admission_control_policy is resourcePercentage, this controls the user-defined percentage of CPU resources in the cluster to reserve for failover. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.haAdmissionControlResourcePercentageMemory">ha_admission_control_resource_percentage_memory</a></code> | <code>typing.Union[int, float]</code> | When ha_admission_control_policy is resourcePercentage, this controls the user-defined percentage of memory resources in the cluster to reserve for failover. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.haAdmissionControlSlotPolicyExplicitCpu">ha_admission_control_slot_policy_explicit_cpu</a></code> | <code>typing.Union[int, float]</code> | When ha_admission_control_policy is slotPolicy, this controls the user-defined CPU slot size, in MHz. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.haAdmissionControlSlotPolicyExplicitMemory">ha_admission_control_slot_policy_explicit_memory</a></code> | <code>typing.Union[int, float]</code> | When ha_admission_control_policy is slotPolicy, this controls the user-defined memory slot size, in MB. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.haAdmissionControlSlotPolicyUseExplicitSize">ha_admission_control_slot_policy_use_explicit_size</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When ha_admission_control_policy is slotPolicy, this setting controls whether or not you wish to supply explicit values to CPU and memory slot sizes. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.haAdmissionControlSlotPolicyUseExplicitSize">ha_admission_control_slot_policy_use_explicit_size</a></code> | <code>bool \| cdktf.IResolvable</code> | When ha_admission_control_policy is slotPolicy, this setting controls whether or not you wish to supply explicit values to CPU and memory slot sizes. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.haAdvancedOptions">ha_advanced_options</a></code> | <code>typing.Mapping[str]</code> | Advanced configuration options for vSphere HA. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.haDatastoreApdRecoveryAction">ha_datastore_apd_recovery_action</a></code> | <code>str</code> | When ha_vm_component_protection is enabled, controls the action to take on virtual machines if an APD status on an affected datastore clears in the middle of an APD event. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.haDatastoreApdResponse">ha_datastore_apd_response</a></code> | <code>str</code> | When ha_vm_component_protection is enabled, controls the action to take on virtual machines when the cluster has detected loss to all paths to a relevant datastore. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.haDatastoreApdResponseDelay">ha_datastore_apd_response_delay</a></code> | <code>typing.Union[int, float]</code> | When ha_vm_component_protection is enabled, controls the delay in seconds to wait after an APD timeout event to execute the response action defined in ha_datastore_apd_response. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.haDatastorePdlResponse">ha_datastore_pdl_response</a></code> | <code>str</code> | When ha_vm_component_protection is enabled, controls the action to take on virtual machines when the cluster has detected a permanent device loss to a relevant datastore. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.haEnabled">ha_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable vSphere HA for this cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.haEnabled">ha_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable vSphere HA for this cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.haHeartbeatDatastoreIds">ha_heartbeat_datastore_ids</a></code> | <code>typing.List[str]</code> | The list of managed object IDs for preferred datastores to use for HA heartbeating. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.haHeartbeatDatastorePolicy">ha_heartbeat_datastore_policy</a></code> | <code>str</code> | The selection policy for HA heartbeat datastores. Can be one of allFeasibleDs, userSelectedDs, or allFeasibleDsWithUserPreference. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.haHostIsolationResponse">ha_host_isolation_response</a></code> | <code>str</code> | The action to take on virtual machines when a host has detected that it has been isolated from the rest of the cluster. |
@@ -152,29 +152,29 @@ computeCluster.ComputeCluster(
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.haVmRestartTimeout">ha_vm_restart_timeout</a></code> | <code>typing.Union[int, float]</code> | The maximum time, in seconds, that vSphere HA will wait for virtual machines in one priority to be ready before proceeding with the next priority. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.hostClusterExitTimeout">host_cluster_exit_timeout</a></code> | <code>typing.Union[int, float]</code> | The timeout for each host maintenance mode operation when removing hosts from a cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.hostImage">host_image</a></code> | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage">ComputeClusterHostImage</a></code> | host_image block. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.hostManaged">host_managed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Must be set if cluster enrollment is managed from host resource. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.hostManaged">host_managed</a></code> | <code>bool \| cdktf.IResolvable</code> | Must be set if cluster enrollment is managed from host resource. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.hostSystemIds">host_system_ids</a></code> | <code>typing.List[str]</code> | The managed object IDs of the hosts to put in the cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/compute_cluster#id ComputeCluster#id}. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.proactiveHaAutomationLevel">proactive_ha_automation_level</a></code> | <code>str</code> | The DRS behavior for proactive HA recommendations. Can be one of Automated or Manual. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.proactiveHaEnabled">proactive_ha_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables proactive HA, allowing for vSphere to get HA data from external providers and use DRS to perform remediation. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.proactiveHaEnabled">proactive_ha_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables proactive HA, allowing for vSphere to get HA data from external providers and use DRS to perform remediation. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.proactiveHaModerateRemediation">proactive_ha_moderate_remediation</a></code> | <code>str</code> | The configured remediation for moderately degraded hosts. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.proactiveHaProviderIds">proactive_ha_provider_ids</a></code> | <code>typing.List[str]</code> | The list of IDs for health update providers configured for this cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.proactiveHaSevereRemediation">proactive_ha_severe_remediation</a></code> | <code>str</code> | The configured remediation for severely degraded hosts. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | A list of tag IDs to apply to this object. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanCompressionEnabled">vsan_compression_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the vSAN compression service is enabled for the cluster. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanDedupEnabled">vsan_dedup_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the vSAN deduplication service is enabled for the cluster. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanDiskGroup">vsan_disk_group</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>]]</code> | vsan_disk_group block. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanDitEncryptionEnabled">vsan_dit_encryption_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the vSAN data-in-transit encryption is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanCompressionEnabled">vsan_compression_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the vSAN compression service is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanDedupEnabled">vsan_dedup_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the vSAN deduplication service is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanDiskGroup">vsan_disk_group</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>]</code> | vsan_disk_group block. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanDitEncryptionEnabled">vsan_dit_encryption_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the vSAN data-in-transit encryption is enabled for the cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanDitRekeyInterval">vsan_dit_rekey_interval</a></code> | <code>typing.Union[int, float]</code> | When vsan_dit_encryption_enabled is enabled, sets the rekey interval of data-in-transit encryption (in minutes). |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanEnabled">vsan_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the vSAN service is enabled for the cluster. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanEsaEnabled">vsan_esa_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the vSAN ESA service is enabled for the cluster. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanFaultDomains">vsan_fault_domains</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a>]]</code> | vsan_fault_domains block. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanNetworkDiagnosticModeEnabled">vsan_network_diagnostic_mode_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the vSAN network diagnostic mode is enabled for the cluster. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanPerformanceEnabled">vsan_performance_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the vSAN performance service is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanEnabled">vsan_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the vSAN service is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanEsaEnabled">vsan_esa_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the vSAN ESA service is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanFaultDomains">vsan_fault_domains</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a>]</code> | vsan_fault_domains block. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanNetworkDiagnosticModeEnabled">vsan_network_diagnostic_mode_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the vSAN network diagnostic mode is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanPerformanceEnabled">vsan_performance_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the vSAN performance service is enabled for the cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanRemoteDatastoreIds">vsan_remote_datastore_ids</a></code> | <code>typing.List[str]</code> | The managed object IDs of the vSAN datastore to be mounted on the cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanStretchedCluster">vsan_stretched_cluster</a></code> | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanStretchedCluster">ComputeClusterVsanStretchedCluster</a></code> | vsan_stretched_cluster block. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanUnmapEnabled">vsan_unmap_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the vSAN unmap service is enabled for the cluster. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanVerboseModeEnabled">vsan_verbose_mode_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the vSAN verbose mode is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanUnmapEnabled">vsan_unmap_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the vSAN unmap service is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanVerboseModeEnabled">vsan_verbose_mode_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the vSAN verbose mode is enabled for the cluster. |
 
 ---
 
@@ -198,13 +198,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -234,7 +234,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -280,7 +280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `dpm_enabled`<sup>Optional</sup> <a name="dpm_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.dpmEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable DPM support for DRS.
 
@@ -324,7 +324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `drs_enabled`<sup>Optional</sup> <a name="drs_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.drsEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable DRS for this cluster.
 
@@ -334,7 +334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `drs_enable_predictive_drs`<sup>Optional</sup> <a name="drs_enable_predictive_drs" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.drsEnablePredictiveDrs"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When true, enables DRS to use data from vRealize Operations Manager to make proactive DRS recommendations.
 
@@ -344,7 +344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `drs_enable_vm_overrides`<sup>Optional</sup> <a name="drs_enable_vm_overrides" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.drsEnableVmOverrides"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When true, allows individual VM overrides within this cluster to be set.
 
@@ -386,7 +386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `force_evacuate_on_destroy`<sup>Optional</sup> <a name="force_evacuate_on_destroy" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.forceEvacuateOnDestroy"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Force removal of all hosts in the cluster during destroy and make them standalone hosts.
 
@@ -446,7 +446,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `ha_admission_control_resource_percentage_auto_compute`<sup>Optional</sup> <a name="ha_admission_control_resource_percentage_auto_compute" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.haAdmissionControlResourcePercentageAutoCompute"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When ha_admission_control_policy is resourcePercentage, automatically determine available resource percentages by subtracting the average number of host resources represented by the ha_admission_control_host_failure_tolerance setting from the total amount of resources in the cluster.
 
@@ -498,7 +498,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `ha_admission_control_slot_policy_use_explicit_size`<sup>Optional</sup> <a name="ha_admission_control_slot_policy_use_explicit_size" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.haAdmissionControlSlotPolicyUseExplicitSize"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When ha_admission_control_policy is slotPolicy, this setting controls whether or not you wish to supply explicit values to CPU and memory slot sizes.
 
@@ -566,7 +566,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `ha_enabled`<sup>Optional</sup> <a name="ha_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.haEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable vSphere HA for this cluster.
 
@@ -752,7 +752,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `host_managed`<sup>Optional</sup> <a name="host_managed" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.hostManaged"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Must be set if cluster enrollment is managed from host resource.
 
@@ -793,7 +793,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `proactive_ha_enabled`<sup>Optional</sup> <a name="proactive_ha_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.proactiveHaEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enables proactive HA, allowing for vSphere to get HA data from external providers and use DRS to perform remediation.
 
@@ -847,7 +847,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `vsan_compression_enabled`<sup>Optional</sup> <a name="vsan_compression_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanCompressionEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the vSAN compression service is enabled for the cluster.
 
@@ -857,7 +857,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `vsan_dedup_enabled`<sup>Optional</sup> <a name="vsan_dedup_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanDedupEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the vSAN deduplication service is enabled for the cluster.
 
@@ -867,7 +867,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `vsan_disk_group`<sup>Optional</sup> <a name="vsan_disk_group" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanDiskGroup"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>]
 
 vsan_disk_group block.
 
@@ -877,7 +877,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `vsan_dit_encryption_enabled`<sup>Optional</sup> <a name="vsan_dit_encryption_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanDitEncryptionEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the vSAN data-in-transit encryption is enabled for the cluster.
 
@@ -897,7 +897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `vsan_enabled`<sup>Optional</sup> <a name="vsan_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the vSAN service is enabled for the cluster.
 
@@ -907,7 +907,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `vsan_esa_enabled`<sup>Optional</sup> <a name="vsan_esa_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanEsaEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the vSAN ESA service is enabled for the cluster.
 
@@ -917,7 +917,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `vsan_fault_domains`<sup>Optional</sup> <a name="vsan_fault_domains" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanFaultDomains"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a>]
 
 vsan_fault_domains block.
 
@@ -927,7 +927,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `vsan_network_diagnostic_mode_enabled`<sup>Optional</sup> <a name="vsan_network_diagnostic_mode_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanNetworkDiagnosticModeEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the vSAN network diagnostic mode is enabled for the cluster.
 
@@ -937,7 +937,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `vsan_performance_enabled`<sup>Optional</sup> <a name="vsan_performance_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanPerformanceEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the vSAN performance service is enabled for the cluster.
 
@@ -967,7 +967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `vsan_unmap_enabled`<sup>Optional</sup> <a name="vsan_unmap_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanUnmapEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the vSAN unmap service is enabled for the cluster.
 
@@ -977,7 +977,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `vsan_verbose_mode_enabled`<sup>Optional</sup> <a name="vsan_verbose_mode_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.Initializer.parameter.vsanVerboseModeEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the vSAN verbose mode is enabled for the cluster.
 
@@ -1309,7 +1309,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.importFrom"></a>
@@ -1372,7 +1372,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -1388,7 +1388,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -1416,14 +1416,14 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_host_image(
-  component: typing.Union[IResolvable, typing.List[ComputeClusterHostImageComponent]] = None,
+  component: IResolvable | typing.List[ComputeClusterHostImageComponent] = None,
   esx_version: str = None
 ) -> None
 ```
 
 ###### `component`<sup>Optional</sup> <a name="component" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.putHostImage.parameter.component"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent">ComputeClusterHostImageComponent</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent">ComputeClusterHostImageComponent</a>]
 
 component block.
 
@@ -1445,13 +1445,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ```python
 def put_vsan_disk_group(
-  value: typing.Union[IResolvable, typing.List[ComputeClusterVsanDiskGroup]]
+  value: IResolvable | typing.List[ComputeClusterVsanDiskGroup]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.putVsanDiskGroup.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>]
 
 ---
 
@@ -1459,13 +1459,13 @@ def put_vsan_disk_group(
 
 ```python
 def put_vsan_fault_domains(
-  value: typing.Union[IResolvable, typing.List[ComputeClusterVsanFaultDomains]]
+  value: IResolvable | typing.List[ComputeClusterVsanFaultDomains]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.putVsanFaultDomains.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a>]
 
 ---
 
@@ -2076,13 +2076,13 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostImage">host_image</a></code> | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference">ComputeClusterHostImageOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.resourcePoolId">resource_pool_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDiskGroup">vsan_disk_group</a></code> | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupList">ComputeClusterVsanDiskGroupList</a></code> | *No description.* |
@@ -2091,33 +2091,33 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.customAttributesInput">custom_attributes_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.datacenterIdInput">datacenter_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.dpmAutomationLevelInput">dpm_automation_level_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.dpmEnabledInput">dpm_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.dpmEnabledInput">dpm_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.dpmThresholdInput">dpm_threshold_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsAdvancedOptionsInput">drs_advanced_options_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsAutomationLevelInput">drs_automation_level_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnabledInput">drs_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnablePredictiveDrsInput">drs_enable_predictive_drs_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnableVmOverridesInput">drs_enable_vm_overrides_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnabledInput">drs_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnablePredictiveDrsInput">drs_enable_predictive_drs_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnableVmOverridesInput">drs_enable_vm_overrides_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsMigrationThresholdInput">drs_migration_threshold_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsScaleDescendantsSharesInput">drs_scale_descendants_shares_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.folderInput">folder_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.forceEvacuateOnDestroyInput">force_evacuate_on_destroy_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.forceEvacuateOnDestroyInput">force_evacuate_on_destroy_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlFailoverHostSystemIdsInput">ha_admission_control_failover_host_system_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlHostFailureToleranceInput">ha_admission_control_host_failure_tolerance_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlPerformanceToleranceInput">ha_admission_control_performance_tolerance_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlPolicyInput">ha_admission_control_policy_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlResourcePercentageAutoComputeInput">ha_admission_control_resource_percentage_auto_compute_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlResourcePercentageAutoComputeInput">ha_admission_control_resource_percentage_auto_compute_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlResourcePercentageCpuInput">ha_admission_control_resource_percentage_cpu_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlResourcePercentageMemoryInput">ha_admission_control_resource_percentage_memory_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlSlotPolicyExplicitCpuInput">ha_admission_control_slot_policy_explicit_cpu_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlSlotPolicyExplicitMemoryInput">ha_admission_control_slot_policy_explicit_memory_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlSlotPolicyUseExplicitSizeInput">ha_admission_control_slot_policy_use_explicit_size_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlSlotPolicyUseExplicitSizeInput">ha_admission_control_slot_policy_use_explicit_size_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdvancedOptionsInput">ha_advanced_options_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haDatastoreApdRecoveryActionInput">ha_datastore_apd_recovery_action_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haDatastoreApdResponseDelayInput">ha_datastore_apd_response_delay_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haDatastoreApdResponseInput">ha_datastore_apd_response_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haDatastorePdlResponseInput">ha_datastore_pdl_response_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haEnabledInput">ha_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haEnabledInput">ha_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haHeartbeatDatastoreIdsInput">ha_heartbeat_datastore_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haHeartbeatDatastorePolicyInput">ha_heartbeat_datastore_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haHostIsolationResponseInput">ha_host_isolation_response_input</a></code> | <code>str</code> | *No description.* |
@@ -2134,60 +2134,60 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haVmRestartTimeoutInput">ha_vm_restart_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostClusterExitTimeoutInput">host_cluster_exit_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostImageInput">host_image_input</a></code> | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage">ComputeClusterHostImage</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostManagedInput">host_managed_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostManagedInput">host_managed_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostSystemIdsInput">host_system_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaAutomationLevelInput">proactive_ha_automation_level_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaEnabledInput">proactive_ha_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaEnabledInput">proactive_ha_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaModerateRemediationInput">proactive_ha_moderate_remediation_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaProviderIdsInput">proactive_ha_provider_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaSevereRemediationInput">proactive_ha_severe_remediation_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanCompressionEnabledInput">vsan_compression_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDedupEnabledInput">vsan_dedup_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDiskGroupInput">vsan_disk_group_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDitEncryptionEnabledInput">vsan_dit_encryption_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanCompressionEnabledInput">vsan_compression_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDedupEnabledInput">vsan_dedup_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDiskGroupInput">vsan_disk_group_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDitEncryptionEnabledInput">vsan_dit_encryption_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDitRekeyIntervalInput">vsan_dit_rekey_interval_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanEnabledInput">vsan_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanEsaEnabledInput">vsan_esa_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanFaultDomainsInput">vsan_fault_domains_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanNetworkDiagnosticModeEnabledInput">vsan_network_diagnostic_mode_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanPerformanceEnabledInput">vsan_performance_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanEnabledInput">vsan_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanEsaEnabledInput">vsan_esa_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanFaultDomainsInput">vsan_fault_domains_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanNetworkDiagnosticModeEnabledInput">vsan_network_diagnostic_mode_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanPerformanceEnabledInput">vsan_performance_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanRemoteDatastoreIdsInput">vsan_remote_datastore_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanStretchedClusterInput">vsan_stretched_cluster_input</a></code> | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanStretchedCluster">ComputeClusterVsanStretchedCluster</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanUnmapEnabledInput">vsan_unmap_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanVerboseModeEnabledInput">vsan_verbose_mode_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanUnmapEnabledInput">vsan_unmap_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanVerboseModeEnabledInput">vsan_verbose_mode_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.customAttributes">custom_attributes</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.datacenterId">datacenter_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.dpmAutomationLevel">dpm_automation_level</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.dpmEnabled">dpm_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.dpmEnabled">dpm_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.dpmThreshold">dpm_threshold</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsAdvancedOptions">drs_advanced_options</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsAutomationLevel">drs_automation_level</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnabled">drs_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnablePredictiveDrs">drs_enable_predictive_drs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnableVmOverrides">drs_enable_vm_overrides</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnabled">drs_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnablePredictiveDrs">drs_enable_predictive_drs</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnableVmOverrides">drs_enable_vm_overrides</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsMigrationThreshold">drs_migration_threshold</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsScaleDescendantsShares">drs_scale_descendants_shares</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.folder">folder</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.forceEvacuateOnDestroy">force_evacuate_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.forceEvacuateOnDestroy">force_evacuate_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlFailoverHostSystemIds">ha_admission_control_failover_host_system_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlHostFailureTolerance">ha_admission_control_host_failure_tolerance</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlPerformanceTolerance">ha_admission_control_performance_tolerance</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlPolicy">ha_admission_control_policy</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlResourcePercentageAutoCompute">ha_admission_control_resource_percentage_auto_compute</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlResourcePercentageAutoCompute">ha_admission_control_resource_percentage_auto_compute</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlResourcePercentageCpu">ha_admission_control_resource_percentage_cpu</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlResourcePercentageMemory">ha_admission_control_resource_percentage_memory</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlSlotPolicyExplicitCpu">ha_admission_control_slot_policy_explicit_cpu</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlSlotPolicyExplicitMemory">ha_admission_control_slot_policy_explicit_memory</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlSlotPolicyUseExplicitSize">ha_admission_control_slot_policy_use_explicit_size</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlSlotPolicyUseExplicitSize">ha_admission_control_slot_policy_use_explicit_size</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdvancedOptions">ha_advanced_options</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haDatastoreApdRecoveryAction">ha_datastore_apd_recovery_action</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haDatastoreApdResponse">ha_datastore_apd_response</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haDatastoreApdResponseDelay">ha_datastore_apd_response_delay</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haDatastorePdlResponse">ha_datastore_pdl_response</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haEnabled">ha_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haEnabled">ha_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haHeartbeatDatastoreIds">ha_heartbeat_datastore_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haHeartbeatDatastorePolicy">ha_heartbeat_datastore_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haHostIsolationResponse">ha_host_isolation_response</a></code> | <code>str</code> | *No description.* |
@@ -2203,27 +2203,27 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haVmRestartPriority">ha_vm_restart_priority</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haVmRestartTimeout">ha_vm_restart_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostClusterExitTimeout">host_cluster_exit_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostManaged">host_managed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostManaged">host_managed</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostSystemIds">host_system_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaAutomationLevel">proactive_ha_automation_level</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaEnabled">proactive_ha_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaEnabled">proactive_ha_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaModerateRemediation">proactive_ha_moderate_remediation</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaProviderIds">proactive_ha_provider_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaSevereRemediation">proactive_ha_severe_remediation</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.tags">tags</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanCompressionEnabled">vsan_compression_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDedupEnabled">vsan_dedup_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDitEncryptionEnabled">vsan_dit_encryption_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanCompressionEnabled">vsan_compression_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDedupEnabled">vsan_dedup_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDitEncryptionEnabled">vsan_dit_encryption_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDitRekeyInterval">vsan_dit_rekey_interval</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanEnabled">vsan_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanEsaEnabled">vsan_esa_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanNetworkDiagnosticModeEnabled">vsan_network_diagnostic_mode_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanPerformanceEnabled">vsan_performance_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanEnabled">vsan_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanEsaEnabled">vsan_esa_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanNetworkDiagnosticModeEnabled">vsan_network_diagnostic_mode_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanPerformanceEnabled">vsan_performance_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanRemoteDatastoreIds">vsan_remote_datastore_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanUnmapEnabled">vsan_unmap_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanVerboseModeEnabled">vsan_verbose_mode_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanUnmapEnabled">vsan_unmap_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanVerboseModeEnabled">vsan_verbose_mode_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -2302,20 +2302,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -2362,10 +2362,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2452,10 +2452,10 @@ dpm_automation_level_input: str
 ##### `dpm_enabled_input`<sup>Optional</sup> <a name="dpm_enabled_input" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.dpmEnabledInput"></a>
 
 ```python
-dpm_enabled_input: typing.Union[bool, IResolvable]
+dpm_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2492,30 +2492,30 @@ drs_automation_level_input: str
 ##### `drs_enabled_input`<sup>Optional</sup> <a name="drs_enabled_input" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnabledInput"></a>
 
 ```python
-drs_enabled_input: typing.Union[bool, IResolvable]
+drs_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `drs_enable_predictive_drs_input`<sup>Optional</sup> <a name="drs_enable_predictive_drs_input" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnablePredictiveDrsInput"></a>
 
 ```python
-drs_enable_predictive_drs_input: typing.Union[bool, IResolvable]
+drs_enable_predictive_drs_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `drs_enable_vm_overrides_input`<sup>Optional</sup> <a name="drs_enable_vm_overrides_input" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnableVmOverridesInput"></a>
 
 ```python
-drs_enable_vm_overrides_input: typing.Union[bool, IResolvable]
+drs_enable_vm_overrides_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2552,10 +2552,10 @@ folder_input: str
 ##### `force_evacuate_on_destroy_input`<sup>Optional</sup> <a name="force_evacuate_on_destroy_input" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.forceEvacuateOnDestroyInput"></a>
 
 ```python
-force_evacuate_on_destroy_input: typing.Union[bool, IResolvable]
+force_evacuate_on_destroy_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2602,10 +2602,10 @@ ha_admission_control_policy_input: str
 ##### `ha_admission_control_resource_percentage_auto_compute_input`<sup>Optional</sup> <a name="ha_admission_control_resource_percentage_auto_compute_input" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlResourcePercentageAutoComputeInput"></a>
 
 ```python
-ha_admission_control_resource_percentage_auto_compute_input: typing.Union[bool, IResolvable]
+ha_admission_control_resource_percentage_auto_compute_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2652,10 +2652,10 @@ ha_admission_control_slot_policy_explicit_memory_input: typing.Union[int, float]
 ##### `ha_admission_control_slot_policy_use_explicit_size_input`<sup>Optional</sup> <a name="ha_admission_control_slot_policy_use_explicit_size_input" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlSlotPolicyUseExplicitSizeInput"></a>
 
 ```python
-ha_admission_control_slot_policy_use_explicit_size_input: typing.Union[bool, IResolvable]
+ha_admission_control_slot_policy_use_explicit_size_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2712,10 +2712,10 @@ ha_datastore_pdl_response_input: str
 ##### `ha_enabled_input`<sup>Optional</sup> <a name="ha_enabled_input" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haEnabledInput"></a>
 
 ```python
-ha_enabled_input: typing.Union[bool, IResolvable]
+ha_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2882,10 +2882,10 @@ host_image_input: ComputeClusterHostImage
 ##### `host_managed_input`<sup>Optional</sup> <a name="host_managed_input" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostManagedInput"></a>
 
 ```python
-host_managed_input: typing.Union[bool, IResolvable]
+host_managed_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2932,10 +2932,10 @@ proactive_ha_automation_level_input: str
 ##### `proactive_ha_enabled_input`<sup>Optional</sup> <a name="proactive_ha_enabled_input" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaEnabledInput"></a>
 
 ```python
-proactive_ha_enabled_input: typing.Union[bool, IResolvable]
+proactive_ha_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2982,40 +2982,40 @@ tags_input: typing.List[str]
 ##### `vsan_compression_enabled_input`<sup>Optional</sup> <a name="vsan_compression_enabled_input" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanCompressionEnabledInput"></a>
 
 ```python
-vsan_compression_enabled_input: typing.Union[bool, IResolvable]
+vsan_compression_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `vsan_dedup_enabled_input`<sup>Optional</sup> <a name="vsan_dedup_enabled_input" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDedupEnabledInput"></a>
 
 ```python
-vsan_dedup_enabled_input: typing.Union[bool, IResolvable]
+vsan_dedup_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `vsan_disk_group_input`<sup>Optional</sup> <a name="vsan_disk_group_input" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDiskGroupInput"></a>
 
 ```python
-vsan_disk_group_input: typing.Union[IResolvable, typing.List[ComputeClusterVsanDiskGroup]]
+vsan_disk_group_input: IResolvable | typing.List[ComputeClusterVsanDiskGroup]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>]
 
 ---
 
 ##### `vsan_dit_encryption_enabled_input`<sup>Optional</sup> <a name="vsan_dit_encryption_enabled_input" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDitEncryptionEnabledInput"></a>
 
 ```python
-vsan_dit_encryption_enabled_input: typing.Union[bool, IResolvable]
+vsan_dit_encryption_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3032,50 +3032,50 @@ vsan_dit_rekey_interval_input: typing.Union[int, float]
 ##### `vsan_enabled_input`<sup>Optional</sup> <a name="vsan_enabled_input" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanEnabledInput"></a>
 
 ```python
-vsan_enabled_input: typing.Union[bool, IResolvable]
+vsan_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `vsan_esa_enabled_input`<sup>Optional</sup> <a name="vsan_esa_enabled_input" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanEsaEnabledInput"></a>
 
 ```python
-vsan_esa_enabled_input: typing.Union[bool, IResolvable]
+vsan_esa_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `vsan_fault_domains_input`<sup>Optional</sup> <a name="vsan_fault_domains_input" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanFaultDomainsInput"></a>
 
 ```python
-vsan_fault_domains_input: typing.Union[IResolvable, typing.List[ComputeClusterVsanFaultDomains]]
+vsan_fault_domains_input: IResolvable | typing.List[ComputeClusterVsanFaultDomains]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a>]
 
 ---
 
 ##### `vsan_network_diagnostic_mode_enabled_input`<sup>Optional</sup> <a name="vsan_network_diagnostic_mode_enabled_input" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanNetworkDiagnosticModeEnabledInput"></a>
 
 ```python
-vsan_network_diagnostic_mode_enabled_input: typing.Union[bool, IResolvable]
+vsan_network_diagnostic_mode_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `vsan_performance_enabled_input`<sup>Optional</sup> <a name="vsan_performance_enabled_input" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanPerformanceEnabledInput"></a>
 
 ```python
-vsan_performance_enabled_input: typing.Union[bool, IResolvable]
+vsan_performance_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3102,20 +3102,20 @@ vsan_stretched_cluster_input: ComputeClusterVsanStretchedCluster
 ##### `vsan_unmap_enabled_input`<sup>Optional</sup> <a name="vsan_unmap_enabled_input" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanUnmapEnabledInput"></a>
 
 ```python
-vsan_unmap_enabled_input: typing.Union[bool, IResolvable]
+vsan_unmap_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `vsan_verbose_mode_enabled_input`<sup>Optional</sup> <a name="vsan_verbose_mode_enabled_input" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanVerboseModeEnabledInput"></a>
 
 ```python
-vsan_verbose_mode_enabled_input: typing.Union[bool, IResolvable]
+vsan_verbose_mode_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3152,10 +3152,10 @@ dpm_automation_level: str
 ##### `dpm_enabled`<sup>Required</sup> <a name="dpm_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.dpmEnabled"></a>
 
 ```python
-dpm_enabled: typing.Union[bool, IResolvable]
+dpm_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3192,30 +3192,30 @@ drs_automation_level: str
 ##### `drs_enabled`<sup>Required</sup> <a name="drs_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnabled"></a>
 
 ```python
-drs_enabled: typing.Union[bool, IResolvable]
+drs_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `drs_enable_predictive_drs`<sup>Required</sup> <a name="drs_enable_predictive_drs" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnablePredictiveDrs"></a>
 
 ```python
-drs_enable_predictive_drs: typing.Union[bool, IResolvable]
+drs_enable_predictive_drs: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `drs_enable_vm_overrides`<sup>Required</sup> <a name="drs_enable_vm_overrides" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnableVmOverrides"></a>
 
 ```python
-drs_enable_vm_overrides: typing.Union[bool, IResolvable]
+drs_enable_vm_overrides: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3252,10 +3252,10 @@ folder: str
 ##### `force_evacuate_on_destroy`<sup>Required</sup> <a name="force_evacuate_on_destroy" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.forceEvacuateOnDestroy"></a>
 
 ```python
-force_evacuate_on_destroy: typing.Union[bool, IResolvable]
+force_evacuate_on_destroy: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3302,10 +3302,10 @@ ha_admission_control_policy: str
 ##### `ha_admission_control_resource_percentage_auto_compute`<sup>Required</sup> <a name="ha_admission_control_resource_percentage_auto_compute" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlResourcePercentageAutoCompute"></a>
 
 ```python
-ha_admission_control_resource_percentage_auto_compute: typing.Union[bool, IResolvable]
+ha_admission_control_resource_percentage_auto_compute: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3352,10 +3352,10 @@ ha_admission_control_slot_policy_explicit_memory: typing.Union[int, float]
 ##### `ha_admission_control_slot_policy_use_explicit_size`<sup>Required</sup> <a name="ha_admission_control_slot_policy_use_explicit_size" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlSlotPolicyUseExplicitSize"></a>
 
 ```python
-ha_admission_control_slot_policy_use_explicit_size: typing.Union[bool, IResolvable]
+ha_admission_control_slot_policy_use_explicit_size: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3412,10 +3412,10 @@ ha_datastore_pdl_response: str
 ##### `ha_enabled`<sup>Required</sup> <a name="ha_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haEnabled"></a>
 
 ```python
-ha_enabled: typing.Union[bool, IResolvable]
+ha_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3572,10 +3572,10 @@ host_cluster_exit_timeout: typing.Union[int, float]
 ##### `host_managed`<sup>Required</sup> <a name="host_managed" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostManaged"></a>
 
 ```python
-host_managed: typing.Union[bool, IResolvable]
+host_managed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3622,10 +3622,10 @@ proactive_ha_automation_level: str
 ##### `proactive_ha_enabled`<sup>Required</sup> <a name="proactive_ha_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaEnabled"></a>
 
 ```python
-proactive_ha_enabled: typing.Union[bool, IResolvable]
+proactive_ha_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3672,30 +3672,30 @@ tags: typing.List[str]
 ##### `vsan_compression_enabled`<sup>Required</sup> <a name="vsan_compression_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanCompressionEnabled"></a>
 
 ```python
-vsan_compression_enabled: typing.Union[bool, IResolvable]
+vsan_compression_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `vsan_dedup_enabled`<sup>Required</sup> <a name="vsan_dedup_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDedupEnabled"></a>
 
 ```python
-vsan_dedup_enabled: typing.Union[bool, IResolvable]
+vsan_dedup_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `vsan_dit_encryption_enabled`<sup>Required</sup> <a name="vsan_dit_encryption_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDitEncryptionEnabled"></a>
 
 ```python
-vsan_dit_encryption_enabled: typing.Union[bool, IResolvable]
+vsan_dit_encryption_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3712,40 +3712,40 @@ vsan_dit_rekey_interval: typing.Union[int, float]
 ##### `vsan_enabled`<sup>Required</sup> <a name="vsan_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanEnabled"></a>
 
 ```python
-vsan_enabled: typing.Union[bool, IResolvable]
+vsan_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `vsan_esa_enabled`<sup>Required</sup> <a name="vsan_esa_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanEsaEnabled"></a>
 
 ```python
-vsan_esa_enabled: typing.Union[bool, IResolvable]
+vsan_esa_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `vsan_network_diagnostic_mode_enabled`<sup>Required</sup> <a name="vsan_network_diagnostic_mode_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanNetworkDiagnosticModeEnabled"></a>
 
 ```python
-vsan_network_diagnostic_mode_enabled: typing.Union[bool, IResolvable]
+vsan_network_diagnostic_mode_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `vsan_performance_enabled`<sup>Required</sup> <a name="vsan_performance_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanPerformanceEnabled"></a>
 
 ```python
-vsan_performance_enabled: typing.Union[bool, IResolvable]
+vsan_performance_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3762,20 +3762,20 @@ vsan_remote_datastore_ids: typing.List[str]
 ##### `vsan_unmap_enabled`<sup>Required</sup> <a name="vsan_unmap_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanUnmapEnabled"></a>
 
 ```python
-vsan_unmap_enabled: typing.Union[bool, IResolvable]
+vsan_unmap_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `vsan_verbose_mode_enabled`<sup>Required</sup> <a name="vsan_verbose_mode_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanVerboseModeEnabled"></a>
 
 ```python
-vsan_verbose_mode_enabled: typing.Union[bool, IResolvable]
+vsan_verbose_mode_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3807,44 +3807,44 @@ tfResourceType: str
 from cdktf_cdktf_provider_vsphere import compute_cluster
 
 computeCluster.ComputeClusterConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   datacenter_id: str,
   name: str,
   custom_attributes: typing.Mapping[str] = None,
   dpm_automation_level: str = None,
-  dpm_enabled: typing.Union[bool, IResolvable] = None,
+  dpm_enabled: bool | IResolvable = None,
   dpm_threshold: typing.Union[int, float] = None,
   drs_advanced_options: typing.Mapping[str] = None,
   drs_automation_level: str = None,
-  drs_enabled: typing.Union[bool, IResolvable] = None,
-  drs_enable_predictive_drs: typing.Union[bool, IResolvable] = None,
-  drs_enable_vm_overrides: typing.Union[bool, IResolvable] = None,
+  drs_enabled: bool | IResolvable = None,
+  drs_enable_predictive_drs: bool | IResolvable = None,
+  drs_enable_vm_overrides: bool | IResolvable = None,
   drs_migration_threshold: typing.Union[int, float] = None,
   drs_scale_descendants_shares: str = None,
   folder: str = None,
-  force_evacuate_on_destroy: typing.Union[bool, IResolvable] = None,
+  force_evacuate_on_destroy: bool | IResolvable = None,
   ha_admission_control_failover_host_system_ids: typing.List[str] = None,
   ha_admission_control_host_failure_tolerance: typing.Union[int, float] = None,
   ha_admission_control_performance_tolerance: typing.Union[int, float] = None,
   ha_admission_control_policy: str = None,
-  ha_admission_control_resource_percentage_auto_compute: typing.Union[bool, IResolvable] = None,
+  ha_admission_control_resource_percentage_auto_compute: bool | IResolvable = None,
   ha_admission_control_resource_percentage_cpu: typing.Union[int, float] = None,
   ha_admission_control_resource_percentage_memory: typing.Union[int, float] = None,
   ha_admission_control_slot_policy_explicit_cpu: typing.Union[int, float] = None,
   ha_admission_control_slot_policy_explicit_memory: typing.Union[int, float] = None,
-  ha_admission_control_slot_policy_use_explicit_size: typing.Union[bool, IResolvable] = None,
+  ha_admission_control_slot_policy_use_explicit_size: bool | IResolvable = None,
   ha_advanced_options: typing.Mapping[str] = None,
   ha_datastore_apd_recovery_action: str = None,
   ha_datastore_apd_response: str = None,
   ha_datastore_apd_response_delay: typing.Union[int, float] = None,
   ha_datastore_pdl_response: str = None,
-  ha_enabled: typing.Union[bool, IResolvable] = None,
+  ha_enabled: bool | IResolvable = None,
   ha_heartbeat_datastore_ids: typing.List[str] = None,
   ha_heartbeat_datastore_policy: str = None,
   ha_host_isolation_response: str = None,
@@ -3861,29 +3861,29 @@ computeCluster.ComputeClusterConfig(
   ha_vm_restart_timeout: typing.Union[int, float] = None,
   host_cluster_exit_timeout: typing.Union[int, float] = None,
   host_image: ComputeClusterHostImage = None,
-  host_managed: typing.Union[bool, IResolvable] = None,
+  host_managed: bool | IResolvable = None,
   host_system_ids: typing.List[str] = None,
   id: str = None,
   proactive_ha_automation_level: str = None,
-  proactive_ha_enabled: typing.Union[bool, IResolvable] = None,
+  proactive_ha_enabled: bool | IResolvable = None,
   proactive_ha_moderate_remediation: str = None,
   proactive_ha_provider_ids: typing.List[str] = None,
   proactive_ha_severe_remediation: str = None,
   tags: typing.List[str] = None,
-  vsan_compression_enabled: typing.Union[bool, IResolvable] = None,
-  vsan_dedup_enabled: typing.Union[bool, IResolvable] = None,
-  vsan_disk_group: typing.Union[IResolvable, typing.List[ComputeClusterVsanDiskGroup]] = None,
-  vsan_dit_encryption_enabled: typing.Union[bool, IResolvable] = None,
+  vsan_compression_enabled: bool | IResolvable = None,
+  vsan_dedup_enabled: bool | IResolvable = None,
+  vsan_disk_group: IResolvable | typing.List[ComputeClusterVsanDiskGroup] = None,
+  vsan_dit_encryption_enabled: bool | IResolvable = None,
   vsan_dit_rekey_interval: typing.Union[int, float] = None,
-  vsan_enabled: typing.Union[bool, IResolvable] = None,
-  vsan_esa_enabled: typing.Union[bool, IResolvable] = None,
-  vsan_fault_domains: typing.Union[IResolvable, typing.List[ComputeClusterVsanFaultDomains]] = None,
-  vsan_network_diagnostic_mode_enabled: typing.Union[bool, IResolvable] = None,
-  vsan_performance_enabled: typing.Union[bool, IResolvable] = None,
+  vsan_enabled: bool | IResolvable = None,
+  vsan_esa_enabled: bool | IResolvable = None,
+  vsan_fault_domains: IResolvable | typing.List[ComputeClusterVsanFaultDomains] = None,
+  vsan_network_diagnostic_mode_enabled: bool | IResolvable = None,
+  vsan_performance_enabled: bool | IResolvable = None,
   vsan_remote_datastore_ids: typing.List[str] = None,
   vsan_stretched_cluster: ComputeClusterVsanStretchedCluster = None,
-  vsan_unmap_enabled: typing.Union[bool, IResolvable] = None,
-  vsan_verbose_mode_enabled: typing.Union[bool, IResolvable] = None
+  vsan_unmap_enabled: bool | IResolvable = None,
+  vsan_verbose_mode_enabled: bool | IResolvable = None
 )
 ```
 
@@ -3891,44 +3891,44 @@ computeCluster.ComputeClusterConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.datacenterId">datacenter_id</a></code> | <code>str</code> | The managed object ID of the datacenter to put the cluster in. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.name">name</a></code> | <code>str</code> | Name for the new cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.customAttributes">custom_attributes</a></code> | <code>typing.Mapping[str]</code> | A list of custom attributes to set on this resource. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.dpmAutomationLevel">dpm_automation_level</a></code> | <code>str</code> | The automation level for host power operations in this cluster. Can be one of manual or automated. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.dpmEnabled">dpm_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable DPM support for DRS. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.dpmEnabled">dpm_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable DPM support for DRS. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.dpmThreshold">dpm_threshold</a></code> | <code>typing.Union[int, float]</code> | A value between 1 and 5 indicating the threshold of load within the cluster that influences host power operations. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.drsAdvancedOptions">drs_advanced_options</a></code> | <code>typing.Mapping[str]</code> | Advanced configuration options for DRS and DPM. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.drsAutomationLevel">drs_automation_level</a></code> | <code>str</code> | The default automation level for all virtual machines in this cluster. Can be one of manual, partiallyAutomated, or fullyAutomated. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.drsEnabled">drs_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable DRS for this cluster. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.drsEnablePredictiveDrs">drs_enable_predictive_drs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When true, enables DRS to use data from vRealize Operations Manager to make proactive DRS recommendations. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.drsEnableVmOverrides">drs_enable_vm_overrides</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When true, allows individual VM overrides within this cluster to be set. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.drsEnabled">drs_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable DRS for this cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.drsEnablePredictiveDrs">drs_enable_predictive_drs</a></code> | <code>bool \| cdktf.IResolvable</code> | When true, enables DRS to use data from vRealize Operations Manager to make proactive DRS recommendations. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.drsEnableVmOverrides">drs_enable_vm_overrides</a></code> | <code>bool \| cdktf.IResolvable</code> | When true, allows individual VM overrides within this cluster to be set. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.drsMigrationThreshold">drs_migration_threshold</a></code> | <code>typing.Union[int, float]</code> | A value between 1 and 5 indicating the threshold of imbalance tolerated between hosts. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.drsScaleDescendantsShares">drs_scale_descendants_shares</a></code> | <code>str</code> | Enable scalable shares for all descendants of this cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.folder">folder</a></code> | <code>str</code> | The name of the folder to locate the cluster in. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.forceEvacuateOnDestroy">force_evacuate_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Force removal of all hosts in the cluster during destroy and make them standalone hosts. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.forceEvacuateOnDestroy">force_evacuate_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | Force removal of all hosts in the cluster during destroy and make them standalone hosts. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdmissionControlFailoverHostSystemIds">ha_admission_control_failover_host_system_ids</a></code> | <code>typing.List[str]</code> | When ha_admission_control_policy is failoverHosts, this defines the managed object IDs of hosts to use as dedicated failover hosts. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdmissionControlHostFailureTolerance">ha_admission_control_host_failure_tolerance</a></code> | <code>typing.Union[int, float]</code> | The maximum number of failed hosts that admission control tolerates when making decisions on whether to permit virtual machine operations. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdmissionControlPerformanceTolerance">ha_admission_control_performance_tolerance</a></code> | <code>typing.Union[int, float]</code> | The percentage of resource reduction that a cluster of VMs can tolerate in case of a failover. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdmissionControlPolicy">ha_admission_control_policy</a></code> | <code>str</code> | The type of admission control policy to use with vSphere HA, which controls whether or not specific VM operations are permitted in the cluster in order to protect the reliability of the cluster. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdmissionControlResourcePercentageAutoCompute">ha_admission_control_resource_percentage_auto_compute</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When ha_admission_control_policy is resourcePercentage, automatically determine available resource percentages by subtracting the average number of host resources represented by the ha_admission_control_host_failure_tolerance setting from the total amount of resources in the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdmissionControlResourcePercentageAutoCompute">ha_admission_control_resource_percentage_auto_compute</a></code> | <code>bool \| cdktf.IResolvable</code> | When ha_admission_control_policy is resourcePercentage, automatically determine available resource percentages by subtracting the average number of host resources represented by the ha_admission_control_host_failure_tolerance setting from the total amount of resources in the cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdmissionControlResourcePercentageCpu">ha_admission_control_resource_percentage_cpu</a></code> | <code>typing.Union[int, float]</code> | When ha_admission_control_policy is resourcePercentage, this controls the user-defined percentage of CPU resources in the cluster to reserve for failover. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdmissionControlResourcePercentageMemory">ha_admission_control_resource_percentage_memory</a></code> | <code>typing.Union[int, float]</code> | When ha_admission_control_policy is resourcePercentage, this controls the user-defined percentage of memory resources in the cluster to reserve for failover. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdmissionControlSlotPolicyExplicitCpu">ha_admission_control_slot_policy_explicit_cpu</a></code> | <code>typing.Union[int, float]</code> | When ha_admission_control_policy is slotPolicy, this controls the user-defined CPU slot size, in MHz. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdmissionControlSlotPolicyExplicitMemory">ha_admission_control_slot_policy_explicit_memory</a></code> | <code>typing.Union[int, float]</code> | When ha_admission_control_policy is slotPolicy, this controls the user-defined memory slot size, in MB. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdmissionControlSlotPolicyUseExplicitSize">ha_admission_control_slot_policy_use_explicit_size</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When ha_admission_control_policy is slotPolicy, this setting controls whether or not you wish to supply explicit values to CPU and memory slot sizes. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdmissionControlSlotPolicyUseExplicitSize">ha_admission_control_slot_policy_use_explicit_size</a></code> | <code>bool \| cdktf.IResolvable</code> | When ha_admission_control_policy is slotPolicy, this setting controls whether or not you wish to supply explicit values to CPU and memory slot sizes. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdvancedOptions">ha_advanced_options</a></code> | <code>typing.Mapping[str]</code> | Advanced configuration options for vSphere HA. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haDatastoreApdRecoveryAction">ha_datastore_apd_recovery_action</a></code> | <code>str</code> | When ha_vm_component_protection is enabled, controls the action to take on virtual machines if an APD status on an affected datastore clears in the middle of an APD event. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haDatastoreApdResponse">ha_datastore_apd_response</a></code> | <code>str</code> | When ha_vm_component_protection is enabled, controls the action to take on virtual machines when the cluster has detected loss to all paths to a relevant datastore. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haDatastoreApdResponseDelay">ha_datastore_apd_response_delay</a></code> | <code>typing.Union[int, float]</code> | When ha_vm_component_protection is enabled, controls the delay in seconds to wait after an APD timeout event to execute the response action defined in ha_datastore_apd_response. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haDatastorePdlResponse">ha_datastore_pdl_response</a></code> | <code>str</code> | When ha_vm_component_protection is enabled, controls the action to take on virtual machines when the cluster has detected a permanent device loss to a relevant datastore. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haEnabled">ha_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable vSphere HA for this cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haEnabled">ha_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable vSphere HA for this cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haHeartbeatDatastoreIds">ha_heartbeat_datastore_ids</a></code> | <code>typing.List[str]</code> | The list of managed object IDs for preferred datastores to use for HA heartbeating. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haHeartbeatDatastorePolicy">ha_heartbeat_datastore_policy</a></code> | <code>str</code> | The selection policy for HA heartbeat datastores. Can be one of allFeasibleDs, userSelectedDs, or allFeasibleDsWithUserPreference. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haHostIsolationResponse">ha_host_isolation_response</a></code> | <code>str</code> | The action to take on virtual machines when a host has detected that it has been isolated from the rest of the cluster. |
@@ -3945,49 +3945,49 @@ computeCluster.ComputeClusterConfig(
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haVmRestartTimeout">ha_vm_restart_timeout</a></code> | <code>typing.Union[int, float]</code> | The maximum time, in seconds, that vSphere HA will wait for virtual machines in one priority to be ready before proceeding with the next priority. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.hostClusterExitTimeout">host_cluster_exit_timeout</a></code> | <code>typing.Union[int, float]</code> | The timeout for each host maintenance mode operation when removing hosts from a cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.hostImage">host_image</a></code> | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage">ComputeClusterHostImage</a></code> | host_image block. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.hostManaged">host_managed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Must be set if cluster enrollment is managed from host resource. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.hostManaged">host_managed</a></code> | <code>bool \| cdktf.IResolvable</code> | Must be set if cluster enrollment is managed from host resource. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.hostSystemIds">host_system_ids</a></code> | <code>typing.List[str]</code> | The managed object IDs of the hosts to put in the cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/compute_cluster#id ComputeCluster#id}. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.proactiveHaAutomationLevel">proactive_ha_automation_level</a></code> | <code>str</code> | The DRS behavior for proactive HA recommendations. Can be one of Automated or Manual. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.proactiveHaEnabled">proactive_ha_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables proactive HA, allowing for vSphere to get HA data from external providers and use DRS to perform remediation. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.proactiveHaEnabled">proactive_ha_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables proactive HA, allowing for vSphere to get HA data from external providers and use DRS to perform remediation. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.proactiveHaModerateRemediation">proactive_ha_moderate_remediation</a></code> | <code>str</code> | The configured remediation for moderately degraded hosts. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.proactiveHaProviderIds">proactive_ha_provider_ids</a></code> | <code>typing.List[str]</code> | The list of IDs for health update providers configured for this cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.proactiveHaSevereRemediation">proactive_ha_severe_remediation</a></code> | <code>str</code> | The configured remediation for severely degraded hosts. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | A list of tag IDs to apply to this object. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanCompressionEnabled">vsan_compression_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the vSAN compression service is enabled for the cluster. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanDedupEnabled">vsan_dedup_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the vSAN deduplication service is enabled for the cluster. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanDiskGroup">vsan_disk_group</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>]]</code> | vsan_disk_group block. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanDitEncryptionEnabled">vsan_dit_encryption_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the vSAN data-in-transit encryption is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanCompressionEnabled">vsan_compression_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the vSAN compression service is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanDedupEnabled">vsan_dedup_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the vSAN deduplication service is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanDiskGroup">vsan_disk_group</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>]</code> | vsan_disk_group block. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanDitEncryptionEnabled">vsan_dit_encryption_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the vSAN data-in-transit encryption is enabled for the cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanDitRekeyInterval">vsan_dit_rekey_interval</a></code> | <code>typing.Union[int, float]</code> | When vsan_dit_encryption_enabled is enabled, sets the rekey interval of data-in-transit encryption (in minutes). |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanEnabled">vsan_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the vSAN service is enabled for the cluster. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanEsaEnabled">vsan_esa_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the vSAN ESA service is enabled for the cluster. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanFaultDomains">vsan_fault_domains</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a>]]</code> | vsan_fault_domains block. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanNetworkDiagnosticModeEnabled">vsan_network_diagnostic_mode_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the vSAN network diagnostic mode is enabled for the cluster. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanPerformanceEnabled">vsan_performance_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the vSAN performance service is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanEnabled">vsan_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the vSAN service is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanEsaEnabled">vsan_esa_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the vSAN ESA service is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanFaultDomains">vsan_fault_domains</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a>]</code> | vsan_fault_domains block. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanNetworkDiagnosticModeEnabled">vsan_network_diagnostic_mode_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the vSAN network diagnostic mode is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanPerformanceEnabled">vsan_performance_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the vSAN performance service is enabled for the cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanRemoteDatastoreIds">vsan_remote_datastore_ids</a></code> | <code>typing.List[str]</code> | The managed object IDs of the vSAN datastore to be mounted on the cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanStretchedCluster">vsan_stretched_cluster</a></code> | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanStretchedCluster">ComputeClusterVsanStretchedCluster</a></code> | vsan_stretched_cluster block. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanUnmapEnabled">vsan_unmap_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the vSAN unmap service is enabled for the cluster. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanVerboseModeEnabled">vsan_verbose_mode_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the vSAN verbose mode is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanUnmapEnabled">vsan_unmap_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the vSAN unmap service is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanVerboseModeEnabled">vsan_verbose_mode_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the vSAN verbose mode is enabled for the cluster. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -4034,10 +4034,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -4100,10 +4100,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `dpm_enabled`<sup>Optional</sup> <a name="dpm_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.dpmEnabled"></a>
 
 ```python
-dpm_enabled: typing.Union[bool, IResolvable]
+dpm_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable DPM support for DRS.
 
@@ -4160,10 +4160,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `drs_enabled`<sup>Optional</sup> <a name="drs_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.drsEnabled"></a>
 
 ```python
-drs_enabled: typing.Union[bool, IResolvable]
+drs_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable DRS for this cluster.
 
@@ -4174,10 +4174,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `drs_enable_predictive_drs`<sup>Optional</sup> <a name="drs_enable_predictive_drs" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.drsEnablePredictiveDrs"></a>
 
 ```python
-drs_enable_predictive_drs: typing.Union[bool, IResolvable]
+drs_enable_predictive_drs: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When true, enables DRS to use data from vRealize Operations Manager to make proactive DRS recommendations.
 
@@ -4188,10 +4188,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `drs_enable_vm_overrides`<sup>Optional</sup> <a name="drs_enable_vm_overrides" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.drsEnableVmOverrides"></a>
 
 ```python
-drs_enable_vm_overrides: typing.Union[bool, IResolvable]
+drs_enable_vm_overrides: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When true, allows individual VM overrides within this cluster to be set.
 
@@ -4246,10 +4246,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `force_evacuate_on_destroy`<sup>Optional</sup> <a name="force_evacuate_on_destroy" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.forceEvacuateOnDestroy"></a>
 
 ```python
-force_evacuate_on_destroy: typing.Union[bool, IResolvable]
+force_evacuate_on_destroy: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Force removal of all hosts in the cluster during destroy and make them standalone hosts.
 
@@ -4326,10 +4326,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `ha_admission_control_resource_percentage_auto_compute`<sup>Optional</sup> <a name="ha_admission_control_resource_percentage_auto_compute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdmissionControlResourcePercentageAutoCompute"></a>
 
 ```python
-ha_admission_control_resource_percentage_auto_compute: typing.Union[bool, IResolvable]
+ha_admission_control_resource_percentage_auto_compute: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When ha_admission_control_policy is resourcePercentage, automatically determine available resource percentages by subtracting the average number of host resources represented by the ha_admission_control_host_failure_tolerance setting from the total amount of resources in the cluster.
 
@@ -4398,10 +4398,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `ha_admission_control_slot_policy_use_explicit_size`<sup>Optional</sup> <a name="ha_admission_control_slot_policy_use_explicit_size" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdmissionControlSlotPolicyUseExplicitSize"></a>
 
 ```python
-ha_admission_control_slot_policy_use_explicit_size: typing.Union[bool, IResolvable]
+ha_admission_control_slot_policy_use_explicit_size: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When ha_admission_control_policy is slotPolicy, this setting controls whether or not you wish to supply explicit values to CPU and memory slot sizes.
 
@@ -4490,10 +4490,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `ha_enabled`<sup>Optional</sup> <a name="ha_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haEnabled"></a>
 
 ```python
-ha_enabled: typing.Union[bool, IResolvable]
+ha_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable vSphere HA for this cluster.
 
@@ -4744,10 +4744,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `host_managed`<sup>Optional</sup> <a name="host_managed" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.hostManaged"></a>
 
 ```python
-host_managed: typing.Union[bool, IResolvable]
+host_managed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Must be set if cluster enrollment is managed from host resource.
 
@@ -4801,10 +4801,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `proactive_ha_enabled`<sup>Optional</sup> <a name="proactive_ha_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.proactiveHaEnabled"></a>
 
 ```python
-proactive_ha_enabled: typing.Union[bool, IResolvable]
+proactive_ha_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enables proactive HA, allowing for vSphere to get HA data from external providers and use DRS to perform remediation.
 
@@ -4875,10 +4875,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `vsan_compression_enabled`<sup>Optional</sup> <a name="vsan_compression_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanCompressionEnabled"></a>
 
 ```python
-vsan_compression_enabled: typing.Union[bool, IResolvable]
+vsan_compression_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the vSAN compression service is enabled for the cluster.
 
@@ -4889,10 +4889,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `vsan_dedup_enabled`<sup>Optional</sup> <a name="vsan_dedup_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanDedupEnabled"></a>
 
 ```python
-vsan_dedup_enabled: typing.Union[bool, IResolvable]
+vsan_dedup_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the vSAN deduplication service is enabled for the cluster.
 
@@ -4903,10 +4903,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `vsan_disk_group`<sup>Optional</sup> <a name="vsan_disk_group" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanDiskGroup"></a>
 
 ```python
-vsan_disk_group: typing.Union[IResolvable, typing.List[ComputeClusterVsanDiskGroup]]
+vsan_disk_group: IResolvable | typing.List[ComputeClusterVsanDiskGroup]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>]
 
 vsan_disk_group block.
 
@@ -4917,10 +4917,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `vsan_dit_encryption_enabled`<sup>Optional</sup> <a name="vsan_dit_encryption_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanDitEncryptionEnabled"></a>
 
 ```python
-vsan_dit_encryption_enabled: typing.Union[bool, IResolvable]
+vsan_dit_encryption_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the vSAN data-in-transit encryption is enabled for the cluster.
 
@@ -4945,10 +4945,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `vsan_enabled`<sup>Optional</sup> <a name="vsan_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanEnabled"></a>
 
 ```python
-vsan_enabled: typing.Union[bool, IResolvable]
+vsan_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the vSAN service is enabled for the cluster.
 
@@ -4959,10 +4959,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `vsan_esa_enabled`<sup>Optional</sup> <a name="vsan_esa_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanEsaEnabled"></a>
 
 ```python
-vsan_esa_enabled: typing.Union[bool, IResolvable]
+vsan_esa_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the vSAN ESA service is enabled for the cluster.
 
@@ -4973,10 +4973,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `vsan_fault_domains`<sup>Optional</sup> <a name="vsan_fault_domains" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanFaultDomains"></a>
 
 ```python
-vsan_fault_domains: typing.Union[IResolvable, typing.List[ComputeClusterVsanFaultDomains]]
+vsan_fault_domains: IResolvable | typing.List[ComputeClusterVsanFaultDomains]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a>]
 
 vsan_fault_domains block.
 
@@ -4987,10 +4987,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `vsan_network_diagnostic_mode_enabled`<sup>Optional</sup> <a name="vsan_network_diagnostic_mode_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanNetworkDiagnosticModeEnabled"></a>
 
 ```python
-vsan_network_diagnostic_mode_enabled: typing.Union[bool, IResolvable]
+vsan_network_diagnostic_mode_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the vSAN network diagnostic mode is enabled for the cluster.
 
@@ -5001,10 +5001,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `vsan_performance_enabled`<sup>Optional</sup> <a name="vsan_performance_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanPerformanceEnabled"></a>
 
 ```python
-vsan_performance_enabled: typing.Union[bool, IResolvable]
+vsan_performance_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the vSAN performance service is enabled for the cluster.
 
@@ -5043,10 +5043,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `vsan_unmap_enabled`<sup>Optional</sup> <a name="vsan_unmap_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanUnmapEnabled"></a>
 
 ```python
-vsan_unmap_enabled: typing.Union[bool, IResolvable]
+vsan_unmap_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the vSAN unmap service is enabled for the cluster.
 
@@ -5057,10 +5057,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `vsan_verbose_mode_enabled`<sup>Optional</sup> <a name="vsan_verbose_mode_enabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanVerboseModeEnabled"></a>
 
 ```python
-vsan_verbose_mode_enabled: typing.Union[bool, IResolvable]
+vsan_verbose_mode_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the vSAN verbose mode is enabled for the cluster.
 
@@ -5076,7 +5076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 from cdktf_cdktf_provider_vsphere import compute_cluster
 
 computeCluster.ComputeClusterHostImage(
-  component: typing.Union[IResolvable, typing.List[ComputeClusterHostImageComponent]] = None,
+  component: IResolvable | typing.List[ComputeClusterHostImageComponent] = None,
   esx_version: str = None
 )
 ```
@@ -5085,7 +5085,7 @@ computeCluster.ComputeClusterHostImage(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage.property.component">component</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent">ComputeClusterHostImageComponent</a>]]</code> | component block. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage.property.component">component</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent">ComputeClusterHostImageComponent</a>]</code> | component block. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage.property.esxVersion">esx_version</a></code> | <code>str</code> | The ESXi version which the image is based on. |
 
 ---
@@ -5093,10 +5093,10 @@ computeCluster.ComputeClusterHostImage(
 ##### `component`<sup>Optional</sup> <a name="component" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage.property.component"></a>
 
 ```python
-component: typing.Union[IResolvable, typing.List[ComputeClusterHostImageComponent]]
+component: IResolvable | typing.List[ComputeClusterHostImageComponent]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent">ComputeClusterHostImageComponent</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent">ComputeClusterHostImageComponent</a>]
 
 component block.
 
@@ -5226,7 +5226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 from cdktf_cdktf_provider_vsphere import compute_cluster
 
 computeCluster.ComputeClusterVsanFaultDomains(
-  fault_domain: typing.Union[IResolvable, typing.List[ComputeClusterVsanFaultDomainsFaultDomain]] = None
+  fault_domain: IResolvable | typing.List[ComputeClusterVsanFaultDomainsFaultDomain] = None
 )
 ```
 
@@ -5234,17 +5234,17 @@ computeCluster.ComputeClusterVsanFaultDomains(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains.property.faultDomain">fault_domain</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain">ComputeClusterVsanFaultDomainsFaultDomain</a>]]</code> | fault_domain block. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains.property.faultDomain">fault_domain</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain">ComputeClusterVsanFaultDomainsFaultDomain</a>]</code> | fault_domain block. |
 
 ---
 
 ##### `fault_domain`<sup>Optional</sup> <a name="fault_domain" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains.property.faultDomain"></a>
 
 ```python
-fault_domain: typing.Union[IResolvable, typing.List[ComputeClusterVsanFaultDomainsFaultDomain]]
+fault_domain: IResolvable | typing.List[ComputeClusterVsanFaultDomainsFaultDomain]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain">ComputeClusterVsanFaultDomainsFaultDomain</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain">ComputeClusterVsanFaultDomainsFaultDomain</a>]
 
 fault_domain block.
 
@@ -5533,7 +5533,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent">ComputeClusterHostImageComponent</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent">ComputeClusterHostImageComponent</a>]</code> | *No description.* |
 
 ---
 
@@ -5564,10 +5564,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ComputeClusterHostImageComponent]]
+internal_value: IResolvable | typing.List[ComputeClusterHostImageComponent]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent">ComputeClusterHostImageComponent</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent">ComputeClusterHostImageComponent</a>]
 
 ---
 
@@ -5845,7 +5845,7 @@ def reset_version() -> None
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.property.versionInput">version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.property.version">version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent">ComputeClusterHostImageComponent</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent">ComputeClusterHostImageComponent</a></code> | *No description.* |
 
 ---
 
@@ -5916,10 +5916,10 @@ version: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ComputeClusterHostImageComponent]
+internal_value: IResolvable | ComputeClusterHostImageComponent
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent">ComputeClusterHostImageComponent</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent">ComputeClusterHostImageComponent</a>
 
 ---
 
@@ -6159,13 +6159,13 @@ Returns a reversible string representation.
 
 ```python
 def put_component(
-  value: typing.Union[IResolvable, typing.List[ComputeClusterHostImageComponent]]
+  value: IResolvable | typing.List[ComputeClusterHostImageComponent]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.putComponent.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent">ComputeClusterHostImageComponent</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent">ComputeClusterHostImageComponent</a>]
 
 ---
 
@@ -6189,7 +6189,7 @@ def reset_esx_version() -> None
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.component">component</a></code> | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList">ComputeClusterHostImageComponentList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.componentInput">component_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent">ComputeClusterHostImageComponent</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.componentInput">component_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent">ComputeClusterHostImageComponent</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.esxVersionInput">esx_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.esxVersion">esx_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage">ComputeClusterHostImage</a></code> | *No description.* |
@@ -6233,10 +6233,10 @@ component: ComputeClusterHostImageComponentList
 ##### `component_input`<sup>Optional</sup> <a name="component_input" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.componentInput"></a>
 
 ```python
-component_input: typing.Union[IResolvable, typing.List[ComputeClusterHostImageComponent]]
+component_input: IResolvable | typing.List[ComputeClusterHostImageComponent]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent">ComputeClusterHostImageComponent</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent">ComputeClusterHostImageComponent</a>]
 
 ---
 
@@ -6402,7 +6402,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>]</code> | *No description.* |
 
 ---
 
@@ -6433,10 +6433,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ComputeClusterVsanDiskGroup]]
+internal_value: IResolvable | typing.List[ComputeClusterVsanDiskGroup]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>]
 
 ---
 
@@ -6714,7 +6714,7 @@ def reset_storage() -> None
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupOutputReference.property.storageInput">storage_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupOutputReference.property.cache">cache</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupOutputReference.property.storage">storage</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a></code> | *No description.* |
 
 ---
 
@@ -6785,10 +6785,10 @@ storage: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ComputeClusterVsanDiskGroup]
+internal_value: IResolvable | ComputeClusterVsanDiskGroup
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>
 
 ---
 
@@ -6924,7 +6924,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain">ComputeClusterVsanFaultDomainsFaultDomain</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain">ComputeClusterVsanFaultDomainsFaultDomain</a>]</code> | *No description.* |
 
 ---
 
@@ -6955,10 +6955,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ComputeClusterVsanFaultDomainsFaultDomain]]
+internal_value: IResolvable | typing.List[ComputeClusterVsanFaultDomainsFaultDomain]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain">ComputeClusterVsanFaultDomainsFaultDomain</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain">ComputeClusterVsanFaultDomainsFaultDomain</a>]
 
 ---
 
@@ -7222,7 +7222,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainOutputReference.property.hostIds">host_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain">ComputeClusterVsanFaultDomainsFaultDomain</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain">ComputeClusterVsanFaultDomainsFaultDomain</a></code> | *No description.* |
 
 ---
 
@@ -7293,10 +7293,10 @@ name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ComputeClusterVsanFaultDomainsFaultDomain]
+internal_value: IResolvable | ComputeClusterVsanFaultDomainsFaultDomain
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain">ComputeClusterVsanFaultDomainsFaultDomain</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain">ComputeClusterVsanFaultDomainsFaultDomain</a>
 
 ---
 
@@ -7432,7 +7432,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a>]</code> | *No description.* |
 
 ---
 
@@ -7463,10 +7463,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[ComputeClusterVsanFaultDomains]]
+internal_value: IResolvable | typing.List[ComputeClusterVsanFaultDomains]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a>]
 
 ---
 
@@ -7725,13 +7725,13 @@ Returns a reversible string representation.
 
 ```python
 def put_fault_domain(
-  value: typing.Union[IResolvable, typing.List[ComputeClusterVsanFaultDomainsFaultDomain]]
+  value: IResolvable | typing.List[ComputeClusterVsanFaultDomainsFaultDomain]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsOutputReference.putFaultDomain.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain">ComputeClusterVsanFaultDomainsFaultDomain</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain">ComputeClusterVsanFaultDomainsFaultDomain</a>]
 
 ---
 
@@ -7749,8 +7749,8 @@ def reset_fault_domain() -> None
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsOutputReference.property.faultDomain">fault_domain</a></code> | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainList">ComputeClusterVsanFaultDomainsFaultDomainList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsOutputReference.property.faultDomainInput">fault_domain_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain">ComputeClusterVsanFaultDomainsFaultDomain</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsOutputReference.property.faultDomainInput">fault_domain_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain">ComputeClusterVsanFaultDomainsFaultDomain</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a></code> | *No description.* |
 
 ---
 
@@ -7791,20 +7791,20 @@ fault_domain: ComputeClusterVsanFaultDomainsFaultDomainList
 ##### `fault_domain_input`<sup>Optional</sup> <a name="fault_domain_input" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsOutputReference.property.faultDomainInput"></a>
 
 ```python
-fault_domain_input: typing.Union[IResolvable, typing.List[ComputeClusterVsanFaultDomainsFaultDomain]]
+fault_domain_input: IResolvable | typing.List[ComputeClusterVsanFaultDomainsFaultDomain]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain">ComputeClusterVsanFaultDomainsFaultDomain</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain">ComputeClusterVsanFaultDomainsFaultDomain</a>]
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, ComputeClusterVsanFaultDomains]
+internal_value: IResolvable | ComputeClusterVsanFaultDomains
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a>
 
 ---
 

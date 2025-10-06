@@ -287,7 +287,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-vsphere.host.Host.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-vsphere.host.Host.importFrom"></a>
@@ -341,7 +341,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-vsphere.host.Host.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -356,7 +356,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-vsphere.host.Host.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -381,12 +381,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutServices` <a name="PutServices" id="@cdktf/provider-vsphere.host.Host.putServices"></a>
 
 ```csharp
-private void PutServices(object Value)
+private void PutServices(IResolvable|HostServices[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vsphere.host.Host.putServices.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a>[]
 
 ---
 
@@ -594,41 +594,41 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.services">Services</a></code> | <code><a href="#@cdktf/provider-vsphere.host.HostServicesList">HostServicesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.clusterInput">ClusterInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.property.clusterManagedInput">ClusterManagedInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.property.connectedInput">ConnectedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.clusterManagedInput">ClusterManagedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.connectedInput">ConnectedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.customAttributesInput">CustomAttributesInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.datacenterInput">DatacenterInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.property.forceInput">ForceInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.forceInput">ForceInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.hostnameInput">HostnameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.licenseInput">LicenseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.lockdownInput">LockdownInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.property.maintenanceInput">MaintenanceInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.maintenanceInput">MaintenanceInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.passwordInput">PasswordInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.property.servicesInput">ServicesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.servicesInput">ServicesInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.tagsInput">TagsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.thumbprintInput">ThumbprintInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.usernameInput">UsernameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.cluster">Cluster</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.property.clusterManaged">ClusterManaged</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.property.connected">Connected</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.clusterManaged">ClusterManaged</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.connected">Connected</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.customAttributes">CustomAttributes</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.datacenter">Datacenter</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.property.force">Force</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.force">Force</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.hostname">Hostname</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.license">License</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.lockdown">Lockdown</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.property.maintenance">Maintenance</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.maintenance">Maintenance</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.password">Password</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.tags">Tags</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.thumbprint">Thumbprint</a></code> | <code>string</code> | *No description.* |
@@ -711,20 +711,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vsphere.host.Host.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.host.Host.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -771,10 +771,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vsphere.host.Host.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -801,20 +801,20 @@ public string ClusterInput { get; }
 ##### `ClusterManagedInput`<sup>Optional</sup> <a name="ClusterManagedInput" id="@cdktf/provider-vsphere.host.Host.property.clusterManagedInput"></a>
 
 ```csharp
-public object ClusterManagedInput { get; }
+public bool|IResolvable ClusterManagedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ConnectedInput`<sup>Optional</sup> <a name="ConnectedInput" id="@cdktf/provider-vsphere.host.Host.property.connectedInput"></a>
 
 ```csharp
-public object ConnectedInput { get; }
+public bool|IResolvable ConnectedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -841,10 +841,10 @@ public string DatacenterInput { get; }
 ##### `ForceInput`<sup>Optional</sup> <a name="ForceInput" id="@cdktf/provider-vsphere.host.Host.property.forceInput"></a>
 
 ```csharp
-public object ForceInput { get; }
+public bool|IResolvable ForceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -891,10 +891,10 @@ public string LockdownInput { get; }
 ##### `MaintenanceInput`<sup>Optional</sup> <a name="MaintenanceInput" id="@cdktf/provider-vsphere.host.Host.property.maintenanceInput"></a>
 
 ```csharp
-public object MaintenanceInput { get; }
+public bool|IResolvable MaintenanceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -911,10 +911,10 @@ public string PasswordInput { get; }
 ##### `ServicesInput`<sup>Optional</sup> <a name="ServicesInput" id="@cdktf/provider-vsphere.host.Host.property.servicesInput"></a>
 
 ```csharp
-public object ServicesInput { get; }
+public IResolvable|HostServices[] ServicesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a>[]
 
 ---
 
@@ -961,20 +961,20 @@ public string Cluster { get; }
 ##### `ClusterManaged`<sup>Required</sup> <a name="ClusterManaged" id="@cdktf/provider-vsphere.host.Host.property.clusterManaged"></a>
 
 ```csharp
-public object ClusterManaged { get; }
+public bool|IResolvable ClusterManaged { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Connected`<sup>Required</sup> <a name="Connected" id="@cdktf/provider-vsphere.host.Host.property.connected"></a>
 
 ```csharp
-public object Connected { get; }
+public bool|IResolvable Connected { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1001,10 +1001,10 @@ public string Datacenter { get; }
 ##### `Force`<sup>Required</sup> <a name="Force" id="@cdktf/provider-vsphere.host.Host.property.force"></a>
 
 ```csharp
-public object Force { get; }
+public bool|IResolvable Force { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1051,10 +1051,10 @@ public string Lockdown { get; }
 ##### `Maintenance`<sup>Required</sup> <a name="Maintenance" id="@cdktf/provider-vsphere.host.Host.property.maintenance"></a>
 
 ```csharp
-public object Maintenance { get; }
+public bool|IResolvable Maintenance { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1126,27 +1126,27 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Vsphere;
 
 new HostConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Hostname,
     string Password,
     string Username,
     string Cluster = null,
-    object ClusterManaged = null,
-    object Connected = null,
+    bool|IResolvable ClusterManaged = null,
+    bool|IResolvable Connected = null,
     System.Collections.Generic.IDictionary<string, string> CustomAttributes = null,
     string Datacenter = null,
-    object Force = null,
+    bool|IResolvable Force = null,
     string Id = null,
     string License = null,
     string Lockdown = null,
-    object Maintenance = null,
-    object Services = null,
+    bool|IResolvable Maintenance = null,
+    IResolvable|HostServices[] Services = null,
     string[] Tags = null,
     string Thumbprint = null
 };
@@ -1156,27 +1156,27 @@ new HostConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.hostname">Hostname</a></code> | <code>string</code> | FQDN or IP address of the host. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.password">Password</a></code> | <code>string</code> | Password of the administration account of the host. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.username">Username</a></code> | <code>string</code> | Username of the administration account of the host. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.cluster">Cluster</a></code> | <code>string</code> | ID of the vSphere cluster the host will belong to. |
-| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.clusterManaged">ClusterManaged</a></code> | <code>object</code> | Must be set if host is a member of a managed compute_cluster resource. |
-| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.connected">Connected</a></code> | <code>object</code> | Set the state of the host. If set to false then the host will be asked to disconnect. |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.clusterManaged">ClusterManaged</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Must be set if host is a member of a managed compute_cluster resource. |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.connected">Connected</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set the state of the host. If set to false then the host will be asked to disconnect. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.customAttributes">CustomAttributes</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A list of custom attributes to set on this resource. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.datacenter">Datacenter</a></code> | <code>string</code> | ID of the vSphere datacenter the host will belong to. |
-| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.force">Force</a></code> | <code>object</code> | Force add the host to the vSphere inventory even if it's already managed by a different vCenter Server instance. |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.force">Force</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Force add the host to the vSphere inventory even if it's already managed by a different vCenter Server instance. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/host#id Host#id}. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.license">License</a></code> | <code>string</code> | License key that will be applied to this host. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.lockdown">Lockdown</a></code> | <code>string</code> | Set the host's lockdown status. Default is disabled. Valid options are 'disabled', 'normal', 'strict'. |
-| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.maintenance">Maintenance</a></code> | <code>object</code> | Set the host's maintenance mode. Default is false. |
-| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.services">Services</a></code> | <code>object</code> | services block. |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.maintenance">Maintenance</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set the host's maintenance mode. Default is false. |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.services">Services</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a>[]</code> | services block. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.tags">Tags</a></code> | <code>string[]</code> | A list of tag IDs to apply to this object. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.thumbprint">Thumbprint</a></code> | <code>string</code> | Host's certificate SHA-1 thumbprint. If not set then the CA that signed the host's certificate must be trusted. |
 
@@ -1185,20 +1185,20 @@ new HostConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vsphere.host.HostConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.host.HostConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1245,10 +1245,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vsphere.host.HostConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1311,10 +1311,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `ClusterManaged`<sup>Optional</sup> <a name="ClusterManaged" id="@cdktf/provider-vsphere.host.HostConfig.property.clusterManaged"></a>
 
 ```csharp
-public object ClusterManaged { get; set; }
+public bool|IResolvable ClusterManaged { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Must be set if host is a member of a managed compute_cluster resource.
 
@@ -1325,10 +1325,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `Connected`<sup>Optional</sup> <a name="Connected" id="@cdktf/provider-vsphere.host.HostConfig.property.connected"></a>
 
 ```csharp
-public object Connected { get; set; }
+public bool|IResolvable Connected { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set the state of the host. If set to false then the host will be asked to disconnect.
 
@@ -1367,10 +1367,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `Force`<sup>Optional</sup> <a name="Force" id="@cdktf/provider-vsphere.host.HostConfig.property.force"></a>
 
 ```csharp
-public object Force { get; set; }
+public bool|IResolvable Force { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Force add the host to the vSphere inventory even if it's already managed by a different vCenter Server instance.
 
@@ -1424,10 +1424,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `Maintenance`<sup>Optional</sup> <a name="Maintenance" id="@cdktf/provider-vsphere.host.HostConfig.property.maintenance"></a>
 
 ```csharp
-public object Maintenance { get; set; }
+public bool|IResolvable Maintenance { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set the host's maintenance mode. Default is false.
 
@@ -1438,10 +1438,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `Services`<sup>Optional</sup> <a name="Services" id="@cdktf/provider-vsphere.host.HostConfig.property.services"></a>
 
 ```csharp
-public object Services { get; set; }
+public IResolvable|HostServices[] Services { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a>[]
 
 services block.
 
@@ -1519,7 +1519,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 using HashiCorp.Cdktf.Providers.Vsphere;
 
 new HostServicesNtpd {
-    object Enabled = null,
+    bool|IResolvable Enabled = null,
     string[] NtpServers = null,
     string Policy = null
 };
@@ -1529,7 +1529,7 @@ new HostServicesNtpd {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpd.property.enabled">Enabled</a></code> | <code>object</code> | Whether the NTP service is enabled. Default is false. |
+| <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpd.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether the NTP service is enabled. Default is false. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpd.property.ntpServers">NtpServers</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/host#ntp_servers Host#ntp_servers}. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpd.property.policy">Policy</a></code> | <code>string</code> | The policy for the NTP service. |
 
@@ -1538,10 +1538,10 @@ new HostServicesNtpd {
 ##### `Enabled`<sup>Optional</sup> <a name="Enabled" id="@cdktf/provider-vsphere.host.HostServicesNtpd.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; set; }
+public bool|IResolvable Enabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether the NTP service is enabled. Default is false.
 
@@ -1700,7 +1700,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.host.HostServicesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostServicesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.HostServicesList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.HostServicesList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a>[]</code> | *No description.* |
 
 ---
 
@@ -1731,10 +1731,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vsphere.host.HostServicesList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|HostServices[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a>[]
 
 ---
 
@@ -1970,10 +1970,10 @@ private void ResetPolicy()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpdOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpdOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpdOutputReference.property.enabledInput">EnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpdOutputReference.property.enabledInput">EnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpdOutputReference.property.ntpServersInput">NtpServersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpdOutputReference.property.policyInput">PolicyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpdOutputReference.property.enabled">Enabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpdOutputReference.property.enabled">Enabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpdOutputReference.property.ntpServers">NtpServers</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpdOutputReference.property.policy">Policy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpdOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpd">HostServicesNtpd</a></code> | *No description.* |
@@ -2007,10 +2007,10 @@ public string Fqn { get; }
 ##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-vsphere.host.HostServicesNtpdOutputReference.property.enabledInput"></a>
 
 ```csharp
-public object EnabledInput { get; }
+public bool|IResolvable EnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2037,10 +2037,10 @@ public string PolicyInput { get; }
 ##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-vsphere.host.HostServicesNtpdOutputReference.property.enabled"></a>
 
 ```csharp
-public object Enabled { get; }
+public bool|IResolvable Enabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2325,7 +2325,7 @@ private void ResetNtpd()
 | <code><a href="#@cdktf/provider-vsphere.host.HostServicesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.HostServicesOutputReference.property.ntpd">Ntpd</a></code> | <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpdOutputReference">HostServicesNtpdOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.HostServicesOutputReference.property.ntpdInput">NtpdInput</a></code> | <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpd">HostServicesNtpd</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.HostServicesOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.HostServicesOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a></code> | *No description.* |
 
 ---
 
@@ -2376,10 +2376,10 @@ public HostServicesNtpd NtpdInput { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vsphere.host.HostServicesOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|HostServices InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a>
 
 ---
 

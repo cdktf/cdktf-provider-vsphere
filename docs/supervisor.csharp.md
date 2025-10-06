@@ -281,7 +281,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-vsphere.supervisor.Supervisor.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-vsphere.supervisor.Supervisor.importFrom"></a>
@@ -335,7 +335,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-vsphere.supervisor.Supervisor.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -350,7 +350,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-vsphere.supervisor.Supervisor.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -375,24 +375,24 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutEgressCidr` <a name="PutEgressCidr" id="@cdktf/provider-vsphere.supervisor.Supervisor.putEgressCidr"></a>
 
 ```csharp
-private void PutEgressCidr(object Value)
+private void PutEgressCidr(IResolvable|SupervisorEgressCidr[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vsphere.supervisor.Supervisor.putEgressCidr.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a>[]
 
 ---
 
 ##### `PutIngressCidr` <a name="PutIngressCidr" id="@cdktf/provider-vsphere.supervisor.Supervisor.putIngressCidr"></a>
 
 ```csharp
-private void PutIngressCidr(object Value)
+private void PutIngressCidr(IResolvable|SupervisorIngressCidr[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vsphere.supervisor.Supervisor.putIngressCidr.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a>[]
 
 ---
 
@@ -411,24 +411,24 @@ private void PutManagementNetwork(SupervisorManagementNetwork Value)
 ##### `PutNamespace` <a name="PutNamespace" id="@cdktf/provider-vsphere.supervisor.Supervisor.putNamespace"></a>
 
 ```csharp
-private void PutNamespace(object Value)
+private void PutNamespace(IResolvable|SupervisorNamespace[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vsphere.supervisor.Supervisor.putNamespace.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>[]
 
 ---
 
 ##### `PutPodCidr` <a name="PutPodCidr" id="@cdktf/provider-vsphere.supervisor.Supervisor.putPodCidr"></a>
 
 ```csharp
-private void PutPodCidr(object Value)
+private void PutPodCidr(IResolvable|SupervisorPodCidr[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vsphere.supervisor.Supervisor.putPodCidr.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a>[]
 
 ---
 
@@ -582,13 +582,13 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.egressCidr">EgressCidr</a></code> | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidrList">SupervisorEgressCidrList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.ingressCidr">IngressCidr</a></code> | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidrList">SupervisorIngressCidrList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.managementNetwork">ManagementNetwork</a></code> | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorManagementNetworkOutputReference">SupervisorManagementNetworkOutputReference</a></code> | *No description.* |
@@ -599,14 +599,14 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.contentLibraryInput">ContentLibraryInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.dvsUuidInput">DvsUuidInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.edgeClusterInput">EdgeClusterInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.egressCidrInput">EgressCidrInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.egressCidrInput">EgressCidrInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.ingressCidrInput">IngressCidrInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.ingressCidrInput">IngressCidrInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.mainDnsInput">MainDnsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.mainNtpInput">MainNtpInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.managementNetworkInput">ManagementNetworkInput</a></code> | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorManagementNetwork">SupervisorManagementNetwork</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.namespaceInput">NamespaceInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.podCidrInput">PodCidrInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.namespaceInput">NamespaceInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.podCidrInput">PodCidrInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.searchDomainsInput">SearchDomainsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.serviceCidrInput">ServiceCidrInput</a></code> | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorServiceCidr">SupervisorServiceCidr</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.sizingHintInput">SizingHintInput</a></code> | <code>string</code> | *No description.* |
@@ -703,20 +703,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vsphere.supervisor.Supervisor.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.supervisor.Supervisor.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -763,10 +763,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vsphere.supervisor.Supervisor.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -873,10 +873,10 @@ public string EdgeClusterInput { get; }
 ##### `EgressCidrInput`<sup>Optional</sup> <a name="EgressCidrInput" id="@cdktf/provider-vsphere.supervisor.Supervisor.property.egressCidrInput"></a>
 
 ```csharp
-public object EgressCidrInput { get; }
+public IResolvable|SupervisorEgressCidr[] EgressCidrInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a>[]
 
 ---
 
@@ -893,10 +893,10 @@ public string IdInput { get; }
 ##### `IngressCidrInput`<sup>Optional</sup> <a name="IngressCidrInput" id="@cdktf/provider-vsphere.supervisor.Supervisor.property.ingressCidrInput"></a>
 
 ```csharp
-public object IngressCidrInput { get; }
+public IResolvable|SupervisorIngressCidr[] IngressCidrInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a>[]
 
 ---
 
@@ -933,20 +933,20 @@ public SupervisorManagementNetwork ManagementNetworkInput { get; }
 ##### `NamespaceInput`<sup>Optional</sup> <a name="NamespaceInput" id="@cdktf/provider-vsphere.supervisor.Supervisor.property.namespaceInput"></a>
 
 ```csharp
-public object NamespaceInput { get; }
+public IResolvable|SupervisorNamespace[] NamespaceInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>[]
 
 ---
 
 ##### `PodCidrInput`<sup>Optional</sup> <a name="PodCidrInput" id="@cdktf/provider-vsphere.supervisor.Supervisor.property.podCidrInput"></a>
 
 ```csharp
-public object PodCidrInput { get; }
+public IResolvable|SupervisorPodCidr[] PodCidrInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a>[]
 
 ---
 
@@ -1158,23 +1158,23 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Vsphere;
 
 new SupervisorConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Cluster,
     string ContentLibrary,
     string DvsUuid,
     string EdgeCluster,
-    object EgressCidr,
-    object IngressCidr,
+    IResolvable|SupervisorEgressCidr[] EgressCidr,
+    IResolvable|SupervisorIngressCidr[] IngressCidr,
     string[] MainDns,
     string[] MainNtp,
     SupervisorManagementNetwork ManagementNetwork,
-    object PodCidr,
+    IResolvable|SupervisorPodCidr[] PodCidr,
     string[] SearchDomains,
     SupervisorServiceCidr ServiceCidr,
     string SizingHint,
@@ -1182,7 +1182,7 @@ new SupervisorConfig {
     string[] WorkerDns,
     string[] WorkerNtp,
     string Id = null,
-    object Namespace = null
+    IResolvable|SupervisorNamespace[] Namespace = null
 };
 ```
 
@@ -1190,23 +1190,23 @@ new SupervisorConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.cluster">Cluster</a></code> | <code>string</code> | ID of the vSphere cluster on which workload management will be enabled. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.contentLibrary">ContentLibrary</a></code> | <code>string</code> | ID of the subscribed content library. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.dvsUuid">DvsUuid</a></code> | <code>string</code> | The UUID (not ID) of the distributed switch. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.edgeCluster">EdgeCluster</a></code> | <code>string</code> | ID of the NSX Edge Cluster. |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.egressCidr">EgressCidr</a></code> | <code>object</code> | egress_cidr block. |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.ingressCidr">IngressCidr</a></code> | <code>object</code> | ingress_cidr block. |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.egressCidr">EgressCidr</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a>[]</code> | egress_cidr block. |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.ingressCidr">IngressCidr</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a>[]</code> | ingress_cidr block. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.mainDns">MainDns</a></code> | <code>string[]</code> | List of DNS servers to use on the Kubernetes API server. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.mainNtp">MainNtp</a></code> | <code>string[]</code> | List of NTP servers to use on the Kubernetes API server. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.managementNetwork">ManagementNetwork</a></code> | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorManagementNetwork">SupervisorManagementNetwork</a></code> | management_network block. |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.podCidr">PodCidr</a></code> | <code>object</code> | pod_cidr block. |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.podCidr">PodCidr</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a>[]</code> | pod_cidr block. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.searchDomains">SearchDomains</a></code> | <code>string[]</code> | List of DNS search domains. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.serviceCidr">ServiceCidr</a></code> | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorServiceCidr">SupervisorServiceCidr</a></code> | service_cidr block. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.sizingHint">SizingHint</a></code> | <code>string</code> | Size of the Kubernetes API server. |
@@ -1214,27 +1214,27 @@ new SupervisorConfig {
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.workerDns">WorkerDns</a></code> | <code>string[]</code> | List of DNS servers to use on the worker nodes. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.workerNtp">WorkerNtp</a></code> | <code>string[]</code> | List of NTP servers to use on the worker nodes. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/supervisor#id Supervisor#id}. |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.namespace">Namespace</a></code> | <code>object</code> | namespace block. |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.namespace">Namespace</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>[]</code> | namespace block. |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1281,10 +1281,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1347,10 +1347,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `EgressCidr`<sup>Required</sup> <a name="EgressCidr" id="@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.egressCidr"></a>
 
 ```csharp
-public object EgressCidr { get; set; }
+public IResolvable|SupervisorEgressCidr[] EgressCidr { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a>[]
 
 egress_cidr block.
 
@@ -1361,10 +1361,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `IngressCidr`<sup>Required</sup> <a name="IngressCidr" id="@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.ingressCidr"></a>
 
 ```csharp
-public object IngressCidr { get; set; }
+public IResolvable|SupervisorIngressCidr[] IngressCidr { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a>[]
 
 ingress_cidr block.
 
@@ -1417,10 +1417,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `PodCidr`<sup>Required</sup> <a name="PodCidr" id="@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.podCidr"></a>
 
 ```csharp
-public object PodCidr { get; set; }
+public IResolvable|SupervisorPodCidr[] PodCidr { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a>[]
 
 pod_cidr block.
 
@@ -1530,10 +1530,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `Namespace`<sup>Optional</sup> <a name="Namespace" id="@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.namespace"></a>
 
 ```csharp
-public object Namespace { get; set; }
+public IResolvable|SupervisorNamespace[] Namespace { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>[]
 
 namespace block.
 
@@ -2028,7 +2028,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidrList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidrList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidrList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidrList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a>[]</code> | *No description.* |
 
 ---
 
@@ -2059,10 +2059,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vsphere.supervisor.SupervisorEgressCidrList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SupervisorEgressCidr[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a>[]
 
 ---
 
@@ -2299,7 +2299,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidrOutputReference.property.prefixInput">PrefixInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidrOutputReference.property.address">Address</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidrOutputReference.property.prefix">Prefix</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidrOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidrOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a></code> | *No description.* |
 
 ---
 
@@ -2370,10 +2370,10 @@ public double Prefix { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vsphere.supervisor.SupervisorEgressCidrOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SupervisorEgressCidr InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a>
 
 ---
 
@@ -2499,7 +2499,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidrList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidrList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidrList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidrList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a>[]</code> | *No description.* |
 
 ---
 
@@ -2530,10 +2530,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vsphere.supervisor.SupervisorIngressCidrList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SupervisorIngressCidr[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a>[]
 
 ---
 
@@ -2770,7 +2770,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidrOutputReference.property.prefixInput">PrefixInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidrOutputReference.property.address">Address</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidrOutputReference.property.prefix">Prefix</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidrOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidrOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a></code> | *No description.* |
 
 ---
 
@@ -2841,10 +2841,10 @@ public double Prefix { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vsphere.supervisor.SupervisorIngressCidrOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SupervisorIngressCidr InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a>
 
 ---
 
@@ -3329,7 +3329,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespaceList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespaceList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespaceList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespaceList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>[]</code> | *No description.* |
 
 ---
 
@@ -3360,10 +3360,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vsphere.supervisor.SupervisorNamespaceList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SupervisorNamespace[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>[]
 
 ---
 
@@ -3616,7 +3616,7 @@ private void ResetVmClasses()
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespaceOutputReference.property.contentLibraries">ContentLibraries</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespaceOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespaceOutputReference.property.vmClasses">VmClasses</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespaceOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespaceOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a></code> | *No description.* |
 
 ---
 
@@ -3707,10 +3707,10 @@ public string[] VmClasses { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vsphere.supervisor.SupervisorNamespaceOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SupervisorNamespace InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>
 
 ---
 
@@ -3836,7 +3836,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidrList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidrList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidrList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidrList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a>[]</code> | *No description.* |
 
 ---
 
@@ -3867,10 +3867,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vsphere.supervisor.SupervisorPodCidrList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SupervisorPodCidr[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a>[]
 
 ---
 
@@ -4107,7 +4107,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidrOutputReference.property.prefixInput">PrefixInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidrOutputReference.property.address">Address</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidrOutputReference.property.prefix">Prefix</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidrOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidrOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a></code> | *No description.* |
 
 ---
 
@@ -4178,10 +4178,10 @@ public double Prefix { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vsphere.supervisor.SupervisorPodCidrOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|SupervisorPodCidr InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a>
 
 ---
 
