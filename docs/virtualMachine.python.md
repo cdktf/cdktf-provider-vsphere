@@ -14,26 +14,26 @@ from cdktf_cdktf_provider_vsphere import virtual_machine
 virtualMachine.VirtualMachine(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   resource_pool_id: str,
   alternate_guest_name: str = None,
   annotation: str = None,
   boot_delay: typing.Union[int, float] = None,
   boot_retry_delay: typing.Union[int, float] = None,
-  boot_retry_enabled: typing.Union[bool, IResolvable] = None,
-  cdrom: typing.Union[IResolvable, typing.List[VirtualMachineCdrom]] = None,
+  boot_retry_enabled: bool | IResolvable = None,
+  cdrom: IResolvable | typing.List[VirtualMachineCdrom] = None,
   clone: VirtualMachineClone = None,
-  cpu_hot_add_enabled: typing.Union[bool, IResolvable] = None,
-  cpu_hot_remove_enabled: typing.Union[bool, IResolvable] = None,
+  cpu_hot_add_enabled: bool | IResolvable = None,
+  cpu_hot_remove_enabled: bool | IResolvable = None,
   cpu_limit: typing.Union[int, float] = None,
-  cpu_performance_counters_enabled: typing.Union[bool, IResolvable] = None,
+  cpu_performance_counters_enabled: bool | IResolvable = None,
   cpu_reservation: typing.Union[int, float] = None,
   cpu_share_count: typing.Union[int, float] = None,
   cpu_share_level: str = None,
@@ -41,16 +41,16 @@ virtualMachine.VirtualMachine(
   datacenter_id: str = None,
   datastore_cluster_id: str = None,
   datastore_id: str = None,
-  disk: typing.Union[IResolvable, typing.List[VirtualMachineDisk]] = None,
-  efi_secure_boot_enabled: typing.Union[bool, IResolvable] = None,
-  enable_disk_uuid: typing.Union[bool, IResolvable] = None,
-  enable_logging: typing.Union[bool, IResolvable] = None,
+  disk: IResolvable | typing.List[VirtualMachineDisk] = None,
+  efi_secure_boot_enabled: bool | IResolvable = None,
+  enable_disk_uuid: bool | IResolvable = None,
+  enable_logging: bool | IResolvable = None,
   ept_rvi_mode: str = None,
   extra_config: typing.Mapping[str] = None,
-  extra_config_reboot_required: typing.Union[bool, IResolvable] = None,
+  extra_config_reboot_required: bool | IResolvable = None,
   firmware: str = None,
   folder: str = None,
-  force_power_off: typing.Union[bool, IResolvable] = None,
+  force_power_off: bool | IResolvable = None,
   guest_id: str = None,
   hardware_version: typing.Union[int, float] = None,
   host_system_id: str = None,
@@ -60,15 +60,15 @@ virtualMachine.VirtualMachine(
   ignored_guest_ips: typing.List[str] = None,
   latency_sensitivity: str = None,
   memory: typing.Union[int, float] = None,
-  memory_hot_add_enabled: typing.Union[bool, IResolvable] = None,
+  memory_hot_add_enabled: bool | IResolvable = None,
   memory_limit: typing.Union[int, float] = None,
   memory_reservation: typing.Union[int, float] = None,
-  memory_reservation_locked_to_max: typing.Union[bool, IResolvable] = None,
+  memory_reservation_locked_to_max: bool | IResolvable = None,
   memory_share_count: typing.Union[int, float] = None,
   memory_share_level: str = None,
   migrate_wait_timeout: typing.Union[int, float] = None,
-  nested_hv_enabled: typing.Union[bool, IResolvable] = None,
-  network_interface: typing.Union[IResolvable, typing.List[VirtualMachineNetworkInterface]] = None,
+  nested_hv_enabled: bool | IResolvable = None,
+  network_interface: IResolvable | typing.List[VirtualMachineNetworkInterface] = None,
   num_cores_per_socket: typing.Union[int, float] = None,
   num_cpus: typing.Union[int, float] = None,
   nvme_controller_count: typing.Union[int, float] = None,
@@ -76,11 +76,11 @@ virtualMachine.VirtualMachine(
   pci_device_id: typing.List[str] = None,
   poweron_timeout: typing.Union[int, float] = None,
   replace_trigger: str = None,
-  run_tools_scripts_after_power_on: typing.Union[bool, IResolvable] = None,
-  run_tools_scripts_after_resume: typing.Union[bool, IResolvable] = None,
-  run_tools_scripts_before_guest_reboot: typing.Union[bool, IResolvable] = None,
-  run_tools_scripts_before_guest_shutdown: typing.Union[bool, IResolvable] = None,
-  run_tools_scripts_before_guest_standby: typing.Union[bool, IResolvable] = None,
+  run_tools_scripts_after_power_on: bool | IResolvable = None,
+  run_tools_scripts_after_resume: bool | IResolvable = None,
+  run_tools_scripts_before_guest_reboot: bool | IResolvable = None,
+  run_tools_scripts_before_guest_shutdown: bool | IResolvable = None,
+  run_tools_scripts_before_guest_standby: bool | IResolvable = None,
   sata_controller_count: typing.Union[int, float] = None,
   scsi_bus_sharing: str = None,
   scsi_controller_count: typing.Union[int, float] = None,
@@ -88,16 +88,16 @@ virtualMachine.VirtualMachine(
   shutdown_wait_timeout: typing.Union[int, float] = None,
   storage_policy_id: str = None,
   swap_placement_policy: str = None,
-  sync_time_with_host: typing.Union[bool, IResolvable] = None,
-  sync_time_with_host_periodically: typing.Union[bool, IResolvable] = None,
+  sync_time_with_host: bool | IResolvable = None,
+  sync_time_with_host_periodically: bool | IResolvable = None,
   tags: typing.List[str] = None,
   tools_upgrade_policy: str = None,
   vapp: VirtualMachineVapp = None,
-  vbs_enabled: typing.Union[bool, IResolvable] = None,
+  vbs_enabled: bool | IResolvable = None,
   vtpm: VirtualMachineVtpm = None,
-  vvtd_enabled: typing.Union[bool, IResolvable] = None,
+  vvtd_enabled: bool | IResolvable = None,
   wait_for_guest_ip_timeout: typing.Union[int, float] = None,
-  wait_for_guest_net_routable: typing.Union[bool, IResolvable] = None,
+  wait_for_guest_net_routable: bool | IResolvable = None,
   wait_for_guest_net_timeout: typing.Union[int, float] = None
 )
 ```
@@ -106,26 +106,26 @@ virtualMachine.VirtualMachine(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of this virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.resourcePoolId">resource_pool_id</a></code> | <code>str</code> | The ID of a resource pool to put the virtual machine in. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.alternateGuestName">alternate_guest_name</a></code> | <code>str</code> | The guest name for the operating system when guest_id is otherGuest or otherGuest64. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.annotation">annotation</a></code> | <code>str</code> | User-provided description of the virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.bootDelay">boot_delay</a></code> | <code>typing.Union[int, float]</code> | The number of milliseconds to wait before starting the boot sequence. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.bootRetryDelay">boot_retry_delay</a></code> | <code>typing.Union[int, float]</code> | The number of milliseconds to wait before retrying the boot sequence. This only valid if boot_retry_enabled is true. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.bootRetryEnabled">boot_retry_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to true, a virtual machine that fails to boot will try again after the delay defined in boot_retry_delay. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.cdrom">cdrom</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom">VirtualMachineCdrom</a>]]</code> | cdrom block. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.bootRetryEnabled">boot_retry_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to true, a virtual machine that fails to boot will try again after the delay defined in boot_retry_delay. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.cdrom">cdrom</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom">VirtualMachineCdrom</a>]</code> | cdrom block. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.clone">clone</a></code> | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineClone">VirtualMachineClone</a></code> | clone block. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.cpuHotAddEnabled">cpu_hot_add_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow CPUs to be added to this virtual machine while it is running. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.cpuHotRemoveEnabled">cpu_hot_remove_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow CPUs to be added to this virtual machine while it is running. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.cpuHotAddEnabled">cpu_hot_add_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow CPUs to be added to this virtual machine while it is running. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.cpuHotRemoveEnabled">cpu_hot_remove_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow CPUs to be added to this virtual machine while it is running. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.cpuLimit">cpu_limit</a></code> | <code>typing.Union[int, float]</code> | The maximum amount of memory (in MB) or CPU (in MHz) that this virtual machine can consume, regardless of available resources. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.cpuPerformanceCountersEnabled">cpu_performance_counters_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable CPU performance counters on this virtual machine. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.cpuPerformanceCountersEnabled">cpu_performance_counters_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable CPU performance counters on this virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.cpuReservation">cpu_reservation</a></code> | <code>typing.Union[int, float]</code> | The amount of memory (in MB) or CPU (in MHz) that this virtual machine is guaranteed. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.cpuShareCount">cpu_share_count</a></code> | <code>typing.Union[int, float]</code> | The amount of shares to allocate to cpu for a custom share level. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.cpuShareLevel">cpu_share_level</a></code> | <code>str</code> | The allocation level for cpu resources. Can be one of high, low, normal, or custom. |
@@ -133,16 +133,16 @@ virtualMachine.VirtualMachine(
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.datacenterId">datacenter_id</a></code> | <code>str</code> | The ID of the datacenter where the VM is to be created. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.datastoreClusterId">datastore_cluster_id</a></code> | <code>str</code> | The ID of a datastore cluster to put the virtual machine in. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.datastoreId">datastore_id</a></code> | <code>str</code> | The ID of the virtual machine's datastore. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.disk">disk</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk">VirtualMachineDisk</a>]]</code> | disk block. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.efiSecureBootEnabled">efi_secure_boot_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When the boot type set in firmware is efi, this enables EFI secure boot. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.enableDiskUuid">enable_disk_uuid</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Expose the UUIDs of attached virtual disks to the virtual machine, allowing access to them in the guest. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.enableLogging">enable_logging</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable logging on this virtual machine. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.disk">disk</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk">VirtualMachineDisk</a>]</code> | disk block. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.efiSecureBootEnabled">efi_secure_boot_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | When the boot type set in firmware is efi, this enables EFI secure boot. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.enableDiskUuid">enable_disk_uuid</a></code> | <code>bool \| cdktf.IResolvable</code> | Expose the UUIDs of attached virtual disks to the virtual machine, allowing access to them in the guest. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.enableLogging">enable_logging</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable logging on this virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.eptRviMode">ept_rvi_mode</a></code> | <code>str</code> | The EPT/RVI (hardware memory virtualization) setting for this virtual machine. Can be one of automatic, on, or off. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.extraConfig">extra_config</a></code> | <code>typing.Mapping[str]</code> | Extra configuration data for this virtual machine. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.extraConfigRebootRequired">extra_config_reboot_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow the virtual machine to be rebooted when a change to `extra_config` occurs. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.extraConfigRebootRequired">extra_config_reboot_required</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow the virtual machine to be rebooted when a change to `extra_config` occurs. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.firmware">firmware</a></code> | <code>str</code> | The firmware interface to use on the virtual machine. Can be one of bios or efi. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.folder">folder</a></code> | <code>str</code> | The name of the folder to locate the virtual machine in. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.forcePowerOff">force_power_off</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to true to force power-off a virtual machine if a graceful guest shutdown failed for a necessary operation. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.forcePowerOff">force_power_off</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to true to force power-off a virtual machine if a graceful guest shutdown failed for a necessary operation. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.guestId">guest_id</a></code> | <code>str</code> | The guest ID for the operating system. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.hardwareVersion">hardware_version</a></code> | <code>typing.Union[int, float]</code> | The hardware version for the virtual machine. Allows versions within ranges: 4, 7-11, 13-15, 17-22. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.hostSystemId">host_system_id</a></code> | <code>str</code> | The ID of an optional host system to pin the virtual machine to. |
@@ -152,15 +152,15 @@ virtualMachine.VirtualMachine(
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.ignoredGuestIps">ignored_guest_ips</a></code> | <code>typing.List[str]</code> | List of IP addresses and CIDR networks to ignore while waiting for an IP. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.latencySensitivity">latency_sensitivity</a></code> | <code>str</code> | Controls the scheduling delay of the virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.memory">memory</a></code> | <code>typing.Union[int, float]</code> | The size of the virtual machine's memory, in MB. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.memoryHotAddEnabled">memory_hot_add_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow memory to be added to this virtual machine while it is running. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.memoryHotAddEnabled">memory_hot_add_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow memory to be added to this virtual machine while it is running. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.memoryLimit">memory_limit</a></code> | <code>typing.Union[int, float]</code> | The maximum amount of memory (in MB) or CPU (in MHz) that this virtual machine can consume, regardless of available resources. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.memoryReservation">memory_reservation</a></code> | <code>typing.Union[int, float]</code> | The amount of memory (in MB) or CPU (in MHz) that this virtual machine is guaranteed. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.memoryReservationLockedToMax">memory_reservation_locked_to_max</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set true, memory resource reservation for this virtual machine will always be equal to the virtual machine's memory size;increases in memory size will be rejected when a corresponding reservation increase is not possible. This feature may only be enabled if it is currently possible to reserve all of the virtual machine's memory. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.memoryReservationLockedToMax">memory_reservation_locked_to_max</a></code> | <code>bool \| cdktf.IResolvable</code> | If set true, memory resource reservation for this virtual machine will always be equal to the virtual machine's memory size;increases in memory size will be rejected when a corresponding reservation increase is not possible. This feature may only be enabled if it is currently possible to reserve all of the virtual machine's memory. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.memoryShareCount">memory_share_count</a></code> | <code>typing.Union[int, float]</code> | The amount of shares to allocate to memory for a custom share level. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.memoryShareLevel">memory_share_level</a></code> | <code>str</code> | The allocation level for memory resources. Can be one of high, low, normal, or custom. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.migrateWaitTimeout">migrate_wait_timeout</a></code> | <code>typing.Union[int, float]</code> | The amount of time, in minutes, to wait for a vMotion operation to complete before failing. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.nestedHvEnabled">nested_hv_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable nested hardware virtualization on this virtual machine, facilitating nested virtualization in the guest. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.networkInterface">network_interface</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface">VirtualMachineNetworkInterface</a>]]</code> | network_interface block. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.nestedHvEnabled">nested_hv_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable nested hardware virtualization on this virtual machine, facilitating nested virtualization in the guest. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.networkInterface">network_interface</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface">VirtualMachineNetworkInterface</a>]</code> | network_interface block. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.numCoresPerSocket">num_cores_per_socket</a></code> | <code>typing.Union[int, float]</code> | The number of cores to distribute amongst the CPUs in this virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.numCpus">num_cpus</a></code> | <code>typing.Union[int, float]</code> | The number of virtual processors to assign to this virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.nvmeControllerCount">nvme_controller_count</a></code> | <code>typing.Union[int, float]</code> | The number of NVMe controllers that Terraform manages on this virtual machine. |
@@ -168,11 +168,11 @@ virtualMachine.VirtualMachine(
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.pciDeviceId">pci_device_id</a></code> | <code>typing.List[str]</code> | A list of PCI passthrough devices. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.poweronTimeout">poweron_timeout</a></code> | <code>typing.Union[int, float]</code> | The amount of time, in seconds, that we will be trying to power on a VM. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.replaceTrigger">replace_trigger</a></code> | <code>str</code> | Triggers replacement of resource whenever it changes. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.runToolsScriptsAfterPowerOn">run_tools_scripts_after_power_on</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable the run of scripts after virtual machine power-on when VMware Tools is installed. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.runToolsScriptsAfterResume">run_tools_scripts_after_resume</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable the run of scripts after virtual machine resume when when VMware Tools is installed. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.runToolsScriptsBeforeGuestReboot">run_tools_scripts_before_guest_reboot</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable the run of scripts before guest operating system reboot when VMware Tools is installed. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.runToolsScriptsBeforeGuestShutdown">run_tools_scripts_before_guest_shutdown</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable the run of scripts before guest operating system shutdown when VMware Tools is installed. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.runToolsScriptsBeforeGuestStandby">run_tools_scripts_before_guest_standby</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable the run of scripts before guest operating system standby when VMware Tools is installed. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.runToolsScriptsAfterPowerOn">run_tools_scripts_after_power_on</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable the run of scripts after virtual machine power-on when VMware Tools is installed. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.runToolsScriptsAfterResume">run_tools_scripts_after_resume</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable the run of scripts after virtual machine resume when when VMware Tools is installed. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.runToolsScriptsBeforeGuestReboot">run_tools_scripts_before_guest_reboot</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable the run of scripts before guest operating system reboot when VMware Tools is installed. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.runToolsScriptsBeforeGuestShutdown">run_tools_scripts_before_guest_shutdown</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable the run of scripts before guest operating system shutdown when VMware Tools is installed. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.runToolsScriptsBeforeGuestStandby">run_tools_scripts_before_guest_standby</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable the run of scripts before guest operating system standby when VMware Tools is installed. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.sataControllerCount">sata_controller_count</a></code> | <code>typing.Union[int, float]</code> | The number of SATA controllers that Terraform manages on this virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.scsiBusSharing">scsi_bus_sharing</a></code> | <code>str</code> | Mode for sharing the SCSI bus. The modes are physicalSharing, virtualSharing, and noSharing. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.scsiControllerCount">scsi_controller_count</a></code> | <code>typing.Union[int, float]</code> | The number of SCSI controllers that Terraform manages on this virtual machine. |
@@ -180,16 +180,16 @@ virtualMachine.VirtualMachine(
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.shutdownWaitTimeout">shutdown_wait_timeout</a></code> | <code>typing.Union[int, float]</code> | The amount of time, in minutes, to wait for shutdown when making necessary updates to the virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.storagePolicyId">storage_policy_id</a></code> | <code>str</code> | The ID of the storage policy to assign to the virtual machine home directory. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.swapPlacementPolicy">swap_placement_policy</a></code> | <code>str</code> | The swap file placement policy for this virtual machine. Can be one of inherit, hostLocal, or vmDirectory. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.syncTimeWithHost">sync_time_with_host</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable guest clock synchronization with the host. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.syncTimeWithHostPeriodically">sync_time_with_host_periodically</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable periodic clock synchronization with the host. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.syncTimeWithHost">sync_time_with_host</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable guest clock synchronization with the host. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.syncTimeWithHostPeriodically">sync_time_with_host_periodically</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable periodic clock synchronization with the host. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | A list of tag IDs to apply to this object. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.toolsUpgradePolicy">tools_upgrade_policy</a></code> | <code>str</code> | Set the upgrade policy for VMware Tools. Can be one of `manual` or `upgradeAtPowerCycle`. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.vapp">vapp</a></code> | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineVapp">VirtualMachineVapp</a></code> | vapp block. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.vbsEnabled">vbs_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Flag to specify if Virtualization-based security is enabled for this virtual machine. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.vbsEnabled">vbs_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Flag to specify if Virtualization-based security is enabled for this virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.vtpm">vtpm</a></code> | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineVtpm">VirtualMachineVtpm</a></code> | vtpm block. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.vvtdEnabled">vvtd_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Flag to specify if I/O MMU virtualization, also called Intel Virtualization Technology for Directed I/O (VT-d) and AMD I/O Virtualization (AMD-Vi or IOMMU), is enabled. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.vvtdEnabled">vvtd_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Flag to specify if I/O MMU virtualization, also called Intel Virtualization Technology for Directed I/O (VT-d) and AMD I/O Virtualization (AMD-Vi or IOMMU), is enabled. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.waitForGuestIpTimeout">wait_for_guest_ip_timeout</a></code> | <code>typing.Union[int, float]</code> | The amount of time, in minutes, to wait for an available IP address on this virtual machine. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.waitForGuestNetRoutable">wait_for_guest_net_routable</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Controls whether or not the guest network waiter waits for a routable address. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.waitForGuestNetRoutable">wait_for_guest_net_routable</a></code> | <code>bool \| cdktf.IResolvable</code> | Controls whether or not the guest network waiter waits for a routable address. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.waitForGuestNetTimeout">wait_for_guest_net_timeout</a></code> | <code>typing.Union[int, float]</code> | The amount of time, in minutes, to wait for an available IP address on this virtual machine. |
 
 ---
@@ -214,13 +214,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -250,7 +250,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -316,7 +316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `boot_retry_enabled`<sup>Optional</sup> <a name="boot_retry_enabled" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.bootRetryEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If set to true, a virtual machine that fails to boot will try again after the delay defined in boot_retry_delay.
 
@@ -326,7 +326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `cdrom`<sup>Optional</sup> <a name="cdrom" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.cdrom"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom">VirtualMachineCdrom</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom">VirtualMachineCdrom</a>]
 
 cdrom block.
 
@@ -346,7 +346,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `cpu_hot_add_enabled`<sup>Optional</sup> <a name="cpu_hot_add_enabled" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.cpuHotAddEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow CPUs to be added to this virtual machine while it is running.
 
@@ -356,7 +356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `cpu_hot_remove_enabled`<sup>Optional</sup> <a name="cpu_hot_remove_enabled" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.cpuHotRemoveEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow CPUs to be added to this virtual machine while it is running.
 
@@ -376,7 +376,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `cpu_performance_counters_enabled`<sup>Optional</sup> <a name="cpu_performance_counters_enabled" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.cpuPerformanceCountersEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable CPU performance counters on this virtual machine.
 
@@ -458,7 +458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `disk`<sup>Optional</sup> <a name="disk" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.disk"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk">VirtualMachineDisk</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk">VirtualMachineDisk</a>]
 
 disk block.
 
@@ -468,7 +468,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `efi_secure_boot_enabled`<sup>Optional</sup> <a name="efi_secure_boot_enabled" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.efiSecureBootEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When the boot type set in firmware is efi, this enables EFI secure boot.
 
@@ -478,7 +478,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `enable_disk_uuid`<sup>Optional</sup> <a name="enable_disk_uuid" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.enableDiskUuid"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Expose the UUIDs of attached virtual disks to the virtual machine, allowing access to them in the guest.
 
@@ -488,7 +488,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `enable_logging`<sup>Optional</sup> <a name="enable_logging" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.enableLogging"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable logging on this virtual machine.
 
@@ -520,7 +520,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `extra_config_reboot_required`<sup>Optional</sup> <a name="extra_config_reboot_required" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.extraConfigRebootRequired"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow the virtual machine to be rebooted when a change to `extra_config` occurs.
 
@@ -550,7 +550,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `force_power_off`<sup>Optional</sup> <a name="force_power_off" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.forcePowerOff"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to true to force power-off a virtual machine if a graceful guest shutdown failed for a necessary operation.
 
@@ -655,7 +655,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `memory_hot_add_enabled`<sup>Optional</sup> <a name="memory_hot_add_enabled" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.memoryHotAddEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow memory to be added to this virtual machine while it is running.
 
@@ -685,7 +685,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `memory_reservation_locked_to_max`<sup>Optional</sup> <a name="memory_reservation_locked_to_max" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.memoryReservationLockedToMax"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If set true, memory resource reservation for this virtual machine will always be equal to the virtual machine's memory size;increases in memory size will be rejected when a corresponding reservation increase is not possible. This feature may only be enabled if it is currently possible to reserve all of the virtual machine's memory.
 
@@ -725,7 +725,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `nested_hv_enabled`<sup>Optional</sup> <a name="nested_hv_enabled" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.nestedHvEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable nested hardware virtualization on this virtual machine, facilitating nested virtualization in the guest.
 
@@ -735,7 +735,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `network_interface`<sup>Optional</sup> <a name="network_interface" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.networkInterface"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface">VirtualMachineNetworkInterface</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface">VirtualMachineNetworkInterface</a>]
 
 network_interface block.
 
@@ -819,7 +819,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `run_tools_scripts_after_power_on`<sup>Optional</sup> <a name="run_tools_scripts_after_power_on" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.runToolsScriptsAfterPowerOn"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable the run of scripts after virtual machine power-on when VMware Tools is installed.
 
@@ -829,7 +829,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `run_tools_scripts_after_resume`<sup>Optional</sup> <a name="run_tools_scripts_after_resume" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.runToolsScriptsAfterResume"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable the run of scripts after virtual machine resume when when VMware Tools is installed.
 
@@ -839,7 +839,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `run_tools_scripts_before_guest_reboot`<sup>Optional</sup> <a name="run_tools_scripts_before_guest_reboot" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.runToolsScriptsBeforeGuestReboot"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable the run of scripts before guest operating system reboot when VMware Tools is installed.
 
@@ -849,7 +849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `run_tools_scripts_before_guest_shutdown`<sup>Optional</sup> <a name="run_tools_scripts_before_guest_shutdown" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.runToolsScriptsBeforeGuestShutdown"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable the run of scripts before guest operating system shutdown when VMware Tools is installed.
 
@@ -859,7 +859,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `run_tools_scripts_before_guest_standby`<sup>Optional</sup> <a name="run_tools_scripts_before_guest_standby" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.runToolsScriptsBeforeGuestStandby"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable the run of scripts before guest operating system standby when VMware Tools is installed.
 
@@ -943,7 +943,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `sync_time_with_host`<sup>Optional</sup> <a name="sync_time_with_host" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.syncTimeWithHost"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable guest clock synchronization with the host.
 
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `sync_time_with_host_periodically`<sup>Optional</sup> <a name="sync_time_with_host_periodically" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.syncTimeWithHostPeriodically"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable periodic clock synchronization with the host.
 
@@ -997,7 +997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `vbs_enabled`<sup>Optional</sup> <a name="vbs_enabled" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.vbsEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Flag to specify if Virtualization-based security is enabled for this virtual machine.
 
@@ -1017,7 +1017,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `vvtd_enabled`<sup>Optional</sup> <a name="vvtd_enabled" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.vvtdEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Flag to specify if I/O MMU virtualization, also called Intel Virtualization Technology for Directed I/O (VT-d) and AMD I/O Virtualization (AMD-Vi or IOMMU), is enabled.
 
@@ -1039,7 +1039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `wait_for_guest_net_routable`<sup>Optional</sup> <a name="wait_for_guest_net_routable" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.Initializer.parameter.waitForGuestNetRoutable"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Controls whether or not the guest network waiter waits for a routable address.
 
@@ -1396,7 +1396,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.importFrom"></a>
@@ -1459,7 +1459,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -1475,7 +1475,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -1503,13 +1503,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_cdrom(
-  value: typing.Union[IResolvable, typing.List[VirtualMachineCdrom]]
+  value: IResolvable | typing.List[VirtualMachineCdrom]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.putCdrom.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom">VirtualMachineCdrom</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom">VirtualMachineCdrom</a>]
 
 ---
 
@@ -1520,7 +1520,7 @@ def put_clone(
   template_uuid: str,
   customization_spec: VirtualMachineCloneCustomizationSpec = None,
   customize: VirtualMachineCloneCustomize = None,
-  linked_clone: typing.Union[bool, IResolvable] = None,
+  linked_clone: bool | IResolvable = None,
   ovf_network_map: typing.Mapping[str] = None,
   ovf_storage_map: typing.Mapping[str] = None,
   timeout: typing.Union[int, float] = None
@@ -1559,7 +1559,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ###### `linked_clone`<sup>Optional</sup> <a name="linked_clone" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.putClone.parameter.linkedClone"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not to create a linked clone when cloning.
 
@@ -1603,13 +1603,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ```python
 def put_disk(
-  value: typing.Union[IResolvable, typing.List[VirtualMachineDisk]]
+  value: IResolvable | typing.List[VirtualMachineDisk]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.putDisk.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk">VirtualMachineDisk</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk">VirtualMachineDisk</a>]
 
 ---
 
@@ -1617,13 +1617,13 @@ def put_disk(
 
 ```python
 def put_network_interface(
-  value: typing.Union[IResolvable, typing.List[VirtualMachineNetworkInterface]]
+  value: IResolvable | typing.List[VirtualMachineNetworkInterface]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.putNetworkInterface.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface">VirtualMachineNetworkInterface</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface">VirtualMachineNetworkInterface</a>]
 
 ---
 
@@ -1631,10 +1631,10 @@ def put_network_interface(
 
 ```python
 def put_ovf_deploy(
-  allow_unverified_ssl_cert: typing.Union[bool, IResolvable] = None,
+  allow_unverified_ssl_cert: bool | IResolvable = None,
   deployment_option: str = None,
   disk_provisioning: str = None,
-  enable_hidden_properties: typing.Union[bool, IResolvable] = None,
+  enable_hidden_properties: bool | IResolvable = None,
   ip_allocation_policy: str = None,
   ip_protocol: str = None,
   local_ovf_path: str = None,
@@ -1645,7 +1645,7 @@ def put_ovf_deploy(
 
 ###### `allow_unverified_ssl_cert`<sup>Optional</sup> <a name="allow_unverified_ssl_cert" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.putOvfDeploy.parameter.allowUnverifiedSslCert"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow unverified ssl certificates while deploying ovf/ova from url.
 
@@ -1677,7 +1677,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ###### `enable_hidden_properties`<sup>Optional</sup> <a name="enable_hidden_properties" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.putOvfDeploy.parameter.enableHiddenProperties"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow properties with ovf:userConfigurable=false to be set.
 
@@ -2366,13 +2366,13 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cdrom">cdrom</a></code> | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList">VirtualMachineCdromList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.changeVersion">change_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.clone">clone</a></code> | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference">VirtualMachineCloneOutputReference</a></code> | *No description.* |
@@ -2395,13 +2395,13 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.annotationInput">annotation_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.bootDelayInput">boot_delay_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.bootRetryDelayInput">boot_retry_delay_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.bootRetryEnabledInput">boot_retry_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cdromInput">cdrom_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom">VirtualMachineCdrom</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.bootRetryEnabledInput">boot_retry_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cdromInput">cdrom_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom">VirtualMachineCdrom</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cloneInput">clone_input</a></code> | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineClone">VirtualMachineClone</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cpuHotAddEnabledInput">cpu_hot_add_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cpuHotRemoveEnabledInput">cpu_hot_remove_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cpuHotAddEnabledInput">cpu_hot_add_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cpuHotRemoveEnabledInput">cpu_hot_remove_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cpuLimitInput">cpu_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cpuPerformanceCountersEnabledInput">cpu_performance_counters_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cpuPerformanceCountersEnabledInput">cpu_performance_counters_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cpuReservationInput">cpu_reservation_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cpuShareCountInput">cpu_share_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cpuShareLevelInput">cpu_share_level_input</a></code> | <code>str</code> | *No description.* |
@@ -2409,16 +2409,16 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.datacenterIdInput">datacenter_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.datastoreClusterIdInput">datastore_cluster_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.datastoreIdInput">datastore_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.diskInput">disk_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk">VirtualMachineDisk</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.efiSecureBootEnabledInput">efi_secure_boot_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.enableDiskUuidInput">enable_disk_uuid_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.enableLoggingInput">enable_logging_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.diskInput">disk_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk">VirtualMachineDisk</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.efiSecureBootEnabledInput">efi_secure_boot_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.enableDiskUuidInput">enable_disk_uuid_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.enableLoggingInput">enable_logging_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.eptRviModeInput">ept_rvi_mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.extraConfigInput">extra_config_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.extraConfigRebootRequiredInput">extra_config_reboot_required_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.extraConfigRebootRequiredInput">extra_config_reboot_required_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.firmwareInput">firmware_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.folderInput">folder_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.forcePowerOffInput">force_power_off_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.forcePowerOffInput">force_power_off_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.guestIdInput">guest_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.hardwareVersionInput">hardware_version_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.hostSystemIdInput">host_system_id_input</a></code> | <code>str</code> | *No description.* |
@@ -2427,17 +2427,17 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.ignoredGuestIpsInput">ignored_guest_ips_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.latencySensitivityInput">latency_sensitivity_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.memoryHotAddEnabledInput">memory_hot_add_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.memoryHotAddEnabledInput">memory_hot_add_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.memoryInput">memory_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.memoryLimitInput">memory_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.memoryReservationInput">memory_reservation_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.memoryReservationLockedToMaxInput">memory_reservation_locked_to_max_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.memoryReservationLockedToMaxInput">memory_reservation_locked_to_max_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.memoryShareCountInput">memory_share_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.memoryShareLevelInput">memory_share_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.migrateWaitTimeoutInput">migrate_wait_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.nestedHvEnabledInput">nested_hv_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.networkInterfaceInput">network_interface_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface">VirtualMachineNetworkInterface</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.nestedHvEnabledInput">nested_hv_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.networkInterfaceInput">network_interface_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface">VirtualMachineNetworkInterface</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.numCoresPerSocketInput">num_cores_per_socket_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.numCpusInput">num_cpus_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.nvmeControllerCountInput">nvme_controller_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -2446,11 +2446,11 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.poweronTimeoutInput">poweron_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.replaceTriggerInput">replace_trigger_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.resourcePoolIdInput">resource_pool_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsAfterPowerOnInput">run_tools_scripts_after_power_on_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsAfterResumeInput">run_tools_scripts_after_resume_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsBeforeGuestRebootInput">run_tools_scripts_before_guest_reboot_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsBeforeGuestShutdownInput">run_tools_scripts_before_guest_shutdown_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsBeforeGuestStandbyInput">run_tools_scripts_before_guest_standby_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsAfterPowerOnInput">run_tools_scripts_after_power_on_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsAfterResumeInput">run_tools_scripts_after_resume_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsBeforeGuestRebootInput">run_tools_scripts_before_guest_reboot_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsBeforeGuestShutdownInput">run_tools_scripts_before_guest_shutdown_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsBeforeGuestStandbyInput">run_tools_scripts_before_guest_standby_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.sataControllerCountInput">sata_controller_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.scsiBusSharingInput">scsi_bus_sharing_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.scsiControllerCountInput">scsi_controller_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -2458,26 +2458,26 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.shutdownWaitTimeoutInput">shutdown_wait_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.storagePolicyIdInput">storage_policy_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.swapPlacementPolicyInput">swap_placement_policy_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.syncTimeWithHostInput">sync_time_with_host_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.syncTimeWithHostPeriodicallyInput">sync_time_with_host_periodically_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.syncTimeWithHostInput">sync_time_with_host_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.syncTimeWithHostPeriodicallyInput">sync_time_with_host_periodically_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.toolsUpgradePolicyInput">tools_upgrade_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.vappInput">vapp_input</a></code> | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineVapp">VirtualMachineVapp</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.vbsEnabledInput">vbs_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.vbsEnabledInput">vbs_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.vtpmInput">vtpm_input</a></code> | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineVtpm">VirtualMachineVtpm</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.vvtdEnabledInput">vvtd_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.vvtdEnabledInput">vvtd_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.waitForGuestIpTimeoutInput">wait_for_guest_ip_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.waitForGuestNetRoutableInput">wait_for_guest_net_routable_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.waitForGuestNetRoutableInput">wait_for_guest_net_routable_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.waitForGuestNetTimeoutInput">wait_for_guest_net_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.alternateGuestName">alternate_guest_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.annotation">annotation</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.bootDelay">boot_delay</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.bootRetryDelay">boot_retry_delay</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.bootRetryEnabled">boot_retry_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cpuHotAddEnabled">cpu_hot_add_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cpuHotRemoveEnabled">cpu_hot_remove_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.bootRetryEnabled">boot_retry_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cpuHotAddEnabled">cpu_hot_add_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cpuHotRemoveEnabled">cpu_hot_remove_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cpuLimit">cpu_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cpuPerformanceCountersEnabled">cpu_performance_counters_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cpuPerformanceCountersEnabled">cpu_performance_counters_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cpuReservation">cpu_reservation</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cpuShareCount">cpu_share_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cpuShareLevel">cpu_share_level</a></code> | <code>str</code> | *No description.* |
@@ -2485,15 +2485,15 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.datacenterId">datacenter_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.datastoreClusterId">datastore_cluster_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.datastoreId">datastore_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.efiSecureBootEnabled">efi_secure_boot_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.enableDiskUuid">enable_disk_uuid</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.enableLogging">enable_logging</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.efiSecureBootEnabled">efi_secure_boot_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.enableDiskUuid">enable_disk_uuid</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.enableLogging">enable_logging</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.eptRviMode">ept_rvi_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.extraConfig">extra_config</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.extraConfigRebootRequired">extra_config_reboot_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.extraConfigRebootRequired">extra_config_reboot_required</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.firmware">firmware</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.folder">folder</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.forcePowerOff">force_power_off</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.forcePowerOff">force_power_off</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.guestId">guest_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.hardwareVersion">hardware_version</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.hostSystemId">host_system_id</a></code> | <code>str</code> | *No description.* |
@@ -2503,15 +2503,15 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.ignoredGuestIps">ignored_guest_ips</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.latencySensitivity">latency_sensitivity</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.memory">memory</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.memoryHotAddEnabled">memory_hot_add_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.memoryHotAddEnabled">memory_hot_add_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.memoryLimit">memory_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.memoryReservation">memory_reservation</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.memoryReservationLockedToMax">memory_reservation_locked_to_max</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.memoryReservationLockedToMax">memory_reservation_locked_to_max</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.memoryShareCount">memory_share_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.memoryShareLevel">memory_share_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.migrateWaitTimeout">migrate_wait_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.nestedHvEnabled">nested_hv_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.nestedHvEnabled">nested_hv_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.numCoresPerSocket">num_cores_per_socket</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.numCpus">num_cpus</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.nvmeControllerCount">nvme_controller_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -2519,11 +2519,11 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.poweronTimeout">poweron_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.replaceTrigger">replace_trigger</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.resourcePoolId">resource_pool_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsAfterPowerOn">run_tools_scripts_after_power_on</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsAfterResume">run_tools_scripts_after_resume</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsBeforeGuestReboot">run_tools_scripts_before_guest_reboot</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsBeforeGuestShutdown">run_tools_scripts_before_guest_shutdown</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsBeforeGuestStandby">run_tools_scripts_before_guest_standby</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsAfterPowerOn">run_tools_scripts_after_power_on</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsAfterResume">run_tools_scripts_after_resume</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsBeforeGuestReboot">run_tools_scripts_before_guest_reboot</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsBeforeGuestShutdown">run_tools_scripts_before_guest_shutdown</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsBeforeGuestStandby">run_tools_scripts_before_guest_standby</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.sataControllerCount">sata_controller_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.scsiBusSharing">scsi_bus_sharing</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.scsiControllerCount">scsi_controller_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -2531,14 +2531,14 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.shutdownWaitTimeout">shutdown_wait_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.storagePolicyId">storage_policy_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.swapPlacementPolicy">swap_placement_policy</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.syncTimeWithHost">sync_time_with_host</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.syncTimeWithHostPeriodically">sync_time_with_host_periodically</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.syncTimeWithHost">sync_time_with_host</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.syncTimeWithHostPeriodically">sync_time_with_host_periodically</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.tags">tags</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.toolsUpgradePolicy">tools_upgrade_policy</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.vbsEnabled">vbs_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.vvtdEnabled">vvtd_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.vbsEnabled">vbs_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.vvtdEnabled">vvtd_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.waitForGuestIpTimeout">wait_for_guest_ip_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.waitForGuestNetRoutable">wait_for_guest_net_routable</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.waitForGuestNetRoutable">wait_for_guest_net_routable</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.waitForGuestNetTimeout">wait_for_guest_net_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 
 ---
@@ -2618,20 +2618,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -2678,10 +2678,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2908,20 +2908,20 @@ boot_retry_delay_input: typing.Union[int, float]
 ##### `boot_retry_enabled_input`<sup>Optional</sup> <a name="boot_retry_enabled_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.bootRetryEnabledInput"></a>
 
 ```python
-boot_retry_enabled_input: typing.Union[bool, IResolvable]
+boot_retry_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `cdrom_input`<sup>Optional</sup> <a name="cdrom_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cdromInput"></a>
 
 ```python
-cdrom_input: typing.Union[IResolvable, typing.List[VirtualMachineCdrom]]
+cdrom_input: IResolvable | typing.List[VirtualMachineCdrom]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom">VirtualMachineCdrom</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom">VirtualMachineCdrom</a>]
 
 ---
 
@@ -2938,20 +2938,20 @@ clone_input: VirtualMachineClone
 ##### `cpu_hot_add_enabled_input`<sup>Optional</sup> <a name="cpu_hot_add_enabled_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cpuHotAddEnabledInput"></a>
 
 ```python
-cpu_hot_add_enabled_input: typing.Union[bool, IResolvable]
+cpu_hot_add_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `cpu_hot_remove_enabled_input`<sup>Optional</sup> <a name="cpu_hot_remove_enabled_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cpuHotRemoveEnabledInput"></a>
 
 ```python
-cpu_hot_remove_enabled_input: typing.Union[bool, IResolvable]
+cpu_hot_remove_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2968,10 +2968,10 @@ cpu_limit_input: typing.Union[int, float]
 ##### `cpu_performance_counters_enabled_input`<sup>Optional</sup> <a name="cpu_performance_counters_enabled_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cpuPerformanceCountersEnabledInput"></a>
 
 ```python
-cpu_performance_counters_enabled_input: typing.Union[bool, IResolvable]
+cpu_performance_counters_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3048,40 +3048,40 @@ datastore_id_input: str
 ##### `disk_input`<sup>Optional</sup> <a name="disk_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.diskInput"></a>
 
 ```python
-disk_input: typing.Union[IResolvable, typing.List[VirtualMachineDisk]]
+disk_input: IResolvable | typing.List[VirtualMachineDisk]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk">VirtualMachineDisk</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk">VirtualMachineDisk</a>]
 
 ---
 
 ##### `efi_secure_boot_enabled_input`<sup>Optional</sup> <a name="efi_secure_boot_enabled_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.efiSecureBootEnabledInput"></a>
 
 ```python
-efi_secure_boot_enabled_input: typing.Union[bool, IResolvable]
+efi_secure_boot_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enable_disk_uuid_input`<sup>Optional</sup> <a name="enable_disk_uuid_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.enableDiskUuidInput"></a>
 
 ```python
-enable_disk_uuid_input: typing.Union[bool, IResolvable]
+enable_disk_uuid_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enable_logging_input`<sup>Optional</sup> <a name="enable_logging_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.enableLoggingInput"></a>
 
 ```python
-enable_logging_input: typing.Union[bool, IResolvable]
+enable_logging_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3108,10 +3108,10 @@ extra_config_input: typing.Mapping[str]
 ##### `extra_config_reboot_required_input`<sup>Optional</sup> <a name="extra_config_reboot_required_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.extraConfigRebootRequiredInput"></a>
 
 ```python
-extra_config_reboot_required_input: typing.Union[bool, IResolvable]
+extra_config_reboot_required_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3138,10 +3138,10 @@ folder_input: str
 ##### `force_power_off_input`<sup>Optional</sup> <a name="force_power_off_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.forcePowerOffInput"></a>
 
 ```python
-force_power_off_input: typing.Union[bool, IResolvable]
+force_power_off_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3228,10 +3228,10 @@ latency_sensitivity_input: str
 ##### `memory_hot_add_enabled_input`<sup>Optional</sup> <a name="memory_hot_add_enabled_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.memoryHotAddEnabledInput"></a>
 
 ```python
-memory_hot_add_enabled_input: typing.Union[bool, IResolvable]
+memory_hot_add_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3268,10 +3268,10 @@ memory_reservation_input: typing.Union[int, float]
 ##### `memory_reservation_locked_to_max_input`<sup>Optional</sup> <a name="memory_reservation_locked_to_max_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.memoryReservationLockedToMaxInput"></a>
 
 ```python
-memory_reservation_locked_to_max_input: typing.Union[bool, IResolvable]
+memory_reservation_locked_to_max_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3318,20 +3318,20 @@ name_input: str
 ##### `nested_hv_enabled_input`<sup>Optional</sup> <a name="nested_hv_enabled_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.nestedHvEnabledInput"></a>
 
 ```python
-nested_hv_enabled_input: typing.Union[bool, IResolvable]
+nested_hv_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `network_interface_input`<sup>Optional</sup> <a name="network_interface_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.networkInterfaceInput"></a>
 
 ```python
-network_interface_input: typing.Union[IResolvable, typing.List[VirtualMachineNetworkInterface]]
+network_interface_input: IResolvable | typing.List[VirtualMachineNetworkInterface]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface">VirtualMachineNetworkInterface</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface">VirtualMachineNetworkInterface</a>]
 
 ---
 
@@ -3418,50 +3418,50 @@ resource_pool_id_input: str
 ##### `run_tools_scripts_after_power_on_input`<sup>Optional</sup> <a name="run_tools_scripts_after_power_on_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsAfterPowerOnInput"></a>
 
 ```python
-run_tools_scripts_after_power_on_input: typing.Union[bool, IResolvable]
+run_tools_scripts_after_power_on_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `run_tools_scripts_after_resume_input`<sup>Optional</sup> <a name="run_tools_scripts_after_resume_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsAfterResumeInput"></a>
 
 ```python
-run_tools_scripts_after_resume_input: typing.Union[bool, IResolvable]
+run_tools_scripts_after_resume_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `run_tools_scripts_before_guest_reboot_input`<sup>Optional</sup> <a name="run_tools_scripts_before_guest_reboot_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsBeforeGuestRebootInput"></a>
 
 ```python
-run_tools_scripts_before_guest_reboot_input: typing.Union[bool, IResolvable]
+run_tools_scripts_before_guest_reboot_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `run_tools_scripts_before_guest_shutdown_input`<sup>Optional</sup> <a name="run_tools_scripts_before_guest_shutdown_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsBeforeGuestShutdownInput"></a>
 
 ```python
-run_tools_scripts_before_guest_shutdown_input: typing.Union[bool, IResolvable]
+run_tools_scripts_before_guest_shutdown_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `run_tools_scripts_before_guest_standby_input`<sup>Optional</sup> <a name="run_tools_scripts_before_guest_standby_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsBeforeGuestStandbyInput"></a>
 
 ```python
-run_tools_scripts_before_guest_standby_input: typing.Union[bool, IResolvable]
+run_tools_scripts_before_guest_standby_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3538,20 +3538,20 @@ swap_placement_policy_input: str
 ##### `sync_time_with_host_input`<sup>Optional</sup> <a name="sync_time_with_host_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.syncTimeWithHostInput"></a>
 
 ```python
-sync_time_with_host_input: typing.Union[bool, IResolvable]
+sync_time_with_host_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `sync_time_with_host_periodically_input`<sup>Optional</sup> <a name="sync_time_with_host_periodically_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.syncTimeWithHostPeriodicallyInput"></a>
 
 ```python
-sync_time_with_host_periodically_input: typing.Union[bool, IResolvable]
+sync_time_with_host_periodically_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3588,10 +3588,10 @@ vapp_input: VirtualMachineVapp
 ##### `vbs_enabled_input`<sup>Optional</sup> <a name="vbs_enabled_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.vbsEnabledInput"></a>
 
 ```python
-vbs_enabled_input: typing.Union[bool, IResolvable]
+vbs_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3608,10 +3608,10 @@ vtpm_input: VirtualMachineVtpm
 ##### `vvtd_enabled_input`<sup>Optional</sup> <a name="vvtd_enabled_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.vvtdEnabledInput"></a>
 
 ```python
-vvtd_enabled_input: typing.Union[bool, IResolvable]
+vvtd_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3628,10 +3628,10 @@ wait_for_guest_ip_timeout_input: typing.Union[int, float]
 ##### `wait_for_guest_net_routable_input`<sup>Optional</sup> <a name="wait_for_guest_net_routable_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.waitForGuestNetRoutableInput"></a>
 
 ```python
-wait_for_guest_net_routable_input: typing.Union[bool, IResolvable]
+wait_for_guest_net_routable_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3688,30 +3688,30 @@ boot_retry_delay: typing.Union[int, float]
 ##### `boot_retry_enabled`<sup>Required</sup> <a name="boot_retry_enabled" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.bootRetryEnabled"></a>
 
 ```python
-boot_retry_enabled: typing.Union[bool, IResolvable]
+boot_retry_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `cpu_hot_add_enabled`<sup>Required</sup> <a name="cpu_hot_add_enabled" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cpuHotAddEnabled"></a>
 
 ```python
-cpu_hot_add_enabled: typing.Union[bool, IResolvable]
+cpu_hot_add_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `cpu_hot_remove_enabled`<sup>Required</sup> <a name="cpu_hot_remove_enabled" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cpuHotRemoveEnabled"></a>
 
 ```python
-cpu_hot_remove_enabled: typing.Union[bool, IResolvable]
+cpu_hot_remove_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3728,10 +3728,10 @@ cpu_limit: typing.Union[int, float]
 ##### `cpu_performance_counters_enabled`<sup>Required</sup> <a name="cpu_performance_counters_enabled" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.cpuPerformanceCountersEnabled"></a>
 
 ```python
-cpu_performance_counters_enabled: typing.Union[bool, IResolvable]
+cpu_performance_counters_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3808,30 +3808,30 @@ datastore_id: str
 ##### `efi_secure_boot_enabled`<sup>Required</sup> <a name="efi_secure_boot_enabled" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.efiSecureBootEnabled"></a>
 
 ```python
-efi_secure_boot_enabled: typing.Union[bool, IResolvable]
+efi_secure_boot_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enable_disk_uuid`<sup>Required</sup> <a name="enable_disk_uuid" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.enableDiskUuid"></a>
 
 ```python
-enable_disk_uuid: typing.Union[bool, IResolvable]
+enable_disk_uuid: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enable_logging`<sup>Required</sup> <a name="enable_logging" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.enableLogging"></a>
 
 ```python
-enable_logging: typing.Union[bool, IResolvable]
+enable_logging: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3858,10 +3858,10 @@ extra_config: typing.Mapping[str]
 ##### `extra_config_reboot_required`<sup>Required</sup> <a name="extra_config_reboot_required" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.extraConfigRebootRequired"></a>
 
 ```python
-extra_config_reboot_required: typing.Union[bool, IResolvable]
+extra_config_reboot_required: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3888,10 +3888,10 @@ folder: str
 ##### `force_power_off`<sup>Required</sup> <a name="force_power_off" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.forcePowerOff"></a>
 
 ```python
-force_power_off: typing.Union[bool, IResolvable]
+force_power_off: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3988,10 +3988,10 @@ memory: typing.Union[int, float]
 ##### `memory_hot_add_enabled`<sup>Required</sup> <a name="memory_hot_add_enabled" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.memoryHotAddEnabled"></a>
 
 ```python
-memory_hot_add_enabled: typing.Union[bool, IResolvable]
+memory_hot_add_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4018,10 +4018,10 @@ memory_reservation: typing.Union[int, float]
 ##### `memory_reservation_locked_to_max`<sup>Required</sup> <a name="memory_reservation_locked_to_max" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.memoryReservationLockedToMax"></a>
 
 ```python
-memory_reservation_locked_to_max: typing.Union[bool, IResolvable]
+memory_reservation_locked_to_max: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4068,10 +4068,10 @@ name: str
 ##### `nested_hv_enabled`<sup>Required</sup> <a name="nested_hv_enabled" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.nestedHvEnabled"></a>
 
 ```python
-nested_hv_enabled: typing.Union[bool, IResolvable]
+nested_hv_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4148,50 +4148,50 @@ resource_pool_id: str
 ##### `run_tools_scripts_after_power_on`<sup>Required</sup> <a name="run_tools_scripts_after_power_on" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsAfterPowerOn"></a>
 
 ```python
-run_tools_scripts_after_power_on: typing.Union[bool, IResolvable]
+run_tools_scripts_after_power_on: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `run_tools_scripts_after_resume`<sup>Required</sup> <a name="run_tools_scripts_after_resume" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsAfterResume"></a>
 
 ```python
-run_tools_scripts_after_resume: typing.Union[bool, IResolvable]
+run_tools_scripts_after_resume: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `run_tools_scripts_before_guest_reboot`<sup>Required</sup> <a name="run_tools_scripts_before_guest_reboot" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsBeforeGuestReboot"></a>
 
 ```python
-run_tools_scripts_before_guest_reboot: typing.Union[bool, IResolvable]
+run_tools_scripts_before_guest_reboot: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `run_tools_scripts_before_guest_shutdown`<sup>Required</sup> <a name="run_tools_scripts_before_guest_shutdown" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsBeforeGuestShutdown"></a>
 
 ```python
-run_tools_scripts_before_guest_shutdown: typing.Union[bool, IResolvable]
+run_tools_scripts_before_guest_shutdown: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `run_tools_scripts_before_guest_standby`<sup>Required</sup> <a name="run_tools_scripts_before_guest_standby" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.runToolsScriptsBeforeGuestStandby"></a>
 
 ```python
-run_tools_scripts_before_guest_standby: typing.Union[bool, IResolvable]
+run_tools_scripts_before_guest_standby: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4268,20 +4268,20 @@ swap_placement_policy: str
 ##### `sync_time_with_host`<sup>Required</sup> <a name="sync_time_with_host" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.syncTimeWithHost"></a>
 
 ```python
-sync_time_with_host: typing.Union[bool, IResolvable]
+sync_time_with_host: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `sync_time_with_host_periodically`<sup>Required</sup> <a name="sync_time_with_host_periodically" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.syncTimeWithHostPeriodically"></a>
 
 ```python
-sync_time_with_host_periodically: typing.Union[bool, IResolvable]
+sync_time_with_host_periodically: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4308,20 +4308,20 @@ tools_upgrade_policy: str
 ##### `vbs_enabled`<sup>Required</sup> <a name="vbs_enabled" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.vbsEnabled"></a>
 
 ```python
-vbs_enabled: typing.Union[bool, IResolvable]
+vbs_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `vvtd_enabled`<sup>Required</sup> <a name="vvtd_enabled" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.vvtdEnabled"></a>
 
 ```python
-vvtd_enabled: typing.Union[bool, IResolvable]
+vvtd_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4338,10 +4338,10 @@ wait_for_guest_ip_timeout: typing.Union[int, float]
 ##### `wait_for_guest_net_routable`<sup>Required</sup> <a name="wait_for_guest_net_routable" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachine.property.waitForGuestNetRoutable"></a>
 
 ```python
-wait_for_guest_net_routable: typing.Union[bool, IResolvable]
+wait_for_guest_net_routable: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4383,7 +4383,7 @@ tfResourceType: str
 from cdktf_cdktf_provider_vsphere import virtual_machine
 
 virtualMachine.VirtualMachineCdrom(
-  client_device: typing.Union[bool, IResolvable] = None,
+  client_device: bool | IResolvable = None,
   datastore_id: str = None,
   path: str = None
 )
@@ -4393,7 +4393,7 @@ virtualMachine.VirtualMachineCdrom(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom.property.clientDevice">client_device</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether the device should be mapped to a remote client device. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom.property.clientDevice">client_device</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether the device should be mapped to a remote client device. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom.property.datastoreId">datastore_id</a></code> | <code>str</code> | The datastore ID the ISO is located on. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom.property.path">path</a></code> | <code>str</code> | The path to the ISO file on the datastore. |
 
@@ -4402,10 +4402,10 @@ virtualMachine.VirtualMachineCdrom(
 ##### `client_device`<sup>Optional</sup> <a name="client_device" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom.property.clientDevice"></a>
 
 ```python
-client_device: typing.Union[bool, IResolvable]
+client_device: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether the device should be mapped to a remote client device.
 
@@ -4452,7 +4452,7 @@ virtualMachine.VirtualMachineClone(
   template_uuid: str,
   customization_spec: VirtualMachineCloneCustomizationSpec = None,
   customize: VirtualMachineCloneCustomize = None,
-  linked_clone: typing.Union[bool, IResolvable] = None,
+  linked_clone: bool | IResolvable = None,
   ovf_network_map: typing.Mapping[str] = None,
   ovf_storage_map: typing.Mapping[str] = None,
   timeout: typing.Union[int, float] = None
@@ -4466,7 +4466,7 @@ virtualMachine.VirtualMachineClone(
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineClone.property.templateUuid">template_uuid</a></code> | <code>str</code> | The UUID of the source virtual machine or template. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineClone.property.customizationSpec">customization_spec</a></code> | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpec">VirtualMachineCloneCustomizationSpec</a></code> | customization_spec block. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineClone.property.customize">customize</a></code> | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomize">VirtualMachineCloneCustomize</a></code> | customize block. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineClone.property.linkedClone">linked_clone</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not to create a linked clone when cloning. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineClone.property.linkedClone">linked_clone</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not to create a linked clone when cloning. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineClone.property.ovfNetworkMap">ovf_network_map</a></code> | <code>typing.Mapping[str]</code> | Mapping of ovf networks to the networks to use in vSphere. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineClone.property.ovfStorageMap">ovf_storage_map</a></code> | <code>typing.Mapping[str]</code> | Mapping of ovf storage to the datastores to use in vSphere. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineClone.property.timeout">timeout</a></code> | <code>typing.Union[int, float]</code> | The timeout, in minutes, to wait for the virtual machine clone to complete. |
@@ -4518,10 +4518,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `linked_clone`<sup>Optional</sup> <a name="linked_clone" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineClone.property.linkedClone"></a>
 
 ```python
-linked_clone: typing.Union[bool, IResolvable]
+linked_clone: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not to create a linked clone when cloning.
 
@@ -4641,7 +4641,7 @@ virtualMachine.VirtualMachineCloneCustomize(
   ipv4_gateway: str = None,
   ipv6_gateway: str = None,
   linux_options: VirtualMachineCloneCustomizeLinuxOptions = None,
-  network_interface: typing.Union[IResolvable, typing.List[VirtualMachineCloneCustomizeNetworkInterface]] = None,
+  network_interface: IResolvable | typing.List[VirtualMachineCloneCustomizeNetworkInterface] = None,
   timeout: typing.Union[int, float] = None,
   windows_options: VirtualMachineCloneCustomizeWindowsOptions = None,
   windows_sysprep_text: str = None
@@ -4657,7 +4657,7 @@ virtualMachine.VirtualMachineCloneCustomize(
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomize.property.ipv4Gateway">ipv4_gateway</a></code> | <code>str</code> | The IPv4 default gateway when using network_interface customization on the virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomize.property.ipv6Gateway">ipv6_gateway</a></code> | <code>str</code> | The IPv6 default gateway when using network_interface customization on the virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomize.property.linuxOptions">linux_options</a></code> | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeLinuxOptions">VirtualMachineCloneCustomizeLinuxOptions</a></code> | linux_options block. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomize.property.networkInterface">network_interface</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterface">VirtualMachineCloneCustomizeNetworkInterface</a>]]</code> | network_interface block. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomize.property.networkInterface">network_interface</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterface">VirtualMachineCloneCustomizeNetworkInterface</a>]</code> | network_interface block. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomize.property.timeout">timeout</a></code> | <code>typing.Union[int, float]</code> | The amount of time, in minutes, to wait for guest OS customization to complete before returning with an error. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomize.property.windowsOptions">windows_options</a></code> | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptions">VirtualMachineCloneCustomizeWindowsOptions</a></code> | windows_options block. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomize.property.windowsSysprepText">windows_sysprep_text</a></code> | <code>str</code> | Use this option to specify a windows sysprep file directly. |
@@ -4741,10 +4741,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `network_interface`<sup>Optional</sup> <a name="network_interface" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomize.property.networkInterface"></a>
 
 ```python
-network_interface: typing.Union[IResolvable, typing.List[VirtualMachineCloneCustomizeNetworkInterface]]
+network_interface: IResolvable | typing.List[VirtualMachineCloneCustomizeNetworkInterface]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterface">VirtualMachineCloneCustomizeNetworkInterface</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterface">VirtualMachineCloneCustomizeNetworkInterface</a>]
 
 network_interface block.
 
@@ -4806,7 +4806,7 @@ from cdktf_cdktf_provider_vsphere import virtual_machine
 virtualMachine.VirtualMachineCloneCustomizeLinuxOptions(
   domain: str,
   host_name: str,
-  hw_clock_utc: typing.Union[bool, IResolvable] = None,
+  hw_clock_utc: bool | IResolvable = None,
   script_text: str = None,
   time_zone: str = None
 )
@@ -4818,7 +4818,7 @@ virtualMachine.VirtualMachineCloneCustomizeLinuxOptions(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeLinuxOptions.property.domain">domain</a></code> | <code>str</code> | The domain name for this virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeLinuxOptions.property.hostName">host_name</a></code> | <code>str</code> | The hostname for this virtual machine. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeLinuxOptions.property.hwClockUtc">hw_clock_utc</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether or not the hardware clock should be in UTC or not. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeLinuxOptions.property.hwClockUtc">hw_clock_utc</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether or not the hardware clock should be in UTC or not. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeLinuxOptions.property.scriptText">script_text</a></code> | <code>str</code> | The customization script to run before and or after guest customization. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeLinuxOptions.property.timeZone">time_zone</a></code> | <code>str</code> | Customize the time zone on the VM. This should be a time zone-style entry, like America/Los_Angeles. |
 
@@ -4855,10 +4855,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `hw_clock_utc`<sup>Optional</sup> <a name="hw_clock_utc" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeLinuxOptions.property.hwClockUtc"></a>
 
 ```python
-hw_clock_utc: typing.Union[bool, IResolvable]
+hw_clock_utc: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether or not the hardware clock should be in UTC or not.
 
@@ -5018,7 +5018,7 @@ from cdktf_cdktf_provider_vsphere import virtual_machine
 virtualMachine.VirtualMachineCloneCustomizeWindowsOptions(
   computer_name: str,
   admin_password: str = None,
-  auto_logon: typing.Union[bool, IResolvable] = None,
+  auto_logon: bool | IResolvable = None,
   auto_logon_count: typing.Union[int, float] = None,
   domain_admin_password: str = None,
   domain_admin_user: str = None,
@@ -5039,7 +5039,7 @@ virtualMachine.VirtualMachineCloneCustomizeWindowsOptions(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptions.property.computerName">computer_name</a></code> | <code>str</code> | The host name for this virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptions.property.adminPassword">admin_password</a></code> | <code>str</code> | The new administrator password for this virtual machine. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptions.property.autoLogon">auto_logon</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Specifies whether or not the VM automatically logs on as Administrator. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptions.property.autoLogon">auto_logon</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether or not the VM automatically logs on as Administrator. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptions.property.autoLogonCount">auto_logon_count</a></code> | <code>typing.Union[int, float]</code> | Specifies how many times the VM should auto-logon the Administrator account when auto_logon is true. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptions.property.domainAdminPassword">domain_admin_password</a></code> | <code>str</code> | The password of the domain administrator used to join this virtual machine to the domain. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptions.property.domainAdminUser">domain_admin_user</a></code> | <code>str</code> | The user account of the domain administrator used to join this virtual machine to the domain. |
@@ -5085,10 +5085,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `auto_logon`<sup>Optional</sup> <a name="auto_logon" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptions.property.autoLogon"></a>
 
 ```python
-auto_logon: typing.Union[bool, IResolvable]
+auto_logon: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether or not the VM automatically logs on as Administrator.
 
@@ -5258,26 +5258,26 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 from cdktf_cdktf_provider_vsphere import virtual_machine
 
 virtualMachine.VirtualMachineConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
   resource_pool_id: str,
   alternate_guest_name: str = None,
   annotation: str = None,
   boot_delay: typing.Union[int, float] = None,
   boot_retry_delay: typing.Union[int, float] = None,
-  boot_retry_enabled: typing.Union[bool, IResolvable] = None,
-  cdrom: typing.Union[IResolvable, typing.List[VirtualMachineCdrom]] = None,
+  boot_retry_enabled: bool | IResolvable = None,
+  cdrom: IResolvable | typing.List[VirtualMachineCdrom] = None,
   clone: VirtualMachineClone = None,
-  cpu_hot_add_enabled: typing.Union[bool, IResolvable] = None,
-  cpu_hot_remove_enabled: typing.Union[bool, IResolvable] = None,
+  cpu_hot_add_enabled: bool | IResolvable = None,
+  cpu_hot_remove_enabled: bool | IResolvable = None,
   cpu_limit: typing.Union[int, float] = None,
-  cpu_performance_counters_enabled: typing.Union[bool, IResolvable] = None,
+  cpu_performance_counters_enabled: bool | IResolvable = None,
   cpu_reservation: typing.Union[int, float] = None,
   cpu_share_count: typing.Union[int, float] = None,
   cpu_share_level: str = None,
@@ -5285,16 +5285,16 @@ virtualMachine.VirtualMachineConfig(
   datacenter_id: str = None,
   datastore_cluster_id: str = None,
   datastore_id: str = None,
-  disk: typing.Union[IResolvable, typing.List[VirtualMachineDisk]] = None,
-  efi_secure_boot_enabled: typing.Union[bool, IResolvable] = None,
-  enable_disk_uuid: typing.Union[bool, IResolvable] = None,
-  enable_logging: typing.Union[bool, IResolvable] = None,
+  disk: IResolvable | typing.List[VirtualMachineDisk] = None,
+  efi_secure_boot_enabled: bool | IResolvable = None,
+  enable_disk_uuid: bool | IResolvable = None,
+  enable_logging: bool | IResolvable = None,
   ept_rvi_mode: str = None,
   extra_config: typing.Mapping[str] = None,
-  extra_config_reboot_required: typing.Union[bool, IResolvable] = None,
+  extra_config_reboot_required: bool | IResolvable = None,
   firmware: str = None,
   folder: str = None,
-  force_power_off: typing.Union[bool, IResolvable] = None,
+  force_power_off: bool | IResolvable = None,
   guest_id: str = None,
   hardware_version: typing.Union[int, float] = None,
   host_system_id: str = None,
@@ -5304,15 +5304,15 @@ virtualMachine.VirtualMachineConfig(
   ignored_guest_ips: typing.List[str] = None,
   latency_sensitivity: str = None,
   memory: typing.Union[int, float] = None,
-  memory_hot_add_enabled: typing.Union[bool, IResolvable] = None,
+  memory_hot_add_enabled: bool | IResolvable = None,
   memory_limit: typing.Union[int, float] = None,
   memory_reservation: typing.Union[int, float] = None,
-  memory_reservation_locked_to_max: typing.Union[bool, IResolvable] = None,
+  memory_reservation_locked_to_max: bool | IResolvable = None,
   memory_share_count: typing.Union[int, float] = None,
   memory_share_level: str = None,
   migrate_wait_timeout: typing.Union[int, float] = None,
-  nested_hv_enabled: typing.Union[bool, IResolvable] = None,
-  network_interface: typing.Union[IResolvable, typing.List[VirtualMachineNetworkInterface]] = None,
+  nested_hv_enabled: bool | IResolvable = None,
+  network_interface: IResolvable | typing.List[VirtualMachineNetworkInterface] = None,
   num_cores_per_socket: typing.Union[int, float] = None,
   num_cpus: typing.Union[int, float] = None,
   nvme_controller_count: typing.Union[int, float] = None,
@@ -5320,11 +5320,11 @@ virtualMachine.VirtualMachineConfig(
   pci_device_id: typing.List[str] = None,
   poweron_timeout: typing.Union[int, float] = None,
   replace_trigger: str = None,
-  run_tools_scripts_after_power_on: typing.Union[bool, IResolvable] = None,
-  run_tools_scripts_after_resume: typing.Union[bool, IResolvable] = None,
-  run_tools_scripts_before_guest_reboot: typing.Union[bool, IResolvable] = None,
-  run_tools_scripts_before_guest_shutdown: typing.Union[bool, IResolvable] = None,
-  run_tools_scripts_before_guest_standby: typing.Union[bool, IResolvable] = None,
+  run_tools_scripts_after_power_on: bool | IResolvable = None,
+  run_tools_scripts_after_resume: bool | IResolvable = None,
+  run_tools_scripts_before_guest_reboot: bool | IResolvable = None,
+  run_tools_scripts_before_guest_shutdown: bool | IResolvable = None,
+  run_tools_scripts_before_guest_standby: bool | IResolvable = None,
   sata_controller_count: typing.Union[int, float] = None,
   scsi_bus_sharing: str = None,
   scsi_controller_count: typing.Union[int, float] = None,
@@ -5332,16 +5332,16 @@ virtualMachine.VirtualMachineConfig(
   shutdown_wait_timeout: typing.Union[int, float] = None,
   storage_policy_id: str = None,
   swap_placement_policy: str = None,
-  sync_time_with_host: typing.Union[bool, IResolvable] = None,
-  sync_time_with_host_periodically: typing.Union[bool, IResolvable] = None,
+  sync_time_with_host: bool | IResolvable = None,
+  sync_time_with_host_periodically: bool | IResolvable = None,
   tags: typing.List[str] = None,
   tools_upgrade_policy: str = None,
   vapp: VirtualMachineVapp = None,
-  vbs_enabled: typing.Union[bool, IResolvable] = None,
+  vbs_enabled: bool | IResolvable = None,
   vtpm: VirtualMachineVtpm = None,
-  vvtd_enabled: typing.Union[bool, IResolvable] = None,
+  vvtd_enabled: bool | IResolvable = None,
   wait_for_guest_ip_timeout: typing.Union[int, float] = None,
-  wait_for_guest_net_routable: typing.Union[bool, IResolvable] = None,
+  wait_for_guest_net_routable: bool | IResolvable = None,
   wait_for_guest_net_timeout: typing.Union[int, float] = None
 )
 ```
@@ -5350,26 +5350,26 @@ virtualMachine.VirtualMachineConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.name">name</a></code> | <code>str</code> | The name of this virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.resourcePoolId">resource_pool_id</a></code> | <code>str</code> | The ID of a resource pool to put the virtual machine in. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.alternateGuestName">alternate_guest_name</a></code> | <code>str</code> | The guest name for the operating system when guest_id is otherGuest or otherGuest64. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.annotation">annotation</a></code> | <code>str</code> | User-provided description of the virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.bootDelay">boot_delay</a></code> | <code>typing.Union[int, float]</code> | The number of milliseconds to wait before starting the boot sequence. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.bootRetryDelay">boot_retry_delay</a></code> | <code>typing.Union[int, float]</code> | The number of milliseconds to wait before retrying the boot sequence. This only valid if boot_retry_enabled is true. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.bootRetryEnabled">boot_retry_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set to true, a virtual machine that fails to boot will try again after the delay defined in boot_retry_delay. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.cdrom">cdrom</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom">VirtualMachineCdrom</a>]]</code> | cdrom block. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.bootRetryEnabled">boot_retry_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to true, a virtual machine that fails to boot will try again after the delay defined in boot_retry_delay. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.cdrom">cdrom</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom">VirtualMachineCdrom</a>]</code> | cdrom block. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.clone">clone</a></code> | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineClone">VirtualMachineClone</a></code> | clone block. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.cpuHotAddEnabled">cpu_hot_add_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow CPUs to be added to this virtual machine while it is running. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.cpuHotRemoveEnabled">cpu_hot_remove_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow CPUs to be added to this virtual machine while it is running. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.cpuHotAddEnabled">cpu_hot_add_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow CPUs to be added to this virtual machine while it is running. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.cpuHotRemoveEnabled">cpu_hot_remove_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow CPUs to be added to this virtual machine while it is running. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.cpuLimit">cpu_limit</a></code> | <code>typing.Union[int, float]</code> | The maximum amount of memory (in MB) or CPU (in MHz) that this virtual machine can consume, regardless of available resources. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.cpuPerformanceCountersEnabled">cpu_performance_counters_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable CPU performance counters on this virtual machine. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.cpuPerformanceCountersEnabled">cpu_performance_counters_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable CPU performance counters on this virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.cpuReservation">cpu_reservation</a></code> | <code>typing.Union[int, float]</code> | The amount of memory (in MB) or CPU (in MHz) that this virtual machine is guaranteed. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.cpuShareCount">cpu_share_count</a></code> | <code>typing.Union[int, float]</code> | The amount of shares to allocate to cpu for a custom share level. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.cpuShareLevel">cpu_share_level</a></code> | <code>str</code> | The allocation level for cpu resources. Can be one of high, low, normal, or custom. |
@@ -5377,16 +5377,16 @@ virtualMachine.VirtualMachineConfig(
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.datacenterId">datacenter_id</a></code> | <code>str</code> | The ID of the datacenter where the VM is to be created. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.datastoreClusterId">datastore_cluster_id</a></code> | <code>str</code> | The ID of a datastore cluster to put the virtual machine in. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.datastoreId">datastore_id</a></code> | <code>str</code> | The ID of the virtual machine's datastore. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.disk">disk</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk">VirtualMachineDisk</a>]]</code> | disk block. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.efiSecureBootEnabled">efi_secure_boot_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When the boot type set in firmware is efi, this enables EFI secure boot. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.enableDiskUuid">enable_disk_uuid</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Expose the UUIDs of attached virtual disks to the virtual machine, allowing access to them in the guest. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.enableLogging">enable_logging</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable logging on this virtual machine. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.disk">disk</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk">VirtualMachineDisk</a>]</code> | disk block. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.efiSecureBootEnabled">efi_secure_boot_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | When the boot type set in firmware is efi, this enables EFI secure boot. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.enableDiskUuid">enable_disk_uuid</a></code> | <code>bool \| cdktf.IResolvable</code> | Expose the UUIDs of attached virtual disks to the virtual machine, allowing access to them in the guest. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.enableLogging">enable_logging</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable logging on this virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.eptRviMode">ept_rvi_mode</a></code> | <code>str</code> | The EPT/RVI (hardware memory virtualization) setting for this virtual machine. Can be one of automatic, on, or off. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.extraConfig">extra_config</a></code> | <code>typing.Mapping[str]</code> | Extra configuration data for this virtual machine. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.extraConfigRebootRequired">extra_config_reboot_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow the virtual machine to be rebooted when a change to `extra_config` occurs. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.extraConfigRebootRequired">extra_config_reboot_required</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow the virtual machine to be rebooted when a change to `extra_config` occurs. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.firmware">firmware</a></code> | <code>str</code> | The firmware interface to use on the virtual machine. Can be one of bios or efi. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.folder">folder</a></code> | <code>str</code> | The name of the folder to locate the virtual machine in. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.forcePowerOff">force_power_off</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to true to force power-off a virtual machine if a graceful guest shutdown failed for a necessary operation. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.forcePowerOff">force_power_off</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to true to force power-off a virtual machine if a graceful guest shutdown failed for a necessary operation. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.guestId">guest_id</a></code> | <code>str</code> | The guest ID for the operating system. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.hardwareVersion">hardware_version</a></code> | <code>typing.Union[int, float]</code> | The hardware version for the virtual machine. Allows versions within ranges: 4, 7-11, 13-15, 17-22. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.hostSystemId">host_system_id</a></code> | <code>str</code> | The ID of an optional host system to pin the virtual machine to. |
@@ -5396,15 +5396,15 @@ virtualMachine.VirtualMachineConfig(
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.ignoredGuestIps">ignored_guest_ips</a></code> | <code>typing.List[str]</code> | List of IP addresses and CIDR networks to ignore while waiting for an IP. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.latencySensitivity">latency_sensitivity</a></code> | <code>str</code> | Controls the scheduling delay of the virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.memory">memory</a></code> | <code>typing.Union[int, float]</code> | The size of the virtual machine's memory, in MB. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.memoryHotAddEnabled">memory_hot_add_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow memory to be added to this virtual machine while it is running. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.memoryHotAddEnabled">memory_hot_add_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow memory to be added to this virtual machine while it is running. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.memoryLimit">memory_limit</a></code> | <code>typing.Union[int, float]</code> | The maximum amount of memory (in MB) or CPU (in MHz) that this virtual machine can consume, regardless of available resources. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.memoryReservation">memory_reservation</a></code> | <code>typing.Union[int, float]</code> | The amount of memory (in MB) or CPU (in MHz) that this virtual machine is guaranteed. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.memoryReservationLockedToMax">memory_reservation_locked_to_max</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If set true, memory resource reservation for this virtual machine will always be equal to the virtual machine's memory size;increases in memory size will be rejected when a corresponding reservation increase is not possible. This feature may only be enabled if it is currently possible to reserve all of the virtual machine's memory. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.memoryReservationLockedToMax">memory_reservation_locked_to_max</a></code> | <code>bool \| cdktf.IResolvable</code> | If set true, memory resource reservation for this virtual machine will always be equal to the virtual machine's memory size;increases in memory size will be rejected when a corresponding reservation increase is not possible. This feature may only be enabled if it is currently possible to reserve all of the virtual machine's memory. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.memoryShareCount">memory_share_count</a></code> | <code>typing.Union[int, float]</code> | The amount of shares to allocate to memory for a custom share level. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.memoryShareLevel">memory_share_level</a></code> | <code>str</code> | The allocation level for memory resources. Can be one of high, low, normal, or custom. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.migrateWaitTimeout">migrate_wait_timeout</a></code> | <code>typing.Union[int, float]</code> | The amount of time, in minutes, to wait for a vMotion operation to complete before failing. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.nestedHvEnabled">nested_hv_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable nested hardware virtualization on this virtual machine, facilitating nested virtualization in the guest. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.networkInterface">network_interface</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface">VirtualMachineNetworkInterface</a>]]</code> | network_interface block. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.nestedHvEnabled">nested_hv_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable nested hardware virtualization on this virtual machine, facilitating nested virtualization in the guest. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.networkInterface">network_interface</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface">VirtualMachineNetworkInterface</a>]</code> | network_interface block. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.numCoresPerSocket">num_cores_per_socket</a></code> | <code>typing.Union[int, float]</code> | The number of cores to distribute amongst the CPUs in this virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.numCpus">num_cpus</a></code> | <code>typing.Union[int, float]</code> | The number of virtual processors to assign to this virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.nvmeControllerCount">nvme_controller_count</a></code> | <code>typing.Union[int, float]</code> | The number of NVMe controllers that Terraform manages on this virtual machine. |
@@ -5412,11 +5412,11 @@ virtualMachine.VirtualMachineConfig(
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.pciDeviceId">pci_device_id</a></code> | <code>typing.List[str]</code> | A list of PCI passthrough devices. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.poweronTimeout">poweron_timeout</a></code> | <code>typing.Union[int, float]</code> | The amount of time, in seconds, that we will be trying to power on a VM. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.replaceTrigger">replace_trigger</a></code> | <code>str</code> | Triggers replacement of resource whenever it changes. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.runToolsScriptsAfterPowerOn">run_tools_scripts_after_power_on</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable the run of scripts after virtual machine power-on when VMware Tools is installed. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.runToolsScriptsAfterResume">run_tools_scripts_after_resume</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable the run of scripts after virtual machine resume when when VMware Tools is installed. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.runToolsScriptsBeforeGuestReboot">run_tools_scripts_before_guest_reboot</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable the run of scripts before guest operating system reboot when VMware Tools is installed. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.runToolsScriptsBeforeGuestShutdown">run_tools_scripts_before_guest_shutdown</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable the run of scripts before guest operating system shutdown when VMware Tools is installed. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.runToolsScriptsBeforeGuestStandby">run_tools_scripts_before_guest_standby</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable the run of scripts before guest operating system standby when VMware Tools is installed. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.runToolsScriptsAfterPowerOn">run_tools_scripts_after_power_on</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable the run of scripts after virtual machine power-on when VMware Tools is installed. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.runToolsScriptsAfterResume">run_tools_scripts_after_resume</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable the run of scripts after virtual machine resume when when VMware Tools is installed. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.runToolsScriptsBeforeGuestReboot">run_tools_scripts_before_guest_reboot</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable the run of scripts before guest operating system reboot when VMware Tools is installed. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.runToolsScriptsBeforeGuestShutdown">run_tools_scripts_before_guest_shutdown</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable the run of scripts before guest operating system shutdown when VMware Tools is installed. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.runToolsScriptsBeforeGuestStandby">run_tools_scripts_before_guest_standby</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable the run of scripts before guest operating system standby when VMware Tools is installed. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.sataControllerCount">sata_controller_count</a></code> | <code>typing.Union[int, float]</code> | The number of SATA controllers that Terraform manages on this virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.scsiBusSharing">scsi_bus_sharing</a></code> | <code>str</code> | Mode for sharing the SCSI bus. The modes are physicalSharing, virtualSharing, and noSharing. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.scsiControllerCount">scsi_controller_count</a></code> | <code>typing.Union[int, float]</code> | The number of SCSI controllers that Terraform manages on this virtual machine. |
@@ -5424,16 +5424,16 @@ virtualMachine.VirtualMachineConfig(
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.shutdownWaitTimeout">shutdown_wait_timeout</a></code> | <code>typing.Union[int, float]</code> | The amount of time, in minutes, to wait for shutdown when making necessary updates to the virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.storagePolicyId">storage_policy_id</a></code> | <code>str</code> | The ID of the storage policy to assign to the virtual machine home directory. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.swapPlacementPolicy">swap_placement_policy</a></code> | <code>str</code> | The swap file placement policy for this virtual machine. Can be one of inherit, hostLocal, or vmDirectory. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.syncTimeWithHost">sync_time_with_host</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable guest clock synchronization with the host. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.syncTimeWithHostPeriodically">sync_time_with_host_periodically</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable periodic clock synchronization with the host. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.syncTimeWithHost">sync_time_with_host</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable guest clock synchronization with the host. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.syncTimeWithHostPeriodically">sync_time_with_host_periodically</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable periodic clock synchronization with the host. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | A list of tag IDs to apply to this object. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.toolsUpgradePolicy">tools_upgrade_policy</a></code> | <code>str</code> | Set the upgrade policy for VMware Tools. Can be one of `manual` or `upgradeAtPowerCycle`. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.vapp">vapp</a></code> | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineVapp">VirtualMachineVapp</a></code> | vapp block. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.vbsEnabled">vbs_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Flag to specify if Virtualization-based security is enabled for this virtual machine. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.vbsEnabled">vbs_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Flag to specify if Virtualization-based security is enabled for this virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.vtpm">vtpm</a></code> | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineVtpm">VirtualMachineVtpm</a></code> | vtpm block. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.vvtdEnabled">vvtd_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Flag to specify if I/O MMU virtualization, also called Intel Virtualization Technology for Directed I/O (VT-d) and AMD I/O Virtualization (AMD-Vi or IOMMU), is enabled. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.vvtdEnabled">vvtd_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Flag to specify if I/O MMU virtualization, also called Intel Virtualization Technology for Directed I/O (VT-d) and AMD I/O Virtualization (AMD-Vi or IOMMU), is enabled. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.waitForGuestIpTimeout">wait_for_guest_ip_timeout</a></code> | <code>typing.Union[int, float]</code> | The amount of time, in minutes, to wait for an available IP address on this virtual machine. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.waitForGuestNetRoutable">wait_for_guest_net_routable</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Controls whether or not the guest network waiter waits for a routable address. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.waitForGuestNetRoutable">wait_for_guest_net_routable</a></code> | <code>bool \| cdktf.IResolvable</code> | Controls whether or not the guest network waiter waits for a routable address. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.waitForGuestNetTimeout">wait_for_guest_net_timeout</a></code> | <code>typing.Union[int, float]</code> | The amount of time, in minutes, to wait for an available IP address on this virtual machine. |
 
 ---
@@ -5441,20 +5441,20 @@ virtualMachine.VirtualMachineConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -5501,10 +5501,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -5595,10 +5595,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `boot_retry_enabled`<sup>Optional</sup> <a name="boot_retry_enabled" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.bootRetryEnabled"></a>
 
 ```python
-boot_retry_enabled: typing.Union[bool, IResolvable]
+boot_retry_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If set to true, a virtual machine that fails to boot will try again after the delay defined in boot_retry_delay.
 
@@ -5609,10 +5609,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `cdrom`<sup>Optional</sup> <a name="cdrom" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.cdrom"></a>
 
 ```python
-cdrom: typing.Union[IResolvable, typing.List[VirtualMachineCdrom]]
+cdrom: IResolvable | typing.List[VirtualMachineCdrom]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom">VirtualMachineCdrom</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom">VirtualMachineCdrom</a>]
 
 cdrom block.
 
@@ -5637,10 +5637,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `cpu_hot_add_enabled`<sup>Optional</sup> <a name="cpu_hot_add_enabled" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.cpuHotAddEnabled"></a>
 
 ```python
-cpu_hot_add_enabled: typing.Union[bool, IResolvable]
+cpu_hot_add_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow CPUs to be added to this virtual machine while it is running.
 
@@ -5651,10 +5651,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `cpu_hot_remove_enabled`<sup>Optional</sup> <a name="cpu_hot_remove_enabled" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.cpuHotRemoveEnabled"></a>
 
 ```python
-cpu_hot_remove_enabled: typing.Union[bool, IResolvable]
+cpu_hot_remove_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow CPUs to be added to this virtual machine while it is running.
 
@@ -5679,10 +5679,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `cpu_performance_counters_enabled`<sup>Optional</sup> <a name="cpu_performance_counters_enabled" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.cpuPerformanceCountersEnabled"></a>
 
 ```python
-cpu_performance_counters_enabled: typing.Union[bool, IResolvable]
+cpu_performance_counters_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable CPU performance counters on this virtual machine.
 
@@ -5793,10 +5793,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `disk`<sup>Optional</sup> <a name="disk" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.disk"></a>
 
 ```python
-disk: typing.Union[IResolvable, typing.List[VirtualMachineDisk]]
+disk: IResolvable | typing.List[VirtualMachineDisk]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk">VirtualMachineDisk</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk">VirtualMachineDisk</a>]
 
 disk block.
 
@@ -5807,10 +5807,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `efi_secure_boot_enabled`<sup>Optional</sup> <a name="efi_secure_boot_enabled" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.efiSecureBootEnabled"></a>
 
 ```python
-efi_secure_boot_enabled: typing.Union[bool, IResolvable]
+efi_secure_boot_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When the boot type set in firmware is efi, this enables EFI secure boot.
 
@@ -5821,10 +5821,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `enable_disk_uuid`<sup>Optional</sup> <a name="enable_disk_uuid" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.enableDiskUuid"></a>
 
 ```python
-enable_disk_uuid: typing.Union[bool, IResolvable]
+enable_disk_uuid: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Expose the UUIDs of attached virtual disks to the virtual machine, allowing access to them in the guest.
 
@@ -5835,10 +5835,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `enable_logging`<sup>Optional</sup> <a name="enable_logging" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.enableLogging"></a>
 
 ```python
-enable_logging: typing.Union[bool, IResolvable]
+enable_logging: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable logging on this virtual machine.
 
@@ -5879,10 +5879,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `extra_config_reboot_required`<sup>Optional</sup> <a name="extra_config_reboot_required" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.extraConfigRebootRequired"></a>
 
 ```python
-extra_config_reboot_required: typing.Union[bool, IResolvable]
+extra_config_reboot_required: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow the virtual machine to be rebooted when a change to `extra_config` occurs.
 
@@ -5921,10 +5921,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `force_power_off`<sup>Optional</sup> <a name="force_power_off" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.forcePowerOff"></a>
 
 ```python
-force_power_off: typing.Union[bool, IResolvable]
+force_power_off: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to true to force power-off a virtual machine if a graceful guest shutdown failed for a necessary operation.
 
@@ -6066,10 +6066,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `memory_hot_add_enabled`<sup>Optional</sup> <a name="memory_hot_add_enabled" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.memoryHotAddEnabled"></a>
 
 ```python
-memory_hot_add_enabled: typing.Union[bool, IResolvable]
+memory_hot_add_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow memory to be added to this virtual machine while it is running.
 
@@ -6108,10 +6108,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `memory_reservation_locked_to_max`<sup>Optional</sup> <a name="memory_reservation_locked_to_max" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.memoryReservationLockedToMax"></a>
 
 ```python
-memory_reservation_locked_to_max: typing.Union[bool, IResolvable]
+memory_reservation_locked_to_max: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If set true, memory resource reservation for this virtual machine will always be equal to the virtual machine's memory size;increases in memory size will be rejected when a corresponding reservation increase is not possible. This feature may only be enabled if it is currently possible to reserve all of the virtual machine's memory.
 
@@ -6164,10 +6164,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `nested_hv_enabled`<sup>Optional</sup> <a name="nested_hv_enabled" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.nestedHvEnabled"></a>
 
 ```python
-nested_hv_enabled: typing.Union[bool, IResolvable]
+nested_hv_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable nested hardware virtualization on this virtual machine, facilitating nested virtualization in the guest.
 
@@ -6178,10 +6178,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `network_interface`<sup>Optional</sup> <a name="network_interface" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.networkInterface"></a>
 
 ```python
-network_interface: typing.Union[IResolvable, typing.List[VirtualMachineNetworkInterface]]
+network_interface: IResolvable | typing.List[VirtualMachineNetworkInterface]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface">VirtualMachineNetworkInterface</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface">VirtualMachineNetworkInterface</a>]
 
 network_interface block.
 
@@ -6294,10 +6294,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `run_tools_scripts_after_power_on`<sup>Optional</sup> <a name="run_tools_scripts_after_power_on" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.runToolsScriptsAfterPowerOn"></a>
 
 ```python
-run_tools_scripts_after_power_on: typing.Union[bool, IResolvable]
+run_tools_scripts_after_power_on: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable the run of scripts after virtual machine power-on when VMware Tools is installed.
 
@@ -6308,10 +6308,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `run_tools_scripts_after_resume`<sup>Optional</sup> <a name="run_tools_scripts_after_resume" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.runToolsScriptsAfterResume"></a>
 
 ```python
-run_tools_scripts_after_resume: typing.Union[bool, IResolvable]
+run_tools_scripts_after_resume: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable the run of scripts after virtual machine resume when when VMware Tools is installed.
 
@@ -6322,10 +6322,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `run_tools_scripts_before_guest_reboot`<sup>Optional</sup> <a name="run_tools_scripts_before_guest_reboot" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.runToolsScriptsBeforeGuestReboot"></a>
 
 ```python
-run_tools_scripts_before_guest_reboot: typing.Union[bool, IResolvable]
+run_tools_scripts_before_guest_reboot: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable the run of scripts before guest operating system reboot when VMware Tools is installed.
 
@@ -6336,10 +6336,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `run_tools_scripts_before_guest_shutdown`<sup>Optional</sup> <a name="run_tools_scripts_before_guest_shutdown" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.runToolsScriptsBeforeGuestShutdown"></a>
 
 ```python
-run_tools_scripts_before_guest_shutdown: typing.Union[bool, IResolvable]
+run_tools_scripts_before_guest_shutdown: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable the run of scripts before guest operating system shutdown when VMware Tools is installed.
 
@@ -6350,10 +6350,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `run_tools_scripts_before_guest_standby`<sup>Optional</sup> <a name="run_tools_scripts_before_guest_standby" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.runToolsScriptsBeforeGuestStandby"></a>
 
 ```python
-run_tools_scripts_before_guest_standby: typing.Union[bool, IResolvable]
+run_tools_scripts_before_guest_standby: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable the run of scripts before guest operating system standby when VMware Tools is installed.
 
@@ -6466,10 +6466,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `sync_time_with_host`<sup>Optional</sup> <a name="sync_time_with_host" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.syncTimeWithHost"></a>
 
 ```python
-sync_time_with_host: typing.Union[bool, IResolvable]
+sync_time_with_host: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable guest clock synchronization with the host.
 
@@ -6482,10 +6482,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `sync_time_with_host_periodically`<sup>Optional</sup> <a name="sync_time_with_host_periodically" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.syncTimeWithHostPeriodically"></a>
 
 ```python
-sync_time_with_host_periodically: typing.Union[bool, IResolvable]
+sync_time_with_host_periodically: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable periodic clock synchronization with the host.
 
@@ -6540,10 +6540,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `vbs_enabled`<sup>Optional</sup> <a name="vbs_enabled" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.vbsEnabled"></a>
 
 ```python
-vbs_enabled: typing.Union[bool, IResolvable]
+vbs_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Flag to specify if Virtualization-based security is enabled for this virtual machine.
 
@@ -6568,10 +6568,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `vvtd_enabled`<sup>Optional</sup> <a name="vvtd_enabled" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.vvtdEnabled"></a>
 
 ```python
-vvtd_enabled: typing.Union[bool, IResolvable]
+vvtd_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Flag to specify if I/O MMU virtualization, also called Intel Virtualization Technology for Directed I/O (VT-d) and AMD I/O Virtualization (AMD-Vi or IOMMU), is enabled.
 
@@ -6598,10 +6598,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `wait_for_guest_net_routable`<sup>Optional</sup> <a name="wait_for_guest_net_routable" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineConfig.property.waitForGuestNetRoutable"></a>
 
 ```python
-wait_for_guest_net_routable: typing.Union[bool, IResolvable]
+wait_for_guest_net_routable: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Controls whether or not the guest network waiter waits for a routable address.
 
@@ -6636,23 +6636,23 @@ from cdktf_cdktf_provider_vsphere import virtual_machine
 
 virtualMachine.VirtualMachineDisk(
   label: str,
-  attach: typing.Union[bool, IResolvable] = None,
+  attach: bool | IResolvable = None,
   controller_type: str = None,
   datastore_id: str = None,
   disk_mode: str = None,
   disk_sharing: str = None,
-  eagerly_scrub: typing.Union[bool, IResolvable] = None,
+  eagerly_scrub: bool | IResolvable = None,
   io_limit: typing.Union[int, float] = None,
   io_reservation: typing.Union[int, float] = None,
   io_share_count: typing.Union[int, float] = None,
   io_share_level: str = None,
-  keep_on_remove: typing.Union[bool, IResolvable] = None,
+  keep_on_remove: bool | IResolvable = None,
   path: str = None,
   size: typing.Union[int, float] = None,
   storage_policy_id: str = None,
-  thin_provisioned: typing.Union[bool, IResolvable] = None,
+  thin_provisioned: bool | IResolvable = None,
   unit_number: typing.Union[int, float] = None,
-  write_through: typing.Union[bool, IResolvable] = None
+  write_through: bool | IResolvable = None
 )
 ```
 
@@ -6661,23 +6661,23 @@ virtualMachine.VirtualMachineDisk(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk.property.label">label</a></code> | <code>str</code> | A unique label for this disk. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk.property.attach">attach</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If this is true, the disk is attached instead of created. Implies keep_on_remove. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk.property.attach">attach</a></code> | <code>bool \| cdktf.IResolvable</code> | If this is true, the disk is attached instead of created. Implies keep_on_remove. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk.property.controllerType">controller_type</a></code> | <code>str</code> | The type of controller the disk should be connected to. Must be 'scsi', 'sata', 'nvme', or 'ide'. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk.property.datastoreId">datastore_id</a></code> | <code>str</code> | The datastore ID for this virtual disk, if different than the virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk.property.diskMode">disk_mode</a></code> | <code>str</code> | The mode of this this virtual disk for purposes of writes and snapshotting. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk.property.diskSharing">disk_sharing</a></code> | <code>str</code> | The sharing mode of this virtual disk. Can be one of sharingMultiWriter or sharingNone. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk.property.eagerlyScrub">eagerly_scrub</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | The virtual disk file zeroing policy when thin_provision is not true. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk.property.eagerlyScrub">eagerly_scrub</a></code> | <code>bool \| cdktf.IResolvable</code> | The virtual disk file zeroing policy when thin_provision is not true. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk.property.ioLimit">io_limit</a></code> | <code>typing.Union[int, float]</code> | The upper limit of IOPS that this disk can use. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk.property.ioReservation">io_reservation</a></code> | <code>typing.Union[int, float]</code> | The I/O guarantee that this disk has, in IOPS. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk.property.ioShareCount">io_share_count</a></code> | <code>typing.Union[int, float]</code> | The share count for this disk when the share level is custom. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk.property.ioShareLevel">io_share_level</a></code> | <code>str</code> | The share allocation level for this disk. Can be one of low, normal, high, or custom. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk.property.keepOnRemove">keep_on_remove</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set to true to keep the underlying VMDK file when removing this virtual disk from configuration. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk.property.keepOnRemove">keep_on_remove</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to true to keep the underlying VMDK file when removing this virtual disk from configuration. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk.property.path">path</a></code> | <code>str</code> | The full path of the virtual disk. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk.property.size">size</a></code> | <code>typing.Union[int, float]</code> | The size of the disk, in GB. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk.property.storagePolicyId">storage_policy_id</a></code> | <code>str</code> | The ID of the storage policy to assign to the virtual disk in VM. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk.property.thinProvisioned">thin_provisioned</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, this disk is thin provisioned, with space for the file being allocated on an as-needed basis. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk.property.thinProvisioned">thin_provisioned</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, this disk is thin provisioned, with space for the file being allocated on an as-needed basis. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk.property.unitNumber">unit_number</a></code> | <code>typing.Union[int, float]</code> | The unique device number for this disk. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk.property.writeThrough">write_through</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, writes for this disk are sent directly to the filesystem immediately instead of being buffered. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk.property.writeThrough">write_through</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, writes for this disk are sent directly to the filesystem immediately instead of being buffered. |
 
 ---
 
@@ -6698,10 +6698,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `attach`<sup>Optional</sup> <a name="attach" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk.property.attach"></a>
 
 ```python
-attach: typing.Union[bool, IResolvable]
+attach: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If this is true, the disk is attached instead of created. Implies keep_on_remove.
 
@@ -6770,10 +6770,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `eagerly_scrub`<sup>Optional</sup> <a name="eagerly_scrub" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk.property.eagerlyScrub"></a>
 
 ```python
-eagerly_scrub: typing.Union[bool, IResolvable]
+eagerly_scrub: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 The virtual disk file zeroing policy when thin_provision is not true.
 
@@ -6842,10 +6842,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `keep_on_remove`<sup>Optional</sup> <a name="keep_on_remove" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk.property.keepOnRemove"></a>
 
 ```python
-keep_on_remove: typing.Union[bool, IResolvable]
+keep_on_remove: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set to true to keep the underlying VMDK file when removing this virtual disk from configuration.
 
@@ -6900,10 +6900,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `thin_provisioned`<sup>Optional</sup> <a name="thin_provisioned" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk.property.thinProvisioned"></a>
 
 ```python
-thin_provisioned: typing.Union[bool, IResolvable]
+thin_provisioned: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, this disk is thin provisioned, with space for the file being allocated on an as-needed basis.
 
@@ -6930,10 +6930,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `write_through`<sup>Optional</sup> <a name="write_through" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk.property.writeThrough"></a>
 
 ```python
-write_through: typing.Union[bool, IResolvable]
+write_through: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, writes for this disk are sent directly to the filesystem immediately instead of being buffered.
 
@@ -6958,7 +6958,7 @@ virtualMachine.VirtualMachineNetworkInterface(
   mac_address: str = None,
   ovf_mapping: str = None,
   physical_function: str = None,
-  use_static_mac: typing.Union[bool, IResolvable] = None
+  use_static_mac: bool | IResolvable = None
 )
 ```
 
@@ -6975,7 +6975,7 @@ virtualMachine.VirtualMachineNetworkInterface(
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface.property.macAddress">mac_address</a></code> | <code>str</code> | The MAC address of this network interface. Can only be manually set if use_static_mac is true. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface.property.ovfMapping">ovf_mapping</a></code> | <code>str</code> | Mapping of network interface to OVF network. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface.property.physicalFunction">physical_function</a></code> | <code>str</code> | The ID of the Physical SR-IOV NIC to attach to, e.g. '0000:d8:00.0'. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface.property.useStaticMac">use_static_mac</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the mac_address field is treated as a static MAC address and set accordingly. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface.property.useStaticMac">use_static_mac</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, the mac_address field is treated as a static MAC address and set accordingly. |
 
 ---
 
@@ -7108,10 +7108,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `use_static_mac`<sup>Optional</sup> <a name="use_static_mac" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface.property.useStaticMac"></a>
 
 ```python
-use_static_mac: typing.Union[bool, IResolvable]
+use_static_mac: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, the mac_address field is treated as a static MAC address and set accordingly.
 
@@ -7127,10 +7127,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 from cdktf_cdktf_provider_vsphere import virtual_machine
 
 virtualMachine.VirtualMachineOvfDeploy(
-  allow_unverified_ssl_cert: typing.Union[bool, IResolvable] = None,
+  allow_unverified_ssl_cert: bool | IResolvable = None,
   deployment_option: str = None,
   disk_provisioning: str = None,
-  enable_hidden_properties: typing.Union[bool, IResolvable] = None,
+  enable_hidden_properties: bool | IResolvable = None,
   ip_allocation_policy: str = None,
   ip_protocol: str = None,
   local_ovf_path: str = None,
@@ -7143,10 +7143,10 @@ virtualMachine.VirtualMachineOvfDeploy(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeploy.property.allowUnverifiedSslCert">allow_unverified_ssl_cert</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow unverified ssl certificates while deploying ovf/ova from url. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeploy.property.allowUnverifiedSslCert">allow_unverified_ssl_cert</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow unverified ssl certificates while deploying ovf/ova from url. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeploy.property.deploymentOption">deployment_option</a></code> | <code>str</code> | The Deployment option to be chosen. If empty, the default option is used. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeploy.property.diskProvisioning">disk_provisioning</a></code> | <code>str</code> | An optional disk provisioning. |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeploy.property.enableHiddenProperties">enable_hidden_properties</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow properties with ovf:userConfigurable=false to be set. |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeploy.property.enableHiddenProperties">enable_hidden_properties</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow properties with ovf:userConfigurable=false to be set. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeploy.property.ipAllocationPolicy">ip_allocation_policy</a></code> | <code>str</code> | The IP allocation policy. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeploy.property.ipProtocol">ip_protocol</a></code> | <code>str</code> | The IP protocol. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeploy.property.localOvfPath">local_ovf_path</a></code> | <code>str</code> | The absolute path to the ovf/ova file in the local system. |
@@ -7158,10 +7158,10 @@ virtualMachine.VirtualMachineOvfDeploy(
 ##### `allow_unverified_ssl_cert`<sup>Optional</sup> <a name="allow_unverified_ssl_cert" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeploy.property.allowUnverifiedSslCert"></a>
 
 ```python
-allow_unverified_ssl_cert: typing.Union[bool, IResolvable]
+allow_unverified_ssl_cert: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow unverified ssl certificates while deploying ovf/ova from url.
 
@@ -7202,10 +7202,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `enable_hidden_properties`<sup>Optional</sup> <a name="enable_hidden_properties" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeploy.property.enableHiddenProperties"></a>
 
 ```python
-enable_hidden_properties: typing.Union[bool, IResolvable]
+enable_hidden_properties: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow properties with ovf:userConfigurable=false to be set.
 
@@ -7486,7 +7486,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom">VirtualMachineCdrom</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom">VirtualMachineCdrom</a>]</code> | *No description.* |
 
 ---
 
@@ -7517,10 +7517,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[VirtualMachineCdrom]]
+internal_value: IResolvable | typing.List[VirtualMachineCdrom]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom">VirtualMachineCdrom</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom">VirtualMachineCdrom</a>]
 
 ---
 
@@ -7803,13 +7803,13 @@ def reset_path() -> None
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.property.deviceAddress">device_address</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.property.key">key</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.property.clientDeviceInput">client_device_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.property.clientDeviceInput">client_device_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.property.datastoreIdInput">datastore_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.property.clientDevice">client_device</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.property.clientDevice">client_device</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.property.datastoreId">datastore_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.property.path">path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom">VirtualMachineCdrom</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom">VirtualMachineCdrom</a></code> | *No description.* |
 
 ---
 
@@ -7860,10 +7860,10 @@ key: typing.Union[int, float]
 ##### `client_device_input`<sup>Optional</sup> <a name="client_device_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.property.clientDeviceInput"></a>
 
 ```python
-client_device_input: typing.Union[bool, IResolvable]
+client_device_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -7890,10 +7890,10 @@ path_input: str
 ##### `client_device`<sup>Required</sup> <a name="client_device" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.property.clientDevice"></a>
 
 ```python
-client_device: typing.Union[bool, IResolvable]
+client_device: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -7920,10 +7920,10 @@ path: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdromOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, VirtualMachineCdrom]
+internal_value: IResolvable | VirtualMachineCdrom
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom">VirtualMachineCdrom</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCdrom">VirtualMachineCdrom</a>
 
 ---
 
@@ -8511,12 +8511,12 @@ def reset_time_zone() -> None
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeLinuxOptionsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeLinuxOptionsOutputReference.property.domainInput">domain_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeLinuxOptionsOutputReference.property.hostNameInput">host_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeLinuxOptionsOutputReference.property.hwClockUtcInput">hw_clock_utc_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeLinuxOptionsOutputReference.property.hwClockUtcInput">hw_clock_utc_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeLinuxOptionsOutputReference.property.scriptTextInput">script_text_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeLinuxOptionsOutputReference.property.timeZoneInput">time_zone_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeLinuxOptionsOutputReference.property.domain">domain</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeLinuxOptionsOutputReference.property.hostName">host_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeLinuxOptionsOutputReference.property.hwClockUtc">hw_clock_utc</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeLinuxOptionsOutputReference.property.hwClockUtc">hw_clock_utc</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeLinuxOptionsOutputReference.property.scriptText">script_text</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeLinuxOptionsOutputReference.property.timeZone">time_zone</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeLinuxOptionsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeLinuxOptions">VirtualMachineCloneCustomizeLinuxOptions</a></code> | *No description.* |
@@ -8570,10 +8570,10 @@ host_name_input: str
 ##### `hw_clock_utc_input`<sup>Optional</sup> <a name="hw_clock_utc_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeLinuxOptionsOutputReference.property.hwClockUtcInput"></a>
 
 ```python
-hw_clock_utc_input: typing.Union[bool, IResolvable]
+hw_clock_utc_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8620,10 +8620,10 @@ host_name: str
 ##### `hw_clock_utc`<sup>Required</sup> <a name="hw_clock_utc" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeLinuxOptionsOutputReference.property.hwClockUtc"></a>
 
 ```python
-hw_clock_utc: typing.Union[bool, IResolvable]
+hw_clock_utc: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -8789,7 +8789,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterfaceList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterfaceList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterfaceList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterface">VirtualMachineCloneCustomizeNetworkInterface</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterfaceList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterface">VirtualMachineCloneCustomizeNetworkInterface</a>]</code> | *No description.* |
 
 ---
 
@@ -8820,10 +8820,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterfaceList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[VirtualMachineCloneCustomizeNetworkInterface]]
+internal_value: IResolvable | typing.List[VirtualMachineCloneCustomizeNetworkInterface]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterface">VirtualMachineCloneCustomizeNetworkInterface</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterface">VirtualMachineCloneCustomizeNetworkInterface</a>]
 
 ---
 
@@ -9137,7 +9137,7 @@ def reset_ipv6_netmask() -> None
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterfaceOutputReference.property.ipv4Netmask">ipv4_netmask</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterfaceOutputReference.property.ipv6Address">ipv6_address</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterfaceOutputReference.property.ipv6Netmask">ipv6_netmask</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterfaceOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterface">VirtualMachineCloneCustomizeNetworkInterface</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterfaceOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterface">VirtualMachineCloneCustomizeNetworkInterface</a></code> | *No description.* |
 
 ---
 
@@ -9288,10 +9288,10 @@ ipv6_netmask: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterfaceOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, VirtualMachineCloneCustomizeNetworkInterface]
+internal_value: IResolvable | VirtualMachineCloneCustomizeNetworkInterface
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterface">VirtualMachineCloneCustomizeNetworkInterface</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterface">VirtualMachineCloneCustomizeNetworkInterface</a>
 
 ---
 
@@ -9542,7 +9542,7 @@ Returns a reversible string representation.
 def put_linux_options(
   domain: str,
   host_name: str,
-  hw_clock_utc: typing.Union[bool, IResolvable] = None,
+  hw_clock_utc: bool | IResolvable = None,
   script_text: str = None,
   time_zone: str = None
 ) -> None
@@ -9570,7 +9570,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ###### `hw_clock_utc`<sup>Optional</sup> <a name="hw_clock_utc" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeOutputReference.putLinuxOptions.parameter.hwClockUtc"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether or not the hardware clock should be in UTC or not.
 
@@ -9602,13 +9602,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ```python
 def put_network_interface(
-  value: typing.Union[IResolvable, typing.List[VirtualMachineCloneCustomizeNetworkInterface]]
+  value: IResolvable | typing.List[VirtualMachineCloneCustomizeNetworkInterface]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeOutputReference.putNetworkInterface.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterface">VirtualMachineCloneCustomizeNetworkInterface</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterface">VirtualMachineCloneCustomizeNetworkInterface</a>]
 
 ---
 
@@ -9618,7 +9618,7 @@ def put_network_interface(
 def put_windows_options(
   computer_name: str,
   admin_password: str = None,
-  auto_logon: typing.Union[bool, IResolvable] = None,
+  auto_logon: bool | IResolvable = None,
   auto_logon_count: typing.Union[int, float] = None,
   domain_admin_password: str = None,
   domain_admin_user: str = None,
@@ -9655,7 +9655,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ###### `auto_logon`<sup>Optional</sup> <a name="auto_logon" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeOutputReference.putWindowsOptions.parameter.autoLogon"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Specifies whether or not the VM automatically logs on as Administrator.
 
@@ -9842,7 +9842,7 @@ def reset_windows_sysprep_text() -> None
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeOutputReference.property.ipv4GatewayInput">ipv4_gateway_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeOutputReference.property.ipv6GatewayInput">ipv6_gateway_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeOutputReference.property.linuxOptionsInput">linux_options_input</a></code> | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeLinuxOptions">VirtualMachineCloneCustomizeLinuxOptions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeOutputReference.property.networkInterfaceInput">network_interface_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterface">VirtualMachineCloneCustomizeNetworkInterface</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeOutputReference.property.networkInterfaceInput">network_interface_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterface">VirtualMachineCloneCustomizeNetworkInterface</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeOutputReference.property.timeoutInput">timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeOutputReference.property.windowsOptionsInput">windows_options_input</a></code> | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptions">VirtualMachineCloneCustomizeWindowsOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeOutputReference.property.windowsSysprepTextInput">windows_sysprep_text_input</a></code> | <code>str</code> | *No description.* |
@@ -9963,10 +9963,10 @@ linux_options_input: VirtualMachineCloneCustomizeLinuxOptions
 ##### `network_interface_input`<sup>Optional</sup> <a name="network_interface_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeOutputReference.property.networkInterfaceInput"></a>
 
 ```python
-network_interface_input: typing.Union[IResolvable, typing.List[VirtualMachineCloneCustomizeNetworkInterface]]
+network_interface_input: IResolvable | typing.List[VirtualMachineCloneCustomizeNetworkInterface]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterface">VirtualMachineCloneCustomizeNetworkInterface</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterface">VirtualMachineCloneCustomizeNetworkInterface</a>]
 
 ---
 
@@ -10399,7 +10399,7 @@ def reset_workgroup() -> None
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptionsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptionsOutputReference.property.adminPasswordInput">admin_password_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptionsOutputReference.property.autoLogonCountInput">auto_logon_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptionsOutputReference.property.autoLogonInput">auto_logon_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptionsOutputReference.property.autoLogonInput">auto_logon_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptionsOutputReference.property.computerNameInput">computer_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptionsOutputReference.property.domainAdminPasswordInput">domain_admin_password_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptionsOutputReference.property.domainAdminUserInput">domain_admin_user_input</a></code> | <code>str</code> | *No description.* |
@@ -10412,7 +10412,7 @@ def reset_workgroup() -> None
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptionsOutputReference.property.timeZoneInput">time_zone_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptionsOutputReference.property.workgroupInput">workgroup_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptionsOutputReference.property.adminPassword">admin_password</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptionsOutputReference.property.autoLogon">auto_logon</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptionsOutputReference.property.autoLogon">auto_logon</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptionsOutputReference.property.autoLogonCount">auto_logon_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptionsOutputReference.property.computerName">computer_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptionsOutputReference.property.domainAdminPassword">domain_admin_password</a></code> | <code>str</code> | *No description.* |
@@ -10476,10 +10476,10 @@ auto_logon_count_input: typing.Union[int, float]
 ##### `auto_logon_input`<sup>Optional</sup> <a name="auto_logon_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptionsOutputReference.property.autoLogonInput"></a>
 
 ```python
-auto_logon_input: typing.Union[bool, IResolvable]
+auto_logon_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -10606,10 +10606,10 @@ admin_password: str
 ##### `auto_logon`<sup>Required</sup> <a name="auto_logon" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeWindowsOptionsOutputReference.property.autoLogon"></a>
 
 ```python
-auto_logon: typing.Union[bool, IResolvable]
+auto_logon: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11023,7 +11023,7 @@ def put_customize(
   ipv4_gateway: str = None,
   ipv6_gateway: str = None,
   linux_options: VirtualMachineCloneCustomizeLinuxOptions = None,
-  network_interface: typing.Union[IResolvable, typing.List[VirtualMachineCloneCustomizeNetworkInterface]] = None,
+  network_interface: IResolvable | typing.List[VirtualMachineCloneCustomizeNetworkInterface] = None,
   timeout: typing.Union[int, float] = None,
   windows_options: VirtualMachineCloneCustomizeWindowsOptions = None,
   windows_sysprep_text: str = None
@@ -11086,7 +11086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ###### `network_interface`<sup>Optional</sup> <a name="network_interface" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.putCustomize.parameter.networkInterface"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterface">VirtualMachineCloneCustomizeNetworkInterface</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeNetworkInterface">VirtualMachineCloneCustomizeNetworkInterface</a>]
 
 network_interface block.
 
@@ -11173,12 +11173,12 @@ def reset_timeout() -> None
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.property.customize">customize</a></code> | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizeOutputReference">VirtualMachineCloneCustomizeOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.property.customizationSpecInput">customization_spec_input</a></code> | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomizationSpec">VirtualMachineCloneCustomizationSpec</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.property.customizeInput">customize_input</a></code> | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneCustomize">VirtualMachineCloneCustomize</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.property.linkedCloneInput">linked_clone_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.property.linkedCloneInput">linked_clone_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.property.ovfNetworkMapInput">ovf_network_map_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.property.ovfStorageMapInput">ovf_storage_map_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.property.templateUuidInput">template_uuid_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.property.timeoutInput">timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.property.linkedClone">linked_clone</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.property.linkedClone">linked_clone</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.property.ovfNetworkMap">ovf_network_map</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.property.ovfStorageMap">ovf_storage_map</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.property.templateUuid">template_uuid</a></code> | <code>str</code> | *No description.* |
@@ -11254,10 +11254,10 @@ customize_input: VirtualMachineCloneCustomize
 ##### `linked_clone_input`<sup>Optional</sup> <a name="linked_clone_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.property.linkedCloneInput"></a>
 
 ```python
-linked_clone_input: typing.Union[bool, IResolvable]
+linked_clone_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11304,10 +11304,10 @@ timeout_input: typing.Union[int, float]
 ##### `linked_clone`<sup>Required</sup> <a name="linked_clone" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineCloneOutputReference.property.linkedClone"></a>
 
 ```python
-linked_clone: typing.Union[bool, IResolvable]
+linked_clone: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -11493,7 +11493,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk">VirtualMachineDisk</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk">VirtualMachineDisk</a>]</code> | *No description.* |
 
 ---
 
@@ -11524,10 +11524,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[VirtualMachineDisk]]
+internal_value: IResolvable | typing.List[VirtualMachineDisk]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk">VirtualMachineDisk</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk">VirtualMachineDisk</a>]
 
 ---
 
@@ -11909,43 +11909,43 @@ def reset_write_through() -> None
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.deviceAddress">device_address</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.key">key</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.uuid">uuid</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.attachInput">attach_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.attachInput">attach_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.controllerTypeInput">controller_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.datastoreIdInput">datastore_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.diskModeInput">disk_mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.diskSharingInput">disk_sharing_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.eagerlyScrubInput">eagerly_scrub_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.eagerlyScrubInput">eagerly_scrub_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.ioLimitInput">io_limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.ioReservationInput">io_reservation_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.ioShareCountInput">io_share_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.ioShareLevelInput">io_share_level_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.keepOnRemoveInput">keep_on_remove_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.keepOnRemoveInput">keep_on_remove_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.labelInput">label_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.sizeInput">size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.storagePolicyIdInput">storage_policy_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.thinProvisionedInput">thin_provisioned_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.thinProvisionedInput">thin_provisioned_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.unitNumberInput">unit_number_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.writeThroughInput">write_through_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.attach">attach</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.writeThroughInput">write_through_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.attach">attach</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.controllerType">controller_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.datastoreId">datastore_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.diskMode">disk_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.diskSharing">disk_sharing</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.eagerlyScrub">eagerly_scrub</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.eagerlyScrub">eagerly_scrub</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.ioLimit">io_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.ioReservation">io_reservation</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.ioShareCount">io_share_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.ioShareLevel">io_share_level</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.keepOnRemove">keep_on_remove</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.keepOnRemove">keep_on_remove</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.label">label</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.path">path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.size">size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.storagePolicyId">storage_policy_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.thinProvisioned">thin_provisioned</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.thinProvisioned">thin_provisioned</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.unitNumber">unit_number</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.writeThrough">write_through</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk">VirtualMachineDisk</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.writeThrough">write_through</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk">VirtualMachineDisk</a></code> | *No description.* |
 
 ---
 
@@ -12006,10 +12006,10 @@ uuid: str
 ##### `attach_input`<sup>Optional</sup> <a name="attach_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.attachInput"></a>
 
 ```python
-attach_input: typing.Union[bool, IResolvable]
+attach_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12056,10 +12056,10 @@ disk_sharing_input: str
 ##### `eagerly_scrub_input`<sup>Optional</sup> <a name="eagerly_scrub_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.eagerlyScrubInput"></a>
 
 ```python
-eagerly_scrub_input: typing.Union[bool, IResolvable]
+eagerly_scrub_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12106,10 +12106,10 @@ io_share_level_input: str
 ##### `keep_on_remove_input`<sup>Optional</sup> <a name="keep_on_remove_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.keepOnRemoveInput"></a>
 
 ```python
-keep_on_remove_input: typing.Union[bool, IResolvable]
+keep_on_remove_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12156,10 +12156,10 @@ storage_policy_id_input: str
 ##### `thin_provisioned_input`<sup>Optional</sup> <a name="thin_provisioned_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.thinProvisionedInput"></a>
 
 ```python
-thin_provisioned_input: typing.Union[bool, IResolvable]
+thin_provisioned_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12176,20 +12176,20 @@ unit_number_input: typing.Union[int, float]
 ##### `write_through_input`<sup>Optional</sup> <a name="write_through_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.writeThroughInput"></a>
 
 ```python
-write_through_input: typing.Union[bool, IResolvable]
+write_through_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `attach`<sup>Required</sup> <a name="attach" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.attach"></a>
 
 ```python
-attach: typing.Union[bool, IResolvable]
+attach: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12236,10 +12236,10 @@ disk_sharing: str
 ##### `eagerly_scrub`<sup>Required</sup> <a name="eagerly_scrub" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.eagerlyScrub"></a>
 
 ```python
-eagerly_scrub: typing.Union[bool, IResolvable]
+eagerly_scrub: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12286,10 +12286,10 @@ io_share_level: str
 ##### `keep_on_remove`<sup>Required</sup> <a name="keep_on_remove" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.keepOnRemove"></a>
 
 ```python
-keep_on_remove: typing.Union[bool, IResolvable]
+keep_on_remove: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12336,10 +12336,10 @@ storage_policy_id: str
 ##### `thin_provisioned`<sup>Required</sup> <a name="thin_provisioned" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.thinProvisioned"></a>
 
 ```python
-thin_provisioned: typing.Union[bool, IResolvable]
+thin_provisioned: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -12356,20 +12356,20 @@ unit_number: typing.Union[int, float]
 ##### `write_through`<sup>Required</sup> <a name="write_through" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.writeThrough"></a>
 
 ```python
-write_through: typing.Union[bool, IResolvable]
+write_through: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineDiskOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, VirtualMachineDisk]
+internal_value: IResolvable | VirtualMachineDisk
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk">VirtualMachineDisk</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineDisk">VirtualMachineDisk</a>
 
 ---
 
@@ -12505,7 +12505,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface">VirtualMachineNetworkInterface</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface">VirtualMachineNetworkInterface</a>]</code> | *No description.* |
 
 ---
 
@@ -12536,10 +12536,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[VirtualMachineNetworkInterface]]
+internal_value: IResolvable | typing.List[VirtualMachineNetworkInterface]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface">VirtualMachineNetworkInterface</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface">VirtualMachineNetworkInterface</a>]
 
 ---
 
@@ -12873,7 +12873,7 @@ def reset_use_static_mac() -> None
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.networkIdInput">network_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.ovfMappingInput">ovf_mapping_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.physicalFunctionInput">physical_function_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.useStaticMacInput">use_static_mac_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.useStaticMacInput">use_static_mac_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.adapterType">adapter_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.bandwidthLimit">bandwidth_limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.bandwidthReservation">bandwidth_reservation</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -12883,8 +12883,8 @@ def reset_use_static_mac() -> None
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.networkId">network_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.ovfMapping">ovf_mapping</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.physicalFunction">physical_function</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.useStaticMac">use_static_mac</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface">VirtualMachineNetworkInterface</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.useStaticMac">use_static_mac</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface">VirtualMachineNetworkInterface</a></code> | *No description.* |
 
 ---
 
@@ -13025,10 +13025,10 @@ physical_function_input: str
 ##### `use_static_mac_input`<sup>Optional</sup> <a name="use_static_mac_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.useStaticMacInput"></a>
 
 ```python
-use_static_mac_input: typing.Union[bool, IResolvable]
+use_static_mac_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -13125,20 +13125,20 @@ physical_function: str
 ##### `use_static_mac`<sup>Required</sup> <a name="use_static_mac" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.useStaticMac"></a>
 
 ```python
-use_static_mac: typing.Union[bool, IResolvable]
+use_static_mac: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterfaceOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, VirtualMachineNetworkInterface]
+internal_value: IResolvable | VirtualMachineNetworkInterface
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface">VirtualMachineNetworkInterface</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineNetworkInterface">VirtualMachineNetworkInterface</a>
 
 ---
 
@@ -13441,19 +13441,19 @@ def reset_remote_ovf_url() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeployOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeployOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeployOutputReference.property.allowUnverifiedSslCertInput">allow_unverified_ssl_cert_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeployOutputReference.property.allowUnverifiedSslCertInput">allow_unverified_ssl_cert_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeployOutputReference.property.deploymentOptionInput">deployment_option_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeployOutputReference.property.diskProvisioningInput">disk_provisioning_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeployOutputReference.property.enableHiddenPropertiesInput">enable_hidden_properties_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeployOutputReference.property.enableHiddenPropertiesInput">enable_hidden_properties_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeployOutputReference.property.ipAllocationPolicyInput">ip_allocation_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeployOutputReference.property.ipProtocolInput">ip_protocol_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeployOutputReference.property.localOvfPathInput">local_ovf_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeployOutputReference.property.ovfNetworkMapInput">ovf_network_map_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeployOutputReference.property.remoteOvfUrlInput">remote_ovf_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeployOutputReference.property.allowUnverifiedSslCert">allow_unverified_ssl_cert</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeployOutputReference.property.allowUnverifiedSslCert">allow_unverified_ssl_cert</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeployOutputReference.property.deploymentOption">deployment_option</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeployOutputReference.property.diskProvisioning">disk_provisioning</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeployOutputReference.property.enableHiddenProperties">enable_hidden_properties</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeployOutputReference.property.enableHiddenProperties">enable_hidden_properties</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeployOutputReference.property.ipAllocationPolicy">ip_allocation_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeployOutputReference.property.ipProtocol">ip_protocol</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeployOutputReference.property.localOvfPath">local_ovf_path</a></code> | <code>str</code> | *No description.* |
@@ -13490,10 +13490,10 @@ fqn: str
 ##### `allow_unverified_ssl_cert_input`<sup>Optional</sup> <a name="allow_unverified_ssl_cert_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeployOutputReference.property.allowUnverifiedSslCertInput"></a>
 
 ```python
-allow_unverified_ssl_cert_input: typing.Union[bool, IResolvable]
+allow_unverified_ssl_cert_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -13520,10 +13520,10 @@ disk_provisioning_input: str
 ##### `enable_hidden_properties_input`<sup>Optional</sup> <a name="enable_hidden_properties_input" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeployOutputReference.property.enableHiddenPropertiesInput"></a>
 
 ```python
-enable_hidden_properties_input: typing.Union[bool, IResolvable]
+enable_hidden_properties_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -13580,10 +13580,10 @@ remote_ovf_url_input: str
 ##### `allow_unverified_ssl_cert`<sup>Required</sup> <a name="allow_unverified_ssl_cert" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeployOutputReference.property.allowUnverifiedSslCert"></a>
 
 ```python
-allow_unverified_ssl_cert: typing.Union[bool, IResolvable]
+allow_unverified_ssl_cert: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -13610,10 +13610,10 @@ disk_provisioning: str
 ##### `enable_hidden_properties`<sup>Required</sup> <a name="enable_hidden_properties" id="@cdktf/provider-vsphere.virtualMachine.VirtualMachineOvfDeployOutputReference.property.enableHiddenProperties"></a>
 
 ```python
-enable_hidden_properties: typing.Union[bool, IResolvable]
+enable_hidden_properties: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 

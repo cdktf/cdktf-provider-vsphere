@@ -12,30 +12,23 @@ Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 import com.hashicorp.cdktf.providers.vsphere.supervisor.Supervisor;
 
 Supervisor.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .cluster(java.lang.String)
     .contentLibrary(java.lang.String)
     .dvsUuid(java.lang.String)
     .edgeCluster(java.lang.String)
-    .egressCidr(IResolvable)
-    .egressCidr(java.util.List<SupervisorEgressCidr>)
-    .ingressCidr(IResolvable)
-    .ingressCidr(java.util.List<SupervisorIngressCidr>)
+    .egressCidr(IResolvable|java.util.List<SupervisorEgressCidr>)
+    .ingressCidr(IResolvable|java.util.List<SupervisorIngressCidr>)
     .mainDns(java.util.List<java.lang.String>)
     .mainNtp(java.util.List<java.lang.String>)
     .managementNetwork(SupervisorManagementNetwork)
-    .podCidr(IResolvable)
-    .podCidr(java.util.List<SupervisorPodCidr>)
+    .podCidr(IResolvable|java.util.List<SupervisorPodCidr>)
     .searchDomains(java.util.List<java.lang.String>)
     .serviceCidr(SupervisorServiceCidr)
     .sizingHint(java.lang.String)
@@ -43,8 +36,7 @@ Supervisor.Builder.create(Construct scope, java.lang.String id)
     .workerDns(java.util.List<java.lang.String>)
     .workerNtp(java.util.List<java.lang.String>)
 //  .id(java.lang.String)
-//  .namespace(IResolvable)
-//  .namespace(java.util.List<SupervisorNamespace>)
+//  .namespace(IResolvable|java.util.List<SupervisorNamespace>)
     .build();
 ```
 
@@ -52,23 +44,23 @@ Supervisor.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.cluster">cluster</a></code> | <code>java.lang.String</code> | ID of the vSphere cluster on which workload management will be enabled. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.contentLibrary">contentLibrary</a></code> | <code>java.lang.String</code> | ID of the subscribed content library. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.dvsUuid">dvsUuid</a></code> | <code>java.lang.String</code> | The UUID (not ID) of the distributed switch. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.edgeCluster">edgeCluster</a></code> | <code>java.lang.String</code> | ID of the NSX Edge Cluster. |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.egressCidr">egressCidr</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a>></code> | egress_cidr block. |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.ingressCidr">ingressCidr</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a>></code> | ingress_cidr block. |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.egressCidr">egressCidr</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a>></code> | egress_cidr block. |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.ingressCidr">ingressCidr</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a>></code> | ingress_cidr block. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.mainDns">mainDns</a></code> | <code>java.util.List<java.lang.String></code> | List of DNS servers to use on the Kubernetes API server. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.mainNtp">mainNtp</a></code> | <code>java.util.List<java.lang.String></code> | List of NTP servers to use on the Kubernetes API server. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.managementNetwork">managementNetwork</a></code> | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorManagementNetwork">SupervisorManagementNetwork</a></code> | management_network block. |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.podCidr">podCidr</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a>></code> | pod_cidr block. |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.podCidr">podCidr</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a>></code> | pod_cidr block. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.searchDomains">searchDomains</a></code> | <code>java.util.List<java.lang.String></code> | List of DNS search domains. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.serviceCidr">serviceCidr</a></code> | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorServiceCidr">SupervisorServiceCidr</a></code> | service_cidr block. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.sizingHint">sizingHint</a></code> | <code>java.lang.String</code> | Size of the Kubernetes API server. |
@@ -76,7 +68,7 @@ Supervisor.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.workerDns">workerDns</a></code> | <code>java.util.List<java.lang.String></code> | List of DNS servers to use on the worker nodes. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.workerNtp">workerNtp</a></code> | <code>java.util.List<java.lang.String></code> | List of NTP servers to use on the worker nodes. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/supervisor#id Supervisor#id}. |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.namespace">namespace</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>></code> | namespace block. |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.namespace">namespace</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>></code> | namespace block. |
 
 ---
 
@@ -100,13 +92,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -136,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -182,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `egressCidr`<sup>Required</sup> <a name="egressCidr" id="@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.egressCidr"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a>>
 
 egress_cidr block.
 
@@ -192,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `ingressCidr`<sup>Required</sup> <a name="ingressCidr" id="@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.ingressCidr"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a>>
 
 ingress_cidr block.
 
@@ -232,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `podCidr`<sup>Required</sup> <a name="podCidr" id="@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.podCidr"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a>>
 
 pod_cidr block.
 
@@ -313,7 +305,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktf/provider-vsphere.supervisor.Supervisor.Initializer.parameter.namespace"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>>
 
 namespace block.
 
@@ -556,7 +548,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-vsphere.supervisor.Supervisor.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-vsphere.supervisor.Supervisor.importFrom"></a>
@@ -612,7 +604,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -627,7 +619,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-vsphere.supervisor.Supervisor.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -652,24 +644,24 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `putEgressCidr` <a name="putEgressCidr" id="@cdktf/provider-vsphere.supervisor.Supervisor.putEgressCidr"></a>
 
 ```java
-public void putEgressCidr(IResolvable OR java.util.List<SupervisorEgressCidr> value)
+public void putEgressCidr(IResolvable|java.util.List<SupervisorEgressCidr> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vsphere.supervisor.Supervisor.putEgressCidr.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a>>
 
 ---
 
 ##### `putIngressCidr` <a name="putIngressCidr" id="@cdktf/provider-vsphere.supervisor.Supervisor.putIngressCidr"></a>
 
 ```java
-public void putIngressCidr(IResolvable OR java.util.List<SupervisorIngressCidr> value)
+public void putIngressCidr(IResolvable|java.util.List<SupervisorIngressCidr> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vsphere.supervisor.Supervisor.putIngressCidr.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a>>
 
 ---
 
@@ -688,24 +680,24 @@ public void putManagementNetwork(SupervisorManagementNetwork value)
 ##### `putNamespace` <a name="putNamespace" id="@cdktf/provider-vsphere.supervisor.Supervisor.putNamespace"></a>
 
 ```java
-public void putNamespace(IResolvable OR java.util.List<SupervisorNamespace> value)
+public void putNamespace(IResolvable|java.util.List<SupervisorNamespace> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vsphere.supervisor.Supervisor.putNamespace.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>>
 
 ---
 
 ##### `putPodCidr` <a name="putPodCidr" id="@cdktf/provider-vsphere.supervisor.Supervisor.putPodCidr"></a>
 
 ```java
-public void putPodCidr(IResolvable OR java.util.List<SupervisorPodCidr> value)
+public void putPodCidr(IResolvable|java.util.List<SupervisorPodCidr> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vsphere.supervisor.Supervisor.putPodCidr.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a>>
 
 ---
 
@@ -859,13 +851,13 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.egressCidr">egressCidr</a></code> | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidrList">SupervisorEgressCidrList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.ingressCidr">ingressCidr</a></code> | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidrList">SupervisorIngressCidrList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.managementNetwork">managementNetwork</a></code> | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorManagementNetworkOutputReference">SupervisorManagementNetworkOutputReference</a></code> | *No description.* |
@@ -876,14 +868,14 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.contentLibraryInput">contentLibraryInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.dvsUuidInput">dvsUuidInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.edgeClusterInput">edgeClusterInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.egressCidrInput">egressCidrInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.egressCidrInput">egressCidrInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.ingressCidrInput">ingressCidrInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.ingressCidrInput">ingressCidrInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.mainDnsInput">mainDnsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.mainNtpInput">mainNtpInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.managementNetworkInput">managementNetworkInput</a></code> | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorManagementNetwork">SupervisorManagementNetwork</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.namespaceInput">namespaceInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.podCidrInput">podCidrInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.namespaceInput">namespaceInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.podCidrInput">podCidrInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.searchDomainsInput">searchDomainsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.serviceCidrInput">serviceCidrInput</a></code> | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorServiceCidr">SupervisorServiceCidr</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.Supervisor.property.sizingHintInput">sizingHintInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -980,20 +972,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vsphere.supervisor.Supervisor.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vsphere.supervisor.Supervisor.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1040,10 +1032,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vsphere.supervisor.Supervisor.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1150,10 +1142,10 @@ public java.lang.String getEdgeClusterInput();
 ##### `egressCidrInput`<sup>Optional</sup> <a name="egressCidrInput" id="@cdktf/provider-vsphere.supervisor.Supervisor.property.egressCidrInput"></a>
 
 ```java
-public java.lang.Object getEgressCidrInput();
+public IResolvable|java.util.List<SupervisorEgressCidr> getEgressCidrInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a>>
 
 ---
 
@@ -1170,10 +1162,10 @@ public java.lang.String getIdInput();
 ##### `ingressCidrInput`<sup>Optional</sup> <a name="ingressCidrInput" id="@cdktf/provider-vsphere.supervisor.Supervisor.property.ingressCidrInput"></a>
 
 ```java
-public java.lang.Object getIngressCidrInput();
+public IResolvable|java.util.List<SupervisorIngressCidr> getIngressCidrInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a>>
 
 ---
 
@@ -1210,20 +1202,20 @@ public SupervisorManagementNetwork getManagementNetworkInput();
 ##### `namespaceInput`<sup>Optional</sup> <a name="namespaceInput" id="@cdktf/provider-vsphere.supervisor.Supervisor.property.namespaceInput"></a>
 
 ```java
-public java.lang.Object getNamespaceInput();
+public IResolvable|java.util.List<SupervisorNamespace> getNamespaceInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>>
 
 ---
 
 ##### `podCidrInput`<sup>Optional</sup> <a name="podCidrInput" id="@cdktf/provider-vsphere.supervisor.Supervisor.property.podCidrInput"></a>
 
 ```java
-public java.lang.Object getPodCidrInput();
+public IResolvable|java.util.List<SupervisorPodCidr> getPodCidrInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a>>
 
 ---
 
@@ -1435,30 +1427,23 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.vsphere.supervisor.SupervisorConfig;
 
 SupervisorConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .cluster(java.lang.String)
     .contentLibrary(java.lang.String)
     .dvsUuid(java.lang.String)
     .edgeCluster(java.lang.String)
-    .egressCidr(IResolvable)
-    .egressCidr(java.util.List<SupervisorEgressCidr>)
-    .ingressCidr(IResolvable)
-    .ingressCidr(java.util.List<SupervisorIngressCidr>)
+    .egressCidr(IResolvable|java.util.List<SupervisorEgressCidr>)
+    .ingressCidr(IResolvable|java.util.List<SupervisorIngressCidr>)
     .mainDns(java.util.List<java.lang.String>)
     .mainNtp(java.util.List<java.lang.String>)
     .managementNetwork(SupervisorManagementNetwork)
-    .podCidr(IResolvable)
-    .podCidr(java.util.List<SupervisorPodCidr>)
+    .podCidr(IResolvable|java.util.List<SupervisorPodCidr>)
     .searchDomains(java.util.List<java.lang.String>)
     .serviceCidr(SupervisorServiceCidr)
     .sizingHint(java.lang.String)
@@ -1466,8 +1451,7 @@ SupervisorConfig.builder()
     .workerDns(java.util.List<java.lang.String>)
     .workerNtp(java.util.List<java.lang.String>)
 //  .id(java.lang.String)
-//  .namespace(IResolvable)
-//  .namespace(java.util.List<SupervisorNamespace>)
+//  .namespace(IResolvable|java.util.List<SupervisorNamespace>)
     .build();
 ```
 
@@ -1475,23 +1459,23 @@ SupervisorConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.cluster">cluster</a></code> | <code>java.lang.String</code> | ID of the vSphere cluster on which workload management will be enabled. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.contentLibrary">contentLibrary</a></code> | <code>java.lang.String</code> | ID of the subscribed content library. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.dvsUuid">dvsUuid</a></code> | <code>java.lang.String</code> | The UUID (not ID) of the distributed switch. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.edgeCluster">edgeCluster</a></code> | <code>java.lang.String</code> | ID of the NSX Edge Cluster. |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.egressCidr">egressCidr</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a>></code> | egress_cidr block. |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.ingressCidr">ingressCidr</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a>></code> | ingress_cidr block. |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.egressCidr">egressCidr</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a>></code> | egress_cidr block. |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.ingressCidr">ingressCidr</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a>></code> | ingress_cidr block. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.mainDns">mainDns</a></code> | <code>java.util.List<java.lang.String></code> | List of DNS servers to use on the Kubernetes API server. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.mainNtp">mainNtp</a></code> | <code>java.util.List<java.lang.String></code> | List of NTP servers to use on the Kubernetes API server. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.managementNetwork">managementNetwork</a></code> | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorManagementNetwork">SupervisorManagementNetwork</a></code> | management_network block. |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.podCidr">podCidr</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a>></code> | pod_cidr block. |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.podCidr">podCidr</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a>></code> | pod_cidr block. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.searchDomains">searchDomains</a></code> | <code>java.util.List<java.lang.String></code> | List of DNS search domains. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.serviceCidr">serviceCidr</a></code> | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorServiceCidr">SupervisorServiceCidr</a></code> | service_cidr block. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.sizingHint">sizingHint</a></code> | <code>java.lang.String</code> | Size of the Kubernetes API server. |
@@ -1499,27 +1483,27 @@ SupervisorConfig.builder()
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.workerDns">workerDns</a></code> | <code>java.util.List<java.lang.String></code> | List of DNS servers to use on the worker nodes. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.workerNtp">workerNtp</a></code> | <code>java.util.List<java.lang.String></code> | List of NTP servers to use on the worker nodes. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/supervisor#id Supervisor#id}. |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.namespace">namespace</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>></code> | namespace block. |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.namespace">namespace</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>></code> | namespace block. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1566,10 +1550,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1632,10 +1616,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `egressCidr`<sup>Required</sup> <a name="egressCidr" id="@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.egressCidr"></a>
 
 ```java
-public java.lang.Object getEgressCidr();
+public IResolvable|java.util.List<SupervisorEgressCidr> getEgressCidr();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a>>
 
 egress_cidr block.
 
@@ -1646,10 +1630,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `ingressCidr`<sup>Required</sup> <a name="ingressCidr" id="@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.ingressCidr"></a>
 
 ```java
-public java.lang.Object getIngressCidr();
+public IResolvable|java.util.List<SupervisorIngressCidr> getIngressCidr();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a>>
 
 ingress_cidr block.
 
@@ -1702,10 +1686,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `podCidr`<sup>Required</sup> <a name="podCidr" id="@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.podCidr"></a>
 
 ```java
-public java.lang.Object getPodCidr();
+public IResolvable|java.util.List<SupervisorPodCidr> getPodCidr();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a>>
 
 pod_cidr block.
 
@@ -1815,10 +1799,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktf/provider-vsphere.supervisor.SupervisorConfig.property.namespace"></a>
 
 ```java
-public java.lang.Object getNamespace();
+public IResolvable|java.util.List<SupervisorNamespace> getNamespace();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>>
 
 namespace block.
 
@@ -2313,7 +2297,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidrList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidrList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidrList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidrList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a>></code> | *No description.* |
 
 ---
 
@@ -2344,10 +2328,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-vsphere.supervisor.SupervisorEgressCidrList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SupervisorEgressCidr> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a>>
 
 ---
 
@@ -2584,7 +2568,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidrOutputReference.property.prefixInput">prefixInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidrOutputReference.property.address">address</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidrOutputReference.property.prefix">prefix</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidrOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidrOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a></code> | *No description.* |
 
 ---
 
@@ -2655,10 +2639,10 @@ public java.lang.Number getPrefix();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-vsphere.supervisor.SupervisorEgressCidrOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SupervisorEgressCidr getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorEgressCidr">SupervisorEgressCidr</a>
 
 ---
 
@@ -2784,7 +2768,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidrList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidrList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidrList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidrList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a>></code> | *No description.* |
 
 ---
 
@@ -2815,10 +2799,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-vsphere.supervisor.SupervisorIngressCidrList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SupervisorIngressCidr> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a>>
 
 ---
 
@@ -3055,7 +3039,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidrOutputReference.property.prefixInput">prefixInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidrOutputReference.property.address">address</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidrOutputReference.property.prefix">prefix</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidrOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidrOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a></code> | *No description.* |
 
 ---
 
@@ -3126,10 +3110,10 @@ public java.lang.Number getPrefix();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-vsphere.supervisor.SupervisorIngressCidrOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SupervisorIngressCidr getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorIngressCidr">SupervisorIngressCidr</a>
 
 ---
 
@@ -3614,7 +3598,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespaceList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespaceList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespaceList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespaceList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>></code> | *No description.* |
 
 ---
 
@@ -3645,10 +3629,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-vsphere.supervisor.SupervisorNamespaceList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SupervisorNamespace> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>>
 
 ---
 
@@ -3901,7 +3885,7 @@ public void resetVmClasses()
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespaceOutputReference.property.contentLibraries">contentLibraries</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespaceOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespaceOutputReference.property.vmClasses">vmClasses</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespaceOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespaceOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a></code> | *No description.* |
 
 ---
 
@@ -3992,10 +3976,10 @@ public java.util.List<java.lang.String> getVmClasses();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-vsphere.supervisor.SupervisorNamespaceOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SupervisorNamespace getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorNamespace">SupervisorNamespace</a>
 
 ---
 
@@ -4121,7 +4105,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidrList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidrList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidrList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidrList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a>></code> | *No description.* |
 
 ---
 
@@ -4152,10 +4136,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-vsphere.supervisor.SupervisorPodCidrList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<SupervisorPodCidr> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a>>
 
 ---
 
@@ -4392,7 +4376,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidrOutputReference.property.prefixInput">prefixInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidrOutputReference.property.address">address</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidrOutputReference.property.prefix">prefix</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidrOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidrOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a></code> | *No description.* |
 
 ---
 
@@ -4463,10 +4447,10 @@ public java.lang.Number getPrefix();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-vsphere.supervisor.SupervisorPodCidrOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|SupervisorPodCidr getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.supervisor.SupervisorPodCidr">SupervisorPodCidr</a>
 
 ---
 

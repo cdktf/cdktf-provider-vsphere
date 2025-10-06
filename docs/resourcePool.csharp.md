@@ -287,7 +287,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-vsphere.resourcePool.ResourcePool.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-vsphere.resourcePool.ResourcePool.importFrom"></a>
@@ -341,7 +341,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-vsphere.resourcePool.ResourcePool.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -356,7 +356,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-vsphere.resourcePool.ResourcePool.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -588,21 +588,21 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.cpuExpandableInput">CpuExpandableInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.cpuExpandableInput">CpuExpandableInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.cpuLimitInput">CpuLimitInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.cpuReservationInput">CpuReservationInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.cpuShareLevelInput">CpuShareLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.cpuSharesInput">CpuSharesInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.customAttributesInput">CustomAttributesInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.memoryExpandableInput">MemoryExpandableInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.memoryExpandableInput">MemoryExpandableInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.memoryLimitInput">MemoryLimitInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.memoryReservationInput">MemoryReservationInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.memoryShareLevelInput">MemoryShareLevelInput</a></code> | <code>string</code> | *No description.* |
@@ -611,14 +611,14 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.parentResourcePoolIdInput">ParentResourcePoolIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.scaleDescendantsSharesInput">ScaleDescendantsSharesInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.tagsInput">TagsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.cpuExpandable">CpuExpandable</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.cpuExpandable">CpuExpandable</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.cpuLimit">CpuLimit</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.cpuReservation">CpuReservation</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.cpuShareLevel">CpuShareLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.cpuShares">CpuShares</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.customAttributes">CustomAttributes</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.memoryExpandable">MemoryExpandable</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.memoryExpandable">MemoryExpandable</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.memoryLimit">MemoryLimit</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.memoryReservation">MemoryReservation</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePool.property.memoryShareLevel">MemoryShareLevel</a></code> | <code>string</code> | *No description.* |
@@ -705,20 +705,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vsphere.resourcePool.ResourcePool.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.resourcePool.ResourcePool.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -765,20 +765,20 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vsphere.resourcePool.ResourcePool.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
 ##### `CpuExpandableInput`<sup>Optional</sup> <a name="CpuExpandableInput" id="@cdktf/provider-vsphere.resourcePool.ResourcePool.property.cpuExpandableInput"></a>
 
 ```csharp
-public object CpuExpandableInput { get; }
+public bool|IResolvable CpuExpandableInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -845,10 +845,10 @@ public string IdInput { get; }
 ##### `MemoryExpandableInput`<sup>Optional</sup> <a name="MemoryExpandableInput" id="@cdktf/provider-vsphere.resourcePool.ResourcePool.property.memoryExpandableInput"></a>
 
 ```csharp
-public object MemoryExpandableInput { get; }
+public bool|IResolvable MemoryExpandableInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -935,10 +935,10 @@ public string[] TagsInput { get; }
 ##### `CpuExpandable`<sup>Required</sup> <a name="CpuExpandable" id="@cdktf/provider-vsphere.resourcePool.ResourcePool.property.cpuExpandable"></a>
 
 ```csharp
-public object CpuExpandable { get; }
+public bool|IResolvable CpuExpandable { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1005,10 +1005,10 @@ public string Id { get; }
 ##### `MemoryExpandable`<sup>Required</sup> <a name="MemoryExpandable" id="@cdktf/provider-vsphere.resourcePool.ResourcePool.property.memoryExpandable"></a>
 
 ```csharp
-public object MemoryExpandable { get; }
+public bool|IResolvable MemoryExpandable { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1120,23 +1120,23 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Vsphere;
 
 new ResourcePoolConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Name,
     string ParentResourcePoolId,
-    object CpuExpandable = null,
+    bool|IResolvable CpuExpandable = null,
     double CpuLimit = null,
     double CpuReservation = null,
     string CpuShareLevel = null,
     double CpuShares = null,
     System.Collections.Generic.IDictionary<string, string> CustomAttributes = null,
     string Id = null,
-    object MemoryExpandable = null,
+    bool|IResolvable MemoryExpandable = null,
     double MemoryLimit = null,
     double MemoryReservation = null,
     string MemoryShareLevel = null,
@@ -1150,23 +1150,23 @@ new ResourcePoolConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.name">Name</a></code> | <code>string</code> | Name of resource pool. |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.parentResourcePoolId">ParentResourcePoolId</a></code> | <code>string</code> | The ID of the root resource pool of the compute resource the resource pool is in. |
-| <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.cpuExpandable">CpuExpandable</a></code> | <code>object</code> | Determines if the reservation on a resource pool can grow beyond the specified value, if the parent resource pool has unreserved resources. |
+| <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.cpuExpandable">CpuExpandable</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determines if the reservation on a resource pool can grow beyond the specified value, if the parent resource pool has unreserved resources. |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.cpuLimit">CpuLimit</a></code> | <code>double</code> | The utilization of a resource pool will not exceed this limit, even if there are available resources. |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.cpuReservation">CpuReservation</a></code> | <code>double</code> | Amount of CPU (MHz) that is guaranteed available to the resource pool. |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.cpuShareLevel">CpuShareLevel</a></code> | <code>string</code> | The allocation level. |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.cpuShares">CpuShares</a></code> | <code>double</code> | The number of shares allocated. |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.customAttributes">CustomAttributes</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A list of custom attributes to set on this resource. |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/resource_pool#id ResourcePool#id}. |
-| <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.memoryExpandable">MemoryExpandable</a></code> | <code>object</code> | Determines if the reservation on a resource pool can grow beyond the specified value, if the parent resource pool has unreserved resources. |
+| <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.memoryExpandable">MemoryExpandable</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Determines if the reservation on a resource pool can grow beyond the specified value, if the parent resource pool has unreserved resources. |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.memoryLimit">MemoryLimit</a></code> | <code>double</code> | The utilization of a resource pool will not exceed this limit, even if there are available resources. |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.memoryReservation">MemoryReservation</a></code> | <code>double</code> | Amount of memory (MB) that is guaranteed available to the resource pool. |
 | <code><a href="#@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.memoryShareLevel">MemoryShareLevel</a></code> | <code>string</code> | The allocation level. |
@@ -1179,20 +1179,20 @@ new ResourcePoolConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1239,10 +1239,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1277,10 +1277,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `CpuExpandable`<sup>Optional</sup> <a name="CpuExpandable" id="@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.cpuExpandable"></a>
 
 ```csharp
-public object CpuExpandable { get; set; }
+public bool|IResolvable CpuExpandable { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determines if the reservation on a resource pool can grow beyond the specified value, if the parent resource pool has unreserved resources.
 
@@ -1382,10 +1382,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `MemoryExpandable`<sup>Optional</sup> <a name="MemoryExpandable" id="@cdktf/provider-vsphere.resourcePool.ResourcePoolConfig.property.memoryExpandable"></a>
 
 ```csharp
-public object MemoryExpandable { get; set; }
+public bool|IResolvable MemoryExpandable { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Determines if the reservation on a resource pool can grow beyond the specified value, if the parent resource pool has unreserved resources.
 

@@ -319,7 +319,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.importFrom"></a>
@@ -373,7 +373,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -388,7 +388,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -413,12 +413,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutVlanRange` <a name="PutVlanRange" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.putVlanRange"></a>
 
 ```csharp
-private void PutVlanRange(object Value)
+private void PutVlanRange(IResolvable|DistributedPortGroupVlanRange[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.putVlanRange.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupVlanRange">DistributedPortGroupVlanRange</a>[]
 
 ---
 
@@ -818,109 +818,109 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.configVersion">ConfigVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.key">Key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.vlanRange">VlanRange</a></code> | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupVlanRangeList">DistributedPortGroupVlanRangeList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.activeUplinksInput">ActiveUplinksInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.allowForgedTransmitsInput">AllowForgedTransmitsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.allowMacChangesInput">AllowMacChangesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.allowPromiscuousInput">AllowPromiscuousInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.autoExpandInput">AutoExpandInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.blockAllPortsInput">BlockAllPortsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.blockOverrideAllowedInput">BlockOverrideAllowedInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.checkBeaconInput">CheckBeaconInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.allowForgedTransmitsInput">AllowForgedTransmitsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.allowMacChangesInput">AllowMacChangesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.allowPromiscuousInput">AllowPromiscuousInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.autoExpandInput">AutoExpandInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.blockAllPortsInput">BlockAllPortsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.blockOverrideAllowedInput">BlockOverrideAllowedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.checkBeaconInput">CheckBeaconInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.customAttributesInput">CustomAttributesInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.directpathGen2AllowedInput">DirectpathGen2AllowedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.directpathGen2AllowedInput">DirectpathGen2AllowedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.distributedVirtualSwitchUuidInput">DistributedVirtualSwitchUuidInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.egressShapingAverageBandwidthInput">EgressShapingAverageBandwidthInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.egressShapingBurstSizeInput">EgressShapingBurstSizeInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.egressShapingEnabledInput">EgressShapingEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.egressShapingEnabledInput">EgressShapingEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.egressShapingPeakBandwidthInput">EgressShapingPeakBandwidthInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.failbackInput">FailbackInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.failbackInput">FailbackInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.ingressShapingAverageBandwidthInput">IngressShapingAverageBandwidthInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.ingressShapingBurstSizeInput">IngressShapingBurstSizeInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.ingressShapingEnabledInput">IngressShapingEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.ingressShapingEnabledInput">IngressShapingEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.ingressShapingPeakBandwidthInput">IngressShapingPeakBandwidthInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.lacpEnabledInput">LacpEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.lacpEnabledInput">LacpEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.lacpModeInput">LacpModeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.livePortMovingAllowedInput">LivePortMovingAllowedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.livePortMovingAllowedInput">LivePortMovingAllowedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.netflowEnabledInput">NetflowEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.netflowOverrideAllowedInput">NetflowOverrideAllowedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.netflowEnabledInput">NetflowEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.netflowOverrideAllowedInput">NetflowOverrideAllowedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.networkResourcePoolKeyInput">NetworkResourcePoolKeyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.networkResourcePoolOverrideAllowedInput">NetworkResourcePoolOverrideAllowedInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.notifySwitchesInput">NotifySwitchesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.networkResourcePoolOverrideAllowedInput">NetworkResourcePoolOverrideAllowedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.notifySwitchesInput">NotifySwitchesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.numberOfPortsInput">NumberOfPortsInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.portConfigResetAtDisconnectInput">PortConfigResetAtDisconnectInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.portConfigResetAtDisconnectInput">PortConfigResetAtDisconnectInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.portNameFormatInput">PortNameFormatInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.portPrivateSecondaryVlanIdInput">PortPrivateSecondaryVlanIdInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.securityPolicyOverrideAllowedInput">SecurityPolicyOverrideAllowedInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.shapingOverrideAllowedInput">ShapingOverrideAllowedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.securityPolicyOverrideAllowedInput">SecurityPolicyOverrideAllowedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.shapingOverrideAllowedInput">ShapingOverrideAllowedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.standbyUplinksInput">StandbyUplinksInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.tagsInput">TagsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.teamingPolicyInput">TeamingPolicyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.trafficFilterOverrideAllowedInput">TrafficFilterOverrideAllowedInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.txUplinkInput">TxUplinkInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.trafficFilterOverrideAllowedInput">TrafficFilterOverrideAllowedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.txUplinkInput">TxUplinkInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.uplinkTeamingOverrideAllowedInput">UplinkTeamingOverrideAllowedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.uplinkTeamingOverrideAllowedInput">UplinkTeamingOverrideAllowedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.vlanIdInput">VlanIdInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.vlanOverrideAllowedInput">VlanOverrideAllowedInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.vlanRangeInput">VlanRangeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.vlanOverrideAllowedInput">VlanOverrideAllowedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.vlanRangeInput">VlanRangeInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupVlanRange">DistributedPortGroupVlanRange</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.activeUplinks">ActiveUplinks</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.allowForgedTransmits">AllowForgedTransmits</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.allowMacChanges">AllowMacChanges</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.allowPromiscuous">AllowPromiscuous</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.autoExpand">AutoExpand</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.blockAllPorts">BlockAllPorts</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.blockOverrideAllowed">BlockOverrideAllowed</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.checkBeacon">CheckBeacon</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.allowForgedTransmits">AllowForgedTransmits</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.allowMacChanges">AllowMacChanges</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.allowPromiscuous">AllowPromiscuous</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.autoExpand">AutoExpand</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.blockAllPorts">BlockAllPorts</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.blockOverrideAllowed">BlockOverrideAllowed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.checkBeacon">CheckBeacon</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.customAttributes">CustomAttributes</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.description">Description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.directpathGen2Allowed">DirectpathGen2Allowed</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.directpathGen2Allowed">DirectpathGen2Allowed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.distributedVirtualSwitchUuid">DistributedVirtualSwitchUuid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.egressShapingAverageBandwidth">EgressShapingAverageBandwidth</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.egressShapingBurstSize">EgressShapingBurstSize</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.egressShapingEnabled">EgressShapingEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.egressShapingEnabled">EgressShapingEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.egressShapingPeakBandwidth">EgressShapingPeakBandwidth</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.failback">Failback</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.failback">Failback</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.ingressShapingAverageBandwidth">IngressShapingAverageBandwidth</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.ingressShapingBurstSize">IngressShapingBurstSize</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.ingressShapingEnabled">IngressShapingEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.ingressShapingEnabled">IngressShapingEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.ingressShapingPeakBandwidth">IngressShapingPeakBandwidth</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.lacpEnabled">LacpEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.lacpEnabled">LacpEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.lacpMode">LacpMode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.livePortMovingAllowed">LivePortMovingAllowed</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.livePortMovingAllowed">LivePortMovingAllowed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.netflowEnabled">NetflowEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.netflowOverrideAllowed">NetflowOverrideAllowed</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.netflowEnabled">NetflowEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.netflowOverrideAllowed">NetflowOverrideAllowed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.networkResourcePoolKey">NetworkResourcePoolKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.networkResourcePoolOverrideAllowed">NetworkResourcePoolOverrideAllowed</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.notifySwitches">NotifySwitches</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.networkResourcePoolOverrideAllowed">NetworkResourcePoolOverrideAllowed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.notifySwitches">NotifySwitches</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.numberOfPorts">NumberOfPorts</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.portConfigResetAtDisconnect">PortConfigResetAtDisconnect</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.portConfigResetAtDisconnect">PortConfigResetAtDisconnect</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.portNameFormat">PortNameFormat</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.portPrivateSecondaryVlanId">PortPrivateSecondaryVlanId</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.securityPolicyOverrideAllowed">SecurityPolicyOverrideAllowed</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.shapingOverrideAllowed">ShapingOverrideAllowed</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.securityPolicyOverrideAllowed">SecurityPolicyOverrideAllowed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.shapingOverrideAllowed">ShapingOverrideAllowed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.standbyUplinks">StandbyUplinks</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.tags">Tags</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.teamingPolicy">TeamingPolicy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.trafficFilterOverrideAllowed">TrafficFilterOverrideAllowed</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.txUplink">TxUplink</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.trafficFilterOverrideAllowed">TrafficFilterOverrideAllowed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.txUplink">TxUplink</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.uplinkTeamingOverrideAllowed">UplinkTeamingOverrideAllowed</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.uplinkTeamingOverrideAllowed">UplinkTeamingOverrideAllowed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.vlanId">VlanId</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.vlanOverrideAllowed">VlanOverrideAllowed</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.vlanOverrideAllowed">VlanOverrideAllowed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -999,20 +999,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1059,10 +1059,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1109,70 +1109,70 @@ public string[] ActiveUplinksInput { get; }
 ##### `AllowForgedTransmitsInput`<sup>Optional</sup> <a name="AllowForgedTransmitsInput" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.allowForgedTransmitsInput"></a>
 
 ```csharp
-public object AllowForgedTransmitsInput { get; }
+public bool|IResolvable AllowForgedTransmitsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowMacChangesInput`<sup>Optional</sup> <a name="AllowMacChangesInput" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.allowMacChangesInput"></a>
 
 ```csharp
-public object AllowMacChangesInput { get; }
+public bool|IResolvable AllowMacChangesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowPromiscuousInput`<sup>Optional</sup> <a name="AllowPromiscuousInput" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.allowPromiscuousInput"></a>
 
 ```csharp
-public object AllowPromiscuousInput { get; }
+public bool|IResolvable AllowPromiscuousInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AutoExpandInput`<sup>Optional</sup> <a name="AutoExpandInput" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.autoExpandInput"></a>
 
 ```csharp
-public object AutoExpandInput { get; }
+public bool|IResolvable AutoExpandInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `BlockAllPortsInput`<sup>Optional</sup> <a name="BlockAllPortsInput" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.blockAllPortsInput"></a>
 
 ```csharp
-public object BlockAllPortsInput { get; }
+public bool|IResolvable BlockAllPortsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `BlockOverrideAllowedInput`<sup>Optional</sup> <a name="BlockOverrideAllowedInput" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.blockOverrideAllowedInput"></a>
 
 ```csharp
-public object BlockOverrideAllowedInput { get; }
+public bool|IResolvable BlockOverrideAllowedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `CheckBeaconInput`<sup>Optional</sup> <a name="CheckBeaconInput" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.checkBeaconInput"></a>
 
 ```csharp
-public object CheckBeaconInput { get; }
+public bool|IResolvable CheckBeaconInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1199,10 +1199,10 @@ public string DescriptionInput { get; }
 ##### `DirectpathGen2AllowedInput`<sup>Optional</sup> <a name="DirectpathGen2AllowedInput" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.directpathGen2AllowedInput"></a>
 
 ```csharp
-public object DirectpathGen2AllowedInput { get; }
+public bool|IResolvable DirectpathGen2AllowedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1239,10 +1239,10 @@ public double EgressShapingBurstSizeInput { get; }
 ##### `EgressShapingEnabledInput`<sup>Optional</sup> <a name="EgressShapingEnabledInput" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.egressShapingEnabledInput"></a>
 
 ```csharp
-public object EgressShapingEnabledInput { get; }
+public bool|IResolvable EgressShapingEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1259,10 +1259,10 @@ public double EgressShapingPeakBandwidthInput { get; }
 ##### `FailbackInput`<sup>Optional</sup> <a name="FailbackInput" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.failbackInput"></a>
 
 ```csharp
-public object FailbackInput { get; }
+public bool|IResolvable FailbackInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1299,10 +1299,10 @@ public double IngressShapingBurstSizeInput { get; }
 ##### `IngressShapingEnabledInput`<sup>Optional</sup> <a name="IngressShapingEnabledInput" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.ingressShapingEnabledInput"></a>
 
 ```csharp
-public object IngressShapingEnabledInput { get; }
+public bool|IResolvable IngressShapingEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1319,10 +1319,10 @@ public double IngressShapingPeakBandwidthInput { get; }
 ##### `LacpEnabledInput`<sup>Optional</sup> <a name="LacpEnabledInput" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.lacpEnabledInput"></a>
 
 ```csharp
-public object LacpEnabledInput { get; }
+public bool|IResolvable LacpEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1339,10 +1339,10 @@ public string LacpModeInput { get; }
 ##### `LivePortMovingAllowedInput`<sup>Optional</sup> <a name="LivePortMovingAllowedInput" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.livePortMovingAllowedInput"></a>
 
 ```csharp
-public object LivePortMovingAllowedInput { get; }
+public bool|IResolvable LivePortMovingAllowedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1359,20 +1359,20 @@ public string NameInput { get; }
 ##### `NetflowEnabledInput`<sup>Optional</sup> <a name="NetflowEnabledInput" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.netflowEnabledInput"></a>
 
 ```csharp
-public object NetflowEnabledInput { get; }
+public bool|IResolvable NetflowEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `NetflowOverrideAllowedInput`<sup>Optional</sup> <a name="NetflowOverrideAllowedInput" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.netflowOverrideAllowedInput"></a>
 
 ```csharp
-public object NetflowOverrideAllowedInput { get; }
+public bool|IResolvable NetflowOverrideAllowedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1389,20 +1389,20 @@ public string NetworkResourcePoolKeyInput { get; }
 ##### `NetworkResourcePoolOverrideAllowedInput`<sup>Optional</sup> <a name="NetworkResourcePoolOverrideAllowedInput" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.networkResourcePoolOverrideAllowedInput"></a>
 
 ```csharp
-public object NetworkResourcePoolOverrideAllowedInput { get; }
+public bool|IResolvable NetworkResourcePoolOverrideAllowedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `NotifySwitchesInput`<sup>Optional</sup> <a name="NotifySwitchesInput" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.notifySwitchesInput"></a>
 
 ```csharp
-public object NotifySwitchesInput { get; }
+public bool|IResolvable NotifySwitchesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1419,10 +1419,10 @@ public double NumberOfPortsInput { get; }
 ##### `PortConfigResetAtDisconnectInput`<sup>Optional</sup> <a name="PortConfigResetAtDisconnectInput" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.portConfigResetAtDisconnectInput"></a>
 
 ```csharp
-public object PortConfigResetAtDisconnectInput { get; }
+public bool|IResolvable PortConfigResetAtDisconnectInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1449,20 +1449,20 @@ public double PortPrivateSecondaryVlanIdInput { get; }
 ##### `SecurityPolicyOverrideAllowedInput`<sup>Optional</sup> <a name="SecurityPolicyOverrideAllowedInput" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.securityPolicyOverrideAllowedInput"></a>
 
 ```csharp
-public object SecurityPolicyOverrideAllowedInput { get; }
+public bool|IResolvable SecurityPolicyOverrideAllowedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ShapingOverrideAllowedInput`<sup>Optional</sup> <a name="ShapingOverrideAllowedInput" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.shapingOverrideAllowedInput"></a>
 
 ```csharp
-public object ShapingOverrideAllowedInput { get; }
+public bool|IResolvable ShapingOverrideAllowedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1499,20 +1499,20 @@ public string TeamingPolicyInput { get; }
 ##### `TrafficFilterOverrideAllowedInput`<sup>Optional</sup> <a name="TrafficFilterOverrideAllowedInput" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.trafficFilterOverrideAllowedInput"></a>
 
 ```csharp
-public object TrafficFilterOverrideAllowedInput { get; }
+public bool|IResolvable TrafficFilterOverrideAllowedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `TxUplinkInput`<sup>Optional</sup> <a name="TxUplinkInput" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.txUplinkInput"></a>
 
 ```csharp
-public object TxUplinkInput { get; }
+public bool|IResolvable TxUplinkInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1529,10 +1529,10 @@ public string TypeInput { get; }
 ##### `UplinkTeamingOverrideAllowedInput`<sup>Optional</sup> <a name="UplinkTeamingOverrideAllowedInput" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.uplinkTeamingOverrideAllowedInput"></a>
 
 ```csharp
-public object UplinkTeamingOverrideAllowedInput { get; }
+public bool|IResolvable UplinkTeamingOverrideAllowedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1549,20 +1549,20 @@ public double VlanIdInput { get; }
 ##### `VlanOverrideAllowedInput`<sup>Optional</sup> <a name="VlanOverrideAllowedInput" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.vlanOverrideAllowedInput"></a>
 
 ```csharp
-public object VlanOverrideAllowedInput { get; }
+public bool|IResolvable VlanOverrideAllowedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `VlanRangeInput`<sup>Optional</sup> <a name="VlanRangeInput" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.vlanRangeInput"></a>
 
 ```csharp
-public object VlanRangeInput { get; }
+public IResolvable|DistributedPortGroupVlanRange[] VlanRangeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupVlanRange">DistributedPortGroupVlanRange</a>[]
 
 ---
 
@@ -1579,70 +1579,70 @@ public string[] ActiveUplinks { get; }
 ##### `AllowForgedTransmits`<sup>Required</sup> <a name="AllowForgedTransmits" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.allowForgedTransmits"></a>
 
 ```csharp
-public object AllowForgedTransmits { get; }
+public bool|IResolvable AllowForgedTransmits { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowMacChanges`<sup>Required</sup> <a name="AllowMacChanges" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.allowMacChanges"></a>
 
 ```csharp
-public object AllowMacChanges { get; }
+public bool|IResolvable AllowMacChanges { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowPromiscuous`<sup>Required</sup> <a name="AllowPromiscuous" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.allowPromiscuous"></a>
 
 ```csharp
-public object AllowPromiscuous { get; }
+public bool|IResolvable AllowPromiscuous { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AutoExpand`<sup>Required</sup> <a name="AutoExpand" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.autoExpand"></a>
 
 ```csharp
-public object AutoExpand { get; }
+public bool|IResolvable AutoExpand { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `BlockAllPorts`<sup>Required</sup> <a name="BlockAllPorts" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.blockAllPorts"></a>
 
 ```csharp
-public object BlockAllPorts { get; }
+public bool|IResolvable BlockAllPorts { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `BlockOverrideAllowed`<sup>Required</sup> <a name="BlockOverrideAllowed" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.blockOverrideAllowed"></a>
 
 ```csharp
-public object BlockOverrideAllowed { get; }
+public bool|IResolvable BlockOverrideAllowed { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `CheckBeacon`<sup>Required</sup> <a name="CheckBeacon" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.checkBeacon"></a>
 
 ```csharp
-public object CheckBeacon { get; }
+public bool|IResolvable CheckBeacon { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1669,10 +1669,10 @@ public string Description { get; }
 ##### `DirectpathGen2Allowed`<sup>Required</sup> <a name="DirectpathGen2Allowed" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.directpathGen2Allowed"></a>
 
 ```csharp
-public object DirectpathGen2Allowed { get; }
+public bool|IResolvable DirectpathGen2Allowed { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1709,10 +1709,10 @@ public double EgressShapingBurstSize { get; }
 ##### `EgressShapingEnabled`<sup>Required</sup> <a name="EgressShapingEnabled" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.egressShapingEnabled"></a>
 
 ```csharp
-public object EgressShapingEnabled { get; }
+public bool|IResolvable EgressShapingEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1729,10 +1729,10 @@ public double EgressShapingPeakBandwidth { get; }
 ##### `Failback`<sup>Required</sup> <a name="Failback" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.failback"></a>
 
 ```csharp
-public object Failback { get; }
+public bool|IResolvable Failback { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1769,10 +1769,10 @@ public double IngressShapingBurstSize { get; }
 ##### `IngressShapingEnabled`<sup>Required</sup> <a name="IngressShapingEnabled" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.ingressShapingEnabled"></a>
 
 ```csharp
-public object IngressShapingEnabled { get; }
+public bool|IResolvable IngressShapingEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1789,10 +1789,10 @@ public double IngressShapingPeakBandwidth { get; }
 ##### `LacpEnabled`<sup>Required</sup> <a name="LacpEnabled" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.lacpEnabled"></a>
 
 ```csharp
-public object LacpEnabled { get; }
+public bool|IResolvable LacpEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1809,10 +1809,10 @@ public string LacpMode { get; }
 ##### `LivePortMovingAllowed`<sup>Required</sup> <a name="LivePortMovingAllowed" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.livePortMovingAllowed"></a>
 
 ```csharp
-public object LivePortMovingAllowed { get; }
+public bool|IResolvable LivePortMovingAllowed { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1829,20 +1829,20 @@ public string Name { get; }
 ##### `NetflowEnabled`<sup>Required</sup> <a name="NetflowEnabled" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.netflowEnabled"></a>
 
 ```csharp
-public object NetflowEnabled { get; }
+public bool|IResolvable NetflowEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `NetflowOverrideAllowed`<sup>Required</sup> <a name="NetflowOverrideAllowed" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.netflowOverrideAllowed"></a>
 
 ```csharp
-public object NetflowOverrideAllowed { get; }
+public bool|IResolvable NetflowOverrideAllowed { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1859,20 +1859,20 @@ public string NetworkResourcePoolKey { get; }
 ##### `NetworkResourcePoolOverrideAllowed`<sup>Required</sup> <a name="NetworkResourcePoolOverrideAllowed" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.networkResourcePoolOverrideAllowed"></a>
 
 ```csharp
-public object NetworkResourcePoolOverrideAllowed { get; }
+public bool|IResolvable NetworkResourcePoolOverrideAllowed { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `NotifySwitches`<sup>Required</sup> <a name="NotifySwitches" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.notifySwitches"></a>
 
 ```csharp
-public object NotifySwitches { get; }
+public bool|IResolvable NotifySwitches { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1889,10 +1889,10 @@ public double NumberOfPorts { get; }
 ##### `PortConfigResetAtDisconnect`<sup>Required</sup> <a name="PortConfigResetAtDisconnect" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.portConfigResetAtDisconnect"></a>
 
 ```csharp
-public object PortConfigResetAtDisconnect { get; }
+public bool|IResolvable PortConfigResetAtDisconnect { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1919,20 +1919,20 @@ public double PortPrivateSecondaryVlanId { get; }
 ##### `SecurityPolicyOverrideAllowed`<sup>Required</sup> <a name="SecurityPolicyOverrideAllowed" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.securityPolicyOverrideAllowed"></a>
 
 ```csharp
-public object SecurityPolicyOverrideAllowed { get; }
+public bool|IResolvable SecurityPolicyOverrideAllowed { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ShapingOverrideAllowed`<sup>Required</sup> <a name="ShapingOverrideAllowed" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.shapingOverrideAllowed"></a>
 
 ```csharp
-public object ShapingOverrideAllowed { get; }
+public bool|IResolvable ShapingOverrideAllowed { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1969,20 +1969,20 @@ public string TeamingPolicy { get; }
 ##### `TrafficFilterOverrideAllowed`<sup>Required</sup> <a name="TrafficFilterOverrideAllowed" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.trafficFilterOverrideAllowed"></a>
 
 ```csharp
-public object TrafficFilterOverrideAllowed { get; }
+public bool|IResolvable TrafficFilterOverrideAllowed { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `TxUplink`<sup>Required</sup> <a name="TxUplink" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.txUplink"></a>
 
 ```csharp
-public object TxUplink { get; }
+public bool|IResolvable TxUplink { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1999,10 +1999,10 @@ public string Type { get; }
 ##### `UplinkTeamingOverrideAllowed`<sup>Required</sup> <a name="UplinkTeamingOverrideAllowed" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.uplinkTeamingOverrideAllowed"></a>
 
 ```csharp
-public object UplinkTeamingOverrideAllowed { get; }
+public bool|IResolvable UplinkTeamingOverrideAllowed { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2019,10 +2019,10 @@ public double VlanId { get; }
 ##### `VlanOverrideAllowed`<sup>Required</sup> <a name="VlanOverrideAllowed" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroup.property.vlanOverrideAllowed"></a>
 
 ```csharp
-public object VlanOverrideAllowed { get; }
+public bool|IResolvable VlanOverrideAllowed { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2054,60 +2054,60 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Vsphere;
 
 new DistributedPortGroupConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string DistributedVirtualSwitchUuid,
     string Name,
     string[] ActiveUplinks = null,
-    object AllowForgedTransmits = null,
-    object AllowMacChanges = null,
-    object AllowPromiscuous = null,
-    object AutoExpand = null,
-    object BlockAllPorts = null,
-    object BlockOverrideAllowed = null,
-    object CheckBeacon = null,
+    bool|IResolvable AllowForgedTransmits = null,
+    bool|IResolvable AllowMacChanges = null,
+    bool|IResolvable AllowPromiscuous = null,
+    bool|IResolvable AutoExpand = null,
+    bool|IResolvable BlockAllPorts = null,
+    bool|IResolvable BlockOverrideAllowed = null,
+    bool|IResolvable CheckBeacon = null,
     System.Collections.Generic.IDictionary<string, string> CustomAttributes = null,
     string Description = null,
-    object DirectpathGen2Allowed = null,
+    bool|IResolvable DirectpathGen2Allowed = null,
     double EgressShapingAverageBandwidth = null,
     double EgressShapingBurstSize = null,
-    object EgressShapingEnabled = null,
+    bool|IResolvable EgressShapingEnabled = null,
     double EgressShapingPeakBandwidth = null,
-    object Failback = null,
+    bool|IResolvable Failback = null,
     string Id = null,
     double IngressShapingAverageBandwidth = null,
     double IngressShapingBurstSize = null,
-    object IngressShapingEnabled = null,
+    bool|IResolvable IngressShapingEnabled = null,
     double IngressShapingPeakBandwidth = null,
-    object LacpEnabled = null,
+    bool|IResolvable LacpEnabled = null,
     string LacpMode = null,
-    object LivePortMovingAllowed = null,
-    object NetflowEnabled = null,
-    object NetflowOverrideAllowed = null,
+    bool|IResolvable LivePortMovingAllowed = null,
+    bool|IResolvable NetflowEnabled = null,
+    bool|IResolvable NetflowOverrideAllowed = null,
     string NetworkResourcePoolKey = null,
-    object NetworkResourcePoolOverrideAllowed = null,
-    object NotifySwitches = null,
+    bool|IResolvable NetworkResourcePoolOverrideAllowed = null,
+    bool|IResolvable NotifySwitches = null,
     double NumberOfPorts = null,
-    object PortConfigResetAtDisconnect = null,
+    bool|IResolvable PortConfigResetAtDisconnect = null,
     string PortNameFormat = null,
     double PortPrivateSecondaryVlanId = null,
-    object SecurityPolicyOverrideAllowed = null,
-    object ShapingOverrideAllowed = null,
+    bool|IResolvable SecurityPolicyOverrideAllowed = null,
+    bool|IResolvable ShapingOverrideAllowed = null,
     string[] StandbyUplinks = null,
     string[] Tags = null,
     string TeamingPolicy = null,
-    object TrafficFilterOverrideAllowed = null,
-    object TxUplink = null,
+    bool|IResolvable TrafficFilterOverrideAllowed = null,
+    bool|IResolvable TxUplink = null,
     string Type = null,
-    object UplinkTeamingOverrideAllowed = null,
+    bool|IResolvable UplinkTeamingOverrideAllowed = null,
     double VlanId = null,
-    object VlanOverrideAllowed = null,
-    object VlanRange = null
+    bool|IResolvable VlanOverrideAllowed = null,
+    IResolvable|DistributedPortGroupVlanRange[] VlanRange = null
 };
 ```
 
@@ -2115,80 +2115,80 @@ new DistributedPortGroupConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.distributedVirtualSwitchUuid">DistributedVirtualSwitchUuid</a></code> | <code>string</code> | The UUID of the DVS to attach this port group to. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.name">Name</a></code> | <code>string</code> | The name of the portgroup. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.activeUplinks">ActiveUplinks</a></code> | <code>string[]</code> | List of active uplinks used for load balancing, matching the names of the uplinks assigned in the DVS. |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.allowForgedTransmits">AllowForgedTransmits</a></code> | <code>object</code> | Controls whether or not the virtual network adapter is allowed to send network traffic with a different MAC address than that of its own. |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.allowMacChanges">AllowMacChanges</a></code> | <code>object</code> | Controls whether or not the Media Access Control (MAC) address can be changed. |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.allowPromiscuous">AllowPromiscuous</a></code> | <code>object</code> | Enable promiscuous mode on the network. |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.autoExpand">AutoExpand</a></code> | <code>object</code> | Auto-expands the port group beyond the port count configured in number_of_ports when necessary. |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.blockAllPorts">BlockAllPorts</a></code> | <code>object</code> | Indicates whether to block all ports by default. |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.blockOverrideAllowed">BlockOverrideAllowed</a></code> | <code>object</code> | Allow the blocked setting of an individual port to override the setting in the portgroup. |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.checkBeacon">CheckBeacon</a></code> | <code>object</code> | Enable beacon probing on the ports this policy applies to. |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.allowForgedTransmits">AllowForgedTransmits</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Controls whether or not the virtual network adapter is allowed to send network traffic with a different MAC address than that of its own. |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.allowMacChanges">AllowMacChanges</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Controls whether or not the Media Access Control (MAC) address can be changed. |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.allowPromiscuous">AllowPromiscuous</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable promiscuous mode on the network. |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.autoExpand">AutoExpand</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Auto-expands the port group beyond the port count configured in number_of_ports when necessary. |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.blockAllPorts">BlockAllPorts</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates whether to block all ports by default. |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.blockOverrideAllowed">BlockOverrideAllowed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow the blocked setting of an individual port to override the setting in the portgroup. |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.checkBeacon">CheckBeacon</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable beacon probing on the ports this policy applies to. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.customAttributes">CustomAttributes</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A list of custom attributes to set on this resource. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.description">Description</a></code> | <code>string</code> | The description of the portgroup. |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.directpathGen2Allowed">DirectpathGen2Allowed</a></code> | <code>object</code> | Allow VMDirectPath Gen2 on the ports this policy applies to. |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.directpathGen2Allowed">DirectpathGen2Allowed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow VMDirectPath Gen2 on the ports this policy applies to. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.egressShapingAverageBandwidth">EgressShapingAverageBandwidth</a></code> | <code>double</code> | The average egress bandwidth in bits per second if egress shaping is enabled on the port. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.egressShapingBurstSize">EgressShapingBurstSize</a></code> | <code>double</code> | The maximum egress burst size allowed in bytes if egress shaping is enabled on the port. |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.egressShapingEnabled">EgressShapingEnabled</a></code> | <code>object</code> | True if the traffic shaper is enabled for egress traffic on the port. |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.egressShapingEnabled">EgressShapingEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | True if the traffic shaper is enabled for egress traffic on the port. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.egressShapingPeakBandwidth">EgressShapingPeakBandwidth</a></code> | <code>double</code> | The peak egress bandwidth during bursts in bits per second if egress traffic shaping is enabled on the port. |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.failback">Failback</a></code> | <code>object</code> | If true, the teaming policy will re-activate failed interfaces higher in precedence when they come back up. |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.failback">Failback</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If true, the teaming policy will re-activate failed interfaces higher in precedence when they come back up. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/distributed_port_group#id DistributedPortGroup#id}. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.ingressShapingAverageBandwidth">IngressShapingAverageBandwidth</a></code> | <code>double</code> | The average ingress bandwidth in bits per second if ingress shaping is enabled on the port. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.ingressShapingBurstSize">IngressShapingBurstSize</a></code> | <code>double</code> | The maximum ingress burst size allowed in bytes if ingress shaping is enabled on the port. |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.ingressShapingEnabled">IngressShapingEnabled</a></code> | <code>object</code> | True if the traffic shaper is enabled for ingress traffic on the port. |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.ingressShapingEnabled">IngressShapingEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | True if the traffic shaper is enabled for ingress traffic on the port. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.ingressShapingPeakBandwidth">IngressShapingPeakBandwidth</a></code> | <code>double</code> | The peak ingress bandwidth during bursts in bits per second if ingress traffic shaping is enabled on the port. |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.lacpEnabled">LacpEnabled</a></code> | <code>object</code> | Whether or not to enable LACP on all uplink ports. |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.lacpEnabled">LacpEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether or not to enable LACP on all uplink ports. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.lacpMode">LacpMode</a></code> | <code>string</code> | The uplink LACP mode to use. Can be one of active or passive. |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.livePortMovingAllowed">LivePortMovingAllowed</a></code> | <code>object</code> | Allow a live port to be moved in and out of the portgroup. |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.netflowEnabled">NetflowEnabled</a></code> | <code>object</code> | Indicates whether to enable netflow on all ports. |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.netflowOverrideAllowed">NetflowOverrideAllowed</a></code> | <code>object</code> | Allow the enabling or disabling of Netflow on a port, contrary to the policy in the portgroup. |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.livePortMovingAllowed">LivePortMovingAllowed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow a live port to be moved in and out of the portgroup. |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.netflowEnabled">NetflowEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates whether to enable netflow on all ports. |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.netflowOverrideAllowed">NetflowOverrideAllowed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow the enabling or disabling of Netflow on a port, contrary to the policy in the portgroup. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.networkResourcePoolKey">NetworkResourcePoolKey</a></code> | <code>string</code> | The key of a network resource pool to associate with this portgroup. |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.networkResourcePoolOverrideAllowed">NetworkResourcePoolOverrideAllowed</a></code> | <code>object</code> | Allow the network resource pool of an individual port to override the setting in the portgroup. |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.notifySwitches">NotifySwitches</a></code> | <code>object</code> | If true, the teaming policy will notify the broadcast network of a NIC failover, triggering cache updates. |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.networkResourcePoolOverrideAllowed">NetworkResourcePoolOverrideAllowed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow the network resource pool of an individual port to override the setting in the portgroup. |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.notifySwitches">NotifySwitches</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If true, the teaming policy will notify the broadcast network of a NIC failover, triggering cache updates. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.numberOfPorts">NumberOfPorts</a></code> | <code>double</code> | The number of ports in this portgroup. The DVS will expand and shrink by modifying this setting. |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.portConfigResetAtDisconnect">PortConfigResetAtDisconnect</a></code> | <code>object</code> | Reset the setting of any ports in this portgroup back to the default setting when the port disconnects. |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.portConfigResetAtDisconnect">PortConfigResetAtDisconnect</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Reset the setting of any ports in this portgroup back to the default setting when the port disconnects. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.portNameFormat">PortNameFormat</a></code> | <code>string</code> | A template string to use when creating ports in the portgroup. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.portPrivateSecondaryVlanId">PortPrivateSecondaryVlanId</a></code> | <code>double</code> | The secondary VLAN ID for this port. |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.securityPolicyOverrideAllowed">SecurityPolicyOverrideAllowed</a></code> | <code>object</code> | Allow security policy settings on a port to override those on the portgroup. |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.shapingOverrideAllowed">ShapingOverrideAllowed</a></code> | <code>object</code> | Allow the traffic shaping policies of an individual port to override the settings in the portgroup. |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.securityPolicyOverrideAllowed">SecurityPolicyOverrideAllowed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow security policy settings on a port to override those on the portgroup. |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.shapingOverrideAllowed">ShapingOverrideAllowed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow the traffic shaping policies of an individual port to override the settings in the portgroup. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.standbyUplinks">StandbyUplinks</a></code> | <code>string[]</code> | List of standby uplinks used for load balancing, matching the names of the uplinks assigned in the DVS. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.tags">Tags</a></code> | <code>string[]</code> | A list of tag IDs to apply to this object. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.teamingPolicy">TeamingPolicy</a></code> | <code>string</code> | The network adapter teaming policy. Can be one of loadbalance_ip, loadbalance_srcmac, loadbalance_srcid, failover_explicit, or loadbalance_loadbased. |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.trafficFilterOverrideAllowed">TrafficFilterOverrideAllowed</a></code> | <code>object</code> | Allow any filter policies set on the individual port to override those in the portgroup. |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.txUplink">TxUplink</a></code> | <code>object</code> | If true, a copy of packets sent to the switch will always be forwarded to an uplink in addition to the regular packet forwarded done by the switch. |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.trafficFilterOverrideAllowed">TrafficFilterOverrideAllowed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow any filter policies set on the individual port to override those in the portgroup. |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.txUplink">TxUplink</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If true, a copy of packets sent to the switch will always be forwarded to an uplink in addition to the regular packet forwarded done by the switch. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.type">Type</a></code> | <code>string</code> | The type of portgroup. Can be one of earlyBinding (static) or ephemeral. |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.uplinkTeamingOverrideAllowed">UplinkTeamingOverrideAllowed</a></code> | <code>object</code> | Allow the uplink teaming policies on a port to override those on the portgroup. |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.uplinkTeamingOverrideAllowed">UplinkTeamingOverrideAllowed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow the uplink teaming policies on a port to override those on the portgroup. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.vlanId">VlanId</a></code> | <code>double</code> | The VLAN ID for single VLAN mode. 0 denotes no VLAN. |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.vlanOverrideAllowed">VlanOverrideAllowed</a></code> | <code>object</code> | Allow the VLAN configuration on a port to override those on the portgroup. |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.vlanRange">VlanRange</a></code> | <code>object</code> | vlan_range block. |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.vlanOverrideAllowed">VlanOverrideAllowed</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow the VLAN configuration on a port to override those on the portgroup. |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.vlanRange">VlanRange</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupVlanRange">DistributedPortGroupVlanRange</a>[]</code> | vlan_range block. |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -2235,10 +2235,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -2287,10 +2287,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `AllowForgedTransmits`<sup>Optional</sup> <a name="AllowForgedTransmits" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.allowForgedTransmits"></a>
 
 ```csharp
-public object AllowForgedTransmits { get; set; }
+public bool|IResolvable AllowForgedTransmits { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Controls whether or not the virtual network adapter is allowed to send network traffic with a different MAC address than that of its own.
 
@@ -2301,10 +2301,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `AllowMacChanges`<sup>Optional</sup> <a name="AllowMacChanges" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.allowMacChanges"></a>
 
 ```csharp
-public object AllowMacChanges { get; set; }
+public bool|IResolvable AllowMacChanges { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Controls whether or not the Media Access Control (MAC) address can be changed.
 
@@ -2315,10 +2315,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `AllowPromiscuous`<sup>Optional</sup> <a name="AllowPromiscuous" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.allowPromiscuous"></a>
 
 ```csharp
-public object AllowPromiscuous { get; set; }
+public bool|IResolvable AllowPromiscuous { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable promiscuous mode on the network.
 
@@ -2331,10 +2331,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `AutoExpand`<sup>Optional</sup> <a name="AutoExpand" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.autoExpand"></a>
 
 ```csharp
-public object AutoExpand { get; set; }
+public bool|IResolvable AutoExpand { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Auto-expands the port group beyond the port count configured in number_of_ports when necessary.
 
@@ -2345,10 +2345,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `BlockAllPorts`<sup>Optional</sup> <a name="BlockAllPorts" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.blockAllPorts"></a>
 
 ```csharp
-public object BlockAllPorts { get; set; }
+public bool|IResolvable BlockAllPorts { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Indicates whether to block all ports by default.
 
@@ -2359,10 +2359,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `BlockOverrideAllowed`<sup>Optional</sup> <a name="BlockOverrideAllowed" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.blockOverrideAllowed"></a>
 
 ```csharp
-public object BlockOverrideAllowed { get; set; }
+public bool|IResolvable BlockOverrideAllowed { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow the blocked setting of an individual port to override the setting in the portgroup.
 
@@ -2373,10 +2373,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `CheckBeacon`<sup>Optional</sup> <a name="CheckBeacon" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.checkBeacon"></a>
 
 ```csharp
-public object CheckBeacon { get; set; }
+public bool|IResolvable CheckBeacon { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable beacon probing on the ports this policy applies to.
 
@@ -2415,10 +2415,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `DirectpathGen2Allowed`<sup>Optional</sup> <a name="DirectpathGen2Allowed" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.directpathGen2Allowed"></a>
 
 ```csharp
-public object DirectpathGen2Allowed { get; set; }
+public bool|IResolvable DirectpathGen2Allowed { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow VMDirectPath Gen2 on the ports this policy applies to.
 
@@ -2457,10 +2457,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `EgressShapingEnabled`<sup>Optional</sup> <a name="EgressShapingEnabled" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.egressShapingEnabled"></a>
 
 ```csharp
-public object EgressShapingEnabled { get; set; }
+public bool|IResolvable EgressShapingEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 True if the traffic shaper is enabled for egress traffic on the port.
 
@@ -2485,10 +2485,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `Failback`<sup>Optional</sup> <a name="Failback" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.failback"></a>
 
 ```csharp
-public object Failback { get; set; }
+public bool|IResolvable Failback { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If true, the teaming policy will re-activate failed interfaces higher in precedence when they come back up.
 
@@ -2542,10 +2542,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `IngressShapingEnabled`<sup>Optional</sup> <a name="IngressShapingEnabled" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.ingressShapingEnabled"></a>
 
 ```csharp
-public object IngressShapingEnabled { get; set; }
+public bool|IResolvable IngressShapingEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 True if the traffic shaper is enabled for ingress traffic on the port.
 
@@ -2570,10 +2570,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `LacpEnabled`<sup>Optional</sup> <a name="LacpEnabled" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.lacpEnabled"></a>
 
 ```csharp
-public object LacpEnabled { get; set; }
+public bool|IResolvable LacpEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether or not to enable LACP on all uplink ports.
 
@@ -2598,10 +2598,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `LivePortMovingAllowed`<sup>Optional</sup> <a name="LivePortMovingAllowed" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.livePortMovingAllowed"></a>
 
 ```csharp
-public object LivePortMovingAllowed { get; set; }
+public bool|IResolvable LivePortMovingAllowed { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow a live port to be moved in and out of the portgroup.
 
@@ -2612,10 +2612,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `NetflowEnabled`<sup>Optional</sup> <a name="NetflowEnabled" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.netflowEnabled"></a>
 
 ```csharp
-public object NetflowEnabled { get; set; }
+public bool|IResolvable NetflowEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Indicates whether to enable netflow on all ports.
 
@@ -2626,10 +2626,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `NetflowOverrideAllowed`<sup>Optional</sup> <a name="NetflowOverrideAllowed" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.netflowOverrideAllowed"></a>
 
 ```csharp
-public object NetflowOverrideAllowed { get; set; }
+public bool|IResolvable NetflowOverrideAllowed { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow the enabling or disabling of Netflow on a port, contrary to the policy in the portgroup.
 
@@ -2654,10 +2654,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `NetworkResourcePoolOverrideAllowed`<sup>Optional</sup> <a name="NetworkResourcePoolOverrideAllowed" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.networkResourcePoolOverrideAllowed"></a>
 
 ```csharp
-public object NetworkResourcePoolOverrideAllowed { get; set; }
+public bool|IResolvable NetworkResourcePoolOverrideAllowed { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow the network resource pool of an individual port to override the setting in the portgroup.
 
@@ -2668,10 +2668,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `NotifySwitches`<sup>Optional</sup> <a name="NotifySwitches" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.notifySwitches"></a>
 
 ```csharp
-public object NotifySwitches { get; set; }
+public bool|IResolvable NotifySwitches { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If true, the teaming policy will notify the broadcast network of a NIC failover, triggering cache updates.
 
@@ -2696,10 +2696,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `PortConfigResetAtDisconnect`<sup>Optional</sup> <a name="PortConfigResetAtDisconnect" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.portConfigResetAtDisconnect"></a>
 
 ```csharp
-public object PortConfigResetAtDisconnect { get; set; }
+public bool|IResolvable PortConfigResetAtDisconnect { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Reset the setting of any ports in this portgroup back to the default setting when the port disconnects.
 
@@ -2738,10 +2738,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `SecurityPolicyOverrideAllowed`<sup>Optional</sup> <a name="SecurityPolicyOverrideAllowed" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.securityPolicyOverrideAllowed"></a>
 
 ```csharp
-public object SecurityPolicyOverrideAllowed { get; set; }
+public bool|IResolvable SecurityPolicyOverrideAllowed { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow security policy settings on a port to override those on the portgroup.
 
@@ -2752,10 +2752,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `ShapingOverrideAllowed`<sup>Optional</sup> <a name="ShapingOverrideAllowed" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.shapingOverrideAllowed"></a>
 
 ```csharp
-public object ShapingOverrideAllowed { get; set; }
+public bool|IResolvable ShapingOverrideAllowed { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow the traffic shaping policies of an individual port to override the settings in the portgroup.
 
@@ -2808,10 +2808,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `TrafficFilterOverrideAllowed`<sup>Optional</sup> <a name="TrafficFilterOverrideAllowed" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.trafficFilterOverrideAllowed"></a>
 
 ```csharp
-public object TrafficFilterOverrideAllowed { get; set; }
+public bool|IResolvable TrafficFilterOverrideAllowed { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow any filter policies set on the individual port to override those in the portgroup.
 
@@ -2822,10 +2822,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `TxUplink`<sup>Optional</sup> <a name="TxUplink" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.txUplink"></a>
 
 ```csharp
-public object TxUplink { get; set; }
+public bool|IResolvable TxUplink { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If true, a copy of packets sent to the switch will always be forwarded to an uplink in addition to the regular packet forwarded done by the switch.
 
@@ -2850,10 +2850,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `UplinkTeamingOverrideAllowed`<sup>Optional</sup> <a name="UplinkTeamingOverrideAllowed" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.uplinkTeamingOverrideAllowed"></a>
 
 ```csharp
-public object UplinkTeamingOverrideAllowed { get; set; }
+public bool|IResolvable UplinkTeamingOverrideAllowed { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow the uplink teaming policies on a port to override those on the portgroup.
 
@@ -2878,10 +2878,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `VlanOverrideAllowed`<sup>Optional</sup> <a name="VlanOverrideAllowed" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.vlanOverrideAllowed"></a>
 
 ```csharp
-public object VlanOverrideAllowed { get; set; }
+public bool|IResolvable VlanOverrideAllowed { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow the VLAN configuration on a port to override those on the portgroup.
 
@@ -2892,10 +2892,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `VlanRange`<sup>Optional</sup> <a name="VlanRange" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupConfig.property.vlanRange"></a>
 
 ```csharp
-public object VlanRange { get; set; }
+public IResolvable|DistributedPortGroupVlanRange[] VlanRange { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupVlanRange">DistributedPortGroupVlanRange</a>[]
 
 vlan_range block.
 
@@ -3076,7 +3076,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupVlanRangeList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupVlanRangeList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupVlanRangeList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupVlanRangeList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupVlanRange">DistributedPortGroupVlanRange</a>[]</code> | *No description.* |
 
 ---
 
@@ -3107,10 +3107,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupVlanRangeList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DistributedPortGroupVlanRange[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupVlanRange">DistributedPortGroupVlanRange</a>[]
 
 ---
 
@@ -3347,7 +3347,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupVlanRangeOutputReference.property.minVlanInput">MinVlanInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupVlanRangeOutputReference.property.maxVlan">MaxVlan</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupVlanRangeOutputReference.property.minVlan">MinVlan</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupVlanRangeOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupVlanRangeOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupVlanRange">DistributedPortGroupVlanRange</a></code> | *No description.* |
 
 ---
 
@@ -3418,10 +3418,10 @@ public double MinVlan { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupVlanRangeOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DistributedPortGroupVlanRange InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.distributedPortGroup.DistributedPortGroupVlanRange">DistributedPortGroupVlanRange</a>
 
 ---
 

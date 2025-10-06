@@ -14,27 +14,27 @@ from cdktf_cdktf_provider_vsphere import host
 host.Host(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   hostname: str,
   password: str,
   username: str,
   cluster: str = None,
-  cluster_managed: typing.Union[bool, IResolvable] = None,
-  connected: typing.Union[bool, IResolvable] = None,
+  cluster_managed: bool | IResolvable = None,
+  connected: bool | IResolvable = None,
   custom_attributes: typing.Mapping[str] = None,
   datacenter: str = None,
-  force: typing.Union[bool, IResolvable] = None,
+  force: bool | IResolvable = None,
   id: str = None,
   license: str = None,
   lockdown: str = None,
-  maintenance: typing.Union[bool, IResolvable] = None,
-  services: typing.Union[IResolvable, typing.List[HostServices]] = None,
+  maintenance: bool | IResolvable = None,
+  services: IResolvable | typing.List[HostServices] = None,
   tags: typing.List[str] = None,
   thumbprint: str = None
 )
@@ -44,27 +44,27 @@ host.Host(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.hostname">hostname</a></code> | <code>str</code> | FQDN or IP address of the host. |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.password">password</a></code> | <code>str</code> | Password of the administration account of the host. |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.username">username</a></code> | <code>str</code> | Username of the administration account of the host. |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.cluster">cluster</a></code> | <code>str</code> | ID of the vSphere cluster the host will belong to. |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.clusterManaged">cluster_managed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Must be set if host is a member of a managed compute_cluster resource. |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.connected">connected</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set the state of the host. If set to false then the host will be asked to disconnect. |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.clusterManaged">cluster_managed</a></code> | <code>bool \| cdktf.IResolvable</code> | Must be set if host is a member of a managed compute_cluster resource. |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.connected">connected</a></code> | <code>bool \| cdktf.IResolvable</code> | Set the state of the host. If set to false then the host will be asked to disconnect. |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.customAttributes">custom_attributes</a></code> | <code>typing.Mapping[str]</code> | A list of custom attributes to set on this resource. |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.datacenter">datacenter</a></code> | <code>str</code> | ID of the vSphere datacenter the host will belong to. |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.force">force</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Force add the host to the vSphere inventory even if it's already managed by a different vCenter Server instance. |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.force">force</a></code> | <code>bool \| cdktf.IResolvable</code> | Force add the host to the vSphere inventory even if it's already managed by a different vCenter Server instance. |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/host#id Host#id}. |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.license">license</a></code> | <code>str</code> | License key that will be applied to this host. |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.lockdown">lockdown</a></code> | <code>str</code> | Set the host's lockdown status. Default is disabled. Valid options are 'disabled', 'normal', 'strict'. |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.maintenance">maintenance</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set the host's maintenance mode. Default is false. |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.services">services</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a>]]</code> | services block. |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.maintenance">maintenance</a></code> | <code>bool \| cdktf.IResolvable</code> | Set the host's maintenance mode. Default is false. |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.services">services</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a>]</code> | services block. |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | A list of tag IDs to apply to this object. |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.Initializer.parameter.thumbprint">thumbprint</a></code> | <code>str</code> | Host's certificate SHA-1 thumbprint. If not set then the CA that signed the host's certificate must be trusted. |
 
@@ -90,13 +90,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vsphere.host.Host.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vsphere.host.Host.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vsphere.host.Host.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `cluster_managed`<sup>Optional</sup> <a name="cluster_managed" id="@cdktf/provider-vsphere.host.Host.Initializer.parameter.clusterManaged"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Must be set if host is a member of a managed compute_cluster resource.
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `connected`<sup>Optional</sup> <a name="connected" id="@cdktf/provider-vsphere.host.Host.Initializer.parameter.connected"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set the state of the host. If set to false then the host will be asked to disconnect.
 
@@ -212,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `force`<sup>Optional</sup> <a name="force" id="@cdktf/provider-vsphere.host.Host.Initializer.parameter.force"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Force add the host to the vSphere inventory even if it's already managed by a different vCenter Server instance.
 
@@ -253,7 +253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `maintenance`<sup>Optional</sup> <a name="maintenance" id="@cdktf/provider-vsphere.host.Host.Initializer.parameter.maintenance"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set the host's maintenance mode. Default is false.
 
@@ -263,7 +263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `services`<sup>Optional</sup> <a name="services" id="@cdktf/provider-vsphere.host.Host.Initializer.parameter.services"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a>]
 
 services block.
 
@@ -557,7 +557,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-vsphere.host.Host.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-vsphere.host.Host.importFrom"></a>
@@ -620,7 +620,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -636,7 +636,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-vsphere.host.Host.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -664,13 +664,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_services(
-  value: typing.Union[IResolvable, typing.List[HostServices]]
+  value: IResolvable | typing.List[HostServices]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vsphere.host.Host.putServices.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a>]
 
 ---
 
@@ -889,41 +889,41 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.services">services</a></code> | <code><a href="#@cdktf/provider-vsphere.host.HostServicesList">HostServicesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.clusterInput">cluster_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.property.clusterManagedInput">cluster_managed_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.property.connectedInput">connected_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.clusterManagedInput">cluster_managed_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.connectedInput">connected_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.customAttributesInput">custom_attributes_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.datacenterInput">datacenter_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.property.forceInput">force_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.forceInput">force_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.hostnameInput">hostname_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.licenseInput">license_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.lockdownInput">lockdown_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.property.maintenanceInput">maintenance_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.maintenanceInput">maintenance_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.passwordInput">password_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.property.servicesInput">services_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.servicesInput">services_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.thumbprintInput">thumbprint_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.usernameInput">username_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.cluster">cluster</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.property.clusterManaged">cluster_managed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.property.connected">connected</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.clusterManaged">cluster_managed</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.connected">connected</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.customAttributes">custom_attributes</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.datacenter">datacenter</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.property.force">force</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.force">force</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.hostname">hostname</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.license">license</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.lockdown">lockdown</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.Host.property.maintenance">maintenance</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.Host.property.maintenance">maintenance</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.password">password</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.tags">tags</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.Host.property.thumbprint">thumbprint</a></code> | <code>str</code> | *No description.* |
@@ -1006,20 +1006,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vsphere.host.Host.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vsphere.host.Host.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1066,10 +1066,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vsphere.host.Host.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1096,20 +1096,20 @@ cluster_input: str
 ##### `cluster_managed_input`<sup>Optional</sup> <a name="cluster_managed_input" id="@cdktf/provider-vsphere.host.Host.property.clusterManagedInput"></a>
 
 ```python
-cluster_managed_input: typing.Union[bool, IResolvable]
+cluster_managed_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `connected_input`<sup>Optional</sup> <a name="connected_input" id="@cdktf/provider-vsphere.host.Host.property.connectedInput"></a>
 
 ```python
-connected_input: typing.Union[bool, IResolvable]
+connected_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1136,10 +1136,10 @@ datacenter_input: str
 ##### `force_input`<sup>Optional</sup> <a name="force_input" id="@cdktf/provider-vsphere.host.Host.property.forceInput"></a>
 
 ```python
-force_input: typing.Union[bool, IResolvable]
+force_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1186,10 +1186,10 @@ lockdown_input: str
 ##### `maintenance_input`<sup>Optional</sup> <a name="maintenance_input" id="@cdktf/provider-vsphere.host.Host.property.maintenanceInput"></a>
 
 ```python
-maintenance_input: typing.Union[bool, IResolvable]
+maintenance_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1206,10 +1206,10 @@ password_input: str
 ##### `services_input`<sup>Optional</sup> <a name="services_input" id="@cdktf/provider-vsphere.host.Host.property.servicesInput"></a>
 
 ```python
-services_input: typing.Union[IResolvable, typing.List[HostServices]]
+services_input: IResolvable | typing.List[HostServices]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a>]
 
 ---
 
@@ -1256,20 +1256,20 @@ cluster: str
 ##### `cluster_managed`<sup>Required</sup> <a name="cluster_managed" id="@cdktf/provider-vsphere.host.Host.property.clusterManaged"></a>
 
 ```python
-cluster_managed: typing.Union[bool, IResolvable]
+cluster_managed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `connected`<sup>Required</sup> <a name="connected" id="@cdktf/provider-vsphere.host.Host.property.connected"></a>
 
 ```python
-connected: typing.Union[bool, IResolvable]
+connected: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1296,10 +1296,10 @@ datacenter: str
 ##### `force`<sup>Required</sup> <a name="force" id="@cdktf/provider-vsphere.host.Host.property.force"></a>
 
 ```python
-force: typing.Union[bool, IResolvable]
+force: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1346,10 +1346,10 @@ lockdown: str
 ##### `maintenance`<sup>Required</sup> <a name="maintenance" id="@cdktf/provider-vsphere.host.Host.property.maintenance"></a>
 
 ```python
-maintenance: typing.Union[bool, IResolvable]
+maintenance: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1421,27 +1421,27 @@ tfResourceType: str
 from cdktf_cdktf_provider_vsphere import host
 
 host.HostConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   hostname: str,
   password: str,
   username: str,
   cluster: str = None,
-  cluster_managed: typing.Union[bool, IResolvable] = None,
-  connected: typing.Union[bool, IResolvable] = None,
+  cluster_managed: bool | IResolvable = None,
+  connected: bool | IResolvable = None,
   custom_attributes: typing.Mapping[str] = None,
   datacenter: str = None,
-  force: typing.Union[bool, IResolvable] = None,
+  force: bool | IResolvable = None,
   id: str = None,
   license: str = None,
   lockdown: str = None,
-  maintenance: typing.Union[bool, IResolvable] = None,
-  services: typing.Union[IResolvable, typing.List[HostServices]] = None,
+  maintenance: bool | IResolvable = None,
+  services: IResolvable | typing.List[HostServices] = None,
   tags: typing.List[str] = None,
   thumbprint: str = None
 )
@@ -1451,27 +1451,27 @@ host.HostConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.hostname">hostname</a></code> | <code>str</code> | FQDN or IP address of the host. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.password">password</a></code> | <code>str</code> | Password of the administration account of the host. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.username">username</a></code> | <code>str</code> | Username of the administration account of the host. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.cluster">cluster</a></code> | <code>str</code> | ID of the vSphere cluster the host will belong to. |
-| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.clusterManaged">cluster_managed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Must be set if host is a member of a managed compute_cluster resource. |
-| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.connected">connected</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set the state of the host. If set to false then the host will be asked to disconnect. |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.clusterManaged">cluster_managed</a></code> | <code>bool \| cdktf.IResolvable</code> | Must be set if host is a member of a managed compute_cluster resource. |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.connected">connected</a></code> | <code>bool \| cdktf.IResolvable</code> | Set the state of the host. If set to false then the host will be asked to disconnect. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.customAttributes">custom_attributes</a></code> | <code>typing.Mapping[str]</code> | A list of custom attributes to set on this resource. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.datacenter">datacenter</a></code> | <code>str</code> | ID of the vSphere datacenter the host will belong to. |
-| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.force">force</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Force add the host to the vSphere inventory even if it's already managed by a different vCenter Server instance. |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.force">force</a></code> | <code>bool \| cdktf.IResolvable</code> | Force add the host to the vSphere inventory even if it's already managed by a different vCenter Server instance. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/host#id Host#id}. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.license">license</a></code> | <code>str</code> | License key that will be applied to this host. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.lockdown">lockdown</a></code> | <code>str</code> | Set the host's lockdown status. Default is disabled. Valid options are 'disabled', 'normal', 'strict'. |
-| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.maintenance">maintenance</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Set the host's maintenance mode. Default is false. |
-| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.services">services</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a>]]</code> | services block. |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.maintenance">maintenance</a></code> | <code>bool \| cdktf.IResolvable</code> | Set the host's maintenance mode. Default is false. |
+| <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.services">services</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a>]</code> | services block. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | A list of tag IDs to apply to this object. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostConfig.property.thumbprint">thumbprint</a></code> | <code>str</code> | Host's certificate SHA-1 thumbprint. If not set then the CA that signed the host's certificate must be trusted. |
 
@@ -1480,20 +1480,20 @@ host.HostConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vsphere.host.HostConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vsphere.host.HostConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1540,10 +1540,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vsphere.host.HostConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1606,10 +1606,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `cluster_managed`<sup>Optional</sup> <a name="cluster_managed" id="@cdktf/provider-vsphere.host.HostConfig.property.clusterManaged"></a>
 
 ```python
-cluster_managed: typing.Union[bool, IResolvable]
+cluster_managed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Must be set if host is a member of a managed compute_cluster resource.
 
@@ -1620,10 +1620,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `connected`<sup>Optional</sup> <a name="connected" id="@cdktf/provider-vsphere.host.HostConfig.property.connected"></a>
 
 ```python
-connected: typing.Union[bool, IResolvable]
+connected: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set the state of the host. If set to false then the host will be asked to disconnect.
 
@@ -1662,10 +1662,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `force`<sup>Optional</sup> <a name="force" id="@cdktf/provider-vsphere.host.HostConfig.property.force"></a>
 
 ```python
-force: typing.Union[bool, IResolvable]
+force: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Force add the host to the vSphere inventory even if it's already managed by a different vCenter Server instance.
 
@@ -1719,10 +1719,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `maintenance`<sup>Optional</sup> <a name="maintenance" id="@cdktf/provider-vsphere.host.HostConfig.property.maintenance"></a>
 
 ```python
-maintenance: typing.Union[bool, IResolvable]
+maintenance: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Set the host's maintenance mode. Default is false.
 
@@ -1733,10 +1733,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `services`<sup>Optional</sup> <a name="services" id="@cdktf/provider-vsphere.host.HostConfig.property.services"></a>
 
 ```python
-services: typing.Union[IResolvable, typing.List[HostServices]]
+services: IResolvable | typing.List[HostServices]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a>]
 
 services block.
 
@@ -1814,7 +1814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 from cdktf_cdktf_provider_vsphere import host
 
 host.HostServicesNtpd(
-  enabled: typing.Union[bool, IResolvable] = None,
+  enabled: bool | IResolvable = None,
   ntp_servers: typing.List[str] = None,
   policy: str = None
 )
@@ -1824,7 +1824,7 @@ host.HostServicesNtpd(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpd.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether the NTP service is enabled. Default is false. |
+| <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpd.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the NTP service is enabled. Default is false. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpd.property.ntpServers">ntp_servers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/host#ntp_servers Host#ntp_servers}. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpd.property.policy">policy</a></code> | <code>str</code> | The policy for the NTP service. |
 
@@ -1833,10 +1833,10 @@ host.HostServicesNtpd(
 ##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-vsphere.host.HostServicesNtpd.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the NTP service is enabled. Default is false.
 
@@ -2005,7 +2005,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.host.HostServicesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostServicesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.HostServicesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.HostServicesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a>]</code> | *No description.* |
 
 ---
 
@@ -2036,10 +2036,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vsphere.host.HostServicesList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[HostServices]]
+internal_value: IResolvable | typing.List[HostServices]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a>]
 
 ---
 
@@ -2300,10 +2300,10 @@ def reset_policy() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpdOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpdOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpdOutputReference.property.enabledInput">enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpdOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpdOutputReference.property.ntpServersInput">ntp_servers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpdOutputReference.property.policyInput">policy_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpdOutputReference.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpdOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpdOutputReference.property.ntpServers">ntp_servers</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpdOutputReference.property.policy">policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpdOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpd">HostServicesNtpd</a></code> | *No description.* |
@@ -2337,10 +2337,10 @@ fqn: str
 ##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktf/provider-vsphere.host.HostServicesNtpdOutputReference.property.enabledInput"></a>
 
 ```python
-enabled_input: typing.Union[bool, IResolvable]
+enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2367,10 +2367,10 @@ policy_input: str
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-vsphere.host.HostServicesNtpdOutputReference.property.enabled"></a>
 
 ```python
-enabled: typing.Union[bool, IResolvable]
+enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2659,7 +2659,7 @@ Returns a reversible string representation.
 
 ```python
 def put_ntpd(
-  enabled: typing.Union[bool, IResolvable] = None,
+  enabled: bool | IResolvable = None,
   ntp_servers: typing.List[str] = None,
   policy: str = None
 ) -> None
@@ -2667,7 +2667,7 @@ def put_ntpd(
 
 ###### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-vsphere.host.HostServicesOutputReference.putNtpd.parameter.enabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether the NTP service is enabled. Default is false.
 
@@ -2710,7 +2710,7 @@ def reset_ntpd() -> None
 | <code><a href="#@cdktf/provider-vsphere.host.HostServicesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.HostServicesOutputReference.property.ntpd">ntpd</a></code> | <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpdOutputReference">HostServicesNtpdOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.host.HostServicesOutputReference.property.ntpdInput">ntpd_input</a></code> | <code><a href="#@cdktf/provider-vsphere.host.HostServicesNtpd">HostServicesNtpd</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.host.HostServicesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.host.HostServicesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a></code> | *No description.* |
 
 ---
 
@@ -2761,10 +2761,10 @@ ntpd_input: HostServicesNtpd
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vsphere.host.HostServicesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, HostServices]
+internal_value: IResolvable | HostServices
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vsphere.host.HostServices">HostServices</a>
 
 ---
 

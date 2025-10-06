@@ -14,35 +14,35 @@ from cdktf_cdktf_provider_vsphere import distributed_virtual_switch
 distributedVirtualSwitch.DistributedVirtualSwitch(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   datacenter_id: str,
   name: str,
   active_uplinks: typing.List[str] = None,
-  allow_forged_transmits: typing.Union[bool, IResolvable] = None,
-  allow_mac_changes: typing.Union[bool, IResolvable] = None,
-  allow_promiscuous: typing.Union[bool, IResolvable] = None,
+  allow_forged_transmits: bool | IResolvable = None,
+  allow_mac_changes: bool | IResolvable = None,
+  allow_promiscuous: bool | IResolvable = None,
   backupnfc_maximum_mbit: typing.Union[int, float] = None,
   backupnfc_reservation_mbit: typing.Union[int, float] = None,
   backupnfc_share_count: typing.Union[int, float] = None,
   backupnfc_share_level: str = None,
-  block_all_ports: typing.Union[bool, IResolvable] = None,
-  check_beacon: typing.Union[bool, IResolvable] = None,
+  block_all_ports: bool | IResolvable = None,
+  check_beacon: bool | IResolvable = None,
   contact_detail: str = None,
   contact_name: str = None,
   custom_attributes: typing.Mapping[str] = None,
   description: str = None,
-  directpath_gen2_allowed: typing.Union[bool, IResolvable] = None,
+  directpath_gen2_allowed: bool | IResolvable = None,
   egress_shaping_average_bandwidth: typing.Union[int, float] = None,
   egress_shaping_burst_size: typing.Union[int, float] = None,
-  egress_shaping_enabled: typing.Union[bool, IResolvable] = None,
+  egress_shaping_enabled: bool | IResolvable = None,
   egress_shaping_peak_bandwidth: typing.Union[int, float] = None,
-  failback: typing.Union[bool, IResolvable] = None,
+  failback: bool | IResolvable = None,
   faulttolerance_maximum_mbit: typing.Union[int, float] = None,
   faulttolerance_reservation_mbit: typing.Union[int, float] = None,
   faulttolerance_share_count: typing.Union[int, float] = None,
@@ -52,12 +52,12 @@ distributedVirtualSwitch.DistributedVirtualSwitch(
   hbr_reservation_mbit: typing.Union[int, float] = None,
   hbr_share_count: typing.Union[int, float] = None,
   hbr_share_level: str = None,
-  host: typing.Union[IResolvable, typing.List[DistributedVirtualSwitchHost]] = None,
+  host: IResolvable | typing.List[DistributedVirtualSwitchHost] = None,
   id: str = None,
-  ignore_other_pvlan_mappings: typing.Union[bool, IResolvable] = None,
+  ignore_other_pvlan_mappings: bool | IResolvable = None,
   ingress_shaping_average_bandwidth: typing.Union[int, float] = None,
   ingress_shaping_burst_size: typing.Union[int, float] = None,
-  ingress_shaping_enabled: typing.Union[bool, IResolvable] = None,
+  ingress_shaping_enabled: bool | IResolvable = None,
   ingress_shaping_peak_bandwidth: typing.Union[int, float] = None,
   ipv4_address: str = None,
   iscsi_maximum_mbit: typing.Union[int, float] = None,
@@ -65,7 +65,7 @@ distributedVirtualSwitch.DistributedVirtualSwitch(
   iscsi_share_count: typing.Union[int, float] = None,
   iscsi_share_level: str = None,
   lacp_api_version: str = None,
-  lacp_enabled: typing.Union[bool, IResolvable] = None,
+  lacp_enabled: bool | IResolvable = None,
   lacp_mode: str = None,
   link_discovery_operation: str = None,
   link_discovery_protocol: str = None,
@@ -78,24 +78,24 @@ distributedVirtualSwitch.DistributedVirtualSwitch(
   netflow_active_flow_timeout: typing.Union[int, float] = None,
   netflow_collector_ip_address: str = None,
   netflow_collector_port: typing.Union[int, float] = None,
-  netflow_enabled: typing.Union[bool, IResolvable] = None,
+  netflow_enabled: bool | IResolvable = None,
   netflow_idle_flow_timeout: typing.Union[int, float] = None,
-  netflow_internal_flows_only: typing.Union[bool, IResolvable] = None,
+  netflow_internal_flows_only: bool | IResolvable = None,
   netflow_observation_domain_id: typing.Union[int, float] = None,
   netflow_sampling_rate: typing.Union[int, float] = None,
-  network_resource_control_enabled: typing.Union[bool, IResolvable] = None,
+  network_resource_control_enabled: bool | IResolvable = None,
   network_resource_control_version: str = None,
   nfs_maximum_mbit: typing.Union[int, float] = None,
   nfs_reservation_mbit: typing.Union[int, float] = None,
   nfs_share_count: typing.Union[int, float] = None,
   nfs_share_level: str = None,
-  notify_switches: typing.Union[bool, IResolvable] = None,
+  notify_switches: bool | IResolvable = None,
   port_private_secondary_vlan_id: typing.Union[int, float] = None,
-  pvlan_mapping: typing.Union[IResolvable, typing.List[DistributedVirtualSwitchPvlanMapping]] = None,
+  pvlan_mapping: IResolvable | typing.List[DistributedVirtualSwitchPvlanMapping] = None,
   standby_uplinks: typing.List[str] = None,
   tags: typing.List[str] = None,
   teaming_policy: str = None,
-  tx_uplink: typing.Union[bool, IResolvable] = None,
+  tx_uplink: bool | IResolvable = None,
   uplinks: typing.List[str] = None,
   vdp_maximum_mbit: typing.Union[int, float] = None,
   vdp_reservation_mbit: typing.Union[int, float] = None,
@@ -107,7 +107,7 @@ distributedVirtualSwitch.DistributedVirtualSwitch(
   virtualmachine_share_count: typing.Union[int, float] = None,
   virtualmachine_share_level: str = None,
   vlan_id: typing.Union[int, float] = None,
-  vlan_range: typing.Union[IResolvable, typing.List[DistributedVirtualSwitchVlanRange]] = None,
+  vlan_range: IResolvable | typing.List[DistributedVirtualSwitchVlanRange] = None,
   vmotion_maximum_mbit: typing.Union[int, float] = None,
   vmotion_reservation_mbit: typing.Union[int, float] = None,
   vmotion_share_count: typing.Union[int, float] = None,
@@ -123,35 +123,35 @@ distributedVirtualSwitch.DistributedVirtualSwitch(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.datacenterId">datacenter_id</a></code> | <code>str</code> | The ID of the datacenter to create this virtual switch in. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.name">name</a></code> | <code>str</code> | The name for the DVS. Must be unique in the folder that it is being created in. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.activeUplinks">active_uplinks</a></code> | <code>typing.List[str]</code> | List of active uplinks used for load balancing, matching the names of the uplinks assigned in the DVS. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.allowForgedTransmits">allow_forged_transmits</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Controls whether or not the virtual network adapter is allowed to send network traffic with a different MAC address than that of its own. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.allowMacChanges">allow_mac_changes</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Controls whether or not the Media Access Control (MAC) address can be changed. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.allowPromiscuous">allow_promiscuous</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable promiscuous mode on the network. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.allowForgedTransmits">allow_forged_transmits</a></code> | <code>bool \| cdktf.IResolvable</code> | Controls whether or not the virtual network adapter is allowed to send network traffic with a different MAC address than that of its own. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.allowMacChanges">allow_mac_changes</a></code> | <code>bool \| cdktf.IResolvable</code> | Controls whether or not the Media Access Control (MAC) address can be changed. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.allowPromiscuous">allow_promiscuous</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable promiscuous mode on the network. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.backupnfcMaximumMbit">backupnfc_maximum_mbit</a></code> | <code>typing.Union[int, float]</code> | The maximum allowed usage for the backupNfc traffic class, in Mbits/sec. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.backupnfcReservationMbit">backupnfc_reservation_mbit</a></code> | <code>typing.Union[int, float]</code> | The amount of guaranteed bandwidth for the backupNfc traffic class, in Mbits/sec. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.backupnfcShareCount">backupnfc_share_count</a></code> | <code>typing.Union[int, float]</code> | The amount of shares to allocate to the backupNfc traffic class for a custom share level. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.backupnfcShareLevel">backupnfc_share_level</a></code> | <code>str</code> | The allocation level for the backupNfc traffic class. Can be one of high, low, normal, or custom. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.blockAllPorts">block_all_ports</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether to block all ports by default. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.checkBeacon">check_beacon</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable beacon probing on the ports this policy applies to. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.blockAllPorts">block_all_ports</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether to block all ports by default. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.checkBeacon">check_beacon</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable beacon probing on the ports this policy applies to. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.contactDetail">contact_detail</a></code> | <code>str</code> | The contact detail for this DVS. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.contactName">contact_name</a></code> | <code>str</code> | The contact name for this DVS. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.customAttributes">custom_attributes</a></code> | <code>typing.Mapping[str]</code> | A list of custom attributes to set on this resource. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.description">description</a></code> | <code>str</code> | The description of the DVS. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.directpathGen2Allowed">directpath_gen2_allowed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow VMDirectPath Gen2 on the ports this policy applies to. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.directpathGen2Allowed">directpath_gen2_allowed</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow VMDirectPath Gen2 on the ports this policy applies to. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.egressShapingAverageBandwidth">egress_shaping_average_bandwidth</a></code> | <code>typing.Union[int, float]</code> | The average egress bandwidth in bits per second if egress shaping is enabled on the port. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.egressShapingBurstSize">egress_shaping_burst_size</a></code> | <code>typing.Union[int, float]</code> | The maximum egress burst size allowed in bytes if egress shaping is enabled on the port. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.egressShapingEnabled">egress_shaping_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | True if the traffic shaper is enabled for egress traffic on the port. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.egressShapingEnabled">egress_shaping_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | True if the traffic shaper is enabled for egress traffic on the port. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.egressShapingPeakBandwidth">egress_shaping_peak_bandwidth</a></code> | <code>typing.Union[int, float]</code> | The peak egress bandwidth during bursts in bits per second if egress traffic shaping is enabled on the port. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.failback">failback</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the teaming policy will re-activate failed interfaces higher in precedence when they come back up. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.failback">failback</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, the teaming policy will re-activate failed interfaces higher in precedence when they come back up. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.faulttoleranceMaximumMbit">faulttolerance_maximum_mbit</a></code> | <code>typing.Union[int, float]</code> | The maximum allowed usage for the faultTolerance traffic class, in Mbits/sec. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.faulttoleranceReservationMbit">faulttolerance_reservation_mbit</a></code> | <code>typing.Union[int, float]</code> | The amount of guaranteed bandwidth for the faultTolerance traffic class, in Mbits/sec. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.faulttoleranceShareCount">faulttolerance_share_count</a></code> | <code>typing.Union[int, float]</code> | The amount of shares to allocate to the faultTolerance traffic class for a custom share level. |
@@ -161,12 +161,12 @@ distributedVirtualSwitch.DistributedVirtualSwitch(
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.hbrReservationMbit">hbr_reservation_mbit</a></code> | <code>typing.Union[int, float]</code> | The amount of guaranteed bandwidth for the hbr traffic class, in Mbits/sec. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.hbrShareCount">hbr_share_count</a></code> | <code>typing.Union[int, float]</code> | The amount of shares to allocate to the hbr traffic class for a custom share level. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.hbrShareLevel">hbr_share_level</a></code> | <code>str</code> | The allocation level for the hbr traffic class. Can be one of high, low, normal, or custom. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.host">host</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHost">DistributedVirtualSwitchHost</a>]]</code> | host block. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.host">host</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHost">DistributedVirtualSwitchHost</a>]</code> | host block. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/distributed_virtual_switch#id DistributedVirtualSwitch#id}. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.ignoreOtherPvlanMappings">ignore_other_pvlan_mappings</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to ignore existing PVLAN mappings not managed by this resource. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.ignoreOtherPvlanMappings">ignore_other_pvlan_mappings</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to ignore existing PVLAN mappings not managed by this resource. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.ingressShapingAverageBandwidth">ingress_shaping_average_bandwidth</a></code> | <code>typing.Union[int, float]</code> | The average ingress bandwidth in bits per second if ingress shaping is enabled on the port. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.ingressShapingBurstSize">ingress_shaping_burst_size</a></code> | <code>typing.Union[int, float]</code> | The maximum ingress burst size allowed in bytes if ingress shaping is enabled on the port. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.ingressShapingEnabled">ingress_shaping_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | True if the traffic shaper is enabled for ingress traffic on the port. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.ingressShapingEnabled">ingress_shaping_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | True if the traffic shaper is enabled for ingress traffic on the port. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.ingressShapingPeakBandwidth">ingress_shaping_peak_bandwidth</a></code> | <code>typing.Union[int, float]</code> | The peak ingress bandwidth during bursts in bits per second if ingress traffic shaping is enabled on the port. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.ipv4Address">ipv4_address</a></code> | <code>str</code> | The IPv4 address of the switch. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.iscsiMaximumMbit">iscsi_maximum_mbit</a></code> | <code>typing.Union[int, float]</code> | The maximum allowed usage for the iSCSI traffic class, in Mbits/sec. |
@@ -174,7 +174,7 @@ distributedVirtualSwitch.DistributedVirtualSwitch(
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.iscsiShareCount">iscsi_share_count</a></code> | <code>typing.Union[int, float]</code> | The amount of shares to allocate to the iSCSI traffic class for a custom share level. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.iscsiShareLevel">iscsi_share_level</a></code> | <code>str</code> | The allocation level for the iSCSI traffic class. Can be one of high, low, normal, or custom. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.lacpApiVersion">lacp_api_version</a></code> | <code>str</code> | The Link Aggregation Control Protocol group version in the switch. Can be one of singleLag or multipleLag. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.lacpEnabled">lacp_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not to enable LACP on all uplink ports. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.lacpEnabled">lacp_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not to enable LACP on all uplink ports. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.lacpMode">lacp_mode</a></code> | <code>str</code> | The uplink LACP mode to use. Can be one of active or passive. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.linkDiscoveryOperation">link_discovery_operation</a></code> | <code>str</code> | Whether to advertise or listen for link discovery. Valid values are advertise, both, listen, and none. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.linkDiscoveryProtocol">link_discovery_protocol</a></code> | <code>str</code> | The discovery protocol type. Valid values are cdp and lldp. |
@@ -187,24 +187,24 @@ distributedVirtualSwitch.DistributedVirtualSwitch(
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.netflowActiveFlowTimeout">netflow_active_flow_timeout</a></code> | <code>typing.Union[int, float]</code> | The number of seconds after which active flows are forced to be exported to the collector. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.netflowCollectorIpAddress">netflow_collector_ip_address</a></code> | <code>str</code> | IP address for the netflow collector, using IPv4 or IPv6. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.netflowCollectorPort">netflow_collector_port</a></code> | <code>typing.Union[int, float]</code> | The port for the netflow collector. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.netflowEnabled">netflow_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether to enable netflow on all ports. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.netflowEnabled">netflow_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether to enable netflow on all ports. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.netflowIdleFlowTimeout">netflow_idle_flow_timeout</a></code> | <code>typing.Union[int, float]</code> | The number of seconds after which idle flows are forced to be exported to the collector. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.netflowInternalFlowsOnly">netflow_internal_flows_only</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to limit analysis to traffic that has both source and destination served by the same host. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.netflowInternalFlowsOnly">netflow_internal_flows_only</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to limit analysis to traffic that has both source and destination served by the same host. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.netflowObservationDomainId">netflow_observation_domain_id</a></code> | <code>typing.Union[int, float]</code> | The observation Domain ID for the netflow collector. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.netflowSamplingRate">netflow_sampling_rate</a></code> | <code>typing.Union[int, float]</code> | The ratio of total number of packets to the number of packets analyzed. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.networkResourceControlEnabled">network_resource_control_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not to enable network resource control, enabling advanced traffic shaping and resource control features. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.networkResourceControlEnabled">network_resource_control_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not to enable network resource control, enabling advanced traffic shaping and resource control features. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.networkResourceControlVersion">network_resource_control_version</a></code> | <code>str</code> | The network I/O control version to use. Can be one of version2 or version3. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.nfsMaximumMbit">nfs_maximum_mbit</a></code> | <code>typing.Union[int, float]</code> | The maximum allowed usage for the nfs traffic class, in Mbits/sec. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.nfsReservationMbit">nfs_reservation_mbit</a></code> | <code>typing.Union[int, float]</code> | The amount of guaranteed bandwidth for the nfs traffic class, in Mbits/sec. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.nfsShareCount">nfs_share_count</a></code> | <code>typing.Union[int, float]</code> | The amount of shares to allocate to the nfs traffic class for a custom share level. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.nfsShareLevel">nfs_share_level</a></code> | <code>str</code> | The allocation level for the nfs traffic class. Can be one of high, low, normal, or custom. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.notifySwitches">notify_switches</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the teaming policy will notify the broadcast network of a NIC failover, triggering cache updates. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.notifySwitches">notify_switches</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, the teaming policy will notify the broadcast network of a NIC failover, triggering cache updates. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.portPrivateSecondaryVlanId">port_private_secondary_vlan_id</a></code> | <code>typing.Union[int, float]</code> | The secondary VLAN ID for this port. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.pvlanMapping">pvlan_mapping</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMapping">DistributedVirtualSwitchPvlanMapping</a>]]</code> | pvlan_mapping block. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.pvlanMapping">pvlan_mapping</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMapping">DistributedVirtualSwitchPvlanMapping</a>]</code> | pvlan_mapping block. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.standbyUplinks">standby_uplinks</a></code> | <code>typing.List[str]</code> | List of standby uplinks used for load balancing, matching the names of the uplinks assigned in the DVS. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | A list of tag IDs to apply to this object. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.teamingPolicy">teaming_policy</a></code> | <code>str</code> | The network adapter teaming policy. Can be one of loadbalance_ip, loadbalance_srcmac, loadbalance_srcid, failover_explicit, or loadbalance_loadbased. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.txUplink">tx_uplink</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, a copy of packets sent to the switch will always be forwarded to an uplink in addition to the regular packet forwarded done by the switch. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.txUplink">tx_uplink</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, a copy of packets sent to the switch will always be forwarded to an uplink in addition to the regular packet forwarded done by the switch. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.uplinks">uplinks</a></code> | <code>typing.List[str]</code> | A list of uplink ports. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.vdpMaximumMbit">vdp_maximum_mbit</a></code> | <code>typing.Union[int, float]</code> | The maximum allowed usage for the vdp traffic class, in Mbits/sec. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.vdpReservationMbit">vdp_reservation_mbit</a></code> | <code>typing.Union[int, float]</code> | The amount of guaranteed bandwidth for the vdp traffic class, in Mbits/sec. |
@@ -216,7 +216,7 @@ distributedVirtualSwitch.DistributedVirtualSwitch(
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.virtualmachineShareCount">virtualmachine_share_count</a></code> | <code>typing.Union[int, float]</code> | The amount of shares to allocate to the virtualMachine traffic class for a custom share level. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.virtualmachineShareLevel">virtualmachine_share_level</a></code> | <code>str</code> | The allocation level for the virtualMachine traffic class. Can be one of high, low, normal, or custom. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.vlanId">vlan_id</a></code> | <code>typing.Union[int, float]</code> | The VLAN ID for single VLAN mode. 0 denotes no VLAN. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.vlanRange">vlan_range</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRange">DistributedVirtualSwitchVlanRange</a>]]</code> | vlan_range block. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.vlanRange">vlan_range</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRange">DistributedVirtualSwitchVlanRange</a>]</code> | vlan_range block. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.vmotionMaximumMbit">vmotion_maximum_mbit</a></code> | <code>typing.Union[int, float]</code> | The maximum allowed usage for the vmotion traffic class, in Mbits/sec. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.vmotionReservationMbit">vmotion_reservation_mbit</a></code> | <code>typing.Union[int, float]</code> | The amount of guaranteed bandwidth for the vmotion traffic class, in Mbits/sec. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.vmotionShareCount">vmotion_share_count</a></code> | <code>typing.Union[int, float]</code> | The amount of shares to allocate to the vmotion traffic class for a custom share level. |
@@ -248,13 +248,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -284,7 +284,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -320,7 +320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `allow_forged_transmits`<sup>Optional</sup> <a name="allow_forged_transmits" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.allowForgedTransmits"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Controls whether or not the virtual network adapter is allowed to send network traffic with a different MAC address than that of its own.
 
@@ -330,7 +330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `allow_mac_changes`<sup>Optional</sup> <a name="allow_mac_changes" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.allowMacChanges"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Controls whether or not the Media Access Control (MAC) address can be changed.
 
@@ -340,7 +340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `allow_promiscuous`<sup>Optional</sup> <a name="allow_promiscuous" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.allowPromiscuous"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable promiscuous mode on the network.
 
@@ -392,7 +392,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `block_all_ports`<sup>Optional</sup> <a name="block_all_ports" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.blockAllPorts"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether to block all ports by default.
 
@@ -402,7 +402,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `check_beacon`<sup>Optional</sup> <a name="check_beacon" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.checkBeacon"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable beacon probing on the ports this policy applies to.
 
@@ -452,7 +452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `directpath_gen2_allowed`<sup>Optional</sup> <a name="directpath_gen2_allowed" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.directpathGen2Allowed"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow VMDirectPath Gen2 on the ports this policy applies to.
 
@@ -482,7 +482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `egress_shaping_enabled`<sup>Optional</sup> <a name="egress_shaping_enabled" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.egressShapingEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 True if the traffic shaper is enabled for egress traffic on the port.
 
@@ -502,7 +502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `failback`<sup>Optional</sup> <a name="failback" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.failback"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, the teaming policy will re-activate failed interfaces higher in precedence when they come back up.
 
@@ -602,7 +602,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `host`<sup>Optional</sup> <a name="host" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.host"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHost">DistributedVirtualSwitchHost</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHost">DistributedVirtualSwitchHost</a>]
 
 host block.
 
@@ -623,7 +623,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `ignore_other_pvlan_mappings`<sup>Optional</sup> <a name="ignore_other_pvlan_mappings" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.ignoreOtherPvlanMappings"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to ignore existing PVLAN mappings not managed by this resource.
 
@@ -653,7 +653,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `ingress_shaping_enabled`<sup>Optional</sup> <a name="ingress_shaping_enabled" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.ingressShapingEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 True if the traffic shaper is enabled for ingress traffic on the port.
 
@@ -735,7 +735,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `lacp_enabled`<sup>Optional</sup> <a name="lacp_enabled" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.lacpEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not to enable LACP on all uplink ports.
 
@@ -865,7 +865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `netflow_enabled`<sup>Optional</sup> <a name="netflow_enabled" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.netflowEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether to enable netflow on all ports.
 
@@ -885,7 +885,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `netflow_internal_flows_only`<sup>Optional</sup> <a name="netflow_internal_flows_only" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.netflowInternalFlowsOnly"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to limit analysis to traffic that has both source and destination served by the same host.
 
@@ -917,7 +917,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `network_resource_control_enabled`<sup>Optional</sup> <a name="network_resource_control_enabled" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.networkResourceControlEnabled"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not to enable network resource control, enabling advanced traffic shaping and resource control features.
 
@@ -977,7 +977,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `notify_switches`<sup>Optional</sup> <a name="notify_switches" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.notifySwitches"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, the teaming policy will notify the broadcast network of a NIC failover, triggering cache updates.
 
@@ -997,7 +997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `pvlan_mapping`<sup>Optional</sup> <a name="pvlan_mapping" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.pvlanMapping"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMapping">DistributedVirtualSwitchPvlanMapping</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMapping">DistributedVirtualSwitchPvlanMapping</a>]
 
 pvlan_mapping block.
 
@@ -1037,7 +1037,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `tx_uplink`<sup>Optional</sup> <a name="tx_uplink" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.txUplink"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, a copy of packets sent to the switch will always be forwarded to an uplink in addition to the regular packet forwarded done by the switch.
 
@@ -1159,7 +1159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `vlan_range`<sup>Optional</sup> <a name="vlan_range" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer.parameter.vlanRange"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRange">DistributedVirtualSwitchVlanRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRange">DistributedVirtualSwitchVlanRange</a>]
 
 vlan_range block.
 
@@ -1595,7 +1595,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.importFrom"></a>
@@ -1658,7 +1658,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -1674,7 +1674,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -1702,13 +1702,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_host(
-  value: typing.Union[IResolvable, typing.List[DistributedVirtualSwitchHost]]
+  value: IResolvable | typing.List[DistributedVirtualSwitchHost]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.putHost.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHost">DistributedVirtualSwitchHost</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHost">DistributedVirtualSwitchHost</a>]
 
 ---
 
@@ -1716,13 +1716,13 @@ def put_host(
 
 ```python
 def put_pvlan_mapping(
-  value: typing.Union[IResolvable, typing.List[DistributedVirtualSwitchPvlanMapping]]
+  value: IResolvable | typing.List[DistributedVirtualSwitchPvlanMapping]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.putPvlanMapping.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMapping">DistributedVirtualSwitchPvlanMapping</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMapping">DistributedVirtualSwitchPvlanMapping</a>]
 
 ---
 
@@ -1730,13 +1730,13 @@ def put_pvlan_mapping(
 
 ```python
 def put_vlan_range(
-  value: typing.Union[IResolvable, typing.List[DistributedVirtualSwitchVlanRange]]
+  value: IResolvable | typing.List[DistributedVirtualSwitchVlanRange]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.putVlanRange.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRange">DistributedVirtualSwitchVlanRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRange">DistributedVirtualSwitchVlanRange</a>]
 
 ---
 
@@ -2435,38 +2435,38 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.configVersion">config_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.host">host</a></code> | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHostList">DistributedVirtualSwitchHostList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.pvlanMapping">pvlan_mapping</a></code> | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMappingList">DistributedVirtualSwitchPvlanMappingList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.vlanRange">vlan_range</a></code> | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRangeList">DistributedVirtualSwitchVlanRangeList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.activeUplinksInput">active_uplinks_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.allowForgedTransmitsInput">allow_forged_transmits_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.allowMacChangesInput">allow_mac_changes_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.allowPromiscuousInput">allow_promiscuous_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.allowForgedTransmitsInput">allow_forged_transmits_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.allowMacChangesInput">allow_mac_changes_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.allowPromiscuousInput">allow_promiscuous_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.backupnfcMaximumMbitInput">backupnfc_maximum_mbit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.backupnfcReservationMbitInput">backupnfc_reservation_mbit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.backupnfcShareCountInput">backupnfc_share_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.backupnfcShareLevelInput">backupnfc_share_level_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.blockAllPortsInput">block_all_ports_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.checkBeaconInput">check_beacon_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.blockAllPortsInput">block_all_ports_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.checkBeaconInput">check_beacon_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.contactDetailInput">contact_detail_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.contactNameInput">contact_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.customAttributesInput">custom_attributes_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.datacenterIdInput">datacenter_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.directpathGen2AllowedInput">directpath_gen2_allowed_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.directpathGen2AllowedInput">directpath_gen2_allowed_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.egressShapingAverageBandwidthInput">egress_shaping_average_bandwidth_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.egressShapingBurstSizeInput">egress_shaping_burst_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.egressShapingEnabledInput">egress_shaping_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.egressShapingEnabledInput">egress_shaping_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.egressShapingPeakBandwidthInput">egress_shaping_peak_bandwidth_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.failbackInput">failback_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.failbackInput">failback_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.faulttoleranceMaximumMbitInput">faulttolerance_maximum_mbit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.faulttoleranceReservationMbitInput">faulttolerance_reservation_mbit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.faulttoleranceShareCountInput">faulttolerance_share_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -2476,12 +2476,12 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.hbrReservationMbitInput">hbr_reservation_mbit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.hbrShareCountInput">hbr_share_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.hbrShareLevelInput">hbr_share_level_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.hostInput">host_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHost">DistributedVirtualSwitchHost</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.hostInput">host_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHost">DistributedVirtualSwitchHost</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.ignoreOtherPvlanMappingsInput">ignore_other_pvlan_mappings_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.ignoreOtherPvlanMappingsInput">ignore_other_pvlan_mappings_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.ingressShapingAverageBandwidthInput">ingress_shaping_average_bandwidth_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.ingressShapingBurstSizeInput">ingress_shaping_burst_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.ingressShapingEnabledInput">ingress_shaping_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.ingressShapingEnabledInput">ingress_shaping_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.ingressShapingPeakBandwidthInput">ingress_shaping_peak_bandwidth_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.ipv4AddressInput">ipv4_address_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.iscsiMaximumMbitInput">iscsi_maximum_mbit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -2489,7 +2489,7 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.iscsiShareCountInput">iscsi_share_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.iscsiShareLevelInput">iscsi_share_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.lacpApiVersionInput">lacp_api_version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.lacpEnabledInput">lacp_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.lacpEnabledInput">lacp_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.lacpModeInput">lacp_mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.linkDiscoveryOperationInput">link_discovery_operation_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.linkDiscoveryProtocolInput">link_discovery_protocol_input</a></code> | <code>str</code> | *No description.* |
@@ -2503,24 +2503,24 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.netflowActiveFlowTimeoutInput">netflow_active_flow_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.netflowCollectorIpAddressInput">netflow_collector_ip_address_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.netflowCollectorPortInput">netflow_collector_port_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.netflowEnabledInput">netflow_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.netflowEnabledInput">netflow_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.netflowIdleFlowTimeoutInput">netflow_idle_flow_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.netflowInternalFlowsOnlyInput">netflow_internal_flows_only_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.netflowInternalFlowsOnlyInput">netflow_internal_flows_only_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.netflowObservationDomainIdInput">netflow_observation_domain_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.netflowSamplingRateInput">netflow_sampling_rate_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.networkResourceControlEnabledInput">network_resource_control_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.networkResourceControlEnabledInput">network_resource_control_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.networkResourceControlVersionInput">network_resource_control_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.nfsMaximumMbitInput">nfs_maximum_mbit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.nfsReservationMbitInput">nfs_reservation_mbit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.nfsShareCountInput">nfs_share_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.nfsShareLevelInput">nfs_share_level_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.notifySwitchesInput">notify_switches_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.notifySwitchesInput">notify_switches_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.portPrivateSecondaryVlanIdInput">port_private_secondary_vlan_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.pvlanMappingInput">pvlan_mapping_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMapping">DistributedVirtualSwitchPvlanMapping</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.pvlanMappingInput">pvlan_mapping_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMapping">DistributedVirtualSwitchPvlanMapping</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.standbyUplinksInput">standby_uplinks_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.teamingPolicyInput">teaming_policy_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.txUplinkInput">tx_uplink_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.txUplinkInput">tx_uplink_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.uplinksInput">uplinks_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.vdpMaximumMbitInput">vdp_maximum_mbit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.vdpReservationMbitInput">vdp_reservation_mbit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -2532,7 +2532,7 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.virtualmachineShareCountInput">virtualmachine_share_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.virtualmachineShareLevelInput">virtualmachine_share_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.vlanIdInput">vlan_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.vlanRangeInput">vlan_range_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRange">DistributedVirtualSwitchVlanRange</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.vlanRangeInput">vlan_range_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRange">DistributedVirtualSwitchVlanRange</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.vmotionMaximumMbitInput">vmotion_maximum_mbit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.vmotionReservationMbitInput">vmotion_reservation_mbit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.vmotionShareCountInput">vmotion_share_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -2542,26 +2542,26 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.vsanShareCountInput">vsan_share_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.vsanShareLevelInput">vsan_share_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.activeUplinks">active_uplinks</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.allowForgedTransmits">allow_forged_transmits</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.allowMacChanges">allow_mac_changes</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.allowPromiscuous">allow_promiscuous</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.allowForgedTransmits">allow_forged_transmits</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.allowMacChanges">allow_mac_changes</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.allowPromiscuous">allow_promiscuous</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.backupnfcMaximumMbit">backupnfc_maximum_mbit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.backupnfcReservationMbit">backupnfc_reservation_mbit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.backupnfcShareCount">backupnfc_share_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.backupnfcShareLevel">backupnfc_share_level</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.blockAllPorts">block_all_ports</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.checkBeacon">check_beacon</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.blockAllPorts">block_all_ports</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.checkBeacon">check_beacon</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.contactDetail">contact_detail</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.contactName">contact_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.customAttributes">custom_attributes</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.datacenterId">datacenter_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.directpathGen2Allowed">directpath_gen2_allowed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.directpathGen2Allowed">directpath_gen2_allowed</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.egressShapingAverageBandwidth">egress_shaping_average_bandwidth</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.egressShapingBurstSize">egress_shaping_burst_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.egressShapingEnabled">egress_shaping_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.egressShapingEnabled">egress_shaping_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.egressShapingPeakBandwidth">egress_shaping_peak_bandwidth</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.failback">failback</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.failback">failback</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.faulttoleranceMaximumMbit">faulttolerance_maximum_mbit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.faulttoleranceReservationMbit">faulttolerance_reservation_mbit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.faulttoleranceShareCount">faulttolerance_share_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -2572,10 +2572,10 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.hbrShareCount">hbr_share_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.hbrShareLevel">hbr_share_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.ignoreOtherPvlanMappings">ignore_other_pvlan_mappings</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.ignoreOtherPvlanMappings">ignore_other_pvlan_mappings</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.ingressShapingAverageBandwidth">ingress_shaping_average_bandwidth</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.ingressShapingBurstSize">ingress_shaping_burst_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.ingressShapingEnabled">ingress_shaping_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.ingressShapingEnabled">ingress_shaping_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.ingressShapingPeakBandwidth">ingress_shaping_peak_bandwidth</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.ipv4Address">ipv4_address</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.iscsiMaximumMbit">iscsi_maximum_mbit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -2583,7 +2583,7 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.iscsiShareCount">iscsi_share_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.iscsiShareLevel">iscsi_share_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.lacpApiVersion">lacp_api_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.lacpEnabled">lacp_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.lacpEnabled">lacp_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.lacpMode">lacp_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.linkDiscoveryOperation">link_discovery_operation</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.linkDiscoveryProtocol">link_discovery_protocol</a></code> | <code>str</code> | *No description.* |
@@ -2597,23 +2597,23 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.netflowActiveFlowTimeout">netflow_active_flow_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.netflowCollectorIpAddress">netflow_collector_ip_address</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.netflowCollectorPort">netflow_collector_port</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.netflowEnabled">netflow_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.netflowEnabled">netflow_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.netflowIdleFlowTimeout">netflow_idle_flow_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.netflowInternalFlowsOnly">netflow_internal_flows_only</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.netflowInternalFlowsOnly">netflow_internal_flows_only</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.netflowObservationDomainId">netflow_observation_domain_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.netflowSamplingRate">netflow_sampling_rate</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.networkResourceControlEnabled">network_resource_control_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.networkResourceControlEnabled">network_resource_control_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.networkResourceControlVersion">network_resource_control_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.nfsMaximumMbit">nfs_maximum_mbit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.nfsReservationMbit">nfs_reservation_mbit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.nfsShareCount">nfs_share_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.nfsShareLevel">nfs_share_level</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.notifySwitches">notify_switches</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.notifySwitches">notify_switches</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.portPrivateSecondaryVlanId">port_private_secondary_vlan_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.standbyUplinks">standby_uplinks</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.tags">tags</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.teamingPolicy">teaming_policy</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.txUplink">tx_uplink</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.txUplink">tx_uplink</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.uplinks">uplinks</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.vdpMaximumMbit">vdp_maximum_mbit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.vdpReservationMbit">vdp_reservation_mbit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -2711,20 +2711,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -2771,10 +2771,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2831,30 +2831,30 @@ active_uplinks_input: typing.List[str]
 ##### `allow_forged_transmits_input`<sup>Optional</sup> <a name="allow_forged_transmits_input" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.allowForgedTransmitsInput"></a>
 
 ```python
-allow_forged_transmits_input: typing.Union[bool, IResolvable]
+allow_forged_transmits_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_mac_changes_input`<sup>Optional</sup> <a name="allow_mac_changes_input" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.allowMacChangesInput"></a>
 
 ```python
-allow_mac_changes_input: typing.Union[bool, IResolvable]
+allow_mac_changes_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_promiscuous_input`<sup>Optional</sup> <a name="allow_promiscuous_input" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.allowPromiscuousInput"></a>
 
 ```python
-allow_promiscuous_input: typing.Union[bool, IResolvable]
+allow_promiscuous_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2901,20 +2901,20 @@ backupnfc_share_level_input: str
 ##### `block_all_ports_input`<sup>Optional</sup> <a name="block_all_ports_input" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.blockAllPortsInput"></a>
 
 ```python
-block_all_ports_input: typing.Union[bool, IResolvable]
+block_all_ports_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `check_beacon_input`<sup>Optional</sup> <a name="check_beacon_input" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.checkBeaconInput"></a>
 
 ```python
-check_beacon_input: typing.Union[bool, IResolvable]
+check_beacon_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2971,10 +2971,10 @@ description_input: str
 ##### `directpath_gen2_allowed_input`<sup>Optional</sup> <a name="directpath_gen2_allowed_input" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.directpathGen2AllowedInput"></a>
 
 ```python
-directpath_gen2_allowed_input: typing.Union[bool, IResolvable]
+directpath_gen2_allowed_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3001,10 +3001,10 @@ egress_shaping_burst_size_input: typing.Union[int, float]
 ##### `egress_shaping_enabled_input`<sup>Optional</sup> <a name="egress_shaping_enabled_input" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.egressShapingEnabledInput"></a>
 
 ```python
-egress_shaping_enabled_input: typing.Union[bool, IResolvable]
+egress_shaping_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3021,10 +3021,10 @@ egress_shaping_peak_bandwidth_input: typing.Union[int, float]
 ##### `failback_input`<sup>Optional</sup> <a name="failback_input" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.failbackInput"></a>
 
 ```python
-failback_input: typing.Union[bool, IResolvable]
+failback_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3121,10 +3121,10 @@ hbr_share_level_input: str
 ##### `host_input`<sup>Optional</sup> <a name="host_input" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.hostInput"></a>
 
 ```python
-host_input: typing.Union[IResolvable, typing.List[DistributedVirtualSwitchHost]]
+host_input: IResolvable | typing.List[DistributedVirtualSwitchHost]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHost">DistributedVirtualSwitchHost</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHost">DistributedVirtualSwitchHost</a>]
 
 ---
 
@@ -3141,10 +3141,10 @@ id_input: str
 ##### `ignore_other_pvlan_mappings_input`<sup>Optional</sup> <a name="ignore_other_pvlan_mappings_input" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.ignoreOtherPvlanMappingsInput"></a>
 
 ```python
-ignore_other_pvlan_mappings_input: typing.Union[bool, IResolvable]
+ignore_other_pvlan_mappings_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3171,10 +3171,10 @@ ingress_shaping_burst_size_input: typing.Union[int, float]
 ##### `ingress_shaping_enabled_input`<sup>Optional</sup> <a name="ingress_shaping_enabled_input" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.ingressShapingEnabledInput"></a>
 
 ```python
-ingress_shaping_enabled_input: typing.Union[bool, IResolvable]
+ingress_shaping_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3251,10 +3251,10 @@ lacp_api_version_input: str
 ##### `lacp_enabled_input`<sup>Optional</sup> <a name="lacp_enabled_input" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.lacpEnabledInput"></a>
 
 ```python
-lacp_enabled_input: typing.Union[bool, IResolvable]
+lacp_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3391,10 +3391,10 @@ netflow_collector_port_input: typing.Union[int, float]
 ##### `netflow_enabled_input`<sup>Optional</sup> <a name="netflow_enabled_input" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.netflowEnabledInput"></a>
 
 ```python
-netflow_enabled_input: typing.Union[bool, IResolvable]
+netflow_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3411,10 +3411,10 @@ netflow_idle_flow_timeout_input: typing.Union[int, float]
 ##### `netflow_internal_flows_only_input`<sup>Optional</sup> <a name="netflow_internal_flows_only_input" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.netflowInternalFlowsOnlyInput"></a>
 
 ```python
-netflow_internal_flows_only_input: typing.Union[bool, IResolvable]
+netflow_internal_flows_only_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3441,10 +3441,10 @@ netflow_sampling_rate_input: typing.Union[int, float]
 ##### `network_resource_control_enabled_input`<sup>Optional</sup> <a name="network_resource_control_enabled_input" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.networkResourceControlEnabledInput"></a>
 
 ```python
-network_resource_control_enabled_input: typing.Union[bool, IResolvable]
+network_resource_control_enabled_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3501,10 +3501,10 @@ nfs_share_level_input: str
 ##### `notify_switches_input`<sup>Optional</sup> <a name="notify_switches_input" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.notifySwitchesInput"></a>
 
 ```python
-notify_switches_input: typing.Union[bool, IResolvable]
+notify_switches_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3521,10 +3521,10 @@ port_private_secondary_vlan_id_input: typing.Union[int, float]
 ##### `pvlan_mapping_input`<sup>Optional</sup> <a name="pvlan_mapping_input" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.pvlanMappingInput"></a>
 
 ```python
-pvlan_mapping_input: typing.Union[IResolvable, typing.List[DistributedVirtualSwitchPvlanMapping]]
+pvlan_mapping_input: IResolvable | typing.List[DistributedVirtualSwitchPvlanMapping]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMapping">DistributedVirtualSwitchPvlanMapping</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMapping">DistributedVirtualSwitchPvlanMapping</a>]
 
 ---
 
@@ -3561,10 +3561,10 @@ teaming_policy_input: str
 ##### `tx_uplink_input`<sup>Optional</sup> <a name="tx_uplink_input" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.txUplinkInput"></a>
 
 ```python
-tx_uplink_input: typing.Union[bool, IResolvable]
+tx_uplink_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3681,10 +3681,10 @@ vlan_id_input: typing.Union[int, float]
 ##### `vlan_range_input`<sup>Optional</sup> <a name="vlan_range_input" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.vlanRangeInput"></a>
 
 ```python
-vlan_range_input: typing.Union[IResolvable, typing.List[DistributedVirtualSwitchVlanRange]]
+vlan_range_input: IResolvable | typing.List[DistributedVirtualSwitchVlanRange]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRange">DistributedVirtualSwitchVlanRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRange">DistributedVirtualSwitchVlanRange</a>]
 
 ---
 
@@ -3781,30 +3781,30 @@ active_uplinks: typing.List[str]
 ##### `allow_forged_transmits`<sup>Required</sup> <a name="allow_forged_transmits" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.allowForgedTransmits"></a>
 
 ```python
-allow_forged_transmits: typing.Union[bool, IResolvable]
+allow_forged_transmits: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_mac_changes`<sup>Required</sup> <a name="allow_mac_changes" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.allowMacChanges"></a>
 
 ```python
-allow_mac_changes: typing.Union[bool, IResolvable]
+allow_mac_changes: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allow_promiscuous`<sup>Required</sup> <a name="allow_promiscuous" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.allowPromiscuous"></a>
 
 ```python
-allow_promiscuous: typing.Union[bool, IResolvable]
+allow_promiscuous: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3851,20 +3851,20 @@ backupnfc_share_level: str
 ##### `block_all_ports`<sup>Required</sup> <a name="block_all_ports" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.blockAllPorts"></a>
 
 ```python
-block_all_ports: typing.Union[bool, IResolvable]
+block_all_ports: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `check_beacon`<sup>Required</sup> <a name="check_beacon" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.checkBeacon"></a>
 
 ```python
-check_beacon: typing.Union[bool, IResolvable]
+check_beacon: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3921,10 +3921,10 @@ description: str
 ##### `directpath_gen2_allowed`<sup>Required</sup> <a name="directpath_gen2_allowed" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.directpathGen2Allowed"></a>
 
 ```python
-directpath_gen2_allowed: typing.Union[bool, IResolvable]
+directpath_gen2_allowed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3951,10 +3951,10 @@ egress_shaping_burst_size: typing.Union[int, float]
 ##### `egress_shaping_enabled`<sup>Required</sup> <a name="egress_shaping_enabled" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.egressShapingEnabled"></a>
 
 ```python
-egress_shaping_enabled: typing.Union[bool, IResolvable]
+egress_shaping_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3971,10 +3971,10 @@ egress_shaping_peak_bandwidth: typing.Union[int, float]
 ##### `failback`<sup>Required</sup> <a name="failback" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.failback"></a>
 
 ```python
-failback: typing.Union[bool, IResolvable]
+failback: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4081,10 +4081,10 @@ id: str
 ##### `ignore_other_pvlan_mappings`<sup>Required</sup> <a name="ignore_other_pvlan_mappings" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.ignoreOtherPvlanMappings"></a>
 
 ```python
-ignore_other_pvlan_mappings: typing.Union[bool, IResolvable]
+ignore_other_pvlan_mappings: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4111,10 +4111,10 @@ ingress_shaping_burst_size: typing.Union[int, float]
 ##### `ingress_shaping_enabled`<sup>Required</sup> <a name="ingress_shaping_enabled" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.ingressShapingEnabled"></a>
 
 ```python
-ingress_shaping_enabled: typing.Union[bool, IResolvable]
+ingress_shaping_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4191,10 +4191,10 @@ lacp_api_version: str
 ##### `lacp_enabled`<sup>Required</sup> <a name="lacp_enabled" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.lacpEnabled"></a>
 
 ```python
-lacp_enabled: typing.Union[bool, IResolvable]
+lacp_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4331,10 +4331,10 @@ netflow_collector_port: typing.Union[int, float]
 ##### `netflow_enabled`<sup>Required</sup> <a name="netflow_enabled" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.netflowEnabled"></a>
 
 ```python
-netflow_enabled: typing.Union[bool, IResolvable]
+netflow_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4351,10 +4351,10 @@ netflow_idle_flow_timeout: typing.Union[int, float]
 ##### `netflow_internal_flows_only`<sup>Required</sup> <a name="netflow_internal_flows_only" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.netflowInternalFlowsOnly"></a>
 
 ```python
-netflow_internal_flows_only: typing.Union[bool, IResolvable]
+netflow_internal_flows_only: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4381,10 +4381,10 @@ netflow_sampling_rate: typing.Union[int, float]
 ##### `network_resource_control_enabled`<sup>Required</sup> <a name="network_resource_control_enabled" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.networkResourceControlEnabled"></a>
 
 ```python
-network_resource_control_enabled: typing.Union[bool, IResolvable]
+network_resource_control_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4441,10 +4441,10 @@ nfs_share_level: str
 ##### `notify_switches`<sup>Required</sup> <a name="notify_switches" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.notifySwitches"></a>
 
 ```python
-notify_switches: typing.Union[bool, IResolvable]
+notify_switches: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4491,10 +4491,10 @@ teaming_policy: str
 ##### `tx_uplink`<sup>Required</sup> <a name="tx_uplink" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.property.txUplink"></a>
 
 ```python
-tx_uplink: typing.Union[bool, IResolvable]
+tx_uplink: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4716,35 +4716,35 @@ tfResourceType: str
 from cdktf_cdktf_provider_vsphere import distributed_virtual_switch
 
 distributedVirtualSwitch.DistributedVirtualSwitchConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   datacenter_id: str,
   name: str,
   active_uplinks: typing.List[str] = None,
-  allow_forged_transmits: typing.Union[bool, IResolvable] = None,
-  allow_mac_changes: typing.Union[bool, IResolvable] = None,
-  allow_promiscuous: typing.Union[bool, IResolvable] = None,
+  allow_forged_transmits: bool | IResolvable = None,
+  allow_mac_changes: bool | IResolvable = None,
+  allow_promiscuous: bool | IResolvable = None,
   backupnfc_maximum_mbit: typing.Union[int, float] = None,
   backupnfc_reservation_mbit: typing.Union[int, float] = None,
   backupnfc_share_count: typing.Union[int, float] = None,
   backupnfc_share_level: str = None,
-  block_all_ports: typing.Union[bool, IResolvable] = None,
-  check_beacon: typing.Union[bool, IResolvable] = None,
+  block_all_ports: bool | IResolvable = None,
+  check_beacon: bool | IResolvable = None,
   contact_detail: str = None,
   contact_name: str = None,
   custom_attributes: typing.Mapping[str] = None,
   description: str = None,
-  directpath_gen2_allowed: typing.Union[bool, IResolvable] = None,
+  directpath_gen2_allowed: bool | IResolvable = None,
   egress_shaping_average_bandwidth: typing.Union[int, float] = None,
   egress_shaping_burst_size: typing.Union[int, float] = None,
-  egress_shaping_enabled: typing.Union[bool, IResolvable] = None,
+  egress_shaping_enabled: bool | IResolvable = None,
   egress_shaping_peak_bandwidth: typing.Union[int, float] = None,
-  failback: typing.Union[bool, IResolvable] = None,
+  failback: bool | IResolvable = None,
   faulttolerance_maximum_mbit: typing.Union[int, float] = None,
   faulttolerance_reservation_mbit: typing.Union[int, float] = None,
   faulttolerance_share_count: typing.Union[int, float] = None,
@@ -4754,12 +4754,12 @@ distributedVirtualSwitch.DistributedVirtualSwitchConfig(
   hbr_reservation_mbit: typing.Union[int, float] = None,
   hbr_share_count: typing.Union[int, float] = None,
   hbr_share_level: str = None,
-  host: typing.Union[IResolvable, typing.List[DistributedVirtualSwitchHost]] = None,
+  host: IResolvable | typing.List[DistributedVirtualSwitchHost] = None,
   id: str = None,
-  ignore_other_pvlan_mappings: typing.Union[bool, IResolvable] = None,
+  ignore_other_pvlan_mappings: bool | IResolvable = None,
   ingress_shaping_average_bandwidth: typing.Union[int, float] = None,
   ingress_shaping_burst_size: typing.Union[int, float] = None,
-  ingress_shaping_enabled: typing.Union[bool, IResolvable] = None,
+  ingress_shaping_enabled: bool | IResolvable = None,
   ingress_shaping_peak_bandwidth: typing.Union[int, float] = None,
   ipv4_address: str = None,
   iscsi_maximum_mbit: typing.Union[int, float] = None,
@@ -4767,7 +4767,7 @@ distributedVirtualSwitch.DistributedVirtualSwitchConfig(
   iscsi_share_count: typing.Union[int, float] = None,
   iscsi_share_level: str = None,
   lacp_api_version: str = None,
-  lacp_enabled: typing.Union[bool, IResolvable] = None,
+  lacp_enabled: bool | IResolvable = None,
   lacp_mode: str = None,
   link_discovery_operation: str = None,
   link_discovery_protocol: str = None,
@@ -4780,24 +4780,24 @@ distributedVirtualSwitch.DistributedVirtualSwitchConfig(
   netflow_active_flow_timeout: typing.Union[int, float] = None,
   netflow_collector_ip_address: str = None,
   netflow_collector_port: typing.Union[int, float] = None,
-  netflow_enabled: typing.Union[bool, IResolvable] = None,
+  netflow_enabled: bool | IResolvable = None,
   netflow_idle_flow_timeout: typing.Union[int, float] = None,
-  netflow_internal_flows_only: typing.Union[bool, IResolvable] = None,
+  netflow_internal_flows_only: bool | IResolvable = None,
   netflow_observation_domain_id: typing.Union[int, float] = None,
   netflow_sampling_rate: typing.Union[int, float] = None,
-  network_resource_control_enabled: typing.Union[bool, IResolvable] = None,
+  network_resource_control_enabled: bool | IResolvable = None,
   network_resource_control_version: str = None,
   nfs_maximum_mbit: typing.Union[int, float] = None,
   nfs_reservation_mbit: typing.Union[int, float] = None,
   nfs_share_count: typing.Union[int, float] = None,
   nfs_share_level: str = None,
-  notify_switches: typing.Union[bool, IResolvable] = None,
+  notify_switches: bool | IResolvable = None,
   port_private_secondary_vlan_id: typing.Union[int, float] = None,
-  pvlan_mapping: typing.Union[IResolvable, typing.List[DistributedVirtualSwitchPvlanMapping]] = None,
+  pvlan_mapping: IResolvable | typing.List[DistributedVirtualSwitchPvlanMapping] = None,
   standby_uplinks: typing.List[str] = None,
   tags: typing.List[str] = None,
   teaming_policy: str = None,
-  tx_uplink: typing.Union[bool, IResolvable] = None,
+  tx_uplink: bool | IResolvable = None,
   uplinks: typing.List[str] = None,
   vdp_maximum_mbit: typing.Union[int, float] = None,
   vdp_reservation_mbit: typing.Union[int, float] = None,
@@ -4809,7 +4809,7 @@ distributedVirtualSwitch.DistributedVirtualSwitchConfig(
   virtualmachine_share_count: typing.Union[int, float] = None,
   virtualmachine_share_level: str = None,
   vlan_id: typing.Union[int, float] = None,
-  vlan_range: typing.Union[IResolvable, typing.List[DistributedVirtualSwitchVlanRange]] = None,
+  vlan_range: IResolvable | typing.List[DistributedVirtualSwitchVlanRange] = None,
   vmotion_maximum_mbit: typing.Union[int, float] = None,
   vmotion_reservation_mbit: typing.Union[int, float] = None,
   vmotion_share_count: typing.Union[int, float] = None,
@@ -4825,35 +4825,35 @@ distributedVirtualSwitch.DistributedVirtualSwitchConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.datacenterId">datacenter_id</a></code> | <code>str</code> | The ID of the datacenter to create this virtual switch in. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.name">name</a></code> | <code>str</code> | The name for the DVS. Must be unique in the folder that it is being created in. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.activeUplinks">active_uplinks</a></code> | <code>typing.List[str]</code> | List of active uplinks used for load balancing, matching the names of the uplinks assigned in the DVS. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.allowForgedTransmits">allow_forged_transmits</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Controls whether or not the virtual network adapter is allowed to send network traffic with a different MAC address than that of its own. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.allowMacChanges">allow_mac_changes</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Controls whether or not the Media Access Control (MAC) address can be changed. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.allowPromiscuous">allow_promiscuous</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable promiscuous mode on the network. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.allowForgedTransmits">allow_forged_transmits</a></code> | <code>bool \| cdktf.IResolvable</code> | Controls whether or not the virtual network adapter is allowed to send network traffic with a different MAC address than that of its own. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.allowMacChanges">allow_mac_changes</a></code> | <code>bool \| cdktf.IResolvable</code> | Controls whether or not the Media Access Control (MAC) address can be changed. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.allowPromiscuous">allow_promiscuous</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable promiscuous mode on the network. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.backupnfcMaximumMbit">backupnfc_maximum_mbit</a></code> | <code>typing.Union[int, float]</code> | The maximum allowed usage for the backupNfc traffic class, in Mbits/sec. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.backupnfcReservationMbit">backupnfc_reservation_mbit</a></code> | <code>typing.Union[int, float]</code> | The amount of guaranteed bandwidth for the backupNfc traffic class, in Mbits/sec. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.backupnfcShareCount">backupnfc_share_count</a></code> | <code>typing.Union[int, float]</code> | The amount of shares to allocate to the backupNfc traffic class for a custom share level. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.backupnfcShareLevel">backupnfc_share_level</a></code> | <code>str</code> | The allocation level for the backupNfc traffic class. Can be one of high, low, normal, or custom. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.blockAllPorts">block_all_ports</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether to block all ports by default. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.checkBeacon">check_beacon</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable beacon probing on the ports this policy applies to. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.blockAllPorts">block_all_ports</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether to block all ports by default. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.checkBeacon">check_beacon</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable beacon probing on the ports this policy applies to. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.contactDetail">contact_detail</a></code> | <code>str</code> | The contact detail for this DVS. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.contactName">contact_name</a></code> | <code>str</code> | The contact name for this DVS. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.customAttributes">custom_attributes</a></code> | <code>typing.Mapping[str]</code> | A list of custom attributes to set on this resource. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.description">description</a></code> | <code>str</code> | The description of the DVS. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.directpathGen2Allowed">directpath_gen2_allowed</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow VMDirectPath Gen2 on the ports this policy applies to. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.directpathGen2Allowed">directpath_gen2_allowed</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow VMDirectPath Gen2 on the ports this policy applies to. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.egressShapingAverageBandwidth">egress_shaping_average_bandwidth</a></code> | <code>typing.Union[int, float]</code> | The average egress bandwidth in bits per second if egress shaping is enabled on the port. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.egressShapingBurstSize">egress_shaping_burst_size</a></code> | <code>typing.Union[int, float]</code> | The maximum egress burst size allowed in bytes if egress shaping is enabled on the port. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.egressShapingEnabled">egress_shaping_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | True if the traffic shaper is enabled for egress traffic on the port. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.egressShapingEnabled">egress_shaping_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | True if the traffic shaper is enabled for egress traffic on the port. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.egressShapingPeakBandwidth">egress_shaping_peak_bandwidth</a></code> | <code>typing.Union[int, float]</code> | The peak egress bandwidth during bursts in bits per second if egress traffic shaping is enabled on the port. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.failback">failback</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the teaming policy will re-activate failed interfaces higher in precedence when they come back up. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.failback">failback</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, the teaming policy will re-activate failed interfaces higher in precedence when they come back up. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.faulttoleranceMaximumMbit">faulttolerance_maximum_mbit</a></code> | <code>typing.Union[int, float]</code> | The maximum allowed usage for the faultTolerance traffic class, in Mbits/sec. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.faulttoleranceReservationMbit">faulttolerance_reservation_mbit</a></code> | <code>typing.Union[int, float]</code> | The amount of guaranteed bandwidth for the faultTolerance traffic class, in Mbits/sec. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.faulttoleranceShareCount">faulttolerance_share_count</a></code> | <code>typing.Union[int, float]</code> | The amount of shares to allocate to the faultTolerance traffic class for a custom share level. |
@@ -4863,12 +4863,12 @@ distributedVirtualSwitch.DistributedVirtualSwitchConfig(
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.hbrReservationMbit">hbr_reservation_mbit</a></code> | <code>typing.Union[int, float]</code> | The amount of guaranteed bandwidth for the hbr traffic class, in Mbits/sec. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.hbrShareCount">hbr_share_count</a></code> | <code>typing.Union[int, float]</code> | The amount of shares to allocate to the hbr traffic class for a custom share level. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.hbrShareLevel">hbr_share_level</a></code> | <code>str</code> | The allocation level for the hbr traffic class. Can be one of high, low, normal, or custom. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.host">host</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHost">DistributedVirtualSwitchHost</a>]]</code> | host block. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.host">host</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHost">DistributedVirtualSwitchHost</a>]</code> | host block. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/distributed_virtual_switch#id DistributedVirtualSwitch#id}. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.ignoreOtherPvlanMappings">ignore_other_pvlan_mappings</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to ignore existing PVLAN mappings not managed by this resource. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.ignoreOtherPvlanMappings">ignore_other_pvlan_mappings</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to ignore existing PVLAN mappings not managed by this resource. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.ingressShapingAverageBandwidth">ingress_shaping_average_bandwidth</a></code> | <code>typing.Union[int, float]</code> | The average ingress bandwidth in bits per second if ingress shaping is enabled on the port. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.ingressShapingBurstSize">ingress_shaping_burst_size</a></code> | <code>typing.Union[int, float]</code> | The maximum ingress burst size allowed in bytes if ingress shaping is enabled on the port. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.ingressShapingEnabled">ingress_shaping_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | True if the traffic shaper is enabled for ingress traffic on the port. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.ingressShapingEnabled">ingress_shaping_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | True if the traffic shaper is enabled for ingress traffic on the port. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.ingressShapingPeakBandwidth">ingress_shaping_peak_bandwidth</a></code> | <code>typing.Union[int, float]</code> | The peak ingress bandwidth during bursts in bits per second if ingress traffic shaping is enabled on the port. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.ipv4Address">ipv4_address</a></code> | <code>str</code> | The IPv4 address of the switch. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.iscsiMaximumMbit">iscsi_maximum_mbit</a></code> | <code>typing.Union[int, float]</code> | The maximum allowed usage for the iSCSI traffic class, in Mbits/sec. |
@@ -4876,7 +4876,7 @@ distributedVirtualSwitch.DistributedVirtualSwitchConfig(
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.iscsiShareCount">iscsi_share_count</a></code> | <code>typing.Union[int, float]</code> | The amount of shares to allocate to the iSCSI traffic class for a custom share level. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.iscsiShareLevel">iscsi_share_level</a></code> | <code>str</code> | The allocation level for the iSCSI traffic class. Can be one of high, low, normal, or custom. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.lacpApiVersion">lacp_api_version</a></code> | <code>str</code> | The Link Aggregation Control Protocol group version in the switch. Can be one of singleLag or multipleLag. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.lacpEnabled">lacp_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not to enable LACP on all uplink ports. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.lacpEnabled">lacp_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not to enable LACP on all uplink ports. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.lacpMode">lacp_mode</a></code> | <code>str</code> | The uplink LACP mode to use. Can be one of active or passive. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.linkDiscoveryOperation">link_discovery_operation</a></code> | <code>str</code> | Whether to advertise or listen for link discovery. Valid values are advertise, both, listen, and none. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.linkDiscoveryProtocol">link_discovery_protocol</a></code> | <code>str</code> | The discovery protocol type. Valid values are cdp and lldp. |
@@ -4889,24 +4889,24 @@ distributedVirtualSwitch.DistributedVirtualSwitchConfig(
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.netflowActiveFlowTimeout">netflow_active_flow_timeout</a></code> | <code>typing.Union[int, float]</code> | The number of seconds after which active flows are forced to be exported to the collector. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.netflowCollectorIpAddress">netflow_collector_ip_address</a></code> | <code>str</code> | IP address for the netflow collector, using IPv4 or IPv6. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.netflowCollectorPort">netflow_collector_port</a></code> | <code>typing.Union[int, float]</code> | The port for the netflow collector. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.netflowEnabled">netflow_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether to enable netflow on all ports. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.netflowEnabled">netflow_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether to enable netflow on all ports. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.netflowIdleFlowTimeout">netflow_idle_flow_timeout</a></code> | <code>typing.Union[int, float]</code> | The number of seconds after which idle flows are forced to be exported to the collector. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.netflowInternalFlowsOnly">netflow_internal_flows_only</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to limit analysis to traffic that has both source and destination served by the same host. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.netflowInternalFlowsOnly">netflow_internal_flows_only</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to limit analysis to traffic that has both source and destination served by the same host. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.netflowObservationDomainId">netflow_observation_domain_id</a></code> | <code>typing.Union[int, float]</code> | The observation Domain ID for the netflow collector. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.netflowSamplingRate">netflow_sampling_rate</a></code> | <code>typing.Union[int, float]</code> | The ratio of total number of packets to the number of packets analyzed. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.networkResourceControlEnabled">network_resource_control_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not to enable network resource control, enabling advanced traffic shaping and resource control features. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.networkResourceControlEnabled">network_resource_control_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not to enable network resource control, enabling advanced traffic shaping and resource control features. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.networkResourceControlVersion">network_resource_control_version</a></code> | <code>str</code> | The network I/O control version to use. Can be one of version2 or version3. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.nfsMaximumMbit">nfs_maximum_mbit</a></code> | <code>typing.Union[int, float]</code> | The maximum allowed usage for the nfs traffic class, in Mbits/sec. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.nfsReservationMbit">nfs_reservation_mbit</a></code> | <code>typing.Union[int, float]</code> | The amount of guaranteed bandwidth for the nfs traffic class, in Mbits/sec. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.nfsShareCount">nfs_share_count</a></code> | <code>typing.Union[int, float]</code> | The amount of shares to allocate to the nfs traffic class for a custom share level. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.nfsShareLevel">nfs_share_level</a></code> | <code>str</code> | The allocation level for the nfs traffic class. Can be one of high, low, normal, or custom. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.notifySwitches">notify_switches</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the teaming policy will notify the broadcast network of a NIC failover, triggering cache updates. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.notifySwitches">notify_switches</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, the teaming policy will notify the broadcast network of a NIC failover, triggering cache updates. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.portPrivateSecondaryVlanId">port_private_secondary_vlan_id</a></code> | <code>typing.Union[int, float]</code> | The secondary VLAN ID for this port. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.pvlanMapping">pvlan_mapping</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMapping">DistributedVirtualSwitchPvlanMapping</a>]]</code> | pvlan_mapping block. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.pvlanMapping">pvlan_mapping</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMapping">DistributedVirtualSwitchPvlanMapping</a>]</code> | pvlan_mapping block. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.standbyUplinks">standby_uplinks</a></code> | <code>typing.List[str]</code> | List of standby uplinks used for load balancing, matching the names of the uplinks assigned in the DVS. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | A list of tag IDs to apply to this object. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.teamingPolicy">teaming_policy</a></code> | <code>str</code> | The network adapter teaming policy. Can be one of loadbalance_ip, loadbalance_srcmac, loadbalance_srcid, failover_explicit, or loadbalance_loadbased. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.txUplink">tx_uplink</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, a copy of packets sent to the switch will always be forwarded to an uplink in addition to the regular packet forwarded done by the switch. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.txUplink">tx_uplink</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, a copy of packets sent to the switch will always be forwarded to an uplink in addition to the regular packet forwarded done by the switch. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.uplinks">uplinks</a></code> | <code>typing.List[str]</code> | A list of uplink ports. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.vdpMaximumMbit">vdp_maximum_mbit</a></code> | <code>typing.Union[int, float]</code> | The maximum allowed usage for the vdp traffic class, in Mbits/sec. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.vdpReservationMbit">vdp_reservation_mbit</a></code> | <code>typing.Union[int, float]</code> | The amount of guaranteed bandwidth for the vdp traffic class, in Mbits/sec. |
@@ -4918,7 +4918,7 @@ distributedVirtualSwitch.DistributedVirtualSwitchConfig(
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.virtualmachineShareCount">virtualmachine_share_count</a></code> | <code>typing.Union[int, float]</code> | The amount of shares to allocate to the virtualMachine traffic class for a custom share level. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.virtualmachineShareLevel">virtualmachine_share_level</a></code> | <code>str</code> | The allocation level for the virtualMachine traffic class. Can be one of high, low, normal, or custom. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.vlanId">vlan_id</a></code> | <code>typing.Union[int, float]</code> | The VLAN ID for single VLAN mode. 0 denotes no VLAN. |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.vlanRange">vlan_range</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRange">DistributedVirtualSwitchVlanRange</a>]]</code> | vlan_range block. |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.vlanRange">vlan_range</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRange">DistributedVirtualSwitchVlanRange</a>]</code> | vlan_range block. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.vmotionMaximumMbit">vmotion_maximum_mbit</a></code> | <code>typing.Union[int, float]</code> | The maximum allowed usage for the vmotion traffic class, in Mbits/sec. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.vmotionReservationMbit">vmotion_reservation_mbit</a></code> | <code>typing.Union[int, float]</code> | The amount of guaranteed bandwidth for the vmotion traffic class, in Mbits/sec. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.vmotionShareCount">vmotion_share_count</a></code> | <code>typing.Union[int, float]</code> | The amount of shares to allocate to the vmotion traffic class for a custom share level. |
@@ -4933,20 +4933,20 @@ distributedVirtualSwitch.DistributedVirtualSwitchConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -4993,10 +4993,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -5045,10 +5045,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `allow_forged_transmits`<sup>Optional</sup> <a name="allow_forged_transmits" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.allowForgedTransmits"></a>
 
 ```python
-allow_forged_transmits: typing.Union[bool, IResolvable]
+allow_forged_transmits: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Controls whether or not the virtual network adapter is allowed to send network traffic with a different MAC address than that of its own.
 
@@ -5059,10 +5059,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `allow_mac_changes`<sup>Optional</sup> <a name="allow_mac_changes" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.allowMacChanges"></a>
 
 ```python
-allow_mac_changes: typing.Union[bool, IResolvable]
+allow_mac_changes: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Controls whether or not the Media Access Control (MAC) address can be changed.
 
@@ -5073,10 +5073,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `allow_promiscuous`<sup>Optional</sup> <a name="allow_promiscuous" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.allowPromiscuous"></a>
 
 ```python
-allow_promiscuous: typing.Union[bool, IResolvable]
+allow_promiscuous: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable promiscuous mode on the network.
 
@@ -5145,10 +5145,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `block_all_ports`<sup>Optional</sup> <a name="block_all_ports" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.blockAllPorts"></a>
 
 ```python
-block_all_ports: typing.Union[bool, IResolvable]
+block_all_ports: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether to block all ports by default.
 
@@ -5159,10 +5159,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `check_beacon`<sup>Optional</sup> <a name="check_beacon" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.checkBeacon"></a>
 
 ```python
-check_beacon: typing.Union[bool, IResolvable]
+check_beacon: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable beacon probing on the ports this policy applies to.
 
@@ -5229,10 +5229,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `directpath_gen2_allowed`<sup>Optional</sup> <a name="directpath_gen2_allowed" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.directpathGen2Allowed"></a>
 
 ```python
-directpath_gen2_allowed: typing.Union[bool, IResolvable]
+directpath_gen2_allowed: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow VMDirectPath Gen2 on the ports this policy applies to.
 
@@ -5271,10 +5271,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `egress_shaping_enabled`<sup>Optional</sup> <a name="egress_shaping_enabled" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.egressShapingEnabled"></a>
 
 ```python
-egress_shaping_enabled: typing.Union[bool, IResolvable]
+egress_shaping_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 True if the traffic shaper is enabled for egress traffic on the port.
 
@@ -5299,10 +5299,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `failback`<sup>Optional</sup> <a name="failback" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.failback"></a>
 
 ```python
-failback: typing.Union[bool, IResolvable]
+failback: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, the teaming policy will re-activate failed interfaces higher in precedence when they come back up.
 
@@ -5439,10 +5439,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `host`<sup>Optional</sup> <a name="host" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.host"></a>
 
 ```python
-host: typing.Union[IResolvable, typing.List[DistributedVirtualSwitchHost]]
+host: IResolvable | typing.List[DistributedVirtualSwitchHost]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHost">DistributedVirtualSwitchHost</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHost">DistributedVirtualSwitchHost</a>]
 
 host block.
 
@@ -5468,10 +5468,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `ignore_other_pvlan_mappings`<sup>Optional</sup> <a name="ignore_other_pvlan_mappings" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.ignoreOtherPvlanMappings"></a>
 
 ```python
-ignore_other_pvlan_mappings: typing.Union[bool, IResolvable]
+ignore_other_pvlan_mappings: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to ignore existing PVLAN mappings not managed by this resource.
 
@@ -5510,10 +5510,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `ingress_shaping_enabled`<sup>Optional</sup> <a name="ingress_shaping_enabled" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.ingressShapingEnabled"></a>
 
 ```python
-ingress_shaping_enabled: typing.Union[bool, IResolvable]
+ingress_shaping_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 True if the traffic shaper is enabled for ingress traffic on the port.
 
@@ -5624,10 +5624,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `lacp_enabled`<sup>Optional</sup> <a name="lacp_enabled" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.lacpEnabled"></a>
 
 ```python
-lacp_enabled: typing.Union[bool, IResolvable]
+lacp_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not to enable LACP on all uplink ports.
 
@@ -5806,10 +5806,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `netflow_enabled`<sup>Optional</sup> <a name="netflow_enabled" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.netflowEnabled"></a>
 
 ```python
-netflow_enabled: typing.Union[bool, IResolvable]
+netflow_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Indicates whether to enable netflow on all ports.
 
@@ -5834,10 +5834,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `netflow_internal_flows_only`<sup>Optional</sup> <a name="netflow_internal_flows_only" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.netflowInternalFlowsOnly"></a>
 
 ```python
-netflow_internal_flows_only: typing.Union[bool, IResolvable]
+netflow_internal_flows_only: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to limit analysis to traffic that has both source and destination served by the same host.
 
@@ -5878,10 +5878,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `network_resource_control_enabled`<sup>Optional</sup> <a name="network_resource_control_enabled" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.networkResourceControlEnabled"></a>
 
 ```python
-network_resource_control_enabled: typing.Union[bool, IResolvable]
+network_resource_control_enabled: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not to enable network resource control, enabling advanced traffic shaping and resource control features.
 
@@ -5962,10 +5962,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `notify_switches`<sup>Optional</sup> <a name="notify_switches" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.notifySwitches"></a>
 
 ```python
-notify_switches: typing.Union[bool, IResolvable]
+notify_switches: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, the teaming policy will notify the broadcast network of a NIC failover, triggering cache updates.
 
@@ -5990,10 +5990,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `pvlan_mapping`<sup>Optional</sup> <a name="pvlan_mapping" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.pvlanMapping"></a>
 
 ```python
-pvlan_mapping: typing.Union[IResolvable, typing.List[DistributedVirtualSwitchPvlanMapping]]
+pvlan_mapping: IResolvable | typing.List[DistributedVirtualSwitchPvlanMapping]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMapping">DistributedVirtualSwitchPvlanMapping</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMapping">DistributedVirtualSwitchPvlanMapping</a>]
 
 pvlan_mapping block.
 
@@ -6046,10 +6046,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `tx_uplink`<sup>Optional</sup> <a name="tx_uplink" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.txUplink"></a>
 
 ```python
-tx_uplink: typing.Union[bool, IResolvable]
+tx_uplink: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, a copy of packets sent to the switch will always be forwarded to an uplink in addition to the regular packet forwarded done by the switch.
 
@@ -6216,10 +6216,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `vlan_range`<sup>Optional</sup> <a name="vlan_range" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.property.vlanRange"></a>
 
 ```python
-vlan_range: typing.Union[IResolvable, typing.List[DistributedVirtualSwitchVlanRange]]
+vlan_range: IResolvable | typing.List[DistributedVirtualSwitchVlanRange]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRange">DistributedVirtualSwitchVlanRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRange">DistributedVirtualSwitchVlanRange</a>]
 
 vlan_range block.
 
@@ -6642,7 +6642,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHostList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHostList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHostList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHost">DistributedVirtualSwitchHost</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHostList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHost">DistributedVirtualSwitchHost</a>]</code> | *No description.* |
 
 ---
 
@@ -6673,10 +6673,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHostList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DistributedVirtualSwitchHost]]
+internal_value: IResolvable | typing.List[DistributedVirtualSwitchHost]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHost">DistributedVirtualSwitchHost</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHost">DistributedVirtualSwitchHost</a>]
 
 ---
 
@@ -6947,7 +6947,7 @@ def reset_devices() -> None
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHostOutputReference.property.hostSystemIdInput">host_system_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHostOutputReference.property.devices">devices</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHostOutputReference.property.hostSystemId">host_system_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHostOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHost">DistributedVirtualSwitchHost</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHostOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHost">DistributedVirtualSwitchHost</a></code> | *No description.* |
 
 ---
 
@@ -7018,10 +7018,10 @@ host_system_id: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHostOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DistributedVirtualSwitchHost]
+internal_value: IResolvable | DistributedVirtualSwitchHost
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHost">DistributedVirtualSwitchHost</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHost">DistributedVirtualSwitchHost</a>
 
 ---
 
@@ -7157,7 +7157,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMappingList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMappingList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMappingList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMapping">DistributedVirtualSwitchPvlanMapping</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMappingList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMapping">DistributedVirtualSwitchPvlanMapping</a>]</code> | *No description.* |
 
 ---
 
@@ -7188,10 +7188,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMappingList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DistributedVirtualSwitchPvlanMapping]]
+internal_value: IResolvable | typing.List[DistributedVirtualSwitchPvlanMapping]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMapping">DistributedVirtualSwitchPvlanMapping</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMapping">DistributedVirtualSwitchPvlanMapping</a>]
 
 ---
 
@@ -7457,7 +7457,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMappingOutputReference.property.primaryVlanId">primary_vlan_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMappingOutputReference.property.pvlanType">pvlan_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMappingOutputReference.property.secondaryVlanId">secondary_vlan_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMappingOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMapping">DistributedVirtualSwitchPvlanMapping</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMappingOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMapping">DistributedVirtualSwitchPvlanMapping</a></code> | *No description.* |
 
 ---
 
@@ -7548,10 +7548,10 @@ secondary_vlan_id: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMappingOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DistributedVirtualSwitchPvlanMapping]
+internal_value: IResolvable | DistributedVirtualSwitchPvlanMapping
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMapping">DistributedVirtualSwitchPvlanMapping</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMapping">DistributedVirtualSwitchPvlanMapping</a>
 
 ---
 
@@ -7687,7 +7687,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRangeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRangeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRangeList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRange">DistributedVirtualSwitchVlanRange</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRangeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRange">DistributedVirtualSwitchVlanRange</a>]</code> | *No description.* |
 
 ---
 
@@ -7718,10 +7718,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRangeList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[DistributedVirtualSwitchVlanRange]]
+internal_value: IResolvable | typing.List[DistributedVirtualSwitchVlanRange]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRange">DistributedVirtualSwitchVlanRange</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRange">DistributedVirtualSwitchVlanRange</a>]
 
 ---
 
@@ -7985,7 +7985,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRangeOutputReference.property.minVlanInput">min_vlan_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRangeOutputReference.property.maxVlan">max_vlan</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRangeOutputReference.property.minVlan">min_vlan</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRangeOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRange">DistributedVirtualSwitchVlanRange</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRangeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRange">DistributedVirtualSwitchVlanRange</a></code> | *No description.* |
 
 ---
 
@@ -8056,10 +8056,10 @@ min_vlan: typing.Union[int, float]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRangeOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, DistributedVirtualSwitchVlanRange]
+internal_value: IResolvable | DistributedVirtualSwitchVlanRange
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRange">DistributedVirtualSwitchVlanRange</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRange">DistributedVirtualSwitchVlanRange</a>
 
 ---
 

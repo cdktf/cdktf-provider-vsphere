@@ -345,7 +345,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.importFrom"></a>
@@ -399,7 +399,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -414,7 +414,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -451,24 +451,24 @@ private void PutHostImage(ComputeClusterHostImage Value)
 ##### `PutVsanDiskGroup` <a name="PutVsanDiskGroup" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.putVsanDiskGroup"></a>
 
 ```csharp
-private void PutVsanDiskGroup(object Value)
+private void PutVsanDiskGroup(IResolvable|ComputeClusterVsanDiskGroup[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.putVsanDiskGroup.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>[]
 
 ---
 
 ##### `PutVsanFaultDomains` <a name="PutVsanFaultDomains" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.putVsanFaultDomains"></a>
 
 ```csharp
-private void PutVsanFaultDomains(object Value)
+private void PutVsanFaultDomains(IResolvable|ComputeClusterVsanFaultDomains[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.putVsanFaultDomains.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a>[]
 
 ---
 
@@ -1018,13 +1018,13 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostImage">HostImage</a></code> | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference">ComputeClusterHostImageOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.resourcePoolId">ResourcePoolId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDiskGroup">VsanDiskGroup</a></code> | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupList">ComputeClusterVsanDiskGroupList</a></code> | *No description.* |
@@ -1033,33 +1033,33 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.customAttributesInput">CustomAttributesInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.datacenterIdInput">DatacenterIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.dpmAutomationLevelInput">DpmAutomationLevelInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.dpmEnabledInput">DpmEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.dpmEnabledInput">DpmEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.dpmThresholdInput">DpmThresholdInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsAdvancedOptionsInput">DrsAdvancedOptionsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsAutomationLevelInput">DrsAutomationLevelInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnabledInput">DrsEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnablePredictiveDrsInput">DrsEnablePredictiveDrsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnableVmOverridesInput">DrsEnableVmOverridesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnabledInput">DrsEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnablePredictiveDrsInput">DrsEnablePredictiveDrsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnableVmOverridesInput">DrsEnableVmOverridesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsMigrationThresholdInput">DrsMigrationThresholdInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsScaleDescendantsSharesInput">DrsScaleDescendantsSharesInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.folderInput">FolderInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.forceEvacuateOnDestroyInput">ForceEvacuateOnDestroyInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.forceEvacuateOnDestroyInput">ForceEvacuateOnDestroyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlFailoverHostSystemIdsInput">HaAdmissionControlFailoverHostSystemIdsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlHostFailureToleranceInput">HaAdmissionControlHostFailureToleranceInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlPerformanceToleranceInput">HaAdmissionControlPerformanceToleranceInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlPolicyInput">HaAdmissionControlPolicyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlResourcePercentageAutoComputeInput">HaAdmissionControlResourcePercentageAutoComputeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlResourcePercentageAutoComputeInput">HaAdmissionControlResourcePercentageAutoComputeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlResourcePercentageCpuInput">HaAdmissionControlResourcePercentageCpuInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlResourcePercentageMemoryInput">HaAdmissionControlResourcePercentageMemoryInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlSlotPolicyExplicitCpuInput">HaAdmissionControlSlotPolicyExplicitCpuInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlSlotPolicyExplicitMemoryInput">HaAdmissionControlSlotPolicyExplicitMemoryInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlSlotPolicyUseExplicitSizeInput">HaAdmissionControlSlotPolicyUseExplicitSizeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlSlotPolicyUseExplicitSizeInput">HaAdmissionControlSlotPolicyUseExplicitSizeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdvancedOptionsInput">HaAdvancedOptionsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haDatastoreApdRecoveryActionInput">HaDatastoreApdRecoveryActionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haDatastoreApdResponseDelayInput">HaDatastoreApdResponseDelayInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haDatastoreApdResponseInput">HaDatastoreApdResponseInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haDatastorePdlResponseInput">HaDatastorePdlResponseInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haEnabledInput">HaEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haEnabledInput">HaEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haHeartbeatDatastoreIdsInput">HaHeartbeatDatastoreIdsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haHeartbeatDatastorePolicyInput">HaHeartbeatDatastorePolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haHostIsolationResponseInput">HaHostIsolationResponseInput</a></code> | <code>string</code> | *No description.* |
@@ -1076,60 +1076,60 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haVmRestartTimeoutInput">HaVmRestartTimeoutInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostClusterExitTimeoutInput">HostClusterExitTimeoutInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostImageInput">HostImageInput</a></code> | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage">ComputeClusterHostImage</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostManagedInput">HostManagedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostManagedInput">HostManagedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostSystemIdsInput">HostSystemIdsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaAutomationLevelInput">ProactiveHaAutomationLevelInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaEnabledInput">ProactiveHaEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaEnabledInput">ProactiveHaEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaModerateRemediationInput">ProactiveHaModerateRemediationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaProviderIdsInput">ProactiveHaProviderIdsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaSevereRemediationInput">ProactiveHaSevereRemediationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.tagsInput">TagsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanCompressionEnabledInput">VsanCompressionEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDedupEnabledInput">VsanDedupEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDiskGroupInput">VsanDiskGroupInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDitEncryptionEnabledInput">VsanDitEncryptionEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanCompressionEnabledInput">VsanCompressionEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDedupEnabledInput">VsanDedupEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDiskGroupInput">VsanDiskGroupInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDitEncryptionEnabledInput">VsanDitEncryptionEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDitRekeyIntervalInput">VsanDitRekeyIntervalInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanEnabledInput">VsanEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanEsaEnabledInput">VsanEsaEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanFaultDomainsInput">VsanFaultDomainsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanNetworkDiagnosticModeEnabledInput">VsanNetworkDiagnosticModeEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanPerformanceEnabledInput">VsanPerformanceEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanEnabledInput">VsanEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanEsaEnabledInput">VsanEsaEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanFaultDomainsInput">VsanFaultDomainsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanNetworkDiagnosticModeEnabledInput">VsanNetworkDiagnosticModeEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanPerformanceEnabledInput">VsanPerformanceEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanRemoteDatastoreIdsInput">VsanRemoteDatastoreIdsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanStretchedClusterInput">VsanStretchedClusterInput</a></code> | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanStretchedCluster">ComputeClusterVsanStretchedCluster</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanUnmapEnabledInput">VsanUnmapEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanVerboseModeEnabledInput">VsanVerboseModeEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanUnmapEnabledInput">VsanUnmapEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanVerboseModeEnabledInput">VsanVerboseModeEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.customAttributes">CustomAttributes</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.datacenterId">DatacenterId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.dpmAutomationLevel">DpmAutomationLevel</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.dpmEnabled">DpmEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.dpmEnabled">DpmEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.dpmThreshold">DpmThreshold</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsAdvancedOptions">DrsAdvancedOptions</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsAutomationLevel">DrsAutomationLevel</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnabled">DrsEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnablePredictiveDrs">DrsEnablePredictiveDrs</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnableVmOverrides">DrsEnableVmOverrides</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnabled">DrsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnablePredictiveDrs">DrsEnablePredictiveDrs</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnableVmOverrides">DrsEnableVmOverrides</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsMigrationThreshold">DrsMigrationThreshold</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsScaleDescendantsShares">DrsScaleDescendantsShares</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.folder">Folder</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.forceEvacuateOnDestroy">ForceEvacuateOnDestroy</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.forceEvacuateOnDestroy">ForceEvacuateOnDestroy</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlFailoverHostSystemIds">HaAdmissionControlFailoverHostSystemIds</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlHostFailureTolerance">HaAdmissionControlHostFailureTolerance</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlPerformanceTolerance">HaAdmissionControlPerformanceTolerance</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlPolicy">HaAdmissionControlPolicy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlResourcePercentageAutoCompute">HaAdmissionControlResourcePercentageAutoCompute</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlResourcePercentageAutoCompute">HaAdmissionControlResourcePercentageAutoCompute</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlResourcePercentageCpu">HaAdmissionControlResourcePercentageCpu</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlResourcePercentageMemory">HaAdmissionControlResourcePercentageMemory</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlSlotPolicyExplicitCpu">HaAdmissionControlSlotPolicyExplicitCpu</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlSlotPolicyExplicitMemory">HaAdmissionControlSlotPolicyExplicitMemory</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlSlotPolicyUseExplicitSize">HaAdmissionControlSlotPolicyUseExplicitSize</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlSlotPolicyUseExplicitSize">HaAdmissionControlSlotPolicyUseExplicitSize</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdvancedOptions">HaAdvancedOptions</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haDatastoreApdRecoveryAction">HaDatastoreApdRecoveryAction</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haDatastoreApdResponse">HaDatastoreApdResponse</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haDatastoreApdResponseDelay">HaDatastoreApdResponseDelay</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haDatastorePdlResponse">HaDatastorePdlResponse</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haEnabled">HaEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haEnabled">HaEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haHeartbeatDatastoreIds">HaHeartbeatDatastoreIds</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haHeartbeatDatastorePolicy">HaHeartbeatDatastorePolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haHostIsolationResponse">HaHostIsolationResponse</a></code> | <code>string</code> | *No description.* |
@@ -1145,27 +1145,27 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haVmRestartPriority">HaVmRestartPriority</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haVmRestartTimeout">HaVmRestartTimeout</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostClusterExitTimeout">HostClusterExitTimeout</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostManaged">HostManaged</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostManaged">HostManaged</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostSystemIds">HostSystemIds</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaAutomationLevel">ProactiveHaAutomationLevel</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaEnabled">ProactiveHaEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaEnabled">ProactiveHaEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaModerateRemediation">ProactiveHaModerateRemediation</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaProviderIds">ProactiveHaProviderIds</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaSevereRemediation">ProactiveHaSevereRemediation</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.tags">Tags</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanCompressionEnabled">VsanCompressionEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDedupEnabled">VsanDedupEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDitEncryptionEnabled">VsanDitEncryptionEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanCompressionEnabled">VsanCompressionEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDedupEnabled">VsanDedupEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDitEncryptionEnabled">VsanDitEncryptionEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDitRekeyInterval">VsanDitRekeyInterval</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanEnabled">VsanEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanEsaEnabled">VsanEsaEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanNetworkDiagnosticModeEnabled">VsanNetworkDiagnosticModeEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanPerformanceEnabled">VsanPerformanceEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanEnabled">VsanEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanEsaEnabled">VsanEsaEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanNetworkDiagnosticModeEnabled">VsanNetworkDiagnosticModeEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanPerformanceEnabled">VsanPerformanceEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanRemoteDatastoreIds">VsanRemoteDatastoreIds</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanUnmapEnabled">VsanUnmapEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanVerboseModeEnabled">VsanVerboseModeEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanUnmapEnabled">VsanUnmapEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanVerboseModeEnabled">VsanVerboseModeEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1244,20 +1244,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1304,10 +1304,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1394,10 +1394,10 @@ public string DpmAutomationLevelInput { get; }
 ##### `DpmEnabledInput`<sup>Optional</sup> <a name="DpmEnabledInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.dpmEnabledInput"></a>
 
 ```csharp
-public object DpmEnabledInput { get; }
+public bool|IResolvable DpmEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1434,30 +1434,30 @@ public string DrsAutomationLevelInput { get; }
 ##### `DrsEnabledInput`<sup>Optional</sup> <a name="DrsEnabledInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnabledInput"></a>
 
 ```csharp
-public object DrsEnabledInput { get; }
+public bool|IResolvable DrsEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DrsEnablePredictiveDrsInput`<sup>Optional</sup> <a name="DrsEnablePredictiveDrsInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnablePredictiveDrsInput"></a>
 
 ```csharp
-public object DrsEnablePredictiveDrsInput { get; }
+public bool|IResolvable DrsEnablePredictiveDrsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DrsEnableVmOverridesInput`<sup>Optional</sup> <a name="DrsEnableVmOverridesInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnableVmOverridesInput"></a>
 
 ```csharp
-public object DrsEnableVmOverridesInput { get; }
+public bool|IResolvable DrsEnableVmOverridesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1494,10 +1494,10 @@ public string FolderInput { get; }
 ##### `ForceEvacuateOnDestroyInput`<sup>Optional</sup> <a name="ForceEvacuateOnDestroyInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.forceEvacuateOnDestroyInput"></a>
 
 ```csharp
-public object ForceEvacuateOnDestroyInput { get; }
+public bool|IResolvable ForceEvacuateOnDestroyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1544,10 +1544,10 @@ public string HaAdmissionControlPolicyInput { get; }
 ##### `HaAdmissionControlResourcePercentageAutoComputeInput`<sup>Optional</sup> <a name="HaAdmissionControlResourcePercentageAutoComputeInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlResourcePercentageAutoComputeInput"></a>
 
 ```csharp
-public object HaAdmissionControlResourcePercentageAutoComputeInput { get; }
+public bool|IResolvable HaAdmissionControlResourcePercentageAutoComputeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1594,10 +1594,10 @@ public double HaAdmissionControlSlotPolicyExplicitMemoryInput { get; }
 ##### `HaAdmissionControlSlotPolicyUseExplicitSizeInput`<sup>Optional</sup> <a name="HaAdmissionControlSlotPolicyUseExplicitSizeInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlSlotPolicyUseExplicitSizeInput"></a>
 
 ```csharp
-public object HaAdmissionControlSlotPolicyUseExplicitSizeInput { get; }
+public bool|IResolvable HaAdmissionControlSlotPolicyUseExplicitSizeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1654,10 +1654,10 @@ public string HaDatastorePdlResponseInput { get; }
 ##### `HaEnabledInput`<sup>Optional</sup> <a name="HaEnabledInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haEnabledInput"></a>
 
 ```csharp
-public object HaEnabledInput { get; }
+public bool|IResolvable HaEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1824,10 +1824,10 @@ public ComputeClusterHostImage HostImageInput { get; }
 ##### `HostManagedInput`<sup>Optional</sup> <a name="HostManagedInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostManagedInput"></a>
 
 ```csharp
-public object HostManagedInput { get; }
+public bool|IResolvable HostManagedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1874,10 +1874,10 @@ public string ProactiveHaAutomationLevelInput { get; }
 ##### `ProactiveHaEnabledInput`<sup>Optional</sup> <a name="ProactiveHaEnabledInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaEnabledInput"></a>
 
 ```csharp
-public object ProactiveHaEnabledInput { get; }
+public bool|IResolvable ProactiveHaEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1924,40 +1924,40 @@ public string[] TagsInput { get; }
 ##### `VsanCompressionEnabledInput`<sup>Optional</sup> <a name="VsanCompressionEnabledInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanCompressionEnabledInput"></a>
 
 ```csharp
-public object VsanCompressionEnabledInput { get; }
+public bool|IResolvable VsanCompressionEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `VsanDedupEnabledInput`<sup>Optional</sup> <a name="VsanDedupEnabledInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDedupEnabledInput"></a>
 
 ```csharp
-public object VsanDedupEnabledInput { get; }
+public bool|IResolvable VsanDedupEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `VsanDiskGroupInput`<sup>Optional</sup> <a name="VsanDiskGroupInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDiskGroupInput"></a>
 
 ```csharp
-public object VsanDiskGroupInput { get; }
+public IResolvable|ComputeClusterVsanDiskGroup[] VsanDiskGroupInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>[]
 
 ---
 
 ##### `VsanDitEncryptionEnabledInput`<sup>Optional</sup> <a name="VsanDitEncryptionEnabledInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDitEncryptionEnabledInput"></a>
 
 ```csharp
-public object VsanDitEncryptionEnabledInput { get; }
+public bool|IResolvable VsanDitEncryptionEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1974,50 +1974,50 @@ public double VsanDitRekeyIntervalInput { get; }
 ##### `VsanEnabledInput`<sup>Optional</sup> <a name="VsanEnabledInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanEnabledInput"></a>
 
 ```csharp
-public object VsanEnabledInput { get; }
+public bool|IResolvable VsanEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `VsanEsaEnabledInput`<sup>Optional</sup> <a name="VsanEsaEnabledInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanEsaEnabledInput"></a>
 
 ```csharp
-public object VsanEsaEnabledInput { get; }
+public bool|IResolvable VsanEsaEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `VsanFaultDomainsInput`<sup>Optional</sup> <a name="VsanFaultDomainsInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanFaultDomainsInput"></a>
 
 ```csharp
-public object VsanFaultDomainsInput { get; }
+public IResolvable|ComputeClusterVsanFaultDomains[] VsanFaultDomainsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a>[]
 
 ---
 
 ##### `VsanNetworkDiagnosticModeEnabledInput`<sup>Optional</sup> <a name="VsanNetworkDiagnosticModeEnabledInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanNetworkDiagnosticModeEnabledInput"></a>
 
 ```csharp
-public object VsanNetworkDiagnosticModeEnabledInput { get; }
+public bool|IResolvable VsanNetworkDiagnosticModeEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `VsanPerformanceEnabledInput`<sup>Optional</sup> <a name="VsanPerformanceEnabledInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanPerformanceEnabledInput"></a>
 
 ```csharp
-public object VsanPerformanceEnabledInput { get; }
+public bool|IResolvable VsanPerformanceEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2044,20 +2044,20 @@ public ComputeClusterVsanStretchedCluster VsanStretchedClusterInput { get; }
 ##### `VsanUnmapEnabledInput`<sup>Optional</sup> <a name="VsanUnmapEnabledInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanUnmapEnabledInput"></a>
 
 ```csharp
-public object VsanUnmapEnabledInput { get; }
+public bool|IResolvable VsanUnmapEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `VsanVerboseModeEnabledInput`<sup>Optional</sup> <a name="VsanVerboseModeEnabledInput" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanVerboseModeEnabledInput"></a>
 
 ```csharp
-public object VsanVerboseModeEnabledInput { get; }
+public bool|IResolvable VsanVerboseModeEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2094,10 +2094,10 @@ public string DpmAutomationLevel { get; }
 ##### `DpmEnabled`<sup>Required</sup> <a name="DpmEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.dpmEnabled"></a>
 
 ```csharp
-public object DpmEnabled { get; }
+public bool|IResolvable DpmEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2134,30 +2134,30 @@ public string DrsAutomationLevel { get; }
 ##### `DrsEnabled`<sup>Required</sup> <a name="DrsEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnabled"></a>
 
 ```csharp
-public object DrsEnabled { get; }
+public bool|IResolvable DrsEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DrsEnablePredictiveDrs`<sup>Required</sup> <a name="DrsEnablePredictiveDrs" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnablePredictiveDrs"></a>
 
 ```csharp
-public object DrsEnablePredictiveDrs { get; }
+public bool|IResolvable DrsEnablePredictiveDrs { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DrsEnableVmOverrides`<sup>Required</sup> <a name="DrsEnableVmOverrides" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.drsEnableVmOverrides"></a>
 
 ```csharp
-public object DrsEnableVmOverrides { get; }
+public bool|IResolvable DrsEnableVmOverrides { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2194,10 +2194,10 @@ public string Folder { get; }
 ##### `ForceEvacuateOnDestroy`<sup>Required</sup> <a name="ForceEvacuateOnDestroy" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.forceEvacuateOnDestroy"></a>
 
 ```csharp
-public object ForceEvacuateOnDestroy { get; }
+public bool|IResolvable ForceEvacuateOnDestroy { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2244,10 +2244,10 @@ public string HaAdmissionControlPolicy { get; }
 ##### `HaAdmissionControlResourcePercentageAutoCompute`<sup>Required</sup> <a name="HaAdmissionControlResourcePercentageAutoCompute" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlResourcePercentageAutoCompute"></a>
 
 ```csharp
-public object HaAdmissionControlResourcePercentageAutoCompute { get; }
+public bool|IResolvable HaAdmissionControlResourcePercentageAutoCompute { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2294,10 +2294,10 @@ public double HaAdmissionControlSlotPolicyExplicitMemory { get; }
 ##### `HaAdmissionControlSlotPolicyUseExplicitSize`<sup>Required</sup> <a name="HaAdmissionControlSlotPolicyUseExplicitSize" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haAdmissionControlSlotPolicyUseExplicitSize"></a>
 
 ```csharp
-public object HaAdmissionControlSlotPolicyUseExplicitSize { get; }
+public bool|IResolvable HaAdmissionControlSlotPolicyUseExplicitSize { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2354,10 +2354,10 @@ public string HaDatastorePdlResponse { get; }
 ##### `HaEnabled`<sup>Required</sup> <a name="HaEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.haEnabled"></a>
 
 ```csharp
-public object HaEnabled { get; }
+public bool|IResolvable HaEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2514,10 +2514,10 @@ public double HostClusterExitTimeout { get; }
 ##### `HostManaged`<sup>Required</sup> <a name="HostManaged" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.hostManaged"></a>
 
 ```csharp
-public object HostManaged { get; }
+public bool|IResolvable HostManaged { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2564,10 +2564,10 @@ public string ProactiveHaAutomationLevel { get; }
 ##### `ProactiveHaEnabled`<sup>Required</sup> <a name="ProactiveHaEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.proactiveHaEnabled"></a>
 
 ```csharp
-public object ProactiveHaEnabled { get; }
+public bool|IResolvable ProactiveHaEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2614,30 +2614,30 @@ public string[] Tags { get; }
 ##### `VsanCompressionEnabled`<sup>Required</sup> <a name="VsanCompressionEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanCompressionEnabled"></a>
 
 ```csharp
-public object VsanCompressionEnabled { get; }
+public bool|IResolvable VsanCompressionEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `VsanDedupEnabled`<sup>Required</sup> <a name="VsanDedupEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDedupEnabled"></a>
 
 ```csharp
-public object VsanDedupEnabled { get; }
+public bool|IResolvable VsanDedupEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `VsanDitEncryptionEnabled`<sup>Required</sup> <a name="VsanDitEncryptionEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanDitEncryptionEnabled"></a>
 
 ```csharp
-public object VsanDitEncryptionEnabled { get; }
+public bool|IResolvable VsanDitEncryptionEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2654,40 +2654,40 @@ public double VsanDitRekeyInterval { get; }
 ##### `VsanEnabled`<sup>Required</sup> <a name="VsanEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanEnabled"></a>
 
 ```csharp
-public object VsanEnabled { get; }
+public bool|IResolvable VsanEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `VsanEsaEnabled`<sup>Required</sup> <a name="VsanEsaEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanEsaEnabled"></a>
 
 ```csharp
-public object VsanEsaEnabled { get; }
+public bool|IResolvable VsanEsaEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `VsanNetworkDiagnosticModeEnabled`<sup>Required</sup> <a name="VsanNetworkDiagnosticModeEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanNetworkDiagnosticModeEnabled"></a>
 
 ```csharp
-public object VsanNetworkDiagnosticModeEnabled { get; }
+public bool|IResolvable VsanNetworkDiagnosticModeEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `VsanPerformanceEnabled`<sup>Required</sup> <a name="VsanPerformanceEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanPerformanceEnabled"></a>
 
 ```csharp
-public object VsanPerformanceEnabled { get; }
+public bool|IResolvable VsanPerformanceEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2704,20 +2704,20 @@ public string[] VsanRemoteDatastoreIds { get; }
 ##### `VsanUnmapEnabled`<sup>Required</sup> <a name="VsanUnmapEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanUnmapEnabled"></a>
 
 ```csharp
-public object VsanUnmapEnabled { get; }
+public bool|IResolvable VsanUnmapEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `VsanVerboseModeEnabled`<sup>Required</sup> <a name="VsanVerboseModeEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeCluster.property.vsanVerboseModeEnabled"></a>
 
 ```csharp
-public object VsanVerboseModeEnabled { get; }
+public bool|IResolvable VsanVerboseModeEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2749,44 +2749,44 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Vsphere;
 
 new ComputeClusterConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string DatacenterId,
     string Name,
     System.Collections.Generic.IDictionary<string, string> CustomAttributes = null,
     string DpmAutomationLevel = null,
-    object DpmEnabled = null,
+    bool|IResolvable DpmEnabled = null,
     double DpmThreshold = null,
     System.Collections.Generic.IDictionary<string, string> DrsAdvancedOptions = null,
     string DrsAutomationLevel = null,
-    object DrsEnabled = null,
-    object DrsEnablePredictiveDrs = null,
-    object DrsEnableVmOverrides = null,
+    bool|IResolvable DrsEnabled = null,
+    bool|IResolvable DrsEnablePredictiveDrs = null,
+    bool|IResolvable DrsEnableVmOverrides = null,
     double DrsMigrationThreshold = null,
     string DrsScaleDescendantsShares = null,
     string Folder = null,
-    object ForceEvacuateOnDestroy = null,
+    bool|IResolvable ForceEvacuateOnDestroy = null,
     string[] HaAdmissionControlFailoverHostSystemIds = null,
     double HaAdmissionControlHostFailureTolerance = null,
     double HaAdmissionControlPerformanceTolerance = null,
     string HaAdmissionControlPolicy = null,
-    object HaAdmissionControlResourcePercentageAutoCompute = null,
+    bool|IResolvable HaAdmissionControlResourcePercentageAutoCompute = null,
     double HaAdmissionControlResourcePercentageCpu = null,
     double HaAdmissionControlResourcePercentageMemory = null,
     double HaAdmissionControlSlotPolicyExplicitCpu = null,
     double HaAdmissionControlSlotPolicyExplicitMemory = null,
-    object HaAdmissionControlSlotPolicyUseExplicitSize = null,
+    bool|IResolvable HaAdmissionControlSlotPolicyUseExplicitSize = null,
     System.Collections.Generic.IDictionary<string, string> HaAdvancedOptions = null,
     string HaDatastoreApdRecoveryAction = null,
     string HaDatastoreApdResponse = null,
     double HaDatastoreApdResponseDelay = null,
     string HaDatastorePdlResponse = null,
-    object HaEnabled = null,
+    bool|IResolvable HaEnabled = null,
     string[] HaHeartbeatDatastoreIds = null,
     string HaHeartbeatDatastorePolicy = null,
     string HaHostIsolationResponse = null,
@@ -2803,29 +2803,29 @@ new ComputeClusterConfig {
     double HaVmRestartTimeout = null,
     double HostClusterExitTimeout = null,
     ComputeClusterHostImage HostImage = null,
-    object HostManaged = null,
+    bool|IResolvable HostManaged = null,
     string[] HostSystemIds = null,
     string Id = null,
     string ProactiveHaAutomationLevel = null,
-    object ProactiveHaEnabled = null,
+    bool|IResolvable ProactiveHaEnabled = null,
     string ProactiveHaModerateRemediation = null,
     string[] ProactiveHaProviderIds = null,
     string ProactiveHaSevereRemediation = null,
     string[] Tags = null,
-    object VsanCompressionEnabled = null,
-    object VsanDedupEnabled = null,
-    object VsanDiskGroup = null,
-    object VsanDitEncryptionEnabled = null,
+    bool|IResolvable VsanCompressionEnabled = null,
+    bool|IResolvable VsanDedupEnabled = null,
+    IResolvable|ComputeClusterVsanDiskGroup[] VsanDiskGroup = null,
+    bool|IResolvable VsanDitEncryptionEnabled = null,
     double VsanDitRekeyInterval = null,
-    object VsanEnabled = null,
-    object VsanEsaEnabled = null,
-    object VsanFaultDomains = null,
-    object VsanNetworkDiagnosticModeEnabled = null,
-    object VsanPerformanceEnabled = null,
+    bool|IResolvable VsanEnabled = null,
+    bool|IResolvable VsanEsaEnabled = null,
+    IResolvable|ComputeClusterVsanFaultDomains[] VsanFaultDomains = null,
+    bool|IResolvable VsanNetworkDiagnosticModeEnabled = null,
+    bool|IResolvable VsanPerformanceEnabled = null,
     string[] VsanRemoteDatastoreIds = null,
     ComputeClusterVsanStretchedCluster VsanStretchedCluster = null,
-    object VsanUnmapEnabled = null,
-    object VsanVerboseModeEnabled = null
+    bool|IResolvable VsanUnmapEnabled = null,
+    bool|IResolvable VsanVerboseModeEnabled = null
 };
 ```
 
@@ -2833,44 +2833,44 @@ new ComputeClusterConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.datacenterId">DatacenterId</a></code> | <code>string</code> | The managed object ID of the datacenter to put the cluster in. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.name">Name</a></code> | <code>string</code> | Name for the new cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.customAttributes">CustomAttributes</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A list of custom attributes to set on this resource. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.dpmAutomationLevel">DpmAutomationLevel</a></code> | <code>string</code> | The automation level for host power operations in this cluster. Can be one of manual or automated. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.dpmEnabled">DpmEnabled</a></code> | <code>object</code> | Enable DPM support for DRS. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.dpmEnabled">DpmEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable DPM support for DRS. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.dpmThreshold">DpmThreshold</a></code> | <code>double</code> | A value between 1 and 5 indicating the threshold of load within the cluster that influences host power operations. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.drsAdvancedOptions">DrsAdvancedOptions</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Advanced configuration options for DRS and DPM. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.drsAutomationLevel">DrsAutomationLevel</a></code> | <code>string</code> | The default automation level for all virtual machines in this cluster. Can be one of manual, partiallyAutomated, or fullyAutomated. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.drsEnabled">DrsEnabled</a></code> | <code>object</code> | Enable DRS for this cluster. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.drsEnablePredictiveDrs">DrsEnablePredictiveDrs</a></code> | <code>object</code> | When true, enables DRS to use data from vRealize Operations Manager to make proactive DRS recommendations. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.drsEnableVmOverrides">DrsEnableVmOverrides</a></code> | <code>object</code> | When true, allows individual VM overrides within this cluster to be set. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.drsEnabled">DrsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable DRS for this cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.drsEnablePredictiveDrs">DrsEnablePredictiveDrs</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | When true, enables DRS to use data from vRealize Operations Manager to make proactive DRS recommendations. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.drsEnableVmOverrides">DrsEnableVmOverrides</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | When true, allows individual VM overrides within this cluster to be set. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.drsMigrationThreshold">DrsMigrationThreshold</a></code> | <code>double</code> | A value between 1 and 5 indicating the threshold of imbalance tolerated between hosts. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.drsScaleDescendantsShares">DrsScaleDescendantsShares</a></code> | <code>string</code> | Enable scalable shares for all descendants of this cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.folder">Folder</a></code> | <code>string</code> | The name of the folder to locate the cluster in. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.forceEvacuateOnDestroy">ForceEvacuateOnDestroy</a></code> | <code>object</code> | Force removal of all hosts in the cluster during destroy and make them standalone hosts. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.forceEvacuateOnDestroy">ForceEvacuateOnDestroy</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Force removal of all hosts in the cluster during destroy and make them standalone hosts. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdmissionControlFailoverHostSystemIds">HaAdmissionControlFailoverHostSystemIds</a></code> | <code>string[]</code> | When ha_admission_control_policy is failoverHosts, this defines the managed object IDs of hosts to use as dedicated failover hosts. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdmissionControlHostFailureTolerance">HaAdmissionControlHostFailureTolerance</a></code> | <code>double</code> | The maximum number of failed hosts that admission control tolerates when making decisions on whether to permit virtual machine operations. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdmissionControlPerformanceTolerance">HaAdmissionControlPerformanceTolerance</a></code> | <code>double</code> | The percentage of resource reduction that a cluster of VMs can tolerate in case of a failover. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdmissionControlPolicy">HaAdmissionControlPolicy</a></code> | <code>string</code> | The type of admission control policy to use with vSphere HA, which controls whether or not specific VM operations are permitted in the cluster in order to protect the reliability of the cluster. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdmissionControlResourcePercentageAutoCompute">HaAdmissionControlResourcePercentageAutoCompute</a></code> | <code>object</code> | When ha_admission_control_policy is resourcePercentage, automatically determine available resource percentages by subtracting the average number of host resources represented by the ha_admission_control_host_failure_tolerance setting from the total amount of resources in the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdmissionControlResourcePercentageAutoCompute">HaAdmissionControlResourcePercentageAutoCompute</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | When ha_admission_control_policy is resourcePercentage, automatically determine available resource percentages by subtracting the average number of host resources represented by the ha_admission_control_host_failure_tolerance setting from the total amount of resources in the cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdmissionControlResourcePercentageCpu">HaAdmissionControlResourcePercentageCpu</a></code> | <code>double</code> | When ha_admission_control_policy is resourcePercentage, this controls the user-defined percentage of CPU resources in the cluster to reserve for failover. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdmissionControlResourcePercentageMemory">HaAdmissionControlResourcePercentageMemory</a></code> | <code>double</code> | When ha_admission_control_policy is resourcePercentage, this controls the user-defined percentage of memory resources in the cluster to reserve for failover. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdmissionControlSlotPolicyExplicitCpu">HaAdmissionControlSlotPolicyExplicitCpu</a></code> | <code>double</code> | When ha_admission_control_policy is slotPolicy, this controls the user-defined CPU slot size, in MHz. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdmissionControlSlotPolicyExplicitMemory">HaAdmissionControlSlotPolicyExplicitMemory</a></code> | <code>double</code> | When ha_admission_control_policy is slotPolicy, this controls the user-defined memory slot size, in MB. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdmissionControlSlotPolicyUseExplicitSize">HaAdmissionControlSlotPolicyUseExplicitSize</a></code> | <code>object</code> | When ha_admission_control_policy is slotPolicy, this setting controls whether or not you wish to supply explicit values to CPU and memory slot sizes. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdmissionControlSlotPolicyUseExplicitSize">HaAdmissionControlSlotPolicyUseExplicitSize</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | When ha_admission_control_policy is slotPolicy, this setting controls whether or not you wish to supply explicit values to CPU and memory slot sizes. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdvancedOptions">HaAdvancedOptions</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Advanced configuration options for vSphere HA. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haDatastoreApdRecoveryAction">HaDatastoreApdRecoveryAction</a></code> | <code>string</code> | When ha_vm_component_protection is enabled, controls the action to take on virtual machines if an APD status on an affected datastore clears in the middle of an APD event. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haDatastoreApdResponse">HaDatastoreApdResponse</a></code> | <code>string</code> | When ha_vm_component_protection is enabled, controls the action to take on virtual machines when the cluster has detected loss to all paths to a relevant datastore. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haDatastoreApdResponseDelay">HaDatastoreApdResponseDelay</a></code> | <code>double</code> | When ha_vm_component_protection is enabled, controls the delay in seconds to wait after an APD timeout event to execute the response action defined in ha_datastore_apd_response. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haDatastorePdlResponse">HaDatastorePdlResponse</a></code> | <code>string</code> | When ha_vm_component_protection is enabled, controls the action to take on virtual machines when the cluster has detected a permanent device loss to a relevant datastore. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haEnabled">HaEnabled</a></code> | <code>object</code> | Enable vSphere HA for this cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haEnabled">HaEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable vSphere HA for this cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haHeartbeatDatastoreIds">HaHeartbeatDatastoreIds</a></code> | <code>string[]</code> | The list of managed object IDs for preferred datastores to use for HA heartbeating. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haHeartbeatDatastorePolicy">HaHeartbeatDatastorePolicy</a></code> | <code>string</code> | The selection policy for HA heartbeat datastores. Can be one of allFeasibleDs, userSelectedDs, or allFeasibleDsWithUserPreference. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haHostIsolationResponse">HaHostIsolationResponse</a></code> | <code>string</code> | The action to take on virtual machines when a host has detected that it has been isolated from the rest of the cluster. |
@@ -2887,49 +2887,49 @@ new ComputeClusterConfig {
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haVmRestartTimeout">HaVmRestartTimeout</a></code> | <code>double</code> | The maximum time, in seconds, that vSphere HA will wait for virtual machines in one priority to be ready before proceeding with the next priority. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.hostClusterExitTimeout">HostClusterExitTimeout</a></code> | <code>double</code> | The timeout for each host maintenance mode operation when removing hosts from a cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.hostImage">HostImage</a></code> | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage">ComputeClusterHostImage</a></code> | host_image block. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.hostManaged">HostManaged</a></code> | <code>object</code> | Must be set if cluster enrollment is managed from host resource. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.hostManaged">HostManaged</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Must be set if cluster enrollment is managed from host resource. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.hostSystemIds">HostSystemIds</a></code> | <code>string[]</code> | The managed object IDs of the hosts to put in the cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs/resources/compute_cluster#id ComputeCluster#id}. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.proactiveHaAutomationLevel">ProactiveHaAutomationLevel</a></code> | <code>string</code> | The DRS behavior for proactive HA recommendations. Can be one of Automated or Manual. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.proactiveHaEnabled">ProactiveHaEnabled</a></code> | <code>object</code> | Enables proactive HA, allowing for vSphere to get HA data from external providers and use DRS to perform remediation. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.proactiveHaEnabled">ProactiveHaEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enables proactive HA, allowing for vSphere to get HA data from external providers and use DRS to perform remediation. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.proactiveHaModerateRemediation">ProactiveHaModerateRemediation</a></code> | <code>string</code> | The configured remediation for moderately degraded hosts. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.proactiveHaProviderIds">ProactiveHaProviderIds</a></code> | <code>string[]</code> | The list of IDs for health update providers configured for this cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.proactiveHaSevereRemediation">ProactiveHaSevereRemediation</a></code> | <code>string</code> | The configured remediation for severely degraded hosts. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.tags">Tags</a></code> | <code>string[]</code> | A list of tag IDs to apply to this object. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanCompressionEnabled">VsanCompressionEnabled</a></code> | <code>object</code> | Whether the vSAN compression service is enabled for the cluster. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanDedupEnabled">VsanDedupEnabled</a></code> | <code>object</code> | Whether the vSAN deduplication service is enabled for the cluster. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanDiskGroup">VsanDiskGroup</a></code> | <code>object</code> | vsan_disk_group block. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanDitEncryptionEnabled">VsanDitEncryptionEnabled</a></code> | <code>object</code> | Whether the vSAN data-in-transit encryption is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanCompressionEnabled">VsanCompressionEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether the vSAN compression service is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanDedupEnabled">VsanDedupEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether the vSAN deduplication service is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanDiskGroup">VsanDiskGroup</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>[]</code> | vsan_disk_group block. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanDitEncryptionEnabled">VsanDitEncryptionEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether the vSAN data-in-transit encryption is enabled for the cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanDitRekeyInterval">VsanDitRekeyInterval</a></code> | <code>double</code> | When vsan_dit_encryption_enabled is enabled, sets the rekey interval of data-in-transit encryption (in minutes). |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanEnabled">VsanEnabled</a></code> | <code>object</code> | Whether the vSAN service is enabled for the cluster. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanEsaEnabled">VsanEsaEnabled</a></code> | <code>object</code> | Whether the vSAN ESA service is enabled for the cluster. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanFaultDomains">VsanFaultDomains</a></code> | <code>object</code> | vsan_fault_domains block. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanNetworkDiagnosticModeEnabled">VsanNetworkDiagnosticModeEnabled</a></code> | <code>object</code> | Whether the vSAN network diagnostic mode is enabled for the cluster. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanPerformanceEnabled">VsanPerformanceEnabled</a></code> | <code>object</code> | Whether the vSAN performance service is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanEnabled">VsanEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether the vSAN service is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanEsaEnabled">VsanEsaEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether the vSAN ESA service is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanFaultDomains">VsanFaultDomains</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a>[]</code> | vsan_fault_domains block. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanNetworkDiagnosticModeEnabled">VsanNetworkDiagnosticModeEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether the vSAN network diagnostic mode is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanPerformanceEnabled">VsanPerformanceEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether the vSAN performance service is enabled for the cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanRemoteDatastoreIds">VsanRemoteDatastoreIds</a></code> | <code>string[]</code> | The managed object IDs of the vSAN datastore to be mounted on the cluster. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanStretchedCluster">VsanStretchedCluster</a></code> | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanStretchedCluster">ComputeClusterVsanStretchedCluster</a></code> | vsan_stretched_cluster block. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanUnmapEnabled">VsanUnmapEnabled</a></code> | <code>object</code> | Whether the vSAN unmap service is enabled for the cluster. |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanVerboseModeEnabled">VsanVerboseModeEnabled</a></code> | <code>object</code> | Whether the vSAN verbose mode is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanUnmapEnabled">VsanUnmapEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether the vSAN unmap service is enabled for the cluster. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanVerboseModeEnabled">VsanVerboseModeEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether the vSAN verbose mode is enabled for the cluster. |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -2976,10 +2976,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -3042,10 +3042,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `DpmEnabled`<sup>Optional</sup> <a name="DpmEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.dpmEnabled"></a>
 
 ```csharp
-public object DpmEnabled { get; set; }
+public bool|IResolvable DpmEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable DPM support for DRS.
 
@@ -3102,10 +3102,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `DrsEnabled`<sup>Optional</sup> <a name="DrsEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.drsEnabled"></a>
 
 ```csharp
-public object DrsEnabled { get; set; }
+public bool|IResolvable DrsEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable DRS for this cluster.
 
@@ -3116,10 +3116,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `DrsEnablePredictiveDrs`<sup>Optional</sup> <a name="DrsEnablePredictiveDrs" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.drsEnablePredictiveDrs"></a>
 
 ```csharp
-public object DrsEnablePredictiveDrs { get; set; }
+public bool|IResolvable DrsEnablePredictiveDrs { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 When true, enables DRS to use data from vRealize Operations Manager to make proactive DRS recommendations.
 
@@ -3130,10 +3130,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `DrsEnableVmOverrides`<sup>Optional</sup> <a name="DrsEnableVmOverrides" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.drsEnableVmOverrides"></a>
 
 ```csharp
-public object DrsEnableVmOverrides { get; set; }
+public bool|IResolvable DrsEnableVmOverrides { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 When true, allows individual VM overrides within this cluster to be set.
 
@@ -3188,10 +3188,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `ForceEvacuateOnDestroy`<sup>Optional</sup> <a name="ForceEvacuateOnDestroy" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.forceEvacuateOnDestroy"></a>
 
 ```csharp
-public object ForceEvacuateOnDestroy { get; set; }
+public bool|IResolvable ForceEvacuateOnDestroy { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Force removal of all hosts in the cluster during destroy and make them standalone hosts.
 
@@ -3268,10 +3268,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `HaAdmissionControlResourcePercentageAutoCompute`<sup>Optional</sup> <a name="HaAdmissionControlResourcePercentageAutoCompute" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdmissionControlResourcePercentageAutoCompute"></a>
 
 ```csharp
-public object HaAdmissionControlResourcePercentageAutoCompute { get; set; }
+public bool|IResolvable HaAdmissionControlResourcePercentageAutoCompute { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 When ha_admission_control_policy is resourcePercentage, automatically determine available resource percentages by subtracting the average number of host resources represented by the ha_admission_control_host_failure_tolerance setting from the total amount of resources in the cluster.
 
@@ -3340,10 +3340,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `HaAdmissionControlSlotPolicyUseExplicitSize`<sup>Optional</sup> <a name="HaAdmissionControlSlotPolicyUseExplicitSize" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haAdmissionControlSlotPolicyUseExplicitSize"></a>
 
 ```csharp
-public object HaAdmissionControlSlotPolicyUseExplicitSize { get; set; }
+public bool|IResolvable HaAdmissionControlSlotPolicyUseExplicitSize { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 When ha_admission_control_policy is slotPolicy, this setting controls whether or not you wish to supply explicit values to CPU and memory slot sizes.
 
@@ -3432,10 +3432,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `HaEnabled`<sup>Optional</sup> <a name="HaEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.haEnabled"></a>
 
 ```csharp
-public object HaEnabled { get; set; }
+public bool|IResolvable HaEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable vSphere HA for this cluster.
 
@@ -3686,10 +3686,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `HostManaged`<sup>Optional</sup> <a name="HostManaged" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.hostManaged"></a>
 
 ```csharp
-public object HostManaged { get; set; }
+public bool|IResolvable HostManaged { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Must be set if cluster enrollment is managed from host resource.
 
@@ -3743,10 +3743,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `ProactiveHaEnabled`<sup>Optional</sup> <a name="ProactiveHaEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.proactiveHaEnabled"></a>
 
 ```csharp
-public object ProactiveHaEnabled { get; set; }
+public bool|IResolvable ProactiveHaEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enables proactive HA, allowing for vSphere to get HA data from external providers and use DRS to perform remediation.
 
@@ -3817,10 +3817,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `VsanCompressionEnabled`<sup>Optional</sup> <a name="VsanCompressionEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanCompressionEnabled"></a>
 
 ```csharp
-public object VsanCompressionEnabled { get; set; }
+public bool|IResolvable VsanCompressionEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether the vSAN compression service is enabled for the cluster.
 
@@ -3831,10 +3831,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `VsanDedupEnabled`<sup>Optional</sup> <a name="VsanDedupEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanDedupEnabled"></a>
 
 ```csharp
-public object VsanDedupEnabled { get; set; }
+public bool|IResolvable VsanDedupEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether the vSAN deduplication service is enabled for the cluster.
 
@@ -3845,10 +3845,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `VsanDiskGroup`<sup>Optional</sup> <a name="VsanDiskGroup" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanDiskGroup"></a>
 
 ```csharp
-public object VsanDiskGroup { get; set; }
+public IResolvable|ComputeClusterVsanDiskGroup[] VsanDiskGroup { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>[]
 
 vsan_disk_group block.
 
@@ -3859,10 +3859,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `VsanDitEncryptionEnabled`<sup>Optional</sup> <a name="VsanDitEncryptionEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanDitEncryptionEnabled"></a>
 
 ```csharp
-public object VsanDitEncryptionEnabled { get; set; }
+public bool|IResolvable VsanDitEncryptionEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether the vSAN data-in-transit encryption is enabled for the cluster.
 
@@ -3887,10 +3887,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `VsanEnabled`<sup>Optional</sup> <a name="VsanEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanEnabled"></a>
 
 ```csharp
-public object VsanEnabled { get; set; }
+public bool|IResolvable VsanEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether the vSAN service is enabled for the cluster.
 
@@ -3901,10 +3901,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `VsanEsaEnabled`<sup>Optional</sup> <a name="VsanEsaEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanEsaEnabled"></a>
 
 ```csharp
-public object VsanEsaEnabled { get; set; }
+public bool|IResolvable VsanEsaEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether the vSAN ESA service is enabled for the cluster.
 
@@ -3915,10 +3915,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `VsanFaultDomains`<sup>Optional</sup> <a name="VsanFaultDomains" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanFaultDomains"></a>
 
 ```csharp
-public object VsanFaultDomains { get; set; }
+public IResolvable|ComputeClusterVsanFaultDomains[] VsanFaultDomains { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a>[]
 
 vsan_fault_domains block.
 
@@ -3929,10 +3929,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `VsanNetworkDiagnosticModeEnabled`<sup>Optional</sup> <a name="VsanNetworkDiagnosticModeEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanNetworkDiagnosticModeEnabled"></a>
 
 ```csharp
-public object VsanNetworkDiagnosticModeEnabled { get; set; }
+public bool|IResolvable VsanNetworkDiagnosticModeEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether the vSAN network diagnostic mode is enabled for the cluster.
 
@@ -3943,10 +3943,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `VsanPerformanceEnabled`<sup>Optional</sup> <a name="VsanPerformanceEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanPerformanceEnabled"></a>
 
 ```csharp
-public object VsanPerformanceEnabled { get; set; }
+public bool|IResolvable VsanPerformanceEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether the vSAN performance service is enabled for the cluster.
 
@@ -3985,10 +3985,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `VsanUnmapEnabled`<sup>Optional</sup> <a name="VsanUnmapEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanUnmapEnabled"></a>
 
 ```csharp
-public object VsanUnmapEnabled { get; set; }
+public bool|IResolvable VsanUnmapEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether the vSAN unmap service is enabled for the cluster.
 
@@ -3999,10 +3999,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `VsanVerboseModeEnabled`<sup>Optional</sup> <a name="VsanVerboseModeEnabled" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterConfig.property.vsanVerboseModeEnabled"></a>
 
 ```csharp
-public object VsanVerboseModeEnabled { get; set; }
+public bool|IResolvable VsanVerboseModeEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether the vSAN verbose mode is enabled for the cluster.
 
@@ -4018,7 +4018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 using HashiCorp.Cdktf.Providers.Vsphere;
 
 new ComputeClusterHostImage {
-    object Component = null,
+    IResolvable|ComputeClusterHostImageComponent[] Component = null,
     string EsxVersion = null
 };
 ```
@@ -4027,7 +4027,7 @@ new ComputeClusterHostImage {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage.property.component">Component</a></code> | <code>object</code> | component block. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage.property.component">Component</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent">ComputeClusterHostImageComponent</a>[]</code> | component block. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage.property.esxVersion">EsxVersion</a></code> | <code>string</code> | The ESXi version which the image is based on. |
 
 ---
@@ -4035,10 +4035,10 @@ new ComputeClusterHostImage {
 ##### `Component`<sup>Optional</sup> <a name="Component" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage.property.component"></a>
 
 ```csharp
-public object Component { get; set; }
+public IResolvable|ComputeClusterHostImageComponent[] Component { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent">ComputeClusterHostImageComponent</a>[]
 
 component block.
 
@@ -4168,7 +4168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 using HashiCorp.Cdktf.Providers.Vsphere;
 
 new ComputeClusterVsanFaultDomains {
-    object FaultDomain = null
+    IResolvable|ComputeClusterVsanFaultDomainsFaultDomain[] FaultDomain = null
 };
 ```
 
@@ -4176,17 +4176,17 @@ new ComputeClusterVsanFaultDomains {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains.property.faultDomain">FaultDomain</a></code> | <code>object</code> | fault_domain block. |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains.property.faultDomain">FaultDomain</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain">ComputeClusterVsanFaultDomainsFaultDomain</a>[]</code> | fault_domain block. |
 
 ---
 
 ##### `FaultDomain`<sup>Optional</sup> <a name="FaultDomain" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains.property.faultDomain"></a>
 
 ```csharp
-public object FaultDomain { get; set; }
+public IResolvable|ComputeClusterVsanFaultDomainsFaultDomain[] FaultDomain { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain">ComputeClusterVsanFaultDomainsFaultDomain</a>[]
 
 fault_domain block.
 
@@ -4465,7 +4465,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent">ComputeClusterHostImageComponent</a>[]</code> | *No description.* |
 
 ---
 
@@ -4496,10 +4496,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ComputeClusterHostImageComponent[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent">ComputeClusterHostImageComponent</a>[]
 
 ---
 
@@ -4750,7 +4750,7 @@ private void ResetVersion()
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.property.versionInput">VersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.property.version">Version</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent">ComputeClusterHostImageComponent</a></code> | *No description.* |
 
 ---
 
@@ -4821,10 +4821,10 @@ public string Version { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ComputeClusterHostImageComponent InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent">ComputeClusterHostImageComponent</a>
 
 ---
 
@@ -5038,12 +5038,12 @@ Returns a reversible string representation.
 ##### `PutComponent` <a name="PutComponent" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.putComponent"></a>
 
 ```csharp
-private void PutComponent(object Value)
+private void PutComponent(IResolvable|ComputeClusterHostImageComponent[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.putComponent.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent">ComputeClusterHostImageComponent</a>[]
 
 ---
 
@@ -5067,7 +5067,7 @@ private void ResetEsxVersion()
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.component">Component</a></code> | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponentList">ComputeClusterHostImageComponentList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.componentInput">ComponentInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.componentInput">ComponentInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent">ComputeClusterHostImageComponent</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.esxVersionInput">EsxVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.esxVersion">EsxVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImage">ComputeClusterHostImage</a></code> | *No description.* |
@@ -5111,10 +5111,10 @@ public ComputeClusterHostImageComponentList Component { get; }
 ##### `ComponentInput`<sup>Optional</sup> <a name="ComponentInput" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageOutputReference.property.componentInput"></a>
 
 ```csharp
-public object ComponentInput { get; }
+public IResolvable|ComputeClusterHostImageComponent[] ComponentInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterHostImageComponent">ComputeClusterHostImageComponent</a>[]
 
 ---
 
@@ -5270,7 +5270,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>[]</code> | *No description.* |
 
 ---
 
@@ -5301,10 +5301,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ComputeClusterVsanDiskGroup[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>[]
 
 ---
 
@@ -5555,7 +5555,7 @@ private void ResetStorage()
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupOutputReference.property.storageInput">StorageInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupOutputReference.property.cache">Cache</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupOutputReference.property.storage">Storage</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a></code> | *No description.* |
 
 ---
 
@@ -5626,10 +5626,10 @@ public string[] Storage { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroupOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ComputeClusterVsanDiskGroup InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanDiskGroup">ComputeClusterVsanDiskGroup</a>
 
 ---
 
@@ -5755,7 +5755,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain">ComputeClusterVsanFaultDomainsFaultDomain</a>[]</code> | *No description.* |
 
 ---
 
@@ -5786,10 +5786,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ComputeClusterVsanFaultDomainsFaultDomain[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain">ComputeClusterVsanFaultDomainsFaultDomain</a>[]
 
 ---
 
@@ -6026,7 +6026,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainOutputReference.property.hostIds">HostIds</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain">ComputeClusterVsanFaultDomainsFaultDomain</a></code> | *No description.* |
 
 ---
 
@@ -6097,10 +6097,10 @@ public string Name { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ComputeClusterVsanFaultDomainsFaultDomain InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain">ComputeClusterVsanFaultDomainsFaultDomain</a>
 
 ---
 
@@ -6226,7 +6226,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a>[]</code> | *No description.* |
 
 ---
 
@@ -6257,10 +6257,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ComputeClusterVsanFaultDomains[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a>[]
 
 ---
 
@@ -6491,12 +6491,12 @@ Returns a reversible string representation.
 ##### `PutFaultDomain` <a name="PutFaultDomain" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsOutputReference.putFaultDomain"></a>
 
 ```csharp
-private void PutFaultDomain(object Value)
+private void PutFaultDomain(IResolvable|ComputeClusterVsanFaultDomainsFaultDomain[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsOutputReference.putFaultDomain.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain">ComputeClusterVsanFaultDomainsFaultDomain</a>[]
 
 ---
 
@@ -6514,8 +6514,8 @@ private void ResetFaultDomain()
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsOutputReference.property.faultDomain">FaultDomain</a></code> | <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomainList">ComputeClusterVsanFaultDomainsFaultDomainList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsOutputReference.property.faultDomainInput">FaultDomainInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsOutputReference.property.faultDomainInput">FaultDomainInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain">ComputeClusterVsanFaultDomainsFaultDomain</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a></code> | *No description.* |
 
 ---
 
@@ -6556,20 +6556,20 @@ public ComputeClusterVsanFaultDomainsFaultDomainList FaultDomain { get; }
 ##### `FaultDomainInput`<sup>Optional</sup> <a name="FaultDomainInput" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsOutputReference.property.faultDomainInput"></a>
 
 ```csharp
-public object FaultDomainInput { get; }
+public IResolvable|ComputeClusterVsanFaultDomainsFaultDomain[] FaultDomainInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsFaultDomain">ComputeClusterVsanFaultDomainsFaultDomain</a>[]
 
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomainsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|ComputeClusterVsanFaultDomains InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-vsphere.computeCluster.ComputeClusterVsanFaultDomains">ComputeClusterVsanFaultDomains</a>
 
 ---
 

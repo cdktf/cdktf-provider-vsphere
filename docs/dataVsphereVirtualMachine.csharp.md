@@ -800,7 +800,7 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -821,21 +821,21 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.annotationInput">AnnotationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.bootDelayInput">BootDelayInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.bootRetryDelayInput">BootRetryDelayInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.bootRetryEnabledInput">BootRetryEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.cpuHotAddEnabledInput">CpuHotAddEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.cpuHotRemoveEnabledInput">CpuHotRemoveEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.bootRetryEnabledInput">BootRetryEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.cpuHotAddEnabledInput">CpuHotAddEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.cpuHotRemoveEnabledInput">CpuHotRemoveEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.cpuLimitInput">CpuLimitInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.cpuPerformanceCountersEnabledInput">CpuPerformanceCountersEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.cpuPerformanceCountersEnabledInput">CpuPerformanceCountersEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.cpuReservationInput">CpuReservationInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.cpuShareCountInput">CpuShareCountInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.cpuShareLevelInput">CpuShareLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.datacenterIdInput">DatacenterIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.efiSecureBootEnabledInput">EfiSecureBootEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.enableDiskUuidInput">EnableDiskUuidInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.enableLoggingInput">EnableLoggingInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.efiSecureBootEnabledInput">EfiSecureBootEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.enableDiskUuidInput">EnableDiskUuidInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.enableLoggingInput">EnableLoggingInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.eptRviModeInput">EptRviModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.extraConfigInput">ExtraConfigInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.extraConfigRebootRequiredInput">ExtraConfigRebootRequiredInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.extraConfigRebootRequiredInput">ExtraConfigRebootRequiredInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.firmwareInput">FirmwareInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.folderInput">FolderInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.guestIdInput">GuestIdInput</a></code> | <code>string</code> | *No description.* |
@@ -844,55 +844,55 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.ideControllerScanCountInput">IdeControllerScanCountInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.latencySensitivityInput">LatencySensitivityInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.memoryHotAddEnabledInput">MemoryHotAddEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.memoryHotAddEnabledInput">MemoryHotAddEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.memoryInput">MemoryInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.memoryLimitInput">MemoryLimitInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.memoryReservationInput">MemoryReservationInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.memoryReservationLockedToMaxInput">MemoryReservationLockedToMaxInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.memoryReservationLockedToMaxInput">MemoryReservationLockedToMaxInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.memoryShareCountInput">MemoryShareCountInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.memoryShareLevelInput">MemoryShareLevelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.moidInput">MoidInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.nestedHvEnabledInput">NestedHvEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.nestedHvEnabledInput">NestedHvEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.numCoresPerSocketInput">NumCoresPerSocketInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.numCpusInput">NumCpusInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.nvmeControllerScanCountInput">NvmeControllerScanCountInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.replaceTriggerInput">ReplaceTriggerInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsAfterPowerOnInput">RunToolsScriptsAfterPowerOnInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsAfterResumeInput">RunToolsScriptsAfterResumeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsBeforeGuestRebootInput">RunToolsScriptsBeforeGuestRebootInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsBeforeGuestShutdownInput">RunToolsScriptsBeforeGuestShutdownInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsBeforeGuestStandbyInput">RunToolsScriptsBeforeGuestStandbyInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsAfterPowerOnInput">RunToolsScriptsAfterPowerOnInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsAfterResumeInput">RunToolsScriptsAfterResumeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsBeforeGuestRebootInput">RunToolsScriptsBeforeGuestRebootInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsBeforeGuestShutdownInput">RunToolsScriptsBeforeGuestShutdownInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsBeforeGuestStandbyInput">RunToolsScriptsBeforeGuestStandbyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.sataControllerScanCountInput">SataControllerScanCountInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.scsiControllerScanCountInput">ScsiControllerScanCountInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.storagePolicyIdInput">StoragePolicyIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.swapPlacementPolicyInput">SwapPlacementPolicyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.syncTimeWithHostInput">SyncTimeWithHostInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.syncTimeWithHostPeriodicallyInput">SyncTimeWithHostPeriodicallyInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.syncTimeWithHostInput">SyncTimeWithHostInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.syncTimeWithHostPeriodicallyInput">SyncTimeWithHostPeriodicallyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.toolsUpgradePolicyInput">ToolsUpgradePolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.uuidInput">UuidInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.vappInput">VappInput</a></code> | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineVapp">DataVsphereVirtualMachineVapp</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.vbsEnabledInput">VbsEnabledInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.vvtdEnabledInput">VvtdEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.vbsEnabledInput">VbsEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.vvtdEnabledInput">VvtdEnabledInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.alternateGuestName">AlternateGuestName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.annotation">Annotation</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.bootDelay">BootDelay</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.bootRetryDelay">BootRetryDelay</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.bootRetryEnabled">BootRetryEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.cpuHotAddEnabled">CpuHotAddEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.cpuHotRemoveEnabled">CpuHotRemoveEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.bootRetryEnabled">BootRetryEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.cpuHotAddEnabled">CpuHotAddEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.cpuHotRemoveEnabled">CpuHotRemoveEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.cpuLimit">CpuLimit</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.cpuPerformanceCountersEnabled">CpuPerformanceCountersEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.cpuPerformanceCountersEnabled">CpuPerformanceCountersEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.cpuReservation">CpuReservation</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.cpuShareCount">CpuShareCount</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.cpuShareLevel">CpuShareLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.datacenterId">DatacenterId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.efiSecureBootEnabled">EfiSecureBootEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.enableDiskUuid">EnableDiskUuid</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.enableLogging">EnableLogging</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.efiSecureBootEnabled">EfiSecureBootEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.enableDiskUuid">EnableDiskUuid</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.enableLogging">EnableLogging</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.eptRviMode">EptRviMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.extraConfig">ExtraConfig</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.extraConfigRebootRequired">ExtraConfigRebootRequired</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.extraConfigRebootRequired">ExtraConfigRebootRequired</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.firmware">Firmware</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.folder">Folder</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.guestId">GuestId</a></code> | <code>string</code> | *No description.* |
@@ -902,34 +902,34 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.ideControllerScanCount">IdeControllerScanCount</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.latencySensitivity">LatencySensitivity</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.memory">Memory</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.memoryHotAddEnabled">MemoryHotAddEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.memoryHotAddEnabled">MemoryHotAddEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.memoryLimit">MemoryLimit</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.memoryReservation">MemoryReservation</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.memoryReservationLockedToMax">MemoryReservationLockedToMax</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.memoryReservationLockedToMax">MemoryReservationLockedToMax</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.memoryShareCount">MemoryShareCount</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.memoryShareLevel">MemoryShareLevel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.moid">Moid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.nestedHvEnabled">NestedHvEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.nestedHvEnabled">NestedHvEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.numCoresPerSocket">NumCoresPerSocket</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.numCpus">NumCpus</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.nvmeControllerScanCount">NvmeControllerScanCount</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.replaceTrigger">ReplaceTrigger</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsAfterPowerOn">RunToolsScriptsAfterPowerOn</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsAfterResume">RunToolsScriptsAfterResume</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsBeforeGuestReboot">RunToolsScriptsBeforeGuestReboot</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsBeforeGuestShutdown">RunToolsScriptsBeforeGuestShutdown</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsBeforeGuestStandby">RunToolsScriptsBeforeGuestStandby</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsAfterPowerOn">RunToolsScriptsAfterPowerOn</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsAfterResume">RunToolsScriptsAfterResume</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsBeforeGuestReboot">RunToolsScriptsBeforeGuestReboot</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsBeforeGuestShutdown">RunToolsScriptsBeforeGuestShutdown</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsBeforeGuestStandby">RunToolsScriptsBeforeGuestStandby</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.sataControllerScanCount">SataControllerScanCount</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.scsiControllerScanCount">ScsiControllerScanCount</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.storagePolicyId">StoragePolicyId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.swapPlacementPolicy">SwapPlacementPolicy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.syncTimeWithHost">SyncTimeWithHost</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.syncTimeWithHostPeriodically">SyncTimeWithHostPeriodically</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.syncTimeWithHost">SyncTimeWithHost</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.syncTimeWithHostPeriodically">SyncTimeWithHostPeriodically</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.toolsUpgradePolicy">ToolsUpgradePolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.uuid">Uuid</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.vbsEnabled">VbsEnabled</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.vvtdEnabled">VvtdEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.vbsEnabled">VbsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.vvtdEnabled">VvtdEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1008,10 +1008,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1218,30 +1218,30 @@ public double BootRetryDelayInput { get; }
 ##### `BootRetryEnabledInput`<sup>Optional</sup> <a name="BootRetryEnabledInput" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.bootRetryEnabledInput"></a>
 
 ```csharp
-public object BootRetryEnabledInput { get; }
+public bool|IResolvable BootRetryEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `CpuHotAddEnabledInput`<sup>Optional</sup> <a name="CpuHotAddEnabledInput" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.cpuHotAddEnabledInput"></a>
 
 ```csharp
-public object CpuHotAddEnabledInput { get; }
+public bool|IResolvable CpuHotAddEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `CpuHotRemoveEnabledInput`<sup>Optional</sup> <a name="CpuHotRemoveEnabledInput" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.cpuHotRemoveEnabledInput"></a>
 
 ```csharp
-public object CpuHotRemoveEnabledInput { get; }
+public bool|IResolvable CpuHotRemoveEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1258,10 +1258,10 @@ public double CpuLimitInput { get; }
 ##### `CpuPerformanceCountersEnabledInput`<sup>Optional</sup> <a name="CpuPerformanceCountersEnabledInput" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.cpuPerformanceCountersEnabledInput"></a>
 
 ```csharp
-public object CpuPerformanceCountersEnabledInput { get; }
+public bool|IResolvable CpuPerformanceCountersEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1308,30 +1308,30 @@ public string DatacenterIdInput { get; }
 ##### `EfiSecureBootEnabledInput`<sup>Optional</sup> <a name="EfiSecureBootEnabledInput" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.efiSecureBootEnabledInput"></a>
 
 ```csharp
-public object EfiSecureBootEnabledInput { get; }
+public bool|IResolvable EfiSecureBootEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableDiskUuidInput`<sup>Optional</sup> <a name="EnableDiskUuidInput" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.enableDiskUuidInput"></a>
 
 ```csharp
-public object EnableDiskUuidInput { get; }
+public bool|IResolvable EnableDiskUuidInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableLoggingInput`<sup>Optional</sup> <a name="EnableLoggingInput" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.enableLoggingInput"></a>
 
 ```csharp
-public object EnableLoggingInput { get; }
+public bool|IResolvable EnableLoggingInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1358,10 +1358,10 @@ public System.Collections.Generic.IDictionary<string, string> ExtraConfigInput {
 ##### `ExtraConfigRebootRequiredInput`<sup>Optional</sup> <a name="ExtraConfigRebootRequiredInput" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.extraConfigRebootRequiredInput"></a>
 
 ```csharp
-public object ExtraConfigRebootRequiredInput { get; }
+public bool|IResolvable ExtraConfigRebootRequiredInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1448,10 +1448,10 @@ public string LatencySensitivityInput { get; }
 ##### `MemoryHotAddEnabledInput`<sup>Optional</sup> <a name="MemoryHotAddEnabledInput" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.memoryHotAddEnabledInput"></a>
 
 ```csharp
-public object MemoryHotAddEnabledInput { get; }
+public bool|IResolvable MemoryHotAddEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1488,10 +1488,10 @@ public double MemoryReservationInput { get; }
 ##### `MemoryReservationLockedToMaxInput`<sup>Optional</sup> <a name="MemoryReservationLockedToMaxInput" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.memoryReservationLockedToMaxInput"></a>
 
 ```csharp
-public object MemoryReservationLockedToMaxInput { get; }
+public bool|IResolvable MemoryReservationLockedToMaxInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1538,10 +1538,10 @@ public string NameInput { get; }
 ##### `NestedHvEnabledInput`<sup>Optional</sup> <a name="NestedHvEnabledInput" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.nestedHvEnabledInput"></a>
 
 ```csharp
-public object NestedHvEnabledInput { get; }
+public bool|IResolvable NestedHvEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1588,50 +1588,50 @@ public string ReplaceTriggerInput { get; }
 ##### `RunToolsScriptsAfterPowerOnInput`<sup>Optional</sup> <a name="RunToolsScriptsAfterPowerOnInput" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsAfterPowerOnInput"></a>
 
 ```csharp
-public object RunToolsScriptsAfterPowerOnInput { get; }
+public bool|IResolvable RunToolsScriptsAfterPowerOnInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `RunToolsScriptsAfterResumeInput`<sup>Optional</sup> <a name="RunToolsScriptsAfterResumeInput" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsAfterResumeInput"></a>
 
 ```csharp
-public object RunToolsScriptsAfterResumeInput { get; }
+public bool|IResolvable RunToolsScriptsAfterResumeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `RunToolsScriptsBeforeGuestRebootInput`<sup>Optional</sup> <a name="RunToolsScriptsBeforeGuestRebootInput" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsBeforeGuestRebootInput"></a>
 
 ```csharp
-public object RunToolsScriptsBeforeGuestRebootInput { get; }
+public bool|IResolvable RunToolsScriptsBeforeGuestRebootInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `RunToolsScriptsBeforeGuestShutdownInput`<sup>Optional</sup> <a name="RunToolsScriptsBeforeGuestShutdownInput" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsBeforeGuestShutdownInput"></a>
 
 ```csharp
-public object RunToolsScriptsBeforeGuestShutdownInput { get; }
+public bool|IResolvable RunToolsScriptsBeforeGuestShutdownInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `RunToolsScriptsBeforeGuestStandbyInput`<sup>Optional</sup> <a name="RunToolsScriptsBeforeGuestStandbyInput" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsBeforeGuestStandbyInput"></a>
 
 ```csharp
-public object RunToolsScriptsBeforeGuestStandbyInput { get; }
+public bool|IResolvable RunToolsScriptsBeforeGuestStandbyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1678,20 +1678,20 @@ public string SwapPlacementPolicyInput { get; }
 ##### `SyncTimeWithHostInput`<sup>Optional</sup> <a name="SyncTimeWithHostInput" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.syncTimeWithHostInput"></a>
 
 ```csharp
-public object SyncTimeWithHostInput { get; }
+public bool|IResolvable SyncTimeWithHostInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SyncTimeWithHostPeriodicallyInput`<sup>Optional</sup> <a name="SyncTimeWithHostPeriodicallyInput" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.syncTimeWithHostPeriodicallyInput"></a>
 
 ```csharp
-public object SyncTimeWithHostPeriodicallyInput { get; }
+public bool|IResolvable SyncTimeWithHostPeriodicallyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1728,20 +1728,20 @@ public DataVsphereVirtualMachineVapp VappInput { get; }
 ##### `VbsEnabledInput`<sup>Optional</sup> <a name="VbsEnabledInput" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.vbsEnabledInput"></a>
 
 ```csharp
-public object VbsEnabledInput { get; }
+public bool|IResolvable VbsEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `VvtdEnabledInput`<sup>Optional</sup> <a name="VvtdEnabledInput" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.vvtdEnabledInput"></a>
 
 ```csharp
-public object VvtdEnabledInput { get; }
+public bool|IResolvable VvtdEnabledInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1788,30 +1788,30 @@ public double BootRetryDelay { get; }
 ##### `BootRetryEnabled`<sup>Required</sup> <a name="BootRetryEnabled" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.bootRetryEnabled"></a>
 
 ```csharp
-public object BootRetryEnabled { get; }
+public bool|IResolvable BootRetryEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `CpuHotAddEnabled`<sup>Required</sup> <a name="CpuHotAddEnabled" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.cpuHotAddEnabled"></a>
 
 ```csharp
-public object CpuHotAddEnabled { get; }
+public bool|IResolvable CpuHotAddEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `CpuHotRemoveEnabled`<sup>Required</sup> <a name="CpuHotRemoveEnabled" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.cpuHotRemoveEnabled"></a>
 
 ```csharp
-public object CpuHotRemoveEnabled { get; }
+public bool|IResolvable CpuHotRemoveEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1828,10 +1828,10 @@ public double CpuLimit { get; }
 ##### `CpuPerformanceCountersEnabled`<sup>Required</sup> <a name="CpuPerformanceCountersEnabled" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.cpuPerformanceCountersEnabled"></a>
 
 ```csharp
-public object CpuPerformanceCountersEnabled { get; }
+public bool|IResolvable CpuPerformanceCountersEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1878,30 +1878,30 @@ public string DatacenterId { get; }
 ##### `EfiSecureBootEnabled`<sup>Required</sup> <a name="EfiSecureBootEnabled" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.efiSecureBootEnabled"></a>
 
 ```csharp
-public object EfiSecureBootEnabled { get; }
+public bool|IResolvable EfiSecureBootEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableDiskUuid`<sup>Required</sup> <a name="EnableDiskUuid" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.enableDiskUuid"></a>
 
 ```csharp
-public object EnableDiskUuid { get; }
+public bool|IResolvable EnableDiskUuid { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableLogging`<sup>Required</sup> <a name="EnableLogging" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.enableLogging"></a>
 
 ```csharp
-public object EnableLogging { get; }
+public bool|IResolvable EnableLogging { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1928,10 +1928,10 @@ public System.Collections.Generic.IDictionary<string, string> ExtraConfig { get;
 ##### `ExtraConfigRebootRequired`<sup>Required</sup> <a name="ExtraConfigRebootRequired" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.extraConfigRebootRequired"></a>
 
 ```csharp
-public object ExtraConfigRebootRequired { get; }
+public bool|IResolvable ExtraConfigRebootRequired { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2028,10 +2028,10 @@ public double Memory { get; }
 ##### `MemoryHotAddEnabled`<sup>Required</sup> <a name="MemoryHotAddEnabled" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.memoryHotAddEnabled"></a>
 
 ```csharp
-public object MemoryHotAddEnabled { get; }
+public bool|IResolvable MemoryHotAddEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2058,10 +2058,10 @@ public double MemoryReservation { get; }
 ##### `MemoryReservationLockedToMax`<sup>Required</sup> <a name="MemoryReservationLockedToMax" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.memoryReservationLockedToMax"></a>
 
 ```csharp
-public object MemoryReservationLockedToMax { get; }
+public bool|IResolvable MemoryReservationLockedToMax { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2108,10 +2108,10 @@ public string Name { get; }
 ##### `NestedHvEnabled`<sup>Required</sup> <a name="NestedHvEnabled" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.nestedHvEnabled"></a>
 
 ```csharp
-public object NestedHvEnabled { get; }
+public bool|IResolvable NestedHvEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2158,50 +2158,50 @@ public string ReplaceTrigger { get; }
 ##### `RunToolsScriptsAfterPowerOn`<sup>Required</sup> <a name="RunToolsScriptsAfterPowerOn" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsAfterPowerOn"></a>
 
 ```csharp
-public object RunToolsScriptsAfterPowerOn { get; }
+public bool|IResolvable RunToolsScriptsAfterPowerOn { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `RunToolsScriptsAfterResume`<sup>Required</sup> <a name="RunToolsScriptsAfterResume" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsAfterResume"></a>
 
 ```csharp
-public object RunToolsScriptsAfterResume { get; }
+public bool|IResolvable RunToolsScriptsAfterResume { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `RunToolsScriptsBeforeGuestReboot`<sup>Required</sup> <a name="RunToolsScriptsBeforeGuestReboot" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsBeforeGuestReboot"></a>
 
 ```csharp
-public object RunToolsScriptsBeforeGuestReboot { get; }
+public bool|IResolvable RunToolsScriptsBeforeGuestReboot { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `RunToolsScriptsBeforeGuestShutdown`<sup>Required</sup> <a name="RunToolsScriptsBeforeGuestShutdown" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsBeforeGuestShutdown"></a>
 
 ```csharp
-public object RunToolsScriptsBeforeGuestShutdown { get; }
+public bool|IResolvable RunToolsScriptsBeforeGuestShutdown { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `RunToolsScriptsBeforeGuestStandby`<sup>Required</sup> <a name="RunToolsScriptsBeforeGuestStandby" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.runToolsScriptsBeforeGuestStandby"></a>
 
 ```csharp
-public object RunToolsScriptsBeforeGuestStandby { get; }
+public bool|IResolvable RunToolsScriptsBeforeGuestStandby { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2248,20 +2248,20 @@ public string SwapPlacementPolicy { get; }
 ##### `SyncTimeWithHost`<sup>Required</sup> <a name="SyncTimeWithHost" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.syncTimeWithHost"></a>
 
 ```csharp
-public object SyncTimeWithHost { get; }
+public bool|IResolvable SyncTimeWithHost { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `SyncTimeWithHostPeriodically`<sup>Required</sup> <a name="SyncTimeWithHostPeriodically" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.syncTimeWithHostPeriodically"></a>
 
 ```csharp
-public object SyncTimeWithHostPeriodically { get; }
+public bool|IResolvable SyncTimeWithHostPeriodically { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2288,20 +2288,20 @@ public string Uuid { get; }
 ##### `VbsEnabled`<sup>Required</sup> <a name="VbsEnabled" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.vbsEnabled"></a>
 
 ```csharp
-public object VbsEnabled { get; }
+public bool|IResolvable VbsEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `VvtdEnabled`<sup>Required</sup> <a name="VvtdEnabled" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachine.property.vvtdEnabled"></a>
 
 ```csharp
-public object VvtdEnabled { get; }
+public bool|IResolvable VvtdEnabled { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2333,32 +2333,32 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Vsphere;
 
 new DataVsphereVirtualMachineConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string AlternateGuestName = null,
     string Annotation = null,
     double BootDelay = null,
     double BootRetryDelay = null,
-    object BootRetryEnabled = null,
-    object CpuHotAddEnabled = null,
-    object CpuHotRemoveEnabled = null,
+    bool|IResolvable BootRetryEnabled = null,
+    bool|IResolvable CpuHotAddEnabled = null,
+    bool|IResolvable CpuHotRemoveEnabled = null,
     double CpuLimit = null,
-    object CpuPerformanceCountersEnabled = null,
+    bool|IResolvable CpuPerformanceCountersEnabled = null,
     double CpuReservation = null,
     double CpuShareCount = null,
     string CpuShareLevel = null,
     string DatacenterId = null,
-    object EfiSecureBootEnabled = null,
-    object EnableDiskUuid = null,
-    object EnableLogging = null,
+    bool|IResolvable EfiSecureBootEnabled = null,
+    bool|IResolvable EnableDiskUuid = null,
+    bool|IResolvable EnableLogging = null,
     string EptRviMode = null,
     System.Collections.Generic.IDictionary<string, string> ExtraConfig = null,
-    object ExtraConfigRebootRequired = null,
+    bool|IResolvable ExtraConfigRebootRequired = null,
     string Firmware = null,
     string Folder = null,
     string GuestId = null,
@@ -2368,35 +2368,35 @@ new DataVsphereVirtualMachineConfig {
     double IdeControllerScanCount = null,
     string LatencySensitivity = null,
     double Memory = null,
-    object MemoryHotAddEnabled = null,
+    bool|IResolvable MemoryHotAddEnabled = null,
     double MemoryLimit = null,
     double MemoryReservation = null,
-    object MemoryReservationLockedToMax = null,
+    bool|IResolvable MemoryReservationLockedToMax = null,
     double MemoryShareCount = null,
     string MemoryShareLevel = null,
     string Moid = null,
     string Name = null,
-    object NestedHvEnabled = null,
+    bool|IResolvable NestedHvEnabled = null,
     double NumCoresPerSocket = null,
     double NumCpus = null,
     double NvmeControllerScanCount = null,
     string ReplaceTrigger = null,
-    object RunToolsScriptsAfterPowerOn = null,
-    object RunToolsScriptsAfterResume = null,
-    object RunToolsScriptsBeforeGuestReboot = null,
-    object RunToolsScriptsBeforeGuestShutdown = null,
-    object RunToolsScriptsBeforeGuestStandby = null,
+    bool|IResolvable RunToolsScriptsAfterPowerOn = null,
+    bool|IResolvable RunToolsScriptsAfterResume = null,
+    bool|IResolvable RunToolsScriptsBeforeGuestReboot = null,
+    bool|IResolvable RunToolsScriptsBeforeGuestShutdown = null,
+    bool|IResolvable RunToolsScriptsBeforeGuestStandby = null,
     double SataControllerScanCount = null,
     double ScsiControllerScanCount = null,
     string StoragePolicyId = null,
     string SwapPlacementPolicy = null,
-    object SyncTimeWithHost = null,
-    object SyncTimeWithHostPeriodically = null,
+    bool|IResolvable SyncTimeWithHost = null,
+    bool|IResolvable SyncTimeWithHostPeriodically = null,
     string ToolsUpgradePolicy = null,
     string Uuid = null,
     DataVsphereVirtualMachineVapp Vapp = null,
-    object VbsEnabled = null,
-    object VvtdEnabled = null
+    bool|IResolvable VbsEnabled = null,
+    bool|IResolvable VvtdEnabled = null
 };
 ```
 
@@ -2404,32 +2404,32 @@ new DataVsphereVirtualMachineConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.alternateGuestName">AlternateGuestName</a></code> | <code>string</code> | The guest name for the operating system when guest_id is otherGuest or otherGuest64. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.annotation">Annotation</a></code> | <code>string</code> | User-provided description of the virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.bootDelay">BootDelay</a></code> | <code>double</code> | The number of milliseconds to wait before starting the boot sequence. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.bootRetryDelay">BootRetryDelay</a></code> | <code>double</code> | The number of milliseconds to wait before retrying the boot sequence. This only valid if boot_retry_enabled is true. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.bootRetryEnabled">BootRetryEnabled</a></code> | <code>object</code> | If set to true, a virtual machine that fails to boot will try again after the delay defined in boot_retry_delay. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.cpuHotAddEnabled">CpuHotAddEnabled</a></code> | <code>object</code> | Allow CPUs to be added to this virtual machine while it is running. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.cpuHotRemoveEnabled">CpuHotRemoveEnabled</a></code> | <code>object</code> | Allow CPUs to be added to this virtual machine while it is running. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.bootRetryEnabled">BootRetryEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set to true, a virtual machine that fails to boot will try again after the delay defined in boot_retry_delay. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.cpuHotAddEnabled">CpuHotAddEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow CPUs to be added to this virtual machine while it is running. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.cpuHotRemoveEnabled">CpuHotRemoveEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow CPUs to be added to this virtual machine while it is running. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.cpuLimit">CpuLimit</a></code> | <code>double</code> | The maximum amount of memory (in MB) or CPU (in MHz) that this virtual machine can consume, regardless of available resources. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.cpuPerformanceCountersEnabled">CpuPerformanceCountersEnabled</a></code> | <code>object</code> | Enable CPU performance counters on this virtual machine. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.cpuPerformanceCountersEnabled">CpuPerformanceCountersEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable CPU performance counters on this virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.cpuReservation">CpuReservation</a></code> | <code>double</code> | The amount of memory (in MB) or CPU (in MHz) that this virtual machine is guaranteed. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.cpuShareCount">CpuShareCount</a></code> | <code>double</code> | The amount of shares to allocate to cpu for a custom share level. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.cpuShareLevel">CpuShareLevel</a></code> | <code>string</code> | The allocation level for cpu resources. Can be one of high, low, normal, or custom. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.datacenterId">DatacenterId</a></code> | <code>string</code> | The managed object ID of the datacenter the virtual machine is in. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.efiSecureBootEnabled">EfiSecureBootEnabled</a></code> | <code>object</code> | When the boot type set in firmware is efi, this enables EFI secure boot. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.enableDiskUuid">EnableDiskUuid</a></code> | <code>object</code> | Expose the UUIDs of attached virtual disks to the virtual machine, allowing access to them in the guest. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.enableLogging">EnableLogging</a></code> | <code>object</code> | Enable logging on this virtual machine. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.efiSecureBootEnabled">EfiSecureBootEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | When the boot type set in firmware is efi, this enables EFI secure boot. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.enableDiskUuid">EnableDiskUuid</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Expose the UUIDs of attached virtual disks to the virtual machine, allowing access to them in the guest. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.enableLogging">EnableLogging</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable logging on this virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.eptRviMode">EptRviMode</a></code> | <code>string</code> | The EPT/RVI (hardware memory virtualization) setting for this virtual machine. Can be one of automatic, on, or off. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.extraConfig">ExtraConfig</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Extra configuration data for this virtual machine. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.extraConfigRebootRequired">ExtraConfigRebootRequired</a></code> | <code>object</code> | Allow the virtual machine to be rebooted when a change to `extra_config` occurs. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.extraConfigRebootRequired">ExtraConfigRebootRequired</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow the virtual machine to be rebooted when a change to `extra_config` occurs. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.firmware">Firmware</a></code> | <code>string</code> | The firmware interface to use on the virtual machine. Can be one of bios or efi. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.folder">Folder</a></code> | <code>string</code> | The name of the folder the virtual machine is in. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.guestId">GuestId</a></code> | <code>string</code> | The guest ID for the operating system. |
@@ -2439,55 +2439,55 @@ new DataVsphereVirtualMachineConfig {
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.ideControllerScanCount">IdeControllerScanCount</a></code> | <code>double</code> | The number of IDE controllers to scan for disk sizes and controller types on. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.latencySensitivity">LatencySensitivity</a></code> | <code>string</code> | Controls the scheduling delay of the virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.memory">Memory</a></code> | <code>double</code> | The size of the virtual machine's memory, in MB. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.memoryHotAddEnabled">MemoryHotAddEnabled</a></code> | <code>object</code> | Allow memory to be added to this virtual machine while it is running. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.memoryHotAddEnabled">MemoryHotAddEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow memory to be added to this virtual machine while it is running. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.memoryLimit">MemoryLimit</a></code> | <code>double</code> | The maximum amount of memory (in MB) or CPU (in MHz) that this virtual machine can consume, regardless of available resources. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.memoryReservation">MemoryReservation</a></code> | <code>double</code> | The amount of memory (in MB) or CPU (in MHz) that this virtual machine is guaranteed. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.memoryReservationLockedToMax">MemoryReservationLockedToMax</a></code> | <code>object</code> | If set true, memory resource reservation for this virtual machine will always be equal to the virtual machine's memory size;increases in memory size will be rejected when a corresponding reservation increase is not possible. This feature may only be enabled if it is currently possible to reserve all of the virtual machine's memory. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.memoryReservationLockedToMax">MemoryReservationLockedToMax</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set true, memory resource reservation for this virtual machine will always be equal to the virtual machine's memory size;increases in memory size will be rejected when a corresponding reservation increase is not possible. This feature may only be enabled if it is currently possible to reserve all of the virtual machine's memory. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.memoryShareCount">MemoryShareCount</a></code> | <code>double</code> | The amount of shares to allocate to memory for a custom share level. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.memoryShareLevel">MemoryShareLevel</a></code> | <code>string</code> | The allocation level for memory resources. Can be one of high, low, normal, or custom. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.moid">Moid</a></code> | <code>string</code> | The machine object ID from VMware vSphere. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.name">Name</a></code> | <code>string</code> | The name of this virtual machine. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.nestedHvEnabled">NestedHvEnabled</a></code> | <code>object</code> | Enable nested hardware virtualization on this virtual machine, facilitating nested virtualization in the guest. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.nestedHvEnabled">NestedHvEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable nested hardware virtualization on this virtual machine, facilitating nested virtualization in the guest. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.numCoresPerSocket">NumCoresPerSocket</a></code> | <code>double</code> | The number of cores to distribute amongst the CPUs in this virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.numCpus">NumCpus</a></code> | <code>double</code> | The number of virtual processors to assign to this virtual machine. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.nvmeControllerScanCount">NvmeControllerScanCount</a></code> | <code>double</code> | The number of NVMe controllers to scan for disk sizes and controller types on. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.replaceTrigger">ReplaceTrigger</a></code> | <code>string</code> | Triggers replacement of resource whenever it changes. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.runToolsScriptsAfterPowerOn">RunToolsScriptsAfterPowerOn</a></code> | <code>object</code> | Enable the run of scripts after virtual machine power-on when VMware Tools is installed. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.runToolsScriptsAfterResume">RunToolsScriptsAfterResume</a></code> | <code>object</code> | Enable the run of scripts after virtual machine resume when when VMware Tools is installed. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.runToolsScriptsBeforeGuestReboot">RunToolsScriptsBeforeGuestReboot</a></code> | <code>object</code> | Enable the run of scripts before guest operating system reboot when VMware Tools is installed. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.runToolsScriptsBeforeGuestShutdown">RunToolsScriptsBeforeGuestShutdown</a></code> | <code>object</code> | Enable the run of scripts before guest operating system shutdown when VMware Tools is installed. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.runToolsScriptsBeforeGuestStandby">RunToolsScriptsBeforeGuestStandby</a></code> | <code>object</code> | Enable the run of scripts before guest operating system standby when VMware Tools is installed. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.runToolsScriptsAfterPowerOn">RunToolsScriptsAfterPowerOn</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable the run of scripts after virtual machine power-on when VMware Tools is installed. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.runToolsScriptsAfterResume">RunToolsScriptsAfterResume</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable the run of scripts after virtual machine resume when when VMware Tools is installed. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.runToolsScriptsBeforeGuestReboot">RunToolsScriptsBeforeGuestReboot</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable the run of scripts before guest operating system reboot when VMware Tools is installed. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.runToolsScriptsBeforeGuestShutdown">RunToolsScriptsBeforeGuestShutdown</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable the run of scripts before guest operating system shutdown when VMware Tools is installed. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.runToolsScriptsBeforeGuestStandby">RunToolsScriptsBeforeGuestStandby</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable the run of scripts before guest operating system standby when VMware Tools is installed. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.sataControllerScanCount">SataControllerScanCount</a></code> | <code>double</code> | The number of SATA controllers to scan for disk sizes and controller types on. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.scsiControllerScanCount">ScsiControllerScanCount</a></code> | <code>double</code> | The number of SCSI controllers to scan for disk sizes and controller types on. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.storagePolicyId">StoragePolicyId</a></code> | <code>string</code> | The ID of the storage policy to assign to the virtual machine home directory. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.swapPlacementPolicy">SwapPlacementPolicy</a></code> | <code>string</code> | The swap file placement policy for this virtual machine. Can be one of inherit, hostLocal, or vmDirectory. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.syncTimeWithHost">SyncTimeWithHost</a></code> | <code>object</code> | Enable guest clock synchronization with the host. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.syncTimeWithHostPeriodically">SyncTimeWithHostPeriodically</a></code> | <code>object</code> | Enable periodic clock synchronization with the host. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.syncTimeWithHost">SyncTimeWithHost</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable guest clock synchronization with the host. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.syncTimeWithHostPeriodically">SyncTimeWithHostPeriodically</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable periodic clock synchronization with the host. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.toolsUpgradePolicy">ToolsUpgradePolicy</a></code> | <code>string</code> | Set the upgrade policy for VMware Tools. Can be one of `manual` or `upgradeAtPowerCycle`. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.uuid">Uuid</a></code> | <code>string</code> | The UUID of the virtual machine. Also exposed as the ID of the resource. |
 | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.vapp">Vapp</a></code> | <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineVapp">DataVsphereVirtualMachineVapp</a></code> | vapp block. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.vbsEnabled">VbsEnabled</a></code> | <code>object</code> | Flag to specify if Virtualization-based security is enabled for this virtual machine. |
-| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.vvtdEnabled">VvtdEnabled</a></code> | <code>object</code> | Flag to specify if I/O MMU virtualization, also called Intel Virtualization Technology for Directed I/O (VT-d) and AMD I/O Virtualization (AMD-Vi or IOMMU), is enabled. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.vbsEnabled">VbsEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Flag to specify if Virtualization-based security is enabled for this virtual machine. |
+| <code><a href="#@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.vvtdEnabled">VvtdEnabled</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Flag to specify if I/O MMU virtualization, also called Intel Virtualization Technology for Directed I/O (VT-d) and AMD I/O Virtualization (AMD-Vi or IOMMU), is enabled. |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -2534,10 +2534,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -2600,10 +2600,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `BootRetryEnabled`<sup>Optional</sup> <a name="BootRetryEnabled" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.bootRetryEnabled"></a>
 
 ```csharp
-public object BootRetryEnabled { get; set; }
+public bool|IResolvable BootRetryEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set to true, a virtual machine that fails to boot will try again after the delay defined in boot_retry_delay.
 
@@ -2614,10 +2614,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `CpuHotAddEnabled`<sup>Optional</sup> <a name="CpuHotAddEnabled" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.cpuHotAddEnabled"></a>
 
 ```csharp
-public object CpuHotAddEnabled { get; set; }
+public bool|IResolvable CpuHotAddEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow CPUs to be added to this virtual machine while it is running.
 
@@ -2628,10 +2628,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `CpuHotRemoveEnabled`<sup>Optional</sup> <a name="CpuHotRemoveEnabled" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.cpuHotRemoveEnabled"></a>
 
 ```csharp
-public object CpuHotRemoveEnabled { get; set; }
+public bool|IResolvable CpuHotRemoveEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow CPUs to be added to this virtual machine while it is running.
 
@@ -2656,10 +2656,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `CpuPerformanceCountersEnabled`<sup>Optional</sup> <a name="CpuPerformanceCountersEnabled" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.cpuPerformanceCountersEnabled"></a>
 
 ```csharp
-public object CpuPerformanceCountersEnabled { get; set; }
+public bool|IResolvable CpuPerformanceCountersEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable CPU performance counters on this virtual machine.
 
@@ -2728,10 +2728,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `EfiSecureBootEnabled`<sup>Optional</sup> <a name="EfiSecureBootEnabled" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.efiSecureBootEnabled"></a>
 
 ```csharp
-public object EfiSecureBootEnabled { get; set; }
+public bool|IResolvable EfiSecureBootEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 When the boot type set in firmware is efi, this enables EFI secure boot.
 
@@ -2742,10 +2742,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `EnableDiskUuid`<sup>Optional</sup> <a name="EnableDiskUuid" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.enableDiskUuid"></a>
 
 ```csharp
-public object EnableDiskUuid { get; set; }
+public bool|IResolvable EnableDiskUuid { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Expose the UUIDs of attached virtual disks to the virtual machine, allowing access to them in the guest.
 
@@ -2756,10 +2756,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `EnableLogging`<sup>Optional</sup> <a name="EnableLogging" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.enableLogging"></a>
 
 ```csharp
-public object EnableLogging { get; set; }
+public bool|IResolvable EnableLogging { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable logging on this virtual machine.
 
@@ -2800,10 +2800,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `ExtraConfigRebootRequired`<sup>Optional</sup> <a name="ExtraConfigRebootRequired" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.extraConfigRebootRequired"></a>
 
 ```csharp
-public object ExtraConfigRebootRequired { get; set; }
+public bool|IResolvable ExtraConfigRebootRequired { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow the virtual machine to be rebooted when a change to `extra_config` occurs.
 
@@ -2945,10 +2945,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `MemoryHotAddEnabled`<sup>Optional</sup> <a name="MemoryHotAddEnabled" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.memoryHotAddEnabled"></a>
 
 ```csharp
-public object MemoryHotAddEnabled { get; set; }
+public bool|IResolvable MemoryHotAddEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow memory to be added to this virtual machine while it is running.
 
@@ -2987,10 +2987,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `MemoryReservationLockedToMax`<sup>Optional</sup> <a name="MemoryReservationLockedToMax" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.memoryReservationLockedToMax"></a>
 
 ```csharp
-public object MemoryReservationLockedToMax { get; set; }
+public bool|IResolvable MemoryReservationLockedToMax { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set true, memory resource reservation for this virtual machine will always be equal to the virtual machine's memory size;increases in memory size will be rejected when a corresponding reservation increase is not possible. This feature may only be enabled if it is currently possible to reserve all of the virtual machine's memory.
 
@@ -3057,10 +3057,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `NestedHvEnabled`<sup>Optional</sup> <a name="NestedHvEnabled" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.nestedHvEnabled"></a>
 
 ```csharp
-public object NestedHvEnabled { get; set; }
+public bool|IResolvable NestedHvEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable nested hardware virtualization on this virtual machine, facilitating nested virtualization in the guest.
 
@@ -3129,10 +3129,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `RunToolsScriptsAfterPowerOn`<sup>Optional</sup> <a name="RunToolsScriptsAfterPowerOn" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.runToolsScriptsAfterPowerOn"></a>
 
 ```csharp
-public object RunToolsScriptsAfterPowerOn { get; set; }
+public bool|IResolvable RunToolsScriptsAfterPowerOn { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable the run of scripts after virtual machine power-on when VMware Tools is installed.
 
@@ -3143,10 +3143,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `RunToolsScriptsAfterResume`<sup>Optional</sup> <a name="RunToolsScriptsAfterResume" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.runToolsScriptsAfterResume"></a>
 
 ```csharp
-public object RunToolsScriptsAfterResume { get; set; }
+public bool|IResolvable RunToolsScriptsAfterResume { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable the run of scripts after virtual machine resume when when VMware Tools is installed.
 
@@ -3157,10 +3157,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `RunToolsScriptsBeforeGuestReboot`<sup>Optional</sup> <a name="RunToolsScriptsBeforeGuestReboot" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.runToolsScriptsBeforeGuestReboot"></a>
 
 ```csharp
-public object RunToolsScriptsBeforeGuestReboot { get; set; }
+public bool|IResolvable RunToolsScriptsBeforeGuestReboot { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable the run of scripts before guest operating system reboot when VMware Tools is installed.
 
@@ -3171,10 +3171,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `RunToolsScriptsBeforeGuestShutdown`<sup>Optional</sup> <a name="RunToolsScriptsBeforeGuestShutdown" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.runToolsScriptsBeforeGuestShutdown"></a>
 
 ```csharp
-public object RunToolsScriptsBeforeGuestShutdown { get; set; }
+public bool|IResolvable RunToolsScriptsBeforeGuestShutdown { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable the run of scripts before guest operating system shutdown when VMware Tools is installed.
 
@@ -3185,10 +3185,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `RunToolsScriptsBeforeGuestStandby`<sup>Optional</sup> <a name="RunToolsScriptsBeforeGuestStandby" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.runToolsScriptsBeforeGuestStandby"></a>
 
 ```csharp
-public object RunToolsScriptsBeforeGuestStandby { get; set; }
+public bool|IResolvable RunToolsScriptsBeforeGuestStandby { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable the run of scripts before guest operating system standby when VMware Tools is installed.
 
@@ -3255,10 +3255,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `SyncTimeWithHost`<sup>Optional</sup> <a name="SyncTimeWithHost" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.syncTimeWithHost"></a>
 
 ```csharp
-public object SyncTimeWithHost { get; set; }
+public bool|IResolvable SyncTimeWithHost { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable guest clock synchronization with the host.
 
@@ -3271,10 +3271,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `SyncTimeWithHostPeriodically`<sup>Optional</sup> <a name="SyncTimeWithHostPeriodically" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.syncTimeWithHostPeriodically"></a>
 
 ```csharp
-public object SyncTimeWithHostPeriodically { get; set; }
+public bool|IResolvable SyncTimeWithHostPeriodically { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable periodic clock synchronization with the host.
 
@@ -3329,10 +3329,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `VbsEnabled`<sup>Optional</sup> <a name="VbsEnabled" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.vbsEnabled"></a>
 
 ```csharp
-public object VbsEnabled { get; set; }
+public bool|IResolvable VbsEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Flag to specify if Virtualization-based security is enabled for this virtual machine.
 
@@ -3343,10 +3343,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `VvtdEnabled`<sup>Optional</sup> <a name="VvtdEnabled" id="@cdktf/provider-vsphere.dataVsphereVirtualMachine.DataVsphereVirtualMachineConfig.property.vvtdEnabled"></a>
 
 ```csharp
-public object VvtdEnabled { get; set; }
+public bool|IResolvable VvtdEnabled { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Flag to specify if I/O MMU virtualization, also called Intel Virtualization Technology for Directed I/O (VT-d) and AMD I/O Virtualization (AMD-Vi or IOMMU), is enabled.
 

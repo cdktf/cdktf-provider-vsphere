@@ -15,15 +15,12 @@ VsphereProvider.Builder.create(Construct scope, java.lang.String id)
     .password(java.lang.String)
     .user(java.lang.String)
 //  .alias(java.lang.String)
-//  .allowUnverifiedSsl(java.lang.Boolean)
-//  .allowUnverifiedSsl(IResolvable)
+//  .allowUnverifiedSsl(java.lang.Boolean|IResolvable)
 //  .apiTimeout(java.lang.Number)
-//  .clientDebug(java.lang.Boolean)
-//  .clientDebug(IResolvable)
+//  .clientDebug(java.lang.Boolean|IResolvable)
 //  .clientDebugPath(java.lang.String)
 //  .clientDebugPathRun(java.lang.String)
-//  .persistSession(java.lang.Boolean)
-//  .persistSession(IResolvable)
+//  .persistSession(java.lang.Boolean|IResolvable)
 //  .restSessionPath(java.lang.String)
 //  .vcenterServer(java.lang.String)
 //  .vimKeepAlive(java.lang.Number)
@@ -39,12 +36,12 @@ VsphereProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.password">password</a></code> | <code>java.lang.String</code> | The user password for vSphere API operations. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.user">user</a></code> | <code>java.lang.String</code> | The user name for vSphere API operations. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.allowUnverifiedSsl">allowUnverifiedSsl</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If set, VMware vSphere client will permit unverifiable SSL certificates. |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.allowUnverifiedSsl">allowUnverifiedSsl</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | If set, VMware vSphere client will permit unverifiable SSL certificates. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.apiTimeout">apiTimeout</a></code> | <code>java.lang.Number</code> | API timeout in minutes (Default: 5). |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.clientDebug">clientDebug</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | govmomi debug. |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.clientDebug">clientDebug</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | govmomi debug. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.clientDebugPath">clientDebugPath</a></code> | <code>java.lang.String</code> | govmomi debug path for debug. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.clientDebugPathRun">clientDebugPathRun</a></code> | <code>java.lang.String</code> | govmomi debug path for a single run. |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.persistSession">persistSession</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Persist vSphere client sessions to disk. |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.persistSession">persistSession</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Persist vSphere client sessions to disk. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.restSessionPath">restSessionPath</a></code> | <code>java.lang.String</code> | The directory to save vSphere REST API sessions to. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.vcenterServer">vcenterServer</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs#vcenter_server VsphereProvider#vcenter_server}. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.vimKeepAlive">vimKeepAlive</a></code> | <code>java.lang.Number</code> | Keep alive interval for the VIM session in minutes. |
@@ -103,7 +100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `allowUnverifiedSsl`<sup>Optional</sup> <a name="allowUnverifiedSsl" id="@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.allowUnverifiedSsl"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 If set, VMware vSphere client will permit unverifiable SSL certificates.
 
@@ -123,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `clientDebug`<sup>Optional</sup> <a name="clientDebug" id="@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.clientDebug"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 govmomi debug.
 
@@ -153,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 
 ##### `persistSession`<sup>Optional</sup> <a name="persistSession" id="@cdktf/provider-vsphere.provider.VsphereProvider.Initializer.parameter.persistSession"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Persist vSphere client sessions to disk.
 
@@ -506,26 +503,26 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.terraformProviderSource">terraformProviderSource</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.alias">alias</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.aliasInput">aliasInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.allowUnverifiedSslInput">allowUnverifiedSslInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.allowUnverifiedSslInput">allowUnverifiedSslInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.apiTimeoutInput">apiTimeoutInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebugInput">clientDebugInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebugInput">clientDebugInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebugPathInput">clientDebugPathInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebugPathRunInput">clientDebugPathRunInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.passwordInput">passwordInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.persistSessionInput">persistSessionInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.persistSessionInput">persistSessionInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.restSessionPathInput">restSessionPathInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.userInput">userInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.vcenterServerInput">vcenterServerInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.vimKeepAliveInput">vimKeepAliveInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.vimSessionPathInput">vimSessionPathInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.vsphereServerInput">vsphereServerInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.allowUnverifiedSsl">allowUnverifiedSsl</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.allowUnverifiedSsl">allowUnverifiedSsl</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.apiTimeout">apiTimeout</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebug">clientDebug</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebug">clientDebug</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebugPath">clientDebugPath</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebugPathRun">clientDebugPathRun</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.password">password</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.persistSession">persistSession</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.persistSession">persistSession</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.restSessionPath">restSessionPath</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.user">user</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.vcenterServer">vcenterServer</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -640,10 +637,10 @@ public java.lang.String getAliasInput();
 ##### `allowUnverifiedSslInput`<sup>Optional</sup> <a name="allowUnverifiedSslInput" id="@cdktf/provider-vsphere.provider.VsphereProvider.property.allowUnverifiedSslInput"></a>
 
 ```java
-public java.lang.Object getAllowUnverifiedSslInput();
+public java.lang.Boolean|IResolvable getAllowUnverifiedSslInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -660,10 +657,10 @@ public java.lang.Number getApiTimeoutInput();
 ##### `clientDebugInput`<sup>Optional</sup> <a name="clientDebugInput" id="@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebugInput"></a>
 
 ```java
-public java.lang.Object getClientDebugInput();
+public java.lang.Boolean|IResolvable getClientDebugInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -700,10 +697,10 @@ public java.lang.String getPasswordInput();
 ##### `persistSessionInput`<sup>Optional</sup> <a name="persistSessionInput" id="@cdktf/provider-vsphere.provider.VsphereProvider.property.persistSessionInput"></a>
 
 ```java
-public java.lang.Object getPersistSessionInput();
+public java.lang.Boolean|IResolvable getPersistSessionInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -770,10 +767,10 @@ public java.lang.String getVsphereServerInput();
 ##### `allowUnverifiedSsl`<sup>Optional</sup> <a name="allowUnverifiedSsl" id="@cdktf/provider-vsphere.provider.VsphereProvider.property.allowUnverifiedSsl"></a>
 
 ```java
-public java.lang.Object getAllowUnverifiedSsl();
+public java.lang.Boolean|IResolvable getAllowUnverifiedSsl();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -790,10 +787,10 @@ public java.lang.Number getApiTimeout();
 ##### `clientDebug`<sup>Optional</sup> <a name="clientDebug" id="@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebug"></a>
 
 ```java
-public java.lang.Object getClientDebug();
+public java.lang.Boolean|IResolvable getClientDebug();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -830,10 +827,10 @@ public java.lang.String getPassword();
 ##### `persistSession`<sup>Optional</sup> <a name="persistSession" id="@cdktf/provider-vsphere.provider.VsphereProvider.property.persistSession"></a>
 
 ```java
-public java.lang.Object getPersistSession();
+public java.lang.Boolean|IResolvable getPersistSession();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -928,15 +925,12 @@ VsphereProviderConfig.builder()
     .password(java.lang.String)
     .user(java.lang.String)
 //  .alias(java.lang.String)
-//  .allowUnverifiedSsl(java.lang.Boolean)
-//  .allowUnverifiedSsl(IResolvable)
+//  .allowUnverifiedSsl(java.lang.Boolean|IResolvable)
 //  .apiTimeout(java.lang.Number)
-//  .clientDebug(java.lang.Boolean)
-//  .clientDebug(IResolvable)
+//  .clientDebug(java.lang.Boolean|IResolvable)
 //  .clientDebugPath(java.lang.String)
 //  .clientDebugPathRun(java.lang.String)
-//  .persistSession(java.lang.Boolean)
-//  .persistSession(IResolvable)
+//  .persistSession(java.lang.Boolean|IResolvable)
 //  .restSessionPath(java.lang.String)
 //  .vcenterServer(java.lang.String)
 //  .vimKeepAlive(java.lang.Number)
@@ -952,12 +946,12 @@ VsphereProviderConfig.builder()
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.password">password</a></code> | <code>java.lang.String</code> | The user password for vSphere API operations. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.user">user</a></code> | <code>java.lang.String</code> | The user name for vSphere API operations. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.allowUnverifiedSsl">allowUnverifiedSsl</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If set, VMware vSphere client will permit unverifiable SSL certificates. |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.allowUnverifiedSsl">allowUnverifiedSsl</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | If set, VMware vSphere client will permit unverifiable SSL certificates. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.apiTimeout">apiTimeout</a></code> | <code>java.lang.Number</code> | API timeout in minutes (Default: 5). |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.clientDebug">clientDebug</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | govmomi debug. |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.clientDebug">clientDebug</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | govmomi debug. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.clientDebugPath">clientDebugPath</a></code> | <code>java.lang.String</code> | govmomi debug path for debug. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.clientDebugPathRun">clientDebugPathRun</a></code> | <code>java.lang.String</code> | govmomi debug path for a single run. |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.persistSession">persistSession</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Persist vSphere client sessions to disk. |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.persistSession">persistSession</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Persist vSphere client sessions to disk. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.restSessionPath">restSessionPath</a></code> | <code>java.lang.String</code> | The directory to save vSphere REST API sessions to. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.vcenterServer">vcenterServer</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs#vcenter_server VsphereProvider#vcenter_server}. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.vimKeepAlive">vimKeepAlive</a></code> | <code>java.lang.Number</code> | Keep alive interval for the VIM session in minutes. |
@@ -1011,10 +1005,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `allowUnverifiedSsl`<sup>Optional</sup> <a name="allowUnverifiedSsl" id="@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.allowUnverifiedSsl"></a>
 
 ```java
-public java.lang.Object getAllowUnverifiedSsl();
+public java.lang.Boolean|IResolvable getAllowUnverifiedSsl();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 If set, VMware vSphere client will permit unverifiable SSL certificates.
 
@@ -1039,10 +1033,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `clientDebug`<sup>Optional</sup> <a name="clientDebug" id="@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.clientDebug"></a>
 
 ```java
-public java.lang.Object getClientDebug();
+public java.lang.Boolean|IResolvable getClientDebug();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 govmomi debug.
 
@@ -1081,10 +1075,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `persistSession`<sup>Optional</sup> <a name="persistSession" id="@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.persistSession"></a>
 
 ```java
-public java.lang.Object getPersistSession();
+public java.lang.Boolean|IResolvable getPersistSession();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Persist vSphere client sessions to disk.
 

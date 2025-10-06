@@ -285,7 +285,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-vsphere.vnic.Vnic.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-vsphere.vnic.Vnic.importFrom"></a>
@@ -339,7 +339,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-vsphere.vnic.Vnic.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -354,7 +354,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-vsphere.vnic.Vnic.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -586,13 +586,13 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.vnic.Vnic.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.Vnic.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.Vnic.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.vnic.Vnic.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.vnic.Vnic.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vnic.Vnic.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vnic.Vnic.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.Vnic.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.Vnic.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.Vnic.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.Vnic.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.vnic.Vnic.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vnic.Vnic.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.Vnic.property.ipv4">Ipv4</a></code> | <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv4OutputReference">VnicIpv4OutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.Vnic.property.ipv6">Ipv6</a></code> | <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv6OutputReference">VnicIpv6OutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.Vnic.property.distributedPortGroupInput">DistributedPortGroupInput</a></code> | <code>string</code> | *No description.* |
@@ -693,20 +693,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vsphere.vnic.Vnic.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.vnic.Vnic.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -753,10 +753,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vsphere.vnic.Vnic.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1008,13 +1008,13 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Vsphere;
 
 new VnicConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Host,
     string DistributedPortGroup = null,
     string DistributedSwitchPort = null,
@@ -1033,13 +1033,13 @@ new VnicConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vsphere.vnic.VnicConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.vnic.VnicConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vnic.VnicConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vnic.VnicConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.vnic.VnicConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vnic.VnicConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicConfig.property.host">Host</a></code> | <code>string</code> | ESX host the interface belongs to. |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicConfig.property.distributedPortGroup">DistributedPortGroup</a></code> | <code>string</code> | Key of the distributed portgroup the nic will connect to. |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicConfig.property.distributedSwitchPort">DistributedSwitchPort</a></code> | <code>string</code> | UUID of the DVSwitch the nic will be attached to. Do not set if you set portgroup. |
@@ -1057,20 +1057,20 @@ new VnicConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vsphere.vnic.VnicConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vsphere.vnic.VnicConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1117,10 +1117,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vsphere.vnic.VnicConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1287,7 +1287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 using HashiCorp.Cdktf.Providers.Vsphere;
 
 new VnicIpv4 {
-    object Dhcp = null,
+    bool|IResolvable Dhcp = null,
     string Gw = null,
     string Ip = null,
     string Netmask = null
@@ -1298,7 +1298,7 @@ new VnicIpv4 {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv4.property.dhcp">Dhcp</a></code> | <code>object</code> | Use DHCP to configure the interface's IPv4 stack. |
+| <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv4.property.dhcp">Dhcp</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Use DHCP to configure the interface's IPv4 stack. |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv4.property.gw">Gw</a></code> | <code>string</code> | IP address of the default gateway, if DHCP is not set. |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv4.property.ip">Ip</a></code> | <code>string</code> | address of the interface, if DHCP is not set. |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv4.property.netmask">Netmask</a></code> | <code>string</code> | netmask of the interface, if DHCP is not set. |
@@ -1308,10 +1308,10 @@ new VnicIpv4 {
 ##### `Dhcp`<sup>Optional</sup> <a name="Dhcp" id="@cdktf/provider-vsphere.vnic.VnicIpv4.property.dhcp"></a>
 
 ```csharp
-public object Dhcp { get; set; }
+public bool|IResolvable Dhcp { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Use DHCP to configure the interface's IPv4 stack.
 
@@ -1370,8 +1370,8 @@ using HashiCorp.Cdktf.Providers.Vsphere;
 
 new VnicIpv6 {
     string[] Addresses = null,
-    object Autoconfig = null,
-    object Dhcp = null,
+    bool|IResolvable Autoconfig = null,
+    bool|IResolvable Dhcp = null,
     string Gw = null
 };
 ```
@@ -1381,8 +1381,8 @@ new VnicIpv6 {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv6.property.addresses">Addresses</a></code> | <code>string[]</code> | List of IPv6 addresses. |
-| <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv6.property.autoconfig">Autoconfig</a></code> | <code>object</code> | Use IPv6 Autoconfiguration (RFC2462). |
-| <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv6.property.dhcp">Dhcp</a></code> | <code>object</code> | Use DHCP to configure the interface's IPv4 stack. |
+| <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv6.property.autoconfig">Autoconfig</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Use IPv6 Autoconfiguration (RFC2462). |
+| <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv6.property.dhcp">Dhcp</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Use DHCP to configure the interface's IPv4 stack. |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv6.property.gw">Gw</a></code> | <code>string</code> | IP address of the default gateway, if DHCP or autoconfig is not set. |
 
 ---
@@ -1404,10 +1404,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `Autoconfig`<sup>Optional</sup> <a name="Autoconfig" id="@cdktf/provider-vsphere.vnic.VnicIpv6.property.autoconfig"></a>
 
 ```csharp
-public object Autoconfig { get; set; }
+public bool|IResolvable Autoconfig { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Use IPv6 Autoconfiguration (RFC2462).
 
@@ -1418,10 +1418,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `Dhcp`<sup>Optional</sup> <a name="Dhcp" id="@cdktf/provider-vsphere.vnic.VnicIpv6.property.dhcp"></a>
 
 ```csharp
-public object Dhcp { get; set; }
+public bool|IResolvable Dhcp { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Use DHCP to configure the interface's IPv4 stack.
 
@@ -1683,11 +1683,11 @@ private void ResetNetmask()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv4OutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv4OutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv4OutputReference.property.dhcpInput">DhcpInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv4OutputReference.property.dhcpInput">DhcpInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv4OutputReference.property.gwInput">GwInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv4OutputReference.property.ipInput">IpInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv4OutputReference.property.netmaskInput">NetmaskInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv4OutputReference.property.dhcp">Dhcp</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv4OutputReference.property.dhcp">Dhcp</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv4OutputReference.property.gw">Gw</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv4OutputReference.property.ip">Ip</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv4OutputReference.property.netmask">Netmask</a></code> | <code>string</code> | *No description.* |
@@ -1722,10 +1722,10 @@ public string Fqn { get; }
 ##### `DhcpInput`<sup>Optional</sup> <a name="DhcpInput" id="@cdktf/provider-vsphere.vnic.VnicIpv4OutputReference.property.dhcpInput"></a>
 
 ```csharp
-public object DhcpInput { get; }
+public bool|IResolvable DhcpInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1762,10 +1762,10 @@ public string NetmaskInput { get; }
 ##### `Dhcp`<sup>Required</sup> <a name="Dhcp" id="@cdktf/provider-vsphere.vnic.VnicIpv4OutputReference.property.dhcp"></a>
 
 ```csharp
-public object Dhcp { get; }
+public bool|IResolvable Dhcp { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2049,12 +2049,12 @@ private void ResetGw()
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv6OutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv6OutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv6OutputReference.property.addressesInput">AddressesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv6OutputReference.property.autoconfigInput">AutoconfigInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv6OutputReference.property.dhcpInput">DhcpInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv6OutputReference.property.autoconfigInput">AutoconfigInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv6OutputReference.property.dhcpInput">DhcpInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv6OutputReference.property.gwInput">GwInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv6OutputReference.property.addresses">Addresses</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv6OutputReference.property.autoconfig">Autoconfig</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv6OutputReference.property.dhcp">Dhcp</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv6OutputReference.property.autoconfig">Autoconfig</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv6OutputReference.property.dhcp">Dhcp</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv6OutputReference.property.gw">Gw</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv6OutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-vsphere.vnic.VnicIpv6">VnicIpv6</a></code> | *No description.* |
 
@@ -2097,20 +2097,20 @@ public string[] AddressesInput { get; }
 ##### `AutoconfigInput`<sup>Optional</sup> <a name="AutoconfigInput" id="@cdktf/provider-vsphere.vnic.VnicIpv6OutputReference.property.autoconfigInput"></a>
 
 ```csharp
-public object AutoconfigInput { get; }
+public bool|IResolvable AutoconfigInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DhcpInput`<sup>Optional</sup> <a name="DhcpInput" id="@cdktf/provider-vsphere.vnic.VnicIpv6OutputReference.property.dhcpInput"></a>
 
 ```csharp
-public object DhcpInput { get; }
+public bool|IResolvable DhcpInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -2137,20 +2137,20 @@ public string[] Addresses { get; }
 ##### `Autoconfig`<sup>Required</sup> <a name="Autoconfig" id="@cdktf/provider-vsphere.vnic.VnicIpv6OutputReference.property.autoconfig"></a>
 
 ```csharp
-public object Autoconfig { get; }
+public bool|IResolvable Autoconfig { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Dhcp`<sup>Required</sup> <a name="Dhcp" id="@cdktf/provider-vsphere.vnic.VnicIpv6OutputReference.property.dhcp"></a>
 
 ```csharp
-public object Dhcp { get; }
+public bool|IResolvable Dhcp { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 

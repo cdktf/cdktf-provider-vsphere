@@ -343,26 +343,26 @@ Refer to the {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.terraformProviderSource">TerraformProviderSource</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.alias">Alias</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.aliasInput">AliasInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.allowUnverifiedSslInput">AllowUnverifiedSslInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.allowUnverifiedSslInput">AllowUnverifiedSslInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.apiTimeoutInput">ApiTimeoutInput</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebugInput">ClientDebugInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebugInput">ClientDebugInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebugPathInput">ClientDebugPathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebugPathRunInput">ClientDebugPathRunInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.passwordInput">PasswordInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.persistSessionInput">PersistSessionInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.persistSessionInput">PersistSessionInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.restSessionPathInput">RestSessionPathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.userInput">UserInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.vcenterServerInput">VcenterServerInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.vimKeepAliveInput">VimKeepAliveInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.vimSessionPathInput">VimSessionPathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.vsphereServerInput">VsphereServerInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.allowUnverifiedSsl">AllowUnverifiedSsl</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.allowUnverifiedSsl">AllowUnverifiedSsl</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.apiTimeout">ApiTimeout</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebug">ClientDebug</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebug">ClientDebug</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebugPath">ClientDebugPath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebugPathRun">ClientDebugPathRun</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.password">Password</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.persistSession">PersistSession</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.persistSession">PersistSession</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.restSessionPath">RestSessionPath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.user">User</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProvider.property.vcenterServer">VcenterServer</a></code> | <code>string</code> | *No description.* |
@@ -477,10 +477,10 @@ public string AliasInput { get; }
 ##### `AllowUnverifiedSslInput`<sup>Optional</sup> <a name="AllowUnverifiedSslInput" id="@cdktf/provider-vsphere.provider.VsphereProvider.property.allowUnverifiedSslInput"></a>
 
 ```csharp
-public object AllowUnverifiedSslInput { get; }
+public bool|IResolvable AllowUnverifiedSslInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -497,10 +497,10 @@ public double ApiTimeoutInput { get; }
 ##### `ClientDebugInput`<sup>Optional</sup> <a name="ClientDebugInput" id="@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebugInput"></a>
 
 ```csharp
-public object ClientDebugInput { get; }
+public bool|IResolvable ClientDebugInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -537,10 +537,10 @@ public string PasswordInput { get; }
 ##### `PersistSessionInput`<sup>Optional</sup> <a name="PersistSessionInput" id="@cdktf/provider-vsphere.provider.VsphereProvider.property.persistSessionInput"></a>
 
 ```csharp
-public object PersistSessionInput { get; }
+public bool|IResolvable PersistSessionInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -607,10 +607,10 @@ public string VsphereServerInput { get; }
 ##### `AllowUnverifiedSsl`<sup>Optional</sup> <a name="AllowUnverifiedSsl" id="@cdktf/provider-vsphere.provider.VsphereProvider.property.allowUnverifiedSsl"></a>
 
 ```csharp
-public object AllowUnverifiedSsl { get; }
+public bool|IResolvable AllowUnverifiedSsl { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -627,10 +627,10 @@ public double ApiTimeout { get; }
 ##### `ClientDebug`<sup>Optional</sup> <a name="ClientDebug" id="@cdktf/provider-vsphere.provider.VsphereProvider.property.clientDebug"></a>
 
 ```csharp
-public object ClientDebug { get; }
+public bool|IResolvable ClientDebug { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -667,10 +667,10 @@ public string Password { get; }
 ##### `PersistSession`<sup>Optional</sup> <a name="PersistSession" id="@cdktf/provider-vsphere.provider.VsphereProvider.property.persistSession"></a>
 
 ```csharp
-public object PersistSession { get; }
+public bool|IResolvable PersistSession { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -765,12 +765,12 @@ new VsphereProviderConfig {
     string Password,
     string User,
     string Alias = null,
-    object AllowUnverifiedSsl = null,
+    bool|IResolvable AllowUnverifiedSsl = null,
     double ApiTimeout = null,
-    object ClientDebug = null,
+    bool|IResolvable ClientDebug = null,
     string ClientDebugPath = null,
     string ClientDebugPathRun = null,
-    object PersistSession = null,
+    bool|IResolvable PersistSession = null,
     string RestSessionPath = null,
     string VcenterServer = null,
     double VimKeepAlive = null,
@@ -786,12 +786,12 @@ new VsphereProviderConfig {
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.password">Password</a></code> | <code>string</code> | The user password for vSphere API operations. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.user">User</a></code> | <code>string</code> | The user name for vSphere API operations. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.alias">Alias</a></code> | <code>string</code> | Alias name. |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.allowUnverifiedSsl">AllowUnverifiedSsl</a></code> | <code>object</code> | If set, VMware vSphere client will permit unverifiable SSL certificates. |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.allowUnverifiedSsl">AllowUnverifiedSsl</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set, VMware vSphere client will permit unverifiable SSL certificates. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.apiTimeout">ApiTimeout</a></code> | <code>double</code> | API timeout in minutes (Default: 5). |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.clientDebug">ClientDebug</a></code> | <code>object</code> | govmomi debug. |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.clientDebug">ClientDebug</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | govmomi debug. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.clientDebugPath">ClientDebugPath</a></code> | <code>string</code> | govmomi debug path for debug. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.clientDebugPathRun">ClientDebugPathRun</a></code> | <code>string</code> | govmomi debug path for a single run. |
-| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.persistSession">PersistSession</a></code> | <code>object</code> | Persist vSphere client sessions to disk. |
+| <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.persistSession">PersistSession</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Persist vSphere client sessions to disk. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.restSessionPath">RestSessionPath</a></code> | <code>string</code> | The directory to save vSphere REST API sessions to. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.vcenterServer">VcenterServer</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.0/docs#vcenter_server VsphereProvider#vcenter_server}. |
 | <code><a href="#@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.vimKeepAlive">VimKeepAlive</a></code> | <code>double</code> | Keep alive interval for the VIM session in minutes. |
@@ -845,10 +845,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `AllowUnverifiedSsl`<sup>Optional</sup> <a name="AllowUnverifiedSsl" id="@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.allowUnverifiedSsl"></a>
 
 ```csharp
-public object AllowUnverifiedSsl { get; set; }
+public bool|IResolvable AllowUnverifiedSsl { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set, VMware vSphere client will permit unverifiable SSL certificates.
 
@@ -873,10 +873,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `ClientDebug`<sup>Optional</sup> <a name="ClientDebug" id="@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.clientDebug"></a>
 
 ```csharp
-public object ClientDebug { get; set; }
+public bool|IResolvable ClientDebug { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 govmomi debug.
 
@@ -915,10 +915,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 ##### `PersistSession`<sup>Optional</sup> <a name="PersistSession" id="@cdktf/provider-vsphere.provider.VsphereProviderConfig.property.persistSession"></a>
 
 ```csharp
-public object PersistSession { get; set; }
+public bool|IResolvable PersistSession { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Persist vSphere client sessions to disk.
 
