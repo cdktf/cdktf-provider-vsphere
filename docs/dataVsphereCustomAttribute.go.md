@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttribute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherecustomattribute"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/datavspherecustomattribute"
 
 datavspherecustomattribute.NewDataVsphereCustomAttribute(scope Construct, id *string, config DataVsphereCustomAttributeConfig) DataVsphereCustomAttribute
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttribute.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherecustomattribute"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/datavspherecustomattribute"
 
 datavspherecustomattribute.DataVsphereCustomAttribute_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttribute.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherecustomattribute"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/datavspherecustomattribute"
 
 datavspherecustomattribute.DataVsphereCustomAttribute_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datavspherecustomattribute.DataVsphereCustomAttribute_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttribute.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherecustomattribute"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/datavspherecustomattribute"
 
 datavspherecustomattribute.DataVsphereCustomAttribute_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datavspherecustomattribute.DataVsphereCustomAttribute_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttribute.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherecustomattribute"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/datavspherecustomattribute"
 
 datavspherecustomattribute.DataVsphereCustomAttribute_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereCustomAttribute.DataVsphereCustomAttributeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspherecustomattribute"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/datavspherecustomattribute"
 
 &datavspherecustomattribute.DataVsphereCustomAttributeConfig {
 	Connection: interface{},

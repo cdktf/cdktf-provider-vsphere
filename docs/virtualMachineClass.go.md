@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClass.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachineclass"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/virtualmachineclass"
 
 virtualmachineclass.NewVirtualMachineClass(scope Construct, id *string, config VirtualMachineClassConfig) VirtualMachineClass
 ```
@@ -406,7 +406,7 @@ func ResetVgpuDevices()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClass.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachineclass"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/virtualmachineclass"
 
 virtualmachineclass.VirtualMachineClass_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClass.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachineclass"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/virtualmachineclass"
 
 virtualmachineclass.VirtualMachineClass_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ virtualmachineclass.VirtualMachineClass_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClass.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachineclass"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/virtualmachineclass"
 
 virtualmachineclass.VirtualMachineClass_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ virtualmachineclass.VirtualMachineClass_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClass.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachineclass"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/virtualmachineclass"
 
 virtualmachineclass.VirtualMachineClass_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -849,7 +849,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.virtualMachineClass.VirtualMachineClassConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/virtualmachineclass"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/virtualmachineclass"
 
 &virtualmachineclass.VirtualMachineClassConfig {
 	Connection: interface{},

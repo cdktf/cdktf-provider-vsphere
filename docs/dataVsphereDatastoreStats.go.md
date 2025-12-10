@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.dataVsphereDatastoreStats.DataVsphereDatastoreStats.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredatastorestats"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/datavspheredatastorestats"
 
 datavspheredatastorestats.NewDataVsphereDatastoreStats(scope Construct, id *string, config DataVsphereDatastoreStatsConfig) DataVsphereDatastoreStats
 ```
@@ -297,7 +297,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.dataVsphereDatastoreStats.DataVsphereDatastoreStats.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredatastorestats"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/datavspheredatastorestats"
 
 datavspheredatastorestats.DataVsphereDatastoreStats_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.dataVsphereDatastoreStats.DataVsphereDatastoreStats.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredatastorestats"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/datavspheredatastorestats"
 
 datavspheredatastorestats.DataVsphereDatastoreStats_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datavspheredatastorestats.DataVsphereDatastoreStats_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-vsphere.dataVsphereDatastoreStats.DataVsphereDatastoreStats.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredatastorestats"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/datavspheredatastorestats"
 
 datavspheredatastorestats.DataVsphereDatastoreStats_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datavspheredatastorestats.DataVsphereDatastoreStats_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.dataVsphereDatastoreStats.DataVsphereDatastoreStats.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredatastorestats"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/datavspheredatastorestats"
 
 datavspheredatastorestats.DataVsphereDatastoreStats_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -652,7 +652,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.dataVsphereDatastoreStats.DataVsphereDatastoreStatsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/datavspheredatastorestats"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/datavspheredatastorestats"
 
 &datavspheredatastorestats.DataVsphereDatastoreStatsConfig {
 	Connection: interface{},
