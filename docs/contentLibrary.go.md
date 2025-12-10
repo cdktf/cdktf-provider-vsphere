@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.contentLibrary.ContentLibrary.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/contentlibrary"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/contentlibrary"
 
 contentlibrary.NewContentLibrary(scope Construct, id *string, config ContentLibraryConfig) ContentLibrary
 ```
@@ -432,7 +432,7 @@ func ResetSubscription()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.contentLibrary.ContentLibrary.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/contentlibrary"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/contentlibrary"
 
 contentlibrary.ContentLibrary_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.contentLibrary.ContentLibrary.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/contentlibrary"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/contentlibrary"
 
 contentlibrary.ContentLibrary_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ contentlibrary.ContentLibrary_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.contentLibrary.ContentLibrary.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/contentlibrary"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/contentlibrary"
 
 contentlibrary.ContentLibrary_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ contentlibrary.ContentLibrary_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.contentLibrary.ContentLibrary.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/contentlibrary"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/contentlibrary"
 
 contentlibrary.ContentLibrary_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.contentLibrary.ContentLibraryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/contentlibrary"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/contentlibrary"
 
 &contentlibrary.ContentLibraryConfig {
 	Connection: interface{},
@@ -867,8 +867,8 @@ import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/contentlibrary"
 	StorageBacking: *[]*string,
 	Description: *string,
 	Id: *string,
-	Publication: github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11.contentLibrary.ContentLibraryPublication,
-	Subscription: github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11.contentLibrary.ContentLibrarySubscription,
+	Publication: github.com/cdktf/cdktf-provider-vsphere-go/vsphere.contentLibrary.ContentLibraryPublication,
+	Subscription: github.com/cdktf/cdktf-provider-vsphere-go/vsphere.contentLibrary.ContentLibrarySubscription,
 }
 ```
 
@@ -1052,7 +1052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.contentLibrary.ContentLibraryPublication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/contentlibrary"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/contentlibrary"
 
 &contentlibrary.ContentLibraryPublication {
 	AuthenticationMethod: *string,
@@ -1126,7 +1126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.contentLibrary.ContentLibrarySubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/contentlibrary"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/contentlibrary"
 
 &contentlibrary.ContentLibrarySubscription {
 	AuthenticationMethod: *string,
@@ -1230,7 +1230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.contentLibrary.ContentLibraryPublicationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/contentlibrary"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/contentlibrary"
 
 contentlibrary.NewContentLibraryPublicationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContentLibraryPublicationOutputReference
 ```
@@ -1606,7 +1606,7 @@ func InternalValue() ContentLibraryPublication
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.contentLibrary.ContentLibrarySubscriptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/contentlibrary"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/contentlibrary"
 
 contentlibrary.NewContentLibrarySubscriptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContentLibrarySubscriptionOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.provider.VsphereProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/provider"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/provider"
 
 provider.NewVsphereProvider(scope Construct, id *string, config VsphereProviderConfig) VsphereProvider
 ```
@@ -228,7 +228,7 @@ func ResetVsphereServer()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.provider.VsphereProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/provider"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/provider"
 
 provider.VsphereProvider_IsConstruct(x interface{}) *bool
 ```
@@ -260,7 +260,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.provider.VsphereProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/provider"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/provider"
 
 provider.VsphereProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -274,7 +274,7 @@ provider.VsphereProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-vsphere.provider.VsphereProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/provider"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/provider"
 
 provider.VsphereProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -288,7 +288,7 @@ provider.VsphereProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.provider.VsphereProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/provider"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/provider"
 
 provider.VsphereProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -759,7 +759,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.provider.VsphereProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/provider"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/provider"
 
 &provider.VsphereProviderConfig {
 	Password: *string,

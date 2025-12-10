@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.licenseResource.LicenseResource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/licenseresource"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/licenseresource"
 
 licenseresource.NewLicenseResource(scope Construct, id *string, config LicenseResourceConfig) LicenseResource
 ```
@@ -392,7 +392,7 @@ func ResetLabels()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.licenseResource.LicenseResource.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/licenseresource"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/licenseresource"
 
 licenseresource.LicenseResource_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.licenseResource.LicenseResource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/licenseresource"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/licenseresource"
 
 licenseresource.LicenseResource_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ licenseresource.LicenseResource_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.licenseResource.LicenseResource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/licenseresource"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/licenseresource"
 
 licenseresource.LicenseResource_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ licenseresource.LicenseResource_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.licenseResource.LicenseResource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/licenseresource"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/licenseresource"
 
 licenseresource.LicenseResource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.licenseResource.LicenseResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/licenseresource"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/licenseresource"
 
 &licenseresource.LicenseResourceConfig {
 	Connection: interface{},

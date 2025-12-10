@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.configurationProfile.ConfigurationProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/configurationprofile"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/configurationprofile"
 
 configurationprofile.NewConfigurationProfile(scope Construct, id *string, config ConfigurationProfileConfig) ConfigurationProfile
 ```
@@ -399,7 +399,7 @@ func ResetReferenceHostId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.configurationProfile.ConfigurationProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/configurationprofile"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/configurationprofile"
 
 configurationprofile.ConfigurationProfile_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.configurationProfile.ConfigurationProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/configurationprofile"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/configurationprofile"
 
 configurationprofile.ConfigurationProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ configurationprofile.ConfigurationProfile_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.configurationProfile.ConfigurationProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/configurationprofile"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/configurationprofile"
 
 configurationprofile.ConfigurationProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ configurationprofile.ConfigurationProfile_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.configurationProfile.ConfigurationProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/configurationprofile"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/configurationprofile"
 
 configurationprofile.ConfigurationProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -787,7 +787,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.configurationProfile.ConfigurationProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/configurationprofile"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/configurationprofile"
 
 &configurationprofile.ConfigurationProfileConfig {
 	Connection: interface{},

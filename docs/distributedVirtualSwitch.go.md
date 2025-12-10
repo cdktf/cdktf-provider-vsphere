@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/vmware/vsphere/2.15.
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/distributedvirtualswitch"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/distributedvirtualswitch"
 
 distributedvirtualswitch.NewDistributedVirtualSwitch(scope Construct, id *string, config DistributedVirtualSwitchConfig) DistributedVirtualSwitch
 ```
@@ -1068,7 +1068,7 @@ func ResetVsanShareLevel()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/distributedvirtualswitch"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/distributedvirtualswitch"
 
 distributedvirtualswitch.DistributedVirtualSwitch_IsConstruct(x interface{}) *bool
 ```
@@ -1100,7 +1100,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/distributedvirtualswitch"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/distributedvirtualswitch"
 
 distributedvirtualswitch.DistributedVirtualSwitch_IsTerraformElement(x interface{}) *bool
 ```
@@ -1114,7 +1114,7 @@ distributedvirtualswitch.DistributedVirtualSwitch_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/distributedvirtualswitch"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/distributedvirtualswitch"
 
 distributedvirtualswitch.DistributedVirtualSwitch_IsTerraformResource(x interface{}) *bool
 ```
@@ -1128,7 +1128,7 @@ distributedvirtualswitch.DistributedVirtualSwitch_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitch.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/distributedvirtualswitch"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/distributedvirtualswitch"
 
 distributedvirtualswitch.DistributedVirtualSwitch_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -3458,7 +3458,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/distributedvirtualswitch"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/distributedvirtualswitch"
 
 &distributedvirtualswitch.DistributedVirtualSwitchConfig {
 	Connection: interface{},
@@ -5089,7 +5089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHost.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/distributedvirtualswitch"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/distributedvirtualswitch"
 
 &distributedvirtualswitch.DistributedVirtualSwitchHost {
 	HostSystemId: *string,
@@ -5139,7 +5139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/distributedvirtualswitch"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/distributedvirtualswitch"
 
 &distributedvirtualswitch.DistributedVirtualSwitchPvlanMapping {
 	PrimaryVlanId: *f64,
@@ -5209,7 +5209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 #### Initializer <a name="Initializer" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/distributedvirtualswitch"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/distributedvirtualswitch"
 
 &distributedvirtualswitch.DistributedVirtualSwitchVlanRange {
 	MaxVlan: *f64,
@@ -5261,7 +5261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/vmwar
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHostList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/distributedvirtualswitch"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/distributedvirtualswitch"
 
 distributedvirtualswitch.NewDistributedVirtualSwitchHostList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DistributedVirtualSwitchHostList
 ```
@@ -5421,7 +5421,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchHostOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/distributedvirtualswitch"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/distributedvirtualswitch"
 
 distributedvirtualswitch.NewDistributedVirtualSwitchHostOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DistributedVirtualSwitchHostOutputReference
 ```
@@ -5739,7 +5739,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMappingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/distributedvirtualswitch"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/distributedvirtualswitch"
 
 distributedvirtualswitch.NewDistributedVirtualSwitchPvlanMappingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DistributedVirtualSwitchPvlanMappingList
 ```
@@ -5899,7 +5899,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchPvlanMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/distributedvirtualswitch"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/distributedvirtualswitch"
 
 distributedvirtualswitch.NewDistributedVirtualSwitchPvlanMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DistributedVirtualSwitchPvlanMappingOutputReference
 ```
@@ -6232,7 +6232,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/distributedvirtualswitch"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/distributedvirtualswitch"
 
 distributedvirtualswitch.NewDistributedVirtualSwitchVlanRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DistributedVirtualSwitchVlanRangeList
 ```
@@ -6392,7 +6392,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-vsphere.distributedVirtualSwitch.DistributedVirtualSwitchVlanRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/v11/distributedvirtualswitch"
+import "github.com/cdktf/cdktf-provider-vsphere-go/vsphere/distributedvirtualswitch"
 
 distributedvirtualswitch.NewDistributedVirtualSwitchVlanRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DistributedVirtualSwitchVlanRangeOutputReference
 ```
